@@ -1,6 +1,6 @@
 from ollama import chat
 from ollama import ChatResponse
-from parser import parse_fiche_cadrage, parse_plan_detaille, parse_structure_chapitres
+from parser import parse_fiche_cadrage, parse_plan_detaille, parse_structure_chapitres, parse_introduction
 
 
 def fiche_cadrage():
@@ -211,7 +211,67 @@ def gen_intro(fiche_raw: str, plan_raw: str):
                        f'{plan_raw}',
         },
     ])
-    return response['message']['content']
+    parsed = parse_introduction(response.message.content)
+    return parsed
+
+def gen_section(fiche_raw: str, plan_raw: str, structure_raw: list, chapitre_num: int, section_num: int):
+    response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
+        {
+            'role': 'user',
+            'content': 'Tu es un expert en rédaction de livres non-fiction en langue française.'
+                       'À partir de la fiche de cadrage, du plan détaillé et de la fiche de structure du chapitre fournis, rédige UNIQUEMENT le contenu de la section demandée, sans introduction ni commentaire.'
+                       ''
+                       'Contraintes de rédaction :'
+                       '- Longueur cible : 50 à 100 mots'
+                       '- Si <total_mots_chapitre> de la fiche de structure est inférieur à 50, développer chaque section pour atteindre 50 mots minimum en approfondissant les explications et les nuances — sans ajouter de nouvelles sections'
+                       '- La contrainte de longueur du prompt prévaut toujours sur <total_mots_chapitre>'
+                       '- Respecte strictement les sections définies dans <chapitre_structure>'
+                       '- Chaque section suit l\'ordre : <titre_section>, <objectif>, <concept_cle>'
+                       '- Ne pas introduire de sections absentes de <chapitre_structure>'
+                       ''
+                       'Règles de style :'
+                       '- Rédiger exclusivement en français'
+                       '- Interdire tout anglicisme, même courant ou technique (ex : "time-out" →  "pause", "time-blocking" → "découpage du temps en blocs", "feedback" → "retour immédiat") — toujours chercher l\'équivalent français avant d\'utiliser un terme étranger'
+                       '- Ton ancré dans les contraintes définies dans <contraintes_specifiques>'
+                       '- Pas de formulations marketing vagues'
+                       '- Pas de questions rhétoriques en ouverture de section'
+                       '- Chaque paragraphe apporte une information concrète et spécifique'
+                       '- Ne pas créer de scénario, mise en situation ou exemple narratif en ouverture de chapitre — commencer directement par le contenu de la première section'
+                       '- Ne jamais utiliser de mise en forme Markdown (gras, italique, titres, listes à puces, tirets) — rédiger en prose continue uniquement'
+                       ''
+                       'Interdit :'
+                       '- Écrire hors du périmètre défini dans <hors_perimetre>'
+                       '- Anticiper le contenu des chapitres suivants au-delà d\'une phrase de transition'
+                       '- Toute référence à la sexualité, l\'intimité physique ou le désir'
+                       '- Répéter le contenu d\'un chapitre précédent au-delà d\'une phrase de rappel'
+                       '- Tout anglicisme ou terme étranger sans équivalent français explicite'
+                       '- Aucun exemple narratif, scénario, mise en situation ou cas concret nulle part dans le chapitre — ni en ouverture, ni dans le corps du texte, ni en clôture de section'
+                       '- Ne pas introduire l\'exemple fil rouge — il sera ajouté ultérieurement'
+                       '- Ne pas inventer de personnage, situation fictive ou cas anonymisé en remplacement, même à titre illustratif'
+                       '- Les concepts sont expliqués uniquement par des formulations analytiques, des mécanismes décrits et des données factuelles — jamais par des histoires'
+                       '- Ne pas ajouter de checklist, résumé, points clés, exercice ou tout élément récapitulatif en fin de chapitre'
+                       '- Le chapitre se termine à la dernière phrase de la dernière section, sans aucun ajout'
+                       ''
+                       'FICHE DE CADRAGE :'
+                       f'{fiche_raw}'
+                       ''
+                       'PLAN DÉTAILLÉ :'
+                       f'{plan_raw}'
+                       ''
+                       'FICHE DE STRUCTURE DU CHAPITRE :'
+                       f'{structure_raw}'
+                       ''
+                       f'CHAPITRE À RÉDIGER : Chapitre {chapitre_num}'
+                       f'SECTION À RÉDIGER : Section {section_num}',
+        },
+    ])
+    print(response['message']['content'])
+
+def gen_livre(fiche_raw: str, plan_raw: str, structure_raw: list):
+    for chap in structure_raw:
+        print(f"Chapitre : {chap['numero']} — {chap['titre']}")
+        for sec in chap['sections']:
+            gen_section(fiche_raw, plan_raw, structure_raw, chap['numero'], sec['numero'])
 
 def main():
   fiche = fiche_cadrage()
@@ -227,7 +287,9 @@ def main():
       print(f"  Chapitre {chap['numero']} — {chap['titre']} ({chap['total_mots_chapitre']} mots, {len(chap['sections'])} sections)")
 
   intro = gen_intro(fiche["_raw"], plan["_raw"])
-  print(intro)
+  print(intro["intro"])
+
+  gen_livre(fiche["_raw"], plan["_raw"], structure)
 
 
 if __name__ == "__main__":  main()

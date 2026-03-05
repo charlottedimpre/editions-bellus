@@ -8,6 +8,12 @@ et des balises répétées (sections, chapitres).
 import re
 from typing import Optional
 
+def _collapse_newlines(s: Optional[str]) -> Optional[str]:
+    """Remplace les sauts de ligne par des espaces et supprime les espaces multiples."""
+    if s is None:
+        return None
+    return re.sub(r"\s+", " ", s).strip()
+
 
 def extract_tag(text: str, tag_name: str) -> Optional[str]:
     """
@@ -184,4 +190,13 @@ def parse_structure_chapitres(text: str) -> list[dict]:
         })
 
     return chapitres
+
+
+def parse_introduction(text: str) -> dict:
+    """Parse la réponse de l'étape 4 (rédaction de l'introduction)."""
+    intro = extract_tag(text, "introduction") or text
+    return {
+        "intro": _collapse_newlines(intro),
+        "_raw": text,
+    }
 
