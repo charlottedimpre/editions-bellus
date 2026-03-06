@@ -1,0 +1,61 @@
+[
+  {
+    "numero": "1",
+    "titre": "La caféine dans le corps humain",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "L'adénosine, ce signal de fatigue que la caféine détourne",
+        "objectif": "Le lecteur comprend le mécanisme biologique fondamental de la caféine",
+        "concept_cle": "Blocage des récepteurs à adénosine par la caféine",
+        "exemple": "Alex ne comprend pas pourquoi son cinquième café ne fait plus effet",
+        "limite": "Ne traite pas de la tolérance (chapitre 4)",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Du premier café au pic plasmatique : le trajet de la molécule",
+        "objectif": "Le lecteur connaît la cinétique d'absorption et le délai d'action de la caféine",
+        "concept_cle": "Absorption gastro-intestinale et pic plasmatique à 45 minutes",
+        "exemple": "Alex boit son café 5 minutes avant une réunion et ne ressent rien",
+        "limite": "Ne traite pas des variations génétiques (section 3)",
+        "mots_cible": "400-500"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Métaboliseurs rapides, métaboliseurs lents : la loterie génétique",
+        "objectif": "Le lecteur identifie son profil métabolique probable",
+        "concept_cle": "Polymorphisme du gène CYP1A2 et demi-vie variable",
+        "exemple": "Alex découvre que sa sensibilité a une composante génétique",
+        "limite": "Ne traite pas des tests génétiques commerciaux (hors périmètre)",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "1300-1800"
+  },
+  {
+    "numero": "2",
+    "titre": "Les sources de caféine au quotidien",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Le café n'a pas le monopole : cartographie des sources cachées",
+        "objectif": "Le lecteur identifie toutes les sources de caféine dans son alimentation",
+        "concept_cle": "Teneur en caféine variable selon la source et la préparation",
+        "exemple": "Alex réalise que son thé vert de l'après-midi contient aussi de la caféine",
+        "limite": "Ne traite pas des effets (chapitre 3)",
+        "mots_cible": "500-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Espresso, filtre, instantané : décoder les étiquettes",
+        "objectif": "Le lecteur sait comparer les dosages réels entre types de café",
+        "concept_cle": "Un espresso contient moins de caféine qu'un café filtre de 250 ml",
+        "exemple": "Alex pensait que l'espresso était le plus fort — il avait tort",
+        "limite": "Ne traite pas des recettes de préparation (hors périmètre)",
+        "mots_cible": "400-500"
+      }
+    ],
+    "total_mots_chapitre": "900-1100"
+  }
+]

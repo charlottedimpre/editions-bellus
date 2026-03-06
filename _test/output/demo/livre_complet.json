@@ -1,0 +1,132 @@
+{
+  "fiche_cadrage": {
+    "sujet": "Optimiser sa consommation de caféine : mécanismes, bénéfices et risques pour une performance durable",
+    "sommaire": [
+      "La caféine dans le corps humain",
+      "Les sources de caféine au quotidien",
+      "Performance cognitive et physique",
+      "Les effets indésirables et la dépendance",
+      "Chronobiologie et timing optimal",
+      "Populations sensibles et contre-indications",
+      "Stratégies de réduction progressive",
+      "Alternatives et synergies nutritionnelles"
+    ],
+    "hors_perimetre": [
+      "Les protocoles de sevrage médicalisé — rediriger vers un professionnel de santé pour les cas de dépendance sévère",
+      "Les dosages thérapeutiques en milieu hospitalier — exclure les applications cliniques spécialisées",
+      "Les innovations récentes non validées scientifiquement — limiter aux données consolidées"
+    ],
+    "contraintes_specifiques": [
+      "Le ton doit rester pédagogique et rigoureux",
+      "Mention des risques pour chaque bénéfice présenté",
+      "Préciser que le livre ne remplace pas un avis médical"
+    ],
+    "cible_principale": "Un professionnel ou un étudiant cherchant à optimiser sa vigilance et sa productivité sans compromettre sa santé",
+    "niveau": "Avancé — suppose une familiarité avec les principes de base de la nutrition et du métabolisme",
+    "objectif_lecteur": "À la fin du livre, le lecteur saura ajuster sa consommation de caféine en fonction de ses objectifs, de son chronotype et de sa tolérance individuelle",
+    "nbre_chapitres": 8
+  },
+  "plan_detaille": {
+    "introduction": {
+      "contexte": "La caféine est la substance psychoactive la plus consommée au monde, présente dans le café, le thé et de nombreuses boissons industrielles.",
+      "importance": "Face à l'augmentation des exigences cognitives dans le monde professionnel, comprendre les mécanismes de la caféine devient un enjeu de santé publique.",
+      "adresse_a": "Ce livre s'adresse aux professionnels et étudiants souhaitant optimiser leur consommation de caféine de manière éclairée.",
+      "organisation": "L'ouvrage est organisé en huit chapitres progressifs, des mécanismes biologiques aux stratégies d'optimisation.",
+      "promesse": "Le lecteur disposera d'une grille de lecture scientifique pour adapter sa consommation à son profil."
+    },
+    "chapitres": [
+      {
+        "numero": 1,
+        "titre": "La caféine dans le corps humain",
+        "traite": "Les mécanismes d'absorption, de métabolisation hépatique et d'action sur les récepteurs à adénosine.",
+        "ne_traite_pas": "Les détails pharmacologiques de niveau doctoral ou les interactions médicamenteuses complexes.",
+        "pourquoi_distinct": "Ce chapitre pose le socle biologique sans lequel les chapitres suivants ne sont pas compréhensibles."
+      },
+      {
+        "numero": 2,
+        "titre": "Les sources de caféine au quotidien",
+        "traite": "La teneur en caféine des principales boissons et aliments, les variabilités selon la préparation.",
+        "ne_traite_pas": "Les recettes de préparation ni les aspects culturels ou historiques du café.",
+        "pourquoi_distinct": "Ce chapitre cartographie les apports réels, là où le chapitre 1 explique le mécanisme."
+      },
+      {
+        "numero": 3,
+        "titre": "Performance cognitive et physique",
+        "traite": "Les effets mesurés de la caféine sur la vigilance, la mémoire, le temps de réaction et l'endurance.",
+        "ne_traite_pas": "Les protocoles de dopage sportif ou les usages en compétition réglementée.",
+        "pourquoi_distinct": "Ce chapitre traite exclusivement des bénéfices, avant d'aborder les risques au chapitre 4."
+      }
+    ],
+    "conclusion": {
+      "synthese": "Le parcours va des mécanismes biologiques aux stratégies concrètes d'optimisation.",
+      "logique_ensemble": "Le livre construit une compréhension progressive : comprendre, cartographier, optimiser, ajuster.",
+      "prochaines_etapes": "Le lecteur est invité à tenir un journal de consommation pendant 4 semaines pour affiner son profil."
+    },
+    "exemple_fil_rouge": {
+      "personnage": "Alex, 34 ans, développeur logiciel, consomme 5 à 6 cafés par jour depuis 10 ans.",
+      "situation_depart": "Alex souffre d'insomnies chroniques et de baisses de concentration en fin de matinée malgré sa consommation élevée.",
+      "evolution": "Au fil des chapitres, Alex découvre sa tolérance, ajuste ses horaires de consommation et réduit progressivement à 3 cafés ciblés."
+    }
+  },
+  "structure_chapitres": [
+    {
+      "numero": "1",
+      "titre": "La caféine dans le corps humain",
+      "sections": [
+        {
+          "numero": "1",
+          "titre_section": "L'adénosine, ce signal de fatigue que la caféine détourne",
+          "objectif": "Le lecteur comprend le mécanisme biologique fondamental de la caféine",
+          "concept_cle": "Blocage des récepteurs à adénosine par la caféine",
+          "exemple": "Alex ne comprend pas pourquoi son cinquième café ne fait plus effet",
+          "limite": "Ne traite pas de la tolérance (chapitre 4)",
+          "mots_cible": "400-600"
+        },
+        {
+          "numero": "2",
+          "titre_section": "Du premier café au pic plasmatique : le trajet de la molécule",
+          "objectif": "Le lecteur connaît la cinétique d'absorption et le délai d'action de la caféine",
+          "concept_cle": "Absorption gastro-intestinale et pic plasmatique à 45 minutes",
+          "exemple": "Alex boit son café 5 minutes avant une réunion et ne ressent rien",
+          "limite": "Ne traite pas des variations génétiques (section 3)",
+          "mots_cible": "400-500"
+        },
+        {
+          "numero": "3",
+          "titre_section": "Métaboliseurs rapides, métaboliseurs lents : la loterie génétique",
+          "objectif": "Le lecteur identifie son profil métabolique probable",
+          "concept_cle": "Polymorphisme du gène CYP1A2 et demi-vie variable",
+          "exemple": "Alex découvre que sa sensibilité a une composante génétique",
+          "limite": "Ne traite pas des tests génétiques commerciaux (hors périmètre)",
+          "mots_cible": "500-700"
+        }
+      ],
+      "total_mots_chapitre": "1300-1800"
+    },
+    {
+      "numero": "2",
+      "titre": "Les sources de caféine au quotidien",
+      "sections": [
+        {
+          "numero": "1",
+          "titre_section": "Le café n'a pas le monopole : cartographie des sources cachées",
+          "objectif": "Le lecteur identifie toutes les sources de caféine dans son alimentation",
+          "concept_cle": "Teneur en caféine variable selon la source et la préparation",
+          "exemple": "Alex réalise que son thé vert de l'après-midi contient aussi de la caféine",
+          "limite": "Ne traite pas des effets (chapitre 3)",
+          "mots_cible": "500-600"
+        },
+        {
+          "numero": "2",
+          "titre_section": "Espresso, filtre, instantané : décoder les étiquettes",
+          "objectif": "Le lecteur sait comparer les dosages réels entre types de café",
+          "concept_cle": "Un espresso contient moins de caféine qu'un café filtre de 250 ml",
+          "exemple": "Alex pensait que l'espresso était le plus fort — il avait tort",
+          "limite": "Ne traite pas des recettes de préparation (hors périmètre)",
+          "mots_cible": "400-500"
+        }
+      ],
+      "total_mots_chapitre": "900-1100"
+    }
+  ]
+}

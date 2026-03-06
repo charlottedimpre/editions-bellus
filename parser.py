@@ -1,12 +1,8 @@
-"""
-Utilitaires de parsing des réponses LLM balisées en pseudo-XML.
-
-Approche : regex pour les balises simples, avec gestion des attributs
-et des balises répétées (sections, chapitres).
-"""
-
+import json
 import re
-from typing import Optional
+from pathlib import Path
+from typing import Optional, Union
+
 
 def _collapse_newlines(s: Optional[str]) -> Optional[str]:
     """Remplace les sauts de ligne par des espaces et supprime les espaces multiples."""
@@ -57,6 +53,7 @@ def extract_tag_with_attrs(text: str, tag_name: str) -> list[dict]:
         attrs = dict(re.findall(r'(\w+)="([^"]*)"', attrs_str))
         results.append({"attrs": attrs, "content": content})
     return results
+
 
 
 # ---------------------------------------------------------------------------
@@ -199,4 +196,65 @@ def parse_introduction(text: str) -> dict:
         "intro": _collapse_newlines(intro),
         "_raw": text,
     }
+
+
+# ---------------------------------------------------------------------------
+# Export JSON
+# ---------------------------------------------------------------------------
+
+def to_json(data: Union[dict, list], indent: int = 2) -> str:
+    """
+    Sérialise un résultat parsé (dict ou list) en chaîne JSON.
+
+    >>> to_json({"sujet": "Test"})
+    '{\\n  "sujet": "Test"\\n}'
+    """
+    return json.dumps(data, ensure_ascii=False, indent=indent)
+
+
+def to_json_file(data: Union[dict, list], path: Union[str, Path], indent: int = 2) -> Path:
+    """
+    Écrit un résultat parsé dans un fichier JSON.
+    Crée les dossiers parents si nécessaire.
+    Retourne le Path du fichier créé.
+
+    >>> import tempfile, os
+    >>> p = to_json_file({"sujet": "Test"}, os.path.join(tempfile.gettempdir(), "test.json"))
+    >>> p.exists()
+    True
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=indent), encoding="utf-8")
+    return path
+
+
+# ---------------------------------------------------------------------------
+# Extraction de blocs XML bruts
+# ---------------------------------------------------------------------------
+
+def extract_xml_block(text: str, tag_name: str) -> Optional[str]:
+    """
+    Extrait un bloc XML complet (balise ouvrante + contenu + balise fermante)
+    sans le parser. Retourne None si la balise n'est pas trouvée.
+
+    >>> extract_xml_block("<root><sujet>Mon sujet</sujet></root>", "sujet")
+    '<sujet>Mon sujet</sujet>'
+    """
+    pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
+    match = re.search(pattern, text, re.DOTALL)
+    return match.group(1).strip() if match else None
+
+
+def extract_all_xml_blocks(text: str, tag_name: str) -> list[str]:
+    """
+    Extrait tous les blocs XML complets pour une balise donnée,
+    avec balises incluses.
+
+    >>> extract_all_xml_blocks("<a>1</a><a>2</a>", "a")
+    ['<a>1</a>', '<a>2</a>']
+    """
+    pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
+    return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]
+
 

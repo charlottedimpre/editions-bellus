@@ -1,10 +1,18 @@
+import os
+from datetime import datetime
+
 from ollama import chat
 from ollama import ChatResponse
 from parser import parse_fiche_cadrage, parse_plan_detaille, parse_structure_chapitres, parse_introduction
 
+OUTPUT_DIR = "output"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+filepath = os.path.join(OUTPUT_DIR, f"livre_{timestamp}.txt")
+
 
 def fiche_cadrage():
-  sujet = input("Enter your value: ")
+  sujet = input("Quel sujet voulez vous écrire: ")
   print(sujet)
 
   response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
@@ -265,20 +273,83 @@ def gen_section(fiche_raw: str, plan_raw: str, structure_raw: list, chapitre_num
                        f'SECTION À RÉDIGER : Section {section_num}',
         },
     ])
-    print(response['message']['content'])
+    content = response['message']['content']
+    print(content)
+    return content
+
+def gen_resume(structure_raw: list):
+    response: ChatResponse = chat(model='gemma3', messages=[
+        {
+            'role': 'user',
+            'content': 'Tu es un assistant d\'édition. Analyse le chapitre ci-dessous et génère UNIQUEMENT une fiche structurée, sans introduction ni commentaire.'
+                       'Respecte EXACTEMENT ce format, sans modifier les balises ni l\'ordre :'
+                       ''
+                       '<fiche>'
+                       '<chapitre_numero>[Numéro uniquement, ex: 3]</chapitre_numero>'
+                       '<chapitre_titre>[Titre exact du chapitre]</chapitre_titre>'
+                       '<these_centrale>[1 seule phrase, la thèse principale défendue]</these_centrale>'
+                       '<arguments_cles>'
+                       '- [argument 1]'
+                       '- [argument 2]'
+                       '- [3 à 5 arguments maximum]'
+                       '</arguments_cles>'
+                       '<concepts_introduits>'
+                       '- [concept + définition en 10 mots max]'
+                       '</concepts_introduits>'
+                       '<liens_chapitres>[Références aux chapitres précédents si mentionnés, sinon : "Aucun"]</liens_chapitres>'
+                       '<a_ne_pas_repeter>'
+                       '- [idée, stat, formulation à ne plus réutiliser]'
+                       '</a_ne_pas_repeter>'
+                       '<ton_angle>[1 phrase : style adopté, ex: "Analytique, appuyé sur des données chiffrées"]</ton_angle>'
+                       '</fiche>'
+                       ''
+                       'Règles strictes :'
+                       '- Ne jamais écrire hors des balises'
+                       '- Ne jamais paraphraser une balise autrement'
+                       '- Si une information est absente du texte, écrire "Non défini"'
+                       '- Pas de synonymes pour les noms de balises'
+                       ''
+                       'CHAPITRE À ANALYSER :'
+                       'Chapitre [C]'
+                       '[colle ton texte ici]',
+        },
+    ])
+    content = response['message']['content']
+    print(content)
+    return content
+
 
 def gen_livre(fiche_raw: str, plan_raw: str, structure_raw: list):
+    livre_complet = []
     for chap in structure_raw:
         print(f"Chapitre : {chap['numero']} — {chap['titre']}")
+        livre_complet.append(f"\n\n{'='*60}\nChapitre {chap['numero']} : {chap['titre']}\n{'='*60}\n")
+        chapitrage = f"\n\n{'='*60}\nChapitre {chap['numero']} : {chap['titre']}\n{'='*60}\n"
+        with open(filepath, "a", encoding="utf-8") as f:
+            f.write(chapitrage + "\n")
         for sec in chap['sections']:
-            gen_section(fiche_raw, plan_raw, structure_raw, chap['numero'], sec['numero'])
+            contenu = gen_section(fiche_raw, plan_raw, structure_raw, chap['numero'], sec['numero'])
+            livre_complet.append(contenu)
+            with open(filepath, "a", encoding="utf-8") as f:
+                f.write(contenu + "\n")
+    return "\n\n".join(livre_complet)
+
 
 def main():
   fiche = fiche_cadrage()
   print(f"Fiche de cadrage générée : {fiche['nbre_chapitres']} chapitres")
+  with open(filepath, "w", encoding="utf-8") as f:
+      f.write("FICHE DE CADRAGE\n")
+      f.write("=" * 60 + "\n")
+      f.write(fiche["_raw"] + "\n\n")
 
   plan = plan_detaille(fiche["_raw"])
   print(f"Plan détaillé généré : {len(plan['chapitres'])} chapitres")
+  with open(filepath, "a", encoding="utf-8") as f:
+      f.write("PLAN DÉTAILLÉ\n")
+      f.write("=" * 60 + "\n")
+      f.write(plan["_raw"] + "\n\n")
+
 
   structure = structure_chapitre(fiche["_raw"], plan["_raw"])
   print(f"Structure générée : {len(structure)} chapitres")
@@ -287,9 +358,15 @@ def main():
       print(f"  Chapitre {chap['numero']} — {chap['titre']} ({chap['total_mots_chapitre']} mots, {len(chap['sections'])} sections)")
 
   intro = gen_intro(fiche["_raw"], plan["_raw"])
-  print(intro["intro"])
+  print("Introduction générée")
+  with open(filepath, "a", encoding="utf-8") as f:
+      f.write("INTRODUCTION\n")
+      f.write("=" * 60 + "\n")
+      f.write(intro["_raw"] + "\n\n")
+
 
   gen_livre(fiche["_raw"], plan["_raw"], structure)
+  print("Livre généré")
 
 
 if __name__ == "__main__":  main()

@@ -1,0 +1,42 @@
+{
+  "introduction": {
+    "contexte": "La caféine est la substance psychoactive la plus consommée au monde, présente dans le café, le thé et de nombreuses boissons industrielles.",
+    "importance": "Face à l'augmentation des exigences cognitives dans le monde professionnel, comprendre les mécanismes de la caféine devient un enjeu de santé publique.",
+    "adresse_a": "Ce livre s'adresse aux professionnels et étudiants souhaitant optimiser leur consommation de caféine de manière éclairée.",
+    "organisation": "L'ouvrage est organisé en huit chapitres progressifs, des mécanismes biologiques aux stratégies d'optimisation.",
+    "promesse": "Le lecteur disposera d'une grille de lecture scientifique pour adapter sa consommation à son profil."
+  },
+  "chapitres": [
+    {
+      "numero": 1,
+      "titre": "La caféine dans le corps humain",
+      "traite": "Les mécanismes d'absorption, de métabolisation hépatique et d'action sur les récepteurs à adénosine.",
+      "ne_traite_pas": "Les détails pharmacologiques de niveau doctoral ou les interactions médicamenteuses complexes.",
+      "pourquoi_distinct": "Ce chapitre pose le socle biologique sans lequel les chapitres suivants ne sont pas compréhensibles."
+    },
+    {
+      "numero": 2,
+      "titre": "Les sources de caféine au quotidien",
+      "traite": "La teneur en caféine des principales boissons et aliments, les variabilités selon la préparation.",
+      "ne_traite_pas": "Les recettes de préparation ni les aspects culturels ou historiques du café.",
+      "pourquoi_distinct": "Ce chapitre cartographie les apports réels, là où le chapitre 1 explique le mécanisme."
+    },
+    {
+      "numero": 3,
+      "titre": "Performance cognitive et physique",
+      "traite": "Les effets mesurés de la caféine sur la vigilance, la mémoire, le temps de réaction et l'endurance.",
+      "ne_traite_pas": "Les protocoles de dopage sportif ou les usages en compétition réglementée.",
+      "pourquoi_distinct": "Ce chapitre traite exclusivement des bénéfices, avant d'aborder les risques au chapitre 4."
+    }
+  ],
+  "conclusion": {
+    "synthese": "Le parcours va des mécanismes biologiques aux stratégies concrètes d'optimisation.",
+    "logique_ensemble": "Le livre construit une compréhension progressive : comprendre, cartographier, optimiser, ajuster.",
+    "prochaines_etapes": "Le lecteur est invité à tenir un journal de consommation pendant 4 semaines pour affiner son profil."
+  },
+  "exemple_fil_rouge": {
+    "personnage": "Alex, 34 ans, développeur logiciel, consomme 5 à 6 cafés par jour depuis 10 ans.",
+    "situation_depart": "Alex souffre d'insomnies chroniques et de baisses de concentration en fin de matinée malgré sa consommation élevée.",
+    "evolution": "Au fil des chapitres, Alex découvre sa tolérance, ajuste ses horaires de consommation et réduit progressivement à 3 cafés ciblés."
+  }
+}

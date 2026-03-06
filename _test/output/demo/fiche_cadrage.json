@@ -1,0 +1,27 @@
+{
+  "sujet": "Optimiser sa consommation de caféine : mécanismes, bénéfices et risques pour une performance durable",
+  "sommaire": [
+    "La caféine dans le corps humain",
+    "Les sources de caféine au quotidien",
+    "Performance cognitive et physique",
+    "Les effets indésirables et la dépendance",
+    "Chronobiologie et timing optimal",
+    "Populations sensibles et contre-indications",
+    "Stratégies de réduction progressive",
+    "Alternatives et synergies nutritionnelles"
+  ],
+  "hors_perimetre": [
+    "Les protocoles de sevrage médicalisé — rediriger vers un professionnel de santé pour les cas de dépendance sévère",
+    "Les dosages thérapeutiques en milieu hospitalier — exclure les applications cliniques spécialisées",
+    "Les innovations récentes non validées scientifiquement — limiter aux données consolidées"
+  ],
+  "contraintes_specifiques": [
+    "Le ton doit rester pédagogique et rigoureux",
+    "Mention des risques pour chaque bénéfice présenté",
+    "Préciser que le livre ne remplace pas un avis médical"
+  ],
+  "cible_principale": "Un professionnel ou un étudiant cherchant à optimiser sa vigilance et sa productivité sans compromettre sa santé",
+  "niveau": "Avancé — suppose une familiarité avec les principes de base de la nutrition et du métabolisme",
+  "objectif_lecteur": "À la fin du livre, le lecteur saura ajuster sa consommation de caféine en fonction de ses objectifs, de son chronotype et de sa tolérance individuelle",
+  "nbre_chapitres": 8
+}
