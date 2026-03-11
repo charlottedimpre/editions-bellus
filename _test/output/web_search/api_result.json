@@ -1,0 +1,321 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 90,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "mécanismes d'absorption de la caféine métabolisme hépatique",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-03-11T09:22:09.037Z",
+    "processed_at": "2026-03-11T09:22:10.735Z",
+    "total_time_taken": 1.7,
+    "engine_url": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 11600
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 1,
+      "title": "Métabolisme et mécanisme d'action de la caféine",
+      "link": "https://www.em-consulte.com/article/938509/metabolisme-et-mecanisme-d-action-de-la-cafeine",
+      "domain": "www.em-consulte.com",
+      "displayed_link": "https://www.em-consulte.com › article › metabolisme-et-...",
+      "snippet": "Plusieurs mécanismes ont été proposés : l'antagonisme des récepteurs de l'adénosine, l'inhibition de l'activité des phosphodiestérases et la mobilisation du ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : absorption ‎| Afficher les résultats avec : absorption"
+          ]
+        }
+      }
+    },
+    {
+      "position": 2,
+      "block_position": 2,
+      "title": "Caféine",
+      "link": "https://documents.lab-cerba.com/files/FR/0137F.pdf",
+      "domain": "documents.lab-cerba.com",
+      "displayed_link": "https://documents.lab-cerba.com › files",
+      "snippet": "Chez l'adulte, la quasi-totalité de la caféine est déméthylée ou oxydée par le système du cytochrome P450 hépatique, puis éliminée dans les urines, ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : mécanismes ‎absorption"
+          ]
+        }
+      }
+    },
+    {
+      "position": 3,
+      "block_position": 3,
+      "title": "Caféine",
+      "link": "https://fr.wikipedia.org/wiki/Caf%C3%A9ine",
+      "domain": "fr.wikipedia.org",
+      "displayed_link": "https://fr.wikipedia.org › wiki › Caféine",
+      "snippet": "Molécule de caféine. · La caféine est métabolisée dans le foie en trois métabolites primaires : paraxanthine (84 %), théobromine (12 %) et théophylline (4 %).",
+      "prerender": false
+    },
+    {
+      "position": 4,
+      "block_position": 4,
+      "title": "Mécanismes de l'effet diurétique de la caféine",
+      "link": "https://www.medecinesciences.org/en/articles/medsci/full_html/2016/06/medsci20163205p485/medsci20163205p485.html",
+      "domain": "www.medecinesciences.org",
+      "displayed_link": "https://www.medecinesciences.org › full_html › 2016/06",
+      "snippet": "de B Marx · 2016 · Cité 13 fois — Au niveau du foie, la caféine s'opposerait au réflexe hépatorénal induit par l'adénosine intra-hépatique. Ces effets synergiques résultent en une augmentation ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "price": 2016,
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "de B Marx",
+            "2016",
+            "Cité 13 fois —"
+          ]
+        }
+      },
+      "prefix": "de B Marx · 2016 · Cité 13 fois"
+    },
+    {
+      "position": 5,
+      "block_position": 5,
+      "title": "PHARMACOLOGIE DE LA CAFEINE",
+      "link": "https://www.psychaanalyse.com/pdf/PHARMACOLOGIE%20DE%20LA%20CAFEINE%20ARTICLE%20DE%20WIKIPEDIA%20(12%20Pages%20-%20516%20Ko).pdf",
+      "domain": "www.psychaanalyse.com",
+      "displayed_link": "https://www.psychaanalyse.com › pdf",
+      "snippet": "La caféine est métabolisée dans le foie en trois métabolites primaires : paraxanthine (84 %), théobromine (12 %) et théophylline(4 %). La caféine du café ou d' ...",
+      "prerender": false
+    },
+    {
+      "position": 6,
+      "block_position": 6,
+      "title": "La caféine, données de base et facteurs capables de les ...",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0765159789800036",
+      "domain": "www.sciencedirect.com",
+      "displayed_link": "https://www.sciencedirect.com › pii",
+      "snippet": "de M Carbó · 1989 · Cité 4 fois — Le métabolisme et l'excrétion urinaire de la caféine subit des variations qualitatives et quantitatives sous l'influence de nombreux facteurs. Un exemple ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "price": 1989,
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "de M Carbó",
+            "1989",
+            "Cité 4 fois —"
+          ]
+        }
+      },
+      "prefix": "de M Carbó · 1989 · Cité 4 fois"
+    },
+    {
+      "position": 7,
+      "block_position": 7,
+      "title": "Les effets du café sur la santé - Dr. Elisabeth GRIMAUD, PhD",
+      "link": "https://elisabeth-grimaud.com/le_cafe/",
+      "domain": "elisabeth-grimaud.com",
+      "displayed_link": "https://elisabeth-grimaud.com › le_cafe",
+      "snippet": "28 sept. 2022 — Le principe le plus actif dans le café est la caféine. Son absorption a lieu dans l'intestin et aussi un peu dans l'estomac. Ajoutez un peu de ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : métabolisme ‎| Afficher les résultats avec : métabolisme"
+          ]
+        }
+      },
+      "date": "28 sept. 2022",
+      "date_utc": "2022-09-28T00:00:00.000Z"
+    },
+    {
+      "position": 8,
+      "block_position": 8,
+      "title": "Café : habitude ou addiction",
+      "link": "https://www.maad-digital.fr/articles/cafe-habitude-ou-addiction/",
+      "domain": "www.maad-digital.fr",
+      "displayed_link": "https://www.maad-digital.fr › articles › cafe-habitude-ou-...",
+      "snippet": "La caféine est métabolisée par le foie, essentiellement en paraxanthine, et en théobromine et théophylline dans une faible proportion. La paraxanthine possède ...",
+      "prerender": false
+    },
+    {
+      "position": 9,
+      "block_position": 9,
+      "title": "Café, caféisme et santé - DUMAS",
+      "link": "https://dumas.ccsd.cnrs.fr/dumas-03981888v1/file/1987GRE17080_charmet_dominique_SO_dif.pdf",
+      "domain": "dumas.ccsd.cnrs.fr",
+      "displayed_link": "https://dumas.ccsd.cnrs.fr › file",
+      "snippet": "10 févr. 2023 — Le métabolisme de la caféine est essentiellement hépatique, sous la dépendance du cytochrome P448. Les voies du catabolis:me sont des ...",
+      "prerender": false,
+      "date": "10 févr. 2023",
+      "date_utc": "2023-02-10T00:00:00.000Z"
+    },
+    {
+      "position": 10,
+      "block_position": 10,
+      "title": "Café et foie",
+      "link": "https://www.ahfmc.fr/wp-content/uploads/2024/01/cafe-et-foie.pdf",
+      "domain": "www.ahfmc.fr",
+      "displayed_link": "https://www.ahfmc.fr › 2024/01 › cafe-et-foie",
+      "snippet": "La consommation de caféine paraît être un facteur i dé d d l di protecteur indépendant de cette maladie. La consommation de caféine/café semble être ié ...",
+      "prerender": false
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Caféine effets négatifs",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Caf%C3%A9ine+effets+n%C3%A9gatifs&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhEEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Caféine médicament",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Caf%C3%A9ine+m%C3%A9dicament&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhXEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Solubilité de la caféine dans leau",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Solubilit%C3%A9+de+la+caf%C3%A9ine+dans+leau&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhWEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Caféine formule chimique",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Caf%C3%A9ine+formule+chimique&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhVEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Cafeine molecule",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Cafeine+molecule&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhTEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Théine caféine molécule",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Th%C3%A9ine+caf%C3%A9ine+mol%C3%A9cule&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhREAE",
+      "block_position": 11
+    },
+    {
+      "query": "Caféine drogue",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Caf%C3%A9ine+drogue&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhPEAE",
+      "block_position": 11
+    },
+    {
+      "query": "Effet caféine temps",
+      "link": "https://www.google.fr/search?sca_esv=86e100241312b1c8&gl=fr&hl=fr&q=Effet+caf%C3%A9ine+temps&sa=X&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ1QJ6BAhKEAE",
+      "block_position": 11
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=10&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8NMDegQIPBAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=10&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=20&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=30&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=40&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=50&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=60&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=70&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=80&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=m%C3%A9canismes+d%27absorption+de+la+caf%C3%A9ine+m%C3%A9tabolisme+h%C3%A9patique&sca_esv=86e100241312b1c8&gl=fr&hl=fr&ei=QTSxaYTaItH-ptQP2aWpwA8&start=90&sa=N&sstk=Af77f_crJcH9U00uQ47MLinPHFQOF0uamdKbMnk23GoshtzQS2jp4qMmecFaSxZZEVSXhm8ILCFRJHiVF2EMISxdHdjPAWcmYKfepg&ved=2ahUKEwjE_vXcwpeTAxVRv4kEHdlSCvgQ8tMDegQIPBAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=585CC66616DB4440AD3D8B7426E8387B&q=m%C3%A9canismes%20d'absorption%20de%20la%20caf%C3%A9ine%20m%C3%A9tabolisme%20h%C3%A9patique&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

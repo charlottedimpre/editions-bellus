@@ -69,6 +69,7 @@ Règles strictes :
 - Contient au minimum 3 exclusions, chacune accompagnée de sa frontière permise
 - Chaque exclusion indique explicitement vers quoi rediriger le lecteur (professionnel spécialisé ou ressource externe)
 - Si le sujet a une dimension temporelle sensible, inclure une exclusion portant sur les évolutions récentes non couvertes
+- La balise <sujet> ne mentionne pas le niveau du lecteur — celui-ci est réservé exclusivement à la balise <niveau>
 
 — CIBLE ET NIVEAU —
 - La cible principale est UN seul profil, défini par une situation et un besoin — jamais par une tranche d\âge seule

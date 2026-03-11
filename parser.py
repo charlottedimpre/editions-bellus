@@ -5,7 +5,9 @@ from typing import Optional, Union
 
 
 def _collapse_newlines(s: Optional[str]) -> Optional[str]:
-    """Remplace les sauts de ligne par des espaces et supprime les espaces multiples."""
+    """
+    Remplace les sauts de ligne par des espaces et supprime les espaces multiples.
+    """
     if s is None:
         return None
     return re.sub(r"\s+", " ", s).strip()
@@ -61,7 +63,9 @@ def extract_tag_with_attrs(text: str, tag_name: str) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def parse_fiche_cadrage(text: str) -> dict:
-    """Parse la réponse de l'étape 1 (fiche de cadrage)."""
+    """
+    Parse la réponse de l'étape 1 (fiche de cadrage).
+    """
     fiche = extract_tag(text, "fiche_cadrage") or text
 
     # Extraire les chapitres du sommaire
@@ -90,7 +94,9 @@ def parse_fiche_cadrage(text: str) -> dict:
 
 
 def parse_plan_detaille(text: str) -> dict:
-    """Parse la réponse de l'étape 2 (plan détaillé)."""
+    """
+    Parse la réponse de l'étape 2 (plan détaillé).
+    """
     plan = extract_tag(text, "plan_detaille") or text
 
     # Introduction
@@ -145,7 +151,9 @@ def parse_plan_detaille(text: str) -> dict:
 
 
 def parse_structure_chapitres(text: str) -> list[dict]:
-    """Parse la réponse de l'étape 3 (fiches de structure des chapitres)."""
+    """
+    Parse la réponse de l'étape 3 (fiches de structure des chapitres).
+    """
     blocs = extract_tag_with_attrs(text, "chapitre_structure")
     chapitres = []
 
@@ -190,7 +198,9 @@ def parse_structure_chapitres(text: str) -> list[dict]:
 
 
 def parse_introduction(text: str) -> dict:
-    """Parse la réponse de l'étape 4 (rédaction de l'introduction)."""
+    """
+    Parse la réponse de l'étape 4 (rédaction de l'introduction).
+    """
     intro = extract_tag(text, "introduction") or text
     return {
         "intro": _collapse_newlines(intro),

@@ -1,0 +1,97 @@
+{
+  "risques": [
+    {
+      "contenu_du_risque": "Troubles du sommeil : retard d'endormissement, réduction du temps et de la qualité du sommeil, surtout si consommée en fin de journée.",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Effets cardiovasculaires : tachycardie, palpitations, élévation transitoire de la pression artérielle, particulièrement chez les personnes sensibles ou hypertendues.",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Anxiété et agitation : doses élevées (> 400 mg/jour) peuvent provoquer nervosité, tremblements, crises de panique chez les sujets prédisposés.",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Dépendance et sevrage : consommation régulière peut entraîner une tolérance et des symptômes de sevrage (maux de tête, fatigue, irritabilité) à l'arrêt.",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Interactions dangereuses : association avec l'alcool (masque l'ivresse, augmente les risques cardiaques) ou avec l'effort physique intense en milieu chaud (altère la thermorégulation).",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Populations vulnérables : femmes enceintes (risque de faible poids de naissance), enfants et adolescents (cerveau en développement), personnes atteintes de troubles psychiatriques, cardiaques ou hépatiques.",
+      "source_query": "mécanismes d'action de la caféine sur le cerveau et le corps"
+    },
+    {
+      "contenu_du_risque": "Effets secondaires physiologiques : à fortes doses (> 6 mg/kg), risques de tachycardie, palpitations, troubles gastro-intestinaux (nausées, diarrhées), tremblements et hypertension.",
+      "source_query": "études scientifiques bénéfices caféine performance cognitive et physique"
+    },
+    {
+      "contenu_du_risque": "Perturbation du sommeil : une consommation tardive peut altérer la qualité et la durée du sommeil, ce qui est contre-productif pour la récupération et la performance à long terme.",
+      "source_query": "études scientifiques bénéfices caféine performance cognitive et physique"
+    },
+    {
+      "contenu_du_risque": "Impact psychologique négatif : chez certains sujets sensibles, la caféine peut induire de l'anxiété, de la nervosité ou une agitation mentale qui nuit à la concentration et à la précision motrice.",
+      "source_query": "études scientifiques bénéfices caféine performance cognitive et physique"
+    },
+    {
+      "contenu_du_risque": "Dépendance et symptômes de sevrage : une consommation chronique élevée peut entraîner une dépendance physique, avec des maux de tête et une fatigue intense en cas d'arrêt brutal, bien que cela n'annule pas l'effet ergogénique aigu.",
+      "source_query": "études scientifiques bénéfices caféine performance cognitive et physique"
+    },
+    {
+      "contenu_du_risque": "Troubles cardiovasculaires sévères : Risque accru de tachycardie, d'arythmies (fibrillation auriculaire) et d'hypertension artérielle persistante, particulièrement chez les sujets sensibles ou lors de cumuls avec la privation de sommeil.",
+      "source_query": "risques santé consommation excessive caféine long terme"
+    },
+    {
+      "contenu_du_risque": "Détérioration de la santé osseuse : Perte accélérée de densité osseuse menant à l'ostéoporose et augmentant le risque de fractures, surtout chez les femmes ménopausées ayant un faible apport en calcium.",
+      "source_query": "risques santé consommation excessive caféine long terme"
+    },
+    {
+      "contenu_du_risque": "Troubles psychiques et anxiété : Exacerbation de l'anxiété générale, déclenchement d'attaques de panique, irritabilité chronique et perturbations de l'humeur dues à la stimulation constante du système nerveux sympathique.",
+      "source_query": "risques santé consommation excessive caféine long terme"
+    },
+    {
+      "contenu_du_risque": "Dépendance physiologique et sevrage invalidant : Installation d'une addiction rendant le fonctionnement quotidien difficile sans la substance, avec des symptômes de sevrage (migraines, fatigue cognitive) pouvant durer jusqu'à plusieurs semaines lors de l'arrêt.",
+      "source_query": "risques santé consommation excessive caféine long terme"
+    },
+    {
+      "contenu_du_risque": "Troubles digestifs chroniques : Aggravation du reflux gastro-œsophagien (RGO), gastrites et ulcères dus à la stimulation excessive de la sécrétion d'acide gastrique.",
+      "source_query": "risques santé consommation excessive caféine long terme"
+    },
+    {
+      "contenu_du_risque": "Désynchronisation circadienne : une consommation inadaptée au chronotype peut aggraver le décalage de l'horloge interne, entraînant fatigue chronique et troubles de l'humeur.",
+      "source_query": "meilleur moment pour consommer caféine selon chronotype"
+    },
+    {
+      "contenu_du_risque": "Insomnie et réduction du sommeil profond : la caféine consommée tardivement réduit la durée du sommeil réparateur, impactant la récupération physique et cognitive.",
+      "source_query": "meilleur moment pour consommer caféine selon chronotype"
+    },
+    {
+      "contenu_du_risque": "Dépendance et tolérance accrue : un usage systématique dès le réveil force le corps à produire plus de récepteurs à l'adénosine, nécessitant des doses plus fortes pour le même effet et créant un cycle de fatigue-dépendance.",
+      "source_query": "meilleur moment pour consommer caféine selon chronotype"
+    },
+    {
+      "contenu_du_risque": "Symptômes de sevrage lors d'un arrêt brutal : maux de tête, irritabilité, fatigue accrue, troubles de l'humeur",
+      "source_query": "alternatives naturelles à la caféine pour l'énergie durable"
+    },
+    {
+      "contenu_du_risque": "Surdosage de guarana ou de maté en raison de leur teneur en caféine naturelle, pouvant causer nervosité et troubles du sommeil",
+      "source_query": "alternatives naturelles à la caféine pour l'énergie durable"
+    },
+    {
+      "contenu_du_risque": "Interactions possibles entre certaines plantes adaptogènes et médicaments, nécessitant un avis professionnel en cas de traitement",
+      "source_query": "alternatives naturelles à la caféine pour l'énergie durable"
+    },
+    {
+      "contenu_du_risque": "Masquer une fatigue chronique sous-jacente sans traiter ses causes profondes (carences, stress prolongé, troubles du sommeil)",
+      "source_query": "alternatives naturelles à la caféine pour l'énergie durable"
+    },
+    {
+      "contenu_du_risque": "Perturbation des rythmes circadiens si consommation tardive de boissons contenant des stimulants naturels",
+      "source_query": "alternatives naturelles à la caféine pour l'énergie durable"
+    }
+  ],
+  "total": 23
+}
