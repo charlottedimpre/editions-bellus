@@ -5,14 +5,14 @@ from ollama import chat
 from ollama import ChatResponse
 from parser import parse_fiche_cadrage, to_json_file
 
-OUTPUT_DIR = "output/fiche_cadrage"
+OUTPUT_DIR = "./output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 
 def fiche_cadrage(sujet: str, niveau: str):
     print(sujet)
-    input_path = os.path.join("input", "fiche_cadrage", f"{niveau}.txt")
+    input_path = os.path.join("./input", f"{niveau}.txt")
 
     with open(input_path, "r", encoding="utf-8") as f:
         prompt_template = f.read()

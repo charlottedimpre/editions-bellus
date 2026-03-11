@@ -149,7 +149,6 @@ for cat_name, cat_data in categories.items():
 import requests
 import json
 
-from parser import to_json
 
 # set up the request parameters
 params = {
@@ -165,6 +164,19 @@ params = {
 # make the http GET request
 api_result = requests.get('https://api.valueserp.com/search', params)
 
-filepath = "output/web_search/api_result.json"
+results = api_result.json()
+
+filepath = "output/web_search/_raw_api_result.json"
 with open(filepath, "w", encoding="utf-8") as f:
-    f.write(to_json(api_result.json()))
+    json.dump(results["organic_results"], f, ensure_ascii=False, indent=2)
+
+clean_results = []
+for result in results["organic_results"]:
+    clean_results.append({
+        "title": result.get("title"),
+        "url": result.get("link"),
+        "snippet": result.get("snippet")
+    })
+
+with open("output/web_search/api_result.json", "w", encoding="utf-8") as f:
+    json.dump(clean_results, f, ensure_ascii=False, indent=2)
