@@ -23,7 +23,8 @@ def web_search(query, timestamp):
     results = api_result.json()
 
     clean_results = []
-    for result in results["organic_results"]:
+    max_results = 3 # Nombre maximum de résultats à prendre en compte
+    for result in results["organic_results"][:max_results]:
         clean_results.append({
             "title": result.get("title"),
             "url": result.get("link"),
@@ -33,7 +34,9 @@ def web_search(query, timestamp):
     filepath = os.path.join("output", f"api_result-{timestamp}.json")
     with open(filepath, "a", encoding="utf-8") as f:
         json.dump(clean_results, f, ensure_ascii=False, indent=2)
+    return json.dumps(clean_results, ensure_ascii=False, indent=2)
 
+'''
 def pertinent_web_search(query, timestamp):
     sujet_path = os.path.join("..", "fiche_cadrage", "output", "fiche_cadrage.json")
     with open(sujet_path, "r", encoding="utf-8") as f:
@@ -51,7 +54,7 @@ def pertinent_web_search(query, timestamp):
         }
     ])
     return response.message.content
-
+'''
 
 if __name__ == '__main__':
     sujet_path = os.path.join("output", "ws_search.json")
@@ -61,7 +64,7 @@ if __name__ == '__main__':
     all_results = []
     for sujet in sujets["idees"]:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        results = pertinent_web_search(sujet["contenu_de_l_idée"], timestamp)
+        results = web_search(sujet["contenu_de_l_idée"], timestamp)
         # results est une chaîne JSON renvoyée par le LLM, on la parse
         try:
             parsed = json.loads(results)

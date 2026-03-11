@@ -1,0 +1,29 @@
+{
+  "sujet": "Stratégies pratiques et compréhension relationnelle pour accompagner un proche adulte atteint de TDAH sans épuiser son propre équilibre",
+  "notions_indispensables": [
+    { "contenu": "Le TDAH est un trouble neurologique affectant les fonctions exécutives (planification, inhibition, mémoire de travail) et non un manque de volonté ou d'intelligence" },
+    { "contenu": "Chaque profil TDAH présente une variabilité individuelle majeure nécessitant des adaptations personnalisées sans généralisation" },
+    { "contenu": "L'hyperfocalisation et la dysrégulation émotionnelle font partie intégrante des symptômes adultes, souvent masqués par l'absence d'hyperactivité physique visible" },
+    { "contenu": "Les stratégies compensatoires externes (routines, rappels visuels, externalisation) sont indispensables pour structurer le quotidien" }
+  ],
+  "erreurs_frequentes": [
+    { "contenu": "Surprotéger le proche en compensant systématiquement ses tâches, ce qui étouffe son autonomie et crée une dépendance nuisible" },
+    { "contenu": "Minimiser les difficultés en les attribuant à de la négligence, de la paresse ou un manque d'intérêt pour la relation" },
+    { "contenu": "Confondre les symptômes (oublis, distraction, impulsivité) avec un manque d'amour ou d'engagement intentionnel" },
+    { "contenu": "Négliger ses propres limites émotionnelles et attendre un fonctionnement neurotypique sans adapter ses attentes" }
+  ],
+  "etapes_essentielles": [
+    { "contenu": "Structurer l'environnement physique et temporel avec des aides visuelles et des routines sans imposer un contrôle étouffant" },
+    { "contenu": "Pratiquer une communication directe, concrète et non violente en évitant les reproches répétitifs et les messages implicites" },
+    { "contenu": "Définir explicitement ses limites personnelles et préserver son énergie pour éviter la surcharge mentale" },
+    { "contenu": "Diviser les projets complexes en micro-tâches concrètes et anticiper les défis des projets à long terme" },
+    { "contenu": "Privilégier la collaboration et impliquer le proche dans la recherche de solutions plutôt qu'exercer un contrôle unilatéral" }
+  ],
+  "risque": [
+    { "contenu": "Épuisement relationnel et burnout de l'accompagnant par négligence de ses propres besoins et surcharge de la charge mentale" },
+    { "contenu": "Détérioration chronique de la relation par accumulation de tensions, malentendus et frustrations non résolues" },
+    { "contenu": "Perte progressive des capacités d'autonomie du proche TDAH par dépendance excessive à l'accompagnement compensatoire" },
+    { "contenu": "Isolement social de l'accompagnant qui renonce à ses propres besoins pour gérer la situation" },
+    { "contenu": "Substitution dangereuse au suivi médical et psychologique professionnel indispensable pour le proche" }
+  ]
+}
