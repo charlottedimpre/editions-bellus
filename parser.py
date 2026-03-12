@@ -208,6 +208,19 @@ def parse_introduction(text: str) -> dict:
     }
 
 
+def parse_section(text: str, chapitre: int, section: int) -> dict:
+    """
+    Parse la réponse de la rédaction d'une section.
+    Retourne un dict avec le numéro de chapitre, de section et le contenu.
+    """
+    contenu = extract_tag(text, "section") or text
+    return {
+        "chapitre": chapitre,
+        "section": section,
+        "contenu": _collapse_newlines(contenu.strip()),
+    }
+
+
 # ---------------------------------------------------------------------------
 # Export JSON
 # ---------------------------------------------------------------------------

@@ -1,0 +1,346 @@
+[
+  {
+    "numero": "1",
+    "titre": "Choisir son marché entre tension et saturation",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi les villes en tension ne sont pas toujours rentables",
+        "objectif": "Le lecteur identifie les indicateurs de tension locative (taux de vacance, demande excédentaire) et comprend leurs limites pour la rentabilité.",
+        "concept_cle": "Tension ≠ rentabilité : corrélation faible entre demande et loyers élevés.",
+        "exemple": "Marc compare Lille (taux de vacance 2%) et Bordeaux (5%) : les loyers parisiens ne compensent pas les charges.",
+        "limite": "N’aborde pas les stratégies de niche (ex : résidences étudiantes) traitées au chapitre 6.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment détecter les signaux de saturation avant l’effondrement des loyers",
+        "objectif": "Le lecteur utilise 3 indicateurs clés (prix/m² vs revenus locaux, offre neuve, rotation locative) pour anticiper la saturation.",
+        "concept_cle": "Saturation = déséquilibre offre/demande durable avec pression baissière sur les loyers.",
+        "exemple": "Marc analyse les permis de construire à Nantes : +30% de logements neufs en 2 ans, loyers stagnants.",
+        "limite": "Ne traite pas les outils de modélisation macroéconomique (hors périmètre).",
+        "mots_cible": "600-800"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels critères locaux ignorés par 80% des investisseurs",
+        "objectif": "Le lecteur intègre 5 critères sous-estimés (dynamique des emplois locaux, mixité sociale, réglementation municipale) dans son analyse.",
+        "concept_cle": "Critères qualitatifs > données quantitatives pour la pérennité locative.",
+        "exemple": "Marc découvre qu’une ville avec un CHU attire des locataires stables (infirmiers, médecins).",
+        "limite": "N’aborde pas les spécificités fiscales locales (traitées au chapitre 4).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment croiser données macro et micro pour éviter les pièges",
+        "objectif": "Le lecteur combine données INSEE (inflation, taux d’intérêt) et observations terrain (état du parc, concurrence) pour affiner sa sélection.",
+        "concept_cle": "Macro guide, micro valide : approche en entonnoir.",
+        "exemple": "Marc croise la hausse des taux (macro) avec la baisse des visites (micro) pour ajuster son offre.",
+        "limite": "Ne détaille pas les outils de data scraping (hors périmètre technique).",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "2000-2800"
+  },
+  {
+    "numero": "2",
+    "titre": "Évaluer la rentabilité brute et nette",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi la rentabilité brute est un leurre dangereux",
+        "objectif": "Le lecteur comprend les biais de la rentabilité brute (ignorance des charges, vacance, fiscalité) et ses risques pour la trésorerie.",
+        "concept_cle": "Rentabilité brute = indicateur de surface, rentabilité nette = réalité opérationnelle.",
+        "exemple": "Marc calcule 7% brut sur son immeuble, mais 2% net après charges et vacance.",
+        "limite": "Ne traite pas les modèles de cash-flow actualisé (hors périmètre avancé).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment identifier les 5 coûts cachés qui tuent la rentabilité",
+        "objectif": "Le lecteur liste et quantifie les coûts sous-estimés (copropriété, assurances, turnover locatif, travaux imprévus).",
+        "concept_cle": "Coûts cachés = 20-30% des loyers, souvent omis dans les promesses vendeurs.",
+        "exemple": "Marc découvre que les charges de copropriété représentent 15% des loyers de son immeuble.",
+        "limite": "Ne détaille pas les spécificités des copropriétés dégradées (traitées au chapitre 6).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels ratios utiliser pour comparer deux immeubles en 10 minutes",
+        "objectif": "Le lecteur applique 3 ratios clés (rentabilité nette, taux d’effort locataire, ratio charges/loyers) pour arbitrer entre deux biens.",
+        "concept_cle": "Ratios standardisés = comparaison objective entre projets.",
+        "exemple": "Marc compare deux immeubles : l’un a un ratio charges/loyers de 40%, l’autre de 60%.",
+        "limite": "Ne traite pas les outils de simulation dynamique (hors périmètre technique).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment éviter les 3 erreurs qui surestiment les loyers de 20%",
+        "objectif": "Le lecteur identifie les biais courants (loyers \"optimistes\", vacance sous-estimée, indexation erronée) et les corrige.",
+        "concept_cle": "Loyers = variable la plus manipulable dans les calculs de rentabilité.",
+        "exemple": "Marc découvre que les loyers annoncés par l’agence incluent des locataires temporaires (étudiants).",
+        "limite": "Ne traite pas les stratégies de relocation (traitées au chapitre 5).",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "1800-2600"
+  },
+  {
+    "numero": "3",
+    "titre": "Financer l’acquisition sans surendettement",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi le prêt amortissable est la solution par défaut (et quand l’éviter)",
+        "objectif": "Le lecteur comprend les avantages (sécurité, prévisibilité) et limites (coût total élevé) du prêt amortissable, et identifie les cas où l’in fine est préférable.",
+        "concept_cle": "Amortissable = sécurité, in fine = optimisation fiscale sous conditions.",
+        "exemple": "Marc opte pour un amortissable malgré des taux élevés, car son cash-flow ne supporte pas l’in fine.",
+        "limite": "Ne traite pas les montages avec holding (hors périmètre fiscal avancé).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment négocier avec les banques quand les taux montent",
+        "objectif": "Le lecteur utilise 5 leviers de négociation (apport, garanties, durée, assurances) pour obtenir des conditions favorables en contexte de taux élevés.",
+        "concept_cle": "Négociation bancaire = équilibre entre risque perçu et rentabilité pour la banque.",
+        "exemple": "Marc obtient un taux réduit en apportant 30% et en souscrivant une assurance groupe.",
+        "limite": "Ne traite pas les stratégies de refinancement (traitées au chapitre 8).",
+        "mots_cible": "600-800"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels ratios d’endettement respecter pour dormir tranquille",
+        "objectif": "Le lecteur calcule et interprète 3 ratios clés (taux d’effort, LTV, DSCR) pour évaluer sa capacité d’endettement.",
+        "concept_cle": "Ratios d’endettement = garde-fous contre le surendettement.",
+        "exemple": "Marc limite son LTV à 70% pour conserver une marge de sécurité.",
+        "limite": "Ne traite pas les scénarios de stress extrêmes (krach immobilier).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment simuler l’impact d’une hausse des taux sur votre cash-flow",
+        "objectif": "Le lecteur utilise un modèle simple pour projeter l’impact d’une hausse de 1 à 3 points sur sa trésorerie mensuelle.",
+        "concept_cle": "Stress test = anticipation des risques de liquidité.",
+        "exemple": "Marc simule une hausse de 2% : son cash-flow devient négatif, il ajuste son apport.",
+        "limite": "Ne traite pas les stratégies de couverture (produits dérivés).",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "2000-2800"
+  },
+  {
+    "numero": "4",
+    "titre": "Optimiser la fiscalité sans abus",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Micro-foncier vs réel : comment choisir sans se tromper",
+        "objectif": "Le lecteur compare les deux régimes et sélectionne celui adapté à son niveau de charges et de revenus locatifs.",
+        "concept_cle": "Micro-foncier = simplicité, réel = optimisation sous conditions.",
+        "exemple": "Marc opte pour le réel car ses charges dépassent 30% de ses loyers.",
+        "limite": "Ne traite pas les cas particuliers (ex : revenus fonciers > 15k€).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Quelles déductions fiscales ignorées par 90% des investisseurs",
+        "objectif": "Le lecteur identifie 5 déductions sous-utilisées (amortissement, frais de gestion, intérêts d’emprunt) et leurs conditions.",
+        "concept_cle": "Déductions = levier fiscal légal pour réduire l’impôt.",
+        "exemple": "Marc déduit 20k€ d’intérêts d’emprunt, réduisant son imposition de 8k€.",
+        "limite": "Ne traite pas les dispositifs spécifiques (ex : Malraux) hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Comment éviter la requalification fiscale en abus de droit",
+        "objectif": "Le lecteur comprend les critères de l’administration (motif principal non fiscal, proportionnalité) et les pièges à éviter.",
+        "concept_cle": "Abus de droit = optimisation fiscale disproportionnée ou artificielle.",
+        "exemple": "Marc renonce à un montage avec SCI familiale après avis de son notaire.",
+        "limite": "Ne traite pas les contentieux fiscaux (hors périmètre juridique).",
+        "mots_cible": "600-800"
+      },
+      {
+        "numero": "4",
+        "titre_section": "LMNP : quand le meublé devient un piège fiscal",
+        "objectif": "Le lecteur évalue les avantages (amortissement, Censi-Bouvard) et risques (requalification en professionnel, cotisations sociales) du LMNP.",
+        "concept_cle": "LMNP = optimisation fiscale, mais seuil de requalification à surveiller.",
+        "exemple": "Marc dépasse le seuil de 23k€ de loyers meublés et bascule en LMP.",
+        "limite": "Ne traite pas les spécificités du meublé touristique (hors périmètre).",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "2000-2800"
+  },
+  {
+    "numero": "5",
+    "titre": "Sélectionner et gérer les locataires",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi un dossier locataire parfait peut cacher un mauvais payeur",
+        "objectif": "Le lecteur comprend les limites des garanties traditionnelles (CDI, caution) et identifie les signaux d’alerte (dettes cachées, historique locatif).",
+        "concept_cle": "Solvabilité apparente ≠ fiabilité locative.",
+        "exemple": "Marc découvre que son locataire \"parfait\" a un historique de loyers impayés dans une autre ville.",
+        "limite": "Ne traite pas les procédures de recouvrement (hors périmètre juridique).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment utiliser le scoring locataire sans discriminer",
+        "objectif": "Le lecteur applique une grille de scoring objective (revenus, stabilité, garanties) tout en respectant la loi (non-discrimination).",
+        "concept_cle": "Scoring = outil de décision, pas de sélection arbitraire.",
+        "exemple": "Marc utilise une grille avec 5 critères pondérés pour éviter les biais.",
+        "limite": "Ne traite pas les recours en cas de discrimination (hors périmètre juridique).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quelles clauses insérer dans le bail pour limiter les risques",
+        "objectif": "Le lecteur identifie 5 clauses essentielles (indexation, résiliation, travaux) et leurs formulations légales.",
+        "concept_cle": "Bail = contrat, pas un formulaire standard.",
+        "exemple": "Marc ajoute une clause d’indexation annuelle pour couvrir l’inflation.",
+        "limite": "Ne traite pas les baux spécifiques (ex : loi de 1948).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment gérer les impayés sans entrer en conflit",
+        "objectif": "Le lecteur applique une procédure progressive (relance, médiation, assurance) pour récupérer les loyers sans escalade.",
+        "concept_cle": "Prévention > réaction : approche proactive des impayés.",
+        "exemple": "Marc active sa garantie Visale dès le premier impayé pour éviter les frais.",
+        "limite": "Ne traite pas les procédures d’expulsion (hors périmètre juridique).",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "1800-2600"
+  },
+  {
+    "numero": "6",
+    "titre": "Anticiper les travaux et la vacance",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi les travaux votés en copropriété peuvent ruiner votre rentabilité",
+        "objectif": "Le lecteur comprend les risques des travaux de copropriété (coûts imprévus, délais) et les stratégies pour les anticiper (fonds de roulement, AG).",
+        "concept_cle": "Copropriété = risque financier et opérationnel majeur.",
+        "exemple": "Marc découvre que son immeuble va voter 50k€ de ravalement, non provisionnés.",
+        "limite": "Ne traite pas les contentieux entre copropriétaires (hors périmètre juridique).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment planifier les travaux pour éviter les mauvaises surprises",
+        "objectif": "Le lecteur établit un plan pluriannuel de travaux (entretien, rénovation, normes) et budgétise les coûts.",
+        "concept_cle": "Planification = maîtrise des coûts et conformité légale.",
+        "exemple": "Marc prévoit 2k€/an pour l’entretien de sa chaudière collective.",
+        "limite": "Ne traite pas les détails techniques des travaux (hors périmètre).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels travaux sont obligatoires (et lesquels sont optionnels)",
+        "objectif": "Le lecteur distingue les travaux légaux (DPE, accessibilité) des travaux d’optimisation (rénovation énergétique, esthétique).",
+        "concept_cle": "Travaux obligatoires = conformité, travaux optionnels = rentabilité.",
+        "exemple": "Marc réalise un audit DPE et découvre que son immeuble est classé F.",
+        "limite": "Ne traite pas les aides financières pour les travaux (hors périmètre).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment réduire la vacance locative de 30% avec 3 astuces simples",
+        "objectif": "Le lecteur applique 3 stratégies (marketing ciblé, flexibilité des baux, entretien proactif) pour limiter la vacance.",
+        "concept_cle": "Vacance = coût invisible, mais évitable.",
+        "exemple": "Marc réduit sa vacance de 2 mois à 1 mois en utilisant des visites virtuelles.",
+        "limite": "Ne traite pas les stratégies de relocation en période de crise (traitées au chapitre 5).",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1800-2600"
+  },
+  {
+    "numero": "7",
+    "titre": "Sortir du capital avec ou sans plus-value",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Vendre ou garder : comment décider en fonction du cycle immobilier",
+        "objectif": "Le lecteur analyse les indicateurs de cycle (prix, demande, taux) pour choisir entre vente immédiate ou détention.",
+        "concept_cle": "Cycle immobilier = timing optimal pour la sortie.",
+        "exemple": "Marc vend son immeuble en 2024 (marché porteur) plutôt qu’en 2026 (prévision de baisse).",
+        "limite": "Ne traite pas les stratégies de vente à réméré (hors périmètre avancé).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment calculer la plus-value et optimiser son imposition",
+        "objectif": "Le lecteur calcule la plus-value (prix de vente - prix d’achat - frais) et applique les abattements (durée de détention).",
+        "concept_cle": "Plus-value = gain fiscal, mais imposition progressive.",
+        "exemple": "Marc bénéficie d’un abattement de 60% après 10 ans de détention.",
+        "limite": "Ne traite pas les cas particuliers (ex : vente à un proche).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quelles alternatives à la vente pour sortir du capital",
+        "objectif": "Le lecteur évalue 3 alternatives (location meublée, donation, transmission) et leurs implications fiscales.",
+        "concept_cle": "Sortie ≠ vente : stratégies alternatives pour liquider ou transmettre.",
+        "exemple": "Marc transforme son immeuble en résidence principale pour éviter la plus-value.",
+        "limite": "Ne traite pas les montages successoraux complexes (hors périmètre).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment négocier la vente pour maximiser votre prix",
+        "objectif": "Le lecteur utilise 5 techniques de négociation (argumentaire, timing, contre-propositions) pour obtenir le meilleur prix.",
+        "concept_cle": "Négociation = art de concilier prix vendeur et prix acheteur.",
+        "exemple": "Marc obtient 5% de plus en mettant en avant la faible vacance de son immeuble.",
+        "limite": "Ne traite pas les aspects juridiques de la vente (hors périmètre).",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1800-2600"
+  },
+  {
+    "numero": "8",
+    "titre": "Auditer ses performances annuelles",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi vos prévisions de rentabilité sont toujours fausses",
+        "objectif": "Le lecteur identifie les biais courants (optimisme, sous-estimation des charges) et corrige ses prévisions.",
+        "concept_cle": "Prévisions ≠ réalité : écarts systématiques à anticiper.",
+        "exemple": "Marc découvre que ses charges réelles dépassent de 20% ses prévisions.",
+        "limite": "Ne traite pas les outils de simulation avancés (hors périmètre).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Quels indicateurs suivre pour évaluer la santé de votre portefeuille",
+        "objectif": "Le lecteur utilise 5 indicateurs clés (taux d’occupation, rentabilité nette, cash-flow, vacance, charges) pour auditer ses performances.",
+        "concept_cle": "Indicateurs = tableau de bord de la performance locative.",
+        "exemple": "Marc suit son taux d’occupation mensuel pour détecter les baisses de demande.",
+        "limite": "Ne traite pas les benchmarks sectoriels (hors périmètre).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Comment ajuster votre stratégie en fonction des résultats",
+        "objectif": "Le lecteur interprète les écarts entre prévisions et réalisations, et ajuste sa stratégie (loyers, travaux, refinancement).",
+        "concept_cle": "Audit = outil d’ajustement continu.",
+        "exemple": "Marc augmente ses loyers de 3% après avoir constaté une demande excédentaire.",
+        "limite": "Ne traite pas les stratégies de refinancement complexes (traitées au chapitre 3).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Quels outils utiliser pour automatiser le suivi de vos performances",
+        "objectif": "Le lecteur sélectionne des outils (Excel, logiciels spécialisés) pour automatiser son audit annuel.",
+        "concept_cle": "Automatisation = gain de temps et précision.",
+        "exemple": "Marc utilise un tableau Excel pour suivre ses indicateurs mensuels.",
+        "limite": "Ne traite pas les logiciels professionnels (hors périmètre technique).",
+        "mots_cible": "300-500"
+      }
+    ],
+    "total_mots_chapitre": "1600-2400"
+  }
+]
