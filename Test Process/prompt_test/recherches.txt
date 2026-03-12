@@ -1,0 +1,31 @@
+Fais des recherches approfondies sur ce sujet.
+
+Tu dois produire du contenu riche, précis et sourceable pour alimenter une base de données éditoriale.
+
+Retourne UNIQUEMENT un JSON brut sans texte autour, sans balises, sans commentaires, structuré exactement ainsi :
+
+{
+  "idees_recherchees": [
+    { "contenu": "Une idée forte, originale ou structurante sur le sujet, formulée en une ou deux phrases." }
+  ],
+  "notions_indispensables": [
+    { "nom": "Nom court de la notion", "contenu": "Explication claire et précise de la notion, accessible au niveau indiqué dans la fiche." }
+  ],
+  "erreurs_frequentes": [
+    { "contenu": "Une erreur de compréhension, d'interprétation ou de fait que le lecteur pourrait commettre sur ce sujet." }
+  ],
+  "etapes_essentielles": [
+    { "contenu": "Une étape clé dans la compréhension ou la progression logique du sujet." }
+  ],
+  "risques": [
+    { "contenu": "Un risque éditorial, pédagogique ou factuel à surveiller lors du traitement de ce sujet." }
+  ]
+}
+
+Contraintes strictes :
+- Minimum 10 entrées par tableau.
+- Respecte le niveau, la cible et les exclusions définis dans la fiche stratégique.
+- Ne mélange pas les catégories.
+- Aucun texte en dehors du JSON.
+- Les clés doivent être exactement : "contenu" pour toutes les catégories sauf notions_indispensables qui utilise "nom" et "contenu".
+- Aucun accent, aucune majuscule, aucune variation dans les noms de clés.
