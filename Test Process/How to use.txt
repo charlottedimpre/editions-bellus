@@ -1,0 +1,11 @@
+Pour lancer le script il faut :
+- avoir le docker allumé -> docker-compose up -d
+- la bdd lancée dedans -> pour lancer la bdd : - lancer un terminal
+					       - docker ps -> voir les containers allumés
+					       - docker exec -it nom_du_container bash -> postgreesql-db-1 ici
+					       - psql -U postgres
+					       - \c editorial_engine
+					       - coller le script
+-avoir ollama d'installé et de lancé
+
+! possibilté de bug parce que prompt pas très poussés et pas encore de normalisation 
