@@ -1,29 +1,71 @@
 {
   "sujet": "Stratégies pratiques et compréhension relationnelle pour accompagner un proche adulte atteint de TDAH sans épuiser son propre équilibre",
   "notions_indispensables": [
-    { "contenu": "Le TDAH est un trouble neurologique affectant les fonctions exécutives (planification, inhibition, mémoire de travail) et non un manque de volonté ou d'intelligence" },
-    { "contenu": "Chaque profil TDAH présente une variabilité individuelle majeure nécessitant des adaptations personnalisées sans généralisation" },
-    { "contenu": "L'hyperfocalisation et la dysrégulation émotionnelle font partie intégrante des symptômes adultes, souvent masqués par l'absence d'hyperactivité physique visible" },
-    { "contenu": "Les stratégies compensatoires externes (routines, rappels visuels, externalisation) sont indispensables pour structurer le quotidien" }
+    {
+      "contenu": "Le TDAH est un trouble neurodéveloppemental aux bases neurologiques (dopamine et noradrénaline) et non un manque de volonté ou de caractère."
+    },
+    {
+      "contenu": "Les symptômes varient considérablement selon les personnes sans profil universel, avec des mécanismes compensatoires invisibles pouvant s'effondrer brutalement."
+    },
+    {
+      "contenu": "La motivation fonctionne par intérêt immédiat et stimulation, non par importance ou devoir, ce qui explique la procrastination sélective."
+    },
+    {
+      "contenu": "Le trouble s'accompagne souvent d'une hyperactivité mentale invisible, d'une hypersensibilité émotionnelle et d'une impulsivité neurologique."
+    },
+    {
+      "contenu": "L'accompagnement efficace nécessite de distinguer la personne de ses symptômes tout en équilibrant soutien concret et préservation de l'autonomie."
+    }
   ],
   "erreurs_frequentes": [
-    { "contenu": "Surprotéger le proche en compensant systématiquement ses tâches, ce qui étouffe son autonomie et crée une dépendance nuisible" },
-    { "contenu": "Minimiser les difficultés en les attribuant à de la négligence, de la paresse ou un manque d'intérêt pour la relation" },
-    { "contenu": "Confondre les symptômes (oublis, distraction, impulsivité) avec un manque d'amour ou d'engagement intentionnel" },
-    { "contenu": "Négliger ses propres limites émotionnelles et attendre un fonctionnement neurotypique sans adapter ses attentes" }
+    {
+      "contenu": "Minimiser les difficultés ou les attribuer à de la paresse, de la mauvaise volonté ou un manque d'amour plutôt qu'à un trouble neurologique."
+    },
+    {
+      "contenu": "Surprotéger ou contrôler excessivement en compensant systématiquement les oublis au détriment de l'autonomie et de la responsabilité."
+    },
+    {
+      "contenu": "Confondre l'accompagnement avec une dynamique parent-enfant ou prendre en charge les tâches au lieu de co-construire des outils organisationnels externes."
+    },
+    {
+      "contenu": "Généraliser les expériences d'une seule personne TDAH à toutes les autres ou appliquer des stratégies neurotypiques sans adaptation."
+    },
+    {
+      "contenu": "Négliger ses propres besoins et limites émotionnelles jusqu'à l'épuisement pour maintenir la paix ou compenser les dysfonctionnements."
+    }
   ],
   "etapes_essentielles": [
-    { "contenu": "Structurer l'environnement physique et temporel avec des aides visuelles et des routines sans imposer un contrôle étouffant" },
-    { "contenu": "Pratiquer une communication directe, concrète et non violente en évitant les reproches répétitifs et les messages implicites" },
-    { "contenu": "Définir explicitement ses limites personnelles et préserver son énergie pour éviter la surcharge mentale" },
-    { "contenu": "Diviser les projets complexes en micro-tâches concrètes et anticiper les défis des projets à long terme" },
-    { "contenu": "Privilégier la collaboration et impliquer le proche dans la recherche de solutions plutôt qu'exercer un contrôle unilatéral" }
+    {
+      "contenu": "Décrypter les mécanismes invisibles du TDAH pour adapter ses attentes et distinguer la personne de ses symptômes neurologiques."
+    },
+    {
+      "contenu": "Structurer l'environnement avec des outils externes visuels et des routines sans assumer la charge mentale ni étouffer l'autonomie."
+    },
+    {
+      "contenu": "Privilégier une communication directe, sans ambiguïté et valorisant les efforts plutôt qu'une dynamique de contrôle ou de reproche."
+    },
+    {
+      "contenu": "Définir strictement ses limites émotionnelles, préserver des activités personnelles et orienter vers des professionnels qualifiés sans remplacer le suivi médical."
+    },
+    {
+      "contenu": "Co-construire des protocoles d'urgence pour gérer les crises et diviser les projets complexes en micro-tâches concrètes."
+    }
   ],
   "risque": [
-    { "contenu": "Épuisement relationnel et burnout de l'accompagnant par négligence de ses propres besoins et surcharge de la charge mentale" },
-    { "contenu": "Détérioration chronique de la relation par accumulation de tensions, malentendus et frustrations non résolues" },
-    { "contenu": "Perte progressive des capacités d'autonomie du proche TDAH par dépendance excessive à l'accompagnement compensatoire" },
-    { "contenu": "Isolement social de l'accompagnant qui renonce à ses propres besoins pour gérer la situation" },
-    { "contenu": "Substitution dangereuse au suivi médical et psychologique professionnel indispensable pour le proche" }
+    {
+      "contenu": "Épuisement relationnel et burnout de l'accompagnant par surcharge émotionnelle constante et sacrifice des propres besoins."
+    },
+    {
+      "contenu": "Détérioration de la relation par accumulation de malentendus, frustrations réciproques et confusion des rôles familiaux."
+    },
+    {
+      "contenu": "Perte d'autonomie progressive de la personne TDAH et infantilisation si l'accompagnant compense systématiquement les difficultés."
+    },
+    {
+      "contenu": "Isolement social croissant des deux partenaires et accumulation de honte ou de secrets pouvant mener à des conséquences graves."
+    },
+    {
+      "contenu": "Risques financiers, administratifs ou d'accidents dus aux oublis et à l'inattention non compensés par des stratégies adaptées."
+    }
   ]
 }

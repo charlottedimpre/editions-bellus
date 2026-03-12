@@ -1,47 +1,45 @@
 <fiche_cadrage>
 
 <sujet>
-Stratégies pratiques et compréhension relationnelle pour accompagner un proche adulte atteint de TDAH sans épuiser son propre équilibre
+Stratégies et risques de l'investissement locatif dans l'immobilier résidentiel collectif en France : analyse financière, juridique et opérationnelle
 </sujet>
 
 <sommaire>
-- Chapitre 1 : Décrypter les mécanismes invisibles du TDAH
-- Chapitre 2 : Identifier les pièges de la communication quotidienne
-- Chapitre 3 : Structurer l’environnement sans étouffer l’autonomie
-- Chapitre 4 : Gérer les crises et les oublis sans culpabiliser
-- Chapitre 5 : Préserver son énergie et ses limites émotionnelles
-- Chapitre 6 : Renforcer la collaboration plutôt que le contrôle
-- Chapitre 7 : Anticiper les défis des projets à long terme
-- Chapitre 8 : Trouver des ressources adaptées et éviter les écueils
+- Chapitre 1 : Choisir son marché entre tension et saturation
+- Chapitre 2 : Évaluer la rentabilité brute et nette
+- Chapitre 3 : Financer l’acquisition sans surendettement
+- Chapitre 4 : Optimiser la fiscalité sans abus
+- Chapitre 5 : Sélectionner et gérer les locataires
+- Chapitre 6 : Anticiper les travaux et la vacance
+- Chapitre 7 : Sortir du capital avec ou sans plus-value
+- Chapitre 8 : Auditer ses performances annuelles
 </sommaire>
 
 <hors_perimetre>
-- Diagnostic médical ou neuropsychologique du TDAH — rediriger vers un professionnel de santé spécialisé
-- Traitements médicamenteux ou thérapies spécifiques — mentionner uniquement leur existence sans en détailler les modalités
-- Cas de comorbidités psychiatriques complexes (dépression sévère, troubles bipolaires) — aborder uniquement les symptômes liés au TDAH isolé
-- Conseils pour les enfants ou adolescents TDAH — se concentrer exclusivement sur les adultes
-- Évolution des recherches récentes sur le TDAH non stabilisées — se baser sur les connaissances validées jusqu’à 2023
+- Les investissements en immobilier commercial ou de bureaux — seuls les immeubles résidentiels collectifs sont traités
+- Les dispositifs fiscaux obsolètes ou modifiés après 2023 — les évolutions législatives récentes sont signalées mais non détaillées
+- La gestion quotidienne des conflits locatifs graves — redirection vers un avocat spécialisé en droit immobilier
+- Les stratégies spéculatives à court terme — seules les approches patrimoniales à moyen/long terme sont couvertes
 </hors_perimetre>
 
 <contraintes_specifiques>
 - Le ton doit rester pédagogique et rigoureux
-- Mention des risques liés aux malentendus ou à l’épuisement relationnel
-- Mention des limites des stratégies proposées selon les contextes
-- Mention des erreurs fréquentes dans l’accompagnement (surprotection, minimisation des difficultés)
-- Préciser explicitement que le livre ne remplace pas un suivi professionnel pour le proche ou l’accompagnant
-- Éviter toute généralisation abusive sur les "personnes TDAH" — insister sur la variabilité individuelle
+- Mention des risques financiers, juridiques et opérationnels à chaque étape
+- Mention des limites des modèles de calcul de rentabilité
+- Mention des erreurs fréquentes en évaluation des biens et en gestion locative
+- Précision explicite que le livre ne remplace pas un conseil personnalisé par un expert-comptable ou un notaire
 </contraintes_specifiques>
 
 <cible_principale>
-Partenaire, parent ou proche d’un adulte TDAH cherchant à améliorer la cohabitation sans sacrifier son bien-être
+Investisseur expérimenté en immobilier résidentiel cherchant à structurer un portefeuille d’immeubles de rapport avec une approche patrimoniale et durable
 </cible_principale>
 
 <niveau>
-Intermédiaire (suppose une connaissance basique des symptômes du TDAH, mais pas d’expertise médicale ou psychologique)
+Avancé (suppose une connaissance des bases de l’investissement immobilier, une expérience d’au moins un achat locatif et une maîtrise des concepts financiers de base)
 </niveau>
 
 <objectif_lecteur>
-À la fin du livre, le lecteur saura adapter ses attentes, ses réactions et son environnement pour réduire les tensions tout en préservant la relation et son propre équilibre
+À la fin du livre, le lecteur saura analyser un immeuble de rapport sous ses angles financier, juridique et opérationnel, et prendre des décisions d’investissement ou de désinvestissement en intégrant les risques et les limites de chaque stratégie.
 </objectif_lecteur>
 
 </fiche_cadrage>

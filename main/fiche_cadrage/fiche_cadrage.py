@@ -5,31 +5,29 @@ from ollama import chat
 from ollama import ChatResponse
 from parser import parse_fiche_cadrage, to_json_file
 
-OUTPUT_DIR = "./output"
+OUTPUT_DIR = "output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 
 def fiche_cadrage(sujet: str, niveau: str):
     print(sujet)
-    input_path = os.path.join("./input", f"{niveau}.txt")
+    input_path = os.path.join("input", f"{niveau}.txt")
 
     with open(input_path, "r", encoding="utf-8") as f:
-        prompt_template = f.read()
+        prompt = f.read()
 
     response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
         {
             'role': 'user',
-            'content': f'{prompt_template}\n\nSUJET : {sujet}',
+            'content': f'{prompt}\n\nSUJET : {sujet}',
         },
     ])
     parsed = parse_fiche_cadrage(response.message.content)
     return parsed
 
-
-if __name__ == '__main__':
+def fc ():
     fichier = ["fc_debutant", "fc_intermediaire", "fc_avance"]
-
 
     sujet = input("Quel est le sujet de votre livre ? ")
     while len(sujet) < 1:
@@ -49,4 +47,8 @@ if __name__ == '__main__':
         f.write(txt["_raw"])
 
     json = to_json_file(txt, os.path.join(OUTPUT_DIR, "fiche_cadrage.json"))
+
+
+if __name__ == '__main__':
+    fc()
 

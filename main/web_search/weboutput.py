@@ -102,5 +102,18 @@ def summarize_web_search_results():
 
 if __name__ == '__main__':
     result = summarize_web_search_results()
-    print("\nRésumé final :\n")
-    print(result)
+    print("\n Résumé final :\n")
+
+    # Parser la réponse du LLM (chaîne) en objet JSON
+    try:
+        result_obj = json.loads(result)
+    except json.JSONDecodeError:
+        print(" La réponse du LLM n'est pas du JSON valide, sauvegarde brute.")
+        result_obj = result
+
+    filepath = os.path.join("output", "ws_final.json")
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(result_obj, f, ensure_ascii=False, indent=2)
+
+    print(json.dumps(result_obj, ensure_ascii=False, indent=2) if isinstance(result_obj, dict) else result)
+
