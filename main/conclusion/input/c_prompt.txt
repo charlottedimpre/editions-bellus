@@ -24,7 +24,7 @@ Interdit :
 - Répéter mot pour mot le contenu des chapitres — reformuler et synthétiser
 - Introduire un concept nouveau absent des chapitres
 - Toute référence à la sexualité, l'intimité physique ou le désir
-- Aucun exemple narratif, scénario ou cas concret — sauf une référence synthétique et conclusive à l'exemple fil rouge si il a été fourni
+- Aucun exemple narratif, scénario ou cas concret
 - Promettre des résultats irréalistes ou non vérifiables
 - Ajouter une checklist, résumé, points clés ou tout élément récapitulatif
 - Écrire hors du périmètre défini dans <hors_perimetre>
