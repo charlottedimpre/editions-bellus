@@ -108,7 +108,12 @@ def gen_all_sections():
 
         for sec in chap["sections"]:
             sec_num = int(sec["numero"])
-            gen_section(ch_num, sec_num)
+            try :
+                gen_section(ch_num, sec_num)
+            except Exception as e :
+                gen_section(ch_num, sec_num)
+
+
 
     print(f"\nGénération terminée : {nb_total_sections} sections générées pour {nb_chapitres} chapitres.")
 
