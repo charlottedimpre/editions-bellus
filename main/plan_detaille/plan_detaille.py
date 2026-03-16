@@ -6,7 +6,7 @@ from ollama import ChatResponse, chat
 from parser import parse_plan_detaille
 
 
-def plan_detaille():
+def plan_detail():
     input_path = os.path.join("input", "pd_prompt.txt")
     with open(input_path, "r", encoding="utf-8") as f:
         prompt = f.read()
@@ -27,4 +27,4 @@ def plan_detaille():
         json.dump(parsed, f, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
-    plan_detaille()
+    plan_detail()

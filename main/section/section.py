@@ -3,7 +3,7 @@ import os
 
 from ollama import ChatResponse, chat
 
-from parser import parse_section
+from parser import parse_section, parse_resume
 
 
 def load_structure():
@@ -28,11 +28,12 @@ def coherence_check(chapitre, section):
             'content': f'{prompt}\n\nSection à étudier :{fiche}',
         },
     ])
+    parsed = parse_resume(response.message.content, chapitre, section)
     filename = f"coherence_ch{chapitre}_s{section}.json"
     filepath = os.path.join("output", "resume", filename)
     with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(response.message.content.strip(), f, ensure_ascii=False, indent=2)
-    return response.message.content.strip()
+        json.dump(parsed, f, ensure_ascii=False, indent=2)
+    return parsed
 
 
 def gen_section(chapitre, section):
@@ -52,31 +53,38 @@ def gen_section(chapitre, section):
     with open(prompt_path, "r", encoding="utf-8") as f:
         prompt = f.read()
 
+    coherence = ""
     if chapitre == 1 and section == 1:
         coherence = "il n'y a pas de section précédente, c'est la première section du premier chapitre, aucune vérification de cohérence nécessaire."
         print(f"{coherence}")
     elif section == 1:
         chapitres = load_structure()
+        nb_sec = None
         for chap in chapitres:
             if int(chap["numero"]) == chapitre - 1:
                 nb_sec = len(chap["sections"])
+                break
 
-        coherence_path = os.path.join("output", "resume", f"coherence_ch{chapitre - 1}_s{nb_sec}.json")
-        with open(coherence_path, "r", encoding="utf-8") as f:
-            coherence = f.read()
-        print(f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre - 1}_s{nb_sec}.json...")
+        if nb_sec is not None:
+            coherence_path = os.path.join("output", "resume", f"coherence_ch{chapitre - 1}_s{nb_sec}.json")
+            with open(coherence_path, "r", encoding="utf-8") as f:
+                coherence = f.read()
+            print(f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre - 1}_s{nb_sec}.json...")
+        else:
+            coherence = "Section précédente introuvable dans la structure."
+            print(coherence)
     else:
         coherence_path = os.path.join("output", "resume", f"coherence_ch{chapitre}_s{section - 1}.json")
         with open(coherence_path, "r", encoding="utf-8") as f:
             coherence = f.read()
         print (f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre}_s{section - 1}.json...")
 
-
+    coherence_text = coherence if coherence else ""
 
     response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
         {
             'role': 'user',
-            'content': f'{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\n\nVérification de cohérence avec la section précédente : {coherence}',
+            'content': f'{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\n\nVérification de cohérence avec la section précédente : {coherence_text}',
         },
     ])
 
@@ -91,7 +99,6 @@ def gen_section(chapitre, section):
     coherence_check(chapitre, section)
 
     print("Vérification de cohérence effectuée pour la section précédente.")
-
 
 def gen_all_sections():
     """Parcourt tous les chapitres et sections de structure_chapitre.json et génère chaque section."""

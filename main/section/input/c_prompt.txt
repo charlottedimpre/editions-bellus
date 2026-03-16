@@ -4,7 +4,7 @@ Respecte EXACTEMENT ce format, sans modifier les balises ni l'ordre :
 
 <fiche>
 <chapitre_numero>[Numéro uniquement, ex: 3]</chapitre_numero>
-<chapitre_titre>[Titre exact du chapitre]</chapitre_titre>
+<section_numero>[Numéro uniquement, ex: 3]</section_numero>
 <these_centrale>[1 seule phrase, la thèse principale défendue]</these_centrale>
 <arguments_cles>
 - [argument 1]
@@ -14,7 +14,9 @@ Respecte EXACTEMENT ce format, sans modifier les balises ni l'ordre :
 <concepts_introduits>
 - [concept + définition en 10 mots max]
 </concepts_introduits>
-<liens_chapitres>[Références aux chapitres précédents si mentionnés, sinon : "Aucun"]</liens_chapitres>
+<liens_chapitres>
+[Références aux chapitres précédents si mentionnés, sinon : "Aucun"]
+</liens_chapitres>
 <a_ne_pas_repeter>
 - [idée, stat, formulation à ne plus réutiliser]
 </a_ne_pas_repeter>

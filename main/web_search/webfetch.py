@@ -100,9 +100,11 @@ def fetch_all_sources(input_path: str, output_path: str, search_path: str = None
     print(f"Résultat sauvegardé dans {output_path}")
 
 
-if __name__ == "__main__":
+def webfetch_wrapper():
     input_path = os.path.join("output", "ws_pertinent.json")
     output_path = os.path.join("output", "ws_content.json")
     search_path = os.path.join("output", "ws_search.json")
     fetch_all_sources(input_path, output_path, search_path)
 
+if __name__ == "__main__":
+    webfetch_wrapper()

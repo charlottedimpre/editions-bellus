@@ -4,8 +4,6 @@ import requests
 import json
 from datetime import datetime
 
-from ollama import chat, ChatResponse
-
 
 def web_search(query, timestamp):
     params = {
@@ -36,27 +34,7 @@ def web_search(query, timestamp):
         json.dump(clean_results, f, ensure_ascii=False, indent=2)
     return json.dumps(clean_results, ensure_ascii=False, indent=2)
 
-'''
-def pertinent_web_search(query, timestamp):
-    sujet_path = os.path.join("..", "fiche_cadrage", "output", "fiche_cadrage.json")
-    with open(sujet_path, "r", encoding="utf-8") as f:
-        sujet = f.read()
-
-    input_path = os.path.join("input", "ws_pertinent.txt")
-    with open(input_path, "r", encoding="utf-8") as f:
-        input = f.read()
-    webresponse = web_search(query, timestamp)
-
-    response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
-        {
-            'role': 'user',
-            'content': f'{input}\n\nSujet : {sujet}\n\nRecherche faite : {query}\n\nRésultats de la recherche : {webresponse}'
-        }
-    ])
-    return response.message.content
-'''
-
-if __name__ == '__main__':
+def web_search_wrapper():
     sujet_path = os.path.join("output", "ws_search.json")
     with open(sujet_path, "r", encoding="utf-8") as f:
         sujets = json.load(f)
@@ -75,3 +53,7 @@ if __name__ == '__main__':
     filepath = os.path.join("output", "ws_pertinent.json")
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
+
+
+if __name__ == '__main__':
+    web_search_wrapper()

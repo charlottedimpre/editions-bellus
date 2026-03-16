@@ -22,8 +22,12 @@ def webinputresponse():
     ])
     return response.message.content
 
-if __name__ == '__main__':
+
+def webinput_wrapper():
     filepath = os.path.join("output", "ws_search.json")
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(webinputresponse())
     print("Web search response generated")
+
+if __name__ == '__main__':
+    webinput_wrapper()

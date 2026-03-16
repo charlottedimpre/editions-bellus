@@ -100,7 +100,7 @@ def summarize_web_search_results():
     return merge_summaries(prompt, sujet, partial_summaries)
 
 
-if __name__ == '__main__':
+def weboutput_wrapper():
     result = summarize_web_search_results()
     print("\n Résumé final :\n")
 
@@ -117,3 +117,6 @@ if __name__ == '__main__':
 
     print(json.dumps(result_obj, ensure_ascii=False, indent=2) if isinstance(result_obj, dict) else result)
 
+
+if __name__ == '__main__':
+    weboutput_wrapper()

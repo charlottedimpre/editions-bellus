@@ -221,6 +221,101 @@ def parse_section(text: str, chapitre: int, section: int) -> dict:
     }
 
 
+def parse_resume(text: str, chapitre: int, section: int) -> dict:
+    """
+    Parse la fiche de coherence d'une section.
+    """
+    normalized_text = text.strip()
+    # Compatibilite: certains resumes historiques sont stockes comme une chaine JSON
+    # contenant le XML, ex: "<fiche>...".
+    try:
+        decoded = json.loads(normalized_text)
+        if isinstance(decoded, str):
+            normalized_text = decoded
+    except (json.JSONDecodeError, TypeError):
+        pass
+
+    fiche = extract_tag(normalized_text, "fiche") or normalized_text
+
+    def _as_list(value: Optional[str]) -> list[str]:
+        if not value:
+            return []
+        items = []
+        for line in value.splitlines():
+            cleaned = line.strip()
+            if not cleaned:
+                continue
+            cleaned = re.sub(r"^[-*]\s*", "", cleaned).strip()
+            if cleaned:
+                items.append(cleaned)
+        return items
+
+    return {
+        "chapitre": chapitre,
+        "section": section,
+        "chapitre_numero": extract_tag(fiche, "chapitre_numero"),
+        "section_numero": extract_tag(fiche, "section_numero"),
+        "these_centrale": _collapse_newlines(extract_tag(fiche, "these_centrale")),
+        "arguments_cles": _as_list(extract_tag(fiche, "arguments_cles")),
+        "concepts_introduits": _as_list(extract_tag(fiche, "concepts_introduits")),
+        "liens_chapitres": _collapse_newlines(extract_tag(fiche, "liens_chapitres")),
+        "a_ne_pas_repeter": _as_list(extract_tag(fiche, "a_ne_pas_repeter")),
+        "ton_angle": _collapse_newlines(extract_tag(fiche, "ton_angle")),
+        "_raw": normalized_text,
+    }
+
+
+def parse_conclusion(text: str) -> dict:
+    """
+    Parse la réponse de la rédaction de la conclusion.
+    """
+    conclusion = extract_tag(text, "conclusion") or text
+    return {
+        "conclusion": _collapse_newlines(conclusion.strip()),
+        "_raw": text,
+    }
+
+
+def parse_filrouge(text: str) -> dict:
+    """
+    Parse la réponse de l'etape fil rouge.
+    Decoupe le texte a chaque marqueur [INSERTION CHAPITRE N SECTION N].
+    """
+    fil_rouge = extract_tag(text, "fil_rouge") or text
+
+    marker_pattern = re.compile(
+        r"\[\s*INSERTION\s+CHAPITRE\s+(\d+)\s+SECTION\s+(\d+)\s*]",
+        re.IGNORECASE,
+    )
+    matches = list(marker_pattern.finditer(fil_rouge))
+
+    if not matches:
+        return {
+            "fil_rouge": _collapse_newlines(fil_rouge.strip()),
+            "insertions": [],
+            "_raw": text,
+        }
+
+    insertions = []
+
+    for i, match in enumerate(matches):
+        start = match.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(fil_rouge)
+        contenu = fil_rouge[start:end].strip()
+
+        insertions.append({
+            "chapitre": int(match.group(1)),
+            "section": int(match.group(2)),
+            "contenu": _collapse_newlines(contenu),
+        })
+
+    return {
+        "fil_rouge": _collapse_newlines(fil_rouge.strip()),
+        "insertions": insertions,
+        "_raw": text,
+    }
+
+
 # ---------------------------------------------------------------------------
 # Export JSON
 # ---------------------------------------------------------------------------
@@ -279,5 +374,4 @@ def extract_all_xml_blocks(text: str, tag_name: str) -> list[str]:
     """
     pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
     return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]
-
 
