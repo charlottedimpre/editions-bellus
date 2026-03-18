@@ -27,6 +27,33 @@ def load_structure():
         return json.load(f)
 
 
+def _normalize_section_content(raw_content):
+    """Compatibilite: renvoie toujours un texte exploitable pour `contenu`."""
+    if isinstance(raw_content, dict):
+        return (
+            raw_content.get("section_mise_a_jour")
+            or raw_content.get("contenu")
+            or raw_content.get("texte")
+            or ""
+        )
+
+    if isinstance(raw_content, str):
+        candidate = raw_content.strip()
+        if candidate.startswith("{") and candidate.endswith("}"):
+            try:
+                decoded = json.loads(candidate)
+                if isinstance(decoded, dict):
+                    return (
+                        decoded.get("section_mise_a_jour")
+                        or decoded.get("contenu")
+                        or decoded.get("texte")
+                        or raw_content
+                    )
+            except json.JSONDecodeError:
+                return raw_content
+    return raw_content
+
+
 def coherence_check(chapitre, section):
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
@@ -160,7 +187,7 @@ def merge_chapter_sections(chapitre_num: int):
         sections.append({
             "section": sec_num,
             "titre": sec.get("titre_section", ""),
-            "contenu": data["contenu"],
+            "contenu": _normalize_section_content(data.get("contenu", "")),
         })
 
     result = {
