@@ -1,27 +1,32 @@
 import json
-import os
+from pathlib import Path
 
 from ollama import ChatResponse, chat
 
 MODEL = 'kimi-k2.5:cloud'
 
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_DIR = BASE_DIR / "input"
+OUTPUT_DIR = BASE_DIR / "output"
+FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
 
 def load_prompt():
-    filepath = os.path.join("input", "ws_summary.txt")
-    with open(filepath, "r", encoding="utf-8") as f:
+    filepath = INPUT_DIR / "ws_summary.txt"
+    with filepath.open("r", encoding="utf-8") as f:
         return f.read()
 
 
 def load_sujet():
-    sujet_path = os.path.join("..", "fiche_cadrage", "output", "fiche_cadrage.json")
-    with open(sujet_path, "r", encoding="utf-8") as f:
+    with FICHE_CADRAGE_PATH.open("r", encoding="utf-8") as f:
         return f.read()
 
 
 def load_sources():
     """Charge ws_content.json et retourne une liste plate de toutes les sources."""
-    webresponse_path = os.path.join("output", "ws_content.json")
-    with open(webresponse_path, "r", encoding="utf-8") as f:
+    webresponse_path = OUTPUT_DIR / "ws_content.json"
+    with webresponse_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
     all_sources = []
@@ -111,8 +116,8 @@ def weboutput_wrapper():
         print(" La réponse du LLM n'est pas du JSON valide, sauvegarde brute.")
         result_obj = result
 
-    filepath = os.path.join("output", "ws_final.json")
-    with open(filepath, "w", encoding="utf-8") as f:
+    filepath = OUTPUT_DIR / "ws_final.json"
+    with filepath.open("w", encoding="utf-8") as f:
         json.dump(result_obj, f, ensure_ascii=False, indent=2)
 
     print(json.dumps(result_obj, ensure_ascii=False, indent=2) if isinstance(result_obj, dict) else result)

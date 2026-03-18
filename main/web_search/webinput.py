@@ -1,33 +1,38 @@
-import os
+from pathlib import Path
 
 from ollama import chat
 from ollama import ChatResponse
 
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_DIR = BASE_DIR / "input"
+OUTPUT_DIR = BASE_DIR / "output"
+FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
 
 def webinputresponse():
-
-    sujet_path = os.path.join("..", "fiche_cadrage", "output", "fiche_cadrage.json")
-    with open(sujet_path, "r", encoding="utf-8") as f:
+    with FICHE_CADRAGE_PATH.open("r", encoding="utf-8") as f:
         sujet = f.read()
 
-    input_path = os.path.join("input", "ws_search.txt")
-    with open(input_path, "r", encoding="utf-8") as f:
-        input = f.read()
+    input_path = INPUT_DIR / "ws_search.txt"
+    with input_path.open("r", encoding="utf-8") as f:
+        prompt_input = f.read()
 
     response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
         {
             'role': 'user',
-            'content': f'{input}\n\nSUJET : {sujet}'
+            'content': f'{prompt_input}\n\nSUJET : {sujet}'
         }
     ])
     return response.message.content
 
 
 def webinput_wrapper():
-    filepath = os.path.join("output", "ws_search.json")
-    with open(filepath, "w", encoding="utf-8") as f:
+    filepath = OUTPUT_DIR / "ws_search.json"
+    with filepath.open("w", encoding="utf-8") as f:
         f.write(webinputresponse())
     print("Web search response generated")
+
 
 if __name__ == '__main__':
     webinput_wrapper()
