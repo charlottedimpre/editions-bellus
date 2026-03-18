@@ -1,7 +1,26 @@
-import os
+from pathlib import Path
 import json
 import requests
 from bs4 import BeautifulSoup
+
+BASE_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+QUERY_KEYS = (
+    "contenu_de_l_idée",
+    "contenu_de_l'idée",
+    "contenu_de_l_idee",
+    "query",
+)
+
+
+def _extract_query(idee: dict) -> str:
+    for key in QUERY_KEYS:
+        value = idee.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return ""
 
 
 HEADERS = {
@@ -41,17 +60,17 @@ def fetch_page_content(url: str, timeout: int = 15) -> str | None:
         return None
 
 
-def fetch_all_sources(input_path: str, output_path: str, search_path: str = None):
+def fetch_all_sources(input_path: Path, output_path: Path, search_path: Path | None = None):
     """Lit ws_pertinent.json, visite chaque URL et sauvegarde le contenu."""
-    with open(input_path, "r", encoding="utf-8") as f:
+    with input_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
     # Charger les sujets depuis ws_search.json si disponible
     sujets = []
-    if search_path and os.path.exists(search_path):
-        with open(search_path, "r", encoding="utf-8") as f:
+    if search_path and search_path.exists():
+        with search_path.open("r", encoding="utf-8") as f:
             search_data = json.load(f)
-        sujets = [idee.get("contenu_de_l_idée", "") for idee in search_data.get("idees", [])]
+        sujets = [_extract_query(idee) for idee in search_data.get("idees", [])]
 
     results = []
 
@@ -90,7 +109,7 @@ def fetch_all_sources(input_path: str, output_path: str, search_path: str = None
             "sources": fetched_sources,
         })
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with output_path.open("w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
     # Stats
@@ -101,10 +120,11 @@ def fetch_all_sources(input_path: str, output_path: str, search_path: str = None
 
 
 def webfetch_wrapper():
-    input_path = os.path.join("output", "ws_pertinent.json")
-    output_path = os.path.join("output", "ws_content.json")
-    search_path = os.path.join("output", "ws_search.json")
+    input_path = OUTPUT_DIR / "ws_pertinent.json"
+    output_path = OUTPUT_DIR / "ws_content.json"
+    search_path = OUTPUT_DIR / "ws_search.json"
     fetch_all_sources(input_path, output_path, search_path)
+
 
 if __name__ == "__main__":
     webfetch_wrapper()

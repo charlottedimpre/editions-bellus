@@ -1,13 +1,22 @@
 import json
-import os
+from pathlib import Path
 
 from ollama import chat, ChatResponse
 
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_DIR = BASE_DIR / "input"
+OUTPUT_DIR = BASE_DIR / "output"
+SECTION_DIR = BASE_DIR.parent / "section" / "output" / "section_fr"
+SECTION_OUTPUT_DIR = BASE_DIR.parent / "section" / "output" / "section"
+STRUCTURE_PATH = BASE_DIR.parent / "structure_chapitre" / "output" / "structure_chapitre.json"
+FIL_ROUGE_PATH = OUTPUT_DIR / "fil_rouge.json"
+
+
 def load_structure():
     """Charge structure_chapitre.json et retourne la liste des chapitres."""
-    structure_path = os.path.join("..", "structure_chapitre", "output", "structure_chapitre.json")
-    with open(structure_path, "r", encoding="utf-8") as f:
+    with STRUCTURE_PATH.open("r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def get_insertion(fil_rouge_data: dict, chapitre: int, section: int) -> str:
     for ins in fil_rouge_data.get("insertions", []):
@@ -17,42 +26,47 @@ def get_insertion(fil_rouge_data: dict, chapitre: int, section: int) -> str:
 
 
 def incorporer(chapitre, section):
-    prompt_path = os.path.join("input", "mf_prompt.txt")
-    with open(prompt_path, "r", encoding="utf-8") as f:
+    prompt_path = INPUT_DIR / "mf_prompt.txt"
+    with prompt_path.open("r", encoding="utf-8") as f:
         prompt = f.read()
 
+    section_path = SECTION_OUTPUT_DIR / f"section_ch{chapitre}_s{section}.json"
+    with section_path.open("r", encoding="utf-8") as f:
+        section_data = json.load(f)
 
-    section_path = os.path.join("..", "section", "output", "section", f"section_ch{chapitre}_s{section}.json")
-    with open(section_path, "r", encoding="utf-8") as f:
-        section_data = json.load(f)  # mieux que f.read()
-
-    fil_rouge_path = os.path.join("output", "fil_rouge.json")
-    with open(fil_rouge_path, "r", encoding="utf-8") as f:
+    with FIL_ROUGE_PATH.open("r", encoding="utf-8") as f:
         fil_rouge_data = json.load(f)
 
     exemple = get_insertion(fil_rouge_data, chapitre, section)
 
-
-
     response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
         {
             'role': 'user',
-            'content': f'{prompt}\n\nSECTION : {section_data.get('contenu', '')}\n\nFIL ROUGE : {exemple}\n\nNUMERO CHAPITRE : {chapitre}\n\nNUMERO SECTION : {section}',
+            'content': (
+                f"{prompt}\n\n"
+                f"SECTION : {section_data.get('contenu', '')}\n\n"
+                f"FIL ROUGE : {exemple}\n\n"
+                f"NUMERO CHAPITRE : {chapitre}\n\n"
+                f"NUMERO SECTION : {section}"
+            ),
         },
     ])
-    return response.message.content
+
+    section_data["contenu"] = response.message.content
+    return section_data
 
 
 def merge_filrouge_wrapper():
     chapitres = load_structure()
     for chapitre in chapitres:
+        chapitre_num = int(chapitre["numero"])
         for section in chapitre.get("sections", []):
-            result = incorporer(chapitre["numero"], section["numero"])
-            print(f"Résultat pour Chapitre {chapitre['numero']} Section {section['numero']} :\n{result}\n{'-'*80}\n")
+            section_num = int(section["numero"])
+            result = incorporer(chapitre_num, section_num)
+            print(f"Résultat pour Chapitre {chapitre_num} Section {section_num}\n{'-' * 80}")
 
-            filename = f"section_ch{chapitre}_s{section}.json"
-            filepath = os.path.join("..", "section", "output", "section", filename)
-            with open(filepath, "w", encoding="utf-8") as f:
+            filepath = SECTION_DIR / f"section_ch{chapitre_num}_s{section_num}.json"
+            with filepath.open("w", encoding="utf-8") as f:
                 json.dump(result, f, ensure_ascii=False, indent=2)
 
 

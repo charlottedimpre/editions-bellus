@@ -1,5 +1,4 @@
 .env
 __pycache__/
-_test/storage/
-_test/merde/
+_test/
 .idea/

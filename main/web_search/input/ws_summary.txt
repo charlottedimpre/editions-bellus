@@ -14,7 +14,7 @@ RÈGLES ABSOLUES — toute violation invalide ta réponse :
 - INTERDIT : ajouter des explications, commentaires ou résumés
 - Ta réponse doit commencer par { et se terminer par }
 - Le JSON doit être indenté avec 2 espaces par niveau, chaque clé sur sa propre ligne
-- Chaque catégorie doit contenir entre 2 et 5 éléments maximum, formulés en phrases courtes et claires
+- Chaque catégorie doit contenir entre 5 et 10 éléments maximum, formulés en phrases courtes et claires
 
 FORMAT DE SORTIE :
 {
