@@ -41,9 +41,12 @@ def restart():
         ROOT_DIR / "main" / "plan_detaille" / "output",
         ROOT_DIR / "main" / "structure_chapitre" / "output",
         ROOT_DIR / "main" / "introduction" / "output",
-        ROOT_DIR / "main" / "section" / "output",
+        ROOT_DIR / "main" / "section" / "output" / "section",
+        ROOT_DIR / "main" / "section" / "output" / "resume",
         ROOT_DIR / "main" / "conclusion" / "output",
         ROOT_DIR / "main" / "fil_rouge" / "output",
+        ROOT_DIR / "main" / "section" / "output" / "section_fr",
+        ROOT_DIR / "main" / "section" / "output" / "chapitre",
     ]
 
     for path in paths:
@@ -77,8 +80,8 @@ if __name__ == '__main__':
         #plan_detail()
         #structure_chapitre()
         #gen_intro()
-        gen_all_sections()
+        #gen_all_sections()
         #gen_conclu()
         #gen_filrouge()
-        #merge_filrouge_wrapper()
+        merge_filrouge_wrapper()
         #merge_all_chapters()

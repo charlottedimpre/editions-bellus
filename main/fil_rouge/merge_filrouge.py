@@ -25,6 +25,22 @@ def get_insertion(fil_rouge_data: dict, chapitre: int, section: int) -> str:
     return ""
 
 
+def _parse_model_json(content: str) -> dict:
+    """Parse un JSON potentiellement encapsule dans un bloc markdown."""
+    raw = (content or "").strip()
+    if raw.startswith("```"):
+        lines = raw.splitlines()
+        if lines:
+            lines = lines[1:]
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        raw = "\n".join(lines).strip()
+    parsed = json.loads(raw)
+    if not isinstance(parsed, dict):
+        raise ValueError("La reponse du modele doit etre un objet JSON.")
+    return parsed
+
+
 def incorporer(chapitre, section):
     prompt_path = INPUT_DIR / "mf_prompt.txt"
     with prompt_path.open("r", encoding="utf-8") as f:
@@ -52,7 +68,12 @@ def incorporer(chapitre, section):
         },
     ])
 
-    section_data["contenu"] = response.message.content
+    parsed_response = _parse_model_json(response.message.content)
+    section_data["contenu"] = (
+        parsed_response.get("section_mise_a_jour")
+        or parsed_response.get("contenu")
+        or section_data.get("contenu", "")
+    )
     return section_data
 
 
