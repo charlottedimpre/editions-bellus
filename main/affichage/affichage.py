@@ -7,7 +7,64 @@ BASE_DIR = Path(__file__).resolve().parent
 INTRO_PATH = BASE_DIR.parent / "introduction" / "output" / "introduction.json"
 CHAPTERS_DIR = BASE_DIR.parent / "section" / "output" / "chapitre"
 CONCLUSION_PATH = BASE_DIR.parent / "conclusion" / "output" / "conclusion.json"
+FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PDF_TITLE = "Introduction"
+
+
+class BookPDF(FPDF):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.header_title = PDF_TITLE
+        self.book_title = PDF_TITLE
+        self.current_chapter_number: str | None = None
+        self.show_running_elements = True
+
+    def set_header_title(self, title: Any) -> None:
+        if title is None:
+            self.header_title = PDF_TITLE
+            return
+        cleaned_title = str(title).strip()
+        self.header_title = cleaned_title or PDF_TITLE
+
+    def set_book_title(self, title: Any) -> None:
+        if title is None:
+            self.book_title = PDF_TITLE
+            return
+        cleaned_title = str(title).strip()
+        self.book_title = cleaned_title or PDF_TITLE
+
+    def set_current_chapter_number(self, chapter_number: Any | None) -> None:
+        if chapter_number is None:
+            self.current_chapter_number = None
+            return
+        cleaned = str(chapter_number).strip()
+        self.current_chapter_number = cleaned or None
+
+    def set_running_elements(self, enabled: bool) -> None:
+        self.show_running_elements = enabled
+
+    def header(self) -> None:
+        if not self.show_running_elements:
+            return
+        # En-tete type livre: impair=titre, pair=chapitre courant.
+        self.set_y(10)
+        self.set_font("Body", size=10)
+        if self.page_no() % 2 == 0:
+            header_text = self.book_title
+        elif self.current_chapter_number is not None:
+            header_text = f"Chapitre {self.current_chapter_number}"
+        else:
+            header_text = self.header_title
+        self.cell(0, 8, header_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+
+    def footer(self) -> None:
+        if not self.show_running_elements:
+            return
+        # Pied de page en marge exterieure (livre): impair a droite, pair a gauche.
+        self.set_y(-12)
+        self.set_font("Body", size=12)
+        align = "R" if self.page_no() % 2 == 1 else "L"
+        self.cell(0, 8, f"{self.page_no()}", align=align)
 
 
 def _set_unicode_font(pdf: FPDF) -> None:
@@ -63,10 +120,79 @@ def _load_conclusion_text() -> str:
     return _extract_text(payload)
 
 
-def _render_chapter(pdf: FPDF, chapter_data: dict[str, Any], default_number: int) -> None:
+def _extract_tag_content(raw_text: str, tag_name: str) -> str:
+    start_tag = f"<{tag_name}>"
+    end_tag = f"</{tag_name}>"
+    start_idx = raw_text.find(start_tag)
+    if start_idx == -1:
+        return ""
+    start_idx += len(start_tag)
+    end_idx = raw_text.find(end_tag, start_idx)
+    if end_idx == -1:
+        return ""
+    return raw_text[start_idx:end_idx].strip()
+
+
+def _find_first_key_text(payload: Any, target_key: str) -> str:
+    if isinstance(payload, dict):
+        for key, value in payload.items():
+            if key == target_key:
+                text = _extract_text(value)
+                if text:
+                    return text
+            nested = _find_first_key_text(value, target_key)
+            if nested:
+                return nested
+    elif isinstance(payload, list):
+        for item in payload:
+            nested = _find_first_key_text(item, target_key)
+            if nested:
+                return nested
+    return ""
+
+
+def _load_book_title() -> str:
+    if not FICHE_CADRAGE_PATH.exists():
+        return PDF_TITLE
+    try:
+        with FICHE_CADRAGE_PATH.open("r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return PDF_TITLE
+
+    sujet = _find_first_key_text(payload, "titre_saisi_utilisateur")
+    if sujet:
+        return sujet
+
+    if isinstance(payload, dict):
+        raw_value = _extract_text(payload.get("_raw"))
+        if raw_value:
+            raw_sujet = _extract_tag_content(raw_value, "titre_saisi_utilisateur")
+            if raw_sujet:
+                return raw_sujet
+
+    return PDF_TITLE
+
+
+def _insert_blank_page(pdf: BookPDF) -> None:
+    running_elements_state = pdf.show_running_elements
+    pdf.set_running_elements(False)
+    pdf.add_page()
+    pdf.set_running_elements(running_elements_state)
+
+
+def _ensure_next_part_starts_on_even_page(pdf: BookPDF) -> None:
+    if pdf.page_no() % 2 == 0:
+        _insert_blank_page(pdf)
+
+
+def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: int) -> None:
     chapter_number = _extract_text(chapter_data.get("chapitre") or default_number)
     chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
 
+    _ensure_next_part_starts_on_even_page(pdf)
+    pdf.set_current_chapter_number(chapter_number)
+    pdf.set_header_title(chapter_title)
     pdf.add_page()
     pdf.set_font("Body", size=22)
     pdf.ln(20)
@@ -129,10 +255,13 @@ def _render_chapter(pdf: FPDF, chapter_data: dict[str, Any], default_number: int
         pdf.ln(5)
 
 
-def _render_conclusion(pdf: FPDF, conclusion_text: str) -> None:
+def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
     if not conclusion_text:
         return
 
+    _ensure_next_part_starts_on_even_page(pdf)
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title("Conclusion")
     pdf.add_page()
     pdf.set_font("Body", size=22)
     pdf.ln(20)
@@ -159,23 +288,42 @@ def _render_conclusion(pdf: FPDF, conclusion_text: str) -> None:
     pdf.multi_cell(0, 8, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
 
+def _render_cover(pdf: BookPDF, book_title: str) -> None:
+    # Page de garde sans en-tete/pied, avec mise en page simple.
+    pdf.set_running_elements(False)
+    pdf.add_page()
+    pdf.set_y(75)
+    pdf.set_font("Body", size=30)
+    pdf.multi_cell(0, 14, book_title, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.ln(6)
+    pdf.set_font("Body", size=16)
+    pdf.cell(0, 10, "Editions Bellus", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+
+
 
 def affichage():
     with INTRO_PATH.open("r", encoding="utf-8") as f:
         introduction = json.load(f)
     intro = introduction.get("intro", "")
-    
-    
+    book_title = _load_book_title()
 
-    pdf = FPDF()
-    pdf.set_margins(left=20, top=25, right=20)
+    pdf = BookPDF()
+    pdf.set_margins(left=20, top=30, right=20)
     pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.add_page()
-
+    pdf.alias_nb_pages()
     _set_unicode_font(pdf)
+
+    _render_cover(pdf, book_title)
+    pdf.set_running_elements(True)
+
+    _ensure_next_part_starts_on_even_page(pdf)
+    pdf.set_book_title(book_title)
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title(PDF_TITLE)
+    pdf.add_page()
     pdf.set_font("Body", size=30)
     pdf.ln(20)
-    pdf.cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.multi_cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.ln(20)
     pdf.set_font("Body", size=12)
     pdf.multi_cell(0, 8, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
@@ -191,7 +339,7 @@ def affichage():
 
 
 
-    pdf.output("test_marges.pdf")
+    pdf.output("livre.pdf")
 
 if __name__ == "__main__":
     affichage()

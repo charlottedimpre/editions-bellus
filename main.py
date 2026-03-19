@@ -83,5 +83,5 @@ if __name__ == '__main__':
         #gen_all_sections()
         #gen_conclu()
         #gen_filrouge()
-        merge_filrouge_wrapper()
-        #merge_all_chapters()
+        #merge_filrouge_wrapper()
+        merge_all_chapters()

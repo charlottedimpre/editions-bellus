@@ -27,13 +27,28 @@ def fiche_cadrage(sujet: str, niveau: str):
     return parsed
 
 
+def _build_output_payload(parsed_data, titre_saisi: str) -> dict:
+    if isinstance(parsed_data, dict):
+        payload = dict(parsed_data)
+    else:
+        payload = {"donnees_parsees": parsed_data}
+
+    # Conserve explicitement le titre saisi, meme si le parser evolue.
+    payload["titre_saisi_utilisateur"] = titre_saisi
+
+    if not payload.get("sujet"):
+        payload["sujet"] = titre_saisi
+
+    return payload
+
+
 def fc():
     fichier = ["fc_debutant", "fc_intermediaire", "fc_avance"]
 
-    sujet = input("Quel est le sujet de votre livre ? ")
+    sujet = input("Quel est le titre de votre livre ? ")
     while len(sujet) < 1:
-        print("Le sujet ne peut pas être vide.")
-        sujet = input("Quel est le sujet de votre livre ? ")
+        print("Le titre ne peut pas être vide.")
+        sujet = input("Quel est le titre de votre livre ? ")
 
     niveau_input = input("Quel niveau souhaitez-vous ? (1 - Débutant, 2 - Intermédiaire, 3 - Avancé) : ")
 
@@ -42,8 +57,9 @@ def fc():
         niveau_input = input("Quel niveau souhaitez-vous ? (1 - Débutant, 2 - Intermédiaire, 3 - Avancé) : ")
 
     txt = fiche_cadrage(sujet, fichier[int(niveau_input) - 1])
+    output_payload = _build_output_payload(txt, sujet)
     print(f"Fiche de cadrage générée : {sujet} {fichier[int(niveau_input) - 1]}")
-    to_json_file(txt, OUTPUT_DIR / "fiche_cadrage.json")
+    to_json_file(output_payload, OUTPUT_DIR / "fiche_cadrage.json")
 
 
 if __name__ == '__main__':
