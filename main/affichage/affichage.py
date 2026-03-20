@@ -49,7 +49,7 @@ class BookPDF(FPDF):
         # En-tete type livre: impair=titre, pair=chapitre courant.
         self.set_y(10)
         self.set_font("Body", size=10)
-        if self.page_no() % 2 == 0:
+        if self.page_no() % 2 == 1:
             header_text = self.book_title
         elif self.current_chapter_number is not None:
             header_text = f"Chapitre {self.current_chapter_number}"
@@ -63,26 +63,54 @@ class BookPDF(FPDF):
         # Pied de page en marge exterieure (livre): impair a droite, pair a gauche.
         self.set_y(-12)
         self.set_font("Body", size=12)
-        align = "R" if self.page_no() % 2 == 1 else "L"
+        align = "R" if self.page_no() % 2 == 0 else "L"
         self.cell(0, 8, f"{self.page_no()}", align=align)
 
 
+def _try_add_font(pdf: FPDF, family: str, font_path: Path) -> bool:
+    if not font_path.exists():
+        return False
+    try:
+        pdf.add_font(family, style="", fname=str(font_path))
+        return True
+    except Exception:
+        return False
+
+
 def _set_unicode_font(pdf: FPDF) -> None:
-    font_candidates = [
+    # Police principale pour le corps (latin).
+    body_candidates = [
         BASE_DIR / "fonts" / "DejaVuSans.ttf",
+        BASE_DIR / "fonts" / "NotoSans-Regular.ttf",
         Path("C:/Windows/Fonts/arial.ttf"),
         Path("C:/Windows/Fonts/calibri.ttf"),
     ]
 
-    for font_path in font_candidates:
-        if font_path.exists():
-            pdf.add_font("Body", style="", fname=str(font_path))
-            pdf.set_font("Body", size=12)
-            return
+    body_font_ok = any(_try_add_font(pdf, "Body", candidate) for candidate in body_candidates)
+    if not body_font_ok:
+        raise FileNotFoundError(
+            "Aucune police principale trouvee. Ajoute DejaVuSans.ttf dans main/affichage/fonts/."
+        )
 
-    raise FileNotFoundError(
-        "Aucune police Unicode trouvee. Ajoute DejaVuSans.ttf dans main/affichage/fonts/."
-    )
+    # Polices de fallback pour les caracteres CJK (dont japonais).
+    cjk_candidates = [
+        BASE_DIR / "fonts" / "NotoSansJP-Regular.ttf",
+        BASE_DIR / "fonts" / "NotoSansCJKjp-Regular.otf",
+        Path("C:/Windows/Fonts/meiryo.ttc"),
+        Path("C:/Windows/Fonts/msgothic.ttc"),
+        Path("C:/Windows/Fonts/YuGothR.ttc"),
+        Path("C:/Windows/Fonts/YuGothM.ttc"),
+    ]
+    fallback_families: list[str] = []
+    for index, candidate in enumerate(cjk_candidates, start=1):
+        family = f"FallbackCJK{index}"
+        if _try_add_font(pdf, family, candidate):
+            fallback_families.append(family)
+
+    if fallback_families and hasattr(pdf, "set_fallback_fonts"):
+        pdf.set_fallback_fonts(fallback_families)
+
+    pdf.set_font("Body", size=12)
 
 
 def _extract_text(value: Any) -> str:
@@ -182,7 +210,7 @@ def _insert_blank_page(pdf: BookPDF) -> None:
 
 
 def _ensure_next_part_starts_on_even_page(pdf: BookPDF) -> None:
-    if pdf.page_no() % 2 == 0:
+    if pdf.page_no() % 2 == 1:
         _insert_blank_page(pdf)
 
 
@@ -313,10 +341,11 @@ def affichage():
     pdf.alias_nb_pages()
     _set_unicode_font(pdf)
 
+    _insert_blank_page(pdf)
     _render_cover(pdf, book_title)
+    _insert_blank_page(pdf)
     pdf.set_running_elements(True)
 
-    _ensure_next_part_starts_on_even_page(pdf)
     pdf.set_book_title(book_title)
     pdf.set_current_chapter_number(None)
     pdf.set_header_title(PDF_TITLE)

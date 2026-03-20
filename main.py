@@ -56,16 +56,41 @@ def choose_restart_path():
     return paths[int(selected) - 1]
 
 
+def run_resume_until_done(max_cycles=20):
+    last_signature = None
+
+    for _ in range(max_cycles):
+        instructions = suivi("resume_auto", auto_confirm=True)
+        if not isinstance(instructions, dict):
+            print("Arret reprise auto: reponse inattendue.")
+            return
+
+        if not instructions.get("possible"):
+            print("Reprise automatique terminee.")
+            return
+
+        signature = (
+            instructions.get("next_step"),
+            str(instructions.get("resume_from")),
+        )
+        if signature == last_signature:
+            print("Arret reprise auto: progression bloquee, verification manuelle conseillee.")
+            return
+        last_signature = signature
+
+    print("Arret reprise auto: limite de cycles atteinte.")
+
+
 
 if __name__ == '__main__':
     while True:
         inputthething = input(
-            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), ou quitter (4) ? "
+            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), ou quitter (5) ? "
         )
-        while inputthething not in ['1', '2', '3', '4']:
-            print("Le nombre entre doit etre 1, 2, 3 ou 4.")
+        while inputthething not in ['1', '2', '3', '4', '5']:
+            print("Le nombre entre doit etre 1, 2, 3, 4 ou 5.")
             inputthething = input(
-                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), ou quitter (4) ? "
+                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), ou quitter (5) ? "
             )
 
         if inputthething == '1':
@@ -96,6 +121,8 @@ if __name__ == '__main__':
                 print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
             else:
                 print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
+        elif inputthething == '4':
+            run_resume_until_done()
         else:
             print("Au revoir !")
             break
