@@ -28,7 +28,6 @@ def load_structure():
 
 
 def _normalize_section_content(raw_content):
-    """Compatibilite: renvoie toujours un texte exploitable pour `contenu`."""
     if isinstance(raw_content, dict):
         return (
             raw_content.get("section_mise_a_jour")
@@ -140,29 +139,6 @@ def gen_section(chapitre, section):
     print("Vérification de cohérence effectuée pour la section précédente.")
 
 
-def gen_all_sections():
-    """Parcourt tous les chapitres et sections de structure_chapitre.json et génère chaque section."""
-    chapitres = load_structure()
-    nb_chapitres = len(chapitres)
-    nb_total_sections = sum(len(ch["sections"]) for ch in chapitres)
-
-    print(f"Structure chargée : {nb_chapitres} chapitres, {nb_total_sections} sections au total\n")
-
-    for chap in chapitres:
-        ch_num = int(chap["numero"])
-        nb_sec = len(chap["sections"])
-        print(f"Chapitre {ch_num} — {chap['titre']} ({nb_sec} sections)")
-
-        for sec in chap["sections"]:
-            sec_num = int(sec["numero"])
-            try:
-                gen_section(ch_num, sec_num)
-            except Exception:
-                gen_section(ch_num, sec_num)
-
-    print(f"\nGénération terminée : {nb_total_sections} sections générées pour {nb_chapitres} chapitres.")
-
-
 def merge_chapter_sections(chapitre_num: int):
     chapitres = load_structure()
     chapitre_data = None
@@ -213,5 +189,4 @@ def merge_all_chapters():
 
 
 if __name__ == '__main__':
-    gen_all_sections()
     merge_all_chapters()

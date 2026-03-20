@@ -33,7 +33,6 @@ def _build_output_payload(parsed_data, titre_saisi: str) -> dict:
     else:
         payload = {"donnees_parsees": parsed_data}
 
-    # Conserve explicitement le titre saisi, meme si le parser evolue.
     payload["titre_saisi_utilisateur"] = titre_saisi
 
     if not payload.get("sujet"):
