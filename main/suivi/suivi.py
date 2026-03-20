@@ -43,7 +43,7 @@ def suivisection():
             for attempt in range(1, max_attempts + 1):
                 try:
                     _section(ch_num, sec_num)
-                    #gen_section(ch_num, sec_num)
+                    gen_section(ch_num, sec_num)
                     break
                 except Exception as e:
                     print(f"Erreur section {sec_num} (chapitre {ch_num}) tentative {attempt}/{max_attempts}: {e}")

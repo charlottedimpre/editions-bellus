@@ -9,8 +9,8 @@ if str(SRC_DIR) not in sys.path:
 from suivi.suivi import suivi
 
 
-def restart():
-    paths = [
+def get_restart_paths():
+    return [
         ROOT_DIR / "main" / "fiche_cadrage" / "output",
         ROOT_DIR / "main" / "web_search" / "output",
         ROOT_DIR / "main" / "plan_detaille" / "output",
@@ -24,36 +24,78 @@ def restart():
         ROOT_DIR / "main" / "section" / "output" / "chapitre",
     ]
 
+
+def clear_output_path(path):
+    if not path.exists() or not path.is_dir():
+        return False
+
+    for file in path.rglob("*"):
+        if file.is_file():
+            file.unlink()
+    return True
+
+
+def restart(target_path=None):
+    paths = [target_path] if target_path else get_restart_paths()
+
     for path in paths:
-        if not path.exists() or not path.is_dir():
-            continue
-        for file in path.rglob("*"):
-            if file.is_file():
-                file.unlink()
+        clear_output_path(path)
+
+
+def choose_restart_path():
+    paths = get_restart_paths()
+    print("Choisis le dossier a vider :")
+    for index, path in enumerate(paths, start=1):
+        print(f"{index}. {path.relative_to(ROOT_DIR)}")
+
+    selected = input("Numero du dossier : ")
+    while not selected.isdigit() or not (1 <= int(selected) <= len(paths)):
+        print(f"Le nombre entre doit etre entre 1 et {len(paths)}.")
+        selected = input("Numero du dossier : ")
+
+    return paths[int(selected) - 1]
 
 
 
 if __name__ == '__main__':
-    inputthething = input("Est ce que tu veux redémarrer le projet (1), ou lancer la génération (2) ? ")
-    while inputthething not in ['1', '2']:
-        print("Le nombre entré doit être 1 ou 2.")
-        inputthething = input("Est ce que tu veux redémarrer le projet (1), ou lancer la génération (2) ? ")
+    while True:
+        inputthething = input(
+            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), ou quitter (4) ? "
+        )
+        while inputthething not in ['1', '2', '3', '4']:
+            print("Le nombre entre doit etre 1, 2, 3 ou 4.")
+            inputthething = input(
+                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), ou quitter (4) ? "
+            )
 
-    if inputthething == '1':
-        restart()
-        print("Projet redémarré. Tous les fichiers de sortie ont été supprimés.")
-    else:
-        suivi("fc")
+        if inputthething == '1':
 
-        suivi("web_search")
+            restart()
+            print("Projet redemarre. Tous les fichiers de sortie ont ete supprimes.")
 
-        suivi("plan_detail")
-        suivi("structure_chapitre")
+        elif inputthething == '2':
 
-        suivi("gen_intro")
-        suivi("gen_all_sections")
-        suivi("gen_conclu")
+            #suivi("fc")
 
-        suivi("gen_filrouge")
-        suivi("merge_filrouge_wrapper")
-        suivi("merge_all_chapters")
+            #suivi("web_search")
+
+            #suivi("plan_detail")
+            #suivi("structure_chapitre")
+
+            #suivi("gen_intro")
+            suivi("gen_all_sections")
+            suivi("gen_conclu")
+
+            suivi("gen_filrouge")
+            suivi("merge_filrouge_wrapper")
+            suivi("merge_all_chapters")
+            print("Generation terminee.")
+        elif inputthething == '3':
+            selected_path = choose_restart_path()
+            if clear_output_path(selected_path):
+                print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
+            else:
+                print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
+        else:
+            print("Au revoir !")
+            break
