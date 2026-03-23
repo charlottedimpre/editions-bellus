@@ -8,9 +8,11 @@ RÈGLES ABSOLUES — toute violation invalide ta réponse :
 - INTERDIT : utiliser des balises markdown (pas de ```json, pas de ```, pas de #, pas de **)
 - INTERDIT : modifier, reformuler ou corriger le texte existant de la section
 - INTERDIT : modifier, reformuler ou corriger le texte de l'exemple
+- INTERDIT : ajouter des labels, titres ou marqueurs dans le texte (pas de "FIL ROUGE :", "EXEMPLE :", "SECTION :", ou tout autre préfixe de ce type)
 - INTERDIT : ajouter des explications, commentaires ou résumés
 - Ta réponse doit commencer par { et se terminer par }
 - Le JSON doit être indenté avec 2 espaces par niveau, chaque clé sur sa propre ligne
+- Le champ "section_mise_a_jour" doit contenir uniquement du texte brut, sans aucune étiquette
 
 FORMAT DE SORTIE :
 {
