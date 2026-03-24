@@ -9,6 +9,9 @@ CHAPTERS_DIR = BASE_DIR.parent / "section" / "output" / "chapitre"
 CONCLUSION_PATH = BASE_DIR.parent / "conclusion" / "output" / "conclusion.json"
 FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PDF_TITLE = "Introduction"
+OUTPUT_PDF_PATH = BASE_DIR / "output" / "livre.pdf"
+AUTHOR_PLACEHOLDER = "[AUTEUR]"
+PUBLISHER_NAME = "Editions Bellus"
 
 
 class BookPDF(FPDF):
@@ -18,6 +21,8 @@ class BookPDF(FPDF):
         self.book_title = PDF_TITLE
         self.current_chapter_number: str | None = None
         self.show_running_elements = True
+        self.page_numbering_started = False
+        self.page_number_offset = 0
 
     def set_header_title(self, title: Any) -> None:
         if title is None:
@@ -43,6 +48,17 @@ class BookPDF(FPDF):
     def set_running_elements(self, enabled: bool) -> None:
         self.show_running_elements = enabled
 
+    def start_page_numbering(self) -> None:
+        # Active l'affichage de la pagination a partir de ce point du livre.
+        self.page_numbering_started = True
+
+    def set_page_number_origin_to_current(self) -> None:
+        # La page courante devient 1 dans le comptage logique.
+        self.page_number_offset = self.page_no() - 1
+
+    def _display_page_no(self) -> int:
+        return self.page_no() - self.page_number_offset
+
     def header(self) -> None:
         if not self.show_running_elements:
             return
@@ -60,11 +76,14 @@ class BookPDF(FPDF):
     def footer(self) -> None:
         if not self.show_running_elements:
             return
+        if not self.page_numbering_started:
+            return
         # Pied de page en marge exterieure (livre): impair a droite, pair a gauche.
         self.set_y(-12)
         self.set_font("Body", size=12)
+        display_no = self._display_page_no()
         align = "R" if self.page_no() % 2 == 0 else "L"
-        self.cell(0, 8, f"{self.page_no()}", align=align)
+        self.cell(0, 8, f"{display_no}", align=align)
 
 
 def _try_add_font(pdf: FPDF, family: str, font_path: Path) -> bool:
@@ -316,16 +335,66 @@ def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
     pdf.multi_cell(0, 8, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
 
-def _render_cover(pdf: BookPDF, book_title: str) -> None:
-    # Page de garde sans en-tete/pied, avec mise en page simple.
-    pdf.set_running_elements(False)
+def _render_sommaire(pdf: BookPDF, chapters: list[dict[str, Any]], has_conclusion: bool) -> None:
+    if not chapters and not has_conclusion:
+        return
+
+    toc_line_height = 10
+    toc_line_gap = 2
+
+    entries: list[str] = []
+    entries.append("Introduction")
+    for index, chapter_data in enumerate(chapters, start=1):
+        chapter_number = _extract_text(chapter_data.get("chapitre") or index)
+        chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
+        entries.append(f"Chapitre {chapter_number} - {chapter_title}")
+    if has_conclusion:
+        entries.append("Conclusion")
+
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title("Sommaire")
     pdf.add_page()
-    pdf.set_y(75)
+
+    pdf.ln(8)
+    pdf.set_font("Body", size=30)
+    pdf.multi_cell(0, 12, "Sommaire", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.ln(20)
+
+    pdf.set_font("Body", size=13)
+    for entry in entries:
+        pdf.multi_cell(
+            0,
+            toc_line_height,
+            entry,
+            new_x=XPos.LMARGIN,
+            new_y=YPos.NEXT,
+            align="C",
+        )
+        pdf.ln(toc_line_gap)
+
+
+def _render_center_title_page(pdf: BookPDF, book_title: str) -> None:
+    pdf.add_page()
+    pdf.set_page_number_origin_to_current()
+    # Titre seul centre verticalement.
+    pdf.set_y(pdf.h / 2 - 14)
     pdf.set_font("Body", size=30)
     pdf.multi_cell(0, 14, book_title, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
-    pdf.ln(6)
-    pdf.set_font("Body", size=16)
-    pdf.cell(0, 10, "Editions Bellus", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+
+
+def _render_title_page(pdf: BookPDF, book_title: str) -> None:
+    pdf.add_page()
+    pdf.set_y(20)
+    pdf.set_font("Body", size=14)
+    pdf.multi_cell(0, 8, AUTHOR_PLACEHOLDER, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+
+    pdf.set_y(pdf.h / 2 - 14)
+    pdf.set_font("Body", size=30)
+    pdf.multi_cell(0, 14, book_title, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+
+    pdf.set_y(-30)
+    pdf.set_font("Body", size=14)
+    pdf.cell(0, 8, PUBLISHER_NAME, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
 
 
 
@@ -335,21 +404,40 @@ def affichage():
     intro = introduction.get("intro", "")
     book_title = _load_book_title()
 
+    chapter_files = _load_chapter_files()
+    chapters_data: list[dict[str, Any]] = []
+    for chapter_file in chapter_files:
+        with chapter_file.open("r", encoding="utf-8") as f:
+            chapters_data.append(json.load(f))
+    conclusion_text = _load_conclusion_text()
+
     pdf = BookPDF()
     pdf.set_margins(left=20, top=30, right=20)
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.alias_nb_pages()
     _set_unicode_font(pdf)
 
+    # Ordre des premieres pages:
+    # 1) blanche, 2) blanche, 3) titre centre, 4) blanche,
+    # 5) auteur/titre/maison d'edition, 6) blanche, 7) debut du livre + pagination.
+    pdf.set_running_elements(False)
+    #_insert_blank_page(pdf)
     _insert_blank_page(pdf)
-    _render_cover(pdf, book_title)
+    _render_center_title_page(pdf, book_title)
     _insert_blank_page(pdf)
+    _render_title_page(pdf, book_title)
+    _insert_blank_page(pdf)
+    _render_sommaire(pdf, chapters_data, has_conclusion=bool(conclusion_text))
+    _insert_blank_page(pdf)
+
     pdf.set_running_elements(True)
 
     pdf.set_book_title(book_title)
     pdf.set_current_chapter_number(None)
     pdf.set_header_title(PDF_TITLE)
     pdf.add_page()
+    pdf.start_page_numbering()
+
     pdf.set_font("Body", size=30)
     pdf.ln(20)
     pdf.multi_cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
@@ -357,18 +445,13 @@ def affichage():
     pdf.set_font("Body", size=12)
     pdf.multi_cell(0, 8, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
-    chapter_files = _load_chapter_files()
-    for index, chapter_file in enumerate(chapter_files, start=1):
-        with chapter_file.open("r", encoding="utf-8") as f:
-            chapter_data = json.load(f)
+    for index, chapter_data in enumerate(chapters_data, start=1):
         _render_chapter(pdf, chapter_data, default_number=index)
 
-    conclusion_text = _load_conclusion_text()
     _render_conclusion(pdf, conclusion_text)
 
-
-
-    pdf.output("livre.pdf")
+    OUTPUT_PDF_PATH.parent.mkdir(parents=True, exist_ok=True)
+    pdf.output(str(OUTPUT_PDF_PATH))
 
 if __name__ == "__main__":
     affichage()
