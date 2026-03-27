@@ -1,11 +1,16 @@
 import json
+import os
+import time
 from pathlib import Path
 
-from ollama import ChatResponse, chat
+from dotenv import load_dotenv
+from google import genai
+from google.genai.errors import ServerError
 
 from parser import parse_section, parse_resume
 
 BASE_DIR = Path(__file__).resolve().parent
+ROOT_DIR = BASE_DIR.parents[1]
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 SECTION_DIR = OUTPUT_DIR / "section"
@@ -16,9 +21,47 @@ STRUCTURE_PATH = BASE_DIR.parent / "structure_chapitre" / "output" / "structure_
 FICHE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PLAN_PATH = BASE_DIR.parent / "plan_detaille" / "output" / "plan_detaille.json"
 
+load_dotenv(ROOT_DIR / ".env")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY introuvable dans le fichier .env")
+
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
+MAX_RETRIES = 3
+RETRY_DELAY_SECONDS = 5
+CLIENT = genai.Client(api_key=GEMINI_API_KEY)
+
 SECTION_DIR.mkdir(parents=True, exist_ok=True)
 RESUME_DIR.mkdir(parents=True, exist_ok=True)
 CHAPITRE_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _generate_text_with_retry(contents: str, context_label: str) -> str:
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            response = CLIENT.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=contents,
+            )
+            text = (response.text or "").strip()
+            if not text:
+                raise RuntimeError(f"Reponse vide de Gemini ({context_label}).")
+            return text
+        except ServerError as err:
+            status_code = getattr(err, "status_code", None)
+            is_503 = status_code == 503 or str(err).startswith("503")
+            if not is_503:
+                raise RuntimeError(f"Erreur serveur Gemini non 503 ({context_label}): {err}") from err
+
+            if attempt == MAX_RETRIES:
+                raise RuntimeError(
+                    f"Erreur 503 Gemini apres {MAX_RETRIES} tentatives ({context_label})."
+                ) from err
+
+            print(
+                f"Gemini indisponible (503) [{context_label}] tentative {attempt}/{MAX_RETRIES}, nouvelle tentative dans {RETRY_DELAY_SECONDS}s..."
+            )
+            time.sleep(RETRY_DELAY_SECONDS)
 
 
 def load_structure():
@@ -63,13 +106,11 @@ def coherence_check(chapitre, section):
     with prompt_path.open("r", encoding="utf-8") as f:
         prompt = f.read()
 
-    response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
-        {
-            'role': 'user',
-            'content': f'{prompt}\n\nSection à étudier :{fiche}',
-        },
-    ])
-    parsed = parse_resume(response.message.content, chapitre, section)
+    response_text = _generate_text_with_retry(
+        contents=f"{prompt}\n\nSection à étudier :{fiche}",
+        context_label=f"coherence_ch{chapitre}_s{section}",
+    )
+    parsed = parse_resume(response_text, chapitre, section)
     filename = f"coherence_ch{chapitre}_s{section}.json"
     filepath = RESUME_DIR / filename
     with filepath.open("w", encoding="utf-8") as f:
@@ -119,14 +160,12 @@ def gen_section(chapitre, section):
 
     coherence_text = coherence if coherence else ""
 
-    response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
-        {
-            'role': 'user',
-            'content': f'{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\n\nVérification de cohérence avec la section précédente : {coherence_text}',
-        },
-    ])
+    response_text = _generate_text_with_retry(
+        contents=f"{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\n\nVérification de cohérence avec la section précédente : {coherence_text}",
+        context_label=f"section_ch{chapitre}_s{section}",
+    )
 
-    parsed = parse_section(response.message.content, chapitre, section)
+    parsed = parse_section(response_text, chapitre, section)
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
     with filepath.open("w", encoding="utf-8") as f:

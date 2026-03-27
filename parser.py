@@ -217,7 +217,7 @@ def parse_section(text: str, chapitre: int, section: int) -> dict:
     return {
         "chapitre": chapitre,
         "section": section,
-        "contenu": _collapse_newlines(contenu.strip()),
+        "contenu": contenu.strip(),
     }
 
 

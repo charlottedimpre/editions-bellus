@@ -1,12 +1,20 @@
 from pathlib import Path
+import os
 
 import requests
 import json
 from datetime import datetime
+from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
+ROOT_DIR = BASE_DIR.parents[1]
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+load_dotenv(ROOT_DIR / ".env")
+SERP_API_KEY = os.getenv("VALUESERP_API_KEY") or os.getenv("SERP_API_KEY")
+if not SERP_API_KEY:
+    raise ValueError("VALUESERP_API_KEY introuvable dans le fichier .env")
 
 QUERY_KEYS = (
     "contenu_de_l_idée",
@@ -35,9 +43,35 @@ def _load_queries(payload: dict) -> list[str]:
     return [_extract_query(idee, idx) for idx, idee in enumerate(idees)]
 
 
+def _safe_api_json(api_result: requests.Response, query: str) -> dict:
+    try:
+        payload = api_result.json()
+    except ValueError:
+        print(f"Reponse API invalide pour la requete: {query}")
+        return {}
+
+    if not isinstance(payload, dict):
+        print(f"Format de reponse inattendu pour la requete: {query}")
+        return {}
+    return payload
+
+
+def _extract_organic_results(payload: dict, query: str) -> list[dict]:
+    organic_results = payload.get("organic_results")
+    if isinstance(organic_results, list):
+        return organic_results
+
+    error_info = payload.get("error")
+    if error_info:
+        print(f"Aucun resultat organique pour '{query}' (erreur API: {error_info})")
+    else:
+        print(f"Aucun resultat organique pour '{query}' (cle 'organic_results' absente).")
+    return []
+
+
 def web_search(query, timestamp):
     params = {
-        'api_key': '585CC66616DB4440AD3D8B7426E8387B',
+        'api_key': SERP_API_KEY,
         'q': f'{query}',
         'location': 'France',
         'location_auto': 'false',
@@ -46,13 +80,18 @@ def web_search(query, timestamp):
         'google_domain': 'google.fr'
     }
 
-    api_result = requests.get('https://api.valueserp.com/search', params)
+    try:
+        api_result = requests.get('https://api.valueserp.com/search', params=params, timeout=20)
+    except requests.RequestException as exc:
+        print(f"Echec HTTP pour la requete '{query}': {exc}")
+        return json.dumps([], ensure_ascii=False, indent=2)
 
-    results = api_result.json()
+    results = _safe_api_json(api_result, query)
+    organic_results = _extract_organic_results(results, query)
 
     clean_results = []
     max_results = 5  # Nombre maximum de résultats à prendre en compte
-    for result in results["organic_results"][:max_results]:
+    for result in organic_results[:max_results]:
         clean_results.append({
             "title": result.get("title"),
             "url": result.get("link"),
@@ -60,8 +99,8 @@ def web_search(query, timestamp):
         })
 
     filepath = OUTPUT_DIR / f"api_result-{timestamp}.json"
-    with filepath.open("a", encoding="utf-8") as f:
-        json.dump(clean_results, f, ensure_ascii=False, indent=2)
+    with filepath.open("w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
     return json.dumps(clean_results, ensure_ascii=False, indent=2)
 
 

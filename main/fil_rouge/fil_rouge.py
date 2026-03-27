@@ -1,8 +1,12 @@
 import json
+import os
 import sys
+import time
 from pathlib import Path
 
-from ollama import ChatResponse, chat
+from dotenv import load_dotenv
+from google import genai
+from google.genai.errors import ServerError
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -10,6 +14,45 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from parser import parse_filrouge, parse_resume
+
+load_dotenv(ROOT_DIR / ".env")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY introuvable dans le fichier .env")
+
+GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-2.5-flash-lite"
+MAX_RETRIES = 3
+RETRY_DELAY_SECONDS = 5
+CLIENT = genai.Client(api_key=GEMINI_API_KEY)
+
+
+def _generate_text_with_retry(contents: str, context_label: str) -> str:
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            response = CLIENT.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=contents,
+            )
+            text = (response.text or "").strip()
+            if not text:
+                raise RuntimeError(f"Reponse vide de Gemini ({context_label}).")
+            return text
+        except ServerError as err:
+            status_code = getattr(err, "status_code", None)
+            is_503 = status_code == 503 or str(err).startswith("503")
+            if not is_503:
+                raise RuntimeError(f"Erreur serveur Gemini non 503 ({context_label}): {err}") from err
+
+            if attempt == MAX_RETRIES:
+                raise RuntimeError(
+                    f"Erreur 503 Gemini apres {MAX_RETRIES} tentatives ({context_label})."
+                ) from err
+
+            print(
+                f"Gemini indisponible (503) [{context_label}] tentative {attempt}/{MAX_RETRIES}, nouvelle tentative dans {RETRY_DELAY_SECONDS}s..."
+            )
+            time.sleep(RETRY_DELAY_SECONDS)
+    raise RuntimeError(f"Echec de generation Gemini ({context_label}).")
 
 
 def load_structure() -> list[dict]:
@@ -76,19 +119,17 @@ def gen_filrouge():
     prompt_path = BASE_DIR / "input" / "fr_prompt.txt"
     prompt = _read_text(prompt_path, "prompt fil rouge")
 
-    response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
-        {
-            'role': 'user',
-            'content': (
-                f"{prompt}\n\n"
-                f"FICHE DE CADRAGE :{fiche_raw}\n\n"
-                f"PLAN DETAILLE :{plan_raw}\n\n"
-                f"RESUMES MASHUP (JSON) :{json.dumps(resume_mashup, ensure_ascii=False)}"
-            ),
-        },
-    ])
+    response_text = _generate_text_with_retry(
+        contents=(
+            f"{prompt}\n\n"
+            f"FICHE DE CADRAGE :{fiche_raw}\n\n"
+            f"PLAN DETAILLE :{plan_raw}\n\n"
+            f"RESUMES MASHUP (JSON) :{json.dumps(resume_mashup, ensure_ascii=False)}"
+        ),
+        context_label="fil_rouge",
+    )
 
-    parsed = parse_filrouge(response.message.content)
+    parsed = parse_filrouge(response_text)
     filepath = BASE_DIR / "output" / "fil_rouge.json"
     filepath.parent.mkdir(parents=True, exist_ok=True)
     with filepath.open("w", encoding="utf-8") as f:

@@ -19,6 +19,9 @@ Règles de style :
 - Chaque paragraphe apporte une information concrète et spécifique
 - Ne pas créer de scénario, mise en situation ou exemple narratif en ouverture de chapitre — commencer directement par le contenu de la première section
 - Ne jamais utiliser de mise en forme Markdown (gras, italique, titres, listes à puces, tirets) — rédiger en prose continue uniquement
+- Ne pas faire de répétition inutile d'une section à l'autre — chaque section doit apporter une information nouvelle, même si elle s'appuie sur des éléments déjà présentés dans une section précédente
+- Rédiger en paragraphes de 3 à 5 lignes, jamais plus de 6 lignes par paragraphe
+- Ne pas commencer avec un titre de section ou une phrase d'accroche — commencer directement par le contenu de la section
 
 Interdit :
 - Écrire hors du périmètre défini dans <hors_perimetre>
