@@ -100,14 +100,14 @@ if __name__ == '__main__':
 
         elif inputthething == '2':
 
-            suivi("fc")
+            #suivi("fc")
 
-            suivi("web_search")
+            #suivi("web_search")
 
-            suivi("plan_detail")
-            suivi("structure_chapitre")
+            #suivi("plan_detail")
+            #suivi("structure_chapitre")
 
-            suivi("gen_intro")
+            #suivi("gen_intro")
             suivi("gen_all_sections")
             suivi("gen_conclu")
 

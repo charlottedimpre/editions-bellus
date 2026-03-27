@@ -70,6 +70,27 @@ def load_structure():
         return json.load(f)
 
 
+def _find_section_title(chapitre: int, section: int) -> str | None:
+    for chap in load_structure():
+        if int(chap.get("numero", 0)) != chapitre:
+            continue
+        for sec in chap.get("sections", []):
+            if int(sec.get("numero", 0)) == section:
+                title = sec.get("titre_section")
+                if isinstance(title, str) and title.strip():
+                    return title.strip()
+    return None
+
+
+def _strip_leading_title(content: str, title: str) -> tuple[str, bool, str | None]:
+    separators = ("\\n\\n", "\\n", "\n\n", "\n")
+    for separator in separators:
+        prefix = f"{title}{separator}"
+        if content.startswith(prefix):
+            return content[len(prefix) :], True, separator
+    return content, False, None
+
+
 def _normalize_section_content(raw_content):
     if isinstance(raw_content, dict):
         return (
@@ -166,6 +187,19 @@ def gen_section(chapitre, section):
     )
 
     parsed = parse_section(response_text, chapitre, section)
+
+    # Nettoyage du contenu avant insertion dans le JSON de base.
+    section_title = _find_section_title(chapitre, section)
+    if section_title and isinstance(parsed.get("contenu"), str):
+        cleaned_content, removed, matched_separator = _strip_leading_title(
+            parsed["contenu"], section_title
+        )
+        if removed:
+            parsed["contenu"] = cleaned_content
+            print(
+                f"Prefixe titre retire pour section_ch{chapitre}_s{section} ({matched_separator!r})."
+            )
+
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
     with filepath.open("w", encoding="utf-8") as f:
