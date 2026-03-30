@@ -8,6 +8,7 @@ from google import genai
 from google.genai.errors import ServerError
 
 from parser import parse_section, parse_resume
+from section.section_cleaner import normalize_section_content, strip_leading_title
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -82,63 +83,6 @@ def _find_section_title(chapitre: int, section: int) -> str | None:
     return None
 
 
-def _strip_leading_title(content: str, title: str) -> tuple[str, bool, str | None]:
-    separators = ("\\n\\n", "\\n", "\n\n", "\n")
-    for separator in separators:
-        prefix = f"{title}{separator}"
-        if content.startswith(prefix):
-            return content[len(prefix) :], True, separator
-    return content, False, None
-
-
-def _normalize_section_content(raw_content):
-    if isinstance(raw_content, dict):
-        return (
-            raw_content.get("section_mise_a_jour")
-            or raw_content.get("contenu")
-            or raw_content.get("texte")
-            or ""
-        )
-
-    if isinstance(raw_content, str):
-        candidate = raw_content.strip()
-        if candidate.startswith("{") and candidate.endswith("}"):
-            try:
-                decoded = json.loads(candidate)
-                if isinstance(decoded, dict):
-                    return (
-                        decoded.get("section_mise_a_jour")
-                        or decoded.get("contenu")
-                        or decoded.get("texte")
-                        or raw_content
-                    )
-            except json.JSONDecodeError:
-                return raw_content
-    return raw_content
-
-
-def coherence_check(chapitre, section):
-    filename = f"section_ch{chapitre}_s{section}.json"
-    filepath = SECTION_DIR / filename
-    with filepath.open("r", encoding="utf-8") as f:
-        fiche = f.read()
-
-    prompt_path = INPUT_DIR / "c_prompt.txt"
-    with prompt_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
-
-    response_text = _generate_text_with_retry(
-        contents=f"{prompt}\n\nSection à étudier :{fiche}",
-        context_label=f"coherence_ch{chapitre}_s{section}",
-    )
-    parsed = parse_resume(response_text, chapitre, section)
-    filename = f"coherence_ch{chapitre}_s{section}.json"
-    filepath = RESUME_DIR / filename
-    with filepath.open("w", encoding="utf-8") as f:
-        json.dump(parsed, f, ensure_ascii=False, indent=2)
-    return parsed
-
-
 def gen_section(chapitre, section):
     with FICHE_PATH.open("r", encoding="utf-8") as f:
         fiche = f.read()
@@ -191,7 +135,7 @@ def gen_section(chapitre, section):
     # Nettoyage du contenu avant insertion dans le JSON de base.
     section_title = _find_section_title(chapitre, section)
     if section_title and isinstance(parsed.get("contenu"), str):
-        cleaned_content, removed, matched_separator = _strip_leading_title(
+        cleaned_content, removed, matched_separator = strip_leading_title(
             parsed["contenu"], section_title
         )
         if removed:
@@ -210,6 +154,28 @@ def gen_section(chapitre, section):
     coherence_check(chapitre, section)
 
     print("Vérification de cohérence effectuée pour la section précédente.")
+
+
+def coherence_check(chapitre, section):
+    filename = f"section_ch{chapitre}_s{section}.json"
+    filepath = SECTION_DIR / filename
+    with filepath.open("r", encoding="utf-8") as f:
+        fiche = f.read()
+
+    prompt_path = INPUT_DIR / "c_prompt.txt"
+    with prompt_path.open("r", encoding="utf-8") as f:
+        prompt = f.read()
+
+    response_text = _generate_text_with_retry(
+        contents=f"{prompt}\n\nSection à étudier :{fiche}",
+        context_label=f"coherence_ch{chapitre}_s{section}",
+    )
+    parsed = parse_resume(response_text, chapitre, section)
+    filename = f"coherence_ch{chapitre}_s{section}.json"
+    filepath = RESUME_DIR / filename
+    with filepath.open("w", encoding="utf-8") as f:
+        json.dump(parsed, f, ensure_ascii=False, indent=2)
+    return parsed
 
 
 def merge_chapter_sections(chapitre_num: int):
@@ -236,7 +202,7 @@ def merge_chapter_sections(chapitre_num: int):
         sections.append({
             "section": sec_num,
             "titre": sec.get("titre_section", ""),
-            "contenu": _normalize_section_content(data.get("contenu", "")),
+            "contenu": normalize_section_content(data.get("contenu", "")),
         })
 
     result = {

@@ -7,6 +7,7 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from suivi.suivi import suivi
+from section.section_cleaner import auto_clean_section_errors
 
 
 def get_restart_paths():
@@ -100,19 +101,21 @@ if __name__ == '__main__':
 
         elif inputthething == '2':
 
-            #suivi("fc")
+            suivi("fc")
 
-            #suivi("web_search")
+            suivi("web_search")
 
-            #suivi("plan_detail")
-            #suivi("structure_chapitre")
+            suivi("plan_detail")
+            suivi("structure_chapitre")
 
-            #suivi("gen_intro")
+            suivi("gen_intro")
             suivi("gen_all_sections")
             suivi("gen_conclu")
 
             suivi("gen_filrouge")
             suivi("merge_filrouge_wrapper")
+            auto_clean_section_errors(remove_all_numero_blocks=True, section_subdir="section_fr")
+
             suivi("merge_all_chapters")
             print("Generation terminee.")
         elif inputthething == '3':

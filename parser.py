@@ -203,7 +203,7 @@ def parse_introduction(text: str) -> dict:
     """
     intro = extract_tag(text, "introduction") or text
     return {
-        "intro": _collapse_newlines(intro),
+        "intro": intro,
         "_raw": text,
     }
 
@@ -271,7 +271,7 @@ def parse_conclusion(text: str) -> dict:
     """
     conclusion = extract_tag(text, "conclusion") or text
     return {
-        "conclusion": _collapse_newlines(conclusion.strip()),
+        "conclusion": conclusion.strip(),
         "_raw": text,
     }
 

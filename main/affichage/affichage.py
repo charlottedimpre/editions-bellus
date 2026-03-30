@@ -153,14 +153,18 @@ def _load_chapter_files() -> list[Path]:
     return sorted(CHAPTERS_DIR.glob("chapitre_*.json"), key=_chapter_index)
 
 
-def _load_conclusion_text() -> str:
-    if not CONCLUSION_PATH.exists():
-        return ""
+def _load_json_file(path: Path, default: Any = None) -> Any:
+    if not path.exists():
+        return default
     try:
-        with CONCLUSION_PATH.open("r", encoding="utf-8") as f:
-            payload = json.load(f)
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
     except (OSError, json.JSONDecodeError):
-        return ""
+        return default
+
+
+def _load_conclusion_text() -> str:
+    payload = _load_json_file(CONCLUSION_PATH, default="")
 
     if isinstance(payload, dict):
         return _extract_text(payload.get("conclusion") or payload.get("_raw"))
@@ -199,12 +203,8 @@ def _find_first_key_text(payload: Any, target_key: str) -> str:
 
 
 def _load_book_title() -> str:
-    if not FICHE_CADRAGE_PATH.exists():
-        return PDF_TITLE
-    try:
-        with FICHE_CADRAGE_PATH.open("r", encoding="utf-8") as f:
-            payload = json.load(f)
-    except (OSError, json.JSONDecodeError):
+    payload = _load_json_file(FICHE_CADRAGE_PATH, default={})
+    if not payload:
         return PDF_TITLE
 
     sujet = _find_first_key_text(payload, "titre_saisi_utilisateur")
@@ -233,6 +233,63 @@ def _ensure_next_part_starts_on_even_page(pdf: BookPDF) -> None:
         _insert_blank_page(pdf)
 
 
+def _extract_section_text(raw_content: Any, max_depth: int = 6) -> str:
+    if max_depth <= 0:
+        return _extract_text(raw_content)
+
+    if isinstance(raw_content, dict):
+        # Priorite aux cles metier.
+        for key in ("section_mise_a_jour", "contenu", "texte"):
+            if key in raw_content:
+                candidate = _extract_section_text(raw_content.get(key), max_depth=max_depth - 1)
+                if candidate:
+                    return candidate
+
+        # Fallback sur les valeurs imbriquees.
+        for value in raw_content.values():
+            candidate = _extract_section_text(value, max_depth=max_depth - 1)
+            if candidate:
+                return candidate
+        return ""
+
+    if isinstance(raw_content, (list, tuple)):
+        parts = [_extract_section_text(item, max_depth=max_depth - 1) for item in raw_content]
+        non_empty_parts = [part for part in parts if part]
+        return "\n\n".join(non_empty_parts)
+
+    if isinstance(raw_content, str):
+        cleaned = raw_content.strip()
+        if not cleaned:
+            return ""
+
+        # Parse uniquement les chaines qui ressemblent a du JSON.
+        if cleaned[0] in "{[\"":
+            try:
+                decoded = json.loads(cleaned)
+            except json.JSONDecodeError:
+                return cleaned
+            return _extract_section_text(decoded, max_depth=max_depth - 1) or cleaned
+
+        return cleaned
+
+    return _extract_text(raw_content)
+
+
+def _extract_sections_contents(chapter_data: dict[str, Any]) -> list[str]:
+    sections = chapter_data.get("sections")
+    if not isinstance(sections, list):
+        return []
+
+    contents: list[str] = []
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+        contenu = section.get("contenu")
+        if isinstance(contenu, str) and contenu.strip():
+            contents.append(contenu.strip())
+
+    return contents
+
 def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: int) -> None:
     chapter_number = _extract_text(chapter_data.get("chapitre") or default_number)
     chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
@@ -244,63 +301,42 @@ def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: 
     pdf.set_font("Body", size=22)
     pdf.ln(20)
     pdf.multi_cell(
-        0,
-        10,
+        0, 10,
         f"Chapitre {chapter_number}",
-        new_x=XPos.LMARGIN,
-        new_y=YPos.NEXT,
-        align="C",
+        new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C",
     )
     pdf.ln(2)
     pdf.set_font("Body", size=22)
     pdf.multi_cell(
-        0,
-        10,
-        "------",
-        new_x=XPos.LMARGIN,
-        new_y=YPos.NEXT,
-        align="C",
+        0, 10, "------",
+        new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C",
     )
     pdf.ln(2)
     pdf.set_font("Body", size=22)
     pdf.multi_cell(
-        0,
-        10,
-        chapter_title,
-        new_x=XPos.LMARGIN,
-        new_y=YPos.NEXT,
-        align="C",
+        0, 10, chapter_title,
+        new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C",
     )
     pdf.ln(20)
 
-    for section in chapter_data.get("sections", []):
-        raw_content = section.get("contenu", "")
-        section_text = ""
-        if isinstance(raw_content, str):
-            try:
-                nested_content = json.loads(raw_content)
-                section_text = _extract_text(
-                    nested_content.get("section_mise_a_jour")
-                    or nested_content.get("contenu")
-                    or nested_content.get("texte")
-                    or raw_content
-                )
-            except json.JSONDecodeError:
-                section_text = raw_content
-        elif isinstance(raw_content, dict):
-            section_text = _extract_text(
-                raw_content.get("section_mise_a_jour")
-                or raw_content.get("contenu")
-                or raw_content.get("texte")
-            )
-        else:
-            section_text = _extract_text(raw_content)
+    sections = chapter_data.get("sections", [])
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
 
+        # Titre de section
+        section_title = _extract_text(section.get("titre"))
+        if section_title:
+            pdf.set_font("Body", size=16)
+            pdf.multi_cell(0, 10, section_title, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.ln(3)
 
-        pdf.set_font("Body", size=12)
-        pdf.multi_cell(0, 8, section_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        pdf.ln(5)
-
+        # Contenu de section
+        contenu = section.get("contenu")
+        if isinstance(contenu, str) and contenu.strip():
+            pdf.set_font("Body", size=12)
+            pdf.multi_cell(0, 8, contenu.strip(), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.ln(8)
 
 def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
     if not conclusion_text:
@@ -399,16 +435,16 @@ def _render_title_page(pdf: BookPDF, book_title: str) -> None:
 
 
 def affichage():
-    with INTRO_PATH.open("r", encoding="utf-8") as f:
-        introduction = json.load(f)
+    introduction = _load_json_file(INTRO_PATH, default={})
     intro = introduction.get("intro", "")
     book_title = _load_book_title()
 
     chapter_files = _load_chapter_files()
     chapters_data: list[dict[str, Any]] = []
     for chapter_file in chapter_files:
-        with chapter_file.open("r", encoding="utf-8") as f:
-            chapters_data.append(json.load(f))
+        chapter_payload = _load_json_file(chapter_file, default={})
+        if isinstance(chapter_payload, dict):
+            chapters_data.append(chapter_payload)
     conclusion_text = _load_conclusion_text()
 
     pdf = BookPDF()

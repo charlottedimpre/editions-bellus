@@ -31,7 +31,7 @@ Respecte EXACTEMENT ce format :
 </cible_principale>
 
 <niveau>
-Débutant (suppose aucune connaissance préalable sur le sujet)
+Débutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)
 </niveau>
 
 <objectif_lecteur>

@@ -31,7 +31,7 @@ Respecte EXACTEMENT ce format :
 </cible_principale>
 
 <niveau>
-Avancé (suppose une connaissance approfondie du sujet, voire une expérience professionnelle ou personnelle significative)
+Avancé (suppose une connaissance approfondie du sujet et, idéalement, une pratique significative de ses enjeux, autorise un haut niveau d'abstraction conceptuelle et de densité argumentative, intègre des controverses, des modèles concurrents et des zones d'incertitude sans simplification pédagogique excessive, exige une explicitation fine des hypothèses, des compromis et des limites de transférabilité, privilégie des raisonnements comparatifs et des arbitrages contextuels plutôt que des prescriptions générales, peut mobiliser un lexique technique soutenu s'il reste défini avec précision, et vise une capacité d'analyse critique autonome permettant au lecteur de construire ses propres critères d'évaluation et de décision)
 </niveau>
 
 <objectif_lecteur>

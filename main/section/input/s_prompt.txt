@@ -20,6 +20,8 @@ STYLE :
 - Chaque paragraphe apporte une information concrète et spécifique
 - Pas de formulations vagues ni de généralités non étayées
 - Pas de questions rhétoriques
+- S'adresser directement au lecteur en utilisant "vous" — jamais "le lecteur", "l'investisseur", "l'emprunteur" ou toute autre désignation à la troisième personne pour désigner la personne qui lit
+- INTERDIT : écrire "le lecteur", "le lecteur découvrira", "le lecteur comprendra" ou toute formulation qui parle du lecteur comme d'un tiers absent — toujours écrire "vous" à la place
 
 POINT DE DÉPART :
 - Commencer directement par le contenu de la section, sans titre, sans phrase d'accroche, sans mise en contexte

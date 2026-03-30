@@ -31,7 +31,7 @@ Respecte EXACTEMENT ce format :
 </cible_principale>
 
 <niveau>
-Intermédiaire (suppose une connaissance basique du sujet, mais pas de formation approfondie)
+Intermédiaire (suppose une connaissance basique du sujet et de ses notions centrales, accepte un vocabulaire spécialisé modéré dès lors qu'il est clarifié, attend une progression structurée vers des arbitrages plus nuancés, mobilise des distinctions conceptuelles et des mécanismes causaux sans exiger d'expertise académique, tolère une densité argumentative supérieure au niveau débutant, requiert une explicitation des conditions de validité et des limites pratiques, évite les rappels élémentaires systématiques mais maintient une forte lisibilité pédagogique, et vise une montée en compétence opérationnelle permettant d'appliquer les principes avec discernement dans des situations variées)
 </niveau>
 
 <objectif_lecteur>
