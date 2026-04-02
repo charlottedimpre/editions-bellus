@@ -1,0 +1,28 @@
+{
+  "chapitre": 1,
+  "section": 3,
+  "chapitre_numero": "1",
+  "section_numero": "3",
+  "these_centrale": "La sécurité des actifs numériques repose sur la distinction et la gestion sécurisée des paires de clés cryptographiques, privée et publique.",
+  "arguments_cles": [
+    "La clé privée est secrète, unique et permet d'autoriser les transactions sortantes.",
+    "La clé publique, dérivée de la clé privée, sert d'adresse de réception et peut être partagée.",
+    "La relation cryptographique entre les clés assure l'impossibilité de retrouver la clé privée depuis la clé publique.",
+    "La phrase de récupération (seed phrase) est une représentation en mots de la clé privée, essentielle à la restauration du portefeuille.",
+    "La gestion hors ligne et la protection rigoureuse de la clé privée et de la phrase de récupération sont primordiales pour la sécurité des fonds."
+  ],
+  "concepts_introduits": [
+    "Clé privée: Signature numérique unique et secrète pour autoriser les transactions.",
+    "Clé publique: Adresse de réception dérivée de la clé privée, partageable.",
+    "Phrase de récupération: Séquence de mots pour restaurer un portefeuille et ses fonds.",
+    "Portefeuille matériel (cold wallet): Appareil de stockage sécurisé des clés, hors ligne."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La perte de la clé privée est irrémédiable.",
+    "Personne, même le créateur du système, ne peut retrouver une clé privée perdue.",
+    "Le partage de la phrase de récupération donne le contrôle total des fonds."
+  ],
+  "ton_angle": "Explicatif et préventif, insistant sur les risques liés à la mauvaise gestion des clés.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La sécurité des actifs numériques repose sur la distinction et la gestion sécurisée des paires de clés cryptographiques, privée et publique.</these_centrale>\n<arguments_cles>\n- La clé privée est secrète, unique et permet d'autoriser les transactions sortantes.\n- La clé publique, dérivée de la clé privée, sert d'adresse de réception et peut être partagée.\n- La relation cryptographique entre les clés assure l'impossibilité de retrouver la clé privée depuis la clé publique.\n- La phrase de récupération (seed phrase) est une représentation en mots de la clé privée, essentielle à la restauration du portefeuille.\n- La gestion hors ligne et la protection rigoureuse de la clé privée et de la phrase de récupération sont primordiales pour la sécurité des fonds.\n</arguments_cles>\n<concepts_introduits>\n- Clé privée: Signature numérique unique et secrète pour autoriser les transactions.\n- Clé publique: Adresse de réception dérivée de la clé privée, partageable.\n- Phrase de récupération: Séquence de mots pour restaurer un portefeuille et ses fonds.\n- Portefeuille matériel (cold wallet): Appareil de stockage sécurisé des clés, hors ligne.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La perte de la clé privée est irrémédiable.\n- Personne, même le créateur du système, ne peut retrouver une clé privée perdue.\n- Le partage de la phrase de récupération donne le contrôle total des fonds.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et préventif, insistant sur les risques liés à la mauvaise gestion des clés.</ton_angle>\n</fiche>"
+}

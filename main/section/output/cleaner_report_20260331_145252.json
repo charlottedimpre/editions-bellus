@@ -1,0 +1,62 @@
+{
+  "date": "20260331_145252",
+  "parametres": {
+    "section_subdir": "section_fr",
+    "remove_all_numero_blocks": true,
+    "remove_false_phrases": true
+  },
+  "title_report": {
+    "nb_fichiers_scannes": 32,
+    "nb_occurrences": 9
+  },
+  "numero_report": {
+    "nb_fichiers_scannes": 32,
+    "nb_occurrences": 0,
+    "nb_mismatches": 0
+  },
+  "false_phrase_report": {
+    "nb_fichiers_scannes": 32,
+    "nb_occurrences": 4
+  },
+  "nettoyage": {
+    "nb_fichiers_modifies": 6,
+    "details": [
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch1_s1.json",
+        "titres_supprimes": 3,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch5_s1.json",
+        "titres_supprimes": 3,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch5_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch7_s1.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch8_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch6_s2.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      }
+    ]
+  }
+}

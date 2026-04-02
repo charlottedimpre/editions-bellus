@@ -49,9 +49,6 @@ def _run_resume_auto(auto_confirm=False):
     if resume_from:
         print(f"Point de reprise conseille: {resume_from}")
 
-    if next_function == "merge_filrouge_wrapper":
-        next_function = "merge_filrouge"
-
     if not next_function:
         print("Impossible de reprendre automatiquement: fonction cible introuvable.")
         return instructions
@@ -205,7 +202,7 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
         gen_filrouge()
 
     elif fonction in ("merge_filrouge", "merge_filrouge_wrapper"):
-        merge_filrouge_wrapper()
+        merge_filrouge_wrapper(start_from=resume_from)
 
     elif fonction == "merge_all_chapters":
         merge_all_chapters()

@@ -1,0 +1,361 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 10,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "signaux d’alerte pour arrêter investissement crypto",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-01T14:20:22.514Z",
+    "processed_at": "2026-04-01T14:20:25.506Z",
+    "total_time_taken": 2.99,
+    "engine_url": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 8510
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 2,
+      "title": "Signaux d'alerte LCB pour les cryptos",
+      "link": "https://complyadvantage.com/fr/insights/signaux-dalerte-lcb-pour-les-cryptos/",
+      "domain": "complyadvantage.com",
+      "displayed_link": "https://complyadvantage.com › insights › signaux-daler...",
+      "snippet": "20 oct. 2025 — Votre entreprise connaît-elle les 6 signaux d'alerte LCB en matière de cryptos ? Les connaître peut aider votre entreprise à prévenir les ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : arrêter ‎| Afficher les résultats avec : arrêter"
+          ]
+        }
+      },
+      "date": "20 oct. 2025",
+      "date_utc": "2025-10-20T00:00:00.000Z"
+    },
+    {
+      "position": 2,
+      "block_position": 3,
+      "title": "Les 5 signaux les plus inquiétants pour les traders crypto ...",
+      "link": "https://fr.finance.yahoo.com/actualites/5-signaux-inqui%C3%A9tants-traders-crypto-090000007.html",
+      "domain": "fr.finance.yahoo.com",
+      "displayed_link": "https://fr.finance.yahoo.com › actualites › 5-signaux-in...",
+      "snippet": "il y a 2 jours — Les 5 signaux les plus inquiétants pour les traders crypto selon Binance Research · Guerre, régulation et décisions bloquées sur les ETF.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : alerte ‎arrêter ‎investissement"
+          ]
+        }
+      },
+      "date": "il y a 2 jours",
+      "date_utc": "2026-03-30T14:20:25.401Z"
+    },
+    {
+      "position": 3,
+      "block_position": 4,
+      "title": "« Crypto-monnaies » (bitcoin, etc.) : attention aux arnaques !",
+      "link": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/crypto-actifs-bitcoin-etc/crypto-monnaies-bitcoin-etc-attention-aux-arnaques",
+      "domain": "www.amf-france.org",
+      "displayed_link": "https://www.amf-france.org › proteger-son-epargne › cr...",
+      "snippet": "De nombreux signaux d'alerte peuvent vous mettre la puce à l'oreille. Certains sont facilement repérables : par exemple, des rendements élevés garantis (au-delà ...",
+      "prerender": false
+    },
+    {
+      "position": 4,
+      "block_position": 5,
+      "title": "Attention aux investissements de trading en ligne : soyez vigilant",
+      "link": "https://signal.conso.gouv.fr/fr/actualites/amf",
+      "domain": "signal.conso.gouv.fr",
+      "displayed_link": "https://signal.conso.gouv.fr › actualites › amf",
+      "snippet": "17 avr. 2024 — Avant d'investir, il est indispensable de consulter la liste noire des sociétés et sites non autorisés publiée sur le site de l'autorité des ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : alerte ‎arrêter"
+          ]
+        }
+      },
+      "date": "17 avr. 2024",
+      "date_utc": "2024-04-17T00:00:00.000Z"
+    },
+    {
+      "position": 5,
+      "block_position": 6,
+      "title": "Guide anti-blanchiment d'argent cryptographique : signaux ...",
+      "link": "https://www.complycube.com/fr/signaux-dalarme-en-matiere-de-blanchiment-dargent-en-cryptomonnaie/",
+      "domain": "www.complycube.com",
+      "displayed_link": "https://www.complycube.com › Accueil › Guides",
+      "snippet": "16 sept. 2025 — Ce guide aide les entreprises à détecter les schémas d'escroquerie liés aux cryptomonnaies, à identifier les signaux d'alerte et à mettre en ...",
+      "prerender": false,
+      "date": "16 sept. 2025",
+      "date_utc": "2025-09-16T00:00:00.000Z"
+    },
+    {
+      "position": 6,
+      "block_position": 8,
+      "title": "Binance répertorie six signaux d'alerte que les traders ...",
+      "link": "https://news.bitcoin.com/fr/avertissement-aux-teneurs-de-marche-dans-le-secteur-des-cryptomonnaies-binance-repertorie-six-signaux-d-alerte-que-les-traders-doivent-connaitre/",
+      "domain": "news.bitcoin.com",
+      "displayed_link": "https://news.bitcoin.com › avertissement-aux-teneurs-de...",
+      "snippet": "il y a 7 jours — Binance signale six signaux d'alerte concernant les teneurs de marché — notamment le wash trading et le dumping de jetons — et invite les ...",
+      "prerender": false,
+      "date": "il y a 7 jours",
+      "date_utc": "2026-03-25T14:20:25.441Z"
+    },
+    {
+      "position": 7,
+      "block_position": 9,
+      "title": "Les arnaques aux cryptomonnaies et comment les éviter",
+      "link": "https://proton.me/fr/blog/crypto-scams",
+      "domain": "proton.me",
+      "displayed_link": "https://proton.me › blog › crypto-scams",
+      "snippet": "3 août 2022 — Nous examinons les arnaques courantes liées aux cryptomonnaies, expliquons leur fonctionnement et offrons des conseils pour les éviter.",
+      "prerender": false,
+      "date": "3 août 2022",
+      "date_utc": "2022-08-03T00:00:00.000Z"
+    },
+    {
+      "position": 8,
+      "block_position": 10,
+      "title": "Attention aux investissements de trading en ligne",
+      "link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/attention-aux-investissements-de-trading-en-ligne",
+      "domain": "www.economie.gouv.fr",
+      "displayed_link": "https://www.economie.gouv.fr › les-fiches-pratiques › att...",
+      "snippet": "5 avr. 2024 — Attention aux risques liés aux investissements sur des placements financiers hautement risqués et spéculatifs. Les pertes peuvent être ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : signaux ‎arrêter"
+          ]
+        }
+      },
+      "date": "5 avr. 2024",
+      "date_utc": "2024-04-05T00:00:00.000Z"
+    },
+    {
+      "position": 9,
+      "block_position": 11,
+      "title": "Qu'est-ce qu'un Dead Cat Bounce en crypto et comment ...",
+      "link": "https://bingx.com/fr-fr/learn/article/what-is-dead-cat-bounce-in-crypto-how-to-spot-false-recovery-rallies",
+      "domain": "bingx.com",
+      "displayed_link": "https://bingx.com › Page d’accueil › Trader",
+      "snippet": "12 févr. 2026 — Signal d'alarme 1 : Volume décroissant ou le rallye fantôme ... Dans une véritable inversion de tendance, le prix et le volume montent ensemble.",
+      "prerender": false,
+      "date": "12 févr. 2026",
+      "date_utc": "2026-02-12T00:00:00.000Z"
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Liste fond d'investissement crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Liste+fond+d%27investissement+crypto&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAguEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Fonds d investissement crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Fonds+d+investissement+crypto&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAhHEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Meilleur broker crypto France",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Meilleur+broker+crypto+France&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAhGEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Dans quelle cryptomonnaie investir",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Dans+quelle+cryptomonnaie+investir&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAhFEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Exchange crypto autorisé en France",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Exchange+crypto+autoris%C3%A9+en+France&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAhEEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Compte crypto français",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Compte+crypto+fran%C3%A7ais&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAhBEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Investir dans la crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Investir+dans+la+crypto&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAg7EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Spécialiste crypto monnaie",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Sp%C3%A9cialiste+crypto+monnaie&sa=X&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ1QJ6BAg0EAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Faut-il s'attendre à un krach des cryptomonnaies  ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://www.devere-group.com/where-is-bitcoin-headed-whats-next-after-500-billion-crypto-rout/&hl=fr&sl=en&tl=fr&client=rq#:~:text=On%20Tuesday%2C%20traders%20on%20the,Bitcoin's%202025%20all%2Dtime%20high.",
+        "displayed_link": "https://www.devere-group.com › where-is-bitcoin-heade...",
+        "title": "L'avenir du Bitcoin : perspectives de marché et objectifs de reprise après l'ère des cryptomonnaies …The Future of Bitcoin: Market Outlook and Recovery Targets Post-Crypto ..."
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Quels sont les signaux d'alerte en matière de blanchiment de capitaux associés à la cryptomonnaie",
+      "answer": "Les signaux d'alerte de blanchiment d'argent liés aux risques géographiques sont notamment : Des fonds en cryptomonnaies qui proviennent d'une plateforme d'échange ou qui sont envoyés vers une bourse de cryptomonnaies qui n'est pas enregistrée dans le pays où le client ou la plateforme sont situés.",
+      "source": {
+        "link": "https://complyadvantage.com/fr/insights/signaux-dalerte-lcb-pour-les-cryptos/#:~:text=Les%20signaux%20d'alerte%20de,ou%20la%20plateforme%20sont%20situ%C3%A9s.",
+        "displayed_link": "https://complyadvantage.com › insights › signaux-daler...",
+        "title": "Signaux d'alerte LCB pour les cryptos - ComplyAdvantage"
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Qu'est-ce que la règle des 30 jours en cryptomonnaie ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://gordonlaw.com/learn/crypto-tax-loss-harvesting/&hl=fr&sl=en&tl=fr&client=rq#:~:text=Crypto%20and%20the%20Wash%20Sale%20Rule&text=The%20IRS%20says%20that%20you,from%20the%20wash%20sale%20rule.",
+        "displayed_link": "https://gordonlaw.com › learn › crypto-tax-loss-harvesting",
+        "title": "Optimisation fiscale des cryptomonnaies : tout ce que vous devez savoirCrypto Tax Loss Harvesting: Everything You Need to Know"
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Et si j'avais investi 10 000 $ dans le bitcoin il y a 5 ans ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://finance.yahoo.com/news/youd-invested-10-000-bitcoin-172500160.html&hl=fr&sl=en&tl=fr&client=rq#:~:text=Despite%20extreme%20volatility%2C%20Bitcoin's%20price,6.",
+        "displayed_link": "https://finance.yahoo.com › news › youd-invested-10-00...",
+        "title": "Si vous aviez investi 10 000 $ en Bitcoin il y a 5 ans , voici ce que cela aurait donné… - Yahoo FinanceIf You'd Invested $10,000 in Bitcoin 5 Years Ago, Here's ... - Yahoo Finance"
+      },
+      "block_position": 7
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "💡 Faux conseillers, promesses irréalistes, usurpations d ...",
+      "length": "4.38",
+      "source": "Facebook · Sud RadioFacebook · Sud Radio",
+      "link": "https://www.facebook.com/SudRadioOfficiel/videos/les-incontournables-de-la-cryptomonnaie/1259016835731075/",
+      "block_position": 1
+    },
+    {
+      "position": 2,
+      "title": "Bitcoin ALERT: Trump ULTIMATUM, the Signal That Changes ...",
+      "length": "11.03",
+      "source": "YouTube · Julien FLOTYouTube · Julien FLOT",
+      "link": "https://www.youtube.com/watch?v=9UqgAfEAOWI",
+      "block_position": 1
+    },
+    {
+      "position": 3,
+      "title": "URGENT BITCOIN ! LE PIRE SIGNAL SE VALIDE ...",
+      "length": "16.4",
+      "source": "YouTube · Crypto Le TroneYouTube · Crypto Le Trone",
+      "link": "https://www.youtube.com/watch?v=BxQkinbBtJ0",
+      "block_position": 1
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=10&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8NMDegQIMxAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=10&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=20&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=30&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=40&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=50&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=60&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=70&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=80&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=signaux+d%E2%80%99alerte+pour+arr%C3%AAter+investissement+crypto&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=pynNaa_mNpXNi-gP--u8iQ4&start=90&sa=N&sstk=Af77f_f7J4UvoxhOiaiqt6q1ryx1qpqewfS4OsjtNrMspt-_wnm-uaxj3pGVo_gQ8eJWe0exX6PI1KkLfc0pnb2-E7OYUvhU0v1sGA&ved=2ahUKEwjv1fjG7MyTAxWV5gIHHfs1L-EQ8tMDegQIMxAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=signaux%20d%E2%80%99alerte%20pour%20arr%C3%AAter%20investissement%20crypto&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

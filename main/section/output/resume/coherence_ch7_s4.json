@@ -1,0 +1,23 @@
+{
+  "chapitre": 7,
+  "section": 4,
+  "chapitre_numero": "7",
+  "section_numero": "4",
+  "these_centrale": "Une procédure claire et des mesures préventives sont essentielles pour récupérer ses actifs numériques en cas de perte d'accès.",
+  "arguments_cles": [
+    "Contacter le support client est la première étape face à une perte d'accès.",
+    "La preuve de propriété, notamment la phrase de récupération, est fondamentale pour retrouver l'accès.",
+    "Les délais de récupération varient selon la complexité du cas et les politiques de la plateforme.",
+    "La responsabilité de la sécurité des actifs repose en grande partie sur l'utilisateur."
+  ],
+  "concepts_introduits": [
+    "Actifs numériques : Biens dématérialisés dont la valeur est représentée sous forme électronique.",
+    "Plateforme d'échange : Service en ligne facilitant l'achat et la vente d'actifs numériques.",
+    "Portefeuille numérique : Outil permettant de stocker et gérer ses cryptomonnaies.",
+    "Phrase de récupération : Suite de mots permettant de restaurer l'accès à un portefeuille numérique."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Informatif et préventif, soulignant l'importance de la préparation de l'utilisateur.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Une procédure claire et des mesures préventives sont essentielles pour récupérer ses actifs numériques en cas de perte d'accès.</these_centrale>\n<arguments_cles>\n- Contacter le support client est la première étape face à une perte d'accès.\n- La preuve de propriété, notamment la phrase de récupération, est fondamentale pour retrouver l'accès.\n- Les délais de récupération varient selon la complexité du cas et les politiques de la plateforme.\n- La responsabilité de la sécurité des actifs repose en grande partie sur l'utilisateur.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Biens dématérialisés dont la valeur est représentée sous forme électronique.\n- Plateforme d'échange : Service en ligne facilitant l'achat et la vente d'actifs numériques.\n- Portefeuille numérique : Outil permettant de stocker et gérer ses cryptomonnaies.\n- Phrase de récupération : Suite de mots permettant de restaurer l'accès à un portefeuille numérique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La sécurité est une responsabilité partagée mais la perte de clés privées est souvent irréversible.\n- Le temps de récupération dépend de la difficulté du cas et des régulations de la plateforme.\n</a_ne_not_repeter>\n<ton_angle>Informatif et préventif, soulignant l'importance de la préparation de l'utilisateur.</ton_angle>\n</fiche>"
+}

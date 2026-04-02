@@ -1,0 +1,28 @@
+{
+  "chapitre": 3,
+  "section": 1,
+  "chapitre_numero": "3",
+  "section_numero": "1",
+  "these_centrale": "Le choix entre plateformes d'échange centralisées et décentralisées détermine le niveau de contrôle de l'utilisateur sur ses fonds et la complexité des opérations.",
+  "arguments_cles": [
+    "Les plateformes centralisées sont plus simples d'utilisation pour les débutants, offrent une meilleure liquidité et un support client, mais impliquent de confier ses clés privées.",
+    "Les plateformes décentralisées offrent un contrôle total sur les actifs, sans confier les clés privées, mais exigent une vigilance accrue et une meilleure compréhension des mécanismes de sécurité.",
+    "Le choix repose sur l'appétence au risque, le confort technologique et les objectifs d'investissement de l'utilisateur."
+  ],
+  "concepts_introduits": [
+    "Exchange : Plateforme pour acheter et vendre des cryptomonnaies.",
+    "Plateforme centralisée : Intermédiaire détenant les actifs de l'utilisateur.",
+    "Plateforme décentralisée (DEX) : Permet des transactions directes sans intermédiaire.",
+    "Clés privées : Secret nécessaire pour accéder et contrôler ses cryptomonnaies.",
+    "Liquidité : Facilité d'acheter/vendre sans impacter significativement le prix.",
+    "Slippage : Variation de prix lors d'une transaction importante sur un DEX."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La comparaison des plateformes centralisées et décentralisées comme une balance entre simplicité et contrôle.",
+    "L'analogie de la banque pour les plateformes centralisées.",
+    "La mention de \"appétence au risque\" comme seul critère de décision."
+  ],
+  "ton_angle": "Explicatif et comparatif, visant à éclairer un choix pragmatique.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le choix entre plateformes d'échange centralisées et décentralisées détermine le niveau de contrôle de l'utilisateur sur ses fonds et la complexité des opérations.</these_centrale>\n<arguments_cles>\n- Les plateformes centralisées sont plus simples d'utilisation pour les débutants, offrent une meilleure liquidité et un support client, mais impliquent de confier ses clés privées.\n- Les plateformes décentralisées offrent un contrôle total sur les actifs, sans confier les clés privées, mais exigent une vigilance accrue et une meilleure compréhension des mécanismes de sécurité.\n- Le choix repose sur l'appétence au risque, le confort technologique et les objectifs d'investissement de l'utilisateur.\n</arguments_cles>\n<concepts_introduits>\n- Exchange : Plateforme pour acheter et vendre des cryptomonnaies.\n- Plateforme centralisée : Intermédiaire détenant les actifs de l'utilisateur.\n- Plateforme décentralisée (DEX) : Permet des transactions directes sans intermédiaire.\n- Clés privées : Secret nécessaire pour accéder et contrôler ses cryptomonnaies.\n- Liquidité : Facilité d'acheter/vendre sans impacter significativement le prix.\n- Slippage : Variation de prix lors d'une transaction importante sur un DEX.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La comparaison des plateformes centralisées et décentralisées comme une balance entre simplicité et contrôle.\n- L'analogie de la banque pour les plateformes centralisées.\n- La mention de \"appétence au risque\" comme seul critère de décision.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et comparatif, visant à éclairer un choix pragmatique.</ton_angle>\n</fiche>"
+}

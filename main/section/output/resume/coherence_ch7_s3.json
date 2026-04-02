@@ -1,0 +1,23 @@
+{
+  "chapitre": 7,
+  "section": 3,
+  "chapitre_numero": "7",
+  "section_numero": "3",
+  "these_centrale": "La mise en place de mesures de sécurité supplémentaires est indispensable pour renforcer la protection des comptes et wallets d'actifs numériques.",
+  "arguments_cles": [
+    "La double authentification (2FA) ajoute une étape de vérification indispensable au-delà du mot de passe.",
+    "La liste blanche d'adresses de retrait limite les transferts de fonds vers des adresses pré-approuvées.",
+    "Les notifications de connexion alertent l'utilisateur en cas d'accès inhabituel à son compte."
+  ],
+  "concepts_introduits": [
+    "Double authentification (2FA): Méthode de sécurité nécessitant deux preuves d'identité.",
+    "Liste blanche d'adresses: Autorisation préalable des adresses pour les retraits de fonds.",
+    "Notifications de connexion: Alertes envoyées lors d'une nouvelle connexion sur un compte."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Les attaques par SIM swapping ne doivent pas être détaillées dans cette section."
+  ],
+  "ton_angle": "Informatif et préventif, axé sur les bénéfices de la sécurité.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La mise en place de mesures de sécurité supplémentaires est indispensable pour renforcer la protection des comptes et wallets d'actifs numériques.</these_centrale>\n<arguments_cles>\n- La double authentification (2FA) ajoute une étape de vérification indispensable au-delà du mot de passe.\n- La liste blanche d'adresses de retrait limite les transferts de fonds vers des adresses pré-approuvées.\n- Les notifications de connexion alertent l'utilisateur en cas d'accès inhabituel à son compte.\n</arguments_cles>\n<concepts_introduits>\n- Double authentification (2FA): Méthode de sécurité nécessitant deux preuves d'identité.\n- Liste blanche d'adresses: Autorisation préalable des adresses pour les retraits de fonds.\n- Notifications de connexion: Alertes envoyées lors d'une nouvelle connexion sur un compte.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les attaques par SIM swapping ne doivent pas être détaillées dans cette section.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, axé sur les bénéfices de la sécurité.</ton_angle>\n</fiche>"
+}

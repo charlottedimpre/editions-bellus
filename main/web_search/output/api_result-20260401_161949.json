@@ -1,0 +1,371 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 18,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "risques investissement crypto débutant 2024",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-01T14:19:51.525Z",
+    "processed_at": "2026-04-01T14:19:53.295Z",
+    "total_time_taken": 1.77,
+    "engine_url": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques+investissement+crypto+d%C3%A9butant+2024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques+investissement+crypto+d%C3%A9butant+2024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 36900
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 2,
+      "title": "Investir crypto-monnaie débutant : le guide complet",
+      "link": "https://sinvestir.fr/investir-crypto-monnaie-debutant/",
+      "domain": "sinvestir.fr",
+      "displayed_link": "https://sinvestir.fr › Articles › Crypto",
+      "snippet": "6 mars 2026 — Investir en crypto-actifs comporte un risque élevé de perte en capital. Leur volatilité est importante et ils exposent à des risques cyber ( ...",
+      "prerender": false,
+      "date": "6 mars 2026",
+      "date_utc": "2026-03-06T00:00:00.000Z"
+    },
+    {
+      "position": 2,
+      "block_position": 3,
+      "title": "Cryptomonnaies : faut-il investir ?",
+      "link": "https://www.maif.fr/epargne-patrimoine/guide-constituer-patrimoine/cryptomonnaie",
+      "domain": "www.maif.fr",
+      "displayed_link": "https://www.maif.fr › ... › Guide constituer patrimoine",
+      "snippet": "20 mars 2026 — Faut-il investir dans la cryptomonnaie ? Quels sont les avantages et les inconvénients de cet actif ? Y a-t-il des risques ?",
+      "prerender": false,
+      "date": "20 mars 2026",
+      "date_utc": "2026-03-20T00:00:00.000Z"
+    },
+    {
+      "position": 3,
+      "block_position": 4,
+      "title": "Risques crypto 2026 : le guide complet pour investir en ...",
+      "link": "https://fibo-crypto.fr/blog/risques-crypto/",
+      "domain": "fibo-crypto.fr",
+      "displayed_link": "https://fibo-crypto.fr › blog › risques-crypto",
+      "snippet": "4 août 2025 — Volatilité extrême : les cryptos peuvent perdre 50% de leur valeur en quelques jours, voire quelques heures · Risque de piratage : plus de 3,8 ...",
+      "prerender": false,
+      "date": "4 août 2025",
+      "date_utc": "2025-08-04T00:00:00.000Z"
+    },
+    {
+      "position": 4,
+      "block_position": 5,
+      "title": "Investir dans les crypto-actifs (bitcoin, etc.)",
+      "link": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/crypto-actifs-bitcoin-etc",
+      "domain": "www.amf-france.org",
+      "displayed_link": "https://www.amf-france.org › proteger-son-epargne › cr...",
+      "snippet": "Mais ce type d'investissement présente de nombreux risques : volatilité, risque informatique, arnaques, etc. Voici tout ce qu'il faut savoir avant de vous ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : débutant ‎| Afficher les résultats avec : débutant"
+          ]
+        }
+      }
+    },
+    {
+      "position": 5,
+      "block_position": 6,
+      "title": "Comment investir dans la crypto monnaie ? Guide 2026",
+      "link": "https://finance-heros.fr/investir-crypto-monnaie/",
+      "domain": "finance-heros.fr",
+      "displayed_link": "https://finance-heros.fr › investir-crypto-monnaie",
+      "snippet": "16 mars 2026 — Les crypto monnaies sont des investissements risqués et extrêmement volatils, à la hausse comme à la baisse. Peu d'actifs financiers peuvent ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "5,0(164)",
+            "Gratuit",
+            "‎Finance&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche Google"
+          ]
+        }
+      },
+      "date": "16 mars 2026",
+      "date_utc": "2026-03-16T00:00:00.000Z"
+    },
+    {
+      "position": 6,
+      "block_position": 8,
+      "title": "Comment investir dans la cryptomonnaie en 2026",
+      "link": "https://www.delubac.com/dossiers/crypto/comment-investir-cryptomonnaie/",
+      "domain": "www.delubac.com",
+      "displayed_link": "https://www.delubac.com › Dossiers › Crypto",
+      "snippet": "Pour les débutants en cryptomonnaie en 2026, il est essentiel de faire preuve de prudence et de faire des recherches approfondies avant de prendre des décisions ...",
+      "prerender": false
+    },
+    {
+      "position": 7,
+      "block_position": 9,
+      "title": "Investir dans les cryptos : mode d'emploi",
+      "link": "https://www.boursorama.com/bourse/dossiers/dossier-special-cryptomonnaies/112/",
+      "domain": "www.boursorama.com",
+      "displayed_link": "https://www.boursorama.com › bourse › dossiers › doss...",
+      "snippet": "Comme tout investissement, les cryptomonnaies comportent des risques de perte en capital importants. Leur volatilité et leur exposition à des évolutions ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : débutant ‎| Afficher les résultats avec : débutant"
+          ]
+        }
+      }
+    },
+    {
+      "position": 8,
+      "block_position": 10,
+      "title": "Investir dans la Crypto-monnaie et Bitcoin en 2025 : avis et ...",
+      "link": "https://coins.fr/investir-crypto-monnaie-avis-2025/",
+      "domain": "coins.fr",
+      "displayed_link": "https://coins.fr › All posts",
+      "snippet": "31 janv. 2025 — En tant que débutant, vous devez savoir que les crypto-monnaies sont considérées comme des actifs risqués. Il y a en effet de fortes ...",
+      "prerender": false,
+      "date": "31 janv. 2025",
+      "date_utc": "2025-01-31T00:00:00.000Z"
+    },
+    {
+      "position": 9,
+      "block_position": 11,
+      "title": "Comment investir dans la cryptomonnaie en 2024 ?",
+      "link": "https://www.tudigo.com/ressources/blog/investir-cryptomonnaie",
+      "domain": "www.tudigo.com",
+      "displayed_link": "https://www.tudigo.com › ressources › blog › investir-cr...",
+      "snippet": "21 mars 2024 — On fait le point sur tout ce qu'il faut savoir avant d'investir dans la cryptomonnaie : fonctionnement de la blockchain, risques, avantages…",
+      "prerender": false,
+      "date": "21 mars 2024",
+      "date_utc": "2024-03-21T00:00:00.000Z"
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Investir crypto monnaie débutant",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Investir+crypto+monnaie+d%C3%A9butant&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg1EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Faut-il investir dans le Bitcoin en 2025",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Faut-il+investir+dans+le+Bitcoin+en+2025&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg7EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Faut-il investir dans le Bitcoin maintenant",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Faut-il+investir+dans+le+Bitcoin+maintenant&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg4EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Investir crypto-monnaie application",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Investir+crypto-monnaie+application&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg8EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Pourquoi ne pas investir dans le bitcoin",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Pourquoi+ne+pas+investir+dans+le+bitcoin&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg2EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment se lancer dans la crypto sans argent",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Comment+se+lancer+dans+la+crypto+sans+argent&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg5EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Investir dans la crypto monnaie avis",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Investir+dans+la+crypto+monnaie+avis&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg3EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Combien investir en crypto monnaie",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Combien+investir+en+crypto+monnaie&sa=X&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q1QJ6BAg0EAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Quelles sont les cinq bonnes raisons de ne pas acheter de cryptomonnaie ?",
+      "answer": "Mais puisque je ne suis pas conseiller financier, laissez-moi vous donner cinq bonnes raisons de ne pas le faire.. Vous ne gagnerez pas assez. La valeur du bitcoin pourrait encore décupler, disions-nous. ... Vous miserez sur le mauvais cheval. ... Vous ne parlez pas la langue. ... Vous êtes trop élégant. ... Vous avez une conscience.",
+      "answer_list": [
+        {
+          "text": "Vous ne gagnerez pas assez. La valeur du bitcoin pourrait encore décupler, disions-nous. ..."
+        },
+        {
+          "text": "Vous miserez sur le mauvais cheval. ..."
+        },
+        {
+          "text": "Vous ne parlez pas la langue. ..."
+        },
+        {
+          "text": "Vous êtes trop élégant. ..."
+        },
+        {
+          "text": "Vous avez une conscience."
+        }
+      ],
+      "source": {
+        "link": "https://www.letemps.ch/opinions/chroniques/cinq-bonnes-raisons-de-ne-pas-acheter-de-cryptomonnaie",
+        "displayed_link": "https://www.letemps.ch › opinions › chroniques › cinq-b...",
+        "title": "Cinq bonnes raisons de ne pas acheter de cryptomonnaie - Le Temps"
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Est-ce dangereux d'investir dans la cryptomonnaie ?",
+      "answer": "Investir dans des crypto-actifs (couramment appelés « crypto-monnaies ») comporte des risques. Forte volatilité, arnaques potentielles, mais aussi risques techniques.",
+      "source": {
+        "link": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/crypto-actifs-bitcoin-etc/investir-en-crypto-actifs-les-precautions-pratiques#:~:text=Investir%20dans%20des%20crypto%2Dactifs,potentielles%2C%20mais%20aussi%20risques%20techniques.",
+        "displayed_link": "https://www.amf-france.org › crypto-actifs-bitcoin-etc › i...",
+        "title": "Investir en crypto-actifs : les précautions pratiques | AMF"
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Quelle crypto investir pour un débutant ?",
+      "answer": "Pour les débutants, commencez par les basiques. Le Bitcoin (BTC), la reine des cryptomonnaies, qui représente environ la moitié du marché à elle seule.De l'Ethereum (ETH), la blockchain à l'initiative des smart contracts, qui est la deuxième capitalisation du marché crypto.",
+      "answer_list": [
+        {
+          "text": "Le Bitcoin (BTC), la reine des cryptomonnaies, qui représente environ la moitié du marché à elle seule."
+        },
+        {
+          "text": "De l'Ethereum (ETH), la blockchain à l'initiative des smart contracts, qui est la deuxième capitalisation du marché crypto."
+        }
+      ],
+      "source": {
+        "link": "https://finance-heros.fr/investir-crypto-monnaie/",
+        "displayed_link": "https://finance-heros.fr › investir-crypto-monnaie",
+        "title": "Comment investir dans la crypto monnaie - Finance Héros"
+      },
+      "block_position": 7
+    },
+    {
+      "question": "Est-il intéressant d'investir 50 € par mois dans le Bitcoin ?",
+      "answer": "Stratégie d'investissement : 50 € mensuels dans le Bitcoin sur 5 ans. Investir 50 € par mois pendant cinq ans vous permet de bénéficier de l'effet du coût moyen. En achetant régulièrement du Bitcoin, que le prix soit à la hausse ou à la baisse, vous lissez l'impact des fluctuations de prix.",
+      "source": {
+        "link": "https://www.bitpanda.com/fr/academy/est-il-interessant-d-investir-50-euros-dans-le-bitcoin#:~:text=Strat%C3%A9gie%20d'investissement%20%3A%2050%20%E2%82%AC,impact%20des%20fluctuations%20de%20prix.",
+        "displayed_link": "https://www.bitpanda.com › academy › est-il-interessant-...",
+        "title": "Est-il intéressant d'investir 50 euros dans le Bitcoin ? | Bitpanda Academy"
+      },
+      "block_position": 7
+    }
+  ],
+  "answer_box": {
+    "answer_box_type": 18,
+    "answers": [
+      {
+        "source": {
+          "link": "https://www.mypcs.com/investir-en-cryptomonnaie-quand-on-est-debutant-le-guide-securise/#:~:text=Ainsi%2C%20si%20le%20cours%20du,Elles%20repr%C3%A9sentent%20un%20risque.",
+          "title": "Investir en Crypto pour Débutant : Guide Sécurisé avec Carte ...",
+          "displayed_link": "https://www.mypcs.com › Blog PCS"
+        },
+        "answer": "26 nov. 2025"
+      }
+    ],
+    "block_position": 1
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=10&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8NMDegQILxAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=10&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=20&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=30&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=40&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=50&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=60&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=70&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=80&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=risques+investissement+crypto+d%C3%A9butant+2024&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=hynNabCNOdeC9u8Pioqn6Ac&start=90&sa=N&sstk=Af77f_f7GjZGxWuAD2TwFLPMj6Kg0alR1PhTywZkSkCWtcLP2IC74Pa0mC_lPjOWl4R_klBmAe7HHSx57cCW_VkqsJRqJWGn5sfLWQ&ved=2ahUKEwjw7Nm37MyTAxVXgf0HHQrFCX0Q8tMDegQILxAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=risques%20investissement%20crypto%20d%C3%A9butant%202024&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

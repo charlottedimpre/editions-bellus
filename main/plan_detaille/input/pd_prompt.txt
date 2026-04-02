@@ -12,7 +12,7 @@ Respecte EXACTEMENT ce format :
 <importance>[Pourquoi ce sujet est important maintenant, en 1-2 phrases]</importance>
 <adresse_a>[Rappel de la cible principale et des cibles secondaires, en 1 phrase]</adresse_a>
 <organisation>[Comment le livre est structuré, en 1-2 phrases]</organisation>
-<promesse>[Ce que le lecteur va apprendre, en 1 phrase]</promesse>
+<promesse>[Ce que le lecteur va apprendre, en 1 phrase, en parlant directement au lecteur avec "vous"]</promesse>
 </introduction>
 
 <chapitres>

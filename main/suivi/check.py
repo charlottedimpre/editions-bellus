@@ -171,7 +171,7 @@ def _build_resume_plan(progress_data: dict, expected_pairs: list[tuple[int, int]
         return {
             "possible": True,
             "next_step": "sections_fil_rouge",
-            "next_function": "merge_filrouge",
+            "next_function": "merge_filrouge_wrapper",
             "resume_from": missing_sections_fr[0],
         }
 

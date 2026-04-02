@@ -1,0 +1,389 @@
+[
+  {
+    "numero": "1",
+    "titre": "Comprendre les bases des cryptomonnaies",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi la blockchain est-elle révolutionnaire (et pas seulement une mode) ?",
+        "objectif": "Vous identifierez les trois piliers de la blockchain qui la rendent unique par rapport aux systèmes financiers traditionnels.",
+        "concept_cle": "Décentralisation, transparence, immutabilité des transactions.",
+        "exemple": "Thomas découvre que ses transactions Bitcoin ne dépendent d’aucune banque, contrairement à son virement bancaire classique.",
+        "limite": "Ne détaille pas les algorithmes de consensus (PoW/PoS) — abordés au chapitre 4 si nécessaire.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Bitcoin, altcoins, tokens : comment ne plus confondre ces termes ?",
+        "objectif": "Vous distinguerez les trois catégories d’actifs crypto et leur utilité respective en 30 secondes.",
+        "concept_cle": "Fonction (monnaie, utilité, actif) vs. technologie sous-jacente.",
+        "exemple": "Thomas comprend pourquoi Ethereum (token) n’est pas un concurrent direct de Bitcoin (monnaie).",
+        "limite": "N’aborde pas les tokens non-fongibles (NFT) — hors périmètre pour un investisseur débutant.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Clés privées vs. clés publiques : pourquoi perdre la première équivaut à perdre son argent ?",
+        "objectif": "Vous maîtriserez la différence entre ces deux clés et leur rôle dans la sécurité de vos actifs.",
+        "concept_cle": "Clé privée = signature numérique ; clé publique = adresse de réception.",
+        "exemple": "Thomas réalise qu’il a failli partager sa phrase de récupération (clé privée) sur un forum.",
+        "limite": "Ne détaille pas les protocoles de chiffrement (ex: ECDSA) — traité au chapitre 7.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment une transaction crypto est-elle validée sans banque ?",
+        "objectif": "Vous expliquerez le processus de validation d’une transaction en 4 étapes simples.",
+        "concept_cle": "Nœuds, mineurs, frais de gaz, confirmation.",
+        "exemple": "Thomas suit le parcours de son premier achat de Bitcoin sur un explorateur de blocs.",
+        "limite": "N’aborde pas les différences entre PoW et PoS — traité au chapitre 4.",
+        "mots_cible": "500-700"
+      }
+    ],
+    "total_mots_chapitre": "1850-2650"
+  },
+  {
+    "numero": "2",
+    "titre": "Évaluer les risques et les pièges courants",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi 90% des débutants perdent de l’argent en crypto (et comment éviter ce sort) ?",
+        "objectif": "Vous identifierez les trois erreurs les plus fréquentes et leurs conséquences financières.",
+        "concept_cle": "FOMO, surendettement, négligence de la sécurité.",
+        "exemple": "Thomas évite d’investir dans un altcoin \"prometteur\" après avoir lu son whitepaper.",
+        "limite": "Ne détaille pas les stratégies de trading avancées — traité au chapitre 5.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Volatilité extrême : comment ne pas paniquer face à une chute de 30% en 24h ?",
+        "objectif": "Vous calculerez votre seuil de tolérance à la volatilité avant d’investir.",
+        "concept_cle": "Horizon temporel vs. amplitude des variations.",
+        "exemple": "Thomas simule une perte de 40% sur son capital initial de 5 000 €.",
+        "limite": "N’aborde pas les stratégies de couverture (hedging) — hors périmètre.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Arnaques crypto : comment repérer les signaux d’alerte avant de perdre ses fonds ?",
+        "objectif": "Vous détecterez 5 red flags dans une offre d’investissement crypto en 2 minutes.",
+        "concept_cle": "Promesses de rendements garantis, pression temporelle, anonymat des équipes.",
+        "exemple": "Thomas analyse une publicité pour un \"fonds crypto à 20% de rendement mensuel\".",
+        "limite": "Ne liste pas les arnaques historiques (ex: Bitconnect) — À définir avec l’auteur.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Piratages et pertes d’accès : pourquoi votre négligence peut coûter cher ?",
+        "objectif": "Vous évaluerez les risques liés à la gestion de vos clés privées et comptes.",
+        "concept_cle": "Responsabilité individuelle vs. sécurité centralisée.",
+        "exemple": "Thomas découvre que 20% des Bitcoins minés sont perdus à jamais.",
+        "limite": "Ne détaille pas les méthodes de sécurisation — traité au chapitre 7.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1850-2650"
+  },
+  {
+    "numero": "3",
+    "titre": "Choisir une plateforme d’échange sécurisée",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Centralisé vs. décentralisé : quel type de plateforme correspond à votre profil ?",
+        "objectif": "Vous choisirez entre un exchange centralisé et décentralisé en fonction de vos priorités (sécurité, simplicité, anonymat).",
+        "concept_cle": "Custodial vs. non-custodial, KYC, liquidité.",
+        "exemple": "Thomas compare Binance (centralisé) et Uniswap (décentralisé) pour son premier achat.",
+        "limite": "Ne détaille pas les protocoles DEX (ex: Automated Market Makers) — À définir avec l’auteur.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "5 critères pour éviter les plateformes non fiables (et les arnaques) ?",
+        "objectif": "Vous évaluerez une plateforme en 5 minutes grâce à une checklist simple.",
+        "concept_cle": "Régulation, historique de sécurité, frais, liquidité, support client.",
+        "exemple": "Thomas vérifie si la plateforme qu’il a repérée est régulée dans son pays.",
+        "limite": "Ne propose pas de comparatif détaillé des plateformes — À définir avec l’auteur.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Comment créer et sécuriser son compte en 10 étapes (sans se faire pirater) ?",
+        "objectif": "Vous configurerez un compte sécurisé avec double authentification et phrases de récupération.",
+        "concept_cle": "2FA, phrase de récupération, mot de passe fort, liste blanche d’adresses.",
+        "exemple": "Thomas active la 2FA sur son compte et stocke sa phrase de récupération hors ligne.",
+        "limite": "Ne détaille pas les méthodes de phishing avancées — traité au chapitre 7.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Frais cachés et liquidité : comment ne pas payer trop cher ses transactions ?",
+        "objectif": "Vous identifierez les frais invisibles et optimiserez vos coûts de transaction.",
+        "concept_cle": "Frais de dépôt/retrait, spread, slippage, frais de gaz.",
+        "exemple": "Thomas compare les frais de Binance et Coinbase pour un achat de 1 000 €.",
+        "limite": "Ne détaille pas les stratégies de minimisation des frais pour traders actifs — hors périmètre.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1850-2650"
+  },
+  {
+    "numero": "4",
+    "titre": "Analyser les tendances du marché",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Graphiques crypto : comment lire les courbes sans être un expert ?",
+        "objectif": "Vous interpréterez un graphique de prix en identifiant les tendances haussières et baissières.",
+        "concept_cle": "Support, résistance, bougies japonaises, échelle logarithmique.",
+        "exemple": "Thomas analyse le graphique du Bitcoin sur 1 an pour repérer les phases de hausse/baise.",
+        "limite": "Ne détaille pas les indicateurs avancés (Ichimoku, Fibonacci) — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Moyennes mobiles : comment repérer un changement de tendance avant les autres ?",
+        "objectif": "Vous utiliserez les moyennes mobiles 50 et 200 jours pour identifier les signaux d’achat/vente.",
+        "concept_cle": "Croisement doré, croisement de la mort, période de calcul.",
+        "exemple": "Thomas applique les moyennes mobiles au graphique d’Ethereum pour anticiper un rebond.",
+        "limite": "Ne détaille pas les stratégies basées sur plusieurs moyennes mobiles — À définir avec l’auteur.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Cycles de marché : pourquoi les cryptos suivent des schémas prévisibles (et comment en profiter) ?",
+        "objectif": "Vous reconnaîtrez les 4 phases d’un cycle de marché et adapterez votre stratégie en conséquence.",
+        "concept_cle": "Accumulation, markup, distribution, markdown.",
+        "exemple": "Thomas identifie que le Bitcoin est en phase d’accumulation après une chute de 50%.",
+        "limite": "Ne détaille pas les théories de cycles avancées (ex: Stock-to-Flow) — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Signaux d’alerte : comment éviter les pièges des \"pump and dump\" ?",
+        "objectif": "Vous détecterez 3 signaux indiquant une manipulation de marché.",
+        "concept_cle": "Volume anormal, hype médiatique, ordres de vente massifs.",
+        "exemple": "Thomas repère un altcoin dont le prix a bondi de 200% en 1 heure sans actualité.",
+        "limite": "Ne détaille pas les méthodes de manipulation avancées (ex: spoofing) — hors périmètre.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1850-2650"
+  },
+  {
+    "numero": "5",
+    "titre": "Définir une stratégie d’investissement adaptée",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "DCA vs. hold vs. trading : quelle stratégie pour votre profil de risque ?",
+        "objectif": "Vous choisirez une stratégie en fonction de votre tolérance au risque et de votre temps disponible.",
+        "concept_cle": "Dollar-Cost Averaging, hold long terme, trading actif.",
+        "exemple": "Thomas opte pour le DCA après avoir évalué son aversion aux pertes.",
+        "limite": "Ne détaille pas les stratégies de trading actif — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment allouer son capital entre Bitcoin, Ethereum et altcoins ?",
+        "objectif": "Vous répartirez votre capital en fonction de la diversification et de la volatilité.",
+        "concept_cle": "Règle 80/20, corrélation des actifs, capitalisation boursière.",
+        "exemple": "Thomas alloue 60% en Bitcoin, 30% en Ethereum et 10% en altcoins.",
+        "limite": "Ne propose pas de liste d’altcoins recommandés — À définir avec l’auteur.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Pourquoi fixer un objectif de gain (et un seuil de perte) avant d’investir ?",
+        "objectif": "Vous définirez des objectifs réalistes et des seuils de sortie pour éviter les décisions émotionnelles.",
+        "concept_cle": "Take-profit, stop-loss, horizon temporel.",
+        "exemple": "Thomas fixe un objectif de +20% et un seuil de -15% pour son investissement.",
+        "limite": "Ne détaille pas les stratégies de rééquilibrage avancées — traité au chapitre 6.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment tester sa stratégie sans risquer son capital ?",
+        "objectif": "Vous simulerez votre stratégie avec un compte démo ou un tableur avant d’investir.",
+        "concept_cle": "Backtesting manuel, compte démo, journal d’investissement.",
+        "exemple": "Thomas utilise un tableur pour simuler un DCA sur 3 mois avec des données historiques.",
+        "limite": "Ne détaille pas les outils de backtesting automatisés — hors périmètre.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1750-2550"
+  },
+  {
+    "numero": "6",
+    "titre": "Gérer son portefeuille au quotidien",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Quels outils utiliser pour suivre ses investissements sans y passer 3h par jour ?",
+        "objectif": "Vous choisirez 2 outils de tracking adaptés à votre niveau et à vos besoins.",
+        "concept_cle": "Portfolio tracker, alertes de prix, agrégateurs de données.",
+        "exemple": "Thomas configure des alertes sur CoinMarketCap pour ses actifs.",
+        "limite": "Ne détaille pas les outils avancés pour traders professionnels — hors périmètre.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment ajuster sa stratégie face à une chute ou une hausse soudaine ?",
+        "objectif": "Vous prendrez des décisions rationnelles en cas de mouvement de marché extrême.",
+        "concept_cle": "Rééquilibrage, moyenne à la baisse, prise de profit partielle.",
+        "exemple": "Thomas achète plus de Bitcoin après une chute de 20%, conformément à sa stratégie DCA.",
+        "limite": "Ne détaille pas les stratégies de couverture (hedging) — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Pourquoi tenir un journal d’investissement évite les erreurs coûteuses ?",
+        "objectif": "Vous créerez un journal pour documenter vos décisions et en tirer des leçons.",
+        "concept_cle": "Rationalité, biais cognitifs, apprentissage continu.",
+        "exemple": "Thomas note ses émotions lors d’une chute de 15% pour éviter de vendre en panique.",
+        "limite": "Ne détaille pas les méthodes de psychologie du trading — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment éviter les décisions impulsives face aux actualités crypto ?",
+        "objectif": "Vous filtrerez les informations pertinentes des \"bruits\" médiatiques.",
+        "concept_cle": "Sources fiables, vérification des faits, horizon temporel.",
+        "exemple": "Thomas ignore une rumeur sur Twitter annonçant un \"krach imminent\".",
+        "limite": "Ne liste pas les sources d’information recommandées — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1750-2550"
+  },
+  {
+    "numero": "7",
+    "titre": "Sécuriser ses actifs numériques",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Cold wallet vs. hot wallet : comment choisir en fonction de ses besoins ?",
+        "objectif": "Vous sélectionnerez le type de wallet adapté à votre volume d’actifs et à votre fréquence d’utilisation.",
+        "concept_cle": "Stockage à froid, stockage en ligne, risque de piratage.",
+        "exemple": "Thomas transfère 80% de ses actifs sur un Ledger Nano S.",
+        "limite": "Ne détaille pas les protocoles de chiffrement — À définir avec l’auteur.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Phrase de récupération : pourquoi la perdre équivaut à brûler son argent ?",
+        "objectif": "Vous stockerez votre phrase de récupération de manière sécurisée et redondante.",
+        "concept_cle": "Seed phrase, sauvegarde physique, partage de responsabilité.",
+        "exemple": "Thomas grave sa phrase de récupération sur une plaque métallique.",
+        "limite": "Ne détaille pas les méthodes de récupération avancées (ex: Shamir’s Secret Sharing) — hors périmètre.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Double authentification et liste blanche : comment bloquer les pirates ?",
+        "objectif": "Vous configurerez des mesures de sécurité supplémentaires pour vos comptes et wallets.",
+        "concept_cle": "2FA, liste blanche d’adresses, notifications de connexion.",
+        "exemple": "Thomas active la liste blanche sur son exchange pour limiter les retraits.",
+        "limite": "Ne détaille pas les attaques par SIM swapping — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Que faire en cas de perte d’accès à son wallet ou son exchange ?",
+        "objectif": "Vous suivrez une procédure claire pour récupérer vos actifs en cas de problème.",
+        "concept_cle": "Support client, preuve de propriété, délais de récupération.",
+        "exemple": "Thomas contacte le support de son exchange après avoir perdu son mot de passe.",
+        "limite": "Ne détaille pas les cas de wallets hérités ou de décès — hors périmètre.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1750-2550"
+  },
+  {
+    "numero": "8",
+    "titre": "Anticiper les impôts et obligations légales",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi déclarer ses cryptos est obligatoire (même si c’est compliqué) ?",
+        "objectif": "Vous comprendrez les conséquences légales et fiscales de la non-déclaration.",
+        "concept_cle": "Obligation déclarative, sanctions, transparence fiscale.",
+        "exemple": "Thomas découvre qu’il doit déclarer son compte sur Binance même sans retrait en euros.",
+        "limite": "Ne détaille pas les cas de fiscalité internationale — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment calculer ses plus-values (et éviter les erreurs coûteuses) ?",
+        "objectif": "Vous calculerez vos plus-values en utilisant la méthode FIFO ou le coût moyen.",
+        "concept_cle": "FIFO, coût moyen, valeur d’acquisition, valeur de cession.",
+        "exemple": "Thomas calcule sa plus-value après avoir vendu 0,5 Bitcoin sur 3 achats différents.",
+        "limite": "Ne détaille pas les régimes fiscaux spécifiques (ex: PFU en France) — À définir avec l’auteur.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels formulaires remplir pour être en règle avec le fisc ?",
+        "objectif": "Vous identifierez les formulaires à remplir dans votre pays de résidence.",
+        "concept_cle": "Déclaration des comptes, formulaire de plus-values, délais.",
+        "exemple": "Thomas remplit le formulaire 3916 pour déclarer son compte Binance.",
+        "limite": "Ne fournit pas de modèles de formulaires — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment justifier ses transactions en cas de contrôle fiscal ?",
+        "objectif": "Vous conserverez les preuves nécessaires pour répondre à un contrôle.",
+        "concept_cle": "Historique des transactions, relevés bancaires, justificatifs d’achat/vente.",
+        "exemple": "Thomas archive ses relevés de compte et captures d’écran de ses transactions.",
+        "limite": "Ne détaille pas les procédures de contrôle fiscal — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1750-2550"
+  },
+  {
+    "numero": "9",
+    "titre": "Ajuster sa stratégie après 90 jours",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Comment évaluer objectivement ses résultats (sans se mentir) ?",
+        "objectif": "Vous calculerez votre performance nette et la comparerez à vos objectifs initiaux.",
+        "concept_cle": "Performance brute, performance nette, benchmark, inflation.",
+        "exemple": "Thomas constate que son portefeuille a progressé de 12% en 3 mois, mais seulement de 5% après frais.",
+        "limite": "Ne détaille pas les benchmarks avancés (ex: Sharpe ratio) — hors périmètre.",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "2",
+        "titre_section": "Quels signaux indiquent qu’il faut ajuster (ou arrêter) sa stratégie ?",
+        "objectif": "Vous identifierez 3 signaux d’alerte pour revoir ou interrompre votre approche.",
+        "concept_cle": "Dépassement du seuil de perte, changement de profil de risque, objectifs atteints.",
+        "exemple": "Thomas décide d’arrêter après avoir perdu 25% de son capital, dépassant son seuil de -15%.",
+        "limite": "Ne détaille pas les stratégies de sortie complexes — hors périmètre.",
+        "mots_cible": "450-650"
+      },
+      {
+        "numero": "3",
+        "titre_section": "Poursuivre, diversifier ou arrêter : comment prendre la bonne décision ?",
+        "objectif": "Vous choisirez entre 3 options en fonction de vos résultats et de votre situation.",
+        "concept_cle": "Réinvestissement, diversification, désengagement.",
+        "exemple": "Thomas décide de diversifier une partie de ses gains vers des ETF traditionnels.",
+        "limite": "Ne détaille pas les stratégies de diversification avancées — À définir avec l’auteur.",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "4",
+        "titre_section": "Comment capitaliser sur son expérience pour ses prochains investissements ?",
+        "objectif": "Vous tirerez des leçons de vos 90 jours pour améliorer vos futures stratégies.",
+        "concept_cle": "Apprentissage continu, journal d’investissement, ajustement des objectifs.",
+        "exemple": "Thomas note dans son journal qu’il a sous-estimé l’impact des frais sur sa performance.",
+        "limite": "Ne propose pas de plan d’action détaillé pour les prochains investissements — hors périmètre.",
+        "mots_cible": "400-600"
+      }
+    ],
+    "total_mots_chapitre": "1750-2550"
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "date": "20260330_162725",
+  "parametres": {
+    "section_subdir": "section_fr",
+    "remove_all_numero_blocks": true,
+    "remove_false_phrases": true
+  },
+  "title_report": {
+    "nb_fichiers_scannes": 40,
+    "nb_occurrences": 15
+  },
+  "numero_report": {
+    "nb_fichiers_scannes": 40,
+    "nb_occurrences": 1,
+    "nb_mismatches": 0
+  },
+  "false_phrase_report": {
+    "nb_fichiers_scannes": 40,
+    "nb_occurrences": 22
+  },
+  "nettoyage": {
+    "nb_fichiers_modifies": 23,
+    "details": [
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch1_s2.json",
+        "titres_supprimes": 2,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 3
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch2_s1.json",
+        "titres_supprimes": 3,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch2_s2.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 2
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch2_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch3_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch5_s1.json",
+        "titres_supprimes": 3,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch5_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 2
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch8_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch9_s2.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch9_s3.json",
+        "titres_supprimes": 1,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 0
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch7_s3.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 1,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch10_s1.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 3
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch10_s3.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch1_s3.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch3_s2.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch6_s4.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch7_s1.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch7_s2.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch7_s4.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch8_s1.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch8_s2.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch8_s4.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      },
+      {
+        "fichier": "C:\\Users\\krypt\\Documents\\editions-bellus\\main\\section\\output\\section_fr\\section_ch9_s4.json",
+        "titres_supprimes": 0,
+        "blocs_numero_supprimes": 0,
+        "fausses_phrases_supprimees": 1
+      }
+    ]
+  }
+}

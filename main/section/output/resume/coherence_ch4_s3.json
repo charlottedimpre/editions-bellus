@@ -1,0 +1,29 @@
+{
+  "chapitre": 4,
+  "section": 3,
+  "chapitre_numero": "4",
+  "section_numero": "3",
+  "these_centrale": "Comprendre les quatre phases des cycles de marché (accumulation, hausse, distribution, baisse) permet d'anticiper les mouvements et d'adapter sa stratégie d'investissement.",
+  "arguments_cles": [
+    "Les cycles de marché sont des phases récurrentes qui aident à anticiper les mouvements des marchés financiers.",
+    "La phase d'accumulation se caractérise par des prix stables, une faible volatilité et un faible volume, initiée par des acheteurs avertis.",
+    "La phase de hausse (markup) voit les prix augmenter, avec un intérêt médiatique croissant et des volumes en hausse.",
+    "La phase de distribution survient après une hausse, lorsque les investisseurs réalisent leurs bénéfices malgré une demande soutenue par les nouveaux arrivants.",
+    "La phase de baisse (markdown) est marquée par une offre dépassant la demande, des prix chutant rapidement et une forte volatilité."
+  ],
+  "concepts_introduits": [
+    "Cycles de marché : Phases récurrentes sur les marchés financiers.",
+    "Accumulation : Phase d'achat discret d'investisseurs avertis après une baisse.",
+    "Hausse (Markup) : Phase d'augmentation progressive puis accélérée des prix.",
+    "Distribution : Phase de vente par les premiers acheteurs pour réaliser des profits.",
+    "Baisse (Markdown) : Phase de chute des prix où l'offre dépasse la demande.",
+    "FOMO (Fear Of Missing Out) : Peur de manquer une opportunité d'investissement."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Acheter au plus haut et vendre au plus bas.",
+    "Décisions impulsives basées sur des émotions passagères."
+  ],
+  "ton_angle": "Descriptif et éducatif, expliquant les mécanismes des cycles de marché.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Comprendre les quatre phases des cycles de marché (accumulation, hausse, distribution, baisse) permet d'anticiper les mouvements et d'adapter sa stratégie d'investissement.</these_centrale>\n<arguments_cles>\n- Les cycles de marché sont des phases récurrentes qui aident à anticiper les mouvements des marchés financiers.\n- La phase d'accumulation se caractérise par des prix stables, une faible volatilité et un faible volume, initiée par des acheteurs avertis.\n- La phase de hausse (markup) voit les prix augmenter, avec un intérêt médiatique croissant et des volumes en hausse.\n- La phase de distribution survient après une hausse, lorsque les investisseurs réalisent leurs bénéfices malgré une demande soutenue par les nouveaux arrivants.\n- La phase de baisse (markdown) est marquée par une offre dépassant la demande, des prix chutant rapidement et une forte volatilité.\n</arguments_cles>\n<concepts_introduits>\n- Cycles de marché : Phases récurrentes sur les marchés financiers.\n- Accumulation : Phase d'achat discret d'investisseurs avertis après une baisse.\n- Hausse (Markup) : Phase d'augmentation progressive puis accélérée des prix.\n- Distribution : Phase de vente par les premiers acheteurs pour réaliser des profits.\n- Baisse (Markdown) : Phase de chute des prix où l'offre dépasse la demande.\n- FOMO (Fear Of Missing Out) : Peur de manquer une opportunité d'investissement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Acheter au plus haut et vendre au plus bas.\n- Décisions impulsives basées sur des émotions passagères.\n</a_ne_pas_repeter>\n<ton_angle>Descriptif et éducatif, expliquant les mécanismes des cycles de marché.</ton_angle>\n</fiche>"
+}

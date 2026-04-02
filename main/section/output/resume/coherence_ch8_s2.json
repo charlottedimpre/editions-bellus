@@ -1,0 +1,25 @@
+{
+  "chapitre": 8,
+  "section": 2,
+  "chapitre_numero": "8",
+  "section_numero": "2",
+  "these_centrale": "Le calcul des plus-values sur cryptomonnaies s'effectue via les méthodes FIFO ou coût moyen, nécessitant la connaissance des valeurs d'acquisition et de cession.",
+  "arguments_cles": [
+    "La plus-value ou moins-value est la différence entre la valeur de cession et la valeur d'acquisition.",
+    "La méthode FIFO (First-In, First-Out) considère que les premières unités achetées sont les premières vendues.",
+    "La méthode du coût moyen pondéré calcule un prix moyen pour toutes les unités détenues.",
+    "Le choix de la méthode impacte le montant des impôts et nécessite une conservation rigoureuse des preuves."
+  ],
+  "concepts_introduits": [
+    "Plus-value : Gain réalisé lors de la vente d'un actif.",
+    "Moins-value : Perte réalisée lors de la vente d'un actif.",
+    "Valeur d'acquisition : Prix payé pour obtenir un actif, frais inclus.",
+    "Valeur de cession : Prix auquel un actif est vendu.",
+    "FIFO (First-In, First-Out) : Méthode de valorisation des stocks, premier entré, premier sorti.",
+    "Coût moyen pondéré : Méthode de calcul du prix moyen d'un actif acquis à différents moments."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pragmatique et informatif, axé sur les étapes de calcul et les implications fiscales.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le calcul des plus-values sur cryptomonnaies s'effectue via les méthodes FIFO ou coût moyen, nécessitant la connaissance des valeurs d'acquisition et de cession.</these_centrale>\n<arguments_cles>\n- La plus-value ou moins-value est la différence entre la valeur de cession et la valeur d'acquisition.\n- La méthode FIFO (First-In, First-Out) considère que les premières unités achetées sont les premières vendues.\n- La méthode du coût moyen pondéré calcule un prix moyen pour toutes les unités détenues.\n- Le choix de la méthode impacte le montant des impôts et nécessite une conservation rigoureuse des preuves.\n</arguments_cles>\n<concepts_introduits>\n- Plus-value : Gain réalisé lors de la vente d'un actif.\n- Moins-value : Perte réalisée lors de la vente d'un actif.\n- Valeur d'acquisition : Prix payé pour obtenir un actif, frais inclus.\n- Valeur de cession : Prix auquel un actif est vendu.\n- FIFO (First-In, First-Out) : Méthode de valorisation des stocks, premier entré, premier sorti.\n- Coût moyen pondéré : Méthode de calcul du prix moyen d'un actif acquis à différents moments.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le détail précis des formules de calcul pour chaque méthode.\n- L'utilisation du terme \"gain\" sans le définir explicitement comme plus-value.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et informatif, axé sur les étapes de calcul et les implications fiscales.</ton_angle>\n</fiche>"
+}

@@ -1,0 +1,27 @@
+{
+  "chapitre": 8,
+  "section": 3,
+  "chapitre_numero": "8",
+  "section_numero": "3",
+  "these_centrale": "La déclaration correcte des actifs numériques et des plus-values associées via les formulaires spécifiques est essentielle pour se conformer à la législation fiscale et éviter les sanctions.",
+  "arguments_cles": [
+    "L'absence de déclaration expose à des pénalités et des sanctions fiscales.",
+    "Des formulaires spécifiques, comme le 3916 en France, existent pour déclarer la détention de comptes d'actifs numériques.",
+    "La déclaration des plus-values nécessite de renseigner les gains imposables calculés selon une méthode choisie (FIFO ou coût moyen).",
+    "Il est primordial de consulter les documents officiels de l'administration fiscale et de s'assurer de l'utilisation des dernières versions des formulaires."
+  ],
+  "concepts_introduits": [
+    "Actifs numériques : Actifs ayant une valeur, stockés sous forme électronique.",
+    "Plus-values : Bénéfices réalisés lors de la cession d'un actif.",
+    "FIFO (First-In, First-Out) : Méthode d'évaluation où les premiers actifs achetés sont considérés comme les premiers vendus.",
+    "Coût moyen pondéré : Méthode d'évaluation calculant le prix moyen d'acquisition des actifs.",
+    "Administration fiscale : Organisme gouvernemental chargé de la collecte des impôts."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La déclaration des actifs numériques est obligatoire.",
+    "Les formulaires fiscaux sont importants."
+  ],
+  "ton_angle": "Informatif et prescriptif, axé sur les obligations légales du contribuable.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La déclaration correcte des actifs numériques et des plus-values associées via les formulaires spécifiques est essentielle pour se conformer à la législation fiscale et éviter les sanctions.</these_centrale>\n<arguments_cles>\n- L'absence de déclaration expose à des pénalités et des sanctions fiscales.\n- Des formulaires spécifiques, comme le 3916 en France, existent pour déclarer la détention de comptes d'actifs numériques.\n- La déclaration des plus-values nécessite de renseigner les gains imposables calculés selon une méthode choisie (FIFO ou coût moyen).\n- Il est primordial de consulter les documents officiels de l'administration fiscale et de s'assurer de l'utilisation des dernières versions des formulaires.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Actifs ayant une valeur, stockés sous forme électronique.\n- Plus-values : Bénéfices réalisés lors de la cession d'un actif.\n- FIFO (First-In, First-Out) : Méthode d'évaluation où les premiers actifs achetés sont considérés comme les premiers vendus.\n- Coût moyen pondéré : Méthode d'évaluation calculant le prix moyen d'acquisition des actifs.\n- Administration fiscale : Organisme gouvernemental chargé de la collecte des impôts.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La déclaration des actifs numériques est obligatoire.\n- Les formulaires fiscaux sont importants.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prescriptif, axé sur les obligations légales du contribuable.</ton_angle>\n</fiche>"
+}

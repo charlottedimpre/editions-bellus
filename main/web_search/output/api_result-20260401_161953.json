@@ -1,0 +1,381 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 17,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "meilleures plateformes échange crypto sécurisées",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-01T14:19:54.010Z",
+    "processed_at": "2026-04-01T14:19:56.792Z",
+    "total_time_taken": 2.78,
+    "engine_url": "https://www.google.fr/search?q=meilleures+plateformes+%C3%A9change+crypto+s%C3%A9curis%C3%A9es&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures+plateformes+%C3%A9change+crypto+s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures+plateformes+%C3%A9change+crypto+s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "showing_results_for": "meilleures plateformes d'échange crypto sécurisées",
+    "did_you_mean": "meilleures plateformes d'échange crypto sécurisées",
+    "total_results": 711000
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 2,
+      "title": "Meilleures plateformes Cryptos - Comparatif 2026 !",
+      "link": "https://finance-heros.fr/meilleures-plateformes-cryptomonnaie/",
+      "domain": "finance-heros.fr",
+      "displayed_link": "https://finance-heros.fr › meilleures-plateformes-crypto...",
+      "snippet": "Quelle est la meilleure plateforme pour investir dans les crypto monnaies ? Coinhouse ? Binance ? Kraken ? eToro ? Bitpanda ? Zengo ?",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "5,0(164)",
+            "Gratuit",
+            "‎Finance&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche GoogleSélection des meilleures...Vous êtes à la recherche de la..."
+          ]
+        }
+      }
+    },
+    {
+      "position": 2,
+      "block_position": 3,
+      "title": "Meilleures plateformes crypto : classement et comparatif ...",
+      "link": "https://www.ramify.fr/crypto/meilleure-plateforme",
+      "domain": "www.ramify.fr",
+      "displayed_link": "https://www.ramify.fr › crypto › meilleure-plateforme",
+      "snippet": "Coinhouse est la plateforme crypto qui obtient les meilleurs avis, notamment grâce à son service client. Binance offre davantage de cryptos et des frais ...",
+      "prerender": false
+    },
+    {
+      "position": 3,
+      "block_position": 4,
+      "title": "La plateforme d'échange crypto la plus sûre en 2026",
+      "link": "https://www.kraken.com/fr/learn/most-secure-crypto-exchange",
+      "domain": "www.kraken.com",
+      "displayed_link": "https://www.kraken.com › Fr › Learn",
+      "snippet": "21 janv. 2026 — Découvrez quelles sont les plateformes d'échange crypto les plus sûres et comment les fonctionnalités telles que le chiffrement de pointe et ...",
+      "prerender": false,
+      "date": "21 janv. 2026",
+      "date_utc": "2026-01-21T00:00:00.000Z"
+    },
+    {
+      "position": 4,
+      "block_position": 5,
+      "title": "Exchange Crypto : Comparatif Des Meilleurs Sites 2026",
+      "link": "https://journalducoin.com/guides/exchanges/",
+      "domain": "journalducoin.com",
+      "displayed_link": "https://journalducoin.com › guides › exchanges",
+      "snippet": "24 mars 2026 — Notre recommandation principale reste Bitpanda, qui combine parfaitement simplicité, sécurité et excellent rapport qualité/prix. Top 3 ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "price": 45,
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "4,5",
+            "Critique de Scrypto&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche GoogleBinance : l'exchange crypto...Bitvavo l'exchange crypto...Kraken : la référence..."
+          ]
+        }
+      },
+      "date": "24 mars 2026",
+      "date_utc": "2026-03-24T00:00:00.000Z"
+    },
+    {
+      "position": 5,
+      "block_position": 6,
+      "title": "Top 5 des plateformes les plus fiables pour acheter et ...",
+      "link": "https://start-in-blockchain.fr/meilleure-plateforme-cryptomonnaie/",
+      "domain": "start-in-blockchain.fr",
+      "displayed_link": "https://start-in-blockchain.fr › meilleure-plateforme-cry...",
+      "snippet": "Coinbase : Le meilleur pour les débutants · Binance : Le choix des traders expérimentés · Kraken : Idéal pour le trading avancé · Gemini : La plateforme la plus ...",
+      "prerender": false
+    },
+    {
+      "position": 6,
+      "block_position": 7,
+      "title": "La plateforme d'échange de confiance où acheter, trader et ...",
+      "link": "https://www.binance.com/fr",
+      "domain": "www.binance.com",
+      "displayed_link": "https://www.binance.com › ...",
+      "snippet": "Découvrez pourquoi Binance est la plateforme crypto préférée des Français. Sécurisée et à frais réduits, achetez et tradez vos cryptos facilement.",
+      "prerender": false
+    },
+    {
+      "position": 7,
+      "block_position": 8,
+      "title": "Comparatif des 15 meilleures plateformes Crypto en 2026",
+      "link": "https://sinvestir.fr/meilleures-plateformes-crypto-comparatif/",
+      "domain": "sinvestir.fr",
+      "displayed_link": "https://sinvestir.fr › Articles › Crypto",
+      "snippet": "23 févr. 2026 — Swissborg s'impose comme la plateforme la plus complète de ce comparatif. Avec plus de 120 cryptomonnaies disponibles, des Smart Yield Bundles ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "symbol": "€",
+            "currency": {
+              "name": "Euro",
+              "code": "EUR",
+              "symbol": "€"
+            }
+          },
+          "extensions": [
+            "4,9(359)",
+            "Gratuit",
+            "‎Finance&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche Google"
+          ]
+        }
+      },
+      "date": "23 févr. 2026",
+      "date_utc": "2026-02-23T00:00:00.000Z"
+    },
+    {
+      "position": 8,
+      "block_position": 11,
+      "title": "Meilleurs sites pour acheter des crypto en 2026",
+      "link": "https://coinacademy.fr/comparatif-exchange/",
+      "domain": "coinacademy.fr",
+      "displayed_link": "https://coinacademy.fr › comparatif-exchange",
+      "snippet": "Les Français, toujours à la recherche des meilleurs avantages en matière d'investissement, se tournent vers des plateformes comme Coinhouse, Zengo, et Libertex ...",
+      "prerender": false
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Meilleur plateforme crypto France",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Meilleur+plateforme+crypto+France&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAgwEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Meilleur plateforme d'échange crypto monnaie",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Meilleur+plateforme+d%27%C3%A9change+crypto+monnaie&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAhEEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Plateforme crypto la plus fiable",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Plateforme+crypto+la+plus+fiable&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAhAEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Plateforme crypto française",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Plateforme+crypto+fran%C3%A7aise&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAg_EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Meilleur plateforme crypto pour débutant",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Meilleur+plateforme+crypto+pour+d%C3%A9butant&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAg8EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comparatif frais plateforme crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Comparatif+frais+plateforme+crypto&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAg2EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Meilleure plateforme crypto frais",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Meilleure+plateforme+crypto+frais&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAg0EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Plateforme crypto sans frais",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Plateforme+crypto+sans+frais&sa=X&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ1QJ6BAgzEAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Quelle est la plateforme crypto la plus sécurisée ?",
+      "answer": "Coinbase",
+      "source": {
+        "link": "https://start-in-blockchain.fr/meilleure-plateforme-cryptomonnaie/#:~:text=Coinbase%20offre%20%C3%A9galement%20un%20excellent,un%20syst%C3%A8me%20de%20double%20authentification.",
+        "displayed_link": "https://start-in-blockchain.fr › meilleure-plateforme-cry...",
+        "title": "Top 5 des plateformes les plus fiables pour acheter et vendre ..."
+      },
+      "block_position": 10
+    },
+    {
+      "question": "Quelle est la meilleure plateforme d'échange décentralisé pour la crypto ?",
+      "answer": "Les plateformes d'échange décentralisées, également appelées DEX (Decentralized Exchanges), permettent aux utilisateurs d'échanger directement des actifs numériques de pair à pair, grâce à la technologie blockchain et aux smart contracts. Elles font donc partie intégrante de la finance décentralisée (DeFi).",
+      "source": {
+        "link": "https://journalducoin.com/guides/exchange-decentralise-dex/#:~:text=Les%20plateformes%20d'%C3%A9change%20d%C3%A9centralis%C3%A9es%2C%20%C3%A9galement%20appel%C3%A9es%20DEX%20(Decentralized,la%20finance%20d%C3%A9centralis%C3%A9e%20(DeFi).",
+        "displayed_link": "https://journalducoin.com › exchange-decentralise-dex",
+        "title": "Exchange décentralisé crypto: comparatif 2025 des meilleures DEX"
+      },
+      "block_position": 10
+    },
+    {
+      "question": "Quelle plateforme de cryptomonnaies n'a jamais été piratée ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://www.reddit.com/r/Bitcoin/comments/1o5pxu1/whats_the_best_crypto_exchange_usa_compliant/&hl=fr&sl=en&tl=fr&client=rq#:~:text=Kraken%20is%20honestly%20the%20best,you%20start%20trading%20more%20often.",
+        "displayed_link": "https://www.reddit.com › Bitcoin › comments › whats_th...",
+        "title": "Quelle est la meilleure plateforme d'échange de cryptomonnaies conforme à la législation américaine actuellement ? (r/ Bitcoin - Reddit)whats the best crypto exchange usa compliant right now : r/Bitcoin - Reddit"
+      },
+      "block_position": 10
+    },
+    {
+      "question": "Quel est le mieux entre Coinbase et Binance ?",
+      "answer": "En remportant très largement les catégories “Choix de crypto-monnaies”, “Frais”, ainsi que “Fonctionnalités”, Binance s'avère être la meilleure plateforme crypto en comparaison à Coinbase.",
+      "source": {
+        "link": "https://www.presse-citron.net/crypto/comparatif/binance-vs-coinbase/#:~:text=En%20remportant%20tr%C3%A8s%20largement%20les,crypto%20en%20comparaison%20%C3%A0%20Coinbase.",
+        "displayed_link": "https://www.presse-citron.net › crypto › comparatif › bin...",
+        "title": "Binance ou Coinbase : quelle plateforme crypto choisir ..."
+      },
+      "block_position": 10
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "What is the BEST PLATFORM for buying cryptocurrencies ...",
+      "length": "16.43",
+      "source": "YouTube · Yann PellenardYouTube · Yann Pellenard",
+      "link": "https://www.youtube.com/watch?v=NaJvy2yGIdw",
+      "block_position": 9
+    },
+    {
+      "position": 2,
+      "title": "What is the best crypto exchange? 2026 | Beginner Tutorial #3",
+      "length": "35.55",
+      "source": "YouTube · HasheurYouTube · Hasheur",
+      "link": "https://www.youtube.com/watch?v=omZbIJME_GY",
+      "block_position": 9
+    },
+    {
+      "position": 3,
+      "title": "Top 3 des plateformes crypto les plus fiables en 2025",
+      "length": "8.03",
+      "source": "YouTube · Alex TradingYouTube · Alex Trading",
+      "link": "https://www.youtube.com/watch?v=kbnXAYoF8Zk",
+      "block_position": 9
+    }
+  ],
+  "answer_box": {
+    "answer_box_type": 19,
+    "answers": [
+      {
+        "source": {
+          "link": "https://banque.meilleurtaux.com/comparateur-banque/comparatif-plateformes-de-crypto-monnaies/",
+          "title": "Les meilleures plateformes pour acheter des cryptomonnaies ...",
+          "displayed_link": "https://banque.meilleurtaux.com › comparateur-banque"
+        },
+        "answer": "Le top 3 des plateformes d'échange de cryptomonnaies selon Trustpilot est :",
+        "rows": [
+          "Coinhouse (4,7/5) - plus de 2 500 avis.",
+          "eToro (4,2/5) - plus de 28 000 avis.",
+          "Coinbase (3,9/5) - plus de 18 000 avis."
+        ]
+      }
+    ],
+    "block_position": 1
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=10&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8NMDegQILRAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=10&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=20&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=30&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=40&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=50&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=60&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=70&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=80&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=meilleures+plateformes+d%27%C3%A9change+crypto+s%C3%A9curis%C3%A9es&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=iynNaYAlu5_k2g_Vh42ZBQ&start=90&sa=N&sstk=Af77f_cTmDnnfB_kuQ7JvDULEWIcdMUtDUboZm1XAZcmSijaIVw1MC8uwWEBQ7eQ3RDet18vMLDo4I-cdheg1zKxGRJ2dBmJ5yf76w&ved=2ahUKEwjAlpW57MyTAxW7D1kFHdVDI1MQ8tMDegQILRAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=meilleures%20plateformes%20%C3%A9change%20crypto%20s%C3%A9curis%C3%A9es&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

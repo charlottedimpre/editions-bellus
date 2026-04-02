@@ -1,0 +1,28 @@
+{
+  "chapitre": 7,
+  "section": 1,
+  "chapitre_numero": "7",
+  "section_numero": "1",
+  "these_centrale": "La sélection d'un portefeuille numérique, chaud ou froid, doit être adaptée à la quantité d'actifs détenus et à leur fréquence d'utilisation pour optimiser sécurité et praticité.",
+  "arguments_cles": [
+    "Les portefeuilles chauds sont connectés à Internet, offrant praticité pour transactions fréquentes mais exposant à plus de risques.",
+    "Les portefeuilles froids ne sont pas connectés à Internet, garantissant une sécurité maximale pour le stockage à long terme au détriment de la praticité.",
+    "Une stratégie hybride, combinant un portefeuille froid pour la majorité des fonds et un portefeuille chaud pour les fonds d'usage courant, est recommandée.",
+    "L'allocation prudente des fonds entre ces deux types de portefeuilles est essentielle pour minimiser l'exposition au risque sans sacrifier la flexibilité."
+  ],
+  "concepts_introduits": [
+    "Portefeuille chaud : Connecté à Internet, pratique pour transactions, risque de piratage accru.",
+    "Portefeuille froid : Non connecté à Internet, haute sécurité pour stockage long terme, moins pratique.",
+    "Clé privée : Code unique pour accéder aux cryptomonnaies, doit être sécurisé.",
+    "Hardware wallet : Portefeuille froid sous forme de dispositif matériel sécurisé.",
+    "Approche hybride : Combinaison d'un portefeuille chaud et d'un portefeuille froid."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La description détaillée des risques de piratage et vol de clés privées pour les portefeuilles chauds.",
+    "La spécification exacte du pourcentage de fonds à allouer à chaque type de portefeuille (70-90% froid, le reste chaud).",
+    "L'exemple chiffré de répartition de 1000 euros (800 euros froid, 200 euros chaud)."
+  ],
+  "ton_angle": "Informatif et pratique, visant à guider l'utilisateur dans le choix de sa solution de stockage de cryptomonnaies.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La sélection d'un portefeuille numérique, chaud ou froid, doit être adaptée à la quantité d'actifs détenus et à leur fréquence d'utilisation pour optimiser sécurité et praticité.</these_centrale>\n<arguments_cles>\n- Les portefeuilles chauds sont connectés à Internet, offrant praticité pour transactions fréquentes mais exposant à plus de risques.\n- Les portefeuilles froids ne sont pas connectés à Internet, garantissant une sécurité maximale pour le stockage à long terme au détriment de la praticité.\n- Une stratégie hybride, combinant un portefeuille froid pour la majorité des fonds et un portefeuille chaud pour les fonds d'usage courant, est recommandée.\n- L'allocation prudente des fonds entre ces deux types de portefeuilles est essentielle pour minimiser l'exposition au risque sans sacrifier la flexibilité.\n</arguments_cles>\n<concepts_introduits>\n- Portefeuille chaud : Connecté à Internet, pratique pour transactions, risque de piratage accru.\n- Portefeuille froid : Non connecté à Internet, haute sécurité pour stockage long terme, moins pratique.\n- Clé privée : Code unique pour accéder aux cryptomonnaies, doit être sécurisé.\n- Hardware wallet : Portefeuille froid sous forme de dispositif matériel sécurisé.\n- Approche hybride : Combinaison d'un portefeuille chaud et d'un portefeuille froid.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La description détaillée des risques de piratage et vol de clés privées pour les portefeuilles chauds.\n- La spécification exacte du pourcentage de fonds à allouer à chaque type de portefeuille (70-90% froid, le reste chaud).\n- L'exemple chiffré de répartition de 1000 euros (800 euros froid, 200 euros chaud).\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pratique, visant à guider l'utilisateur dans le choix de sa solution de stockage de cryptomonnaies.</ton_angle>\n</fiche>"
+}

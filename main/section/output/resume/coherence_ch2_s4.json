@@ -1,0 +1,27 @@
+{
+  "chapitre": 2,
+  "section": 4,
+  "chapitre_numero": "2",
+  "section_numero": "4",
+  "these_centrale": "La sécurité des actifs numériques repose entièrement sur la responsabilité individuelle de l'utilisateur, dont la négligence constitue une vulnérabilité majeure face aux menaces.",
+  "arguments_cles": [
+    "La nature numérique des cryptomonnaies les expose aux malveillants.",
+    "Contrairement aux systèmes bancaires, il n'y a pas de protection collective dans le monde des cryptomonnaies.",
+    "Les pirates exploitent la négligence des utilisateurs (mots de passe faibles, clés privées partagées, appareils infectés).",
+    "Les erreurs humaines et la confiance accordée à des sources non sécurisées augmentent le risque."
+  ],
+  "concepts_introduits": [
+    "Actifs numériques : Biens virtuels, comme les cryptomonnaies, stockés électroniquement.",
+    "Cryptomonnaies : Monnaies virtuelles utilisant la cryptographie pour la sécurité.",
+    "Clés privées : Codes secrets permettant d'accéder et de dépenser des cryptomonnaies.",
+    "Blockchain : Registre public, distribué et immuable des transactions."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La perte de bitcoins est définitive.",
+    "Pas de service client pour récupérer les fonds perdus.",
+    "La négligence des utilisateurs est une faille exploitée."
+  ],
+  "ton_angle": "Démonstratif et préventif, soulignant les conséquences financières des erreurs de sécurité.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La sécurité des actifs numériques repose entièrement sur la responsabilité individuelle de l'utilisateur, dont la négligence constitue une vulnérabilité majeure face aux menaces.</these_centrale>\n<arguments_cles>\n- La nature numérique des cryptomonnaies les expose aux malveillants.\n- Contrairement aux systèmes bancaires, il n'y a pas de protection collective dans le monde des cryptomonnaies.\n- Les pirates exploitent la négligence des utilisateurs (mots de passe faibles, clés privées partagées, appareils infectés).\n- Les erreurs humaines et la confiance accordée à des sources non sécurisées augmentent le risque.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Biens virtuels, comme les cryptomonnaies, stockés électroniquement.\n- Cryptomonnaies : Monnaies virtuelles utilisant la cryptographie pour la sécurité.\n- Clés privées : Codes secrets permettant d'accéder et de dépenser des cryptomonnaies.\n- Blockchain : Registre public, distribué et immuable des transactions.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La perte de bitcoins est définitive.\n- Pas de service client pour récupérer les fonds perdus.\n- La négligence des utilisateurs est une faille exploitée.\n</a_ne_pas_repeter>\n<ton_angle>Démonstratif et préventif, soulignant les conséquences financières des erreurs de sécurité.</ton_angle>\n</fiche>"
+}

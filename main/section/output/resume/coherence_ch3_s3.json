@@ -1,0 +1,26 @@
+{
+  "chapitre": 3,
+  "section": 3,
+  "chapitre_numero": "3",
+  "section_numero": "3",
+  "these_centrale": "La configuration sécurisée d'un compte sur une plateforme d'échange est essentielle pour protéger ses actifs numériques.",
+  "arguments_cles": [
+    "La création d'un mot de passe robuste et unique est la première mesure de sécurité.",
+    "La double authentification (2FA) ajoute une couche de sécurité supplémentaire critique.",
+    "La gestion sécurisée de la phrase de récupération est primordiale pour la récupération des fonds.",
+    "L'activation de la liste blanche d'adresses limite les risques de retrait non autorisé."
+  ],
+  "concepts_introduits": [
+    "Double authentification (2FA) : Mécanisme de sécurité nécessitant deux éléments de vérification.",
+    "Phrase de récupération : Séquence de mots pour accéder au portefeuille en cas de perte.",
+    "Mot de passe fort : Combinaison complexe de caractères, chiffres et symboles.",
+    "Liste blanche d’adresses : Pré-approbation des adresses de retrait spécifiques."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Le piratage et la perte d'actifs peuvent être évités en appliquant rigoureusement les mesures de sécurité.",
+    "La sécurité repose sur la diligence dans la configuration du compte."
+  ],
+  "ton_angle": "Informatif et préventif, soulignant l'importance de la rigueur dans les démarches de sécurité.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La configuration sécurisée d'un compte sur une plateforme d'échange est essentielle pour protéger ses actifs numériques.</these_centrale>\n<arguments_cles>\n- La création d'un mot de passe robuste et unique est la première mesure de sécurité.\n- La double authentification (2FA) ajoute une couche de sécurité supplémentaire critique.\n- La gestion sécurisée de la phrase de récupération est primordiale pour la récupération des fonds.\n- L'activation de la liste blanche d'adresses limite les risques de retrait non autorisé.\n</arguments_cles>\n<concepts_introduits>\n- Double authentification (2FA) : Mécanisme de sécurité nécessitant deux éléments de vérification.\n- Phrase de récupération : Séquence de mots pour accéder au portefeuille en cas de perte.\n- Mot de passe fort : Combinaison complexe de caractères, chiffres et symboles.\n- Liste blanche d’adresses : Pré-approbation des adresses de retrait spécifiques.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le piratage et la perte d'actifs peuvent être évités en appliquant rigoureusement les mesures de sécurité.\n- La sécurité repose sur la diligence dans la configuration du compte.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant l'importance de la rigueur dans les démarches de sécurité.</ton_angle>\n</fiche>"
+}

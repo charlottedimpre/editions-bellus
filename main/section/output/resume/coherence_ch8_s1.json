@@ -1,0 +1,26 @@
+{
+  "chapitre": 8,
+  "section": 1,
+  "chapitre_numero": "8",
+  "section_numero": "1",
+  "these_centrale": "Ignorer les obligations légales et fiscales liées aux cryptomonnaies entraîne des conséquences financières et juridiques importantes.",
+  "arguments_cles": [
+    "La détention, l'échange ou la vente de cryptomonnaies génèrent des événements imposables (plus-values, revenus).",
+    "La non-déclaration expose à des pénalités, amendes, voire poursuites judiciaires et peines de prison.",
+    "La transparence fiscale est essentielle pour la légitimité et l'adoption des cryptomonnaies.",
+    "Les autorités fiscales renforcent leurs mécanismes de surveillance pour identifier les détenteurs d'actifs numériques."
+  ],
+  "concepts_introduits": [
+    "Obligation déclarative : devoir légal de signaler des revenus ou actifs aux autorités fiscales.",
+    "Sanctions : peines infligées pour non-respect des lois fiscales (amendes, majorations, prison).",
+    "Transparence fiscale : respect des obligations déclaratives pour une situation régulière."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La loi évolue constamment.",
+    "L'ignorance de la loi n'excuse pas son non-respect.",
+    "Le cadre réglementaire et fiscal varie selon les pays."
+  ],
+  "ton_angle": "Informatif et préventif, soulignant les risques légaux et fiscaux de la non-conformité.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Ignorer les obligations légales et fiscales liées aux cryptomonnaies entraîne des conséquences financières et juridiques importantes.</these_centrale>\n<arguments_cles>\n- La détention, l'échange ou la vente de cryptomonnaies génèrent des événements imposables (plus-values, revenus).\n- La non-déclaration expose à des pénalités, amendes, voire poursuites judiciaires et peines de prison.\n- La transparence fiscale est essentielle pour la légitimité et l'adoption des cryptomonnaies.\n- Les autorités fiscales renforcent leurs mécanismes de surveillance pour identifier les détenteurs d'actifs numériques.\n</arguments_cles>\n<concepts_introduits>\n- Obligation déclarative : devoir légal de signaler des revenus ou actifs aux autorités fiscales.\n- Sanctions : peines infligées pour non-respect des lois fiscales (amendes, majorations, prison).\n- Transparence fiscale : respect des obligations déclaratives pour une situation régulière.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La loi évolue constamment.\n- L'ignorance de la loi n'excuse pas son non-respect.\n- Le cadre réglementaire et fiscal varie selon les pays.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant les risques légaux et fiscaux de la non-conformité.</ton_angle>\n</fiche>"
+}

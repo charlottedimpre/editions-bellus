@@ -1,0 +1,21 @@
+{
+  "chapitre": 6,
+  "section": 2,
+  "chapitre_numero": "6",
+  "section_numero": "2",
+  "these_centrale": "Face aux mouvements extrêmes du marché, il est crucial d'appliquer une stratégie prédéfinie basée sur la rationalité plutôt que l'émotion pour gérer son portefeuille.",
+  "arguments_cles": [
+    "La moyenne à la baisse consiste à acheter plus d'actifs à prix réduit lors d'une forte chute pour diminuer le coût moyen d'acquisition.",
+    "La prise de profit partielle permet de sécuriser une partie des gains en vendant une fraction d'un actif lors d'une hausse importante.",
+    "Le rééquilibrage vise à ramener la proportion d'un actif dans le portefeuille à son allocation initiale après une variation de prix significative."
+  ],
+  "concepts_introduits": [
+    "Moyenne à la baisse : Stratégie d'achat supplémentaire lors d'une baisse pour réduire le prix moyen d'acquisition.",
+    "Prise de profit partielle : Vente d'une fraction d'un actif pour sécuriser des gains tout en conservant une exposition.",
+    "Rééquilibrage : Ajustement des proportions d'actifs dans un portefeuille pour maintenir l'allocation de risque définie."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Instructif et prescriptif, expliquant des stratégies de gestion de portefeuille en cas de volatilité.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Face aux mouvements extrêmes du marché, il est crucial d'appliquer une stratégie prédéfinie basée sur la rationalité plutôt que l'émotion pour gérer son portefeuille.</these_centrale>\n<arguments_cles>\n- La moyenne à la baisse consiste à acheter plus d'actifs à prix réduit lors d'une forte chute pour diminuer le coût moyen d'acquisition.\n- La prise de profit partielle permet de sécuriser une partie des gains en vendant une fraction d'un actif lors d'une hausse importante.\n- Le rééquilibrage vise à ramener la proportion d'un actif dans le portefeuille à son allocation initiale après une variation de prix significative.\n</arguments_cles>\n<concepts_introduits>\n- Moyenne à la baisse : Stratégie d'achat supplémentaire lors d'une baisse pour réduire le prix moyen d'acquisition.\n- Prise de profit partielle : Vente d'une fraction d'un actif pour sécuriser des gains tout en conservant une exposition.\n- Rééquilibrage : Ajustement des proportions d'actifs dans un portefeuille pour maintenir l'allocation de risque définie.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Agir sous le coup de la panique ou de l'euphorie ambiante.\n- Vendre l'intégralité de ses actifs lors d'une hausse.\n- Improvisation dans les décisions de trading.\n</a_ne_not_repeter>\n<ton_angle>Instructif et prescriptif, expliquant des stratégies de gestion de portefeuille en cas de volatilité.</ton_angle>\n</fiche>"
+}

@@ -1,0 +1,26 @@
+{
+  "chapitre": 8,
+  "section": 4,
+  "chapitre_numero": "8",
+  "section_numero": "4",
+  "these_centrale": "En cas de contrôle fiscal, la conservation rigoureuse de justificatifs détaillés de toutes les transactions d'actifs numériques est impérative pour prouver sa bonne foi et éviter des redressements.",
+  "arguments_cles": [
+    "Il est crucial de pouvoir justifier chaque transaction d'actifs numériques avec un historique complet.",
+    "Les relevés des plateformes d'échange, les relevés bancaires et les justificatifs d'achat/vente sont des preuves essentielles.",
+    "L'exactitude des détails (date, cryptomonnaie, quantité, prix, frais) est primordiale.",
+    "L'absence de preuves tangibles expose à des redressements fiscaux basés sur des estimations potentiellement défavorables.",
+    "La sauvegarde sécurisée et redondante des documents est recommandée."
+  ],
+  "concepts_introduits": [
+    "Actifs numériques : Monnaies virtuelles ou autres actifs enregistrés sur un registre distribué.",
+    "Contrôle fiscal : Vérification par l'administration des déclarations fiscales d'un contribuable.",
+    "Plus-values : Bénéfice réalisé lors de la cession d'un actif par rapport à son prix d'acquisition."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La nécessité de garder des preuves est répétée sous diverses formulations.",
+    "L'idée que l'administration pourrait baser des redressements sur des estimations est formulée plusieurs fois."
+  ],
+  "ton_angle": "Pragmatique et préventif, axé sur les démarches concrètes de conformité fiscale.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>En cas de contrôle fiscal, la conservation rigoureuse de justificatifs détaillés de toutes les transactions d'actifs numériques est impérative pour prouver sa bonne foi et éviter des redressements.</these_centrale>\n<arguments_cles>\n- Il est crucial de pouvoir justifier chaque transaction d'actifs numériques avec un historique complet.\n- Les relevés des plateformes d'échange, les relevés bancaires et les justificatifs d'achat/vente sont des preuves essentielles.\n- L'exactitude des détails (date, cryptomonnaie, quantité, prix, frais) est primordiale.\n- L'absence de preuves tangibles expose à des redressements fiscaux basés sur des estimations potentiellement défavorables.\n- La sauvegarde sécurisée et redondante des documents est recommandée.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Monnaies virtuelles ou autres actifs enregistrés sur un registre distribué.\n- Contrôle fiscal : Vérification par l'administration des déclarations fiscales d'un contribuable.\n- Plus-values : Bénéfice réalisé lors de la cession d'un actif par rapport à son prix d'acquisition.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La nécessité de garder des preuves est répétée sous diverses formulations.\n- L'idée que l'administration pourrait baser des redressements sur des estimations est formulée plusieurs fois.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et préventif, axé sur les démarches concrètes de conformité fiscale.</ton_angle>\n</fiche>"
+}

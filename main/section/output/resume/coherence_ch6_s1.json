@@ -1,0 +1,24 @@
+{
+  "chapitre": 6,
+  "section": 1,
+  "chapitre_numero": "6",
+  "section_numero": "1",
+  "these_centrale": "L'utilisation d'outils adaptés, tels que les portfolio trackers et les alertes de prix, est essentielle pour suivre ses investissements en cryptomonnaies efficacement et sans perte de temps.",
+  "arguments_cles": [
+    "L'agrégation des informations via un portfolio tracker offre une vue d'ensemble claire et à jour des avoirs.",
+    "La configuration d'alertes de prix personnalisées permet de rester informé des fluctuations importantes sans surveillance constante.",
+    "Le choix d'outils offrant un équilibre entre fonctionnalité et simplicité, avec des visualisations de données intuitives, est crucial, surtout pour les débutants.",
+    "L'automatisation de la synchronisation des données minimise les erreurs de saisie manuelle."
+  ],
+  "concepts_introduits": [
+    "Portfolio tracker : Outil qui agrège les informations de différents comptes et portefeuilles d'investissement.",
+    "Alertes de prix : Notifications automatiques lorsque le prix d'un actif atteint un seuil prédéfini."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La phrase \"Pour suivre efficacement vos investissements en cryptomonnaies sans y consacrer un temps excessif\".",
+    "La mention de \"plusieurs applications simultanément\"."
+  ],
+  "ton_angle": "Informatif et pratique, axé sur l'optimisation de la gestion des investissements cryptos.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'utilisation d'outils adaptés, tels que les portfolio trackers et les alertes de prix, est essentielle pour suivre ses investissements en cryptomonnaies efficacement et sans perte de temps.</these_centrale>\n<arguments_cles>\n- L'agrégation des informations via un portfolio tracker offre une vue d'ensemble claire et à jour des avoirs.\n- La configuration d'alertes de prix personnalisées permet de rester informé des fluctuations importantes sans surveillance constante.\n- Le choix d'outils offrant un équilibre entre fonctionnalité et simplicité, avec des visualisations de données intuitives, est crucial, surtout pour les débutants.\n- L'automatisation de la synchronisation des données minimise les erreurs de saisie manuelle.\n</arguments_cles>\n<concepts_introduits>\n- Portfolio tracker : Outil qui agrège les informations de différents comptes et portefeuilles d'investissement.\n- Alertes de prix : Notifications automatiques lorsque le prix d'un actif atteint un seuil prédéfini.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La phrase \"Pour suivre efficacement vos investissements en cryptomonnaies sans y consacrer un temps excessif\".\n- La mention de \"plusieurs applications simultanément\".\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pratique, axé sur l'optimisation de la gestion des investissements cryptos.</ton_angle>\n</fiche>"
+}

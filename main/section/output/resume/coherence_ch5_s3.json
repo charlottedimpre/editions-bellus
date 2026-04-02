@@ -1,0 +1,26 @@
+{
+  "chapitre": 5,
+  "section": 3,
+  "chapitre_numero": "5",
+  "section_numero": "3",
+  "these_centrale": "La définition d'objectifs de gain (take-profit) et de seuils de perte (stop-loss), calibrés selon l'horizon temporel, est essentielle pour une prise de décision rationnelle et disciplinée en investissement.",
+  "arguments_cles": [
+    "Fixer un objectif de gain prédéfini (take-profit) permet de sécuriser les profits.",
+    "Définir un seuil de perte maximum (stop-loss) protège contre des pertes dévastatrices.",
+    "L'horizon temporel d'investissement influence directement la définition des objectifs et seuils.",
+    "Ces mesures empêchent les décisions émotionnelles et coûteuses dans un marché volatil."
+  ],
+  "concepts_introduits": [
+    "Take-profit : Niveau de profit prédéfini pour clôturer une position.",
+    "Stop-loss : Seuil de perte maximum acceptable pour clôturer une position.",
+    "Horizon temporel : Durée prévue pour maintenir un investissement."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "\"éviter les décisions émotionnelles\"",
+    "\"panique ou l'euphorie\"",
+    "\"marché aussi volatil que celui des cryptomonnaies\""
+  ],
+  "ton_angle": "Pédagogique, fournissant des exemples concrets pour illustrer des principes de gestion financière.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La définition d'objectifs de gain (take-profit) et de seuils de perte (stop-loss), calibrés selon l'horizon temporel, est essentielle pour une prise de décision rationnelle et disciplinée en investissement.</these_centrale>\n<arguments_cles>\n- Fixer un objectif de gain prédéfini (take-profit) permet de sécuriser les profits.\n- Définir un seuil de perte maximum (stop-loss) protège contre des pertes dévastatrices.\n- L'horizon temporel d'investissement influence directement la définition des objectifs et seuils.\n- Ces mesures empêchent les décisions émotionnelles et coûteuses dans un marché volatil.\n</arguments_cles>\n<concepts_introduits>\n- Take-profit : Niveau de profit prédéfini pour clôturer une position.\n- Stop-loss : Seuil de perte maximum acceptable pour clôturer une position.\n- Horizon temporel : Durée prévue pour maintenir un investissement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"éviter les décisions émotionnelles\"\n- \"panique ou l'euphorie\"\n- \"marché aussi volatil que celui des cryptomonnaies\"\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique, fournissant des exemples concrets pour illustrer des principes de gestion financière.</ton_angle>\n</fiche>"
+}

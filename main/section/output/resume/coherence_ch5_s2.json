@@ -1,0 +1,27 @@
+{
+  "chapitre": 5,
+  "section": 2,
+  "chapitre_numero": "5",
+  "section_numero": "2",
+  "these_centrale": "L'allocation du capital en investissement doit équilibrer rendement potentiel et gestion des risques, en tenant compte de la diversification et de la volatilité des actifs numériques.",
+  "arguments_cles": [
+    "Une répartition courante suit la règle du 80/20, allouant le plus à des actifs établis et moins volatils.",
+    "Bitcoin et Ethereum constituent souvent les piliers de l'allocation, offrant stabilité et potentiel de croissance.",
+    "Les altcoins, bien que potentiellement plus rémunérateurs, comportent une volatilité et un risque de perte accrus.",
+    "La corrélation entre les actifs est cruciale pour une diversification efficace, cherchant des performances non parfaitement synchronisées."
+  ],
+  "concepts_introduits": [
+    "Diversification : Répartition du capital sur différents actifs pour réduire les risques.",
+    "Volatilité : Mesure des fluctuations de prix d'un actif sur une période donnée.",
+    "Capitalisation boursière : Valeur totale d'un actif en circulation.",
+    "Altcoins : Toutes les cryptomonnaies autres que le Bitcoin.",
+    "Corrélation : Mesure de la relation entre les mouvements de prix de deux actifs."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "L'idée d'une répartition fixe et immuable.",
+    "L'allocation de 100% du capital aux altcoins."
+  ],
+  "ton_angle": "Pragmatique, axé sur les principes de gestion de portefeuille appliqués aux crypto-actifs.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'allocation du capital en investissement doit équilibrer rendement potentiel et gestion des risques, en tenant compte de la diversification et de la volatilité des actifs numériques.</these_centrale>\n<arguments_cles>\n- Une répartition courante suit la règle du 80/20, allouant le plus à des actifs établis et moins volatils.\n- Bitcoin et Ethereum constituent souvent les piliers de l'allocation, offrant stabilité et potentiel de croissance.\n- Les altcoins, bien que potentiellement plus rémunérateurs, comportent une volatilité et un risque de perte accrus.\n- La corrélation entre les actifs est cruciale pour une diversification efficace, cherchant des performances non parfaitement synchronisées.\n</arguments_cles>\n<concepts_introduits>\n- Diversification : Répartition du capital sur différents actifs pour réduire les risques.\n- Volatilité : Mesure des fluctuations de prix d'un actif sur une période donnée.\n- Capitalisation boursière : Valeur totale d'un actif en circulation.\n- Altcoins : Toutes les cryptomonnaies autres que le Bitcoin.\n- Corrélation : Mesure de la relation entre les mouvements de prix de deux actifs.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'idée d'une répartition fixe et immuable.\n- L'allocation de 100% du capital aux altcoins.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur les principes de gestion de portefeuille appliqués aux crypto-actifs.</ton_angle>\n</fiche>"
+}

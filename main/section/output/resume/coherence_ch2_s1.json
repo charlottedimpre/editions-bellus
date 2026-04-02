@@ -1,0 +1,24 @@
+{
+  "chapitre": 2,
+  "section": 1,
+  "chapitre_numero": "2",
+  "section_numero": "1",
+  "these_centrale": "La majorité des débutants en cryptomonnaies échouent en raison du FOMO, du surendettement et de la négligence de la sécurité.",
+  "arguments_cles": [
+    "La peur de manquer une opportunité (FOMO) conduit à des investissements impulsifs souvent suivis de corrections.",
+    "L'investissement avec de l'argent dont on a besoin à court terme ou qu'on ne peut pas perdre mène à la catastrophe financière.",
+    "La négligence de la sécurité des actifs numériques rend les investissements vulnérables au piratage et aux fraudes."
+  ],
+  "concepts_introduits": [
+    "FOMO : Peur de manquer une opportunité, poussant à des investissements impulsifs.",
+    "Surendettement : Investir des fonds nécessaires à court terme ou non remplaçables.",
+    "Clés privées : Codes secrets indispensables pour accéder et sécuriser ses actifs numériques."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Le chiffre \"90% des débutants\" sans contexte des raisons de l'échec.",
+    "L'idée que l'objectif principal est la préservation du capital avant la génération de profits."
+  ],
+  "ton_angle": "Pédagogique, axé sur la prévention des erreurs courantes pour les investisseurs novices.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La majorité des débutants en cryptomonnaies échouent en raison du FOMO, du surendettement et de la négligence de la sécurité.</these_centrale>\n<arguments_cles>\n- La peur de manquer une opportunité (FOMO) conduit à des investissements impulsifs souvent suivis de corrections.\n- L'investissement avec de l'argent dont on a besoin à court terme ou qu'on ne peut pas perdre mène à la catastrophe financière.\n- La négligence de la sécurité des actifs numériques rend les investissements vulnérables au piratage et aux fraudes.\n</arguments_cles>\n<concepts_introduits>\n- FOMO : Peur de manquer une opportunité, poussant à des investissements impulsifs.\n- Surendettement : Investir des fonds nécessaires à court terme ou non remplaçables.\n- Clés privées : Codes secrets indispensables pour accéder et sécuriser ses actifs numériques.\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Le chiffre \"90% des débutants\" sans contexte des raisons de l'échec.\n- L'idée que l'objectif principal est la préservation du capital avant la génération de profits.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique, axé sur la prévention des erreurs courantes pour les investisseurs novices.</ton_angle>\n</fiche>"
+}

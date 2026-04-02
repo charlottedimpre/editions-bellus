@@ -1,0 +1,346 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 19,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "cryptomonnaie définition simple pour débutants",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-01T14:19:44.446Z",
+    "processed_at": "2026-04-01T14:19:49.318Z",
+    "total_time_taken": 4.87,
+    "engine_url": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 739000
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 2,
+      "title": "Qu'est-ce que la cryptomonnaie ? Guide pour débutants",
+      "link": "https://www.google.fr/goto?url=CAESdQE7q4ylF42QcLwa2EC0Ys67JxUNfbV_2D9Rqm8FbF0q4b0uiJd5RD_ctUikPyUMOlmzNYzs4w65Ml_VC2QGA3qph_j3e4zsnCwMLMUnjZ83FO4ZMH5YkZe-QDWhCU4cAZ9h_PgOhB3WGe2D2Twe7FEemePYbg==",
+      "domain": "www.google.fr",
+      "displayed_link": "https://finary.com › Blog › Crypto › Blockchain",
+      "snippet": "30 juin 2025 — Définition de la cryptomonnaie. La cryptomonnaie est une forme de monnaie 100% numérique. Elle fonctionne sans banque centrale ni gouvernement.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "4,8(2 472)",
+            "Gratuit",
+            "‎Finance&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche Google"
+          ]
+        }
+      },
+      "date": "30 juin 2025",
+      "date_utc": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "position": 2,
+      "block_position": 3,
+      "title": "Qu'est-ce que la cryptomonnaie et comment fonctionne-t- ...",
+      "link": "https://www.google.fr/goto?url=CAESdQE7q4ylWOCZPOc_6eNHPpL5QOL8Utbf35KxQ1Os1t6WMUizaGAfZY45gT2uC7ABoaj5JfbWaoJKCvBtMNu0KEJ5LApD_a1w1o6fPO274dPornUVTxTN2dEEmjmIPlQvvVhsSCcKhkjvriGxG75U-bFR7rW4VQ==",
+      "domain": "www.google.fr",
+      "displayed_link": "https://www.kaspersky.fr › what-is-cryptocurrency",
+      "snippet": "La cryptomonnaie est une monnaie numérique qui utilise la cryptographie pour sécuriser les transactions. Découvrez comment acheter des cryptomonnaies et ...",
+      "prerender": false
+    },
+    {
+      "position": 3,
+      "block_position": 4,
+      "title": "Qu'est-ce qu'une crypto-monnaie ? - Sumeria",
+      "link": "https://www.google.fr/goto?url=CAESjwEBO6uMpSP3XkBYggdZpe02nEr0RLDJwwwa3ntdQ2pT2HgFy9-BwNIXXezcsa7zzfrqAP5jrWCzRs1T1FETQglP_gGALaQyezgiF_KYLBbKm5syNI_8bFVxaZ1vEXUNsOzIO4g5bVbmxazzSQIXzJWahycBw0bMlZGRrv8zsrWi75r8LHYhqUREvBGCwfQ71w==",
+      "domain": "www.google.fr",
+      "displayed_link": "https://sumeria.eu › blog › investissement › dictionnaire...",
+      "snippet": "Commençons par le commencement : c'est quoi une cryptomonnaie ? Pour faire simple, on dira que c'est… une monnaie. Mais numérique. Qui n'est pas imprimée sur ...",
+      "prerender": false
+    },
+    {
+      "position": 4,
+      "block_position": 6,
+      "title": "Définition de la crypto monnaie : guide pour débutants",
+      "link": "https://www.google.fr/goto?url=CAESXgE7q4ylyaDdXHaP8ZDnve1cyiEW5ovzNtaKdnjbB9cCaauSVcrYUatRLlAtZ9pBw9Hqu8JGMyUvDcjqEox6Kdz2BT6R8nkb4Ct82BcqSESBSDuq0ui4us-OAUXl5KA=",
+      "domain": "www.google.fr",
+      "displayed_link": "https://n26.com › fr-fr › blog › definition-crypto-monn...",
+      "snippet": "26 mai 2024 — Les cryptomonnaies sont des monnaies numériques qui n'existent que sous forme électronique. Elles offrent un moyen de paiement universel pour ...",
+      "prerender": false,
+      "date": "26 mai 2024",
+      "date_utc": "2024-05-26T00:00:00.000Z"
+    },
+    {
+      "position": 5,
+      "block_position": 8,
+      "title": "Cryptomonnaie",
+      "link": "https://www.google.fr/goto?url=CAESVQE7q4ylweT2yH8_bwPmmGx0qHDE_OXW7SxSXBNxZj8y5Fjjg4Ga-xvA3oDMZLdc0CWtw1Yk5uhfqK_Ks2_fu5H04XwLkoOAW6cdLA89YKrvzUP_tsY=",
+      "domain": "www.google.fr",
+      "displayed_link": "https://fr.wikipedia.org › wiki › Cryptomonnaie",
+      "snippet": "Conçues pour Internet, elles offrent des alternatives aux systèmes de paiement reposant sur des monnaies avec cours légal. · Transparence : toutes les ...",
+      "prerender": false
+    },
+    {
+      "position": 6,
+      "block_position": 9,
+      "title": "Crypto-actifs : définition et fonctionnement",
+      "link": "https://www.google.fr/goto?url=CAESuQEBO6uMpdy0YWUMKufX43Oga_AoAe6lJ9INfVhLMsKRL3tl_bdK_g5Q4cgSSs-KscF1EVg-a8p88yDbyAlc9laLr29-IB7F0r47U5lfbm6gVtuttzeCrgM5nvYTurQ0vPZwJYN6Xwb8Z0_6RnRpcf75MTZkBBn9HizQ-PWjqbWdEbOdre5c29XYqRadW_UQW8klkOpWAEFC1oHEyvjFKPfZdOENBz7X3vzhobdHtzS1Xxfid4x5iJ59vA==",
+      "domain": "www.google.fr",
+      "displayed_link": "https://www.lafinancepourtous.com › ... › Crypto-actifs",
+      "snippet": "16 déc. 2024 — Un crypto-actif est un actif numérique basé sur une blockchain et un réseau informatique qui valide et effectue les transactions. Ce réseau est ...",
+      "prerender": false,
+      "date": "16 déc. 2024",
+      "date_utc": "2024-12-16T00:00:00.000Z"
+    },
+    {
+      "position": 7,
+      "block_position": 10,
+      "title": "Crypto-monnaie : fonctionnement et risques",
+      "link": "https://www.google.fr/goto?url=CAESswEBO6uMpVzQiAyO0KfwND3JKdke-oGyIsuN2JfzHVfLx3vRuDL-k6sITWNb8X0bk6_fdOXsp5j31dNLp0UptcRVr3CLcCirfEg_Nbv5jNczen14vY_VYVin2zIL0D_KAIGpVX-lP3KWohsmoncE9ey4x-Rif7iJ8hNhYHoej9fqqrYJYmayH7o3z5k574aWPyqJX6r8c9nfD8NsZYg1djCksG3ao8lxwlyNLb93iyRaNXIlUQ==",
+      "domain": "www.google.fr",
+      "displayed_link": "https://www.credit-agricole.fr › magazine › tout-un-mag",
+      "snippet": "Les crypto-actifs sont des « devises » virtuelles accessibles uniquement sur internet, indépendantes des banques centrales et utilisables mondialement.",
+      "prerender": false
+    },
+    {
+      "position": 8,
+      "block_position": 11,
+      "title": "Qu'est-ce que le Bitcoin ? Le guide du débutant ...",
+      "link": "https://www.google.fr/goto?url=CAESoAEBO6uMpX0Q-QMfXOmrPmKf30fpPiwkIZEByiQxTfMC5JQgTOb09Ro8T8j0-6aL7MFFgkVeFyK9C_X6gMmaPWnwPYmiOQTPm-T9_V7gy2g4F-wOD_GegI3gC62SMj6svjOmhR2vE4M16XZNzRR20pRV5JYloKt5acaHuECEjFjT9CdTI_HHqC3GVh9-0xb3TifrPDHm7CdMM1MJBWZ571st",
+      "domain": "www.google.fr",
+      "displayed_link": "https://www.avira.com › blog › quest-ce-que-le-bitcoin",
+      "snippet": "10 déc. 2024 — Le Bitcoin (BTC) est une monnaie numérique (ou cryptomonnaie). Il a été créé en 2009 par une personne ou un groupe de personnes utilisant le ...",
+      "prerender": false,
+      "date": "10 déc. 2024",
+      "date_utc": "2024-12-10T00:00:00.000Z"
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Cryptomonnaie explication simple",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Cryptomonnaie+explication+simple&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg3EAE",
+      "block_position": 12
+    },
+    {
+      "query": "La cryptomonnaie pour les Nuls pdf",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=La+cryptomonnaie+pour+les+Nuls+pdf&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAhDEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Investir crypto monnaie débutant",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Investir+crypto+monnaie+d%C3%A9butant&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAhBEAE",
+      "block_position": 12
+    },
+    {
+      "query": "À quoi sert la crypto monnaie",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=%C3%80+quoi+sert+la+crypto+monnaie&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg-EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Crypto-monnaie avantages et inconvénients",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Crypto-monnaie+avantages+et+inconv%C3%A9nients&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg9EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Crypto monnaie comment ça marché",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Crypto+monnaie+comment+%C3%A7a+march%C3%A9&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg6EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Crypto monnaie investir",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Crypto+monnaie+investir&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg5EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment se lancer dans la crypto sans argent",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Comment+se+lancer+dans+la+crypto+sans+argent&sa=X&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ1QJ6BAg4EAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Quel est le principe de la cryptomonnaie ?",
+      "answer": "Principes de base de la cryptomonnaie : fonctionnement des cryptomonnaies, des chaînes de blocs et des portefeuilles numériques. Acceptez des paiements en ligne, en personne et dans le monde entier, grâce à une solution de paiement adaptée à toutes les entreprises, des jeunes pousses aux multinationales.",
+      "source": {
+        "link": "/goto?url=CAES3wIBO6uMpd8pe2y-5r38d_jpwkizF5s2NowRUODCeHiHLbrGrcyxOk4QrFhw06OoZlavv4kZzHHumHjQ5029ZawjwqTmzYC5f0PlYH8kKyGBiIp1ffIRo9GG9ZZeD9JhEfaLfV6xd0dK7lAg6L8ktFzKMUiRe4peEEothFREZER4FDYe7fJqfluiA7gmgeqQu35oWQf_-ibSIiRv8NknIgGzLtFJoMQSa0CpOSYibF3qZfEU9FGKB1sWUZZqtqZslqtFxAUekGguWJEfQIsuwMwpgnJmRsr8wcolkRbI3Arz6282Nxn7lGczeeEWxr7a5FdtSaFKBmS5HXJUCHDj7y89tpRwTMwEeCizgeDLOAPxPu2M262KscJi4GU5NyeersrCZvXSI7W3RrijbnOO4EGHmNOOxsGbxHaJRVcQZkp43FYr7esUbl4o1vYc5-JhnvRuE78qaBx5iqmfQwHsqNI=",
+        "displayed_link": "https://stripe.com › resources › more › crypto-basics",
+        "title": "Principes de base de la cryptomonnaie - Stripe"
+      },
+      "block_position": 5
+    },
+    {
+      "question": "Comment expliquer la crypto-monnaie à un enfant ?",
+      "block_position": 5
+    },
+    {
+      "question": "Quelle est la différence entre une cryptomonnaie et un Bitcoin ?",
+      "answer": "Bitcoin vs autres cryptomonnaies majeures. Les cryptomonnaies sont des devises virtuelles qui opèrent indépendamment des banques et des gouvernements. Elles peuvent cependant toujours être échangées, ou tradées, comme toute autre devise physique. Lancé en 2009, le bitcoin est la première cryptomonnaie décentralisée.",
+      "source": {
+        "link": "/goto?url=CAES9AEBO6uMpZ3A92_QjhwitBVQYTyIh1YbUBcYeicz063yAF3vIaj1RttLZmHSxrOfTzyHFkbDRdcYD-nKNXCbIRA8h_DDBAAZOgABK0z0oWntMPfjLlz7igZz7GkvjxjELPRIYLmYtr4c8GPfwGjV8BDr5v-EIB_gNk-TLIq5TAfp-cog5fklInl4xvNxvDJrOSFfHOnHhbuPogjQ1O2VaY8ncJ9B6RwGS1Y8RIOMK3vhU30flNh02hajlhFyPS-fV2ehHAqpN8-VSTnOFZk0ZPkLxeXw4D5CUnEVmGM07ZBTjrO-2pA8oIW5dWrnzKu7Dd2Zb-On",
+        "displayed_link": "https://www.ig.com › trading-cryptomonnaies › compara...",
+        "title": "Comparaison des cryptomonnaies | Bitcoin vs autres Cryptos | IG FR"
+      },
+      "block_position": 5
+    },
+    {
+      "question": "Quelles sont les cinq bonnes raisons de ne pas acheter de cryptomonnaie ?",
+      "answer": "Mais puisque je ne suis pas conseiller financier, laissez-moi vous donner cinq bonnes raisons de ne pas le faire.. Vous ne gagnerez pas assez. La valeur du bitcoin pourrait encore décupler, disions-nous. ... Vous miserez sur le mauvais cheval. ... Vous ne parlez pas la langue. ... Vous êtes trop élégant. ... Vous avez une conscience.",
+      "answer_list": [
+        {
+          "text": "Vous ne gagnerez pas assez. La valeur du bitcoin pourrait encore décupler, disions-nous. ..."
+        },
+        {
+          "text": "Vous miserez sur le mauvais cheval. ..."
+        },
+        {
+          "text": "Vous ne parlez pas la langue. ..."
+        },
+        {
+          "text": "Vous êtes trop élégant. ..."
+        },
+        {
+          "text": "Vous avez une conscience."
+        }
+      ],
+      "source": {
+        "link": "/goto?url=CAESiwEBO6uMpa9NDOt--36Pjyc8TOhrGfvRiNfG3EnxfaCp3gYf91QaDXB5aQonMXP4Ab6eDt8cQRfBvUaeb9PsPqIUZdTu-lV1dglaFblD08x7qDvhv4W-jv95hYkKMoSaOOjPQxlbtKiArASoCYT-KXCKTA817WOoQL582qQzF4dw2XtE_JYM6ZJDsE0F",
+        "displayed_link": "https://www.letemps.ch › opinions › chroniques › cinq-b...",
+        "title": "Cinq bonnes raisons de ne pas acheter de cryptomonnaie - Le Temps"
+      },
+      "block_position": 5
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Comprendre les cryptos en 10 minutes",
+      "length": "11.16",
+      "source": "YouTube · FinaryYouTube · Finary",
+      "link": "/goto?url=CAESVQE7q4ylYzPTMIuLU3MxidhLqEdM08PW6xNTVG6oo3UiagMrK64GKyOgPqUuhm4AuigsIW1F1XmPhsEiPlnKKuvJqKG0Ek_9m63tCnPKeXNDYI-tan8=",
+      "block_position": 7
+    },
+    {
+      "position": 2,
+      "title": "What is cryptocurrency? | Understanding how crypto works",
+      "length": "3.49",
+      "source": "YouTube · Kaspersky FranceYouTube · Kaspersky France",
+      "link": "/goto?url=CAESVQE7q4yl3pfWKTx5y_6l-6xq-2e8VFAWCt7zyC6I7TRdGNu2o-Ka6B1JyMlLYSB2lsxDJCNXuBwSQvDw9wAkkBq2dlfVoA0ZStiT1akUIbDV87zennE=",
+      "block_position": 7
+    },
+    {
+      "position": 3,
+      "title": "Comment investir en crypto-monnaie en 2026 ? LE GUIDE ...",
+      "length": "1.22",
+      "source": "YouTube · Matthieu Louvet - S'investirYouTube · Matthieu Louvet - S'investir",
+      "link": "/goto?url=CAESVQE7q4ylP1Fg9YKLvq7DRY84T85scP_OFS2IOVQH21yy3ce5ytLaOhv7nw96saiu0SJn42q-cb5blR5GWzrDItieQa9kj6p2iCpD1Np2H41XMeJkSZo=",
+      "block_position": 7
+    }
+  ],
+  "answer_box": {
+    "answer_box_type": 18,
+    "answers": [
+      {
+        "source": {
+          "link": "/goto?url=CAESlgIBO6uMpYt0JeNTHuSzDuD88-ZU7r2zNG05gUkguPPWnDGtqZJ4OS89ttdI7GF8Gyzm4McdVjBjIxnoY4ann_P0fZXO3VUZMNwcUGHVxVBJCoYkLjw7F5xDkpLNOd4VWbvgqvbTjwdOgkUA6ROpJSl4TS7hMOtKTUtpCoakLoYj_oW_HxHTsA_jQGFPYmbU-ehV4hvLCIIBoNj4wcDvblrmvCHSdntUGPLJyH-xBnvcX760_LdGtcUQ5M-yvIh7GnDJB5yZJd4uA3Y__o_aUHnxns34J5oIjeiFTzrwesIwsiSWHW1UCqqpUYsmxYofUMbCE4mFkl8Fl7ZyApjnj8W3U5qGj6DdmEW-p2JWv034x5NfIic05g==",
+          "title": "Investissement dans les cryptomonnaies : ce qu'il faut savoir",
+          "displayed_link": "https://www.economie.gouv.fr › gerer-mon-argent › inv..."
+        },
+        "answer": "2 oct. 2025"
+      }
+    ],
+    "block_position": 1
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=10&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8NMDegQINBAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=10&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=20&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=30&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=40&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=50&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=60&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=70&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=80&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=cryptomonnaie+d%C3%A9finition+simple+pour+d%C3%A9butants&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=ginNacukL8at5NoP3cTXKA&start=90&sa=N&sstk=Af77f_d3T7eJ5-91wQZpa8_L42OO6eTprCD-t2oxd456kXeq7-25wmHbeUSv3JcIZ9FTADmsQoh6QCXU0MrFRFTKNM0J5rw-x-sIBw&ved=2ahUKEwjL7Z617MyTAxXGFlkFHV3iFQUQ8tMDegQINBAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=cryptomonnaie%20d%C3%A9finition%20simple%20pour%20d%C3%A9butants&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

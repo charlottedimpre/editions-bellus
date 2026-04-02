@@ -12,6 +12,7 @@ PDF_TITLE = "Introduction"
 OUTPUT_PDF_PATH = BASE_DIR / "output" / "livre.pdf"
 AUTHOR_PLACEHOLDER = "[AUTEUR]"
 PUBLISHER_NAME = "Editions Bellus"
+BOOK_FORMAT_6X9_MM = (152.4, 228.6)
 
 
 class BookPDF(FPDF):
@@ -335,7 +336,7 @@ def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: 
         contenu = section.get("contenu")
         if isinstance(contenu, str) and contenu.strip():
             pdf.set_font("Body", size=12)
-            pdf.multi_cell(0, 8, contenu.strip(), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.multi_cell(0, 7, contenu.strip(), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.ln(8)
 
 def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
@@ -368,7 +369,7 @@ def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
     pdf.ln(20)
 
     pdf.set_font("Body", size=12)
-    pdf.multi_cell(0, 8, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.multi_cell(0, 7, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
 
 def _render_sommaire(pdf: BookPDF, chapters: list[dict[str, Any]], has_conclusion: bool) -> None:
@@ -447,7 +448,7 @@ def affichage():
             chapters_data.append(chapter_payload)
     conclusion_text = _load_conclusion_text()
 
-    pdf = BookPDF()
+    pdf = BookPDF(format=BOOK_FORMAT_6X9_MM)
     pdf.set_margins(left=20, top=30, right=20)
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.alias_nb_pages()
@@ -479,7 +480,7 @@ def affichage():
     pdf.multi_cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.ln(20)
     pdf.set_font("Body", size=12)
-    pdf.multi_cell(0, 8, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.multi_cell(0, 7, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     for index, chapter_data in enumerate(chapters_data, start=1):
         _render_chapter(pdf, chapter_data, default_number=index)

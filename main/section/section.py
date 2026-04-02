@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 from pathlib import Path
 
@@ -30,6 +31,9 @@ if not GEMINI_API_KEY:
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
+MAX_BOOK_WORDS = 15000
+SECTION_WORD_RANGE = 300
+MAX_SECTION_REGEN_ATTEMPTS = 3
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 
 SECTION_DIR.mkdir(parents=True, exist_ok=True)
@@ -83,6 +87,33 @@ def _find_section_title(chapitre: int, section: int) -> str | None:
     return None
 
 
+def _count_words(text: str) -> int:
+    # Compte les mots en preservant les apostrophes/tirets dans les tokens.
+    return len(re.findall(r"[\wÀ-ÖØ-öø-ÿ]+(?:['’-][\wÀ-ÖØ-öø-ÿ]+)*", text, flags=re.UNICODE))
+
+
+def _count_content_words_from_file(filepath: Path) -> int:
+    with filepath.open("r", encoding="utf-8") as f:
+        section_data = json.load(f)
+    content = normalize_section_content(section_data.get("contenu", ""))
+    return _count_words(content)
+
+
+def _compute_section_word_bounds(total_sections: int) -> tuple[int, int, int]:
+    if total_sections <= 0:
+        raise ValueError("Impossible de calculer les bornes: nombre total de sections invalide.")
+
+    target_words = max(1, round(MAX_BOOK_WORDS / total_sections))
+    half_range = max(1, SECTION_WORD_RANGE // 2)
+    min_words = max(1, target_words - half_range)
+    max_words = max(min_words, target_words + half_range)
+    return min_words, max_words, target_words
+
+
+def _count_total_sections(chapitres: list[dict]) -> int:
+    return sum(len(chap.get("sections", [])) for chap in chapitres if isinstance(chap, dict))
+
+
 def gen_section(chapitre, section):
     with FICHE_PATH.open("r", encoding="utf-8") as f:
         fiche = f.read()
@@ -97,12 +128,19 @@ def gen_section(chapitre, section):
     with prompt_path.open("r", encoding="utf-8") as f:
         prompt = f.read()
 
+    structure_data = load_structure()
+    total_sections = _count_total_sections(structure_data)
+    min_words, max_words, target_words = _compute_section_word_bounds(total_sections)
+    print(
+        f"Contraintes dynamiques section: cible {target_words} mots, plage {min_words}-{max_words} (total sections: {total_sections}, max livre: {MAX_BOOK_WORDS})."
+    )
+
     coherence = ""
     if chapitre == 1 and section == 1:
         coherence = "il n'y a pas de section précédente, c'est la première section du premier chapitre, aucune vérification de cohérence nécessaire."
         print(f"{coherence}")
     elif section == 1:
-        chapitres = load_structure()
+        chapitres = structure_data
         nb_sec = None
         for chap in chapitres:
             if int(chap["numero"]) == chapitre - 1:
@@ -124,36 +162,53 @@ def gen_section(chapitre, section):
         print(f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre}_s{section - 1}.json...")
 
     coherence_text = coherence if coherence else ""
-
-    response_text = _generate_text_with_retry(
-        contents=f"{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\n\nVérification de cohérence avec la section précédente : {coherence_text}",
-        context_label=f"section_ch{chapitre}_s{section}",
-    )
-
-    parsed = parse_section(response_text, chapitre, section)
-
-    # Nettoyage du contenu avant insertion dans le JSON de base.
-    section_title = _find_section_title(chapitre, section)
-    if section_title and isinstance(parsed.get("contenu"), str):
-        cleaned_content, removed, matched_separator = strip_leading_title(
-            parsed["contenu"], section_title
-        )
-        if removed:
-            parsed["contenu"] = cleaned_content
-            print(
-                f"Prefixe titre retire pour section_ch{chapitre}_s{section} ({matched_separator!r})."
-            )
-
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
-    with filepath.open("w", encoding="utf-8") as f:
-        json.dump(parsed, f, ensure_ascii=False, indent=2)
 
-    print(f"Section {section} du chapitre {chapitre} sauvegardée -> {filename}")
+    for regen_attempt in range(1, MAX_SECTION_REGEN_ATTEMPTS + 1):
+        response_text = _generate_text_with_retry(
+            contents=f"{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\nCONTRAINTE DE LONGUEUR : vise environ {target_words} mots, accepte uniquement une section entre {min_words} et {max_words} mots.\n\nVérification de cohérence avec la section précédente : {coherence_text}",
+            context_label=f"section_ch{chapitre}_s{section}",
+        )
 
-    coherence_check(chapitre, section)
+        parsed = parse_section(response_text, chapitre, section)
 
-    print("Vérification de cohérence effectuée pour la section précédente.")
+        # Nettoyage du contenu avant insertion dans le JSON de base.
+        section_title = _find_section_title(chapitre, section)
+        if section_title and isinstance(parsed.get("contenu"), str):
+            cleaned_content, removed, matched_separator = strip_leading_title(
+                parsed["contenu"], section_title
+            )
+            if removed:
+                parsed["contenu"] = cleaned_content
+                print(
+                    f"Prefixe titre retire pour section_ch{chapitre}_s{section} ({matched_separator!r})."
+                )
+
+        with filepath.open("w", encoding="utf-8") as f:
+            json.dump(parsed, f, ensure_ascii=False, indent=2)
+
+        word_count = _count_content_words_from_file(filepath)
+        print(
+            f"Section {section} du chapitre {chapitre} sauvegardée -> {filename} ({word_count} mots)."
+        )
+
+        if min_words <= word_count <= max_words:
+            coherence_check(chapitre, section)
+            print(
+                f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Vérification de cohérence effectuée."
+            )
+            return
+
+        if regen_attempt == MAX_SECTION_REGEN_ATTEMPTS:
+            raise RuntimeError(
+                f"Section section_ch{chapitre}_s{section} hors plage ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}) apres {MAX_SECTION_REGEN_ATTEMPTS} tentatives."
+            )
+
+        length_issue = "trop courte" if word_count < min_words else "trop longue"
+        print(
+            f"Section section_ch{chapitre}_s{section} {length_issue} ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Regeneration ({regen_attempt}/{MAX_SECTION_REGEN_ATTEMPTS})..."
+        )
 
 
 def coherence_check(chapitre, section):

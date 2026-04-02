@@ -1,0 +1,25 @@
+{
+  "chapitre": 4,
+  "section": 2,
+  "chapitre_numero": "4",
+  "section_numero": "2",
+  "these_centrale": "Les moyennes mobiles sont des outils de visualisation simples et efficaces pour identifier les tendances sous-jacentes des prix d'un actif crypto.",
+  "arguments_cles": [
+    "Les moyennes mobiles lissent les fluctuations de prix pour révéler le mouvement de fond.",
+    "Les croisements entre moyennes mobiles courtes et longues (50/200 périodes) sont des indicateurs de tendance (haussière ou baissière).",
+    "Les moyennes mobiles ne sont pas infaillibles et doivent être combinées avec d'autres outils d'analyse.",
+    "La période de calcul d'une moyenne mobile détermine sa réactivité aux changements de prix."
+  ],
+  "concepts_introduits": [
+    "Moyennes mobiles : Calculs lissant les prix pour montrer la tendance.",
+    "Croisement doré : Moyenne courte au-dessus de la longue, signal haussier.",
+    "Croisement de la mort : Moyenne courte sous la longue, signal baissier."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "\"calculs qui lissent les fluctuations de prix sur une durée donnée\"",
+    "\"sans tomber dans la suranalyse\""
+  ],
+  "ton_angle": "Explicatif et pédagogique, utilisant des exemples concrets.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les moyennes mobiles sont des outils de visualisation simples et efficaces pour identifier les tendances sous-jacentes des prix d'un actif crypto.</these_centrale>\n<arguments_cles>\n- Les moyennes mobiles lissent les fluctuations de prix pour révéler le mouvement de fond.\n- Les croisements entre moyennes mobiles courtes et longues (50/200 périodes) sont des indicateurs de tendance (haussière ou baissière).\n- Les moyennes mobiles ne sont pas infaillibles et doivent être combinées avec d'autres outils d'analyse.\n- La période de calcul d'une moyenne mobile détermine sa réactivité aux changements de prix.\n</arguments_cles>\n<concepts_introduits>\n- Moyennes mobiles : Calculs lissant les prix pour montrer la tendance.\n- Croisement doré : Moyenne courte au-dessus de la longue, signal haussier.\n- Croisement de la mort : Moyenne courte sous la longue, signal baissier.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"calculs qui lissent les fluctuations de prix sur une durée donnée\"\n- \"sans tomber dans la suranalyse\"\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et pédagogique, utilisant des exemples concrets.</ton_angle>\n</fiche>"
+}

@@ -1,0 +1,113 @@
+{
+  "sujet": "Construire une stratégie d'investissement en cryptomonnaies pour générer des gains significatifs en trois mois, sans promesses de fortune immédiate",
+  "notions_indispensables": [
+    {
+      "contenu": "La blockchain est un registre public décentralisé et immuable sécurisant les transactions sans intermédiaire bancaire"
+    },
+    {
+      "contenu": "La clé privée est le seul accès à vos fonds ; sa perte entraîne leur disparition définitive et irréversible"
+    },
+    {
+      "contenu": "La volatilité extrême est inhérente avec des variations pouvant atteindre 50 à 80% en quelques mois"
+    },
+    {
+      "contenu": "Le Dollar Cost Averaging (DCA) consiste à investir des montants fixes régulièrement pour lisser le prix d'achat"
+    },
+    {
+      "contenu": "Seuls les prestataires PSAN enregistrés auprès de l'AMF garantissent un cadre légal de protection en France"
+    },
+    {
+      "contenu": "Le cold wallet stocke les clés hors ligne et offre une sécurité maximale comparé au hot wallet connecté"
+    },
+    {
+      "contenu": "La flat tax de 30% s'applique sur les plus-values dès 305 euros de cessions annuelles en France"
+    },
+    {
+      "contenu": "Le principe Not your keys, not your coins signifie que les fonds sur exchange ne vous appartiennent pas réellement"
+    }
+  ],
+  "erreurs_frequentes": [
+    {
+      "contenu": "Céder au FOMO (Fear Of Missing Out) en achetant lors des pics de prix sans analyse préalable"
+    },
+    {
+      "contenu": "Investir des sommes nécessaires à la vie courante ou s'endetter pour spéculer sur les cryptomonnaies"
+    },
+    {
+      "contenu": "Conserver ses actifs sur une plateforme d'échange sans activer la double authentification"
+    },
+    {
+      "contenu": "Perdre sa phrase de récupération ou sa clé privée sans sauvegarde sécurisée hors ligne"
+    },
+    {
+      "contenu": "Croire aux promesses de gains garantis ou de richesse rapide sans risque financier"
+    },
+    {
+      "contenu": "Oublier de déclarer ses comptes étrangers et ses plus-values aux autorités fiscales compétentes"
+    },
+    {
+      "contenu": "Tenter le market timing ou trader à court terme sans expérience alors que 80% des traders perdent"
+    },
+    {
+      "contenu": "Confondre échanges crypto-crypto (non imposables) et conversions en euros (imposables)"
+    }
+  ],
+  "etapes_essentielles": [
+    {
+      "contenu": "Définir son profil de risque et allouer uniquement un capital disponible dont on accepte la perte totale"
+    },
+    {
+      "contenu": "Sélectionner une plateforme d'échange régulée PSAN auprès de l'AMF avec historique de sécurité vérifié"
+    },
+    {
+      "contenu": "Configurer la double authentification et sécuriser les mots de passe dès la création des comptes"
+    },
+    {
+      "contenu": "Transférer ses cryptomonnaies vers un wallet personnel après achat pour en garantir la propriété"
+    },
+    {
+      "contenu": "Mettre en place une stratégie d'achat programmé (DCA) pour réduire l'impact de la volatilité"
+    },
+    {
+      "contenu": "Diversifier son portefeuille entre Bitcoin, Ethereum et autres actifs selon son appétence au risque"
+    },
+    {
+      "contenu": "Sauvegarder sa phrase de récupération sur support physique hors ligne et jamais sur un fichier numérique"
+    },
+    {
+      "contenu": "Déclarer ses comptes étrangers via le formulaire 3916-bis et ses plus-values via l'annexe 2086"
+    },
+    {
+      "contenu": "Réévaluer objectivement la stratégie après 90 jours pour ajuster ou interrompre selon les résultats"
+    }
+  ],
+  "risque": [
+    {
+      "contenu": "Perte totale du capital investi due à la volatilité extrême et aux cycles de marché imprévisibles"
+    },
+    {
+      "contenu": "Piratage des plateformes d'échange ou vol des clés privées par phishing entraînant la disparition irréversible des actifs"
+    },
+    {
+      "contenu": "Faillite ou fermeture soudaine d'une plateforme non régulée avec blocage ou perte définitive des fonds déposés"
+    },
+    {
+      "contenu": "Arnaques aux schémas de Ponzi, rug pulls et faux projets promettant des rendements irréalistes"
+    },
+    {
+      "contenu": "Perte définitive d'accès aux fonds en cas d'oubli de la seed phrase sans possibilité de récupération bancaire"
+    },
+    {
+      "contenu": "Illiquidité sur certains actifs empêchant la revente rapide aux cours souhaités en période de crise"
+    },
+    {
+      "contenu": "Évolution réglementaire défavorable pouvant modifier la fiscalité ou interdire certains actifs numériques"
+    },
+    {
+      "contenu": "Surendettement par utilisation de crédits à la consommation pour investir dans des actifs spéculatifs"
+    },
+    {
+      "contenu": "Stress psychologique et décisions émotionnelles entraînant l'achat au sommet et la vente en perte"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chapitre": 1,
+  "section": 4,
+  "chapitre_numero": "1",
+  "section_numero": "4",
+  "these_centrale": "La validation d'une transaction en cryptomonnaie est un processus décentralisé et transparent, assuré par un réseau de nœuds qui authentifient, enregistrent et sécurisent les mouvements de fonds.",
+  "arguments_cles": [
+    "Le réseau de nœuds collabore pour authentifier et enregistrer les transactions sans autorité centrale.",
+    "Les mineurs regroupent les transactions en blocs et résolvent des problèmes cryptographiques pour proposer l'ajout de ces blocs.",
+    "Les autres nœuds vérifient la validité des blocs proposés, et leur validation par la majorité les ajoute à la blockchain.",
+    "L'ajout d'un bloc rend la transaction immuable, garantissant sécurité et fiabilité.",
+    "Des frais de transaction rémunèrent les mineurs et incitent à la bonne tenue du réseau."
+  ],
+  "concepts_introduits": [
+    "Nœuds : Ordinateurs participant à un réseau distribué pour valider les transactions.",
+    "Blockchain : Registre distribué et transparent de toutes les transactions.",
+    "Mineurs/Validateurs : Participants spécialisés dans la validation des transactions et la création de blocs.",
+    "Bloc candidat : Groupe de transactions en attente d'être validé.",
+    "Problème cryptographique : Enigme complexe résolue par les mineurs pour valider un bloc.",
+    "Frais de transaction (Frais de gaz) : Paiement aux mineurs pour la validation des transactions.",
+    "Double dépense : Tentative d'utiliser les mêmes fonds pour plusieurs transactions.",
+    "Exploration de blocs : Outil permettant de visualiser le parcours d'une transaction sur la blockchain."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La validation est un processus qui fonctionne sans l'intervention d'une autorité centrale comme une banque.",
+    "La transparence totale sur le chemin parcouru par vos fonds, de leur origine à leur destination finale, le tout sans passer par une institution financière traditionnelle."
+  ],
+  "ton_angle": "Explicatif et pédagogique, détaillant le fonctionnement technique d'un processus clé.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La validation d'une transaction en cryptomonnaie est un processus décentralisé et transparent, assuré par un réseau de nœuds qui authentifient, enregistrent et sécurisent les mouvements de fonds.</these_centrale>\n<arguments_cles>\n- Le réseau de nœuds collabore pour authentifier et enregistrer les transactions sans autorité centrale.\n- Les mineurs regroupent les transactions en blocs et résolvent des problèmes cryptographiques pour proposer l'ajout de ces blocs.\n- Les autres nœuds vérifient la validité des blocs proposés, et leur validation par la majorité les ajoute à la blockchain.\n- L'ajout d'un bloc rend la transaction immuable, garantissant sécurité et fiabilité.\n- Des frais de transaction rémunèrent les mineurs et incitent à la bonne tenue du réseau.\n</arguments_cles>\n<concepts_introduits>\n- Nœuds : Ordinateurs participant à un réseau distribué pour valider les transactions.\n- Blockchain : Registre distribué et transparent de toutes les transactions.\n- Mineurs/Validateurs : Participants spécialisés dans la validation des transactions et la création de blocs.\n- Bloc candidat : Groupe de transactions en attente d'être validé.\n- Problème cryptographique : Enigme complexe résolue par les mineurs pour valider un bloc.\n- Frais de transaction (Frais de gaz) : Paiement aux mineurs pour la validation des transactions.\n- Double dépense : Tentative d'utiliser les mêmes fonds pour plusieurs transactions.\n- Exploration de blocs : Outil permettant de visualiser le parcours d'une transaction sur la blockchain.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La validation est un processus qui fonctionne sans l'intervention d'une autorité centrale comme une banque.\n- La transparence totale sur le chemin parcouru par vos fonds, de leur origine à leur destination finale, le tout sans passer par une institution financière traditionnelle.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et pédagogique, détaillant le fonctionnement technique d'un processus clé.</ton_angle>\n</fiche>"
+}

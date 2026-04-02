@@ -1,0 +1,22 @@
+{
+  "chapitre": 9,
+  "section": 1,
+  "chapitre_numero": "9",
+  "section_numero": "1",
+  "these_centrale": "Une évaluation objective de la performance d'investissement requiert le calcul de la performance nette en tenant compte de tous les frais et de l'inflation.",
+  "arguments_cles": [
+    "Calculer la performance nette en incluant les gains/pertes bruts, les frais de transaction, les frais de plateforme et le rendement par rapport à l'inflation.",
+    "Rassembler toutes les données des opérations : dates, montants, frais, investissement initial, valeur actuelle.",
+    "Comparer la performance nette aux objectifs initiaux et à des indices de référence pertinents (ex: Bitcoin, Ethereum, inflation).",
+    "Utiliser des outils de suivi de portefeuille pour automatiser les calculs et documenter rigoureusement les résultats."
+  ],
+  "concepts_introduits": [
+    "Performance nette : Bénéfice ou perte après déduction de tous les coûts.",
+    "Inflation : Érosion du pouvoir d'achat de la monnaie.",
+    "Indice de référence : Valeur comparée d'une performance, ex: évolution du Bitcoin."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pédagogique, axé sur la méthode et la précision des calculs.",
+  "_raw": "<fiche>\n<chapitre_numero>9</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Une évaluation objective de la performance d'investissement requiert le calcul de la performance nette en tenant compte de tous les frais et de l'inflation.</these_centrale>\n<arguments_cles>\n- Calculer la performance nette en incluant les gains/pertes bruts, les frais de transaction, les frais de plateforme et le rendement par rapport à l'inflation.\n- Rassembler toutes les données des opérations : dates, montants, frais, investissement initial, valeur actuelle.\n- Comparer la performance nette aux objectifs initiaux et à des indices de référence pertinents (ex: Bitcoin, Ethereum, inflation).\n- Utiliser des outils de suivi de portefeuille pour automatiser les calculs et documenter rigoureusement les résultats.\n</arguments_cles>\n<concepts_introduits>\n- Performance nette : Bénéfice ou perte après déduction de tous les coûts.\n- Inflation : Érosion du pouvoir d'achat de la monnaie.\n- Indice de référence : Valeur comparée d'une performance, ex: évolution du Bitcoin.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Les chiffres bruts affichés par les plateformes d'échange.\n- Le succès perçu uniquement par les mouvements de prix.\n</a_ne_not_repeter>\n<ton_angle>Pédagogique, axé sur la méthode et la précision des calculs.</ton_angle>\n</fiche>"
+}

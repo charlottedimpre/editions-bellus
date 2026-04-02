@@ -1,0 +1,325 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 16,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "comment analyser tendances marché cryptomonnaie",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-01T14:19:57.193Z",
+    "processed_at": "2026-04-01T14:20:01.423Z",
+    "total_time_taken": 4.23,
+    "engine_url": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 424000
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 3,
+      "title": "Guide Pratique : Lire les Graphiques Crypto",
+      "link": "https://www.coinhouse.com/fr/blog/blockchain/comment-lire-les-graphiques-crypto",
+      "domain": "www.coinhouse.com",
+      "displayed_link": "https://www.coinhouse.com › blog › blockchain › com...",
+      "snippet": "10 nov. 2025 — Découvrez les bases pour interpréter graphiques crypto. Analysez tendances, chandeliers et volumes pour mieux trader.",
+      "prerender": false,
+      "date": "10 nov. 2025",
+      "date_utc": "2025-11-10T00:00:00.000Z"
+    },
+    {
+      "position": 2,
+      "block_position": 4,
+      "title": "Analyse Technique Crypto : Le Guide Complet pour ... - Fibo",
+      "link": "https://fibo-crypto.fr/blog/analyse-technique/",
+      "domain": "fibo-crypto.fr",
+      "displayed_link": "https://fibo-crypto.fr › blog › analyse-technique",
+      "snippet": "29 juil. 2025 — 5 indicateurs incontournables : RSI, MACD, Moyennes Mobiles, Bandes de Bollinger et Volume. TradingView est l'outil gratuit de référence pour ...",
+      "prerender": false,
+      "date": "29 juil. 2025",
+      "date_utc": "2025-07-29T00:00:00.000Z"
+    },
+    {
+      "position": 3,
+      "block_position": 5,
+      "title": "Analyse fondamentale et analyse technique : définitions",
+      "link": "https://www.coinbase.com/fr/learn/crypto-basics/what-are-technical-analysis-and-fundamental-analysis",
+      "domain": "www.coinbase.com",
+      "displayed_link": "https://www.coinbase.com › Learn › Crypto Basics",
+      "snippet": "L'analyse technique examine les évolutions du marché pour identifier des tendances. L'analyse fondamentale est une approche plus globale.",
+      "prerender": false
+    },
+    {
+      "position": 4,
+      "block_position": 6,
+      "title": "Analyse Technique/Analyse de Tendance (TA) ...",
+      "link": "https://tangem.com/fr/glossary/technical-analysis-trend-analysis-ta/",
+      "domain": "tangem.com",
+      "displayed_link": "https://tangem.com › Tangem Wallet › Glossaire Crypto",
+      "snippet": "4 févr. 2025 — L'objectif de l'utilisation de la TA dans les cryptos est de détecter les tendances tôt et de les suivre jusqu'à ce que les données suggèrent un ...",
+      "prerender": false,
+      "date": "4 févr. 2025",
+      "date_utc": "2025-02-04T00:00:00.000Z"
+    },
+    {
+      "position": 5,
+      "block_position": 7,
+      "title": "Les techniques pour analyser les cryptomonnaies",
+      "link": "https://finyear.com/Les-techniques-pour-analyser-les-cryptomonnaies_a50860.html",
+      "domain": "finyear.com",
+      "displayed_link": "https://finyear.com › Les-techniques-pour-analyser-les-cr...",
+      "snippet": "10 mai 2024 — Pour savoir comment il est perçu par le marché, vous devez examiner le volume des transactions et les évolutions de son cours. En plus de ...",
+      "prerender": false,
+      "date": "10 mai 2024",
+      "date_utc": "2024-05-10T00:00:00.000Z"
+    },
+    {
+      "position": 6,
+      "block_position": 8,
+      "title": "Analyses de cryptomonnaies",
+      "link": "https://cryptoast.fr/analyses-crypto/",
+      "domain": "cryptoast.fr",
+      "displayed_link": "https://cryptoast.fr › analyses-crypto",
+      "snippet": "Il existe des millions de cryptomonnaies, nous avons analysé pour vous les plus intéressantes afin que vous puissiez comprendre leur fonctionnement.",
+      "prerender": false
+    },
+    {
+      "position": 7,
+      "block_position": 10,
+      "title": "Les 5 meilleures stratégies cryptos à savoir",
+      "link": "https://www.ig.com/fr/strategies-de-trading/les-5-meilleures-strategies-de-trading-crypto-que-tout-trader-de-220926",
+      "domain": "www.ig.com",
+      "displayed_link": "https://www.ig.com › ... › Stratégies de trading",
+      "snippet": "La forte présence médiatique d'un jeton ou d'une bourse de cryptomonnaie spécifique peut avoir un impact sur les marchés des cryptomonnaies. Cette stratégie de ...",
+      "prerender": false
+    },
+    {
+      "position": 8,
+      "block_position": 11,
+      "title": "Analyser les tendances des cryptomonnaies pour optimiser ...",
+      "link": "https://www.investir-en-grand.fr/analyser-tendances-cryptomonnaies-optimiser-investissements/",
+      "domain": "www.investir-en-grand.fr",
+      "displayed_link": "https://www.investir-en-grand.fr › analyser-tendances-cr...",
+      "snippet": "Le marché des cryptomonnaies est influencé par de nombreux facteurs, notamment les actualités économiques, les innovations technologiques et les décisions ...",
+      "prerender": false
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Analyse on-chain crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Analyse+on-chain+crypto&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAgnEAE",
+      "block_position": 12
+    },
+    {
+      "query": "TradingView",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=TradingView&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAg_EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Onchain crypto avis",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Onchain+crypto+avis&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAg8EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment récupérer ses crypto en euro",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Comment+r%C3%A9cup%C3%A9rer+ses+crypto+en+euro&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAg5EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Bitcoin vendre ou garder",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Bitcoin+vendre+ou+garder&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAg1EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Glassnode",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Glassnode&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAgvEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Strategie prise de profit crypto",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Strategie+prise+de+profit+crypto&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAguEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment retirer sur meria",
+      "link": "https://www.google.fr/search?sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&q=Comment+retirer+sur+meria&sa=X&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q1QJ6BAgqEAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Comment analyser les tendances du marché des cryptomonnaies ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://www.msfsolutions.com/news/analyzing-cryptocurrency-market-trends-tips-for-successful-trading&hl=fr&sl=en&tl=fr&client=rq#:~:text=Familiarize%20yourself%20with%20common%20technical,predictions%20about%20future%20price%20movements.&text=In%20addition%20to%20technical%20analysis,fundamentals%20of%20a%20cryptocurrency%20project.",
+        "displayed_link": "https://www.msfsolutions.com › news › analyzing-crypto...",
+        "title": "Analyse des tendances du marché des cryptomonnaies : Conseils pour réussir en tradingAnalyzing Cryptocurrency Market Trends: Tips for Successful Trading"
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Comment savoir si le marché des cryptomonnaies va monter ou baisser ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://www.kraken.com/learn/crypto-technical-indicators&hl=fr&sl=en&tl=fr&client=rq#:~:text=Relative%20Strength%20Index%20(RSI)%20%F0%9F%92%AA&text=An%20RSI%20of%2060%20means,support%20and%20resistance%20for%20momentum.",
+        "displayed_link": "https://www.kraken.com › crypto-technical-indicators",
+        "title": "Indicateurs techniques crypto : Guide du débutant - KrakenCrypto technical indicators: A beginners guide - Kraken"
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Quelles sont les 3 analyses pour trader ?",
+      "answer": "Le MACD pour confirmer les signaux de retournement. Les Bandes de Bollinger pour détecter la volatilité L'Ichimoku pour les traders plus visuels et avancés.",
+      "source": {
+        "link": "https://xeilos.fr/quels-sont-les-meilleurs-indicateurs-techniques-pour-debuter-en-trading/#:~:text=Le%20MACD%20pour%20confirmer%20les,traders%20plus%20visuels%20et%20avanc%C3%A9s",
+        "displayed_link": "https://xeilos.fr › quels-sont-les-meilleurs-indicateurs-tec...",
+        "title": "Quels sont les meilleurs indicateurs techniques pour débuter en trading"
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Comment savoir si une crypto va monter ou descendre ?",
+      "answer": "Tout d'abord, vous pouvez analyser les tendances passées du prix de la crypto-monnaie. Si elle a montré une tendance à la hausse régulière au fil du temps, il y a de fortes chances qu'elle continue à augmenter. De plus, vous pouvez examiner les actualités et les événements liés à la crypto-monnaie.",
+      "source": {
+        "link": "https://www.bydfi.com/fr/questions/comment-savoir-si-une-crypto-va-monter-ou-descendre#:~:text=Tout%20d'abord%2C%20vous%20pouvez,li%C3%A9s%20%C3%A0%20la%20crypto%2Dmonnaie.",
+        "displayed_link": "https://www.bydfi.com › questions › comment-savoir-si-...",
+        "title": "Comment savoir si une crypto va monter ou descendre? - BYDFi"
+      },
+      "block_position": 9
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Où en est le bear market ? - Analyse on-chain du Bitcoin (BTC ...",
+      "length": "20.45",
+      "source": "YouTube · Cryptoast AcademyYouTube · Cryptoast Academy",
+      "link": "https://www.youtube.com/watch?v=l-WfTUXrKIk",
+      "block_position": 2
+    },
+    {
+      "position": 2,
+      "title": "Un marché crypto sous haute pression ! - Analyse crypto",
+      "length": "24.09",
+      "source": "YouTube · Journal du CoinYouTube · Journal du Coin",
+      "link": "https://www.youtube.com/watch?v=fvix_xhOuI0",
+      "block_position": 2
+    },
+    {
+      "position": 3,
+      "title": "Détecter les tendances crypto : Guide simple et rapide",
+      "length": "17.01",
+      "source": "YouTube · Sylvain March - Crypto ExpertiseYouTube · Sylvain March - Crypto Expertise",
+      "link": "https://www.youtube.com/watch?v=qcL-Vdfvv6A",
+      "block_position": 2
+    }
+  ],
+  "answer_box": {
+    "answer_box_type": 18,
+    "answers": [
+      {
+        "source": {
+          "link": "https://www.meria.com/academy/academie-crypto/analyse-on-chain-comprendre-marche-crypto#:~:text=L'analyse%20crois%C3%A9e%20avec%20des,quelles%20blockchains%20gagnent%20en%20utilisateurs.",
+          "title": "Analyse on-chain : 5 indicateurs pour comprendre le marché ...",
+          "displayed_link": "https://www.meria.com › academy › academie-crypto"
+        },
+        "answer": "L'analyse croisée avec des adresses de wallets sur des blockchains concurrentes comme Solana ou Avalanche permet également de déterminer où se développent majoritairement les tendances du marché et quelles blockchains gagnent en utilisateurs."
+      }
+    ],
+    "block_position": 1
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=10&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8NMDegQILRAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=10&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=20&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=30&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=40&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=50&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=60&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=70&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=80&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=comment+analyser+tendances+march%C3%A9+cryptomonnaie&sca_esv=031e7e0cba0603c0&gl=fr&hl=fr&ei=jynNaeTeIe6f5NoP6p3Y-AM&start=90&sa=N&sstk=Af77f_duD58I46lG7UxquPFwOPPqsMfe6lSZzms48lVLbQ_ih07vIPrf3tybpeCQGzoHuPs8XbkUFbcTsDvSUtRK3z_4i0MY5H6jqQ&ved=2ahUKEwik4qq77MyTAxXuD1kFHeoOFj8Q8tMDegQILRAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20analyser%20tendances%20march%C3%A9%20cryptomonnaie&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

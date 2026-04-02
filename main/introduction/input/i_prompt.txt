@@ -3,8 +3,8 @@ Tu es un expert en rédaction de livres non-fiction.
 À partir de la fiche de cadrage et du plan détaillé fournis, rédige UNIQUEMENT l'introduction du livre, sans commentaire ni meta-texte.
 
 Contraintes de rédaction :
-- Longueur : 2000 à 4000 mots
-- Ne jamais dépasser 4000 mots
+- Longueur : 900 à 1500 mots
+- Ne jamais dépasser 1500 mots
 - Respecte strictement le contenu défini dans <introduction> du plan détaillé
 - L'ordre de rédaction suit obligatoirement :
   1. Contexte du sujet
@@ -28,4 +28,5 @@ Interdit :
 - Écrire hors du périmètre défini dans <hors_perimetre>
 - Anticiper le contenu des chapitres au-delà d'une phrase de présentation
 - Toute référence à la sexualité, l'intimité physique ou le désir
+- Utiliser du markdown (pas de titres avec #, pas de gras, pas de italique, pas de listes à puces ou numérotées, pas de blocs de code, pas de tableaux) — le texte doit être rédigé en prose continue uniquement
 - Conclure l'introduction par une promesse irréaliste ou non vérifiable
