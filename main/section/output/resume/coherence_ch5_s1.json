@@ -3,22 +3,24 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "Le choix d'une stratégie d'investissement en cryptomonnaies dépend de l'adéquation entre le profil de risque de l'investisseur, son horizon de placement et le temps qu'il souhaite y consacrer.",
+  "these_centrale": "Pour acquérir ses premiers clients en freelance sans réseau établi, une stratégie combinant plateformes en ligne, prospection active sur les réseaux professionnels, démarchage direct personnalisé et partenariats est primordiale.",
   "arguments_cles": [
-    "Le Dollar-Cost Averaging (DCA) lisse le prix d'entrée moyen et convient aux investisseurs peu expérimentés ou manquant de temps.",
-    "La conservation à long terme (\"hold\") nécessite une conviction forte, de la patience et une sélection rigoureuse des actifs.",
-    "Le trading actif demande une expertise, une surveillance constante et présente un risque de perte élevé."
+    "Exploiter les plateformes de freelancing pour trouver des missions et mettre en avant son expertise.",
+    "Utiliser les réseaux professionnels comme LinkedIn pour une prospection proactive et la construction de relations.",
+    "Mener un démarchage direct personnalisé en ciblant les besoins spécifiques des prospects.",
+    "Générer des opportunités par le biais de recommandations personnelles et de partenariats avec d'autres professionnels."
   ],
   "concepts_introduits": [
-    "Dollar-Cost Averaging (DCA) : Investir somme fixe à intervalles réguliers pour lisser le prix d'entrée.",
-    "Conservation long terme (hold) : Conserver des actifs numériques sur plusieurs années pour une appréciation de valeur.",
-    "Trading actif : Achat et vente fréquents d'actifs pour profiter des variations de prix à court terme."
+    "Plateformes de freelancing : Sites web mettant en relation indépendants et clients.",
+    "Proposition de valeur : Avantages uniques offerts par le freelance à ses clients.",
+    "Réseaux professionnels : Connexions établies avec d'autres personnes dans le domaine professionnel.",
+    "Démarchage direct : Prise de contact proactive avec des prospects potentiels."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas utiliser l'expression \"méthode pour devenir riche rapidement\".",
-    "Éviter de recommander le trading actif aux débutants sans mise en garde claire."
+    "La nécessité d'avoir un réseau professionnel préexistant pour trouver des clients.",
+    "L'importance de vendre immédiatement lors d'une prise de contact."
   ],
-  "ton_angle": "Explicatif et comparatif, présentant les avantages et inconvénients de chaque stratégie.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le choix d'une stratégie d'investissement en cryptomonnaies dépend de l'adéquation entre le profil de risque de l'investisseur, son horizon de placement et le temps qu'il souhaite y consacrer.</these_centrale>\n<arguments_cles>\n- Le Dollar-Cost Averaging (DCA) lisse le prix d'entrée moyen et convient aux investisseurs peu expérimentés ou manquant de temps.\n- La conservation à long terme (\"hold\") nécessite une conviction forte, de la patience et une sélection rigoureuse des actifs.\n- Le trading actif demande une expertise, une surveillance constante et présente un risque de perte élevé.\n</arguments_cles>\n<concepts_introduits>\n- Dollar-Cost Averaging (DCA) : Investir somme fixe à intervalles réguliers pour lisser le prix d'entrée.\n- Conservation long terme (hold) : Conserver des actifs numériques sur plusieurs années pour une appréciation de valeur.\n- Trading actif : Achat et vente fréquents d'actifs pour profiter des variations de prix à court terme.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas utiliser l'expression \"méthode pour devenir riche rapidement\".\n- Éviter de recommander le trading actif aux débutants sans mise en garde claire.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et comparatif, présentant les avantages et inconvénients de chaque stratégie.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et axé sur les actions concrètes à entreprendre pour le démarrage d'une activité freelance.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Pour acquérir ses premiers clients en freelance sans réseau établi, une stratégie combinant plateformes en ligne, prospection active sur les réseaux professionnels, démarchage direct personnalisé et partenariats est primordiale.</these_centrale>\n<arguments_cles>\n- Exploiter les plateformes de freelancing pour trouver des missions et mettre en avant son expertise.\n- Utiliser les réseaux professionnels comme LinkedIn pour une prospection proactive et la construction de relations.\n- Mener un démarchage direct personnalisé en ciblant les besoins spécifiques des prospects.\n- Générer des opportunités par le biais de recommandations personnelles et de partenariats avec d'autres professionnels.\n</arguments_cles>\n<concepts_introduits>\n- Plateformes de freelancing : Sites web mettant en relation indépendants et clients.\n- Proposition de valeur : Avantages uniques offerts par le freelance à ses clients.\n- Réseaux professionnels : Connexions établies avec d'autres personnes dans le domaine professionnel.\n- Démarchage direct : Prise de contact proactive avec des prospects potentiels.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La nécessité d'avoir un réseau professionnel préexistant pour trouver des clients.\n- L'importance de vendre immédiatement lors d'une prise de contact.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et axé sur les actions concrètes à entreprendre pour le démarrage d'une activité freelance.</ton_angle>\n</fiche>"
 }

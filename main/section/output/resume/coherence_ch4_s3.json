@@ -3,27 +3,22 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "Comprendre les quatre phases des cycles de marché (accumulation, hausse, distribution, baisse) permet d'anticiper les mouvements et d'adapter sa stratégie d'investissement.",
+  "these_centrale": "La proposition de valeur est la réponse concise et ciblée qui explique pourquoi un client doit choisir votre offre en soulignant les bénéfices uniques que vous apportez.",
   "arguments_cles": [
-    "Les cycles de marché sont des phases récurrentes qui aident à anticiper les mouvements des marchés financiers.",
-    "La phase d'accumulation se caractérise par des prix stables, une faible volatilité et un faible volume, initiée par des acheteurs avertis.",
-    "La phase de hausse (markup) voit les prix augmenter, avec un intérêt médiatique croissant et des volumes en hausse.",
-    "La phase de distribution survient après une hausse, lorsque les investisseurs réalisent leurs bénéfices malgré une demande soutenue par les nouveaux arrivants.",
-    "La phase de baisse (markdown) est marquée par une offre dépassant la demande, des prix chutant rapidement et une forte volatilité."
+    "Elle clarifie les bénéfices uniques qui vous distinguent de la concurrence.",
+    "Elle articule comment vos compétences résolvent des problèmes spécifiques ou répondent à des désirs de la clientèle cible.",
+    "Elle doit être claire, facile à comprendre et parler le langage du client.",
+    "Elle exprime la transformation promise (gain de temps, efficacité, réduction des coûts, etc.).",
+    "Elle doit spécifier concrètement la qualité et l'excellence, plutôt que d'utiliser des généralités."
   ],
   "concepts_introduits": [
-    "Cycles de marché : Phases récurrentes sur les marchés financiers.",
-    "Accumulation : Phase d'achat discret d'investisseurs avertis après une baisse.",
-    "Hausse (Markup) : Phase d'augmentation progressive puis accélérée des prix.",
-    "Distribution : Phase de vente par les premiers acheteurs pour réaliser des profits.",
-    "Baisse (Markdown) : Phase de chute des prix où l'offre dépasse la demande.",
-    "FOMO (Fear Of Missing Out) : Peur de manquer une opportunité d'investissement."
+    "Proposition de valeur : Bénéfices uniques répondant aux besoins spécifiques du client."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Acheter au plus haut et vendre au plus bas.",
-    "Décisions impulsives basées sur des émotions passagères."
+    "Offrir des \"solutions de qualité\" ou un \"service client exceptionnel\" sans spécification.",
+    "Confondre la proposition de valeur avec un slogan ou une simple description de service."
   ],
-  "ton_angle": "Descriptif et éducatif, expliquant les mécanismes des cycles de marché.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Comprendre les quatre phases des cycles de marché (accumulation, hausse, distribution, baisse) permet d'anticiper les mouvements et d'adapter sa stratégie d'investissement.</these_centrale>\n<arguments_cles>\n- Les cycles de marché sont des phases récurrentes qui aident à anticiper les mouvements des marchés financiers.\n- La phase d'accumulation se caractérise par des prix stables, une faible volatilité et un faible volume, initiée par des acheteurs avertis.\n- La phase de hausse (markup) voit les prix augmenter, avec un intérêt médiatique croissant et des volumes en hausse.\n- La phase de distribution survient après une hausse, lorsque les investisseurs réalisent leurs bénéfices malgré une demande soutenue par les nouveaux arrivants.\n- La phase de baisse (markdown) est marquée par une offre dépassant la demande, des prix chutant rapidement et une forte volatilité.\n</arguments_cles>\n<concepts_introduits>\n- Cycles de marché : Phases récurrentes sur les marchés financiers.\n- Accumulation : Phase d'achat discret d'investisseurs avertis après une baisse.\n- Hausse (Markup) : Phase d'augmentation progressive puis accélérée des prix.\n- Distribution : Phase de vente par les premiers acheteurs pour réaliser des profits.\n- Baisse (Markdown) : Phase de chute des prix où l'offre dépasse la demande.\n- FOMO (Fear Of Missing Out) : Peur de manquer une opportunité d'investissement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Acheter au plus haut et vendre au plus bas.\n- Décisions impulsives basées sur des émotions passagères.\n</a_ne_pas_repeter>\n<ton_angle>Descriptif et éducatif, expliquant les mécanismes des cycles de marché.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et pragmatique, axé sur la formulation concrète pour le client.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La proposition de valeur est la réponse concise et ciblée qui explique pourquoi un client doit choisir votre offre en soulignant les bénéfices uniques que vous apportez.</these_centrale>\n<arguments_cles>\n- Elle clarifie les bénéfices uniques qui vous distinguent de la concurrence.\n- Elle articule comment vos compétences résolvent des problèmes spécifiques ou répondent à des désirs de la clientèle cible.\n- Elle doit être claire, facile à comprendre et parler le langage du client.\n- Elle exprime la transformation promise (gain de temps, efficacité, réduction des coûts, etc.).\n- Elle doit spécifier concrètement la qualité et l'excellence, plutôt que d'utiliser des généralités.\n</arguments_cles>\n<concepts_introduits>\n- Proposition de valeur : Bénéfices uniques répondant aux besoins spécifiques du client.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Offrir des \"solutions de qualité\" ou un \"service client exceptionnel\" sans spécification.\n- Confondre la proposition de valeur avec un slogan ou une simple description de service.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, axé sur la formulation concrète pour le client.</ton_angle>\n</fiche>"
 }

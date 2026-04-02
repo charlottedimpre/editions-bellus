@@ -3,23 +3,27 @@
   "section": 4,
   "chapitre_numero": "3",
   "section_numero": "4",
-  "these_centrale": "Il est essentiel de comprendre et d'identifier les divers frais associés aux transactions sur les plateformes d'échange de cryptomonnaies pour optimiser les coûts.",
+  "these_centrale": "Les idées fausses courantes sur les statuts juridiques peuvent entraîner des risques financiers et une protection sociale insuffisante si elles ne sont pas corrigées.",
   "arguments_cles": [
-    "Les frais de dépôt/retrait impactent directement le capital investi.",
-    "Le spread représente une marge intégrée dans le prix d'achat/vente.",
-    "Le slippage occasionne une différence entre le prix initié et exécuté.",
-    "Les frais de gaz rémunèrent les validateurs de blockchain et varient selon la congestion du réseau."
+    "La micro-entreprise peut devenir économiquement moins avantageuse avec une augmentation significative du chiffre d'affaires.",
+    "La responsabilité patrimoniale varie considérablement selon les statuts, certains confondant le patrimoine personnel et professionnel.",
+    "Le portage salarial simplifie la gestion mais peut réduire la rémunération nette et l'autonomie.",
+    "Le choix d'un statut n'est pas définitif et doit être réévalué pour optimiser la situation fiscale et sociale."
   ],
   "concepts_introduits": [
-    "Frais de dépôt/retrait : Coûts pour ajouter ou retirer des fonds.",
-    "Spread : Différence prix d'achat/vente, marge intégrée.",
-    "Slippage : Différence entre prix initié et exécuté.",
-    "Frais de gaz : Coûts de validation sur certaines blockchains."
+    "Micro-entreprise : Structure simplifiée avec cotisations calculées sur le chiffre d'affaires.",
+    "Responsabilité patrimoniale : Étendue de l'engagement des biens personnels face aux dettes.",
+    "Portage salarial : Mode de travail intermédiaire entre salarié et indépendant.",
+    "EURL : Entreprise Unipersonnelle à Responsabilité Limitée.",
+    "SASU : Société par Actions Simplifiée Unipersonnelle."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas détailler les stratégies de minimisation pour traders actifs."
+    "La micro-entreprise est toujours la meilleure option.",
+    "Tous les statuts offrent la même protection des biens personnels.",
+    "Le portage salarial évite toutes les contraintes administratives et fiscales.",
+    "Le choix d'un statut est définitif."
   ],
-  "ton_angle": "Informatif, axé sur l'identification des coûts et leur impact.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Il est essentiel de comprendre et d'identifier les divers frais associés aux transactions sur les plateformes d'échange de cryptomonnaies pour optimiser les coûts.</these_centrale>\n<arguments_cles>\n- Les frais de dépôt/retrait impactent directement le capital investi.\n- Le spread représente une marge intégrée dans le prix d'achat/vente.\n- Le slippage occasionne une différence entre le prix initié et exécuté.\n- Les frais de gaz rémunèrent les validateurs de blockchain et varient selon la congestion du réseau.\n</arguments_cles>\n<concepts_introduits>\n- Frais de dépôt/retrait : Coûts pour ajouter ou retirer des fonds.\n- Spread : Différence prix d'achat/vente, marge intégrée.\n- Slippage : Différence entre prix initié et exécuté.\n- Frais de gaz : Coûts de validation sur certaines blockchains.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas détailler les stratégies de minimisation pour traders actifs.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, axé sur l'identification des coûts et leur impact.</ton_angle>\n</fiche>"
+  "ton_angle": "informatif, mettant en garde contre les idées reçues et soulignant les conséquences financières.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les idées fausses courantes sur les statuts juridiques peuvent entraîner des risques financiers et une protection sociale insuffisante si elles ne sont pas corrigées.</these_centrale>\n<arguments_cles>\n- La micro-entreprise peut devenir économiquement moins avantageuse avec une augmentation significative du chiffre d'affaires.\n- La responsabilité patrimoniale varie considérablement selon les statuts, certains confondant le patrimoine personnel et professionnel.\n- Le portage salarial simplifie la gestion mais peut réduire la rémunération nette et l'autonomie.\n- Le choix d'un statut n'est pas définitif et doit être réévalué pour optimiser la situation fiscale et sociale.\n</arguments_cles>\n<concepts_introduits>\n- Micro-entreprise : Structure simplifiée avec cotisations calculées sur le chiffre d'affaires.\n- Responsabilité patrimoniale : Étendue de l'engagement des biens personnels face aux dettes.\n- Portage salarial : Mode de travail intermédiaire entre salarié et indépendant.\n- EURL : Entreprise Unipersonnelle à Responsabilité Limitée.\n- SASU : Société par Actions Simplifiée Unipersonnelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La micro-entreprise est toujours la meilleure option.\n- Tous les statuts offrent la même protection des biens personnels.\n- Le portage salarial évite toutes les contraintes administratives et fiscales.\n- Le choix d'un statut est définitif.\n</a_ne_pas_repeter>\n<ton_angle>informatif, mettant en garde contre les idées reçues et soulignant les conséquences financières.</ton_angle>\n</fiche>"
 }

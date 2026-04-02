@@ -3,27 +3,23 @@
   "section": 1,
   "chapitre_numero": "4",
   "section_numero": "1",
-  "these_centrale": "L'analyse des graphiques de prix, notamment grâce aux bougies japonaises et à la compréhension des supports/résistances, permet d'identifier des tendances et des points d'inflexion potentiels.",
+  "these_centrale": "La transformation d'une expertise en offre commerciale réussie repose sur l'alignement pertinent des compétences avec la demande du marché.",
   "arguments_cles": [
-    "Les bougies japonaises résument l'activité d'une période (ouverture, clôture, max, min) et indiquent la direction du prix (hausse ou baisse).",
-    "Les zones de support et de résistance sont des niveaux de prix où les tendances historiques tendent à s'inverser.",
-    "L'identification de tendances (haussière, baissière, latérale) est cruciale pour anticiper les mouvements futurs.",
-    "L'échelle logarithmique peut améliorer la visualisation des tendances sur le long terme pour les actifs volatils."
+    "Identifier les compétences les plus demandées par le marché pour répondre à des besoins concrets.",
+    "Évaluer l'écart entre le savoir-faire actuel et les attentes des employeurs/clients en tenant compte des évolutions du marché.",
+    "Distinguer les compétences transversales du freelancing du cœur de l'offre commerciale.",
+    "Articuler les compétences monétisables en une proposition de valeur claire pour les futurs clients."
   ],
   "concepts_introduits": [
-    "Bougies japonaises : Représentation graphique résumant le prix sur une période donnée.",
-    "Support : Niveau de prix historiquement fort pour stopper une baisse.",
-    "Résistance : Niveau de prix où la pression vendeuse freine une hausse.",
-    "Tendance haussière : Succession de plus hauts et bas de plus en plus élevés.",
-    "Tendance baissière : Succession de plus hauts et bas de plus en plus bas.",
-    "Marché latéral : Évolution du prix dans une fourchette définie sans direction claire.",
-    "Échelle logarithmique : Représentation proportionnelle des variations pour visualiser les tendances longues."
+    "Offre commerciale : Proposition de services ou produits répondant à un besoin client.",
+    "Compétences : Savoirs et savoir-faire transférables et monnayables sur le marché.",
+    "Proposition de valeur : Bénéfices uniques offerts aux clients par un prestataire."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les courbes de prix ressemblent à une carte complexe.",
-    "La suranalyse complexe."
+    "Les compétences sont utiles pour le freelancing (communication, organisation).",
+    "Une liste de savoir-faire."
   ],
-  "ton_angle": "Explicatif, axé sur l'interprétation graphique et les concepts fondamentaux.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'analyse des graphiques de prix, notamment grâce aux bougies japonaises et à la compréhension des supports/résistances, permet d'identifier des tendances et des points d'inflexion potentiels.</these_centrale>\n<arguments_cles>\n- Les bougies japonaises résument l'activité d'une période (ouverture, clôture, max, min) et indiquent la direction du prix (hausse ou baisse).\n- Les zones de support et de résistance sont des niveaux de prix où les tendances historiques tendent à s'inverser.\n- L'identification de tendances (haussière, baissière, latérale) est cruciale pour anticiper les mouvements futurs.\n- L'échelle logarithmique peut améliorer la visualisation des tendances sur le long terme pour les actifs volatils.\n</arguments_cles>\n<concepts_introduits>\n- Bougies japonaises : Représentation graphique résumant le prix sur une période donnée.\n- Support : Niveau de prix historiquement fort pour stopper une baisse.\n- Résistance : Niveau de prix où la pression vendeuse freine une hausse.\n- Tendance haussière : Succession de plus hauts et bas de plus en plus élevés.\n- Tendance baissière : Succession de plus hauts et bas de plus en plus bas.\n- Marché latéral : Évolution du prix dans une fourchette définie sans direction claire.\n- Échelle logarithmique : Représentation proportionnelle des variations pour visualiser les tendances longues.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les courbes de prix ressemblent à une carte complexe.\n- La suranalyse complexe.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif, axé sur l'interprétation graphique et les concepts fondamentaux.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et orienté vers l'action pour le développement d'une offre commerciale.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La transformation d'une expertise en offre commerciale réussie repose sur l'alignement pertinent des compétences avec la demande du marché.</these_centrale>\n<arguments_cles>\n- Identifier les compétences les plus demandées par le marché pour répondre à des besoins concrets.\n- Évaluer l'écart entre le savoir-faire actuel et les attentes des employeurs/clients en tenant compte des évolutions du marché.\n- Distinguer les compétences transversales du freelancing du cœur de l'offre commerciale.\n- Articuler les compétences monétisables en une proposition de valeur claire pour les futurs clients.\n</arguments_cles>\n<concepts_introduits>\n- Offre commerciale : Proposition de services ou produits répondant à un besoin client.\n- Compétences : Savoirs et savoir-faire transférables et monnayables sur le marché.\n- Proposition de valeur : Bénéfices uniques offerts aux clients par un prestataire.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les compétences sont utiles pour le freelancing (communication, organisation).\n- Une liste de savoir-faire.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et orienté vers l'action pour le développement d'une offre commerciale.</ton_angle>\n</fiche>"
 }

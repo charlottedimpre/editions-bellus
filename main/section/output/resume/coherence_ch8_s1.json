@@ -3,24 +3,25 @@
   "section": 1,
   "chapitre_numero": "8",
   "section_numero": "1",
-  "these_centrale": "Ignorer les obligations légales et fiscales liées aux cryptomonnaies entraîne des conséquences financières et juridiques importantes.",
+  "these_centrale": "La diversification de la clientèle est essentielle pour la stabilité financière et la pérennité d'une activité indépendante.",
   "arguments_cles": [
-    "La détention, l'échange ou la vente de cryptomonnaies génèrent des événements imposables (plus-values, revenus).",
-    "La non-déclaration expose à des pénalités, amendes, voire poursuites judiciaires et peines de prison.",
-    "La transparence fiscale est essentielle pour la légitimité et l'adoption des cryptomonnaies.",
-    "Les autorités fiscales renforcent leurs mécanismes de surveillance pour identifier les détenteurs d'actifs numériques."
+    "La dépendance à un seul client représente un risque financier majeur pouvant menacer la viabilité de l'entreprise.",
+    "Diversifier sa clientèle permet de ne pas laisser un seul client dépasser une proportion significative des revenus totaux (ex: 30%).",
+    "Une prospection continue, même avec un carnet de commandes plein, assure un flux constant de nouvelles opportunités.",
+    "L'utilisation d'outils de suivi (tableau de bord, CRM) est nécessaire pour organiser la prospection et le développement de nouvelles pistes.",
+    "La diversification élargit l'expérience, les compétences et le réseau professionnel."
   ],
   "concepts_introduits": [
-    "Obligation déclarative : devoir légal de signaler des revenus ou actifs aux autorités fiscales.",
-    "Sanctions : peines infligées pour non-respect des lois fiscales (amendes, majorations, prison).",
-    "Transparence fiscale : respect des obligations déclaratives pour une situation régulière."
+    "Travailleur indépendant : Professionnel exerçant son activité sans être salarié d'une entreprise.",
+    "Chiffre d'affaires : Somme des ventes de biens ou services sur une période donnée.",
+    "Prospection : Ensemble des actions visant à trouver de nouveaux clients.",
+    "CRM (Customer Relationship Management) : Système de gestion de la relation client."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La loi évolue constamment.",
-    "L'ignorance de la loi n'excuse pas son non-respect.",
-    "Le cadre réglementaire et fiscal varie selon les pays."
+    "La perte soudaine de ce client, pour quelque raison que ce soit – changement de stratégie interne, insatisfaction, difficultés financières de leur côté – peut entraîner une chute drastique de vos revenus, menaçant directement la viabilité de votre entreprise.",
+    "La dépendance excessive à un seul client constitue l'un des pièges financiers les plus insidieux."
   ],
-  "ton_angle": "Informatif et préventif, soulignant les risques légaux et fiscaux de la non-conformité.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Ignorer les obligations légales et fiscales liées aux cryptomonnaies entraîne des conséquences financières et juridiques importantes.</these_centrale>\n<arguments_cles>\n- La détention, l'échange ou la vente de cryptomonnaies génèrent des événements imposables (plus-values, revenus).\n- La non-déclaration expose à des pénalités, amendes, voire poursuites judiciaires et peines de prison.\n- La transparence fiscale est essentielle pour la légitimité et l'adoption des cryptomonnaies.\n- Les autorités fiscales renforcent leurs mécanismes de surveillance pour identifier les détenteurs d'actifs numériques.\n</arguments_cles>\n<concepts_introduits>\n- Obligation déclarative : devoir légal de signaler des revenus ou actifs aux autorités fiscales.\n- Sanctions : peines infligées pour non-respect des lois fiscales (amendes, majorations, prison).\n- Transparence fiscale : respect des obligations déclaratives pour une situation régulière.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La loi évolue constamment.\n- L'ignorance de la loi n'excuse pas son non-respect.\n- Le cadre réglementaire et fiscal varie selon les pays.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant les risques légaux et fiscaux de la non-conformité.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif, axé sur la gestion des risques et les stratégies de développement commercial pour les indépendants.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La diversification de la clientèle est essentielle pour la stabilité financière et la pérennité d'une activité indépendante.</these_centrale>\n<arguments_cles>\n- La dépendance à un seul client représente un risque financier majeur pouvant menacer la viabilité de l'entreprise.\n- Diversifier sa clientèle permet de ne pas laisser un seul client dépasser une proportion significative des revenus totaux (ex: 30%).\n- Une prospection continue, même avec un carnet de commandes plein, assure un flux constant de nouvelles opportunités.\n- L'utilisation d'outils de suivi (tableau de bord, CRM) est nécessaire pour organiser la prospection et le développement de nouvelles pistes.\n- La diversification élargit l'expérience, les compétences et le réseau professionnel.\n</arguments_cles>\n<concepts_introduits>\n- Travailleur indépendant : Professionnel exerçant son activité sans être salarié d'une entreprise.\n- Chiffre d'affaires : Somme des ventes de biens ou services sur une période donnée.\n- Prospection : Ensemble des actions visant à trouver de nouveaux clients.\n- CRM (Customer Relationship Management) : Système de gestion de la relation client.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La perte soudaine de ce client, pour quelque raison que ce soit – changement de stratégie interne, insatisfaction, difficultés financières de leur côté – peut entraîner une chute drastique de vos revenus, menaçant directement la viabilité de votre entreprise.\n- La dépendance excessive à un seul client constitue l'un des pièges financiers les plus insidieux.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, axé sur la gestion des risques et les stratégies de développement commercial pour les indépendants.</ton_angle>\n</fiche>"
 }

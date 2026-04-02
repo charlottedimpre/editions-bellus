@@ -3,26 +3,23 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "La sécurité des actifs numériques repose sur la distinction et la gestion sécurisée des paires de clés cryptographiques, privée et publique.",
+  "these_centrale": "L'identification des secteurs porteurs en France est cruciale pour évaluer la viabilité d'un projet de freelancing grâce à une demande soutenue et des revenus attractifs.",
   "arguments_cles": [
-    "La clé privée est secrète, unique et permet d'autoriser les transactions sortantes.",
-    "La clé publique, dérivée de la clé privée, sert d'adresse de réception et peut être partagée.",
-    "La relation cryptographique entre les clés assure l'impossibilité de retrouver la clé privée depuis la clé publique.",
-    "La phrase de récupération (seed phrase) est une représentation en mots de la clé privée, essentielle à la restauration du portefeuille.",
-    "La gestion hors ligne et la protection rigoureuse de la clé privée et de la phrase de récupération sont primordiales pour la sécurité des fonds."
+    "Le secteur de la tech et du numérique offre des revenus élevés pour des profils spécialisés comme les développeurs, experts en cybersécurité, spécialistes marketing digital, data scientists et chefs de projet IT.",
+    "Le conseil et la formation (stratégie, organisation, RH, management, communication, formation spécialisée, coaching) sont prometteurs avec des tarifs journaliers attractifs, dépendant du positionnement de niche.",
+    "La création de contenu et la communication (rédaction web, copywriting, traduction, graphisme, vidéo, community management) sont très sollicités pour renforcer la présence en ligne des entreprises.",
+    "Les métiers du tertiaire comme les assistants virtuels spécialisés et les experts comptables/financiers pour PME répondent à une demande croissante pour des expertises ponctuelles."
   ],
   "concepts_introduits": [
-    "Clé privée: Signature numérique unique et secrète pour autoriser les transactions.",
-    "Clé publique: Adresse de réception dérivée de la clé privée, partageable.",
-    "Phrase de récupération: Séquence de mots pour restaurer un portefeuille et ses fonds.",
-    "Portefeuille matériel (cold wallet): Appareil de stockage sécurisé des clés, hors ligne."
+    "Freelancing : Travail indépendant, recours à des professionnels spécialisés à la demande.",
+    "Secteurs porteurs : Domaines du marché offrant une demande soutenue et des perspectives de revenus attractives.",
+    "Taux journalier moyen : Revenu moyen perçu par un freelance pour une journée de travail."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La perte de la clé privée est irrémédiable.",
-    "Personne, même le créateur du système, ne peut retrouver une clé privée perdue.",
-    "Le partage de la phrase de récupération donne le contrôle total des fonds."
+    "\"connaît une croissance significative\"",
+    "\"portée par la digitalisation des entreprises et le besoin croissant de compétences spécialisées à la demande\""
   ],
-  "ton_angle": "Explicatif et préventif, insistant sur les risques liés à la mauvaise gestion des clés.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La sécurité des actifs numériques repose sur la distinction et la gestion sécurisée des paires de clés cryptographiques, privée et publique.</these_centrale>\n<arguments_cles>\n- La clé privée est secrète, unique et permet d'autoriser les transactions sortantes.\n- La clé publique, dérivée de la clé privée, sert d'adresse de réception et peut être partagée.\n- La relation cryptographique entre les clés assure l'impossibilité de retrouver la clé privée depuis la clé publique.\n- La phrase de récupération (seed phrase) est une représentation en mots de la clé privée, essentielle à la restauration du portefeuille.\n- La gestion hors ligne et la protection rigoureuse de la clé privée et de la phrase de récupération sont primordiales pour la sécurité des fonds.\n</arguments_cles>\n<concepts_introduits>\n- Clé privée: Signature numérique unique et secrète pour autoriser les transactions.\n- Clé publique: Adresse de réception dérivée de la clé privée, partageable.\n- Phrase de récupération: Séquence de mots pour restaurer un portefeuille et ses fonds.\n- Portefeuille matériel (cold wallet): Appareil de stockage sécurisé des clés, hors ligne.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La perte de la clé privée est irrémédiable.\n- Personne, même le créateur du système, ne peut retrouver une clé privée perdue.\n- Le partage de la phrase de récupération donne le contrôle total des fonds.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et préventif, insistant sur les risques liés à la mauvaise gestion des clés.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et prospectif, basé sur des données de marché et des exemples sectoriels.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'identification des secteurs porteurs en France est cruciale pour évaluer la viabilité d'un projet de freelancing grâce à une demande soutenue et des revenus attractifs.</these_centrale>\n<arguments_cles>\n- Le secteur de la tech et du numérique offre des revenus élevés pour des profils spécialisés comme les développeurs, experts en cybersécurité, spécialistes marketing digital, data scientists et chefs de projet IT.\n- Le conseil et la formation (stratégie, organisation, RH, management, communication, formation spécialisée, coaching) sont prometteurs avec des tarifs journaliers attractifs, dépendant du positionnement de niche.\n- La création de contenu et la communication (rédaction web, copywriting, traduction, graphisme, vidéo, community management) sont très sollicités pour renforcer la présence en ligne des entreprises.\n- Les métiers du tertiaire comme les assistants virtuels spécialisés et les experts comptables/financiers pour PME répondent à une demande croissante pour des expertises ponctuelles.\n</arguments_cles>\n<concepts_introduits>\n- Freelancing : Travail indépendant, recours à des professionnels spécialisés à la demande.\n- Secteurs porteurs : Domaines du marché offrant une demande soutenue et des perspectives de revenus attractives.\n- Taux journalier moyen : Revenu moyen perçu par un freelance pour une journée de travail.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"connaît une croissance significative\"\n- \"portée par la digitalisation des entreprises et le besoin croissant de compétences spécialisées à la demande\"\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prospectif, basé sur des données de marché et des exemples sectoriels.</ton_angle>\n</fiche>"
 }

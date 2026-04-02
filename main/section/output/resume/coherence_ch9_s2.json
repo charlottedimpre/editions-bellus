@@ -3,24 +3,21 @@
   "section": 2,
   "chapitre_numero": "9",
   "section_numero": "2",
-  "these_centrale": "Il est essentiel d'identifier des signaux d'alerte pour ajuster ou interrompre une stratégie d'investissement lorsqu'elle ne répond plus aux attentes ou devient trop risquée.",
+  "these_centrale": "Face à une activité indépendante non viable, il est crucial de préparer des stratégies de sortie alternatives pour assurer une transition sécurisée.",
   "arguments_cles": [
-    "Franchir un seuil de perte prédéfini indique une possible inadéquation de la stratégie.",
-    "Un changement du profil de risque personnel ou de la situation financière nécessite une réévaluation.",
-    "L'atteinte des objectifs financiers initiaux justifie une révision de la stratégie pour éviter des risques inutiles."
+    "Le retour au salariat nécessite la réactivation du réseau professionnel et la valorisation des compétences acquises en freelance.",
+    "La reconversion professionnelle implique une formation complémentaire ou une réorientation vers un secteur exploitant les compétences transférables.",
+    "La création d'une nouvelle entreprise, plus pérenne, demande une analyse de marché, un plan d'affaires et potentiellement un financement.",
+    "L'anticipation et la planification de chaque étape de transition sont essentielles pour minimiser l'incertitude financière."
   ],
   "concepts_introduits": [
-    "Seuil de perte : Limite maximale de perte financière prédéfinie.",
-    "Profil de risque : Tolérance d'un individu à la volatilité des marchés."
+    "Rupture conventionnelle : Accord mutuel pour rompre un contrat de travail, offrant souvent des indemnités.",
+    "Compétences transférables : Aptitudes applicables à différents postes ou secteurs d'activité."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"Il est primordial de savoir reconnaître les moments où...\"",
-    "\"Cela peut signifier que le marché évolue de manière plus défavorable que prévu ou que votre analyse initiale était erronée.\"",
-    "\"Ignorer ce signal pourrait mener à des pertes encore plus importantes.\"",
-    "\"Si vous aviez fixé un objectif de gain précis, par exemple une plus-value de 30% sur votre portefeuille, et que vous y êtes parvenu, il est pertinent de considérer une révision.\"",
-    "\"Continuer à investir sans objectif clair après avoir atteint la cible peut vous exposer à des risques inutiles, notamment celui de vouloir \\\"faire encore plus\\\" et de finir par perdre vos gains initiaux.\""
+    "Les détails des stratégies de création d'entreprise ne sont pas abordés en profondeur dans ce chapitre."
   ],
-  "ton_angle": "Pragmatique et préventif, axé sur la gestion des risques et l'adaptation de la stratégie.",
-  "_raw": "<fiche>\n<chapitre_numero>9</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Il est essentiel d'identifier des signaux d'alerte pour ajuster ou interrompre une stratégie d'investissement lorsqu'elle ne répond plus aux attentes ou devient trop risquée.</these_centrale>\n<arguments_cles>\n- Franchir un seuil de perte prédéfini indique une possible inadéquation de la stratégie.\n- Un changement du profil de risque personnel ou de la situation financière nécessite une réévaluation.\n- L'atteinte des objectifs financiers initiaux justifie une révision de la stratégie pour éviter des risques inutiles.\n</arguments_cles>\n<concepts_introduits>\n- Seuil de perte : Limite maximale de perte financière prédéfinie.\n- Profil de risque : Tolérance d'un individu à la volatilité des marchés.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Il est primordial de savoir reconnaître les moments où...\"\n- \"Cela peut signifier que le marché évolue de manière plus défavorable que prévu ou que votre analyse initiale était erronée.\"\n- \"Ignorer ce signal pourrait mener à des pertes encore plus importantes.\"\n- \"Si vous aviez fixé un objectif de gain précis, par exemple une plus-value de 30% sur votre portefeuille, et que vous y êtes parvenu, il est pertinent de considérer une révision.\"\n- \"Continuer à investir sans objectif clair après avoir atteint la cible peut vous exposer à des risques inutiles, notamment celui de vouloir \\\"faire encore plus\\\" et de finir par perdre vos gains initiaux.\"\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et préventif, axé sur la gestion des risques et l'adaptation de la stratégie.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique, axé sur les démarches et les solutions concrètes.",
+  "_raw": "<fiche>\n<chapitre_numero>9</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Face à une activité indépendante non viable, il est crucial de préparer des stratégies de sortie alternatives pour assurer une transition sécurisée.</these_centrale>\n<arguments_cles>\n- Le retour au salariat nécessite la réactivation du réseau professionnel et la valorisation des compétences acquises en freelance.\n- La reconversion professionnelle implique une formation complémentaire ou une réorientation vers un secteur exploitant les compétences transférables.\n- La création d'une nouvelle entreprise, plus pérenne, demande une analyse de marché, un plan d'affaires et potentiellement un financement.\n- L'anticipation et la planification de chaque étape de transition sont essentielles pour minimiser l'incertitude financière.\n</arguments_cles>\n<concepts_introduits>\n- Rupture conventionnelle : Accord mutuel pour rompre un contrat de travail, offrant souvent des indemnités.\n- Compétences transférables : Aptitudes applicables à différents postes ou secteurs d'activité.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les détails des stratégies de création d'entreprise ne sont pas abordés en profondeur dans ce chapitre.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur les démarches et les solutions concrètes.</ton_angle>\n</fiche>"
 }

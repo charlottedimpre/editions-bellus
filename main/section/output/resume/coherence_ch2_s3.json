@@ -3,26 +3,21 @@
   "section": 3,
   "chapitre_numero": "2",
   "section_numero": "3",
-  "these_centrale": "Identifier les signaux d'alerte dans les offres d'investissement en cryptomonnaies est crucial pour éviter les escroqueries.",
+  "these_centrale": "Tester la viabilité d'un projet entrepreneurial avant de démissionner est essentiel pour éviter un lancement risqué.",
   "arguments_cles": [
-    "La promesse de rendements garantis ou excessivement élevés est un signe d'arnaque.",
-    "La pression pour investir rapidement vise à empêcher la réflexion et la vérification.",
-    "L'anonymat des équipes derrière un projet est un indicateur majeur de risque.",
-    "Les sollicitations non sollicitées sont souvent des tactiques d'arnaqueurs.",
-    "Une offre trop belle pour être vraie l'est généralement et doit susciter la prudence."
+    "Le portage salarial permet d'exercer une activité indépendante tout en conservant un statut de salarié et ses droits sociaux.",
+    "Les missions ponctuelles ou projets annexes offrent une confrontation du projet à la réalité du marché et permettent de construire un portefeuille.",
+    "Ces approches progressives transforment une idée abstraite en une réalité testée, affinant l'offre et le positionnement."
   ],
   "concepts_introduits": [
-    "Rendements garantis : Gains d'investissement dont le montant est assuré.",
-    "Marché volatil : Marché sujet à des fluctuations de prix importantes.",
-    "Tactiques de pression : Méthodes pour inciter à une décision rapide.",
-    "Transparence : Clarté et accessibilité des informations sur les acteurs.",
-    "Sollicitations non sollicitées : Approches commerciales non demandées par le prospect."
+    "Portage salarial : Activité indépendante avec statut de salarié et gestion administrative déléguée.",
+    "Missions ponctuelles : Projets annexes réalisés en dehors du temps de travail principal."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Doubler votre capital en quelques semaines.",
-    "Offre qui semble trop belle pour être vraie."
+    "Lancement dans le vide",
+    "Transition précipitée"
   ],
-  "ton_angle": "Pragmatique, axé sur la détection des fraudes et la protection de l'investisseur.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Identifier les signaux d'alerte dans les offres d'investissement en cryptomonnaies est crucial pour éviter les escroqueries.</these_centrale>\n<arguments_cles>\n- La promesse de rendements garantis ou excessivement élevés est un signe d'arnaque.\n- La pression pour investir rapidement vise à empêcher la réflexion et la vérification.\n- L'anonymat des équipes derrière un projet est un indicateur majeur de risque.\n- Les sollicitations non sollicitées sont souvent des tactiques d'arnaqueurs.\n- Une offre trop belle pour être vraie l'est généralement et doit susciter la prudence.\n</arguments_cles>\n<concepts_introduits>\n- Rendements garantis : Gains d'investissement dont le montant est assuré.\n- Marché volatil : Marché sujet à des fluctuations de prix importantes.\n- Tactiques de pression : Méthodes pour inciter à une décision rapide.\n- Transparence : Clarté et accessibilité des informations sur les acteurs.\n- Sollicitations non sollicitées : Approches commerciales non demandées par le prospect.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Doubler votre capital en quelques semaines.\n- Offre qui semble trop belle pour être vraie.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur la détection des fraudes et la protection de l'investisseur.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique, axé sur la sécurisation de la transition entrepreneuriale.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Tester la viabilité d'un projet entrepreneurial avant de démissionner est essentiel pour éviter un lancement risqué.</these_centrale>\n<arguments_cles>\n- Le portage salarial permet d'exercer une activité indépendante tout en conservant un statut de salarié et ses droits sociaux.\n- Les missions ponctuelles ou projets annexes offrent une confrontation du projet à la réalité du marché et permettent de construire un portefeuille.\n- Ces approches progressives transforment une idée abstraite en une réalité testée, affinant l'offre et le positionnement.\n</arguments_cles>\n<concepts_introduits>\n- Portage salarial : Activité indépendante avec statut de salarié et gestion administrative déléguée.\n- Missions ponctuelles : Projets annexes réalisés en dehors du temps de travail principal.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Lancement dans le vide\n- Transition précipitée\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur la sécurisation de la transition entrepreneuriale.</ton_angle>\n</fiche>"
 }

@@ -1,389 +1,416 @@
 [
   {
     "numero": "1",
-    "titre": "Comprendre les bases des cryptomonnaies",
+    "titre": "Pourquoi quitter son CDI aujourd’hui",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi la blockchain est-elle révolutionnaire (et pas seulement une mode) ?",
-        "objectif": "Vous identifierez les trois piliers de la blockchain qui la rendent unique par rapport aux systèmes financiers traditionnels.",
-        "concept_cle": "Décentralisation, transparence, immutabilité des transactions.",
-        "exemple": "Thomas découvre que ses transactions Bitcoin ne dépendent d’aucune banque, contrairement à son virement bancaire classique.",
-        "limite": "Ne détaille pas les algorithmes de consensus (PoW/PoS) — abordés au chapitre 4 si nécessaire.",
+        "titre_section": "Salariat vs. freelancing : quels avantages concrets pour votre quotidien ?",
+        "objectif": "Vous identifierez les différences tangibles entre salariat et indépendance sur votre emploi du temps, votre revenu net et votre autonomie décisionnelle.",
+        "concept_cle": "Comparaison objective des conditions de travail et de rémunération.",
+        "exemple": "Thomas compare son salaire net actuel avec un TJM réaliste pour son secteur, en intégrant les charges sociales et les jours non facturables.",
+        "limite": "N’aborde pas le calcul précis du TJM ou des charges sociales (Chapitre 4 et 6).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Bitcoin, altcoins, tokens : comment ne plus confondre ces termes ?",
-        "objectif": "Vous distinguerez les trois catégories d’actifs crypto et leur utilité respective en 30 secondes.",
-        "concept_cle": "Fonction (monnaie, utilité, actif) vs. technologie sous-jacente.",
-        "exemple": "Thomas comprend pourquoi Ethereum (token) n’est pas un concurrent direct de Bitcoin (monnaie).",
-        "limite": "N’aborde pas les tokens non-fongibles (NFT) — hors périmètre pour un investisseur débutant.",
+        "titre_section": "Pourquoi les salariés quittent leur CDI : motivations réelles vs. illusions",
+        "objectif": "Vous distinguerez les motivations solides (autonomie, alignement avec ses valeurs) des motivations fragiles (fuite d’un emploi toxique, pression sociale) pour éviter un lancement prématuré.",
+        "concept_cle": "Typologie des motivations et leur impact sur la réussite.",
+        "exemple": "Thomas réalise que sa lassitude face aux déplacements est une motivation solide, mais que son envie de \"devenir son propre patron\" nécessite une clarification.",
+        "limite": "N’aborde pas les méthodes pour tester son projet en parallèle du CDI (Chapitre 2).",
         "mots_cible": "400-600"
       },
       {
         "numero": "3",
-        "titre_section": "Clés privées vs. clés publiques : pourquoi perdre la première équivaut à perdre son argent ?",
-        "objectif": "Vous maîtriserez la différence entre ces deux clés et leur rôle dans la sécurité de vos actifs.",
-        "concept_cle": "Clé privée = signature numérique ; clé publique = adresse de réception.",
-        "exemple": "Thomas réalise qu’il a failli partager sa phrase de récupération (clé privée) sur un forum.",
-        "limite": "Ne détaille pas les protocoles de chiffrement (ex: ECDSA) — traité au chapitre 7.",
-        "mots_cible": "450-650"
+        "titre_section": "Quels secteurs recrutent des freelances et offrent des revenus stables ?",
+        "objectif": "Vous repérerez les secteurs porteurs pour les freelances en France, avec des données sur les revenus moyens et la demande, pour évaluer la viabilité de votre projet.",
+        "concept_cle": "Cartographie des opportunités par secteur et niveau d’expérience.",
+        "exemple": "Thomas découvre que le développement d’applications mobiles pour PME est un marché en croissance, avec des TJM attractifs pour les profils expérimentés.",
+        "limite": "N’aborde pas la construction de son offre ou son positionnement (Chapitre 4).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "4",
-        "titre_section": "Comment une transaction crypto est-elle validée sans banque ?",
-        "objectif": "Vous expliquerez le processus de validation d’une transaction en 4 étapes simples.",
-        "concept_cle": "Nœuds, mineurs, frais de gaz, confirmation.",
-        "exemple": "Thomas suit le parcours de son premier achat de Bitcoin sur un explorateur de blocs.",
-        "limite": "N’aborde pas les différences entre PoW et PoS — traité au chapitre 4.",
+        "titre_section": "Freelancing : quels risques financiers et sociaux allez-vous vraiment affronter ?",
+        "objectif": "Vous anticiperez les risques concrets du freelancing (précarité, perte de protection sociale, isolement) et les comparerez aux sécurités du CDI pour prendre une décision éclairée.",
+        "concept_cle": "Analyse des risques objectifs et de leur impact sur la qualité de vie.",
+        "exemple": "Thomas évalue l’impact d’un trou de trésorerie sur son prêt immobilier et la perte de ses droits au chômage en cas de démission.",
+        "limite": "N’aborde pas les méthodes pour gérer les revenus variables ou préparer un plan de repli (Chapitre 6 et 9).",
         "mots_cible": "500-700"
       }
     ],
-    "total_mots_chapitre": "1850-2650"
+    "total_mots_chapitre": "2000-2800"
   },
   {
     "numero": "2",
-    "titre": "Évaluer les risques et les pièges courants",
+    "titre": "Évaluer sa motivation et sa préparation",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi 90% des débutants perdent de l’argent en crypto (et comment éviter ce sort) ?",
-        "objectif": "Vous identifierez les trois erreurs les plus fréquentes et leurs conséquences financières.",
-        "concept_cle": "FOMO, surendettement, négligence de la sécurité.",
-        "exemple": "Thomas évite d’investir dans un altcoin \"prometteur\" après avoir lu son whitepaper.",
-        "limite": "Ne détaille pas les stratégies de trading avancées — traité au chapitre 5.",
-        "mots_cible": "500-700"
+        "titre_section": "Autonomie ou fuite : comment distinguer vos vraies motivations ?",
+        "objectif": "Vous identifierez si votre envie de quitter le CDI relève d’un désir d’autonomie ou d’une fuite d’un environnement toxique, pour éviter un projet bâti sur des bases fragiles.",
+        "concept_cle": "Diagnostic des motivations profondes via un questionnaire guidé.",
+        "exemple": "Thomas réalise que son insatisfaction est liée à la routine, mais qu’il n’a pas encore exploré les alternatives en interne (ex. : mobilité interne).",
+        "limite": "N’aborde pas les méthodes pour tester son projet en parallèle du CDI (Section 3 de ce chapitre).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "2",
-        "titre_section": "Volatilité extrême : comment ne pas paniquer face à une chute de 30% en 24h ?",
-        "objectif": "Vous calculerez votre seuil de tolérance à la volatilité avant d’investir.",
-        "concept_cle": "Horizon temporel vs. amplitude des variations.",
-        "exemple": "Thomas simule une perte de 40% sur son capital initial de 5 000 €.",
-        "limite": "N’aborde pas les stratégies de couverture (hedging) — hors périmètre.",
-        "mots_cible": "450-650"
-      },
-      {
-        "numero": "3",
-        "titre_section": "Arnaques crypto : comment repérer les signaux d’alerte avant de perdre ses fonds ?",
-        "objectif": "Vous détecterez 5 red flags dans une offre d’investissement crypto en 2 minutes.",
-        "concept_cle": "Promesses de rendements garantis, pression temporelle, anonymat des équipes.",
-        "exemple": "Thomas analyse une publicité pour un \"fonds crypto à 20% de rendement mensuel\".",
-        "limite": "Ne liste pas les arnaques historiques (ex: Bitconnect) — À définir avec l’auteur.",
+        "titre_section": "Êtes-vous prêt à gérer l’incertitude financière du freelancing ?",
+        "objectif": "Vous évaluerez votre tolérance au risque financier et votre capacité à gérer des revenus irréguliers, avec des outils pour mesurer votre résilience.",
+        "concept_cle": "Test de tolérance au risque via des scénarios concrets.",
+        "exemple": "Thomas simule un mois sans mission et évalue son niveau de stress face à cette situation.",
+        "limite": "N’aborde pas les méthodes pour provisionner une épargne de précaution (Chapitre 6).",
         "mots_cible": "500-700"
       },
       {
+        "numero": "3",
+        "titre_section": "Comment tester votre projet de freelancing sans quitter votre CDI ?",
+        "objectif": "Vous découvrirez des méthodes pour valider votre projet en parallèle de votre emploi (portage salarial, missions ponctuelles) et éviter un lancement dans le vide.",
+        "concept_cle": "Stratégies de validation progressive sans démission.",
+        "exemple": "Thomas utilise le portage salarial pour réaliser une mission en freelance le week-end et évaluer sa charge de travail.",
+        "limite": "N’aborde pas les détails des statuts juridiques (Chapitre 3).",
+        "mots_cible": "600-800"
+      },
+      {
         "numero": "4",
-        "titre_section": "Piratages et pertes d’accès : pourquoi votre négligence peut coûter cher ?",
-        "objectif": "Vous évaluerez les risques liés à la gestion de vos clés privées et comptes.",
-        "concept_cle": "Responsabilité individuelle vs. sécurité centralisée.",
-        "exemple": "Thomas découvre que 20% des Bitcoins minés sont perdus à jamais.",
-        "limite": "Ne détaille pas les méthodes de sécurisation — traité au chapitre 7.",
+        "titre_section": "Quelles compétences vous manquent pour réussir en freelance ?",
+        "objectif": "Vous identifierez les compétences indispensables pour réussir en freelance (commerciales, administratives, techniques) et les lacunes à combler avant de vous lancer.",
+        "concept_cle": "Checklist des compétences clés et auto-évaluation.",
+        "exemple": "Thomas réalise qu’il doit améliorer ses compétences en prospection et en gestion administrative avant de se lancer.",
+        "limite": "N’aborde pas les techniques de prospection ou de gestion du temps (Chapitre 5 et 7).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1850-2650"
+    "total_mots_chapitre": "1900-2700"
   },
   {
     "numero": "3",
-    "titre": "Choisir une plateforme d’échange sécurisée",
+    "titre": "Choisir son statut juridique et fiscal",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Centralisé vs. décentralisé : quel type de plateforme correspond à votre profil ?",
-        "objectif": "Vous choisirez entre un exchange centralisé et décentralisé en fonction de vos priorités (sécurité, simplicité, anonymat).",
-        "concept_cle": "Custodial vs. non-custodial, KYC, liquidité.",
-        "exemple": "Thomas compare Binance (centralisé) et Uniswap (décentralisé) pour son premier achat.",
-        "limite": "Ne détaille pas les protocoles DEX (ex: Automated Market Makers) — À définir avec l’auteur.",
-        "mots_cible": "500-700"
+        "titre_section": "Micro-entreprise, SASU, EURL : quel statut pour quel projet ?",
+        "objectif": "Vous comprendrez les différences fondamentales entre les statuts (micro-entreprise, SASU, EURL) et leurs implications sur votre fiscalité, vos charges sociales et votre protection sociale.",
+        "concept_cle": "Comparaison des statuts selon 5 critères clés (fiscalité, charges, protection, responsabilité, formalités).",
+        "exemple": "Thomas compare la micro-entreprise et la SASU pour son projet de développement d’applications mobiles, en intégrant son chiffre d’affaires prévisionnel.",
+        "limite": "N’aborde pas les régimes fiscaux étrangers ou les évolutions législatives non consolidées (hors périmètre).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "2",
-        "titre_section": "5 critères pour éviter les plateformes non fiables (et les arnaques) ?",
-        "objectif": "Vous évaluerez une plateforme en 5 minutes grâce à une checklist simple.",
-        "concept_cle": "Régulation, historique de sécurité, frais, liquidité, support client.",
-        "exemple": "Thomas vérifie si la plateforme qu’il a repérée est régulée dans son pays.",
-        "limite": "Ne propose pas de comparatif détaillé des plateformes — À définir avec l’auteur.",
-        "mots_cible": "450-650"
+        "titre_section": "Portage salarial : la solution idéale pour tester votre activité ?",
+        "objectif": "Vous évaluerez si le portage salarial est adapté à votre situation pour tester votre activité en limitant les risques, avec ses avantages et ses limites.",
+        "concept_cle": "Fonctionnement du portage salarial et critères de choix.",
+        "exemple": "Thomas opte pour le portage salarial pour ses premières missions, afin de conserver ses droits au chômage et de tester son marché.",
+        "limite": "N’aborde pas les détails des contrats de portage ou les frais associés (À définir avec l’auteur).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "3",
-        "titre_section": "Comment créer et sécuriser son compte en 10 étapes (sans se faire pirater) ?",
-        "objectif": "Vous configurerez un compte sécurisé avec double authentification et phrases de récupération.",
-        "concept_cle": "2FA, phrase de récupération, mot de passe fort, liste blanche d’adresses.",
-        "exemple": "Thomas active la 2FA sur son compte et stocke sa phrase de récupération hors ligne.",
-        "limite": "Ne détaille pas les méthodes de phishing avancées — traité au chapitre 7.",
+        "titre_section": "Comment choisir votre statut en fonction de votre chiffre d’affaires ?",
+        "objectif": "Vous déterminerez quel statut est le plus avantageux pour votre chiffre d’affaires prévisionnel, avec des seuils clés et des exemples concrets.",
+        "concept_cle": "Seuils de bascule entre statuts selon le CA et le secteur.",
+        "exemple": "Thomas calcule que la micro-entreprise est adaptée pour ses premiers mois, mais qu’il devra passer en SASU si son CA dépasse 70 000 €.",
+        "limite": "N’aborde pas les stratégies de croissance (ex. : passage en SARL) (hors périmètre).",
         "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Frais cachés et liquidité : comment ne pas payer trop cher ses transactions ?",
-        "objectif": "Vous identifierez les frais invisibles et optimiserez vos coûts de transaction.",
-        "concept_cle": "Frais de dépôt/retrait, spread, slippage, frais de gaz.",
-        "exemple": "Thomas compare les frais de Binance et Coinbase pour un achat de 1 000 €.",
-        "limite": "Ne détaille pas les stratégies de minimisation des frais pour traders actifs — hors périmètre.",
+        "titre_section": "Quelles idées reçues sur les statuts vous font prendre des risques ?",
+        "objectif": "Vous identifierez les idées reçues courantes sur les statuts (ex. : \"la micro-entreprise est toujours la meilleure option\") et leurs conséquences financières.",
+        "concept_cle": "Démystification des préjugés sur les statuts.",
+        "exemple": "Thomas évite de choisir la micro-entreprise par défaut, après avoir compris ses limites en termes de protection sociale.",
+        "limite": "N’aborde pas les détails des formalités administratives (À définir avec l’auteur).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1850-2650"
+    "total_mots_chapitre": "2000-2800"
   },
   {
     "numero": "4",
-    "titre": "Analyser les tendances du marché",
+    "titre": "Construire son offre et son positionnement",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Graphiques crypto : comment lire les courbes sans être un expert ?",
-        "objectif": "Vous interpréterez un graphique de prix en identifiant les tendances haussières et baissières.",
-        "concept_cle": "Support, résistance, bougies japonaises, échelle logarithmique.",
-        "exemple": "Thomas analyse le graphique du Bitcoin sur 1 an pour repérer les phases de hausse/baise.",
-        "limite": "Ne détaille pas les indicateurs avancés (Ichimoku, Fibonacci) — hors périmètre.",
+        "titre_section": "Quelles compétences pouvez-vous vraiment monétiser en freelance ?",
+        "objectif": "Vous identifierez les compétences monétisables dans votre secteur et les écarts entre votre expertise actuelle et la demande du marché.",
+        "concept_cle": "Cartographie des compétences rentables et analyse de la demande.",
+        "exemple": "Thomas réalise que son expertise en développement d’applications mobiles pour PME est recherchée, mais qu’il doit se former sur les dernières technologies pour rester compétitif.",
+        "limite": "N’aborde pas les techniques de prospection ou de négociation (Chapitre 5).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Moyennes mobiles : comment repérer un changement de tendance avant les autres ?",
-        "objectif": "Vous utiliserez les moyennes mobiles 50 et 200 jours pour identifier les signaux d’achat/vente.",
-        "concept_cle": "Croisement doré, croisement de la mort, période de calcul.",
-        "exemple": "Thomas applique les moyennes mobiles au graphique d’Ethereum pour anticiper un rebond.",
-        "limite": "Ne détaille pas les stratégies basées sur plusieurs moyennes mobiles — À définir avec l’auteur.",
-        "mots_cible": "450-650"
+        "titre_section": "Comment analyser la concurrence pour vous différencier ?",
+        "objectif": "Vous utiliserez des outils simples (matrice SWOT, analyse des offres concurrentes) pour identifier vos avantages concurrentiels et affiner votre positionnement.",
+        "concept_cle": "Méthodes d’analyse concurrentielle pour les freelances.",
+        "exemple": "Thomas analyse les offres de ses concurrents sur les plateformes de freelancing et identifie un créneau : le développement d’applications mobiles pour les artisans locaux.",
+        "limite": "N’aborde pas la formulation de la proposition de valeur (Section 3 de ce chapitre).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "3",
-        "titre_section": "Cycles de marché : pourquoi les cryptos suivent des schémas prévisibles (et comment en profiter) ?",
-        "objectif": "Vous reconnaîtrez les 4 phases d’un cycle de marché et adapterez votre stratégie en conséquence.",
-        "concept_cle": "Accumulation, markup, distribution, markdown.",
-        "exemple": "Thomas identifie que le Bitcoin est en phase d’accumulation après une chute de 50%.",
-        "limite": "Ne détaille pas les théories de cycles avancées (ex: Stock-to-Flow) — hors périmètre.",
+        "titre_section": "Comment formuler une proposition de valeur claire et percutante ?",
+        "objectif": "Vous rédigerez une proposition de valeur qui répond aux besoins de vos clients cibles, avec des exemples concrets et des erreurs à éviter.",
+        "concept_cle": "Structure d’une proposition de valeur efficace.",
+        "exemple": "Thomas reformule son offre pour mettre en avant son expertise locale et son accompagnement personnalisé, plutôt que ses compétences techniques.",
+        "limite": "N’aborde pas les techniques de rédaction de propositions commerciales (Chapitre 5).",
         "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Signaux d’alerte : comment éviter les pièges des \"pump and dump\" ?",
-        "objectif": "Vous détecterez 3 signaux indiquant une manipulation de marché.",
-        "concept_cle": "Volume anormal, hype médiatique, ordres de vente massifs.",
-        "exemple": "Thomas repère un altcoin dont le prix a bondi de 200% en 1 heure sans actualité.",
-        "limite": "Ne détaille pas les méthodes de manipulation avancées (ex: spoofing) — hors périmètre.",
-        "mots_cible": "400-600"
+        "titre_section": "Comment calculer votre TJM sans vous sous-évaluer ?",
+        "objectif": "Vous calculerez votre TJM (Taux Journalier Moyen) en intégrant vos charges sociales, vos congés non payés et vos jours non facturables, pour éviter les erreurs de tarification.",
+        "concept_cle": "Formule de calcul du TJM et ajustements sectoriels.",
+        "exemple": "Thomas calcule que son TJM doit être de 500 € pour couvrir ses charges et dégager un revenu net équivalent à son salaire actuel.",
+        "limite": "N’aborde pas les stratégies de négociation des tarifs (Chapitre 5).",
+        "mots_cible": "500-700"
       }
     ],
-    "total_mots_chapitre": "1850-2650"
+    "total_mots_chapitre": "2100-2900"
   },
   {
     "numero": "5",
-    "titre": "Définir une stratégie d’investissement adaptée",
+    "titre": "Trouver ses premiers clients",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "DCA vs. hold vs. trading : quelle stratégie pour votre profil de risque ?",
-        "objectif": "Vous choisirez une stratégie en fonction de votre tolérance au risque et de votre temps disponible.",
-        "concept_cle": "Dollar-Cost Averaging, hold long terme, trading actif.",
-        "exemple": "Thomas opte pour le DCA après avoir évalué son aversion aux pertes.",
-        "limite": "Ne détaille pas les stratégies de trading actif — hors périmètre.",
-        "mots_cible": "500-700"
+        "titre_section": "Comment prospecter efficacement sans réseau existant ?",
+        "objectif": "Vous découvrirez des stratégies pour prospecter même sans réseau professionnel (LinkedIn, événements, plateformes de freelancing) et générer vos premières opportunités.",
+        "concept_cle": "Méthodes de prospection pour les débutants.",
+        "exemple": "Thomas utilise LinkedIn pour contacter des PME locales et propose un audit gratuit de leur présence mobile, ce qui lui permet de signer ses premiers contrats.",
+        "limite": "N’aborde pas les techniques de rédaction de propositions commerciales (Section 3 de ce chapitre).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "2",
-        "titre_section": "Comment allouer son capital entre Bitcoin, Ethereum et altcoins ?",
-        "objectif": "Vous répartirez votre capital en fonction de la diversification et de la volatilité.",
-        "concept_cle": "Règle 80/20, corrélation des actifs, capitalisation boursière.",
-        "exemple": "Thomas alloue 60% en Bitcoin, 30% en Ethereum et 10% en altcoins.",
-        "limite": "Ne propose pas de liste d’altcoins recommandés — À définir avec l’auteur.",
-        "mots_cible": "450-650"
+        "titre_section": "Quelles plateformes de freelancing choisir pour vos premières missions ?",
+        "objectif": "Vous comparerez les plateformes de freelancing (Malt, Upwork, etc.) et choisirez celles adaptées à votre secteur et à votre niveau d’expérience.",
+        "concept_cle": "Critères de choix des plateformes et pièges à éviter.",
+        "exemple": "Thomas sélectionne Malt pour ses premières missions, car la plateforme est adaptée aux freelances en France et offre une bonne visibilité.",
+        "limite": "N’aborde pas les techniques de négociation ou de gestion des contrats (Section 4 de ce chapitre).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "3",
-        "titre_section": "Pourquoi fixer un objectif de gain (et un seuil de perte) avant d’investir ?",
-        "objectif": "Vous définirez des objectifs réalistes et des seuils de sortie pour éviter les décisions émotionnelles.",
-        "concept_cle": "Take-profit, stop-loss, horizon temporel.",
-        "exemple": "Thomas fixe un objectif de +20% et un seuil de -15% pour son investissement.",
-        "limite": "Ne détaille pas les stratégies de rééquilibrage avancées — traité au chapitre 6.",
-        "mots_cible": "400-600"
+        "titre_section": "Comment rédiger des propositions commerciales qui convertissent ?",
+        "objectif": "Vous apprendrez à structurer une proposition commerciale percutante, avec des exemples concrets et des erreurs à éviter pour maximiser vos chances de signature.",
+        "concept_cle": "Structure d’une proposition commerciale efficace.",
+        "exemple": "Thomas utilise un template pour rédiger ses propositions, en mettant en avant les bénéfices pour le client plutôt que ses compétences techniques.",
+        "limite": "N’aborde pas les techniques de négociation des tarifs (Section 4 de ce chapitre).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "4",
-        "titre_section": "Comment tester sa stratégie sans risquer son capital ?",
-        "objectif": "Vous simulerez votre stratégie avec un compte démo ou un tableur avant d’investir.",
-        "concept_cle": "Backtesting manuel, compte démo, journal d’investissement.",
-        "exemple": "Thomas utilise un tableur pour simuler un DCA sur 3 mois avec des données historiques.",
-        "limite": "Ne détaille pas les outils de backtesting automatisés — hors périmètre.",
+        "titre_section": "Comment négocier vos premiers contrats sans vous brader ?",
+        "objectif": "Vous maîtriserez les techniques de négociation pour défendre vos tarifs et vos conditions, sans accepter des missions sous-payées ou déséquilibrées.",
+        "concept_cle": "Méthodes de négociation pour les freelances débutants.",
+        "exemple": "Thomas refuse une mission sous-payée en expliquant sa valeur ajoutée et propose un tarif adapté au budget du client.",
+        "limite": "N’aborde pas la gestion des conflits clients ou des impayés (Chapitre 8).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "5",
+        "titre_section": "Comment éviter la dépendance à un seul client ?",
+        "objectif": "Vous découvrirez des stratégies pour diversifier votre portefeuille clients et limiter les risques de dépendance, avec des outils pour suivre votre prospection.",
+        "concept_cle": "Règles de diversification du portefeuille clients.",
+        "exemple": "Thomas utilise un tableau de suivi pour équilibrer ses missions entre plusieurs clients et éviter de dépendre d’un seul contrat.",
+        "limite": "N’aborde pas la gestion des revenus variables (Chapitre 6).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": "2600-3600"
   },
   {
     "numero": "6",
-    "titre": "Gérer son portefeuille au quotidien",
+    "titre": "Gérer son budget et ses revenus variables",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Quels outils utiliser pour suivre ses investissements sans y passer 3h par jour ?",
-        "objectif": "Vous choisirez 2 outils de tracking adaptés à votre niveau et à vos besoins.",
-        "concept_cle": "Portfolio tracker, alertes de prix, agrégateurs de données.",
-        "exemple": "Thomas configure des alertes sur CoinMarketCap pour ses actifs.",
-        "limite": "Ne détaille pas les outils avancés pour traders professionnels — hors périmètre.",
-        "mots_cible": "450-650"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Comment ajuster sa stratégie face à une chute ou une hausse soudaine ?",
-        "objectif": "Vous prendrez des décisions rationnelles en cas de mouvement de marché extrême.",
-        "concept_cle": "Rééquilibrage, moyenne à la baisse, prise de profit partielle.",
-        "exemple": "Thomas achète plus de Bitcoin après une chute de 20%, conformément à sa stratégie DCA.",
-        "limite": "Ne détaille pas les stratégies de couverture (hedging) — hors périmètre.",
+        "titre_section": "Comment estimer vos besoins financiers pour survivre en freelance ?",
+        "objectif": "Vous calculerez vos charges fixes personnelles et professionnelles, et déterminerez le revenu minimum nécessaire pour couvrir vos besoins.",
+        "concept_cle": "Méthode de calcul des besoins financiers mensuels.",
+        "exemple": "Thomas liste ses charges (loyer, prêt immobilier, assurances) et estime qu’il a besoin d’un revenu net de 3 000 € par mois pour vivre décemment.",
+        "limite": "N’aborde pas les méthodes pour provisionner les charges sociales ou fiscales (Section 2 de ce chapitre).",
         "mots_cible": "500-700"
       },
       {
+        "numero": "2",
+        "titre_section": "Comment provisionner vos charges sociales, fiscales et la TVA ?",
+        "objectif": "Vous apprendrez à calculer et à provisionner vos charges sociales, fiscales et la TVA pour éviter les mauvaises surprises en fin d’année.",
+        "concept_cle": "Calcul des provisions pour charges et TVA.",
+        "exemple": "Thomas met de côté 25 % de son chiffre d’affaires pour ses charges sociales et 10 % pour la TVA, afin de ne pas être pris au dépourvu.",
+        "limite": "N’aborde pas les stratégies d’optimisation fiscale (hors périmètre).",
+        "mots_cible": "600-800"
+      },
+      {
         "numero": "3",
-        "titre_section": "Pourquoi tenir un journal d’investissement évite les erreurs coûteuses ?",
-        "objectif": "Vous créerez un journal pour documenter vos décisions et en tirer des leçons.",
-        "concept_cle": "Rationalité, biais cognitifs, apprentissage continu.",
-        "exemple": "Thomas note ses émotions lors d’une chute de 15% pour éviter de vendre en panique.",
-        "limite": "Ne détaille pas les méthodes de psychologie du trading — À définir avec l’auteur.",
-        "mots_cible": "400-600"
+        "titre_section": "Comment gérer les revenus variables sans stress financier ?",
+        "objectif": "Vous découvrirez des outils pour lisser vos revenus variables (épargne de précaution, budget mensuel glissant) et anticiper les trous de trésorerie.",
+        "concept_cle": "Stratégies de gestion des revenus irréguliers.",
+        "exemple": "Thomas constitue une épargne de précaution équivalente à 6 mois de charges, et utilise un budget mensuel glissant pour ajuster ses dépenses.",
+        "limite": "N’aborde pas les stratégies de placement financier (hors périmètre).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Comment éviter les décisions impulsives face aux actualités crypto ?",
-        "objectif": "Vous filtrerez les informations pertinentes des \"bruits\" médiatiques.",
-        "concept_cle": "Sources fiables, vérification des faits, horizon temporel.",
-        "exemple": "Thomas ignore une rumeur sur Twitter annonçant un \"krach imminent\".",
-        "limite": "Ne liste pas les sources d’information recommandées — À définir avec l’auteur.",
+        "titre_section": "Chiffre d’affaires vs. revenu net : comment éviter les confusions dangereuses ?",
+        "objectif": "Vous distinguerez clairement votre chiffre d’affaires de votre revenu net, et éviterez les erreurs de gestion qui mènent à la précarité financière.",
+        "concept_cle": "Différence entre CA et revenu net, et impact sur la trésorerie.",
+        "exemple": "Thomas réalise qu’un CA de 5 000 € ne signifie pas un revenu net de 5 000 €, après avoir déduit ses charges sociales et ses frais professionnels.",
+        "limite": "N’aborde pas les méthodes pour optimiser sa fiscalité (hors périmètre).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": "2000-2800"
   },
   {
     "numero": "7",
-    "titre": "Sécuriser ses actifs numériques",
+    "titre": "Organiser son temps et son espace de travail",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Cold wallet vs. hot wallet : comment choisir en fonction de ses besoins ?",
-        "objectif": "Vous sélectionnerez le type de wallet adapté à votre volume d’actifs et à votre fréquence d’utilisation.",
-        "concept_cle": "Stockage à froid, stockage en ligne, risque de piratage.",
-        "exemple": "Thomas transfère 80% de ses actifs sur un Ledger Nano S.",
-        "limite": "Ne détaille pas les protocoles de chiffrement — À définir avec l’auteur.",
+        "titre_section": "Comment structurer votre emploi du temps pour équilibrer production et prospection ?",
+        "objectif": "Vous organiserez votre semaine pour consacrer du temps à la production, à la prospection et à l’administration, sans négliger aucun aspect de votre activité.",
+        "concept_cle": "Méthode de répartition du temps entre les différentes tâches.",
+        "exemple": "Thomas utilise la méthode \"time blocking\" pour réserver des plages horaires dédiées à la prospection, à la production et à l’administration.",
+        "limite": "N’aborde pas les outils de productivité (Section 3 de ce chapitre).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Phrase de récupération : pourquoi la perdre équivaut à brûler son argent ?",
-        "objectif": "Vous stockerez votre phrase de récupération de manière sécurisée et redondante.",
-        "concept_cle": "Seed phrase, sauvegarde physique, partage de responsabilité.",
-        "exemple": "Thomas grave sa phrase de récupération sur une plaque métallique.",
-        "limite": "Ne détaille pas les méthodes de récupération avancées (ex: Shamir’s Secret Sharing) — hors périmètre.",
-        "mots_cible": "450-650"
+        "titre_section": "Comment gérer les distractions et rester productif en télétravail ?",
+        "objectif": "Vous identifierez les distractions courantes en télétravail et découvrirez des méthodes pour les limiter et rester concentré.",
+        "concept_cle": "Stratégies de gestion des distractions en télétravail.",
+        "exemple": "Thomas utilise la technique Pomodoro pour rester concentré et évite les réseaux sociaux pendant ses plages de travail.",
+        "limite": "N’aborde pas les outils de productivité (Section 3 de ce chapitre).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "3",
-        "titre_section": "Double authentification et liste blanche : comment bloquer les pirates ?",
-        "objectif": "Vous configurerez des mesures de sécurité supplémentaires pour vos comptes et wallets.",
-        "concept_cle": "2FA, liste blanche d’adresses, notifications de connexion.",
-        "exemple": "Thomas active la liste blanche sur son exchange pour limiter les retraits.",
-        "limite": "Ne détaille pas les attaques par SIM swapping — À définir avec l’auteur.",
-        "mots_cible": "400-600"
+        "titre_section": "Quels outils utiliser pour optimiser votre productivité ?",
+        "objectif": "Vous découvrirez des outils simples (Trello, Notion, etc.) pour organiser votre travail, suivre vos tâches et gagner en efficacité.",
+        "concept_cle": "Outils de productivité pour les freelances.",
+        "exemple": "Thomas utilise Trello pour suivre ses projets clients et Notion pour centraliser ses documents administratifs.",
+        "limite": "N’aborde pas l’aménagement de l’espace de travail (Section 4 de ce chapitre).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Que faire en cas de perte d’accès à son wallet ou son exchange ?",
-        "objectif": "Vous suivrez une procédure claire pour récupérer vos actifs en cas de problème.",
-        "concept_cle": "Support client, preuve de propriété, délais de récupération.",
-        "exemple": "Thomas contacte le support de son exchange après avoir perdu son mot de passe.",
-        "limite": "Ne détaille pas les cas de wallets hérités ou de décès — hors périmètre.",
+        "titre_section": "Comment aménager un espace de travail ergonomique et professionnel ?",
+        "objectif": "Vous apprendrez à aménager un espace de travail adapté à vos besoins, avec des conseils pour éviter les problèmes de santé (maux de dos, fatigue oculaire).",
+        "concept_cle": "Principes d’ergonomie pour un espace de travail sain.",
+        "exemple": "Thomas investit dans un bureau réglable en hauteur et un siège ergonomique pour éviter les douleurs lombaires.",
+        "limite": "N’aborde pas la gestion des frontières entre vie pro et perso (Section 5 de ce chapitre).",
+        "mots_cible": "400-600"
+      },
+      {
+        "numero": "5",
+        "titre_section": "Comment préserver votre équilibre vie pro-vie perso en freelance ?",
+        "objectif": "Vous découvrirez des méthodes pour fixer des limites entre votre vie professionnelle et personnelle, et éviter le burnout.",
+        "concept_cle": "Stratégies pour séparer vie pro et vie perso.",
+        "exemple": "Thomas définit des horaires de travail fixes et évite de consulter ses emails le soir ou le week-end.",
+        "limite": "N’aborde pas les aspects psychologiques approfondis (hors périmètre).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": "2200-3200"
   },
   {
     "numero": "8",
-    "titre": "Anticiper les impôts et obligations légales",
+    "titre": "Anticiper les pièges du freelancing",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi déclarer ses cryptos est obligatoire (même si c’est compliqué) ?",
-        "objectif": "Vous comprendrez les conséquences légales et fiscales de la non-déclaration.",
-        "concept_cle": "Obligation déclarative, sanctions, transparence fiscale.",
-        "exemple": "Thomas découvre qu’il doit déclarer son compte sur Binance même sans retrait en euros.",
-        "limite": "Ne détaille pas les cas de fiscalité internationale — hors périmètre.",
+        "titre_section": "Comment éviter la dépendance à un seul client et ses risques financiers ?",
+        "objectif": "Vous identifierez les signes de dépendance à un client et découvrirez des stratégies pour diversifier votre portefeuille et limiter les risques.",
+        "concept_cle": "Règles de diversification du portefeuille clients.",
+        "exemple": "Thomas fixe une limite : aucun client ne doit représenter plus de 30 % de son chiffre d’affaires, et prospecte activement pour équilibrer son portefeuille.",
+        "limite": "N’aborde pas les techniques de prospection (Chapitre 5).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Comment calculer ses plus-values (et éviter les erreurs coûteuses) ?",
-        "objectif": "Vous calculerez vos plus-values en utilisant la méthode FIFO ou le coût moyen.",
-        "concept_cle": "FIFO, coût moyen, valeur d’acquisition, valeur de cession.",
-        "exemple": "Thomas calcule sa plus-value après avoir vendu 0,5 Bitcoin sur 3 achats différents.",
-        "limite": "Ne détaille pas les régimes fiscaux spécifiques (ex: PFU en France) — À définir avec l’auteur.",
-        "mots_cible": "450-650"
+        "titre_section": "Comment gérer les trous de trésorerie sans mettre votre activité en danger ?",
+        "objectif": "Vous apprendrez à anticiper les trous de trésorerie et à mettre en place des solutions pour les combler (épargne de précaution, crédit court terme).",
+        "concept_cle": "Stratégies de gestion des trous de trésorerie.",
+        "exemple": "Thomas utilise son épargne de précaution pour couvrir un mois sans mission, et négocie un délai de paiement avec un client en retard.",
+        "limite": "N’aborde pas les méthodes pour provisionner une épargne (Chapitre 6).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "3",
-        "titre_section": "Quels formulaires remplir pour être en règle avec le fisc ?",
-        "objectif": "Vous identifierez les formulaires à remplir dans votre pays de résidence.",
-        "concept_cle": "Déclaration des comptes, formulaire de plus-values, délais.",
-        "exemple": "Thomas remplit le formulaire 3916 pour déclarer son compte Binance.",
-        "limite": "Ne fournit pas de modèles de formulaires — À définir avec l’auteur.",
-        "mots_cible": "400-600"
+        "titre_section": "Comment gérer les conflits clients et les impayés sans perdre votre sang-froid ?",
+        "objectif": "Vous découvrirez des méthodes pour gérer les conflits clients et les impayés, avec des scripts pour communiquer efficacement et des outils pour vous protéger.",
+        "concept_cle": "Techniques de gestion des conflits et des impayés.",
+        "exemple": "Thomas utilise un script pour relancer un client en retard de paiement, et propose un échéancier pour éviter un litige.",
+        "limite": "N’aborde pas les aspects juridiques des litiges (À définir avec l’auteur).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "4",
-        "titre_section": "Comment justifier ses transactions en cas de contrôle fiscal ?",
-        "objectif": "Vous conserverez les preuves nécessaires pour répondre à un contrôle.",
-        "concept_cle": "Historique des transactions, relevés bancaires, justificatifs d’achat/vente.",
-        "exemple": "Thomas archive ses relevés de compte et captures d’écran de ses transactions.",
-        "limite": "Ne détaille pas les procédures de contrôle fiscal — À définir avec l’auteur.",
+        "titre_section": "Quelles arnaques ciblent les freelances et comment vous en protéger ?",
+        "objectif": "Vous identifierez les arnaques courantes (plateformes abusives, contrats déséquilibrés) et apprendrez à les éviter, avec des outils pour vous protéger.",
+        "concept_cle": "Liste des arnaques fréquentes et méthodes de protection.",
+        "exemple": "Thomas évite une plateforme qui propose des missions à des tarifs anormalement bas, après avoir vérifié les avis en ligne.",
+        "limite": "N’aborde pas les détails des contrats types (À définir avec l’auteur).",
+        "mots_cible": "500-700"
+      },
+      {
+        "numero": "5",
+        "titre_section": "Comment éviter la requalification en salarié déguisé et ses conséquences ?",
+        "objectif": "Vous comprendrez les critères de requalification en salarié déguisé et découvrirez des méthodes pour vous protéger (contrats clairs, autonomie réelle).",
+        "concept_cle": "Critères de requalification et bonnes pratiques pour les éviter.",
+        "exemple": "Thomas vérifie que ses contrats respectent les critères d’autonomie et évite de travailler exclusivement pour un seul client.",
+        "limite": "N’aborde pas les aspects juridiques approfondis (À définir avec l’auteur).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": "2500-3500"
   },
   {
     "numero": "9",
-    "titre": "Ajuster sa stratégie après 90 jours",
+    "titre": "Préparer un plan de repli",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment évaluer objectivement ses résultats (sans se mentir) ?",
-        "objectif": "Vous calculerez votre performance nette et la comparerez à vos objectifs initiaux.",
-        "concept_cle": "Performance brute, performance nette, benchmark, inflation.",
-        "exemple": "Thomas constate que son portefeuille a progressé de 12% en 3 mois, mais seulement de 5% après frais.",
-        "limite": "Ne détaille pas les benchmarks avancés (ex: Sharpe ratio) — hors périmètre.",
+        "titre_section": "Quels critères définir pour savoir quand abandonner votre activité ?",
+        "objectif": "Vous déterminerez des critères objectifs (seuil de revenus, épuisement professionnel) pour évaluer la viabilité de votre activité et savoir quand arrêter.",
+        "concept_cle": "Définition des critères de sortie pour un plan de repli.",
+        "exemple": "Thomas fixe un seuil de revenus minimum (2 500 € net/mois) et un délai (12 mois) pour évaluer la viabilité de son activité.",
+        "limite": "N’aborde pas les options concrètes de repli (Section 2 de ce chapitre).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Quels signaux indiquent qu’il faut ajuster (ou arrêter) sa stratégie ?",
-        "objectif": "Vous identifierez 3 signaux d’alerte pour revoir ou interrompre votre approche.",
-        "concept_cle": "Dépassement du seuil de perte, changement de profil de risque, objectifs atteints.",
-        "exemple": "Thomas décide d’arrêter après avoir perdu 25% de son capital, dépassant son seuil de -15%.",
-        "limite": "Ne détaille pas les stratégies de sortie complexes — hors périmètre.",
-        "mots_cible": "450-650"
+        "titre_section": "Quelles options concrètes pour rebondir après un échec en freelance ?",
+        "objectif": "Vous découvrirez des options concrètes pour rebondir (retour au salariat, reconversion, création d’entreprise) et les étapes pour les mettre en œuvre.",
+        "concept_cle": "Stratégies de repli et étapes de mise en œuvre.",
+        "exemple": "Thomas prépare un CV mettant en avant ses compétences en freelance, et maintient son réseau salarié pour faciliter un retour en CDI si nécessaire.",
+        "limite": "N’aborde pas les détails des statuts juridiques pour une création d’entreprise (hors périmètre).",
+        "mots_cible": "600-800"
       },
       {
         "numero": "3",
-        "titre_section": "Poursuivre, diversifier ou arrêter : comment prendre la bonne décision ?",
-        "objectif": "Vous choisirez entre 3 options en fonction de vos résultats et de votre situation.",
-        "concept_cle": "Réinvestissement, diversification, désengagement.",
-        "exemple": "Thomas décide de diversifier une partie de ses gains vers des ETF traditionnels.",
-        "limite": "Ne détaille pas les stratégies de diversification avancées — À définir avec l’auteur.",
-        "mots_cible": "400-600"
+        "titre_section": "Comment préserver vos droits sociaux en cas de retour au salariat ?",
+        "objectif": "Vous apprendrez à préserver vos droits sociaux (chômage, retraite) en cas de retour au salariat, avec des stratégies pour optimiser votre transition.",
+        "concept_cle": "Stratégies pour préserver ses droits sociaux.",
+        "exemple": "Thomas négocie une rupture conventionnelle pour conserver ses droits au chômage, et cotise à une retraite complémentaire en freelance.",
+        "limite": "N’aborde pas les détails des régimes de retraite ou de chômage (À définir avec l’auteur).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Comment capitaliser sur son expérience pour ses prochains investissements ?",
-        "objectif": "Vous tirerez des leçons de vos 90 jours pour améliorer vos futures stratégies.",
-        "concept_cle": "Apprentissage continu, journal d’investissement, ajustement des objectifs.",
-        "exemple": "Thomas note dans son journal qu’il a sous-estimé l’impact des frais sur sa performance.",
-        "limite": "Ne propose pas de plan d’action détaillé pour les prochains investissements — hors périmètre.",
+        "titre_section": "Comment évaluer régulièrement la viabilité de votre activité ?",
+        "objectif": "Vous utiliserez des outils pour évaluer régulièrement la viabilité de votre activité (tableaux de bord, indicateurs clés) et ajuster votre plan de repli.",
+        "concept_cle": "Méthodes d’évaluation continue de la viabilité.",
+        "exemple": "Thomas utilise un tableau de bord mensuel pour suivre son chiffre d’affaires, ses charges et sa trésorerie, et ajuste son plan de repli en conséquence.",
+        "limite": "N’aborde pas les techniques de prospection ou de gestion financière (Chapitre 5 et 6).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": "2000-2800"
   }
 ]

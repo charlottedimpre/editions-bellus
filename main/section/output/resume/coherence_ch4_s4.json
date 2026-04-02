@@ -3,24 +3,25 @@
   "section": 4,
   "chapitre_numero": "4",
   "section_numero": "4",
-  "these_centrale": "L'identification de trois signaux clés – volume anormal, hype médiatique suspecte et ordres de vente massifs – est primordiale pour détecter et éviter les manipulations de marché.",
+  "these_centrale": "Le calcul précis du Taux Journalier Moyen (TJM) en intégrant toutes les charges et jours non facturables est essentiel pour une tarification juste et rentable en freelance.",
   "arguments_cles": [
-    "Une augmentation soudaine et disproportionnée du volume des transactions sans raison apparente signale une manipulation.",
-    "La hype médiatique ou sur les réseaux sociaux, souvent artificielle et excessive, est un indicateur de manœuvre coordonnée.",
-    "L'observation d'ordres de vente massifs récurrents suggère que les manipulateurs se préparent à liquider leurs positions."
+    "Le TJM doit couvrir le revenu net annuel souhaité, les charges professionnelles (sociales, impôts, fonctionnement) et les jours de congés/non facturables.",
+    "Une estimation réaliste des jours facturables annuels (200-240 jours) est nécessaire pour le calcul.",
+    "La formule TJM brut = (Revenu net annuel + Charges professionnelles annuelles) / Jours facturables annuels permet d'éviter la sous-évaluation des tarifs.",
+    "Le TJM calculé est une base à ajuster selon le secteur, l'expérience et la demande du marché.",
+    "Le TJM doit être révisé annuellement pour s'adapter à l'évolution des charges, revenus et du marché."
   ],
   "concepts_introduits": [
-    "Manipulation de marché : Intervention visant à tromper pour influencer artificiellement les prix.",
-    "Pump and dump : Schéma de manipulation consistant à faire monter puis vendre massivement un actif.",
-    "Volume anormal : Augmentation soudaine et disproportionnée des transactions.",
-    "Hype médiatique : Communication excessive et souvent artificielle sur un actif.",
-    "Ordres de vente massifs : Blocs d'ordres de vente importants apparaissant soudainement."
+    "Taux Journalier Moyen (TJM) : Tarif journalier brut pour couvrir revenus, charges et jours non facturés.",
+    "Charges sociales : Cotisations obligatoires versées aux organismes sociaux.",
+    "Jours non facturables : Jours travaillés non directement rémunérés par un client (congés, formation, etc.)."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"Gagner de l'argent facilement\"",
-    "\"Le piège de la peur de manquer une opportunité\""
+    "Les erreurs de tarification.",
+    "Travailler excessivement pour un revenu insuffisant.",
+    "Le calcul complexe au premier abord."
   ],
-  "ton_angle": "Pragmatique, axé sur la détection de signaux et la préservation du capital.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'identification de trois signaux clés – volume anormal, hype médiatique suspecte et ordres de vente massifs – est primordiale pour détecter et éviter les manipulations de marché.</these_centrale>\n<arguments_cles>\n- Une augmentation soudaine et disproportionnée du volume des transactions sans raison apparente signale une manipulation.\n- La hype médiatique ou sur les réseaux sociaux, souvent artificielle et excessive, est un indicateur de manœuvre coordonnée.\n- L'observation d'ordres de vente massifs récurrents suggère que les manipulateurs se préparent à liquider leurs positions.\n</arguments_cles>\n<concepts_introduits>\n- Manipulation de marché : Intervention visant à tromper pour influencer artificiellement les prix.\n- Pump and dump : Schéma de manipulation consistant à faire monter puis vendre massivement un actif.\n- Volume anormal : Augmentation soudaine et disproportionnée des transactions.\n- Hype médiatique : Communication excessive et souvent artificielle sur un actif.\n- Ordres de vente massifs : Blocs d'ordres de vente importants apparaissant soudainement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Gagner de l'argent facilement\"\n- \"Le piège de la peur de manquer une opportunité\"\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur la détection de signaux et la préservation du capital.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et didactique, visant à fournir une méthode de calcul concrète.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Le calcul précis du Taux Journalier Moyen (TJM) en intégrant toutes les charges et jours non facturables est essentiel pour une tarification juste et rentable en freelance.</these_centrale>\n<arguments_cles>\n- Le TJM doit couvrir le revenu net annuel souhaité, les charges professionnelles (sociales, impôts, fonctionnement) et les jours de congés/non facturables.\n- Une estimation réaliste des jours facturables annuels (200-240 jours) est nécessaire pour le calcul.\n- La formule TJM brut = (Revenu net annuel + Charges professionnelles annuelles) / Jours facturables annuels permet d'éviter la sous-évaluation des tarifs.\n- Le TJM calculé est une base à ajuster selon le secteur, l'expérience et la demande du marché.\n- Le TJM doit être révisé annuellement pour s'adapter à l'évolution des charges, revenus et du marché.\n</arguments_cles>\n<concepts_introduits>\n- Taux Journalier Moyen (TJM) : Tarif journalier brut pour couvrir revenus, charges et jours non facturés.\n- Charges sociales : Cotisations obligatoires versées aux organismes sociaux.\n- Jours non facturables : Jours travaillés non directement rémunérés par un client (congés, formation, etc.).\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Les erreurs de tarification.\n- Travailler excessivement pour un revenu insuffisant.\n- Le calcul complexe au premier abord.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et didactique, visant à fournir une méthode de calcul concrète.</ton_angle>\n</fiche>"
 }

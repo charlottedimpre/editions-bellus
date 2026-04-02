@@ -3,23 +3,28 @@
   "section": 2,
   "chapitre_numero": "8",
   "section_numero": "2",
-  "these_centrale": "Le calcul des plus-values sur cryptomonnaies s'effectue via les méthodes FIFO ou coût moyen, nécessitant la connaissance des valeurs d'acquisition et de cession.",
+  "these_centrale": "Il est impératif d'anticiper et de préparer des solutions pour les trous de trésorerie afin de garantir la pérennité de son activité.",
   "arguments_cles": [
-    "La plus-value ou moins-value est la différence entre la valeur de cession et la valeur d'acquisition.",
-    "La méthode FIFO (First-In, First-Out) considère que les premières unités achetées sont les premières vendues.",
-    "La méthode du coût moyen pondéré calcule un prix moyen pour toutes les unités détenues.",
-    "Le choix de la méthode impacte le montant des impôts et nécessite une conservation rigoureuse des preuves."
+    "L'épargne de précaution constitue une réserve essentielle pour couvrir les dépenses pendant une période définie.",
+    "Le calcul de l'épargne repose sur l'évaluation des charges mensuelles fixes multipliées par la période de couverture souhaitée.",
+    "Les outils de suivi de trésorerie aident à visualiser les flux et à identifier les déficits potentiels.",
+    "Les financements à court terme (facilité de caisse, découvert autorisé) sont des solutions en cas de décalage."
   ],
   "concepts_introduits": [
-    "Plus-value : Gain réalisé lors de la vente d'un actif.",
-    "Moins-value : Perte réalisée lors de la vente d'un actif.",
-    "Valeur d'acquisition : Prix payé pour obtenir un actif, frais inclus.",
-    "Valeur de cession : Prix auquel un actif est vendu.",
-    "FIFO (First-In, First-Out) : Méthode de valorisation des stocks, premier entré, premier sorti.",
-    "Coût moyen pondéré : Méthode de calcul du prix moyen d'un actif acquis à différents moments."
+    "Trou de trésorerie : Situation où les décaissements excèdent les encaissements, créant un besoin de financement ponctuel.",
+    "Épargne de précaution : Réserve d'argent pour couvrir les dépenses fixes en cas d'imprévu.",
+    "Tableau prévisionnel : Outil de suivi des flux financiers entrants et sortants pour anticiper les besoins.",
+    "Facilité de caisse : Crédit court terme accordé par la banque pour couvrir un découvert temporaire.",
+    "Découvert autorisé : Montant maximum qu'une banque autorise un client à dépenser sur son compte."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et informatif, axé sur les étapes de calcul et les implications fiscales.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le calcul des plus-values sur cryptomonnaies s'effectue via les méthodes FIFO ou coût moyen, nécessitant la connaissance des valeurs d'acquisition et de cession.</these_centrale>\n<arguments_cles>\n- La plus-value ou moins-value est la différence entre la valeur de cession et la valeur d'acquisition.\n- La méthode FIFO (First-In, First-Out) considère que les premières unités achetées sont les premières vendues.\n- La méthode du coût moyen pondéré calcule un prix moyen pour toutes les unités détenues.\n- Le choix de la méthode impacte le montant des impôts et nécessite une conservation rigoureuse des preuves.\n</arguments_cles>\n<concepts_introduits>\n- Plus-value : Gain réalisé lors de la vente d'un actif.\n- Moins-value : Perte réalisée lors de la vente d'un actif.\n- Valeur d'acquisition : Prix payé pour obtenir un actif, frais inclus.\n- Valeur de cession : Prix auquel un actif est vendu.\n- FIFO (First-In, First-Out) : Méthode de valorisation des stocks, premier entré, premier sorti.\n- Coût moyen pondéré : Méthode de calcul du prix moyen d'un actif acquis à différents moments.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le détail précis des formules de calcul pour chaque méthode.\n- L'utilisation du terme \"gain\" sans le définir explicitement comme plus-value.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et informatif, axé sur les étapes de calcul et les implications fiscales.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Situation où les décaissements dépassent les encaissements sur une période donnée.",
+    "Retards de paiement, difficultés à honorer les charges, cessation d'activité.",
+    "Marge de sécurité précieuse, réduction du stress financier.",
+    "Commencer petit et augmenter progressivement.",
+    "Utiliser avec parcimonie, engendrent des frais bancaires."
+  ],
+  "ton_angle": "Informatif et pragmatique, proposant des solutions concrètes.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Il est impératif d'anticiper et de préparer des solutions pour les trous de trésorerie afin de garantir la pérennité de son activité.</these_centrale>\n<arguments_cles>\n- L'épargne de précaution constitue une réserve essentielle pour couvrir les dépenses pendant une période définie.\n- Le calcul de l'épargne repose sur l'évaluation des charges mensuelles fixes multipliées par la période de couverture souhaitée.\n- Les outils de suivi de trésorerie aident à visualiser les flux et à identifier les déficits potentiels.\n- Les financements à court terme (facilité de caisse, découvert autorisé) sont des solutions en cas de décalage.\n</arguments_cles>\n<concepts_introduits>\n- Trou de trésorerie : Situation où les décaissements excèdent les encaissements, créant un besoin de financement ponctuel.\n- Épargne de précaution : Réserve d'argent pour couvrir les dépenses fixes en cas d'imprévu.\n- Tableau prévisionnel : Outil de suivi des flux financiers entrants et sortants pour anticiper les besoins.\n- Facilité de caisse : Crédit court terme accordé par la banque pour couvrir un découvert temporaire.\n- Découvert autorisé : Montant maximum qu'une banque autorise un client à dépenser sur son compte.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Situation où les décaissements dépassent les encaissements sur une période donnée.\n- Retards de paiement, difficultés à honorer les charges, cessation d'activité.\n- Marge de sécurité précieuse, réduction du stress financier.\n- Commencer petit et augmenter progressivement.\n- Utiliser avec parcimonie, engendrent des frais bancaires.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, proposant des solutions concrètes.</ton_angle>\n</fiche>"
 }

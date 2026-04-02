@@ -3,19 +3,29 @@
   "section": 2,
   "chapitre_numero": "6",
   "section_numero": "2",
-  "these_centrale": "Face aux mouvements extrêmes du marché, il est crucial d'appliquer une stratégie prédéfinie basée sur la rationalité plutôt que l'émotion pour gérer son portefeuille.",
+  "these_centrale": "Provisionner systématiquement ses charges sociales, fiscales et la TVA est une étape fondamentale pour éviter les mauvaises surprises financières et assurer la pérennité de son activité freelance.",
   "arguments_cles": [
-    "La moyenne à la baisse consiste à acheter plus d'actifs à prix réduit lors d'une forte chute pour diminuer le coût moyen d'acquisition.",
-    "La prise de profit partielle permet de sécuriser une partie des gains en vendant une fraction d'un actif lors d'une hausse importante.",
-    "Le rééquilibrage vise à ramener la proportion d'un actif dans le portefeuille à son allocation initiale après une variation de prix significative."
+    "De nombreux freelances débutants négligent le provisionnement, confondant chiffre d'affaires et revenu disponible.",
+    "Le calcul des provisions dépend du statut juridique (micro-entreprise, entreprise individuelle, société).",
+    "Une règle générale recommandée est de mettre de côté 30 % à 40 % du chiffre d'affaires encaissé.",
+    "L'absence de provisionnement adéquat peut entraîner des difficultés financières, majorations, pénalités et contrôles.",
+    "Le provisionnement doit être effectué sur un compte bancaire dédié et le plus tôt possible."
   ],
   "concepts_introduits": [
-    "Moyenne à la baisse : Stratégie d'achat supplémentaire lors d'une baisse pour réduire le prix moyen d'acquisition.",
-    "Prise de profit partielle : Vente d'une fraction d'un actif pour sécuriser des gains tout en conservant une exposition.",
-    "Rééquilibrage : Ajustement des proportions d'actifs dans un portefeuille pour maintenir l'allocation de risque définie."
+    "Charges sociales: Cotisations obligatoires pour la protection sociale.",
+    "Charges fiscales: Impôts et taxes dus à l'État.",
+    "TVA: Taxe sur la valeur ajoutée collectée et reversée.",
+    "Micro-entreprise: Régime simplifié de déclaration et paiement.",
+    "Entreprise individuelle (EURL): Forme juridique pour un entrepreneur individuel.",
+    "Société (SASU): Forme juridique de société par actions simplifiée unipersonnelle.",
+    "Provisionnement: Mise de côté d'une partie des revenus pour des dépenses futures."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Instructif et prescriptif, expliquant des stratégies de gestion de portefeuille en cas de volatilité.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Face aux mouvements extrêmes du marché, il est crucial d'appliquer une stratégie prédéfinie basée sur la rationalité plutôt que l'émotion pour gérer son portefeuille.</these_centrale>\n<arguments_cles>\n- La moyenne à la baisse consiste à acheter plus d'actifs à prix réduit lors d'une forte chute pour diminuer le coût moyen d'acquisition.\n- La prise de profit partielle permet de sécuriser une partie des gains en vendant une fraction d'un actif lors d'une hausse importante.\n- Le rééquilibrage vise à ramener la proportion d'un actif dans le portefeuille à son allocation initiale après une variation de prix significative.\n</arguments_cles>\n<concepts_introduits>\n- Moyenne à la baisse : Stratégie d'achat supplémentaire lors d'une baisse pour réduire le prix moyen d'acquisition.\n- Prise de profit partielle : Vente d'une fraction d'un actif pour sécuriser des gains tout en conservant une exposition.\n- Rééquilibrage : Ajustement des proportions d'actifs dans un portefeuille pour maintenir l'allocation de risque définie.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Agir sous le coup de la panique ou de l'euphorie ambiante.\n- Vendre l'intégralité de ses actifs lors d'une hausse.\n- Improvisation dans les décisions de trading.\n</a_ne_not_repeter>\n<ton_angle>Instructif et prescriptif, expliquant des stratégies de gestion de portefeuille en cas de volatilité.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "La formulation \"mauvaises surprises financières\".",
+    "L'idée que le chiffre d'affaires est égal au revenu disponible.",
+    "Le chiffre précis \"30 % à 40 %\" sans le contexte de règle générale et estimation."
+  ],
+  "ton_angle": "Pédagogique et préventif, expliquant les démarches à suivre et les risques à éviter.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Provisionner systématiquement ses charges sociales, fiscales et la TVA est une étape fondamentale pour éviter les mauvaises surprises financières et assurer la pérennité de son activité freelance.</these_centrale>\n<arguments_cles>\n- De nombreux freelances débutants négligent le provisionnement, confondant chiffre d'affaires et revenu disponible.\n- Le calcul des provisions dépend du statut juridique (micro-entreprise, entreprise individuelle, société).\n- Une règle générale recommandée est de mettre de côté 30 % à 40 % du chiffre d'affaires encaissé.\n- L'absence de provisionnement adéquat peut entraîner des difficultés financières, majorations, pénalités et contrôles.\n- Le provisionnement doit être effectué sur un compte bancaire dédié et le plus tôt possible.\n</arguments_cles>\n<concepts_introduits>\n- Charges sociales: Cotisations obligatoires pour la protection sociale.\n- Charges fiscales: Impôts et taxes dus à l'État.\n- TVA: Taxe sur la valeur ajoutée collectée et reversée.\n- Micro-entreprise: Régime simplifié de déclaration et paiement.\n- Entreprise individuelle (EURL): Forme juridique pour un entrepreneur individuel.\n- Société (SASU): Forme juridique de société par actions simplifiée unipersonnelle.\n- Provisionnement: Mise de côté d'une partie des revenus pour des dépenses futures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La formulation \"mauvaises surprises financières\".\n- L'idée que le chiffre d'affaires est égal au revenu disponible.\n- Le chiffre précis \"30 % à 40 %\" sans le contexte de règle générale et estimation.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et préventif, expliquant les démarches à suivre et les risques à éviter.</ton_angle>\n</fiche>"
 }

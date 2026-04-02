@@ -1,0 +1,391 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 6,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "comment définir son offre freelance sans expérience",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-02T07:42:03.696Z",
+    "processed_at": "2026-04-02T07:42:05.746Z",
+    "total_time_taken": 2.05,
+    "engine_url": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 97
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 3,
+      "title": "7 conseils pour se lancer en freelance sans expérience",
+      "link": "https://www.nouvelleviepro.fr/info/conseils-se-lancer-freelance-sans-experience",
+      "domain": "www.nouvelleviepro.fr",
+      "displayed_link": "https://www.nouvelleviepro.fr › info › conseils-se-lance...",
+      "snippet": "16 août 2023 — Avant de vous lancer en freelance, le premier conseil est de faire le point sur vos compétences professionnelles. La bilan de compétences permet ...",
+      "prerender": false,
+      "date": "16 août 2023",
+      "date_utc": "2023-08-16T00:00:00.000Z"
+    },
+    {
+      "position": 2,
+      "block_position": 4,
+      "title": "Comment commencer à faire du freelance si on n'a pas d' ...",
+      "link": "https://www.reddit.com/r/freelance/comments/1k12g1s/how_do_you_start_freelancing_if_you_dont_have/?tl=fr",
+      "domain": "www.reddit.com",
+      "displayed_link": "Plus de 100 commentaires  ·  il y a 11 mois",
+      "snippet": "Eh bien, faut pouvoir montrer aux clients potentiels que t'es capable de faire le boulot. Tu peux le faire en montrant des projets perso ou ton ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "101 réponses&nbsp;",
+            "&nbsp;Meilleure réponse:&nbsp;Propose ton aide bénévole pour des projets communautaires, ça te permettra de te créer ...Termes manquants : son ‎| Afficher les résultats avec : son"
+          ]
+        }
+      }
+    },
+    {
+      "position": 3,
+      "block_position": 5,
+      "title": "Débuter en freelance sans expérience : le plan d'action ...",
+      "link": "https://madskills.fr/debuter-en-freelance/",
+      "domain": "madskills.fr",
+      "displayed_link": "https://madskills.fr › debuter-en-freelance",
+      "snippet": "21 nov. 2025 — Flexibilité : vous organisez votre temps comme vous le souhaitez; Autonomie ; Compétences techniques : web, graphisme, langues, montage, etc.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : son ‎| Afficher les résultats avec : son"
+          ]
+        }
+      },
+      "date": "21 nov. 2025",
+      "date_utc": "2025-11-21T00:00:00.000Z"
+    },
+    {
+      "position": 4,
+      "block_position": 7,
+      "title": "Devenir freelance : Comment se lancer sans expérience ?",
+      "link": "https://www.sogexia.com/blog/devenir-freelance",
+      "domain": "www.sogexia.com",
+      "displayed_link": "https://www.sogexia.com › Blog",
+      "snippet": "11 juin 2025 — La formule devenir freelance revient à créer son emploi : identité juridique, fiscalité et prospection sont indissociables. Choisissez votre ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "4,3(8 483)",
+            "Gratuit",
+            "‎Finance&nbsp;&nbsp;&nbsp;En savoir plus sur les notes associées aux avisLes avis ne sont pas validés par la recherche Google"
+          ]
+        }
+      },
+      "date": "11 juin 2025",
+      "date_utc": "2025-06-11T00:00:00.000Z"
+    },
+    {
+      "position": 5,
+      "block_position": 8,
+      "title": "7 conseils pour se lancer en freelance sans expérience",
+      "link": "https://www.hellowork.com/fr-fr/medias/freelance-sans-experience.html",
+      "domain": "www.hellowork.com",
+      "displayed_link": "https://www.hellowork.com › ... › Évoluer dans sa vie pro",
+      "snippet": "19 août 2025 — Pour trouver votre niche, appuyez-vous sur trois piliers : vos compétences techniques, votre parcours (professionnel ou personnel), et vos ...",
+      "prerender": false,
+      "date": "19 août 2025",
+      "date_utc": "2025-08-19T00:00:00.000Z"
+    },
+    {
+      "position": 6,
+      "block_position": 10,
+      "title": "Se lancer en freelance sans expérience: le guide complet.",
+      "link": "https://upmanager.fr/se-lancer-en-freelance-sans-experience-le-guide-complet/",
+      "domain": "upmanager.fr",
+      "displayed_link": "https://upmanager.fr › se-lancer-en-freelance-sans-expe...",
+      "snippet": "Étape 1 : Définir son offre de services · Identifier ce qu'on sait faire + ce qu'on aime. · Adapter l'offre à la demande actuelle (ex. rédaction de posts LinkedIn ...",
+      "prerender": false
+    },
+    {
+      "position": 7,
+      "block_position": 11,
+      "title": "Se lancer en freelance sans expérience : 8 conseils d'experts",
+      "link": "https://culturefreelance.com/se-lancer-en-freelance-sans-experience/",
+      "domain": "culturefreelance.com",
+      "displayed_link": "https://culturefreelance.com › se-lancer-en-freelance-sa...",
+      "snippet": "17 déc. 2024 — Avant de sélectionner un métier, il faut trouver une niche. Le choix du domaine fait partie intégrante de la stratégie du freelance débutant. Un ...",
+      "prerender": false,
+      "date": "17 déc. 2024",
+      "date_utc": "2024-12-17T00:00:00.000Z"
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Se lancer en freelance sans expérience",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Se+lancer+en+freelance+sans+exp%C3%A9rience&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAgtEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Devenir freelance auto-entrepreneur",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Devenir+freelance+auto-entrepreneur&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAhEEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Se lancer en freelance administratif",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Se+lancer+en+freelance+administratif&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAhBEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment devenir freelance",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Comment+devenir+freelance&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAg-EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Devenir freelance gratuitement",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Devenir+freelance+gratuitement&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAg8EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Comment devenir freelance en France",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Comment+devenir+freelance+en+France&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAg2EAE",
+      "block_position": 12
+    },
+    {
+      "query": "Se lancer en freelance communication",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Se+lancer+en+freelance+communication&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAgyEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Travailler en freelance pour une entreprise",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Travailler+en+freelance+pour+une+entreprise&sa=X&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ1QJ6BAgxEAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Comment convaincre un recruteur quand on n'a pas d'expérience ?",
+      "answer": "Si vous avez une ambition réelle, exprimez la : vous montrerez que vous n'êtes pas là par hasard. Par exemple, si vous postulez pour un emploi d'opérateur et que vous vous sentez l'âme d'un manager, sentez-vous libre d'expliquer que vous aimeriez évoluer vers la gestion d'équipe à moyen terme.",
+      "source": {
+        "link": "http://www.groupe-psc.fr/Votre-carriere-chez-PSC/Nos-Astuces-Emploi/Comment-convaincre-un-recruteur-quand-on-n-a-pas-d-experience#:~:text=Si%20vous%20avez%20une%20ambition,d'%C3%A9quipe%20%C3%A0%20moyen%20terme.",
+        "displayed_link": "http://www.groupe-psc.fr › Nos-Astuces-Emploi › Com...",
+        "title": "Comment convaincre un recruteur quand on n'a pas d'expérience"
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Puis-je me lancer comme indépendant sans expérience ?",
+      "answer": "Traduit par Google (English → français)·Voir l'originalMasquer l'original",
+      "source": {
+        "link": "https://translate.google.com/translate?u=https://uniathena.com/how-to-start-freelancing-no-experience&hl=fr&sl=en&tl=fr&client=rq#:~:text=However%2C%20the%20reality%20is%20that,a%20flexible%20and%20accessible%20path.",
+        "displayed_link": "https://uniathena.com › how-to-start-freelancing-no-expe...",
+        "title": "Comment se lancer en freelance sans expérience | UniAthenaHow to Start Freelancing With No Experience | UniAthena"
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Comment se présenter quand on n'a pas d'expérience ?",
+      "answer": "Comment se valoriser en entretien quand on manque d'expérience professionnelle ?",
+      "answer_list": [
+        {
+          "text": "Fais le point sur tes atouts et compétences. ..."
+        },
+        {
+          "text": "Présente tes expériences autrement. ..."
+        },
+        {
+          "text": "Travaille ta motivation et ton discours. ..."
+        },
+        {
+          "text": "Mets en avant tes qualités personnelles. ..."
+        },
+        {
+          "text": "Prépare-toi à répondre aux questions sur ton manque d'expérience."
+        }
+      ],
+      "source": {
+        "link": "https://diplomeo.com/actualite-entretien_se_valoriser_sans_experience",
+        "displayed_link": "https://diplomeo.com › actualite-entretien_se_valoriser_s...",
+        "title": "Comment se valoriser en entretien quand on manque d'expérience ..."
+      },
+      "block_position": 9
+    },
+    {
+      "question": "Quel métier paye 3000 € sans diplôme ?",
+      "answer": "Comparez les 10 métiers en un coup d'œil",
+      "source": {
+        "link": "https://www.kandbaz.com/creation-entreprise/metier-pour-gagner-3-000-e-par-mois/",
+        "displayed_link": "https://www.kandbaz.com › creation-entreprise › metier-...",
+        "title": "10 métiers pour gagner 3 000 € par mois (sans diplôme obligatoire)"
+      },
+      "block_position": 9
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "discussion_title": "Freelance sans expérience professionnelle",
+      "link": "https://www.reddit.com/r/developpeurs/comments/1quxryb/freelance_sans_exp%C3%A9rience_professionnelle/",
+      "source": {
+        "source_title": "Reddit",
+        "domain": "www.reddit.com",
+        "source_community": "r/developpeurs",
+        "comments_count": "9 commentaires",
+        "time": "il y a 1 mois"
+      },
+      "block_position": 6
+    },
+    {
+      "discussion_title": "Conseils pour décrocher ma première mission freelance (je galère…)",
+      "link": "https://www.free-work.com/fr/tech-it/forum/t/conseils-pour-decrocher-ma-premiere-mission-freelance-je-galere",
+      "source": {
+        "source_title": "Free-Work",
+        "domain": "www.free-work.com",
+        "source_community": "Free-Work",
+        "time": "il y a 9 mois"
+      },
+      "block_position": 6
+    },
+    {
+      "discussion_title": "Devenir freelance sans expérience?",
+      "link": "https://www.free-work.com/fr/tech-it/forum/t/devenir-freelance-sans-experience",
+      "source": {
+        "source_title": "Free-Work",
+        "domain": "www.free-work.com",
+        "source_community": "Free-Work",
+        "time": "il y a 8 ans"
+      },
+      "block_position": 6
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Démarrer une carrière de freelance sans expérience ...",
+      "length": "43.11",
+      "source": "YouTube · AI for you - Morgan GautherotYouTube · AI for you - Morgan Gautherot",
+      "link": "https://www.youtube.com/watch?v=9faAhf1CI7g",
+      "block_position": 2
+    },
+    {
+      "position": 2,
+      "title": "Comment Marketer son offre de services en tant que freelance",
+      "length": "1.02",
+      "source": "YouTube · Malt FranceYouTube · Malt France",
+      "link": "https://www.youtube.com/watch?v=qhuDJz7fAMY",
+      "block_position": 2
+    },
+    {
+      "position": 3,
+      "title": "LES 5 ÉTAPES POUR DEVENIR FREELANCE (même sans ...",
+      "length": "13.2",
+      "source": "YouTube · AmandinenParleYouTube · AmandinenParle",
+      "link": "https://www.youtube.com/watch?v=c5FdOsBXWnY",
+      "block_position": 2
+    }
+  ],
+  "answer_box": {
+    "answer_box_type": 19,
+    "answers": [
+      {
+        "source": {
+          "link": "https://www.swapn.fr/blog/comment-se-lancer-en-freelance-sans-exp%C3%A9rience",
+          "title": "Comment se lancer en freelance sans expérience en 2026 ?",
+          "displayed_link": "https://www.swapn.fr › ... › Devenir freelance"
+        },
+        "steps": [
+          "Identifier ses compétences et sa niche. ...",
+          "Créer une offre claire. ...",
+          "Construire un portfolio. ...",
+          "Utiliser les plateformes de freelancing. ...",
+          "Exploiter son réseau et le bouche-à-oreille. ...",
+          "Rédiger une proposition convaincante. ...",
+          "Choisir le bon statut. ...",
+          "Fixer ses tarifs."
+        ],
+        "answer": "Comment se lancer en freelance sans expérience en 2026 ?"
+      }
+    ],
+    "block_position": 1
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=10&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8NMDegQIJxAS",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=10&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=20&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=30&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=40&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=50&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=60&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=comment+d%C3%A9finir+son+offre+freelance+sans+exp%C3%A9rience&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=zB3OafzUBaSp9u8P1velqQM&start=70&sa=N&sstk=Af77f_fNatKyn0mns_RaYbfHtB0fnoIeC69O0Ovar-lb3XWyq87mDK9vGvfRWuBsHq6lgptIS47sLoVt5PySZ3LRtWYfSzZs77ecjg&ved=2ahUKEwj86q2x1c6TAxWklP0HHdZ7KTUQ8tMDegQIJxAQ"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=comment%20d%C3%A9finir%20son%20offre%20freelance%20sans%20exp%C3%A9rience&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        }
+      ]
+    }
+  }
+}

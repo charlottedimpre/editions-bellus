@@ -3,24 +3,28 @@
   "section": 3,
   "chapitre_numero": "6",
   "section_numero": "3",
-  "these_centrale": "La tenue d'un journal d'investissement est un outil indispensable pour rationaliser les décisions, identifier les biais cognitifs et améliorer continuellement sa stratégie d'investissement.",
+  "these_centrale": "La gestion proactive de la trésorerie est fondamentale pour naviguer la variabilité des revenus freelance.",
   "arguments_cles": [
-    "Documenter systématiquement transactions, raisons, émotions et résultats pour analyser les choix passés.",
-    "Reconnaître et corriger les schémas de pensée menant à des erreurs récurrentes (ex: vente prématurée, achat impulsif).",
-    "Évaluer l'efficacité de la stratégie, identifier les points d'amélioration et favoriser l'apprentissage continu.",
-    "Garder une trace précise des transactions et des motivations pour comprendre l'évolution du portefeuille.",
-    "Construire une vision claire du comportement d'investisseur et l'aligner avec les objectifs à long terme."
+    "Constituer une épargne de précaution pour couvrir plusieurs mois de dépenses courantes.",
+    "Adopter un budget mensuel glissant pour ajuster les dépenses et réinjecter les excédents.",
+    "Anticiper les trous de trésorerie par une projection financière et des stratégies d'encaissement.",
+    "Séparer distinctement les finances professionnelles et personnelles pour une meilleure clarté.",
+    "Mettre en place un suivi régulier des revenus et dépenses via un tableau de bord."
   ],
   "concepts_introduits": [
-    "Journal d'investissement : Archive des décisions, émotions et résultats pour analyse.",
-    "Biais cognitifs : Erreurs systématiques de jugement affectant les décisions financières.",
-    "Schémas de pensée : Modèles de raisonnement récurrents dans la prise de décision.",
-    "Volatilité : Fluctuations rapides et importantes des prix sur les marchés.",
-    "Gestion réactive : Réagir aux événements du marché sans anticipation.",
-    "Gestion proactive : Anticiper et planifier les actions d'investissement."
+    "Épargne de précaution : Réserve financière pour couvrir dépenses courantes durant plusieurs mois.",
+    "Budget mensuel glissant : Budget réajusté chaque mois selon revenus et dépenses prévisionnels.",
+    "Trous de trésorerie : Périodes où dépenses prévues dépassent les encaissements attendus.",
+    "Projection financière : Estimation future des flux d'argent pour anticiper les besoins.",
+    "Tableau de bord : Outil visuel récapitulant la situation financière en temps réel."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pédagogique, axé sur le développement personnel de l'investisseur.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La tenue d'un journal d'investissement est un outil indispensable pour rationaliser les décisions, identifier les biais cognitifs et améliorer continuellement sa stratégie d'investissement.</these_centrale>\n<arguments_cles>\n- Documenter systématiquement transactions, raisons, émotions et résultats pour analyser les choix passés.\n- Reconnaître et corriger les schémas de pensée menant à des erreurs récurrentes (ex: vente prématurée, achat impulsif).\n- Évaluer l'efficacité de la stratégie, identifier les points d'amélioration et favoriser l'apprentissage continu.\n- Garder une trace précise des transactions et des motivations pour comprendre l'évolution du portefeuille.\n- Construire une vision claire du comportement d'investisseur et l'aligner avec les objectifs à long terme.\n</arguments_cles>\n<concepts_introduits>\n- Journal d'investissement : Archive des décisions, émotions et résultats pour analyse.\n- Biais cognitifs : Erreurs systématiques de jugement affectant les décisions financières.\n- Schémas de pensée : Modèles de raisonnement récurrents dans la prise de décision.\n- Volatilité : Fluctuations rapides et importantes des prix sur les marchés.\n- Gestion réactive : Réagir aux événements du marché sans anticipation.\n- Gestion proactive : Anticiper et planifier les actions d'investissement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Outil puissant\"\n- \"Pertes financières significatives\"\n- \"Fructueuses et d'autres non\"\n- \"Erreurs récurrentes\"\n- \"Sous l'emprise de la peur de manquer une opportunité\"\n- \"Amélioration continue\"\n- \"Gestion réactive et souvent émotionnelle à une gestion proactive et réfléchie\"\n- \"Réactions impulsives\"\n</a_ne_not_repeter>\n<ton_angle>Pédagogique, axé sur le développement personnel de l'investisseur.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "\"Mettre en place une stratégie solide\"",
+    "\"Entre trois et six mois\"",
+    "\"Compétence clé du freelance\"",
+    "\"À utiliser avec parcimonie\""
+  ],
+  "ton_angle": "Pragmatique et axé sur des solutions concrètes pour la gestion financière.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La gestion proactive de la trésorerie est fondamentale pour naviguer la variabilité des revenus freelance.</these_centrale>\n<arguments_cles>\n- Constituer une épargne de précaution pour couvrir plusieurs mois de dépenses courantes.\n- Adopter un budget mensuel glissant pour ajuster les dépenses et réinjecter les excédents.\n- Anticiper les trous de trésorerie par une projection financière et des stratégies d'encaissement.\n- Séparer distinctement les finances professionnelles et personnelles pour une meilleure clarté.\n- Mettre en place un suivi régulier des revenus et dépenses via un tableau de bord.\n</arguments_cles>\n<concepts_introduits>\n- Épargne de précaution : Réserve financière pour couvrir dépenses courantes durant plusieurs mois.\n- Budget mensuel glissant : Budget réajusté chaque mois selon revenus et dépenses prévisionnels.\n- Trous de trésorerie : Périodes où dépenses prévues dépassent les encaissements attendus.\n- Projection financière : Estimation future des flux d'argent pour anticiper les besoins.\n- Tableau de bord : Outil visuel récapitulant la situation financière en temps réel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Mettre en place une stratégie solide\"\n- \"Entre trois et six mois\"\n- \"Compétence clé du freelance\"\n- \"À utiliser avec parcimonie\"\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et axé sur des solutions concrètes pour la gestion financière.</ton_angle>\n</fiche>"
 }

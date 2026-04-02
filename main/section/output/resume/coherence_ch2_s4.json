@@ -3,25 +3,24 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "La sécurité des actifs numériques repose entièrement sur la responsabilité individuelle de l'utilisateur, dont la négligence constitue une vulnérabilité majeure face aux menaces.",
+  "these_centrale": "L'évaluation de la tolérance au risque financier et la préparation à la gestion des revenus irréguliers sont essentielles avant de se lancer dans le freelancing.",
   "arguments_cles": [
-    "La nature numérique des cryptomonnaies les expose aux malveillants.",
-    "Contrairement aux systèmes bancaires, il n'y a pas de protection collective dans le monde des cryptomonnaies.",
-    "Les pirates exploitent la négligence des utilisateurs (mots de passe faibles, clés privées partagées, appareils infectés).",
-    "Les erreurs humaines et la confiance accordée à des sources non sécurisées augmentent le risque."
+    "L'indépendance professionnelle implique des revenus fluctuants, nécessitant une préparation à l'instabilité.",
+    "Des simulations de scénarios financiers permettent d'évaluer la réaction face à des situations difficiles.",
+    "L'analyse des habitudes financières actuelles éclaire la future gestion budgétaire.",
+    "La maîtrise du risque et l'anticipation des imprévus sont déterminantes pour la viabilité d'une activité indépendante."
   ],
   "concepts_introduits": [
-    "Actifs numériques : Biens virtuels, comme les cryptomonnaies, stockés électroniquement.",
-    "Cryptomonnaies : Monnaies virtuelles utilisant la cryptographie pour la sécurité.",
-    "Clés privées : Codes secrets permettant d'accéder et de dépenser des cryptomonnaies.",
-    "Blockchain : Registre public, distribué et immuable des transactions."
+    "Tolérance au risque financier : Capacité à accepter et gérer des pertes financières potentielles.",
+    "Revenus irréguliers : Gains financiers dont le montant et la fréquence varient de manière imprévisible.",
+    "Résilience : Aptitude à surmonter les difficultés et à s'adapter aux changements.",
+    "Épargne de précaution : Montant mis de côté pour faire face aux dépenses imprévues."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La perte de bitcoins est définitive.",
-    "Pas de service client pour récupérer les fonds perdus.",
-    "La négligence des utilisateurs est une faille exploitée."
+    "Ne pas sous-estimer l'importance de la préparation financière avant le freelancing.",
+    "Éviter la précipitation lors de la transition vers l'indépendance."
   ],
-  "ton_angle": "Démonstratif et préventif, soulignant les conséquences financières des erreurs de sécurité.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La sécurité des actifs numériques repose entièrement sur la responsabilité individuelle de l'utilisateur, dont la négligence constitue une vulnérabilité majeure face aux menaces.</these_centrale>\n<arguments_cles>\n- La nature numérique des cryptomonnaies les expose aux malveillants.\n- Contrairement aux systèmes bancaires, il n'y a pas de protection collective dans le monde des cryptomonnaies.\n- Les pirates exploitent la négligence des utilisateurs (mots de passe faibles, clés privées partagées, appareils infectés).\n- Les erreurs humaines et la confiance accordée à des sources non sécurisées augmentent le risque.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Biens virtuels, comme les cryptomonnaies, stockés électroniquement.\n- Cryptomonnaies : Monnaies virtuelles utilisant la cryptographie pour la sécurité.\n- Clés privées : Codes secrets permettant d'accéder et de dépenser des cryptomonnaies.\n- Blockchain : Registre public, distribué et immuable des transactions.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La perte de bitcoins est définitive.\n- Pas de service client pour récupérer les fonds perdus.\n- La négligence des utilisateurs est une faille exploitée.\n</a_ne_pas_repeter>\n<ton_angle>Démonstratif et préventif, soulignant les conséquences financières des erreurs de sécurité.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique, axé sur l'auto-évaluation et la planification.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'évaluation de la tolérance au risque financier et la préparation à la gestion des revenus irréguliers sont essentielles avant de se lancer dans le freelancing.</these_centrale>\n<arguments_cles>\n- L'indépendance professionnelle implique des revenus fluctuants, nécessitant une préparation à l'instabilité.\n- Des simulations de scénarios financiers permettent d'évaluer la réaction face à des situations difficiles.\n- L'analyse des habitudes financières actuelles éclaire la future gestion budgétaire.\n- La maîtrise du risque et l'anticipation des imprévus sont déterminantes pour la viabilité d'une activité indépendante.\n</arguments_cles>\n<concepts_introduits>\n- Tolérance au risque financier : Capacité à accepter et gérer des pertes financières potentielles.\n- Revenus irréguliers : Gains financiers dont le montant et la fréquence varient de manière imprévisible.\n- Résilience : Aptitude à surmonter les difficultés et à s'adapter aux changements.\n- Épargne de précaution : Montant mis de côté pour faire face aux dépenses imprévues.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas sous-estimer l'importance de la préparation financière avant le freelancing.\n- Éviter la précipitation lors de la transition vers l'indépendance.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur l'auto-évaluation et la planification.</ton_angle>\n</fiche>"
 }

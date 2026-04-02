@@ -291,7 +291,63 @@ def _extract_sections_contents(chapter_data: dict[str, Any]) -> list[str]:
 
     return contents
 
-def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: int) -> None:
+
+def _wrap_text_to_width(pdf: FPDF, text: str, max_width: float) -> list[str]:
+    cleaned = _extract_text(text)
+    if not cleaned:
+        return [""]
+
+    words = cleaned.split()
+    lines: list[str] = []
+    current = ""
+
+    def _split_long_word(word: str) -> list[str]:
+        parts: list[str] = []
+        chunk = ""
+        for char in word:
+            candidate = chunk + char
+            if chunk and pdf.get_string_width(candidate) > max_width:
+                parts.append(chunk)
+                chunk = char
+            else:
+                chunk = candidate
+        if chunk:
+            parts.append(chunk)
+        return parts or [word]
+
+    for word in words:
+        if pdf.get_string_width(word) > max_width:
+            if current:
+                lines.append(current)
+                current = ""
+            lines.extend(_split_long_word(word))
+            continue
+
+        candidate = word if not current else f"{current} {word}"
+        if pdf.get_string_width(candidate) <= max_width:
+            current = candidate
+        else:
+            lines.append(current)
+            current = word
+
+    if current:
+        lines.append(current)
+
+    return lines or [""]
+
+
+def _build_toc_entries(chapters: list[dict[str, Any]], has_conclusion: bool) -> list[tuple[str, str]]:
+    entries: list[tuple[str, str]] = [("intro", "Introduction")]
+    for index, chapter_data in enumerate(chapters, start=1):
+        chapter_number = _extract_text(chapter_data.get("chapitre") or index)
+        chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
+        entries.append((f"chapter::{chapter_number}", f"Chapitre {chapter_number} - {chapter_title}"))
+    if has_conclusion:
+        entries.append(("conclusion", "Conclusion"))
+    return entries
+
+
+def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: int) -> int:
     chapter_number = _extract_text(chapter_data.get("chapitre") or default_number)
     chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
 
@@ -299,6 +355,7 @@ def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: 
     pdf.set_current_chapter_number(chapter_number)
     pdf.set_header_title(chapter_title)
     pdf.add_page()
+    start_page_no = pdf._display_page_no()
     pdf.set_font("Body", size=22)
     pdf.ln(20)
     pdf.multi_cell(
@@ -338,15 +395,18 @@ def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: 
             pdf.set_font("Body", size=12)
             pdf.multi_cell(0, 7, contenu.strip(), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.ln(8)
+    return start_page_no
 
-def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
+
+def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> int | None:
     if not conclusion_text:
-        return
+        return None
 
     _ensure_next_part_starts_on_even_page(pdf)
     pdf.set_current_chapter_number(None)
     pdf.set_header_title("Conclusion")
     pdf.add_page()
+    start_page_no = pdf._display_page_no()
     pdf.set_font("Body", size=22)
     pdf.ln(20)
     pdf.multi_cell(
@@ -370,44 +430,136 @@ def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> None:
 
     pdf.set_font("Body", size=12)
     pdf.multi_cell(0, 7, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    return start_page_no
 
 
-def _render_sommaire(pdf: BookPDF, chapters: list[dict[str, Any]], has_conclusion: bool) -> None:
-    if not chapters and not has_conclusion:
+def _render_sommaire(pdf: BookPDF, entries: list[tuple[str, str]], page_numbers: dict[str, int]) -> None:
+    if not entries:
         return
-
-    toc_line_height = 10
-    toc_line_gap = 2
-
-    entries: list[str] = []
-    entries.append("Introduction")
-    for index, chapter_data in enumerate(chapters, start=1):
-        chapter_number = _extract_text(chapter_data.get("chapitre") or index)
-        chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
-        entries.append(f"Chapitre {chapter_number} - {chapter_title}")
-    if has_conclusion:
-        entries.append("Conclusion")
 
     pdf.set_current_chapter_number(None)
     pdf.set_header_title("Sommaire")
     pdf.add_page()
 
-    pdf.ln(8)
-    pdf.set_font("Body", size=30)
-    pdf.multi_cell(0, 12, "Sommaire", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
-    pdf.ln(20)
+    content_width = pdf.w - pdf.l_margin - pdf.r_margin
+    page_col_width = 12
+    title_col_width = max(10, content_width - page_col_width)
 
-    pdf.set_font("Body", size=13)
-    for entry in entries:
+    # Combinaisons du titre + texte du sommaire, de la plus lisible a la plus compacte.
+    layout_candidates = [
+        (24, 10, 8, 13, 5.5),
+        (22, 9, 6, 12, 5.1),
+        (20, 8, 5, 11, 4.7),
+        (18, 7, 4, 10, 4.3),
+        (16, 6, 3, 9, 3.9),
+        (14, 5, 2, 8, 3.5),
+        (12, 4, 2, 7, 3.2),
+        (11, 4, 1, 6, 2.9),
+    ]
+
+    chosen_title_size = 11
+    chosen_title_line_height = 4
+    chosen_title_gap = 1
+    chosen_font_size = 6
+    chosen_line_height = 2.9
+    wrapped_entries: list[tuple[str, list[str]]] = []
+
+    safety_bottom = 1.0
+    for title_size, title_line_height, title_gap, font_size, line_height in layout_candidates:
+        pdf.set_y(24)
+        pdf.set_font("Body", size=title_size)
+        pdf.multi_cell(0, title_line_height, "Sommaire", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+        pdf.ln(title_gap)
+
+        available_height = max(1.0, (pdf.h - pdf.b_margin - safety_bottom) - pdf.get_y())
+        pdf.set_font("Body", size=font_size)
+
+        candidate_wrapped_entries: list[tuple[str, list[str]]] = []
+        total_lines = 0
+        for key, title in entries:
+            wrapped_title = _wrap_text_to_width(pdf, title, title_col_width)
+            candidate_wrapped_entries.append((key, wrapped_title))
+            total_lines += max(1, len(wrapped_title))
+
+        required_height = total_lines * line_height
+        if required_height <= available_height:
+            chosen_title_size = title_size
+            chosen_title_line_height = title_line_height
+            chosen_title_gap = title_gap
+            chosen_font_size = font_size
+            chosen_line_height = line_height
+            wrapped_entries = candidate_wrapped_entries
+            break
+
+        wrapped_entries = candidate_wrapped_entries
+
+    # Rendu final avec le layout retenu.
+    pdf.set_y(24)
+    pdf.set_font("Body", size=chosen_title_size)
+    pdf.multi_cell(
+        0,
+        chosen_title_line_height,
+        "Sommaire",
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="C",
+    )
+    pdf.ln(chosen_title_gap)
+
+    available_height = max(1.0, (pdf.h - pdf.b_margin - safety_bottom) - pdf.get_y())
+    pdf.set_font("Body", size=chosen_font_size)
+
+    left_col_x = pdf.l_margin
+    page_col_x = pdf.l_margin + title_col_width
+
+    row_heights = [
+        max(1, len(wrapped_title)) * chosen_line_height for _, wrapped_title in wrapped_entries
+    ]
+    content_height = sum(row_heights)
+    gaps_count = max(0, len(wrapped_entries) - 1)
+
+    # Etale les entrees pour occuper toute la page disponible.
+    gap_between_rows = 0.0
+    top_extra_offset = 0.0
+    if content_height < available_height:
+        extra_space = available_height - content_height
+        if gaps_count > 0:
+            gap_between_rows = extra_space / gaps_count
+        else:
+            top_extra_offset = extra_space / 2
+
+    pdf.set_y(pdf.get_y() + top_extra_offset)
+
+    for index, (key, wrapped_title) in enumerate(wrapped_entries):
+        page_text = str(page_numbers.get(key, ""))
+        row_start_y = pdf.get_y()
+        row_height = max(1, len(wrapped_title)) * chosen_line_height
+
+        pdf.set_xy(left_col_x, row_start_y)
         pdf.multi_cell(
-            0,
-            toc_line_height,
-            entry,
+            title_col_width,
+            chosen_line_height,
+            "\n".join(wrapped_title),
             new_x=XPos.LMARGIN,
             new_y=YPos.NEXT,
-            align="C",
+            align="L",
         )
-        pdf.ln(toc_line_gap)
+
+        # Numero de page en face de la premiere ligne du titre.
+        pdf.set_xy(page_col_x, row_start_y)
+        pdf.cell(
+            page_col_width,
+            chosen_line_height,
+            page_text,
+            new_x=XPos.LMARGIN,
+            new_y=YPos.NEXT,
+            align="R",
+        )
+
+        next_y = row_start_y + row_height
+        if index < len(wrapped_entries) - 1:
+            next_y += gap_between_rows
+        pdf.set_xy(left_col_x, next_y)
 
 
 def _render_center_title_page(pdf: BookPDF, book_title: str) -> None:
@@ -434,6 +586,66 @@ def _render_title_page(pdf: BookPDF, book_title: str) -> None:
     pdf.cell(0, 8, PUBLISHER_NAME, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
 
 
+def _build_pdf_instance() -> BookPDF:
+    pdf = BookPDF(format=BOOK_FORMAT_6X9_MM)
+    pdf.set_margins(left=20, top=30, right=20)
+    pdf.set_auto_page_break(auto=True, margin=15)
+    pdf.alias_nb_pages()
+    _set_unicode_font(pdf)
+    return pdf
+
+
+def _render_front_matter(
+    pdf: BookPDF,
+    book_title: str,
+    toc_entries: list[tuple[str, str]],
+    page_numbers: dict[str, int],
+) -> None:
+    pdf.set_running_elements(False)
+    _insert_blank_page(pdf)
+    _render_center_title_page(pdf, book_title)
+    _insert_blank_page(pdf)
+    _render_title_page(pdf, book_title)
+    _insert_blank_page(pdf)
+    _render_sommaire(pdf, toc_entries, page_numbers)
+    _insert_blank_page(pdf)
+
+
+def _render_main_content(
+    pdf: BookPDF,
+    intro: str,
+    chapters_data: list[dict[str, Any]],
+    conclusion_text: str,
+) -> dict[str, int]:
+    page_numbers: dict[str, int] = {}
+
+    pdf.set_running_elements(True)
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title(PDF_TITLE)
+    pdf.add_page()
+    pdf.start_page_numbering()
+    page_numbers["intro"] = pdf._display_page_no()
+
+    pdf.set_font("Body", size=30)
+    pdf.ln(20)
+    pdf.multi_cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.ln(20)
+    pdf.set_font("Body", size=12)
+    pdf.multi_cell(0, 7, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+
+    for index, chapter_data in enumerate(chapters_data, start=1):
+        chapter_number = _extract_text(chapter_data.get("chapitre") or index)
+        page_numbers[f"chapter::{chapter_number}"] = _render_chapter(
+            pdf, chapter_data, default_number=index
+        )
+
+    conclusion_page = _render_conclusion(pdf, conclusion_text)
+    if conclusion_page is not None:
+        page_numbers["conclusion"] = conclusion_page
+
+    return page_numbers
+
+
 
 def affichage():
     introduction = _load_json_file(INTRO_PATH, default={})
@@ -447,45 +659,22 @@ def affichage():
         if isinstance(chapter_payload, dict):
             chapters_data.append(chapter_payload)
     conclusion_text = _load_conclusion_text()
+    toc_entries = _build_toc_entries(chapters_data, has_conclusion=bool(conclusion_text))
 
-    pdf = BookPDF(format=BOOK_FORMAT_6X9_MM)
-    pdf.set_margins(left=20, top=30, right=20)
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.alias_nb_pages()
-    _set_unicode_font(pdf)
+    pagination_probe_pdf = _build_pdf_instance()
+    pagination_probe_pdf.set_book_title(book_title)
+    _render_front_matter(pagination_probe_pdf, book_title, toc_entries, page_numbers={})
+    page_numbers = _render_main_content(
+        pagination_probe_pdf,
+        intro,
+        chapters_data,
+        conclusion_text,
+    )
 
-    # Ordre des premieres pages:
-    # 1) blanche, 2) blanche, 3) titre centre, 4) blanche,
-    # 5) auteur/titre/maison d'edition, 6) blanche, 7) debut du livre + pagination.
-    pdf.set_running_elements(False)
-    #_insert_blank_page(pdf)
-    _insert_blank_page(pdf)
-    _render_center_title_page(pdf, book_title)
-    _insert_blank_page(pdf)
-    _render_title_page(pdf, book_title)
-    _insert_blank_page(pdf)
-    _render_sommaire(pdf, chapters_data, has_conclusion=bool(conclusion_text))
-    _insert_blank_page(pdf)
-
-    pdf.set_running_elements(True)
-
+    pdf = _build_pdf_instance()
     pdf.set_book_title(book_title)
-    pdf.set_current_chapter_number(None)
-    pdf.set_header_title(PDF_TITLE)
-    pdf.add_page()
-    pdf.start_page_numbering()
-
-    pdf.set_font("Body", size=30)
-    pdf.ln(20)
-    pdf.multi_cell(0, 12, PDF_TITLE, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
-    pdf.ln(20)
-    pdf.set_font("Body", size=12)
-    pdf.multi_cell(0, 7, f"{intro}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-
-    for index, chapter_data in enumerate(chapters_data, start=1):
-        _render_chapter(pdf, chapter_data, default_number=index)
-
-    _render_conclusion(pdf, conclusion_text)
+    _render_front_matter(pdf, book_title, toc_entries, page_numbers)
+    _render_main_content(pdf, intro, chapters_data, conclusion_text)
 
     OUTPUT_PDF_PATH.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(OUTPUT_PDF_PATH))

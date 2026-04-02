@@ -3,20 +3,22 @@
   "section": 1,
   "chapitre_numero": "9",
   "section_numero": "1",
-  "these_centrale": "Une évaluation objective de la performance d'investissement requiert le calcul de la performance nette en tenant compte de tous les frais et de l'inflation.",
+  "these_centrale": "La décision de cesser une activité indépendante doit être guidée par des critères objectifs prédéfinis pour assurer une transition maîtrisée.",
   "arguments_cles": [
-    "Calculer la performance nette en incluant les gains/pertes bruts, les frais de transaction, les frais de plateforme et le rendement par rapport à l'inflation.",
-    "Rassembler toutes les données des opérations : dates, montants, frais, investissement initial, valeur actuelle.",
-    "Comparer la performance nette aux objectifs initiaux et à des indices de référence pertinents (ex: Bitcoin, Ethereum, inflation).",
-    "Utiliser des outils de suivi de portefeuille pour automatiser les calculs et documenter rigoureusement les résultats."
+    "L'établissement d'un seuil de revenus minimum est un indicateur financier clé pour évaluer la viabilité.",
+    "L'épuisement professionnel, caractérisé par la fatigue chronique et la perte de motivation, signale un besoin de réévaluation.",
+    "La perte de sens ou la déconnexion avec les valeurs personnelles constitue un motif valable de réorientation."
   ],
   "concepts_introduits": [
-    "Performance nette : Bénéfice ou perte après déduction de tous les coûts.",
-    "Inflation : Érosion du pouvoir d'achat de la monnaie.",
-    "Indice de référence : Valeur comparée d'une performance, ex: évolution du Bitcoin."
+    "Seuil de revenus : Montant minimum de revenus nécessaire pour assurer la subsistance.",
+    "Épuisement professionnel : État de fatigue intense dû à une surcharge de travail prolongée.",
+    "Perte de sens : Sentiment de déconnexion avec la raison d'être ou les valeurs d'une activité."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pédagogique, axé sur la méthode et la précision des calculs.",
-  "_raw": "<fiche>\n<chapitre_numero>9</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Une évaluation objective de la performance d'investissement requiert le calcul de la performance nette en tenant compte de tous les frais et de l'inflation.</these_centrale>\n<arguments_cles>\n- Calculer la performance nette en incluant les gains/pertes bruts, les frais de transaction, les frais de plateforme et le rendement par rapport à l'inflation.\n- Rassembler toutes les données des opérations : dates, montants, frais, investissement initial, valeur actuelle.\n- Comparer la performance nette aux objectifs initiaux et à des indices de référence pertinents (ex: Bitcoin, Ethereum, inflation).\n- Utiliser des outils de suivi de portefeuille pour automatiser les calculs et documenter rigoureusement les résultats.\n</arguments_cles>\n<concepts_introduits>\n- Performance nette : Bénéfice ou perte après déduction de tous les coûts.\n- Inflation : Érosion du pouvoir d'achat de la monnaie.\n- Indice de référence : Valeur comparée d'une performance, ex: évolution du Bitcoin.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Les chiffres bruts affichés par les plateformes d'échange.\n- Le succès perçu uniquement par les mouvements de prix.\n</a_ne_not_repeter>\n<ton_angle>Pédagogique, axé sur la méthode et la précision des calculs.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Ne pas laisser la décision d'arrêter une activité être le fruit du hasard ou d'une décision hâtive.",
+    "Ne pas ignorer les signaux de dégradation de la santé physique et mentale."
+  ],
+  "ton_angle": "Informatif et pragmatique, visant à fournir des outils d'aide à la décision.",
+  "_raw": "<fiche>\n<chapitre_numero>9</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La décision de cesser une activité indépendante doit être guidée par des critères objectifs prédéfinis pour assurer une transition maîtrisée.</these_centrale>\n<arguments_cles>\n- L'établissement d'un seuil de revenus minimum est un indicateur financier clé pour évaluer la viabilité.\n- L'épuisement professionnel, caractérisé par la fatigue chronique et la perte de motivation, signale un besoin de réévaluation.\n- La perte de sens ou la déconnexion avec les valeurs personnelles constitue un motif valable de réorientation.\n</arguments_cles>\n<concepts_introduits>\n- Seuil de revenus : Montant minimum de revenus nécessaire pour assurer la subsistance.\n- Épuisement professionnel : État de fatigue intense dû à une surcharge de travail prolongée.\n- Perte de sens : Sentiment de déconnexion avec la raison d'être ou les valeurs d'une activité.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas laisser la décision d'arrêter une activité être le fruit du hasard ou d'une décision hâtive.\n- Ne pas ignorer les signaux de dégradation de la santé physique et mentale.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, visant à fournir des outils d'aide à la décision.</ton_angle>\n</fiche>"
 }

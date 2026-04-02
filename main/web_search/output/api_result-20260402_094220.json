@@ -1,0 +1,391 @@
+{
+  "request_info": {
+    "success": true,
+    "topup_credits_remaining": 0,
+    "credits_used_this_request": 1
+  },
+  "search_parameters": {
+    "q": "plan de repli freelance retour salariat après échec",
+    "location": "France",
+    "location_auto": "false",
+    "gl": "fr",
+    "hl": "fr",
+    "google_domain": "google.fr",
+    "engine": "google"
+  },
+  "search_metadata": {
+    "created_at": "2026-04-02T07:42:21.181Z",
+    "processed_at": "2026-04-02T07:42:22.793Z",
+    "total_time_taken": 1.61,
+    "engine_url": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&gl=fr&hl=fr&uule=w+CAIQICIGRnJhbmNl",
+    "html_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=html",
+    "json_url": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&engine=google&output=json"
+  },
+  "search_information": {
+    "original_query_yields_zero_results": false,
+    "total_results": 912
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "block_position": 3,
+      "title": "Revenir salarié après une période de freelance : un échec",
+      "link": "https://www.directemploi.com/article/3308/revenir-salarie-apres-une-periode-de-freelance-un-echec-",
+      "domain": "www.directemploi.com",
+      "displayed_link": "https://www.directemploi.com › article › revenir-salarie-a...",
+      "snippet": "Revenir salarié après une période de freelance : un échec ? · 1. Le fantasme de la liberté totale · 2. Un retour mûrement réfléchi · 3. Une expérience qui enrichit ...",
+      "prerender": false
+    },
+    {
+      "position": 2,
+      "block_position": 4,
+      "title": "Le retour au salariat : quand les indépendants font marche ...",
+      "link": "https://www.itg.fr/portage-salarial/actualites/2025-avril/le-retour-au-salariat-quand-les-independants-font-marche-arriere",
+      "domain": "www.itg.fr",
+      "displayed_link": "https://www.itg.fr › ... › Actualités › Avril 2025",
+      "snippet": "17 avr. 2025 — Ce dispositif permet aux freelances de conserver leur autonomie tout en bénéficiant d'une couverture sociale similaire à celle d'un salarié ( ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : repli ‎| Afficher les résultats avec : repli"
+          ]
+        }
+      },
+      "date": "17 avr. 2025",
+      "date_utc": "2025-04-17T00:00:00.000Z"
+    },
+    {
+      "position": 3,
+      "block_position": 5,
+      "title": "Retour à temps plein au freelancing après avoir quitté un ...",
+      "link": "https://www.reddit.com/r/freelanceWriters/comments/15l0ved/going_back_to_fulltime_freelancing_after_quitting/?tl=fr",
+      "domain": "www.reddit.com",
+      "displayed_link": "Plus de 10 commentaires  ·  il y a 2 ans",
+      "snippet": "Il y a quelques mois, j'ai publié un message ici pour parler de mon abandon du freelance à temps plein car cela ne fonctionnait pas pour ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : échec ‎| Afficher les résultats avec : échec"
+          ]
+        }
+      }
+    },
+    {
+      "position": 4,
+      "block_position": 6,
+      "title": "Freelance : manifeste pour un retour au salariat",
+      "link": "https://fr.linkedin.com/pulse/freelance-manifeste-pour-un-retour-au-salariat-jour-ga%C3%ABtan-ruiz-oknre",
+      "domain": "fr.linkedin.com",
+      "displayed_link": "Plus de 10 réactions  ·  il y a 1 an",
+      "snippet": "25 Règles de mon manifeste personnel pour - peut-être un jour - envisager un jour de revenir au salariat.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : échec ‎| Afficher les résultats avec : échec"
+          ]
+        }
+      }
+    },
+    {
+      "position": 5,
+      "block_position": 7,
+      "title": "Comment inciter les freelances à revenir au salariat ?",
+      "link": "https://www.digirocks.fr/du-freelance-au-salariat/",
+      "domain": "www.digirocks.fr",
+      "displayed_link": "https://www.digirocks.fr › digiNews › Manager-RH",
+      "snippet": "Les critères qui poussent les freelances à abandonner le statut · La solitude · Des revenus en “dents de scie” · Le stress · La gestion administrative · L'équilibre ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : échec ‎| Afficher les résultats avec : échec"
+          ]
+        }
+      }
+    },
+    {
+      "position": 6,
+      "block_position": 8,
+      "title": "Parcours d'entrepreneurs ou freelances : le retour au ...",
+      "link": "https://singuliers.io/talent/retour-au-salariat-apres-une-experience-en-freelance-ou-entrepreneuriat-mission-difficile/",
+      "domain": "singuliers.io",
+      "displayed_link": "https://singuliers.io › Le guide du recrutement",
+      "snippet": "24 févr. 2025 — Convaincre une entreprise de recruter un ancien entrepreneur ou freelance peut être un défi. Quelles sont les réticences des recruteurs ?",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : échec ‎| Afficher les résultats avec : échec"
+          ]
+        }
+      },
+      "date": "24 févr. 2025",
+      "date_utc": "2025-02-24T00:00:00.000Z"
+    },
+    {
+      "position": 7,
+      "block_position": 9,
+      "title": "Retour en CDI après une dizaine d'années en freelance",
+      "link": "https://www.free-work.com/fr/tech-it/forum/t/retour-en-cdi-apres-une-dizaine-d-annees-en-freelance",
+      "domain": "www.free-work.com",
+      "displayed_link": "https://www.free-work.com › ... › Forum › Vos projets",
+      "snippet": "16 janv. 2018 — Hello, Ça fait 10 ans que je travaille en tant que freelance. Cela fait plus que 3 ans que je travaille avec mon client actuel et il veut ...",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : échec ‎| Afficher les résultats avec : échec"
+          ]
+        }
+      },
+      "date": "16 janv. 2018",
+      "date_utc": "2018-01-16T00:00:00.000Z"
+    },
+    {
+      "position": 8,
+      "block_position": 10,
+      "title": "▷ Freelance : rebondir après une cessation d'activité",
+      "link": "https://www.portageo.fr/blog/freelance-comment-rebondir-en-cas-de-cessation-dactivite/",
+      "domain": "www.portageo.fr",
+      "displayed_link": "https://www.portageo.fr › Blog › Freelances",
+      "snippet": "17 févr. 2025 — Comment rebondir et se relancer en tant que freelance en cas de cessation d'activité suite à des problèmes de gestion.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : plan ‎| Afficher les résultats avec : plan"
+          ]
+        }
+      },
+      "date": "17 févr. 2025",
+      "date_utc": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "position": 9,
+      "block_position": 11,
+      "title": "1 rebond, 1 emploi : transformer l'échec entrepreneurial en ...",
+      "link": "https://novapec.fr/article/1-rebond-1-emploi-transformer-l-echec-entrepreneurial-en-rebond-salarial",
+      "domain": "novapec.fr",
+      "displayed_link": "https://novapec.fr › article › 1-rebond-1-emploi-transfor...",
+      "snippet": "Partout en France, \"1 rebond, 1 emploi\" permet à tous ceux qui ont perdu leur entreprise de poursuivre leur carrière dans le salariat.",
+      "prerender": false,
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {},
+          "extensions": [
+            "Termes manquants : freelance ‎| Afficher les résultats avec : freelance"
+          ]
+        }
+      }
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "Que faire après avoir été à son compte",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Que+faire+apr%C3%A8s+avoir+%C3%A9t%C3%A9+%C3%A0+son+compte&sa=X&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ1QJ6BAgwEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Passer de l entrepreneuriat au salariat",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Passer+de+l+entrepreneuriat+au+salariat&sa=X&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ1QJ6BAgzEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Marre d'être salarié",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Marre+d%27%C3%AAtre+salari%C3%A9&sa=X&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ1QJ6BAgyEAE",
+      "block_position": 12
+    },
+    {
+      "query": "Je ne veux plus être salarié",
+      "link": "https://www.google.fr/search?sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&q=Je+ne+veux+plus+%C3%AAtre+salari%C3%A9&sa=X&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ1QJ6BAgxEAE",
+      "block_position": 12
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Est-il possible de revenir au salariat après une période de freelance ?",
+      "answer": "Revenir au salariat ne signifie donc pas forcément un échec, mais peut être le reflet d'un besoin de stabilité ou d'un nouvel équilibre. Choisir de redevenir salarié n'est bien souvent ni impulsif, ni contraint. C'est le fruit d'une introspection sur ses priorités de vie et ses besoins professionnels.",
+      "source": {
+        "link": "https://www.directemploi.com/article/3308/revenir-salarie-apres-une-periode-de-freelance-un-echec-#:~:text=Revenir%20au%20salariat%20ne%20signifie,ou%20d'un%20nouvel%20%C3%A9quilibre.&text=Choisir%20de%20redevenir%20salari%C3%A9%20n,vie%20et%20ses%20besoins%20professionnels.",
+        "displayed_link": "https://www.directemploi.com › article › revenir-salarie-a...",
+        "title": "Revenir salarié après une période de freelance - Direct Emploi"
+      },
+      "block_position": 2
+    },
+    {
+      "question": "Est-il possible de redevenir salarié après avoir été auto-entrepreneur ?",
+      "answer": "En France, aucun dispositif légal n'empêche à un auto-entrepreneur de redevenir salarié. Autant un ancien salarié est libre de devenir un travailleur indépendant, le contraire est aussi possible.",
+      "source": {
+        "link": "https://www.visioconseilspro.com/blog-comptable/redevenir-salarie-apres-auto-entreprise#:~:text=En%20France%2C%20aucun%20dispositif%20l%C3%A9gal,le%20contraire%20est%20aussi%20possible.",
+        "displayed_link": "https://www.visioconseilspro.com › blog-comptable › re...",
+        "title": "Peut-on redevenir salarié après avoir été auto-entrepreneur ?"
+      },
+      "block_position": 2
+    },
+    {
+      "question": "Freelance risque de requalification ?",
+      "answer": "Un travailleur indépendant doit exercer son activité de manière autonome. Si une relation de subordination se crée avec l'entreprise, cela peut entraîner une requalification en contrat de travail salarié, entraînant des conséquences financières et juridiques pour l'entreprise.",
+      "source": {
+        "link": "https://www.village-justice.com/articles/risque-requalification-des-contrats-prestation-service-contrat-travail,51466.html#:~:text=Un%20travailleur%20ind%C3%A9pendant%20doit%20exercer,et%20juridiques%20pour%20l'entreprise.",
+        "displayed_link": "https://www.village-justice.com › articles › risque-requali...",
+        "title": "Le risque de requalification des contrats de prestation de service"
+      },
+      "block_position": 2
+    },
+    {
+      "question": "Comment redynamiser une entreprise en difficulté ?",
+      "answer": "Huit conseils pour redynamiser une entreprise en difficulté",
+      "answer_list": [
+        {
+          "text": "Maîtriser la trésorerie. ..."
+        },
+        {
+          "text": "Etablir un diagnostic précis. ..."
+        },
+        {
+          "text": "Comprendre son organisation. ..."
+        },
+        {
+          "text": "Dompter le budget de l'année N. ..."
+        },
+        {
+          "text": "Améliorer le climat social. ..."
+        },
+        {
+          "text": "Adopter une stratégie cohérente. ..."
+        },
+        {
+          "text": "Parfaire son business plan. ..."
+        },
+        {
+          "text": "Faire appel à des administrateurs libres et indépendants."
+        }
+      ],
+      "source": {
+        "link": "https://www.lesechos.fr/2018/09/huit-conseils-pour-redynamiser-une-entreprise-en-difficulte-2033628",
+        "displayed_link": "https://www.lesechos.fr › 2018/09 › huit-conseils-pour-r...",
+        "title": "Huit conseils pour redynamiser une entreprise en difficulté - Les Echos"
+      },
+      "block_position": 2
+    }
+  ],
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Retourner au salariat après avoir été entrepreneur [TABLE ...",
+      "length": "52.54",
+      "source": "YouTube · Aline de TheBBoostYouTube · Aline de TheBBoost",
+      "link": "https://www.youtube.com/watch?v=eF33DLSmMI8",
+      "block_position": 1
+    },
+    {
+      "position": 2,
+      "title": "Retourner au salariat après avoir été freelance",
+      "length": "0.48",
+      "source": "YouTube · Valentin DeckerYouTube · Valentin Decker",
+      "link": "https://www.youtube.com/shorts/DvNtzRPcJbY",
+      "block_position": 1
+    },
+    {
+      "position": 3,
+      "title": "Returning to salaried employment: the mistakes that cause 80 ...",
+      "length": "9.44",
+      "source": "YouTube · Embauchez MoiYouTube · Embauchez Moi",
+      "link": "https://www.youtube.com/watch?v=_qE32lK4Dg8",
+      "block_position": 1
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=10&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8NMDegQILhAW",
+    "other_pages": [
+      {
+        "page": 2,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=10&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAE"
+      },
+      {
+        "page": 3,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=20&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAG"
+      },
+      {
+        "page": 4,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=30&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAI"
+      },
+      {
+        "page": 5,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=40&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAK"
+      },
+      {
+        "page": 6,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=50&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAM"
+      },
+      {
+        "page": 7,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=60&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAO"
+      },
+      {
+        "page": 8,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=70&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAQ"
+      },
+      {
+        "page": 9,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=80&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAS"
+      },
+      {
+        "page": 10,
+        "link": "https://www.google.fr/search?q=plan+de+repli+freelance+retour+salariat+apr%C3%A8s+%C3%A9chec&sca_esv=8fbe2420859fd63f&gl=fr&hl=fr&ei=3R3OacaQI5Xs7_UPhvztmQo&start=90&sa=N&sstk=Af77f_eAEZuvuFaFhNcmD_2dP8I-WTk8RBX4BNDQ9UKCrKhWYCv5mLzVx8UzaHeU0gx9esE18Exr9-SjmW4aZ89CYJ_XzOgE-2mmMg&ved=2ahUKEwiG89i51c6TAxUV9rsIHQZ-O6MQ8tMDegQILhAU"
+      }
+    ],
+    "api_pagination": {
+      "next": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=2"
+        },
+        {
+          "page": 3,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=3"
+        },
+        {
+          "page": 4,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=4"
+        },
+        {
+          "page": 5,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=5"
+        },
+        {
+          "page": 6,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=6"
+        },
+        {
+          "page": 7,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=7"
+        },
+        {
+          "page": 8,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=8"
+        },
+        {
+          "page": 9,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=9"
+        },
+        {
+          "page": 10,
+          "link": "https://api.valueserp.com/search?api_key=0D48DFE77B86417A95187BE6E08D2FBD&q=plan%20de%20repli%20freelance%20retour%20salariat%20apr%C3%A8s%20%C3%A9chec&location=France&location_auto=false&gl=fr&hl=fr&google_domain=google.fr&id=req0&page=10"
+        }
+      ]
+    }
+  }
+}

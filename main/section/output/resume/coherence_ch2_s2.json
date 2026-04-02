@@ -3,22 +3,20 @@
   "section": 2,
   "chapitre_numero": "2",
   "section_numero": "2",
-  "these_centrale": "Les nouveaux venus dans le monde des cryptomonnaies tombent souvent dans des pièges majeurs qui mènent à des pertes financières, principalement dus à la peur, à une mauvaise gestion des fonds et à la négligence de la sécurité.",
+  "these_centrale": "La réussite dans le freelancing repose sur une évaluation réaliste de sa tolérance au risque financier et une préparation adéquate face à l'incertitude des revenus.",
   "arguments_cles": [
-    "La peur de manquer une opportunité (FOMO) pousse à des décisions hâtives et non analysées, entraînant des pertes lors de corrections de marché.",
-    "Investir de l'argent nécessaire à court terme ou non perdurable expose à la ruine financière lors des fortes volatilités.",
-    "La négligence de la sécurité des actifs numériques rend les investissements vulnérables au piratage et aux escroqueries, entraînant des pertes irrémédiables.",
-    "Les gains rapides annoncés sur les réseaux sociaux sans vérification peuvent mener à des investissements dans des actifs sans valeur.",
-    "La volatilité extrême des cryptomonnaies rend l'investissement de fonds d'urgence ou destinés aux dépenses courantes particulièrement risqué."
+    "Le freelancing implique une variation des revenus, contrairement à un salaire fixe.",
+    "L'individu doit évaluer sa capacité à vivre avec une rémunération fluctuante et gérer l'anxiété potentielle.",
+    "Une épargne de précaution est essentielle pour traverser les périodes creuses.",
+    "La patience face à des efforts non immédiatement récompensés financièrement est cruciale."
   ],
   "concepts_introduits": [
-    "FOMO : Peur de manquer une opportunité financière, conduisant à des décisions impulsives.",
-    "Volatilité : Fluctuations rapides et importantes de la valeur d'un actif.",
-    "Clés privées : Informations secrètes permettant d'accéder et de contrôler ses actifs cryptographiques.",
-    "Hameçonnage : Technique d'escroquerie visant à obtenir des informations sensibles."
+    "Tolérance au risque : Capacité à accepter et gérer l'incertitude et la volatilité financière.",
+    "Indépendants : Travailleurs autonomes n'ayant pas de contrat de travail salarié classique.",
+    "Épargne de précaution : Fonds mis de côté pour faire face aux imprévus financiers."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et préventif, soulignant les risques et les erreurs courantes avec une approche pragmatique.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les nouveaux venus dans le monde des cryptomonnaies tombent souvent dans des pièges majeurs qui mènent à des pertes financières, principalement dus à la peur, à une mauvaise gestion des fonds et à la négligence de la sécurité.</these_centrale>\n<arguments_cles>\n- La peur de manquer une opportunité (FOMO) pousse à des décisions hâtives et non analysées, entraînant des pertes lors de corrections de marché.\n- Investir de l'argent nécessaire à court terme ou non perdurable expose à la ruine financière lors des fortes volatilités.\n- La négligence de la sécurité des actifs numériques rend les investissements vulnérables au piratage et aux escroqueries, entraînant des pertes irrémédiables.\n- Les gains rapides annoncés sur les réseaux sociaux sans vérification peuvent mener à des investissements dans des actifs sans valeur.\n- La volatilité extrême des cryptomonnaies rend l'investissement de fonds d'urgence ou destinés aux dépenses courantes particulièrement risqué.\n</arguments_cles>\n<concepts_introduits>\n- FOMO : Peur de manquer une opportunité financière, conduisant à des décisions impulsives.\n- Volatilité : Fluctuations rapides et importantes de la valeur d'un actif.\n- Clés privées : Informations secrètes permettant d'accéder et de contrôler ses actifs cryptographiques.\n- Hameçonnage : Technique d'escroquerie visant à obtenir des informations sensibles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- L'idée que des gains rapides annoncés sur les réseaux sociaux sont une bonne chose.\n- La répétition littérale des phrases décrivant les dangers.\n- L'expression \"pertes financières\" employée de manière identique à plusieurs reprises.\n</a_ne_not_repeter>\n<ton_angle>Informatif et préventif, soulignant les risques et les erreurs courantes avec une approche pragmatique.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et introspectif, invitant à l'auto-évaluation.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La réussite dans le freelancing repose sur une évaluation réaliste de sa tolérance au risque financier et une préparation adéquate face à l'incertitude des revenus.</these_centrale>\n<arguments_cles>\n- Le freelancing implique une variation des revenus, contrairement à un salaire fixe.\n- L'individu doit évaluer sa capacité à vivre avec une rémunération fluctuante et gérer l'anxiété potentielle.\n- Une épargne de précaution est essentielle pour traverser les périodes creuses.\n- La patience face à des efforts non immédiatement récompensés financièrement est cruciale.\n</arguments_cles>\n<concepts_introduits>\n- Tolérance au risque : Capacité à accepter et gérer l'incertitude et la volatilité financière.\n- Indépendants : Travailleurs autonomes n'ayant pas de contrat de travail salarié classique.\n- Épargne de précaution : Fonds mis de côté pour faire face aux imprévus financiers.\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_not_repeter>\n- \"Êtes-vous prêt à gérer l’incertitude financière du freelancing ?\" (Question rhétorique introductive)\n- \"Votre tolérance au risque est un facteur déterminant pour la réussite de votre transition.\" (Formulation trop directe)\n- Le texte se concentre sur la préparation psychologique et financière et ne mentionne pas de statistiques ou de données chiffrées.\n</a_ne_not_repeter>\n<ton_angle>Pédagogique et introspectif, invitant à l'auto-évaluation.</ton_angle>\n</fiche>"
 }

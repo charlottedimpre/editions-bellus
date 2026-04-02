@@ -3,24 +3,34 @@
   "section": 4,
   "chapitre_numero": "8",
   "section_numero": "4",
-  "these_centrale": "En cas de contrôle fiscal, la conservation rigoureuse de justificatifs détaillés de toutes les transactions d'actifs numériques est impérative pour prouver sa bonne foi et éviter des redressements.",
+  "these_centrale": "La vigilance et l'adoption de méthodes de protection concrètes sont essentielles pour les travailleurs indépendants afin de se prémunir contre les fraudes.",
   "arguments_cles": [
-    "Il est crucial de pouvoir justifier chaque transaction d'actifs numériques avec un historique complet.",
-    "Les relevés des plateformes d'échange, les relevés bancaires et les justificatifs d'achat/vente sont des preuves essentielles.",
-    "L'exactitude des détails (date, cryptomonnaie, quantité, prix, frais) est primordiale.",
-    "L'absence de preuves tangibles expose à des redressements fiscaux basés sur des estimations potentiellement défavorables.",
-    "La sauvegarde sécurisée et redondante des documents est recommandée."
+    "Les plateformes aux tarifs anormalement bas et les contrats déséquilibrés cachent des risques pour les freelances.",
+    "Il est crucial de développer un esprit critique, d'analyser les avis, et de rechercher la réputation des clients et plateformes.",
+    "Les contrats déséquilibrés peuvent transférer indûment la responsabilité et limiter la liberté du prestataire.",
+    "Les offres trop belles pour être vraies et les demandes d'informations sensibles trop tôt sont des signaux d'alerte."
   ],
   "concepts_introduits": [
-    "Actifs numériques : Monnaies virtuelles ou autres actifs enregistrés sur un registre distribué.",
-    "Contrôle fiscal : Vérification par l'administration des déclarations fiscales d'un contribuable.",
-    "Plus-values : Bénéfice réalisé lors de la cession d'un actif par rapport à son prix d'acquisition."
+    "Fraudes courantes : Pratiques trompeuses visant spécifiquement les travailleurs indépendants.",
+    "Esprit critique : Capacité à évaluer objectivement les informations et les offres.",
+    "Contrats déséquilibrés : Documents juridiques qui favorisent une partie au détriment de l'autre.",
+    "Signaux d'alerte : Indicateurs d'une situation potentiellement frauduleuse ou risquée.",
+    "Trésorerie : Ensemble des disponibilités financières d'une entreprise ou d'un travailleur indépendant."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La nécessité de garder des preuves est répétée sous diverses formulations.",
-    "L'idée que l'administration pourrait baser des redressements sur des estimations est formulée plusieurs fois."
+    "Offres trop belles pour être vraies.",
+    "Tarifs journaliers très en deçà des moyennes du marché.",
+    "Rémunération en nature.",
+    "Contrats manifestement déséquilibrés.",
+    "Clauses qui transfèrent indûment la responsabilité.",
+    "Offres d'emploi qui promettent des rémunérations exceptionnelles pour des missions floues.",
+    "Demandes d'informations personnelles sensibles très tôt.",
+    "Obtenir vos coordonnées bancaires sous prétexte de vous verser une avance.",
+    "Payer des frais administratifs pour accéder à une mission inexistante.",
+    "Communication par email non professionnelle.",
+    "Demandes de paiement urgentes."
   ],
-  "ton_angle": "Pragmatique et préventif, axé sur les démarches concrètes de conformité fiscale.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>En cas de contrôle fiscal, la conservation rigoureuse de justificatifs détaillés de toutes les transactions d'actifs numériques est impérative pour prouver sa bonne foi et éviter des redressements.</these_centrale>\n<arguments_cles>\n- Il est crucial de pouvoir justifier chaque transaction d'actifs numériques avec un historique complet.\n- Les relevés des plateformes d'échange, les relevés bancaires et les justificatifs d'achat/vente sont des preuves essentielles.\n- L'exactitude des détails (date, cryptomonnaie, quantité, prix, frais) est primordiale.\n- L'absence de preuves tangibles expose à des redressements fiscaux basés sur des estimations potentiellement défavorables.\n- La sauvegarde sécurisée et redondante des documents est recommandée.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Monnaies virtuelles ou autres actifs enregistrés sur un registre distribué.\n- Contrôle fiscal : Vérification par l'administration des déclarations fiscales d'un contribuable.\n- Plus-values : Bénéfice réalisé lors de la cession d'un actif par rapport à son prix d'acquisition.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La nécessité de garder des preuves est répétée sous diverses formulations.\n- L'idée que l'administration pourrait baser des redressements sur des estimations est formulée plusieurs fois.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et préventif, axé sur les démarches concrètes de conformité fiscale.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique, axé sur la prévention et les conseils pratiques pour la sécurité financière et contractuelle.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La vigilance et l'adoption de méthodes de protection concrètes sont essentielles pour les travailleurs indépendants afin de se prémunir contre les fraudes.</these_centrale>\n<arguments_cles>\n- Les plateformes aux tarifs anormalement bas et les contrats déséquilibrés cachent des risques pour les freelances.\n- Il est crucial de développer un esprit critique, d'analyser les avis, et de rechercher la réputation des clients et plateformes.\n- Les contrats déséquilibrés peuvent transférer indûment la responsabilité et limiter la liberté du prestataire.\n- Les offres trop belles pour être vraies et les demandes d'informations sensibles trop tôt sont des signaux d'alerte.\n</arguments_cles>\n<concepts_introduits>\n- Fraudes courantes : Pratiques trompeuses visant spécifiquement les travailleurs indépendants.\n- Esprit critique : Capacité à évaluer objectivement les informations et les offres.\n- Contrats déséquilibrés : Documents juridiques qui favorisent une partie au détriment de l'autre.\n- Signaux d'alerte : Indicateurs d'une situation potentiellement frauduleuse ou risquée.\n- Trésorerie : Ensemble des disponibilités financières d'une entreprise ou d'un travailleur indépendant.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Offres trop belles pour être vraies.\n- Tarifs journaliers très en deçà des moyennes du marché.\n- Rémunération en nature.\n- Contrats manifestement déséquilibrés.\n- Clauses qui transfèrent indûment la responsabilité.\n- Offres d'emploi qui promettent des rémunérations exceptionnelles pour des missions floues.\n- Demandes d'informations personnelles sensibles très tôt.\n- Obtenir vos coordonnées bancaires sous prétexte de vous verser une avance.\n- Payer des frais administratifs pour accéder à une mission inexistante.\n- Communication par email non professionnelle.\n- Demandes de paiement urgentes.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur la prévention et les conseils pratiques pour la sécurité financière et contractuelle.</ton_angle>\n</fiche>"
 }

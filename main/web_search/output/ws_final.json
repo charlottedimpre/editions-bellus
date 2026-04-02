@@ -1,113 +1,104 @@
 {
-  "sujet": "Construire une stratégie d'investissement en cryptomonnaies pour générer des gains significatifs en trois mois, sans promesses de fortune immédiate",
+  "sujet": "Passer du salariat en CDI à l'indépendance professionnelle : méthodes, risques et préparation pour une transition sécurisée vers le freelancing",
   "notions_indispensables": [
     {
-      "contenu": "La blockchain est un registre public décentralisé et immuable sécurisant les transactions sans intermédiaire bancaire"
+      "contenu": "Le CDI offre sécurité financière et protection sociale complète, contrairement au freelance où l'indépendant assume seul tous les risques économiques"
     },
     {
-      "contenu": "La clé privée est le seul accès à vos fonds ; sa perte entraîne leur disparition définitive et irréversible"
+      "contenu": "Les statuts juridiques principaux (micro-entreprise, SASU, EURL, portage salarial) déterminent fiscalité, charges sociales et niveau de protection patrimoniale"
     },
     {
-      "contenu": "La volatilité extrême est inhérente avec des variations pouvant atteindre 50 à 80% en quelques mois"
+      "contenu": "Le chiffre d'affaires brut diffère significativement du revenu net : il faut provisionner 40 à 50% pour charges sociales, fiscales et frais professionnels"
     },
     {
-      "contenu": "Le Dollar Cost Averaging (DCA) consiste à investir des montants fixes régulièrement pour lisser le prix d'achat"
+      "contenu": "Le TJM (Taux Journalier Moyen) doit intégrer charges sociales, congés non payés, imprévus et jours non facturables pour garantir la rentabilité réelle"
     },
     {
-      "contenu": "Seuls les prestataires PSAN enregistrés auprès de l'AMF garantissent un cadre légal de protection en France"
+      "contenu": "Une épargne de sécurité couvrant 6 à 12 mois de charges fixes est indispensable avant toute démission pour absorber les revenus variables"
     },
     {
-      "contenu": "Le cold wallet stocke les clés hors ligne et offre une sécurité maximale comparé au hot wallet connecté"
+      "contenu": "Les droits au chômage sont préservés par rupture conventionnelle ou démission-reconversion validée, mais perdus en cas de démission simple"
     },
     {
-      "contenu": "La flat tax de 30% s'applique sur les plus-values dès 305 euros de cessions annuelles en France"
-    },
-    {
-      "contenu": "Le principe Not your keys, not your coins signifie que les fonds sur exchange ne vous appartiennent pas réellement"
+      "contenu": "La protection sociale du freelance (Sécurité sociale des indépendants) offre une couverture moindre que le régime salarié pour la santé, la retraite et les arrêts maladie"
     }
   ],
   "erreurs_frequentes": [
     {
-      "contenu": "Céder au FOMO (Fear Of Missing Out) en achetant lors des pics de prix sans analyse préalable"
+      "contenu": "Démissionner sans avoir constitué d'épargne de précaution couvrant au minimum 6 mois de charges personnelles et professionnelles"
     },
     {
-      "contenu": "Investir des sommes nécessaires à la vie courante ou s'endetter pour spéculer sur les cryptomonnaies"
+      "contenu": "Confondre chiffre d'affaires brut et revenu net disponible en ignorant les charges sociales, fiscales et la TVA à provisionner"
     },
     {
-      "contenu": "Conserver ses actifs sur une plateforme d'échange sans activer la double authentification"
+      "contenu": "Se lancer sans tester le marché ni sécuriser de premiers clients ou contrats avant de quitter l'emploi salarié"
     },
     {
-      "contenu": "Perdre sa phrase de récupération ou sa clé privée sans sauvegarde sécurisée hors ligne"
+      "contenu": "Sous-évaluer ses tarifs ou son TJM par excès de modestie, manque de benchmarks ou peur du refus client"
     },
     {
-      "contenu": "Croire aux promesses de gains garantis ou de richesse rapide sans risque financier"
+      "contenu": "Confondre liberté d'organisation avec absence totale de contraintes en sous-estimant le temps administratif et la prospection permanente"
     },
     {
-      "contenu": "Oublier de déclarer ses comptes étrangers et ses plus-values aux autorités fiscales compétentes"
+      "contenu": "Attendre d'avoir perfectionné son offre avant de commencer la commercialisation, créant un blocage paralysant"
     },
     {
-      "contenu": "Tenter le market timing ou trader à court terme sans expérience alors que 80% des traders perdent"
+      "contenu": "Négliger la prospection une fois les premiers clients obtenus, conduisant à des périodes de famine commerciale"
     },
     {
-      "contenu": "Confondre échanges crypto-crypto (non imposables) et conversions en euros (imposables)"
+      "contenu": "Choisir son statut juridique sans conseil d'expert-comptable ou sans vérifier la compatibilité avec les clauses de non-concurrence du CDI"
     }
   ],
   "etapes_essentielles": [
     {
-      "contenu": "Définir son profil de risque et allouer uniquement un capital disponible dont on accepte la perte totale"
+      "contenu": "Évaluer objectivement sa motivation réelle, sa tolérance au risque et sa capacité à gérer l'incertitude financière avant toute décision"
     },
     {
-      "contenu": "Sélectionner une plateforme d'échange régulée PSAN auprès de l'AMF avec historique de sécurité vérifié"
+      "contenu": "Constituer une trésorerie de sécurité couvrant 6 à 12 mois de charges fixes personnelles et professionnelles avant la démission"
     },
     {
-      "contenu": "Configurer la double authentification et sécuriser les mots de passe dès la création des comptes"
+      "contenu": "Tester son activité en parallèle du CDI (soirs, week-ends) ou via le portage salarial pour valider la demande du marché"
     },
     {
-      "contenu": "Transférer ses cryptomonnaies vers un wallet personnel après achat pour en garantir la propriété"
+      "contenu": "Choisir le statut juridique adapté avec l'aide d'un expert-comptable en fonction du chiffre d'affaires prévisionnel et du besoin de protection sociale"
     },
     {
-      "contenu": "Mettre en place une stratégie d'achat programmé (DCA) pour réduire l'impact de la volatilité"
+      "contenu": "Définir clairement son offre de service, son positionnement de niche et calculer son TJM réaliste incluant toutes les charges"
     },
     {
-      "contenu": "Diversifier son portefeuille entre Bitcoin, Ethereum et autres actifs selon son appétence au risque"
+      "contenu": "Développer activement son réseau professionnel et sécuriser des engagements clients ou contrats signés avant de quitter son emploi"
     },
     {
-      "contenu": "Sauvegarder sa phrase de récupération sur support physique hors ligne et jamais sur un fichier numérique"
+      "contenu": "Organiser un espace de travail dédié, structurer son emploi du temps et mettre en place une gestion administrative rigoureuse (compte pro, devis, facturation)"
     },
     {
-      "contenu": "Déclarer ses comptes étrangers via le formulaire 3916-bis et ses plus-values via l'annexe 2086"
-    },
-    {
-      "contenu": "Réévaluer objectivement la stratégie après 90 jours pour ajuster ou interrompre selon les résultats"
+      "contenu": "Établir un plan de repli concret définissant les conditions de retour au salariat ou de réorientation professionnelle en cas d'échec"
     }
   ],
   "risque": [
     {
-      "contenu": "Perte totale du capital investi due à la volatilité extrême et aux cycles de marché imprévisibles"
+      "contenu": "Instabilité financière chronique avec des périodes de plusieurs mois sans revenu (intercontrats) et impossibilité de payer les charges fixes"
     },
     {
-      "contenu": "Piratage des plateformes d'échange ou vol des clés privées par phishing entraînant la disparition irréversible des actifs"
+      "contenu": "Perte totale des avantages sociaux du salariat : allocations chômage, mutuelle entreprise, retraite complémentaire, congés payés et indemnités maladie"
     },
     {
-      "contenu": "Faillite ou fermeture soudaine d'une plateforme non régulée avec blocage ou perte définitive des fonds déposés"
+      "contenu": "Isolement professionnel et social sans collègues ni soutien hiérarchique, favorisant le découragement et le syndrome de l'imposteur"
     },
     {
-      "contenu": "Arnaques aux schémas de Ponzi, rug pulls et faux projets promettant des rendements irréalistes"
+      "contenu": "Responsabilité illimitée sur le patrimoine personnel en cas d'entreprise individuelle ou requalification judiciaire en salarié déguisé"
     },
     {
-      "contenu": "Perte définitive d'accès aux fonds en cas d'oubli de la seed phrase sans possibilité de récupération bancaire"
+      "contenu": "Burnout par surcharge de travail et confusion des frontières entre vie professionnelle et personnelle sans cadre externe imposé"
     },
     {
-      "contenu": "Illiquidité sur certains actifs empêchant la revente rapide aux cours souhaités en période de crise"
+      "contenu": "Trous de trésorerie dangereux liés aux délais de paiement clients et à l'absence de revenu fixe mensuel garanti"
     },
     {
-      "contenu": "Évolution réglementaire défavorable pouvant modifier la fiscalité ou interdire certains actifs numériques"
+      "contenu": "Difficulté croissante à réintégrer le marché du travail salarié après une longue période d'indépendance, créant un sentiment d'inemployabilité"
     },
     {
-      "contenu": "Surendettement par utilisation de crédits à la consommation pour investir dans des actifs spéculatifs"
-    },
-    {
-      "contenu": "Stress psychologique et décisions émotionnelles entraînant l'achat au sommet et la vente en perte"
+      "contenu": "Dépendance économique précaire lorsqu'un seul client représente plus de 40% du chiffre d'affaires total"
     }
   ]
 }

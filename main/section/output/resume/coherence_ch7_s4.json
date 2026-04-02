@@ -3,21 +3,22 @@
   "section": 4,
   "chapitre_numero": "7",
   "section_numero": "4",
-  "these_centrale": "Une procédure claire et des mesures préventives sont essentielles pour récupérer ses actifs numériques en cas de perte d'accès.",
+  "these_centrale": "L'aménagement d'un espace de travail adapté est essentiel pour le bien-être physique et mental, favorisant ainsi l'efficacité professionnelle et la pérennité de l'activité.",
   "arguments_cles": [
-    "Contacter le support client est la première étape face à une perte d'accès.",
-    "La preuve de propriété, notamment la phrase de récupération, est fondamentale pour retrouver l'accès.",
-    "Les délais de récupération varient selon la complexité du cas et les politiques de la plateforme.",
-    "La responsabilité de la sécurité des actifs repose en grande partie sur l'utilisateur."
+    "L'ergonomie du poste de travail prévient les problèmes de santé comme les douleurs dorsales et la fatigue oculaire.",
+    "L'organisation matérielle et la séparation vie pro/perso améliorent l'équilibre et la concentration.",
+    "Le confort thermique et acoustique contribue à la concentration et à la productivité."
   ],
   "concepts_introduits": [
-    "Actifs numériques : Biens dématérialisés dont la valeur est représentée sous forme électronique.",
-    "Plateforme d'échange : Service en ligne facilitant l'achat et la vente d'actifs numériques.",
-    "Portefeuille numérique : Outil permettant de stocker et gérer ses cryptomonnaies.",
-    "Phrase de récupération : Suite de mots permettant de restaurer l'accès à un portefeuille numérique."
+    "Ergonomie : Conception de l'espace pour l'adaptation à l'humain et son confort.",
+    "Troubles musculo-squelettiques : Ailiments liés aux mouvements répétitifs ou aux mauvaises postures."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et préventif, soulignant l'importance de la préparation de l'utilisateur.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Une procédure claire et des mesures préventives sont essentielles pour récupérer ses actifs numériques en cas de perte d'accès.</these_centrale>\n<arguments_cles>\n- Contacter le support client est la première étape face à une perte d'accès.\n- La preuve de propriété, notamment la phrase de récupération, est fondamentale pour retrouver l'accès.\n- Les délais de récupération varient selon la complexité du cas et les politiques de la plateforme.\n- La responsabilité de la sécurité des actifs repose en grande partie sur l'utilisateur.\n</arguments_cles>\n<concepts_introduits>\n- Actifs numériques : Biens dématérialisés dont la valeur est représentée sous forme électronique.\n- Plateforme d'échange : Service en ligne facilitant l'achat et la vente d'actifs numériques.\n- Portefeuille numérique : Outil permettant de stocker et gérer ses cryptomonnaies.\n- Phrase de récupération : Suite de mots permettant de restaurer l'accès à un portefeuille numérique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La sécurité est une responsabilité partagée mais la perte de clés privées est souvent irréversible.\n- Le temps de récupération dépend de la difficulté du cas et des régulations de la plateforme.\n</a_ne_not_repeter>\n<ton_angle>Informatif et préventif, soulignant l'importance de la préparation de l'utilisateur.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "\"Vous apprendrez à...\"",
+    "Mention de la \"sédentarité de travail\"",
+    "\"bases fondamentales\""
+  ],
+  "ton_angle": "Pédagogique et pragmatique, axé sur les bénéfices pour la santé et la productivité.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'aménagement d'un espace de travail adapté est essentiel pour le bien-être physique et mental, favorisant ainsi l'efficacité professionnelle et la pérennité de l'activité.</these_centrale>\n<arguments_cles>\n- L'ergonomie du poste de travail prévient les problèmes de santé comme les douleurs dorsales et la fatigue oculaire.\n- L'organisation matérielle et la séparation vie pro/perso améliorent l'équilibre et la concentration.\n- Le confort thermique et acoustique contribue à la concentration et à la productivité.\n</arguments_cles>\n<concepts_introduits>\n- Ergonomie : Conception de l'espace pour l'adaptation à l'humain et son confort.\n- Troubles musculo-squelettiques : Ailiments liés aux mouvements répétitifs ou aux mauvaises postures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous apprendrez à...\"\n- Mention de la \"sédentarité de travail\"\n- \"bases fondamentales\"\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, axé sur les bénéfices pour la santé et la productivité.</ton_angle>\n</fiche>"
 }

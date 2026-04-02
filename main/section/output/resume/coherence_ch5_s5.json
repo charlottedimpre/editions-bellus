@@ -1,0 +1,25 @@
+{
+  "chapitre": 5,
+  "section": 5,
+  "chapitre_numero": "5",
+  "section_numero": "5",
+  "these_centrale": "La diversification du portefeuille clients est essentielle pour limiter la dépendance à une seule source de revenus et assurer la stabilité financière d'une activité.",
+  "arguments_cles": [
+    "Ne jamais laisser un client représenter plus de 30 % du chiffre d'affaires pour se prémunir des imprévus.",
+    "La prospection continue et ciblée est nécessaire pour maintenir un flux de nouveaux clients et équilibrer le portefeuille.",
+    "Un suivi rigoureux du portefeuille via un outil aide à visualiser la répartition des revenus et à identifier les déséquilibres.",
+    "Chaque nouvelle mission doit être évaluée pour son intégration dans une stratégie de diversification globale, quitte à refuser des missions trop concentrées."
+  ],
+  "concepts_introduits": [
+    "Diversification portefeuille clients : Répartition des revenus sur plusieurs clients pour réduire les risques.",
+    "Prospection : Recherche active de nouvelles opportunités commerciales et de clients potentiels.",
+    "Suivi portefeuille clients : Méthode d'observation et d'analyse de la clientèle et de ses revenus."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La règle du 30 % est une limite indicative et non une règle absolue.",
+    "Les techniques de prospection seront abordées plus en détail dans un autre chapitre."
+  ],
+  "ton_angle": "Pédagogique et préventif, axé sur la gestion des risques financiers et la pérennité de l'entreprise.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>5</section_numero>\n<these_centrale>La diversification du portefeuille clients est essentielle pour limiter la dépendance à une seule source de revenus et assurer la stabilité financière d'une activité.</these_centrale>\n<arguments_cles>\n- Ne jamais laisser un client représenter plus de 30 % du chiffre d'affaires pour se prémunir des imprévus.\n- La prospection continue et ciblée est nécessaire pour maintenir un flux de nouveaux clients et équilibrer le portefeuille.\n- Un suivi rigoureux du portefeuille via un outil aide à visualiser la répartition des revenus et à identifier les déséquilibres.\n- Chaque nouvelle mission doit être évaluée pour son intégration dans une stratégie de diversification globale, quitte à refuser des missions trop concentrées.\n</arguments_cles>\n<concepts_introduits>\n- Diversification portefeuille clients : Répartition des revenus sur plusieurs clients pour réduire les risques.\n- Prospection : Recherche active de nouvelles opportunités commerciales et de clients potentiels.\n- Suivi portefeuille clients : Méthode d'observation et d'analyse de la clientèle et de ses revenus.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La règle du 30 % est une limite indicative et non une règle absolue.\n- Les techniques de prospection seront abordées plus en détail dans un autre chapitre.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et préventif, axé sur la gestion des risques financiers et la pérennité de l'entreprise.</ton_angle>\n</fiche>"
+}

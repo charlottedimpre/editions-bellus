@@ -3,26 +3,28 @@
   "section": 1,
   "chapitre_numero": "3",
   "section_numero": "1",
-  "these_centrale": "Le choix entre plateformes d'échange centralisées et décentralisées détermine le niveau de contrôle de l'utilisateur sur ses fonds et la complexité des opérations.",
+  "these_centrale": "Le choix du statut juridique (micro-entreprise, SASU, EURL) est une décision stratégique déterminante pour un travailleur indépendant, impactant directement sa fiscalité, ses charges sociales, sa protection sociale et sa responsabilité patrimoniale.",
   "arguments_cles": [
-    "Les plateformes centralisées sont plus simples d'utilisation pour les débutants, offrent une meilleure liquidité et un support client, mais impliquent de confier ses clés privées.",
-    "Les plateformes décentralisées offrent un contrôle total sur les actifs, sans confier les clés privées, mais exigent une vigilance accrue et une meilleure compréhension des mécanismes de sécurité.",
-    "Le choix repose sur l'appétence au risque, le confort technologique et les objectifs d'investissement de l'utilisateur."
+    "Chaque statut présente des règles fiscales, des modalités de calcul des charges sociales et des niveaux de protection sociale spécifiques.",
+    "Les statuts comme la SASU ou l'EURL permettent une déduction plus fine des dépenses professionnelles que la micro-entreprise.",
+    "La responsabilité patrimoniale varie entre les statuts, certains protégeant mieux le patrimoine personnel en cas de difficultés.",
+    "La fiscalité et les charges sociales diffèrent : régime forfaitaire en micro-entreprise, déclaration de revenus et bénéfices réels en SASU/EURL."
   ],
   "concepts_introduits": [
-    "Exchange : Plateforme pour acheter et vendre des cryptomonnaies.",
-    "Plateforme centralisée : Intermédiaire détenant les actifs de l'utilisateur.",
-    "Plateforme décentralisée (DEX) : Permet des transactions directes sans intermédiaire.",
-    "Clés privées : Secret nécessaire pour accéder et contrôler ses cryptomonnaies.",
-    "Liquidité : Facilité d'acheter/vendre sans impacter significativement le prix.",
-    "Slippage : Variation de prix lors d'une transaction importante sur un DEX."
+    "Micro-entreprise: Régime simplifié, déclaration CA, prélèvement forfaitaire libératoire.",
+    "SASU: Société par Actions Simplifiée Unipersonnelle, déduction dépenses, couverture sociale.",
+    "EURL: Entreprise Unipersonnelle à Responsabilité Limitée, déduction dépenses, couverture sociale.",
+    "Fiscalité: Système d'imposition des revenus et des bénéfices d'une activité.",
+    "Charges sociales: Cotisations obligatoires calculées sur CA ou rémunération.",
+    "Protection sociale: Couverture des risques (maladie, retraite, famille).",
+    "Responsabilité patrimoniale: Distinction entre patrimoine professionnel et personnel."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La comparaison des plateformes centralisées et décentralisées comme une balance entre simplicité et contrôle.",
-    "L'analogie de la banque pour les plateformes centralisées.",
-    "La mention de \"appétence au risque\" comme seul critère de décision."
+    "L'idée que le choix du statut est une étape déterminante.",
+    "La mention de \"5 critères clés\" sans les lister explicitement.",
+    "La formulation \"aligner le choix de votre statut avec la nature de votre projet et vos aspirations\"."
   ],
-  "ton_angle": "Explicatif et comparatif, visant à éclairer un choix pragmatique.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le choix entre plateformes d'échange centralisées et décentralisées détermine le niveau de contrôle de l'utilisateur sur ses fonds et la complexité des opérations.</these_centrale>\n<arguments_cles>\n- Les plateformes centralisées sont plus simples d'utilisation pour les débutants, offrent une meilleure liquidité et un support client, mais impliquent de confier ses clés privées.\n- Les plateformes décentralisées offrent un contrôle total sur les actifs, sans confier les clés privées, mais exigent une vigilance accrue et une meilleure compréhension des mécanismes de sécurité.\n- Le choix repose sur l'appétence au risque, le confort technologique et les objectifs d'investissement de l'utilisateur.\n</arguments_cles>\n<concepts_introduits>\n- Exchange : Plateforme pour acheter et vendre des cryptomonnaies.\n- Plateforme centralisée : Intermédiaire détenant les actifs de l'utilisateur.\n- Plateforme décentralisée (DEX) : Permet des transactions directes sans intermédiaire.\n- Clés privées : Secret nécessaire pour accéder et contrôler ses cryptomonnaies.\n- Liquidité : Facilité d'acheter/vendre sans impacter significativement le prix.\n- Slippage : Variation de prix lors d'une transaction importante sur un DEX.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La comparaison des plateformes centralisées et décentralisées comme une balance entre simplicité et contrôle.\n- L'analogie de la banque pour les plateformes centralisées.\n- La mention de \"appétence au risque\" comme seul critère de décision.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et comparatif, visant à éclairer un choix pragmatique.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif, comparatif, soulignant les implications pratiques et financières du choix du statut.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le choix du statut juridique (micro-entreprise, SASU, EURL) est une décision stratégique déterminante pour un travailleur indépendant, impactant directement sa fiscalité, ses charges sociales, sa protection sociale et sa responsabilité patrimoniale.</these_centrale>\n<arguments_cles>\n- Chaque statut présente des règles fiscales, des modalités de calcul des charges sociales et des niveaux de protection sociale spécifiques.\n- Les statuts comme la SASU ou l'EURL permettent une déduction plus fine des dépenses professionnelles que la micro-entreprise.\n- La responsabilité patrimoniale varie entre les statuts, certains protégeant mieux le patrimoine personnel en cas de difficultés.\n- La fiscalité et les charges sociales diffèrent : régime forfaitaire en micro-entreprise, déclaration de revenus et bénéfices réels en SASU/EURL.\n</arguments_cles>\n<concepts_introduits>\n- Micro-entreprise: Régime simplifié, déclaration CA, prélèvement forfaitaire libératoire.\n- SASU: Société par Actions Simplifiée Unipersonnelle, déduction dépenses, couverture sociale.\n- EURL: Entreprise Unipersonnelle à Responsabilité Limitée, déduction dépenses, couverture sociale.\n- Fiscalité: Système d'imposition des revenus et des bénéfices d'une activité.\n- Charges sociales: Cotisations obligatoires calculées sur CA ou rémunération.\n- Protection sociale: Couverture des risques (maladie, retraite, famille).\n- Responsabilité patrimoniale: Distinction entre patrimoine professionnel et personnel.\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_pas_repeter>\n- L'idée que le choix du statut est une étape déterminante.\n- La mention de \"5 critères clés\" sans les lister explicitement.\n- La formulation \"aligner le choix de votre statut avec la nature de votre projet et vos aspirations\".\n</a_ne_pas_repeter>\n<ton_angle>Informatif, comparatif, soulignant les implications pratiques et financières du choix du statut.</ton_angle>\n</fiche>"
 }

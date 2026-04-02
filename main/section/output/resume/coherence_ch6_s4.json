@@ -3,26 +3,28 @@
   "section": 4,
   "chapitre_numero": "6",
   "section_numero": "4",
-  "these_centrale": "Filtrer et analyser critiquement les informations est essentiel pour maintenir le cap de sa stratégie d'investissement face à la volatilité des cryptomonnaies.",
+  "these_centrale": "La distinction entre chiffre d'affaires et revenu net est fondamentale pour la santé financière des indépendants, car le revenu net représente la somme réelle disponible après déduction de toutes les charges.",
   "arguments_cles": [
-    "Distinguer les informations pertinentes des rumeurs et du bruit médiatique pour rester concentré sur ses objectifs.",
-    "L'écosystème crypto est sensible aux annonces et rumeurs qui provoquent des fluctuations de prix importantes.",
-    "Privilégier des sources d'information fiables et reconnues, se méfier des informations non vérifiées sur les réseaux sociaux.",
-    "Considérer l'horizon temporel de l'investissement pour ne pas réagir aux fluctuations court terme.",
-    "Développer une routine de consultation d'information pour éviter la surcharge et prendre du recul."
+    "Le chiffre d'affaires ne prend pas en compte les charges professionnelles et personnelles.",
+    "La confusion entre ces deux termes est une erreur fréquente chez les nouveaux indépendants.",
+    "Un suivi budgétaire rigoureux et un registre des factures et dépenses sont essentiels.",
+    "La séparation des comptes bancaires professionnel et personnel facilite le suivi.",
+    "L'intégration des charges sociales et fiscales dans le calcul du revenu net est primordiale."
   ],
   "concepts_introduits": [
-    "Bruit médiatique : Informations superflues ou trompeuses noyant les données utiles.",
-    "Volatilité : Tendance d'un actif à subir des variations de prix rapides et importantes.",
-    "Journal d'investissement : Outil documentant les motivations et paramètres de la stratégie d'investissement.",
-    "Surcharge informationnelle : Excès d'informations rendant difficile le traitement et la prise de décision."
+    "Chiffre d'affaires : Total des sommes facturées aux clients sur une période.",
+    "Revenu net : Ce qu'il reste après déduction de toutes les charges.",
+    "Charges professionnelles : Dépenses liées à l'activité (cotisations, taxes, frais).",
+    "Charges personnelles : Dépenses privées (loyer, crédits, assurances).",
+    "Suivi budgétaire : Organisation et contrôle des finances.",
+    "Compte bancaire professionnel : Compte dédié aux transactions de l'activité.",
+    "Provisionner : Mettre de côté des sommes pour des dépenses futures."
   ],
-  "liens_chapitres": "- Journal d'investissement, mentionné précédemment",
+  "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Réactions hâtives basées sur des spéculations ou des émotions passagères.",
-    "Fausses nouvelles destinées à influencer le marché.",
-    "Consultation des nouvelles en permanence."
+    "Transformer le chiffre d'affaires directement en argent disponible.",
+    "Sous-estimer l'impact des charges sur le revenu disponible."
   ],
-  "ton_angle": "Pédagogique et pragmatique, orienté vers la prise de décision éclairée en investissement.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Filtrer et analyser critiquement les informations est essentiel pour maintenir le cap de sa stratégie d'investissement face à la volatilité des cryptomonnaies.</these_centrale>\n<arguments_cles>\n- Distinguer les informations pertinentes des rumeurs et du bruit médiatique pour rester concentré sur ses objectifs.\n- L'écosystème crypto est sensible aux annonces et rumeurs qui provoquent des fluctuations de prix importantes.\n- Privilégier des sources d'information fiables et reconnues, se méfier des informations non vérifiées sur les réseaux sociaux.\n- Considérer l'horizon temporel de l'investissement pour ne pas réagir aux fluctuations court terme.\n- Développer une routine de consultation d'information pour éviter la surcharge et prendre du recul.\n</arguments_cles>\n<concepts_introduits>\n- Bruit médiatique : Informations superflues ou trompeuses noyant les données utiles.\n- Volatilité : Tendance d'un actif à subir des variations de prix rapides et importantes.\n- Journal d'investissement : Outil documentant les motivations et paramètres de la stratégie d'investissement.\n- Surcharge informationnelle : Excès d'informations rendant difficile le traitement et la prise de décision.\n</concepts_introduits>\n<liens_chapitres>\n- Journal d'investissement, mentionné précédemment\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Réactions hâtives basées sur des spéculations ou des émotions passagères.\n- Fausses nouvelles destinées à influencer le marché.\n- Consultation des nouvelles en permanence.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, orienté vers la prise de décision éclairée en investissement.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et préventif, mettant en garde contre les erreurs courantes et proposant des solutions pratiques.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La distinction entre chiffre d'affaires et revenu net est fondamentale pour la santé financière des indépendants, car le revenu net représente la somme réelle disponible après déduction de toutes les charges.</these_centrale>\n<arguments_cles>\n- Le chiffre d'affaires ne prend pas en compte les charges professionnelles et personnelles.\n- La confusion entre ces deux termes est une erreur fréquente chez les nouveaux indépendants.\n- Un suivi budgétaire rigoureux et un registre des factures et dépenses sont essentiels.\n- La séparation des comptes bancaires professionnel et personnel facilite le suivi.\n- L'intégration des charges sociales et fiscales dans le calcul du revenu net est primordiale.\n</arguments_cles>\n<concepts_introduits>\n- Chiffre d'affaires : Total des sommes facturées aux clients sur une période.\n- Revenu net : Ce qu'il reste après déduction de toutes les charges.\n- Charges professionnelles : Dépenses liées à l'activité (cotisations, taxes, frais).\n- Charges personnelles : Dépenses privées (loyer, crédits, assurances).\n- Suivi budgétaire : Organisation et contrôle des finances.\n- Compte bancaire professionnel : Compte dédié aux transactions de l'activité.\n- Provisionner : Mettre de côté des sommes pour des dépenses futures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Transformer le chiffre d'affaires directement en argent disponible.\n- Sous-estimer l'impact des charges sur le revenu disponible.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et préventif, mettant en garde contre les erreurs courantes et proposant des solutions pratiques.</ton_angle>\n</fiche>"
 }

@@ -3,26 +3,25 @@
   "section": 2,
   "chapitre_numero": "7",
   "section_numero": "2",
-  "these_centrale": "La sécurisation redondante et hors ligne de la phrase de récupération est essentielle pour protéger l'accès aux fonds numériques.",
+  "these_centrale": "La gestion proactive des distractions environnementales et comportementales est essentielle pour maintenir une concentration et une productivité accrues en télétravail.",
   "arguments_cles": [
-    "La phrase de récupération est la clé maîtresse pour régénérer l'accès aux portefeuilles et aux clés privées.",
-    "Le stockage en ligne ou sur des appareils connectés expose la phrase au piratage et à la perte des fonds.",
-    "Les méthodes hors ligne comme la gravure sur métal et la conservation dans des lieux sûrs sont recommandées.",
-    "La redondance des copies dans des lieux distincts renforce la sécurité.",
-    "Ne jamais divulguer cette phrase à qui que ce soit, même en cas de sollicitation du support technique."
+    "L'identification des sources de distraction est la première étape pour y remédier.",
+    "La désactivation des notifications et la communication des besoins permettent de limiter les interruptions.",
+    "La technique Pomodoro structure le travail en intervalles pour maintenir la concentration et prévenir l'épuisement."
   ],
   "concepts_introduits": [
-    "Phrase de récupération : Série de mots pour régénérer portefeuilles et clés privées.",
-    "Clés privées : Identifiants uniques pour accéder et gérer les cryptomonnaies.",
-    "Seed phrase : Autre terme pour phrase de récupération.",
-    "Phrase mnémonique : Autre terme pour phrase de récupération.",
-    "Stockage cloud : Service de stockage de données sur des serveurs distants."
+    "Télétravail : Travail effectué hors des locaux de l'employeur, généralement à domicile.",
+    "Technique Pomodoro : Méthode de gestion du temps par intervalles de travail et de pause."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La phrase de récupération est l'ultime clé d'accès.",
-    "Le papier peut se dégrader."
+    "Les notifications incessantes de votre téléphone.",
+    "Les tâches ménagères qui vous sollicitent.",
+    "Les sollicitations de votre entourage.",
+    "Recherches rapides sur internet qui s'étirent.",
+    "Conversations sur les réseaux sociaux.",
+    "Envies de pause café inopinées."
   ],
-  "ton_angle": "Didactique, axé sur la sécurité des actifs numériques.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La sécurisation redondante et hors ligne de la phrase de récupération est essentielle pour protéger l'accès aux fonds numériques.</these_centrale>\n<arguments_cles>\n- La phrase de récupération est la clé maîtresse pour régénérer l'accès aux portefeuilles et aux clés privées.\n- Le stockage en ligne ou sur des appareils connectés expose la phrase au piratage et à la perte des fonds.\n- Les méthodes hors ligne comme la gravure sur métal et la conservation dans des lieux sûrs sont recommandées.\n- La redondance des copies dans des lieux distincts renforce la sécurité.\n- Ne jamais divulguer cette phrase à qui que ce soit, même en cas de sollicitation du support technique.\n</arguments_cles>\n<concepts_introduits>\n- Phrase de récupération : Série de mots pour régénérer portefeuilles et clés privées.\n- Clés privées : Identifiants uniques pour accéder et gérer les cryptomonnaies.\n- Seed phrase : Autre terme pour phrase de récupération.\n- Phrase mnémonique : Autre terme pour phrase de récupération.\n- Stockage cloud : Service de stockage de données sur des serveurs distants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La phrase de récupération est l'ultime clé d'accès.\n- Le papier peut se dégrader.\n</a_ne_pas_repeter>\n<ton_angle>Didactique, axé sur la sécurité des actifs numériques.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et prescriptif, visant à fournir des solutions concrètes.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La gestion proactive des distractions environnementales et comportementales est essentielle pour maintenir une concentration et une productivité accrues en télétravail.</these_centrale>\n<arguments_cles>\n- L'identification des sources de distraction est la première étape pour y remédier.\n- La désactivation des notifications et la communication des besoins permettent de limiter les interruptions.\n- La technique Pomodoro structure le travail en intervalles pour maintenir la concentration et prévenir l'épuisement.\n</arguments_cles>\n<concepts_introduits>\n- Télétravail : Travail effectué hors des locaux de l'employeur, généralement à domicile.\n- Technique Pomodoro : Méthode de gestion du temps par intervalles de travail et de pause.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les notifications incessantes de votre téléphone.\n- Les tâches ménagères qui vous sollicitent.\n- Les sollicitations de votre entourage.\n- Recherches rapides sur internet qui s'étirent.\n- Conversations sur les réseaux sociaux.\n- Envies de pause café inopinées.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et prescriptif, visant à fournir des solutions concrètes.</ton_angle>\n</fiche>"
 }

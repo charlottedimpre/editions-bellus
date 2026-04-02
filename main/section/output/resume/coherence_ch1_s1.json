@@ -3,23 +3,21 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "La blockchain se différencie des systèmes financiers traditionnels grâce à sa décentralisation, sa transparence et l'immutabilité de ses enregistrements.",
+  "these_centrale": "Le passage du salariat au freelancing implique des différences tangibles en termes d'emploi du temps, de revenu net et d'autonomie décisionnelle.",
   "arguments_cles": [
-    "La décentralisation élimine le contrôle d'une autorité centrale, assurant résilience et indépendance.",
-    "La transparence rend les transactions visibles publiquement sur un registre, permettant une auditabilité constante.",
-    "L'immutabilité garantit que les enregistrements ne peuvent être modifiés ou supprimés une fois ajoutés."
+    "Le salariat offre une structure avec horaires fixes, rémunération régulière et protection légale (congés, maladie, couverture sociale).",
+    "Le freelancing confère une autonomie totale sur le choix des missions, des horaires et de l'organisation du travail.",
+    "Le revenu en salariat est stable, tandis qu'en freelancing, il est potentiellement illimité mais sujet à des fluctuations importantes.",
+    "Le freelancing demande une grande auto-discipline et une gestion rigoureuse des charges sociales et fiscales."
   ],
   "concepts_introduits": [
-    "Blockchain : Registre public distribué, transparent et immuable des transactions.",
-    "Décentralisation : Absence de contrôle par une autorité centrale unique sur le réseau.",
-    "Transparence : Visibilité publique de toutes les transactions enregistrées sur la chaîne.",
-    "Immutabilité : Caractéristique rendant impossible la modification ou suppression des enregistrements passés."
+    "Salariat : Emploi avec horaires fixes, rémunération régulière et cadre légal protecteur.",
+    "Indépendance professionnelle (freelancing) : Autonomie totale sur missions, horaires et organisation, revenu non plafonné.",
+    "Autonomie décisionnelle : Capacité à prendre des décisions concernant son travail.",
+    "Revenu net : Ce qui reste après déduction des charges et impôts."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "\"Vous pouvez ainsi vérifier la provenance et la destination des fonds, à condition de connaître les adresses concernées.\"",
-    "\"Pour vous, cela signifie que les transactions enregistrées sur la blockchain sont permanentes et fiables, établissant une source de vérité unique et inaltérable pour l'historique de toutes les activités.\""
-  ],
-  "ton_angle": "Explicatif et informatif, détaillant les caractéristiques fondamentales de la blockchain.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La blockchain se différencie des systèmes financiers traditionnels grâce à sa décentralisation, sa transparence et l'immutabilité de ses enregistrements.</these_centrale>\n<arguments_cles>\n- La décentralisation élimine le contrôle d'une autorité centrale, assurant résilience et indépendance.\n- La transparence rend les transactions visibles publiquement sur un registre, permettant une auditabilité constante.\n- L'immutabilité garantit que les enregistrements ne peuvent être modifiés ou supprimés une fois ajoutés.\n</arguments_cles>\n<concepts_introduits>\n- Blockchain : Registre public distribué, transparent et immuable des transactions.\n- Décentralisation : Absence de contrôle par une autorité centrale unique sur le réseau.\n- Transparence : Visibilité publique de toutes les transactions enregistrées sur la chaîne.\n- Immutabilité : Caractéristique rendant impossible la modification ou suppression des enregistrements passés.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous pouvez ainsi vérifier la provenance et la destination des fonds, à condition de connaître les adresses concernées.\"\n- \"Pour vous, cela signifie que les transactions enregistrées sur la blockchain sont permanentes et fiables, établissant une source de vérité unique et inaltérable pour l'historique de toutes les activités.\"\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et informatif, détaillant les caractéristiques fondamentales de la blockchain.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Comparatif et informatif, présentant les avantages et inconvénients de chaque statut.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le passage du salariat au freelancing implique des différences tangibles en termes d'emploi du temps, de revenu net et d'autonomie décisionnelle.</these_centrale>\n<arguments_cles>\n- Le salariat offre une structure avec horaires fixes, rémunération régulière et protection légale (congés, maladie, couverture sociale).\n- Le freelancing confère une autonomie totale sur le choix des missions, des horaires et de l'organisation du travail.\n- Le revenu en salariat est stable, tandis qu'en freelancing, il est potentiellement illimité mais sujet à des fluctuations importantes.\n- Le freelancing demande une grande auto-discipline et une gestion rigoureuse des charges sociales et fiscales.\n</arguments_cles>\n<concepts_introduits>\n- Salariat : Emploi avec horaires fixes, rémunération régulière et cadre légal protecteur.\n- Indépendance professionnelle (freelancing) : Autonomie totale sur missions, horaires et organisation, revenu non plafonné.\n- Autonomie décisionnelle : Capacité à prendre des décisions concernant son travail.\n- Revenu net : Ce qui reste après déduction des charges et impôts.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La prévisibilité rassurante du salariat.\n- Le potentiel de revenu illimité du freelancing.\n- La nécessité d'une gestion rigoureuse en tant que freelance.\n</a_ne_not_repeter>\n<ton_angle>Comparatif et informatif, présentant les avantages et inconvénients de chaque statut.</ton_angle>\n</fiche>"
 }
