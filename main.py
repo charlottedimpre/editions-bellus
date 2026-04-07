@@ -8,6 +8,7 @@ if str(SRC_DIR) not in sys.path:
 
 from suivi.suivi import suivi
 from section.section_cleaner import auto_clean_section_errors
+from affichage.affichage import affichage
 
 
 def get_restart_paths():
@@ -86,12 +87,12 @@ def run_resume_until_done(max_cycles=20):
 if __name__ == '__main__':
     while True:
         inputthething = input(
-            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), ou quitter (5) ? "
+            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), generer le PDF (5), ou quitter (6) ? "
         )
-        while inputthething not in ['1', '2', '3', '4', '5']:
-            print("Le nombre entre doit etre 1, 2, 3, 4 ou 5.")
+        while inputthething not in ['1', '2', '3', '4', '5', '6']:
+            print("Le nombre entre doit etre 1, 2, 3, 4, 5 ou 6.")
             inputthething = input(
-                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), ou quitter (5) ? "
+                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), generer le PDF (5), ou quitter (6) ? "
             )
 
         if inputthething == '1':
@@ -126,6 +127,9 @@ if __name__ == '__main__':
                 print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
         elif inputthething == '4':
             run_resume_until_done()
+        elif inputthething == '5':
+            affichage()
+            print("PDF genere.")
         else:
             print("Au revoir !")
             break

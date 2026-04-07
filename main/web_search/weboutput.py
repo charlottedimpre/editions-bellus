@@ -5,6 +5,12 @@ from ollama import ChatResponse, chat
 
 MODEL = 'kimi-k2.5:cloud'
 
+# Limites simples pour eviter les prompts trop lourds.
+MAX_SOURCE_CONTENT_CHARS = 30000
+MAX_PARTIAL_SUMMARY_CHARS = 2500
+MAX_MERGE_INPUT_CHARS = 50000
+TRUNCATION_MARKER = "\n\n[... contenu tronque ...]"
+
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
@@ -43,15 +49,35 @@ def load_sources():
     return all_sources
 
 
+def truncate_text(text: str, max_chars: int) -> tuple[str, bool]:
+    """Tronque un texte au-dela de max_chars en gardant debut + fin."""
+    if len(text) <= max_chars:
+        return text, False
+
+    marker_size = len(TRUNCATION_MARKER)
+    if max_chars <= marker_size + 20:
+        return text[:max_chars], True
+
+    available = max_chars - marker_size
+    head_size = int(available * 0.8)
+    tail_size = available - head_size
+    return f"{text[:head_size]}{TRUNCATION_MARKER}{text[-tail_size:]}", True
+
+
 def summarize_single_source(prompt: str, sujet: str, source: dict) -> str:
     """Résume une seule source via le LLM."""
+    raw_content = source.get("content", "")
+    content, was_truncated = truncate_text(raw_content, MAX_SOURCE_CONTENT_CHARS)
+
     source_text = (
         f"Titre : {source['title']}\n"
         f"URL : {source['url']}\n"
-        f"Contenu :\n{source['content']}"
+        f"Contenu :\n{content}"
     )
 
     print(f"   Résumé de : {source['title'][:80]}...")
+    if was_truncated:
+        print(f"   ↳ Contenu tronque ({len(raw_content)} -> {len(content)} caracteres)")
 
     response: ChatResponse = chat(model=MODEL, messages=[
         {
@@ -64,7 +90,22 @@ def summarize_single_source(prompt: str, sujet: str, source: dict) -> str:
 
 def merge_summaries(prompt: str, sujet: str, partial_summaries: list[str]) -> str:
     """Fusionne tous les résumés partiels en un résumé final unique."""
-    all_partials = "\n---\n".join(partial_summaries)
+    clipped_summaries = []
+    truncated_count = 0
+
+    for summary in partial_summaries:
+        clipped, was_truncated = truncate_text(summary, MAX_PARTIAL_SUMMARY_CHARS)
+        if was_truncated:
+            truncated_count += 1
+        clipped_summaries.append(clipped)
+
+    all_partials = "\n---\n".join(clipped_summaries)
+    all_partials, merge_was_truncated = truncate_text(all_partials, MAX_MERGE_INPUT_CHARS)
+
+    if truncated_count:
+        print(f"Resumes partiels tronques: {truncated_count}/{len(partial_summaries)}")
+    if merge_was_truncated:
+        print("Payload de fusion tronque pour respecter la limite globale.")
 
     merge_prompt = (
         f"{prompt}\n\n"
