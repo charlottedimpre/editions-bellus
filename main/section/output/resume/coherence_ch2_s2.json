@@ -3,20 +3,26 @@
   "section": 2,
   "chapitre_numero": "2",
   "section_numero": "2",
-  "these_centrale": "La réussite dans le freelancing repose sur une évaluation réaliste de sa tolérance au risque financier et une préparation adéquate face à l'incertitude des revenus.",
+  "these_centrale": "Les réactions physiques et mentales à la conduite sont dues à un dérèglement du système nerveux sympathique, mais ce mécanisme peut être corrigé.",
   "arguments_cles": [
-    "Le freelancing implique une variation des revenus, contrairement à un salaire fixe.",
-    "L'individu doit évaluer sa capacité à vivre avec une rémunération fluctuante et gérer l'anxiété potentielle.",
-    "Une épargne de précaution est essentielle pour traverser les périodes creuses.",
-    "La patience face à des efforts non immédiatement récompensés financièrement est cruciale."
+    "Le système nerveux sympathique s'active anormalement en interprétant la conduite comme une menace.",
+    "Les hormones de stress préparent le corps à une réaction de lutte ou de fuite excessive.",
+    "Les sensations physiques déclenchent des pensées négatives qui amplifient la peur et le stress.",
+    "Le cerveau a appris à associer la conduite à un danger, créant une hypersensibilité."
   ],
   "concepts_introduits": [
-    "Tolérance au risque : Capacité à accepter et gérer l'incertitude et la volatilité financière.",
-    "Indépendants : Travailleurs autonomes n'ayant pas de contrat de travail salarié classique.",
-    "Épargne de précaution : Fonds mis de côté pour faire face aux imprévus financiers."
+    "Système nerveux autonome : Gère les fonctions corporelles involontaires.",
+    "Branche sympathique : Prépare le corps à l'action face au danger.",
+    "Adrénaline : Hormone de stress déclenchant une réponse rapide.",
+    "Cortisol : Hormone de stress agissant sur le métabolisme et l'immunité.",
+    "Conditionnement erroné : Association apprise entre un stimulus et une réponse inappropriée."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pédagogique et introspectif, invitant à l'auto-évaluation.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La réussite dans le freelancing repose sur une évaluation réaliste de sa tolérance au risque financier et une préparation adéquate face à l'incertitude des revenus.</these_centrale>\n<arguments_cles>\n- Le freelancing implique une variation des revenus, contrairement à un salaire fixe.\n- L'individu doit évaluer sa capacité à vivre avec une rémunération fluctuante et gérer l'anxiété potentielle.\n- Une épargne de précaution est essentielle pour traverser les périodes creuses.\n- La patience face à des efforts non immédiatement récompensés financièrement est cruciale.\n</arguments_cles>\n<concepts_introduits>\n- Tolérance au risque : Capacité à accepter et gérer l'incertitude et la volatilité financière.\n- Indépendants : Travailleurs autonomes n'ayant pas de contrat de travail salarié classique.\n- Épargne de précaution : Fonds mis de côté pour faire face aux imprévus financiers.\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_not_repeter>\n- \"Êtes-vous prêt à gérer l’incertitude financière du freelancing ?\" (Question rhétorique introductive)\n- \"Votre tolérance au risque est un facteur déterminant pour la réussite de votre transition.\" (Formulation trop directe)\n- Le texte se concentre sur la préparation psychologique et financière et ne mentionne pas de statistiques ou de données chiffrées.\n</a_ne_not_repeter>\n<ton_angle>Pédagogique et introspectif, invitant à l'auto-évaluation.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Accélération du rythme cardiaque, respiration courte, tremblements, sueurs.",
+    "Cercle vicieux entre sensations physiques et pensées négatives.",
+    "Le dérèglement est la cause, pas la conséquence."
+  ],
+  "ton_angle": "Explicatif et rassurant, prouvant que la peur est une réponse apprise modifiable.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les réactions physiques et mentales à la conduite sont dues à un dérèglement du système nerveux sympathique, mais ce mécanisme peut être corrigé.</these_centrale>\n<arguments_cles>\n- Le système nerveux sympathique s'active anormalement en interprétant la conduite comme une menace.\n- Les hormones de stress préparent le corps à une réaction de lutte ou de fuite excessive.\n- Les sensations physiques déclenchent des pensées négatives qui amplifient la peur et le stress.\n- Le cerveau a appris à associer la conduite à un danger, créant une hypersensibilité.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux autonome : Gère les fonctions corporelles involontaires.\n- Branche sympathique : Prépare le corps à l'action face au danger.\n- Adrénaline : Hormone de stress déclenchant une réponse rapide.\n- Cortisol : Hormone de stress agissant sur le métabolisme et l'immunité.\n- Conditionnement erroné : Association apprise entre un stimulus et une réponse inappropriée.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Accélération du rythme cardiaque, respiration courte, tremblements, sueurs.\n- Cercle vicieux entre sensations physiques et pensées négatives.\n- Le dérèglement est la cause, pas la conséquence.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, prouvant que la peur est une réponse apprise modifiable.</ton_angle>\n</fiche>"
 }

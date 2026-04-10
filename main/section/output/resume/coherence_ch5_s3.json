@@ -3,28 +3,23 @@
   "section": 3,
   "chapitre_numero": "5",
   "section_numero": "3",
-  "these_centrale": "Une proposition commerciale réussie démontre la compréhension du besoin client, offre une solution adaptée et justifie la valeur apportée pour persuader le prospect.",
+  "these_centrale": "Un plan d'exposition hebdomadaire, séquencé en micro-étapes réalistes, est essentiel pour surmonter l'anxiété.",
   "arguments_cles": [
-    "Une proposition commerciale efficace comprend un résumé exécutif, une démonstration de compréhension du besoin, une solution détaillée et la mise en avant des bénéfices client.",
-    "Il faut privilégier les bénéfices concrets pour le client plutôt que les caractéristiques des services, en illustrant avec des exemples.",
-    "Les erreurs à éviter incluent la généralisation, le manque de personnalisation, la sous-estimation des tarifs et une mise en forme négligée.",
-    "La justification du coût par la valeur apportée est essentielle, et l'offre doit inciter le client à l'action en démontrant le retour sur investissement."
+    "Des objectifs hebdomadaires réalistes permettent une progression mesurée et évite le sentiment de submersion.",
+    "Fixer des objectifs spécifiques et mesurables pour chaque session favorise la réussite et la motivation.",
+    "L'adaptation des objectifs au rythme personnel et l'anticipation des difficultés renforcent le contrôle.",
+    "Le découpage des défis en étapes accessibles permet une familiarisation progressive et renforce la conviction."
   ],
   "concepts_introduits": [
-    "Résumé exécutif : Synthèse du problème, solution et bénéfices.",
-    "Besoin client : Compréhension des enjeux et des attentes spécifiques du prospect.",
-    "Solution adaptée : Proposition personnalisée répondant aux exigences du client.",
-    "Bénéfices client : Avantages directs et tangibles pour le prospect.",
-    "Valeur apportée : Justification du coût par les résultats et le retour sur investissement.",
-    "Retour sur investissement (ROI) : Mesure de la rentabilité d'une prestation."
+    "Micro-étapes : Petites actions gérables pour atteindre un objectif plus large.",
+    "Critères d'évaluation : Indicateurs objectifs pour mesurer l'atteinte d'un objectif.",
+    "Routine de confrontation : Pratique régulière pour désapprendre les réactions d'évitement."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Description de services",
-    "Caractéristiques des services",
-    "Portfolio exhaustif",
-    "Traiter les techniques de négociation des tarifs"
+    "L'importance réside dans la régularité plutôt que la recherche d'exploits.",
+    "Chaque petite victoire renforce la conviction que vous pouvez surmonter votre peur."
   ],
-  "ton_angle": "Informatif et prescriptif, avec des conseils pratiques et des mises en garde.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Une proposition commerciale réussie démontre la compréhension du besoin client, offre une solution adaptée et justifie la valeur apportée pour persuader le prospect.</these_centrale>\n<arguments_cles>\n- Une proposition commerciale efficace comprend un résumé exécutif, une démonstration de compréhension du besoin, une solution détaillée et la mise en avant des bénéfices client.\n- Il faut privilégier les bénéfices concrets pour le client plutôt que les caractéristiques des services, en illustrant avec des exemples.\n- Les erreurs à éviter incluent la généralisation, le manque de personnalisation, la sous-estimation des tarifs et une mise en forme négligée.\n- La justification du coût par la valeur apportée est essentielle, et l'offre doit inciter le client à l'action en démontrant le retour sur investissement.\n</arguments_cles>\n<concepts_introduits>\n- Résumé exécutif : Synthèse du problème, solution et bénéfices.\n- Besoin client : Compréhension des enjeux et des attentes spécifiques du prospect.\n- Solution adaptée : Proposition personnalisée répondant aux exigences du client.\n- Bénéfices client : Avantages directs et tangibles pour le prospect.\n- Valeur apportée : Justification du coût par les résultats et le retour sur investissement.\n- Retour sur investissement (ROI) : Mesure de la rentabilité d'une prestation.\n</concepts_introduits>\n<liens_chapitres>\nAucun\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Description de services\n- Caractéristiques des services\n- Portfolio exhaustif\n- Traiter les techniques de négociation des tarifs\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prescriptif, avec des conseils pratiques et des mises en garde.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton pragmatique et encourageant, axé sur la décomposition des défis pour vaincre l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Un plan d'exposition hebdomadaire, séquencé en micro-étapes réalistes, est essentiel pour surmonter l'anxiété.</these_centrale>\n<arguments_cles>\n- Des objectifs hebdomadaires réalistes permettent une progression mesurée et évite le sentiment de submersion.\n- Fixer des objectifs spécifiques et mesurables pour chaque session favorise la réussite et la motivation.\n- L'adaptation des objectifs au rythme personnel et l'anticipation des difficultés renforcent le contrôle.\n- Le découpage des défis en étapes accessibles permet une familiarisation progressive et renforce la conviction.\n</arguments_cles>\n<concepts_introduits>\n- Micro-étapes : Petites actions gérables pour atteindre un objectif plus large.\n- Critères d'évaluation : Indicateurs objectifs pour mesurer l'atteinte d'un objectif.\n- Routine de confrontation : Pratique régulière pour désapprendre les réactions d'évitement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'importance réside dans la régularité plutôt que la recherche d'exploits.\n- Chaque petite victoire renforce la conviction que vous pouvez surmonter votre peur.\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur la décomposition des défis pour vaincre l'anxiété.</ton_angle>\n</fiche>"
 }

@@ -128,18 +128,31 @@ def suivisection(start_from=None, auto_confirm=False):
         ch_num = int(chap["numero"])
         nb_sec = len(chap["sections"])
         print(f"Chapitre {ch_num} — {chap['titre']} ({nb_sec} sections)")
+        failed_section = None
 
         start_idx_for_chapter = sec_start_idx if chap_idx == start_chap_idx else 0
         for sec in chap["sections"][start_idx_for_chapter:]:
             sec_num = int(sec["numero"])
             max_attempts = 10
+            section_success = False
             for attempt in range(1, max_attempts + 1):
                 try:
                     _section(ch_num, sec_num)
                     gen_section(ch_num, sec_num)
+                    section_success = True
                     break
                 except Exception as e:
                     print(f"Erreur section {sec_num} (chapitre {ch_num}) tentative {attempt}/{max_attempts}: {e}")
+
+            if not section_success:
+                failed_section = sec_num
+                break
+
+        if failed_section is not None:
+            raise RuntimeError(
+                f"Echec definitif: section_ch{ch_num}_s{failed_section} non generee apres 10 tentatives. "
+                "Arret de l'etape sections_brutes pour eviter une validation incorrecte."
+            )
 
         if auto_confirm:
             avis_createur = '1'
@@ -192,8 +205,7 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
         gen_intro()
 
     elif fonction =="gen_all_sections":
-        suivisection(start_from=resume_from, auto_confirm=auto_confirm)
-        return None
+        return suivisection(start_from=resume_from, auto_confirm=auto_confirm)
 
     elif fonction == "gen_conclu":
         gen_conclu()

@@ -3,21 +3,23 @@
   "section": 4,
   "chapitre_numero": "5",
   "section_numero": "4",
-  "these_centrale": "Une proposition commerciale efficace doit être personnalisée, axée sur les bénéfices clients et justifier la valeur par rapport au coût pour inciter à l'action.",
+  "these_centrale": "La progression forcée et l'ignorance des signaux corporels renforcent la peur au lieu de la diminuer.",
   "arguments_cles": [
-    "Une proposition réussie démontre une compréhension des enjeux du client via un résumé exécutif clair.",
-    "Il est primordial de démontrer que vous avez écouté et compris le besoin spécifique du prospect.",
-    "Il faut mettre l'accent sur les bénéfices concrets et tangibles pour le client.",
-    "La justification du coût doit être basée sur la valeur apportée et le retour sur investissement."
+    "La progression rapide provoque la submersion et annule les bénéfices acquis.",
+    "Forcer les étapes confirme au cerveau la dangerosité d'une situation.",
+    "Ignorer les signaux d'anxiété empêche la gestion proactive des réactions.",
+    "La comparaison avec autrui crée une pression et fausse le parcours personnel."
   ],
   "concepts_introduits": [
-    "Résumé exécutif : Synthèse claire du problème, solution et bénéfices attendus.",
-    "Personnalisation : Adaptation de l'offre aux besoins spécifiques du client.",
-    "Bénéfices clients : Avantages concrets et tangibles retirés par le client.",
-    "Retour sur investissement (ROI) : Mesure de la rentabilité d'une dépense."
+    "Exposition : Progressive confrontation à des situations anxiogènes.",
+    "Signaux corporels : Manifestations physiques de l'anxiété débutante.",
+    "Submersion : État de détresse face à une surcharge émotionnelle."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Persuasif, centré sur le client et pragmatique.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Une proposition commerciale efficace doit être personnalisée, axée sur les bénéfices clients et justifier la valeur par rapport au coût pour inciter à l'action.</these_centrale>\n<arguments_cles>\n- Une proposition réussie démontre une compréhension des enjeux du client via un résumé exécutif clair.\n- Il est primordial de démontrer que vous avez écouté et compris le besoin spécifique du prospect.\n- Il faut mettre l'accent sur les bénéfices concrets et tangibles pour le client.\n- La justification du coût doit être basée sur la valeur apportée et le retour sur investissement.\n</arguments_cles>\n<concepts_introduits>\n- Résumé exécutif : Synthèse claire du problème, solution et bénéfices attendus.\n- Personnalisation : Adaptation de l'offre aux besoins spécifiques du client.\n- Bénéfices clients : Avantages concrets et tangibles retirés par le client.\n- Retour sur investissement (ROI) : Mesure de la rentabilité d'une dépense.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le jargon excessif.\n- La généralisation des propositions.\n- Une mise en forme négligée.\n</a_ne_not_repeter>\n<ton_angle>Persuasif, centré sur le client et pragmatique.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Les pièges courants de l'exposition sont expliqués.",
+    "Ne pas ignorer les signaux du corps pour progresser."
+  ],
+  "ton_angle": "Pédagogique et préventif, soulignant les erreurs à éviter.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La progression forcée et l'ignorance des signaux corporels renforcent la peur au lieu de la diminuer.</these_centrale>\n<arguments_cles>\n- La progression rapide provoque la submersion et annule les bénéfices acquis.\n- Forcer les étapes confirme au cerveau la dangerosité d'une situation.\n- Ignorer les signaux d'anxiété empêche la gestion proactive des réactions.\n- La comparaison avec autrui crée une pression et fausse le parcours personnel.\n</arguments_cles>\n<concepts_introduits>\n- Exposition : Progressive confrontation à des situations anxiogènes.\n- Signaux corporels : Manifestations physiques de l'anxiété débutante.\n- Submersion : État de détresse face à une surcharge émotionnelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les pièges courants de l'exposition sont expliqués.\n- Ne pas ignorer les signaux du corps pour progresser.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et préventif, soulignant les erreurs à éviter.</ton_angle>\n</fiche>"
 }

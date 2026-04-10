@@ -10,6 +10,7 @@ from google.genai.errors import ServerError
 
 from parser import parse_section, parse_resume
 from section.section_cleaner import normalize_section_content, strip_leading_title
+from section.section_verification import verification_section_report as run_section_verification_report
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -114,7 +115,46 @@ def _count_total_sections(chapitres: list[dict]) -> int:
     return sum(len(chap.get("sections", [])) for chap in chapitres if isinstance(chap, dict))
 
 
-def gen_section(chapitre, section):
+def _load_previous_coherence_context(chapitre: int, section: int, structure_data: list[dict]) -> str:
+    if chapitre == 1 and section == 1:
+        msg = "il n'y a pas de section précédente, c'est la première section du premier chapitre, aucune vérification de cohérence nécessaire."
+        print(msg)
+        return msg
+
+    coherence_path = None
+    coherence_name = ""
+
+    if section == 1:
+        nb_sec = None
+        for chap in structure_data:
+            if int(chap["numero"]) == chapitre - 1:
+                nb_sec = len(chap["sections"])
+                break
+        if nb_sec is None:
+            msg = "Section précédente introuvable dans la structure."
+            print(msg)
+            return msg
+
+        coherence_name = f"coherence_ch{chapitre - 1}_s{nb_sec}.json"
+        coherence_path = RESUME_DIR / coherence_name
+    else:
+        coherence_name = f"coherence_ch{chapitre}_s{section - 1}.json"
+        coherence_path = RESUME_DIR / coherence_name
+
+    if coherence_path.exists():
+        with coherence_path.open("r", encoding="utf-8") as f:
+            coherence = f.read()
+        print(f"Vérification de cohérence avec la section précédente : {coherence_name}...")
+        return coherence
+
+    print(
+        f"[WARN] Fichier de cohérence manquant: {coherence_name}. "
+        "Continuation sans contexte de cohérence précédent."
+    )
+    return "Contexte de cohérence précédent indisponible (resume manquant)."
+
+
+def gen_section(chapitre, section, verification_section: bool = True):
     with FICHE_PATH.open("r", encoding="utf-8") as f:
         fiche = f.read()
 
@@ -135,39 +175,56 @@ def gen_section(chapitre, section):
         f"Contraintes dynamiques section: cible {target_words} mots, plage {min_words}-{max_words} (total sections: {total_sections}, max livre: {MAX_BOOK_WORDS})."
     )
 
-    coherence = ""
-    if chapitre == 1 and section == 1:
-        coherence = "il n'y a pas de section précédente, c'est la première section du premier chapitre, aucune vérification de cohérence nécessaire."
-        print(f"{coherence}")
-    elif section == 1:
-        chapitres = structure_data
-        nb_sec = None
-        for chap in chapitres:
-            if int(chap["numero"]) == chapitre - 1:
-                nb_sec = len(chap["sections"])
-                break
-
-        if nb_sec is not None:
-            coherence_path = RESUME_DIR / f"coherence_ch{chapitre - 1}_s{nb_sec}.json"
-            with coherence_path.open("r", encoding="utf-8") as f:
-                coherence = f.read()
-            print(f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre - 1}_s{nb_sec}.json...")
-        else:
-            coherence = "Section précédente introuvable dans la structure."
-            print(coherence)
-    else:
-        coherence_path = RESUME_DIR / f"coherence_ch{chapitre}_s{section - 1}.json"
-        with coherence_path.open("r", encoding="utf-8") as f:
-            coherence = f.read()
-        print(f"Vérification de cohérence avec la section précédente : coherence_ch{chapitre}_s{section - 1}.json...")
+    coherence = _load_previous_coherence_context(chapitre, section, structure_data)
 
     coherence_text = coherence if coherence else ""
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
+    critique_artefact_feedback = ""
+    critique_fluidite_feedback = ""
+    critique_coherence_interne_feedback = ""
+    critique_linguistique_feedback = ""
+    critique_redondance_inter_sections_feedback = ""
 
     for regen_attempt in range(1, MAX_SECTION_REGEN_ATTEMPTS + 1):
+        critique_block = ""
+        if (
+            critique_artefact_feedback
+            or critique_fluidite_feedback
+            or critique_coherence_interne_feedback
+            or critique_linguistique_feedback
+            or critique_redondance_inter_sections_feedback
+        ):
+            critique_block = "\n\nRETOURS CRITIQUES DE VERIFICATION (obligatoire a corriger):\n"
+            if critique_artefact_feedback:
+                critique_block += (
+                    "- Artefact:\n"
+                    f"{critique_artefact_feedback}\n"
+                )
+            if critique_fluidite_feedback:
+                critique_block += (
+                    "- Fluidite:\n"
+                    f"{critique_fluidite_feedback}\n"
+                )
+            if critique_coherence_interne_feedback:
+                critique_block += (
+                    "- Coherence interne:\n"
+                    f"{critique_coherence_interne_feedback}\n"
+                )
+            if critique_linguistique_feedback:
+                critique_block += (
+                    "- Linguistique:\n"
+                    f"{critique_linguistique_feedback}\n"
+                )
+            if critique_redondance_inter_sections_feedback:
+                critique_block += (
+                    "- Redondance inter-sections:\n"
+                    f"{critique_redondance_inter_sections_feedback}\n"
+                )
+            critique_block += "Corrige explicitement tous ces points dans cette nouvelle version de la section."
+
         response_text = _generate_text_with_retry(
-            contents=f"{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\nCONTRAINTE DE LONGUEUR : vise environ {target_words} mots, accepte uniquement une section entre {min_words} et {max_words} mots.\n\nVérification de cohérence avec la section précédente : {coherence_text}",
+            contents=f"{prompt}\n\nFICHE DE CADRAGE :{fiche}\n\nPLAN DÉTAILLÉ :{plan}\n\nFICHE DE STRUCTURE DU CHAPITRE : {structure}\n\nCHAPITRE À RÉDIGER : Chapitre {chapitre}\n\nSECTION À RÉDIGER : Section {section}\n\nCONTRAINTE DE LONGUEUR : vise environ {target_words} mots, accepte uniquement une section entre {min_words} et {max_words} mots. Critiques à prendre en considération : {critique_block}\n\nVérification de cohérence avec la section précédente : {coherence_text}",
             context_label=f"section_ch{chapitre}_s{section}",
         )
 
@@ -194,10 +251,64 @@ def gen_section(chapitre, section):
         )
 
         if min_words <= word_count <= max_words:
-            coherence_check(chapitre, section)
-            print(
-                f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Vérification de cohérence effectuée."
-            )
+            if verification_section:
+                verification_report = run_section_verification_report(chapitre, section)
+                verification_ok = verification_report.get("decision") == "OUI"
+                print(verification_report)
+                if not verification_ok:
+                    critique_artefact_feedback = (
+                        str(verification_report.get("critique_artefact") or "").strip()
+                    )
+                    critique_fluidite_feedback = (
+                        str(verification_report.get("critique_fluidite") or "").strip()
+                    )
+                    critique_coherence_interne_feedback = (
+                        str(verification_report.get("critique_coherence_interne") or "").strip()
+                    )
+                    critique_linguistique_feedback = (
+                        str(verification_report.get("critique_linguistique") or "").strip()
+                    )
+                    critique_redondance_inter_sections_feedback = (
+                        str(verification_report.get("critique_redondance_inter_sections") or "").strip()
+                    )
+                    if regen_attempt == MAX_SECTION_REGEN_ATTEMPTS:
+                        raise RuntimeError(
+                            f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON/indeterminee) apres {MAX_SECTION_REGEN_ATTEMPTS} tentatives."
+                        )
+                    if critique_artefact_feedback:
+                        print(
+                            f"Critique artefact injectee pour regeneration: {critique_artefact_feedback}"
+                        )
+                    if critique_fluidite_feedback:
+                        print(
+                            f"Critique fluidite injectee pour regeneration: {critique_fluidite_feedback}"
+                        )
+                    if critique_coherence_interne_feedback:
+                        print(
+                            f"Critique coherence interne injectee pour regeneration: {critique_coherence_interne_feedback}"
+                        )
+                    if critique_linguistique_feedback:
+                        print(
+                            f"Critique linguistique injectee pour regeneration: {critique_linguistique_feedback}"
+                        )
+                    if critique_redondance_inter_sections_feedback:
+                        print(
+                            "Critique redondance inter-sections injectee pour regeneration: "
+                            f"{critique_redondance_inter_sections_feedback}"
+                        )
+                    print(
+                        f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON). Regeneration ({regen_attempt}/{MAX_SECTION_REGEN_ATTEMPTS})..."
+                    )
+                    continue
+
+                coherence_check(chapitre, section)
+                print(
+                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Verification section (OUI) puis coherence effectuees."
+                )
+            else:
+                print(
+                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). verification_section desactivee: verification OUI/NON et coherence ignorees."
+                )
             return
 
         if regen_attempt == MAX_SECTION_REGEN_ATTEMPTS:

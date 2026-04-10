@@ -3,22 +3,23 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "La proposition de valeur est la réponse concise et ciblée qui explique pourquoi un client doit choisir votre offre en soulignant les bénéfices uniques que vous apportez.",
+  "these_centrale": "Les techniques d'ancrage sensoriel ramènent au présent pour reprendre le contrôle face à l'anxiété.",
   "arguments_cles": [
-    "Elle clarifie les bénéfices uniques qui vous distinguent de la concurrence.",
-    "Elle articule comment vos compétences résolvent des problèmes spécifiques ou répondent à des désirs de la clientèle cible.",
-    "Elle doit être claire, facile à comprendre et parler le langage du client.",
-    "Elle exprime la transformation promise (gain de temps, efficacité, réduction des coûts, etc.).",
-    "Elle doit spécifier concrètement la qualité et l'excellence, plutôt que d'utiliser des généralités."
+    "L'ancrage sensoriel détourne l'attention des pensées négatives vers le concret immédiat.",
+    "La méthode 5-4-3-2-1 concentre le cerveau sur des informations factuelles extérieures.",
+    "Cette technique occupe l'esprit avec des éléments neutres, freinant les pensées catastrophistes.",
+    "Elle permet un retour au calme discret et utilisable en toute situation."
   ],
   "concepts_introduits": [
-    "Proposition de valeur : Bénéfices uniques répondant aux besoins spécifiques du client."
+    "Ancrage sensoriel : techniques pour se reconnecter au moment présent via les sens.",
+    "Méthode 5-4-3-2-1 : identification d'éléments visuels, tactiles, sonores, olfactifs, gustatifs."
   ],
-  "liens_chapitres": "Aucun",
+  "liens_chapitres": "Chapitre suivant",
   "a_ne_pas_repeter": [
-    "Offrir des \"solutions de qualité\" ou un \"service client exceptionnel\" sans spécification.",
-    "Confondre la proposition de valeur avec un slogan ou une simple description de service."
+    "Outils pour retrouver son calme",
+    "Retrouver votre calme",
+    "Outils de gestion ponctuelle"
   ],
-  "ton_angle": "Pédagogique et pragmatique, axé sur la formulation concrète pour le client.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La proposition de valeur est la réponse concise et ciblée qui explique pourquoi un client doit choisir votre offre en soulignant les bénéfices uniques que vous apportez.</these_centrale>\n<arguments_cles>\n- Elle clarifie les bénéfices uniques qui vous distinguent de la concurrence.\n- Elle articule comment vos compétences résolvent des problèmes spécifiques ou répondent à des désirs de la clientèle cible.\n- Elle doit être claire, facile à comprendre et parler le langage du client.\n- Elle exprime la transformation promise (gain de temps, efficacité, réduction des coûts, etc.).\n- Elle doit spécifier concrètement la qualité et l'excellence, plutôt que d'utiliser des généralités.\n</arguments_cles>\n<concepts_introduits>\n- Proposition de valeur : Bénéfices uniques répondant aux besoins spécifiques du client.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Offrir des \"solutions de qualité\" ou un \"service client exceptionnel\" sans spécification.\n- Confondre la proposition de valeur avec un slogan ou une simple description de service.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, axé sur la formulation concrète pour le client.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pratique, l'angle est celui de l'aide à la gestion immédiate de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les techniques d'ancrage sensoriel ramènent au présent pour reprendre le contrôle face à l'anxiété.</these_centrale>\n<arguments_cles>\n- L'ancrage sensoriel détourne l'attention des pensées négatives vers le concret immédiat.\n- La méthode 5-4-3-2-1 concentre le cerveau sur des informations factuelles extérieures.\n- Cette technique occupe l'esprit avec des éléments neutres, freinant les pensées catastrophistes.\n- Elle permet un retour au calme discret et utilisable en toute situation.\n</arguments_cles>\n<concepts_introduits>\n- Ancrage sensoriel : techniques pour se reconnecter au moment présent via les sens.\n- Méthode 5-4-3-2-1 : identification d'éléments visuels, tactiles, sonores, olfactifs, gustatifs.\n</concepts_introduits>\n<liens_chapitres>Chapitre suivant</liens_chapitres>\n<a_ne_pas_repeter>\n- Outils pour retrouver son calme\n- Retrouver votre calme\n- Outils de gestion ponctuelle\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de l'aide à la gestion immédiate de l'anxiété.</ton_angle>\n</fiche>"
 }

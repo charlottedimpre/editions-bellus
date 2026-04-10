@@ -3,24 +3,27 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "L'évaluation de la tolérance au risque financier et la préparation à la gestion des revenus irréguliers sont essentielles avant de se lancer dans le freelancing.",
+  "these_centrale": "L'anxiété de conduite se combat par la rééducation du cerveau et la confrontation progressive des situations évitées.",
   "arguments_cles": [
-    "L'indépendance professionnelle implique des revenus fluctuants, nécessitant une préparation à l'instabilité.",
-    "Des simulations de scénarios financiers permettent d'évaluer la réaction face à des situations difficiles.",
-    "L'analyse des habitudes financières actuelles éclaire la future gestion budgétaire.",
-    "La maîtrise du risque et l'anticipation des imprévus sont déterminantes pour la viabilité d'une activité indépendante."
+    "Le cerveau associe conduite et peur via des réactions hormonales de stress.",
+    "L'évitement renforce l'anxiété en confirmant une fausse perception du danger.",
+    "L'anxiété situationnelle de conduite diffère d'un trouble anxieux généralisé.",
+    "La neuroplasticité permet de modifier les schémas neuronaux liés à la peur."
   ],
   "concepts_introduits": [
-    "Tolérance au risque financier : Capacité à accepter et gérer des pertes financières potentielles.",
-    "Revenus irréguliers : Gains financiers dont le montant et la fréquence varient de manière imprévisible.",
-    "Résilience : Aptitude à surmonter les difficultés et à s'adapter aux changements.",
-    "Épargne de précaution : Montant mis de côté pour faire face aux dépenses imprévues."
+    "Système nerveux autonome : Régule les fonctions involontaires du corps.",
+    "Adrénaline : Hormone de stress déclenchant la réaction de combat ou de fuite.",
+    "Comportement d'évitement : Fuite ou omission face à une situation redoutée.",
+    "Anxiété situationnelle : Peur spécifique liée à un contexte particulier.",
+    "Trouble anxieux généralisé : Anxiété excessive dans de multiples domaines de vie.",
+    "Neuroplasticité : Capacité du cerveau à se modifier et à créer de nouvelles connexions."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas sous-estimer l'importance de la préparation financière avant le freelancing.",
-    "Éviter la précipitation lors de la transition vers l'indépendance."
+    "Le cerveau associe la situation de conduite à la sensation de peur ou de danger.",
+    "Le comportement d'évitement procure un soulagement immédiat.",
+    "Il est essentiel de distinguer une peur spécifique liée à la conduite d'un trouble anxieux plus généralisé."
   ],
-  "ton_angle": "Pragmatique, axé sur l'auto-évaluation et la planification.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'évaluation de la tolérance au risque financier et la préparation à la gestion des revenus irréguliers sont essentielles avant de se lancer dans le freelancing.</these_centrale>\n<arguments_cles>\n- L'indépendance professionnelle implique des revenus fluctuants, nécessitant une préparation à l'instabilité.\n- Des simulations de scénarios financiers permettent d'évaluer la réaction face à des situations difficiles.\n- L'analyse des habitudes financières actuelles éclaire la future gestion budgétaire.\n- La maîtrise du risque et l'anticipation des imprévus sont déterminantes pour la viabilité d'une activité indépendante.\n</arguments_cles>\n<concepts_introduits>\n- Tolérance au risque financier : Capacité à accepter et gérer des pertes financières potentielles.\n- Revenus irréguliers : Gains financiers dont le montant et la fréquence varient de manière imprévisible.\n- Résilience : Aptitude à surmonter les difficultés et à s'adapter aux changements.\n- Épargne de précaution : Montant mis de côté pour faire face aux dépenses imprévues.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas sous-estimer l'importance de la préparation financière avant le freelancing.\n- Éviter la précipitation lors de la transition vers l'indépendance.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur l'auto-évaluation et la planification.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et encourageant, il déconstruit la peur de conduire.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'anxiété de conduite se combat par la rééducation du cerveau et la confrontation progressive des situations évitées.</these_centrale>\n<arguments_cles>\n- Le cerveau associe conduite et peur via des réactions hormonales de stress.\n- L'évitement renforce l'anxiété en confirmant une fausse perception du danger.\n- L'anxiété situationnelle de conduite diffère d'un trouble anxieux généralisé.\n- La neuroplasticité permet de modifier les schémas neuronaux liés à la peur.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux autonome : Régule les fonctions involontaires du corps.\n- Adrénaline : Hormone de stress déclenchant la réaction de combat ou de fuite.\n- Comportement d'évitement : Fuite ou omission face à une situation redoutée.\n- Anxiété situationnelle : Peur spécifique liée à un contexte particulier.\n- Trouble anxieux généralisé : Anxiété excessive dans de multiples domaines de vie.\n- Neuroplasticité : Capacité du cerveau à se modifier et à créer de nouvelles connexions.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau associe la situation de conduite à la sensation de peur ou de danger.\n- Le comportement d'évitement procure un soulagement immédiat.\n- Il est essentiel de distinguer une peur spécifique liée à la conduite d'un trouble anxieux plus généralisé.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, il déconstruit la peur de conduire.</ton_angle>\n</fiche>"
 }

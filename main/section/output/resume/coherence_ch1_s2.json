@@ -3,25 +3,20 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "La réussite du freelancing dépend d'une motivation authentique et d'une compréhension réaliste des responsabilités, plutôt que d'une simple fuite d'une situation professionnelle insatisfaisante.",
+  "these_centrale": "Le dialogue intérieur est un moteur puissant de l'anxiété de conduite, nécessitant son identification pour être déconstruit.",
   "arguments_cles": [
-    "Une motivation solide, comme le désir d'autonomie, est essentielle pour réussir en tant qu'indépendant.",
-    "Quitter un CDI pour échapper à un environnement toxique sans projet concret mène souvent à la déception.",
-    "L'envie de liberté et de flexibilité doit être sincère et non une simple fuite pour être un moteur puissant.",
-    "Il faut distinguer le besoin d'autonomie réel de la recherche d'évitement de la hiérarchie ou des contraintes.",
-    "Une motivation authentique émane des aspirations personnelles, d'une vision d'épanouissement et d'une volonté d'assumer de nouvelles responsabilités."
+    "Les pensées catastrophistes anticipent le pire, activant le cerveau comme un danger réel.",
+    "La perception amplifiée du danger extérieur augmente la vigilance et la méfiance.",
+    "L'anxiété influence le comportement, menant à l'évitement ou à l'hypervigilance.",
+    "Nommer les pensées négatives est la première étape pour prendre du recul."
   ],
   "concepts_introduits": [
-    "Freelancing : Travail indépendant, offrant liberté et flexibilité mais impliquant de multiples responsabilités.",
-    "Autonomie : Capacité de décider et d'agir par soi-même, clé pour l'épanouissement professionnel.",
-    "Flexibilité : Possibilité d'adapter son temps et ses méthodes de travail selon ses besoins."
+    "Dialogue intérieur : pensées conscientes ou subconscientes influençant émotions et actions.",
+    "Pensées catastrophistes : anticipation de scénarios négatifs extrêmes et improbables.",
+    "Hypervigilance : état de vigilance excessive et constante face à une menace perçue."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "\"Quitter son CDI aujourd'hui\"",
-    "\"Motivations réelles vs. illusions\"",
-    "\"Fuite\" et \"fuite d'une situation professionnelle insatisfaisante\""
-  ],
-  "ton_angle": "Analytique, introspectif, orienté vers la prise de décision éclairée.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La réussite du freelancing dépend d'une motivation authentique et d'une compréhension réaliste des responsabilités, plutôt que d'une simple fuite d'une situation professionnelle insatisfaisante.</these_centrale>\n<arguments_cles>\n- Une motivation solide, comme le désir d'autonomie, est essentielle pour réussir en tant qu'indépendant.\n- Quitter un CDI pour échapper à un environnement toxique sans projet concret mène souvent à la déception.\n- L'envie de liberté et de flexibilité doit être sincère et non une simple fuite pour être un moteur puissant.\n- Il faut distinguer le besoin d'autonomie réel de la recherche d'évitement de la hiérarchie ou des contraintes.\n- Une motivation authentique émane des aspirations personnelles, d'une vision d'épanouissement et d'une volonté d'assumer de nouvelles responsabilités.\n</arguments_cles>\n<concepts_introduits>\n- Freelancing : Travail indépendant, offrant liberté et flexibilité mais impliquant de multiples responsabilités.\n- Autonomie : Capacité de décider et d'agir par soi-même, clé pour l'épanouissement professionnel.\n- Flexibilité : Possibilité d'adapter son temps et ses méthodes de travail selon ses besoins.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Quitter son CDI aujourd'hui\"\n- \"Motivations réelles vs. illusions\"\n- \"Fuite\" et \"fuite d'une situation professionnelle insatisfaisante\"\n</a_ne_pas_repeter>\n<ton_angle>Analytique, introspectif, orienté vers la prise de décision éclairée.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Informatif et analytique, pointant les mécanismes psychologiques de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le dialogue intérieur est un moteur puissant de l'anxiété de conduite, nécessitant son identification pour être déconstruit.</these_centrale>\n<arguments_cles>\n- Les pensées catastrophistes anticipent le pire, activant le cerveau comme un danger réel.\n- La perception amplifiée du danger extérieur augmente la vigilance et la méfiance.\n- L'anxiété influence le comportement, menant à l'évitement ou à l'hypervigilance.\n- Nommer les pensées négatives est la première étape pour prendre du recul.\n</arguments_cles>\n<concepts_introduits>\n- Dialogue intérieur : pensées conscientes ou subconscientes influençant émotions et actions.\n- Pensées catastrophistes : anticipation de scénarios négatifs extrêmes et improbables.\n- Hypervigilance : état de vigilance excessive et constante face à une menace perçue.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Pensées irrationnelles\n- Schémas de pensée\n- Réalité objective\n</a_ne_not_repeat>\n<ton_angle>Informatif et analytique, pointant les mécanismes psychologiques de l'anxiété.</ton_angle>\n</fiche>"
 }

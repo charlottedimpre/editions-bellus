@@ -44,18 +44,18 @@ def restart(target_path=None):
         clear_output_path(path)
 
 
-def choose_restart_path():
+def choose_restart_paths_from_index():
     paths = get_restart_paths()
-    print("Choisis le dossier a vider :")
+    print("Choisis le dossier a partir duquel vider :")
     for index, path in enumerate(paths, start=1):
         print(f"{index}. {path.relative_to(ROOT_DIR)}")
 
-    selected = input("Numero du dossier : ")
+    selected = input("Numero du dossier de depart : ")
     while not selected.isdigit() or not (1 <= int(selected) <= len(paths)):
         print(f"Le nombre entre doit etre entre 1 et {len(paths)}.")
-        selected = input("Numero du dossier : ")
+        selected = input("Numero du dossier de depart : ")
 
-    return paths[int(selected) - 1]
+    return paths[int(selected) - 1 :]
 
 
 def run_resume_until_done(max_cycles=20):
@@ -120,11 +120,12 @@ if __name__ == '__main__':
             suivi("merge_all_chapters")
             print("Generation terminee.")
         elif inputthething == '3':
-            selected_path = choose_restart_path()
-            if clear_output_path(selected_path):
-                print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
-            else:
-                print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
+            selected_paths = choose_restart_paths_from_index()
+            for selected_path in selected_paths:
+                if clear_output_path(selected_path):
+                    print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
+                else:
+                    print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
         elif inputthething == '4':
             run_resume_until_done()
         elif inputthething == '5':

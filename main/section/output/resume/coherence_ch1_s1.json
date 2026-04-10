@@ -3,21 +3,24 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "Le passage du salariat au freelancing implique des différences tangibles en termes d'emploi du temps, de revenu net et d'autonomie décisionnelle.",
+  "these_centrale": "Identifier les manifestations physiques précoces est essentiel pour comprendre l'anxiété liée à la conduite.",
   "arguments_cles": [
-    "Le salariat offre une structure avec horaires fixes, rémunération régulière et protection légale (congés, maladie, couverture sociale).",
-    "Le freelancing confère une autonomie totale sur le choix des missions, des horaires et de l'organisation du travail.",
-    "Le revenu en salariat est stable, tandis qu'en freelancing, il est potentiellement illimité mais sujet à des fluctuations importantes.",
-    "Le freelancing demande une grande auto-discipline et une gestion rigoureuse des charges sociales et fiscales."
+    "Les sensations physiques comme la tachycardie alertent d'une anxiété profonde.",
+    "Les symptômes physiques précèdent souvent la pensée consciente du danger.",
+    "Le corps réagit en anticipation, déclenchant des mécanismes de défense.",
+    "Ces manifestations indiquent une sensibilité accrue à la conduite."
   ],
   "concepts_introduits": [
-    "Salariat : Emploi avec horaires fixes, rémunération régulière et cadre légal protecteur.",
-    "Indépendance professionnelle (freelancing) : Autonomie totale sur missions, horaires et organisation, revenu non plafonné.",
-    "Autonomie décisionnelle : Capacité à prendre des décisions concernant son travail.",
-    "Revenu net : Ce qui reste après déduction des charges et impôts."
+    "Anxiété : Réaction émotionnelle à une menace perçue.",
+    "Tachycardie : Accélération du rythme cardiaque.",
+    "Système nerveux autonome : Contrôle les fonctions involontaires du corps."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Comparatif et informatif, présentant les avantages et inconvénients de chaque statut.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le passage du salariat au freelancing implique des différences tangibles en termes d'emploi du temps, de revenu net et d'autonomie décisionnelle.</these_centrale>\n<arguments_cles>\n- Le salariat offre une structure avec horaires fixes, rémunération régulière et protection légale (congés, maladie, couverture sociale).\n- Le freelancing confère une autonomie totale sur le choix des missions, des horaires et de l'organisation du travail.\n- Le revenu en salariat est stable, tandis qu'en freelancing, il est potentiellement illimité mais sujet à des fluctuations importantes.\n- Le freelancing demande une grande auto-discipline et une gestion rigoureuse des charges sociales et fiscales.\n</arguments_cles>\n<concepts_introduits>\n- Salariat : Emploi avec horaires fixes, rémunération régulière et cadre légal protecteur.\n- Indépendance professionnelle (freelancing) : Autonomie totale sur missions, horaires et organisation, revenu non plafonné.\n- Autonomie décisionnelle : Capacité à prendre des décisions concernant son travail.\n- Revenu net : Ce qui reste après déduction des charges et impôts.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La prévisibilité rassurante du salariat.\n- Le potentiel de revenu illimité du freelancing.\n- La nécessité d'une gestion rigoureuse en tant que freelance.\n</a_ne_not_repeter>\n<ton_angle>Comparatif et informatif, présentant les avantages et inconvénients de chaque statut.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Le cœur bat la chamade",
+    "Les mains deviennent moites",
+    "Une boule se forme dans l'estomac"
+  ],
+  "ton_angle": "Informatif et dédramatisant, abordant les réactions physiques de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Identifier les manifestations physiques précoces est essentiel pour comprendre l'anxiété liée à la conduite.</these_centrale>\n<arguments_cles>\n- Les sensations physiques comme la tachycardie alertent d'une anxiété profonde.\n- Les symptômes physiques précèdent souvent la pensée consciente du danger.\n- Le corps réagit en anticipation, déclenchant des mécanismes de défense.\n- Ces manifestations indiquent une sensibilité accrue à la conduite.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : Réaction émotionnelle à une menace perçue.\n- Tachycardie : Accélération du rythme cardiaque.\n- Système nerveux autonome : Contrôle les fonctions involontaires du corps.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cœur bat la chamade\n- Les mains deviennent moites\n- Une boule se forme dans l'estomac\n</a_ne_pas_repeter>\n<ton_angle>Informatif et dédramatisant, abordant les réactions physiques de l'anxiété.</ton_angle>\n</fiche>"
 }

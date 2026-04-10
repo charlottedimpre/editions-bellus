@@ -3,23 +3,25 @@
   "section": 1,
   "chapitre_numero": "4",
   "section_numero": "1",
-  "these_centrale": "La transformation d'une expertise en offre commerciale réussie repose sur l'alignement pertinent des compétences avec la demande du marché.",
+  "these_centrale": "Une respiration thoracique rapide et superficielle déclenche une réaction de panique, amplifiant la perception du danger lors de la conduite.",
   "arguments_cles": [
-    "Identifier les compétences les plus demandées par le marché pour répondre à des besoins concrets.",
-    "Évaluer l'écart entre le savoir-faire actuel et les attentes des employeurs/clients en tenant compte des évolutions du marché.",
-    "Distinguer les compétences transversales du freelancing du cœur de l'offre commerciale.",
-    "Articuler les compétences monétisables en une proposition de valeur claire pour les futurs clients."
+    "La respiration thoracique envoie des signaux d'alerte au cerveau, maintenant un état d'alerte permanent.",
+    "Cet état d'alerte constant provoque fatigue et diminution de la concentration à la conduite.",
+    "Le corps libère des hormones comme l'adrénaline face à une perception de menace, même infondée.",
+    "L'hyperventilation maintient le corps activé, augmentant la sensibilité aux imprévus et la peur."
   ],
   "concepts_introduits": [
-    "Offre commerciale : Proposition de services ou produits répondant à un besoin client.",
-    "Compétences : Savoirs et savoir-faire transférables et monnayables sur le marché.",
-    "Proposition de valeur : Bénéfices uniques offerts aux clients par un prestataire."
+    "Respiration thoracique : Courtes inspirations/expirations ressenties dans la poitrine, signe d'alerte.",
+    "Système nerveux autonome : Régule les réactions physiologiques involontaires.",
+    "Adrénaline : Hormone préparant le corps à la lutte ou à la fuite.",
+    "Hyperventilation : Respiration trop rapide et profonde, créant un cercle vicieux."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les compétences sont utiles pour le freelancing (communication, organisation).",
-    "Une liste de savoir-faire."
+    "La sensation de manquer d'air intensifie la peur.",
+    "Le cercle vicieux de la panique et de la respiration rapide.",
+    "L'importance d'une respiration calme pour désamorcer la lutte ou la fuite."
   ],
-  "ton_angle": "Pragmatique et orienté vers l'action pour le développement d'une offre commerciale.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La transformation d'une expertise en offre commerciale réussie repose sur l'alignement pertinent des compétences avec la demande du marché.</these_centrale>\n<arguments_cles>\n- Identifier les compétences les plus demandées par le marché pour répondre à des besoins concrets.\n- Évaluer l'écart entre le savoir-faire actuel et les attentes des employeurs/clients en tenant compte des évolutions du marché.\n- Distinguer les compétences transversales du freelancing du cœur de l'offre commerciale.\n- Articuler les compétences monétisables en une proposition de valeur claire pour les futurs clients.\n</arguments_cles>\n<concepts_introduits>\n- Offre commerciale : Proposition de services ou produits répondant à un besoin client.\n- Compétences : Savoirs et savoir-faire transférables et monnayables sur le marché.\n- Proposition de valeur : Bénéfices uniques offerts aux clients par un prestataire.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les compétences sont utiles pour le freelancing (communication, organisation).\n- Une liste de savoir-faire.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et orienté vers l'action pour le développement d'une offre commerciale.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et analytique, soulignant le mécanisme physiologique de la panique à la conduite.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Une respiration thoracique rapide et superficielle déclenche une réaction de panique, amplifiant la perception du danger lors de la conduite.</these_centrale>\n<arguments_cles>\n- La respiration thoracique envoie des signaux d'alerte au cerveau, maintenant un état d'alerte permanent.\n- Cet état d'alerte constant provoque fatigue et diminution de la concentration à la conduite.\n- Le corps libère des hormones comme l'adrénaline face à une perception de menace, même infondée.\n- L'hyperventilation maintient le corps activé, augmentant la sensibilité aux imprévus et la peur.\n</arguments_cles>\n<concepts_introduits>\n- Respiration thoracique : Courtes inspirations/expirations ressenties dans la poitrine, signe d'alerte.\n- Système nerveux autonome : Régule les réactions physiologiques involontaires.\n- Adrénaline : Hormone préparant le corps à la lutte ou à la fuite.\n- Hyperventilation : Respiration trop rapide et profonde, créant un cercle vicieux.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La sensation de manquer d'air intensifie la peur.\n- Le cercle vicieux de la panique et de la respiration rapide.\n- L'importance d'une respiration calme pour désamorcer la lutte ou la fuite.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et analytique, soulignant le mécanisme physiologique de la panique à la conduite.</ton_angle>\n</fiche>"
 }

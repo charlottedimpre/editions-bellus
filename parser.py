@@ -283,6 +283,79 @@ def parse_filrouge(text: str) -> dict:
     """
     fil_rouge = extract_tag(text, "fil_rouge") or text
 
+    def _ensure_trailing_period(value: Optional[str]) -> Optional[str]:
+        """Ajoute un point final si le texte n'a pas deja une ponctuation de fin."""
+        if value is None:
+            return None
+        cleaned = value.strip()
+        if not cleaned:
+            return cleaned
+        if cleaned[-1] not in ".!?…":
+            return f"{cleaned}."
+        return cleaned
+
+    def _normalize_insertions(items: list) -> list[dict]:
+        normalized = []
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            try:
+                chapitre = int(item.get("chapitre"))
+                section = int(item.get("section"))
+            except (TypeError, ValueError):
+                continue
+            contenu = item.get("contenu")
+            if contenu is None:
+                contenu = item.get("passage")
+            normalized.append({
+                "chapitre": chapitre,
+                "section": section,
+                "contenu": _ensure_trailing_period(_collapse_newlines((contenu or "").strip())),
+            })
+        return normalized
+
+    def _parse_json_candidate(candidate: str):
+        try:
+            return json.loads(candidate)
+        except (json.JSONDecodeError, TypeError):
+            return None
+
+    raw_candidate = (fil_rouge or "").strip()
+    decoded = _parse_json_candidate(raw_candidate)
+    if isinstance(decoded, str):
+        raw_candidate = decoded.strip()
+        decoded = _parse_json_candidate(raw_candidate)
+
+    if raw_candidate.startswith("```"):
+        lines = raw_candidate.splitlines()
+        if lines:
+            lines = lines[1:]
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        fenced_payload = "\n".join(lines).strip()
+        fenced_decoded = _parse_json_candidate(fenced_payload)
+        if fenced_decoded is not None:
+            decoded = fenced_decoded
+            raw_candidate = fenced_payload
+
+    if isinstance(decoded, dict):
+        insertions = _normalize_insertions(decoded.get("insertions", []))
+        if insertions:
+            return {
+                "fil_rouge": _collapse_newlines(raw_candidate),
+                "insertions": insertions,
+                "_raw": text,
+            }
+
+    if isinstance(decoded, list):
+        insertions = _normalize_insertions(decoded)
+        if insertions:
+            return {
+                "fil_rouge": _collapse_newlines(raw_candidate),
+                "insertions": insertions,
+                "_raw": text,
+            }
+
     marker_pattern = re.compile(
         r"\[\s*INSERTION\s+CHAPITRE\s+(\d+)\s+SECTION\s+(\d+)\s*]",
         re.IGNORECASE,
@@ -306,7 +379,7 @@ def parse_filrouge(text: str) -> dict:
         insertions.append({
             "chapitre": int(match.group(1)),
             "section": int(match.group(2)),
-            "contenu": _collapse_newlines(contenu),
+            "contenu": _ensure_trailing_period(_collapse_newlines(contenu)),
         })
 
     return {
@@ -374,4 +447,3 @@ def extract_all_xml_blocks(text: str, tag_name: str) -> list[str]:
     """
     pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
     return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]
-

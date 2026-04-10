@@ -3,23 +3,24 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "L'identification des secteurs porteurs en France est cruciale pour évaluer la viabilité d'un projet de freelancing grâce à une demande soutenue et des revenus attractifs.",
+  "these_centrale": "L'évitement et la surcompensation des situations de conduite renforcent l'anxiété en créant un cercle vicieux.",
   "arguments_cles": [
-    "Le secteur de la tech et du numérique offre des revenus élevés pour des profils spécialisés comme les développeurs, experts en cybersécurité, spécialistes marketing digital, data scientists et chefs de projet IT.",
-    "Le conseil et la formation (stratégie, organisation, RH, management, communication, formation spécialisée, coaching) sont prometteurs avec des tarifs journaliers attractifs, dépendant du positionnement de niche.",
-    "La création de contenu et la communication (rédaction web, copywriting, traduction, graphisme, vidéo, community management) sont très sollicités pour renforcer la présence en ligne des entreprises.",
-    "Les métiers du tertiaire comme les assistants virtuels spécialisés et les experts comptables/financiers pour PME répondent à une demande croissante pour des expertises ponctuelles."
+    "Éviter renforce la perception du danger et maintient la peur.",
+    "Le soulagement temporaire par l'évitement renforce le conditionnement négatif.",
+    "L'hypervigilance maintient le système nerveux en tension constante.",
+    "Identifier ces comportements est la première étape vers le changement.",
+    "Cesser l'évitement ou la surcompensation crée de l'espace pour des expériences rassurantes."
   ],
   "concepts_introduits": [
-    "Freelancing : Travail indépendant, recours à des professionnels spécialisés à la demande.",
-    "Secteurs porteurs : Domaines du marché offrant une demande soutenue et des perspectives de revenus attractives.",
-    "Taux journalier moyen : Revenu moyen perçu par un freelance pour une journée de travail."
+    "Renforcement négatif : supprimer le désagréable par une action.",
+    "Hypervigilance : vigilance excessive anticipant un danger inexistant."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"connaît une croissance significative\"",
-    "\"portée par la digitalisation des entreprises et le besoin croissant de compétences spécialisées à la demande\""
+    "Le cercle vicieux de la peur",
+    "La peur de conduire",
+    "Des comportements volontaires"
   ],
-  "ton_angle": "Informatif et prospectif, basé sur des données de marché et des exemples sectoriels.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'identification des secteurs porteurs en France est cruciale pour évaluer la viabilité d'un projet de freelancing grâce à une demande soutenue et des revenus attractifs.</these_centrale>\n<arguments_cles>\n- Le secteur de la tech et du numérique offre des revenus élevés pour des profils spécialisés comme les développeurs, experts en cybersécurité, spécialistes marketing digital, data scientists et chefs de projet IT.\n- Le conseil et la formation (stratégie, organisation, RH, management, communication, formation spécialisée, coaching) sont prometteurs avec des tarifs journaliers attractifs, dépendant du positionnement de niche.\n- La création de contenu et la communication (rédaction web, copywriting, traduction, graphisme, vidéo, community management) sont très sollicités pour renforcer la présence en ligne des entreprises.\n- Les métiers du tertiaire comme les assistants virtuels spécialisés et les experts comptables/financiers pour PME répondent à une demande croissante pour des expertises ponctuelles.\n</arguments_cles>\n<concepts_introduits>\n- Freelancing : Travail indépendant, recours à des professionnels spécialisés à la demande.\n- Secteurs porteurs : Domaines du marché offrant une demande soutenue et des perspectives de revenus attractives.\n- Taux journalier moyen : Revenu moyen perçu par un freelance pour une journée de travail.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"connaît une croissance significative\"\n- \"portée par la digitalisation des entreprises et le besoin croissant de compétences spécialisées à la demande\"\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prospectif, basé sur des données de marché et des exemples sectoriels.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et incitatif, l'angle est celui de la prise de conscience pour agir.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'évitement et la surcompensation des situations de conduite renforcent l'anxiété en créant un cercle vicieux.</these_centrale>\n<arguments_cles>\n- Éviter renforce la perception du danger et maintient la peur.\n- Le soulagement temporaire par l'évitement renforce le conditionnement négatif.\n- L'hypervigilance maintient le système nerveux en tension constante.\n- Identifier ces comportements est la première étape vers le changement.\n- Cesser l'évitement ou la surcompensation crée de l'espace pour des expériences rassurantes.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : supprimer le désagréable par une action.\n- Hypervigilance : vigilance excessive anticipant un danger inexistant.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cercle vicieux de la peur\n- La peur de conduire\n- Des comportements volontaires\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et incitatif, l'angle est celui de la prise de conscience pour agir.</ton_angle>\n</fiche>"
 }

@@ -3,24 +3,22 @@
   "section": 2,
   "chapitre_numero": "3",
   "section_numero": "2",
-  "these_centrale": "Le portage salarial est une solution transitoire avantageuse pour tester une activité indépendante grâce à ses protections sociales et sa simplification administrative, malgré son coût supérieur et ses limites d'autonomie.",
+  "these_centrale": "La relaxation musculaire progressive prépare le corps à une conduite sereine en réduisant les tensions physiques et l'anxiété.",
   "arguments_cles": [
-    "Permet de tester l'indépendance tout en conservant des protections sociales (assurance maladie, chômage).",
-    "Simplifie la gestion administrative et comptable en déléguant les cotisations sociales et fiscales.",
-    "Son coût élevé (frais de gestion) le rend moins économique à long terme qu'un statut indépendant classique.",
-    "Peut limiter l'autonomie réelle en termes de tarification et de contractualisation."
+    "Contracter et relâcher les muscles aide à identifier et réduire les tensions.",
+    "Cette technique rééduque le corps à ne pas subir la tension excessive inconsciente.",
+    "Elle diminue la réactivité au stress avant même de prendre le volant.",
+    "Une pratique régulière réduit l'anticipation anxieuse liée à la conduite.",
+    "Dissiper activement les tensions rend le système nerveux plus résilient."
   ],
   "concepts_introduits": [
-    "Portage salarial : Structure où une entreprise de portage facture le client, verse un salaire et assure protections sociales.",
-    "Indépendance : Statut professionnel sans lien de subordination hiérarchique permanent.",
-    "Protection sociale : Ensemble des garanties relatives à la santé, la maternité, la retraite, etc.",
-    "Micro-entreprise : Régime simplifié d'imposition et de cotisations pour les travailleurs indépendants."
+    "Relaxation musculaire progressive : contracter puis relâcher les muscles pour détendre le corps."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La phrase introductive sur le portage salarial comme \"solution idéale\".",
-    "La description exhaustive des avantages sociaux sans mention du coût."
+    "Laisser le corps prisonnier d'une tension excessive.",
+    "Transférer directement les tensions de la journée dans la voiture."
   ],
-  "ton_angle": "Informatif et comparatif, mettant en balance les avantages et les inconvénients.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le portage salarial est une solution transitoire avantageuse pour tester une activité indépendante grâce à ses protections sociales et sa simplification administrative, malgré son coût supérieur et ses limites d'autonomie.</these_centrale>\n<arguments_cles>\n- Permet de tester l'indépendance tout en conservant des protections sociales (assurance maladie, chômage).\n- Simplifie la gestion administrative et comptable en déléguant les cotisations sociales et fiscales.\n- Son coût élevé (frais de gestion) le rend moins économique à long terme qu'un statut indépendant classique.\n- Peut limiter l'autonomie réelle en termes de tarification et de contractualisation.\n</arguments_cles>\n<concepts_introduits>\n- Portage salarial : Structure où une entreprise de portage facture le client, verse un salaire et assure protections sociales.\n- Indépendance : Statut professionnel sans lien de subordination hiérarchique permanent.\n- Protection sociale : Ensemble des garanties relatives à la santé, la maternité, la retraite, etc.\n- Micro-entreprise : Régime simplifié d'imposition et de cotisations pour les travailleurs indépendants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La phrase introductive sur le portage salarial comme \"solution idéale\".\n- La description exhaustive des avantages sociaux sans mention du coût.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et comparatif, mettant en balance les avantages et les inconvénients.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et pragmatique, axé sur le contrôle du bien-être physique.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La relaxation musculaire progressive prépare le corps à une conduite sereine en réduisant les tensions physiques et l'anxiété.</these_centrale>\n<arguments_cles>\n- Contracter et relâcher les muscles aide à identifier et réduire les tensions.\n- Cette technique rééduque le corps à ne pas subir la tension excessive inconsciente.\n- Elle diminue la réactivité au stress avant même de prendre le volant.\n- Une pratique régulière réduit l'anticipation anxieuse liée à la conduite.\n- Dissiper activement les tensions rend le système nerveux plus résilient.\n</arguments_cles>\n<concepts_introduits>\n- Relaxation musculaire progressive : contracter puis relâcher les muscles pour détendre le corps.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Laisser le corps prisonnier d'une tension excessive.\n- Transférer directement les tensions de la journée dans la voiture.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, axé sur le contrôle du bien-être physique.</ton_angle>\n</fiche>"
 }

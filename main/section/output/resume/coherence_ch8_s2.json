@@ -3,28 +3,24 @@
   "section": 2,
   "chapitre_numero": "8",
   "section_numero": "2",
-  "these_centrale": "Il est impératif d'anticiper et de préparer des solutions pour les trous de trésorerie afin de garantir la pérennité de son activité.",
+  "these_centrale": "La reprise de la conduite après une pause doit être douce et progressive pour réactiver les compétences acquises sans réactiver l'anxiété.",
   "arguments_cles": [
-    "L'épargne de précaution constitue une réserve essentielle pour couvrir les dépenses pendant une période définie.",
-    "Le calcul de l'épargne repose sur l'évaluation des charges mensuelles fixes multipliées par la période de couverture souhaitée.",
-    "Les outils de suivi de trésorerie aident à visualiser les flux et à identifier les déficits potentiels.",
-    "Les financements à court terme (facilité de caisse, découvert autorisé) sont des solutions en cas de décalage."
+    "Identifier les situations de conduite les plus faciles pour un point de départ sécurisant.",
+    "Planifier des sessions courtes sur des trajets familiers et à faible trafic.",
+    "Intégrer des éléments du plan d'exposition initial et utiliser des techniques de relaxation.",
+    "Recréer des expériences positives et réaffirmer le contrôle de l'activité de conduite."
   ],
   "concepts_introduits": [
-    "Trou de trésorerie : Situation où les décaissements excèdent les encaissements, créant un besoin de financement ponctuel.",
-    "Épargne de précaution : Réserve d'argent pour couvrir les dépenses fixes en cas d'imprévu.",
-    "Tableau prévisionnel : Outil de suivi des flux financiers entrants et sortants pour anticiper les besoins.",
-    "Facilité de caisse : Crédit court terme accordé par la banque pour couvrir un découvert temporaire.",
-    "Découvert autorisé : Montant maximum qu'une banque autorise un client à dépenser sur son compte."
+    "Mémoire du corps et de l'esprit : acquis non disparus.",
+    "Hiérarchie des peurs : classement des situations anxiogènes.",
+    "Plan d'exposition : étapes progressives pour surmonter les peurs.",
+    "Techniques d'ancrage : ancrage au moment présent."
   ],
-  "liens_chapitres": "Aucun",
+  "liens_chapitres": "- Chapitres précédents (hiérarchie des peurs, plan d'exposition, techniques de respiration et d'ancrage)",
   "a_ne_pas_repeter": [
-    "Situation où les décaissements dépassent les encaissements sur une période donnée.",
-    "Retards de paiement, difficultés à honorer les charges, cessation d'activité.",
-    "Marge de sécurité précieuse, réduction du stress financier.",
-    "Commencer petit et augmenter progressivement.",
-    "Utiliser avec parcimonie, engendrent des frais bancaires."
+    "Ne pas chercher à retrouver immédiatement le niveau d'aisance précédent.",
+    "Ne pas se heurter à des obstacles insurmontables lors de la reprise."
   ],
-  "ton_angle": "Informatif et pragmatique, proposant des solutions concrètes.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Il est impératif d'anticiper et de préparer des solutions pour les trous de trésorerie afin de garantir la pérennité de son activité.</these_centrale>\n<arguments_cles>\n- L'épargne de précaution constitue une réserve essentielle pour couvrir les dépenses pendant une période définie.\n- Le calcul de l'épargne repose sur l'évaluation des charges mensuelles fixes multipliées par la période de couverture souhaitée.\n- Les outils de suivi de trésorerie aident à visualiser les flux et à identifier les déficits potentiels.\n- Les financements à court terme (facilité de caisse, découvert autorisé) sont des solutions en cas de décalage.\n</arguments_cles>\n<concepts_introduits>\n- Trou de trésorerie : Situation où les décaissements excèdent les encaissements, créant un besoin de financement ponctuel.\n- Épargne de précaution : Réserve d'argent pour couvrir les dépenses fixes en cas d'imprévu.\n- Tableau prévisionnel : Outil de suivi des flux financiers entrants et sortants pour anticiper les besoins.\n- Facilité de caisse : Crédit court terme accordé par la banque pour couvrir un découvert temporaire.\n- Découvert autorisé : Montant maximum qu'une banque autorise un client à dépenser sur son compte.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Situation où les décaissements dépassent les encaissements sur une période donnée.\n- Retards de paiement, difficultés à honorer les charges, cessation d'activité.\n- Marge de sécurité précieuse, réduction du stress financier.\n- Commencer petit et augmenter progressivement.\n- Utiliser avec parcimonie, engendrent des frais bancaires.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, proposant des solutions concrètes.</ton_angle>\n</fiche>"
+  "ton_angle": "Approche pratique et rassurante pour une reprise sereine des compétences de conduite après une interruption.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La reprise de la conduite après une pause doit être douce et progressive pour réactiver les compétences acquises sans réactiver l'anxiété.</these_centrale>\n<arguments_cles>\n- Identifier les situations de conduite les plus faciles pour un point de départ sécurisant.\n- Planifier des sessions courtes sur des trajets familiers et à faible trafic.\n- Intégrer des éléments du plan d'exposition initial et utiliser des techniques de relaxation.\n- Recréer des expériences positives et réaffirmer le contrôle de l'activité de conduite.\n</arguments_cles>\n<concepts_introduits>\n- Mémoire du corps et de l'esprit : acquis non disparus.\n- Hiérarchie des peurs : classement des situations anxiogènes.\n- Plan d'exposition : étapes progressives pour surmonter les peurs.\n- Techniques d'ancrage : ancrage au moment présent.\n</concepts_introduits>\n<liens_chapitres>\n- Chapitres précédents (hiérarchie des peurs, plan d'exposition, techniques de respiration et d'ancrage)\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas chercher à retrouver immédiatement le niveau d'aisance précédent.\n- Ne pas se heurter à des obstacles insurmontables lors de la reprise.\n</a_ne_pas_repeter>\n<ton_angle>Approche pratique et rassurante pour une reprise sereine des compétences de conduite après une interruption.</ton_angle>\n</fiche>"
 }

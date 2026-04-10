@@ -1,416 +1,346 @@
 [
   {
     "numero": "1",
-    "titre": "Pourquoi quitter son CDI aujourd’hui",
+    "titre": "Reconnaître les signes de la peur au volant",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Salariat vs. freelancing : quels avantages concrets pour votre quotidien ?",
-        "objectif": "Vous identifierez les différences tangibles entre salariat et indépendance sur votre emploi du temps, votre revenu net et votre autonomie décisionnelle.",
-        "concept_cle": "Comparaison objective des conditions de travail et de rémunération.",
-        "exemple": "Thomas compare son salaire net actuel avec un TJM réaliste pour son secteur, en intégrant les charges sociales et les jours non facturables.",
-        "limite": "N’aborde pas le calcul précis du TJM ou des charges sociales (Chapitre 4 et 6).",
+        "titre_section": "Pourquoi votre corps réagit-il avant même de démarrer ?",
+        "objectif": "Vous identifierez les signaux physiques précoces de l'anxiété au volant (tachycardie, sueurs, tensions musculaires) et les distinguerez d'un stress passager.",
+        "concept_cle": "Activation du système nerveux sympathique en anticipation",
+        "exemple": "Claire ressent des mains moites et une boule au ventre dès qu'elle approche de sa voiture pour un trajet prévu.",
+        "limite": "N'aborde pas les causes profondes de l'anxiété (traitées au chapitre 2) ni les techniques pour y répondre (chapitres 3 et 4).",
         "mots_cible": "500-700"
       },
       {
         "numero": "2",
-        "titre_section": "Pourquoi les salariés quittent leur CDI : motivations réelles vs. illusions",
-        "objectif": "Vous distinguerez les motivations solides (autonomie, alignement avec ses valeurs) des motivations fragiles (fuite d’un emploi toxique, pression sociale) pour éviter un lancement prématuré.",
-        "concept_cle": "Typologie des motivations et leur impact sur la réussite.",
-        "exemple": "Thomas réalise que sa lassitude face aux déplacements est une motivation solide, mais que son envie de \"devenir son propre patron\" nécessite une clarification.",
-        "limite": "N’aborde pas les méthodes pour tester son projet en parallèle du CDI (Chapitre 2).",
+        "titre_section": "Ces pensées qui vous paralysent : comment les repérer ?",
+        "objectif": "Vous repérerez vos pensées catastrophistes typiques (\"Je vais perdre le contrôle\", \"Les autres conducteurs sont dangereux\") et leur impact sur votre comportement.",
+        "concept_cle": "Biais cognitifs amplifiant la perception du danger",
+        "exemple": "Claire imagine systématiquement un accident en abordant une bretelle d'autoroute, même sans incident passé.",
+        "limite": "N'explique pas comment modifier ces pensées (traité au chapitre 5) ni comment les désamorcer en temps réel (chapitre 6).",
         "mots_cible": "400-600"
       },
       {
         "numero": "3",
-        "titre_section": "Quels secteurs recrutent des freelances et offrent des revenus stables ?",
-        "objectif": "Vous repérerez les secteurs porteurs pour les freelances en France, avec des données sur les revenus moyens et la demande, pour évaluer la viabilité de votre projet.",
-        "concept_cle": "Cartographie des opportunités par secteur et niveau d’expérience.",
-        "exemple": "Thomas découvre que le développement d’applications mobiles pour PME est un marché en croissance, avec des TJM attractifs pour les profils expérimentés.",
-        "limite": "N’aborde pas la construction de son offre ou son positionnement (Chapitre 4).",
-        "mots_cible": "600-800"
+        "titre_section": "Évitement ou hypervigilance : quel est votre piège ?",
+        "objectif": "Vous déterminerez si votre anxiété se manifeste par l'évitement (annuler des trajets) ou l'hypervigilance (vérifier sans cesse les rétroviseurs), et en quoi ces comportements entretiennent la peur.",
+        "concept_cle": "Renforcement négatif par l'évitement ou la surcompensation",
+        "exemple": "Claire demande à son conjoint de conduire pour les trajets longs, ce qui réduit son stress à court terme mais aggrave sa peur.",
+        "limite": "Ne propose pas de solutions pour sortir de ces pièges (traitées aux chapitres 5 et 7).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "4",
-        "titre_section": "Freelancing : quels risques financiers et sociaux allez-vous vraiment affronter ?",
-        "objectif": "Vous anticiperez les risques concrets du freelancing (précarité, perte de protection sociale, isolement) et les comparerez aux sécurités du CDI pour prendre une décision éclairée.",
-        "concept_cle": "Analyse des risques objectifs et de leur impact sur la qualité de vie.",
-        "exemple": "Thomas évalue l’impact d’un trou de trésorerie sur son prêt immobilier et la perte de ses droits au chômage en cas de démission.",
-        "limite": "N’aborde pas les méthodes pour gérer les revenus variables ou préparer un plan de repli (Chapitre 6 et 9).",
-        "mots_cible": "500-700"
+        "titre_section": "Quand l'anxiété au volant cache-t-elle autre chose ?",
+        "objectif": "Vous saurez repérer les signes indiquant que votre peur de conduire pourrait être liée à un trouble anxieux plus large ou à un traumatisme, nécessitant un soutien professionnel.",
+        "concept_cle": "Différenciation entre anxiété situationnelle et trouble généralisé",
+        "exemple": "Claire réalise que sa peur des bretelles s'étend désormais aux ponts et aux tunnels, avec des crises de panique même en tant que passagère.",
+        "limite": "Ne traite pas les protocoles thérapeutiques pour ces cas (hors périmètre, à orienter vers un professionnel).",
+        "mots_cible": "350-500"
       }
     ],
-    "total_mots_chapitre": "2000-2800"
+    "total_mots_chapitre": "1700-2450"
   },
   {
     "numero": "2",
-    "titre": "Évaluer sa motivation et sa préparation",
+    "titre": "Comprendre les mécanismes de l'anxiété",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Autonomie ou fuite : comment distinguer vos vraies motivations ?",
-        "objectif": "Vous identifierez si votre envie de quitter le CDI relève d’un désir d’autonomie ou d’une fuite d’un environnement toxique, pour éviter un projet bâti sur des bases fragiles.",
-        "concept_cle": "Diagnostic des motivations profondes via un questionnaire guidé.",
-        "exemple": "Thomas réalise que son insatisfaction est liée à la routine, mais qu’il n’a pas encore exploré les alternatives en interne (ex. : mobilité interne).",
-        "limite": "N’aborde pas les méthodes pour tester son projet en parallèle du CDI (Section 3 de ce chapitre).",
-        "mots_cible": "400-600"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Êtes-vous prêt à gérer l’incertitude financière du freelancing ?",
-        "objectif": "Vous évaluerez votre tolérance au risque financier et votre capacité à gérer des revenus irréguliers, avec des outils pour mesurer votre résilience.",
-        "concept_cle": "Test de tolérance au risque via des scénarios concrets.",
-        "exemple": "Thomas simule un mois sans mission et évalue son niveau de stress face à cette situation.",
-        "limite": "N’aborde pas les méthodes pour provisionner une épargne de précaution (Chapitre 6).",
+        "titre_section": "Pourquoi votre cerveau déclenche-t-il l'alerte sans danger réel ?",
+        "objectif": "Vous comprendrez le rôle du système nerveux autonome (réaction de lutte/fuite) et pourquoi il s'active de manière disproportionnée au volant.",
+        "concept_cle": "Fausse alarme du cerveau face à un danger perçu",
+        "exemple": "Claire ressent une montée d'adrénaline en voyant une bretelle d'autoroute, comme si elle était en danger imminent.",
+        "limite": "N'explique pas comment réguler cette réaction (traité aux chapitres 3 et 4).",
         "mots_cible": "500-700"
       },
       {
+        "numero": "2",
+        "titre_section": "Le cercle vicieux de l'évitement : comment en sortir ?",
+        "objectif": "Vous identifierez comment l'évitement des situations anxiogènes renforce votre peur à long terme, et pourquoi affronter progressivement est nécessaire.",
+        "concept_cle": "Conditionnement négatif par l'évitement des stimuli",
+        "exemple": "Claire évite les bretelles depuis six mois, ce qui a étendu sa peur aux routes à grande vitesse.",
+        "limite": "Ne détaille pas les méthodes d'exposition progressive (traité au chapitre 5).",
+        "mots_cible": "450-650"
+      },
+      {
         "numero": "3",
-        "titre_section": "Comment tester votre projet de freelancing sans quitter votre CDI ?",
-        "objectif": "Vous découvrirez des méthodes pour valider votre projet en parallèle de votre emploi (portage salarial, missions ponctuelles) et éviter un lancement dans le vide.",
-        "concept_cle": "Stratégies de validation progressive sans démission.",
-        "exemple": "Thomas utilise le portage salarial pour réaliser une mission en freelance le week-end et évaluer sa charge de travail.",
-        "limite": "N’aborde pas les détails des statuts juridiques (Chapitre 3).",
-        "mots_cible": "600-800"
+        "titre_section": "Anxiété situationnelle ou trouble anxieux : comment faire la différence ?",
+        "objectif": "Vous saurez distinguer une peur spécifique de la conduite d'un trouble anxieux généralisé, et quand consulter un professionnel.",
+        "concept_cle": "Spécificité vs. généralisation des déclencheurs anxieux",
+        "exemple": "Contrairement à Claire, un lecteur dont l'anxiété s'étend à tous les déplacements (même en transports) pourrait avoir un trouble plus large.",
+        "limite": "Ne propose pas de diagnostic ni de protocole thérapeutique (hors périmètre).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "4",
-        "titre_section": "Quelles compétences vous manquent pour réussir en freelance ?",
-        "objectif": "Vous identifierez les compétences indispensables pour réussir en freelance (commerciales, administratives, techniques) et les lacunes à combler avant de vous lancer.",
-        "concept_cle": "Checklist des compétences clés et auto-évaluation.",
-        "exemple": "Thomas réalise qu’il doit améliorer ses compétences en prospection et en gestion administrative avant de se lancer.",
-        "limite": "N’aborde pas les techniques de prospection ou de gestion du temps (Chapitre 5 et 7).",
+        "titre_section": "Pourquoi les techniques de ce livre fonctionnent-elles ?",
+        "objectif": "Vous comprendrez les principes scientifiques derrière les techniques proposées (respiration, exposition, ancrage) et leur efficacité pour rééduquer votre cerveau.",
+        "concept_cle": "Neuroplasticité et réapprentissage des réponses anxieuses",
+        "exemple": "Claire apprend que la respiration diaphragmatique active son système nerveux parasympathique, contrecarrant l'effet de l'adrénaline.",
+        "limite": "Ne détaille pas les techniques elles-mêmes (traitées aux chapitres 3, 4 et 5).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "1900-2700"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "3",
-    "titre": "Choisir son statut juridique et fiscal",
+    "titre": "Préparer son corps avant de conduire",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Micro-entreprise, SASU, EURL : quel statut pour quel projet ?",
-        "objectif": "Vous comprendrez les différences fondamentales entre les statuts (micro-entreprise, SASU, EURL) et leurs implications sur votre fiscalité, vos charges sociales et votre protection sociale.",
-        "concept_cle": "Comparaison des statuts selon 5 critères clés (fiscalité, charges, protection, responsabilité, formalités).",
-        "exemple": "Thomas compare la micro-entreprise et la SASU pour son projet de développement d’applications mobiles, en intégrant son chiffre d’affaires prévisionnel.",
-        "limite": "N’aborde pas les régimes fiscaux étrangers ou les évolutions législatives non consolidées (hors périmètre).",
-        "mots_cible": "600-800"
+        "titre_section": "Pourquoi votre corps est-il déjà tendu avant même de monter en voiture ?",
+        "objectif": "Vous identifierez les tensions musculaires accumulées avant la conduite et leur impact sur votre niveau d'anxiété initial.",
+        "concept_cle": "Mémoire corporelle des situations anxiogènes passées",
+        "exemple": "Claire remarque que ses épaules sont crispées et sa mâchoire serrée dès qu'elle s'assoit au volant, avant même d'avoir démarré.",
+        "limite": "Ne traite pas les techniques pour gérer l'anxiété *pendant* la conduite (chapitre 4 et 6).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "2",
-        "titre_section": "Portage salarial : la solution idéale pour tester votre activité ?",
-        "objectif": "Vous évaluerez si le portage salarial est adapté à votre situation pour tester votre activité en limitant les risques, avec ses avantages et ses limites.",
-        "concept_cle": "Fonctionnement du portage salarial et critères de choix.",
-        "exemple": "Thomas opte pour le portage salarial pour ses premières missions, afin de conserver ses droits au chômage et de tester son marché.",
-        "limite": "N’aborde pas les détails des contrats de portage ou les frais associés (À définir avec l’auteur).",
+        "titre_section": "Relâcher les tensions : la méthode progressive pour un corps détendu",
+        "objectif": "Vous maîtriserez la technique de relaxation musculaire progressive pour réduire l'activation physiologique avant de conduire.",
+        "concept_cle": "Alternance contraction/détente pour rééduquer la perception corporelle",
+        "exemple": "Claire applique la méthode en serrant puis relâchant ses poings, ses bras, et ses épaules avant de prendre le volant.",
+        "limite": "N'aborde pas les techniques d'urgence pour les crises en cours (chapitre 6).",
         "mots_cible": "500-700"
       },
       {
         "numero": "3",
-        "titre_section": "Comment choisir votre statut en fonction de votre chiffre d’affaires ?",
-        "objectif": "Vous déterminerez quel statut est le plus avantageux pour votre chiffre d’affaires prévisionnel, avec des seuils clés et des exemples concrets.",
-        "concept_cle": "Seuils de bascule entre statuts selon le CA et le secteur.",
-        "exemple": "Thomas calcule que la micro-entreprise est adaptée pour ses premiers mois, mais qu’il devra passer en SASU si son CA dépasse 70 000 €.",
-        "limite": "N’aborde pas les stratégies de croissance (ex. : passage en SARL) (hors périmètre).",
-        "mots_cible": "500-700"
+        "titre_section": "Visualiser la réussite : comment reprogrammer votre esprit avant de conduire",
+        "objectif": "Vous utiliserez la visualisation positive pour créer des associations mentales apaisantes avec la conduite, et réduire l'anticipation anxieuse.",
+        "concept_cle": "Imagerie mentale pour désamorcer les scénarios catastrophistes",
+        "exemple": "Claire s'imagine en train de conduire sereinement sur une bretelle d'autoroute, en ressentant la détente dans son corps.",
+        "limite": "Ne remplace pas la pratique réelle (traité au chapitre 5) ni les techniques en temps réel (chapitre 4).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "4",
-        "titre_section": "Quelles idées reçues sur les statuts vous font prendre des risques ?",
-        "objectif": "Vous identifierez les idées reçues courantes sur les statuts (ex. : \"la micro-entreprise est toujours la meilleure option\") et leurs conséquences financières.",
-        "concept_cle": "Démystification des préjugés sur les statuts.",
-        "exemple": "Thomas évite de choisir la micro-entreprise par défaut, après avoir compris ses limites en termes de protection sociale.",
-        "limite": "N’aborde pas les détails des formalités administratives (À définir avec l’auteur).",
+        "titre_section": "Routine pré-conduite : comment créer un rituel rassurant",
+        "objectif": "Vous concevrez une routine personnalisée (respiration, étirements, vérifications) pour aborder chaque trajet dans un état de calme optimal.",
+        "concept_cle": "Ancrage comportemental pour réduire l'incertitude",
+        "exemple": "Claire établit une routine de 5 minutes incluant respiration diaphragmatique, vérification des rétroviseurs, et visualisation avant chaque trajet.",
+        "limite": "Ne traite pas les ajustements nécessaires en cas de crise pendant la conduite (chapitre 6).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2000-2800"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "4",
-    "titre": "Construire son offre et son positionnement",
+    "titre": "Techniques de respiration et ancrage",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Quelles compétences pouvez-vous vraiment monétiser en freelance ?",
-        "objectif": "Vous identifierez les compétences monétisables dans votre secteur et les écarts entre votre expertise actuelle et la demande du marché.",
-        "concept_cle": "Cartographie des compétences rentables et analyse de la demande.",
-        "exemple": "Thomas réalise que son expertise en développement d’applications mobiles pour PME est recherchée, mais qu’il doit se former sur les dernières technologies pour rester compétitif.",
-        "limite": "N’aborde pas les techniques de prospection ou de négociation (Chapitre 5).",
-        "mots_cible": "500-700"
+        "titre_section": "Pourquoi la respiration superficielle aggrave-t-elle votre panique ?",
+        "objectif": "Vous comprendrez comment une respiration thoracique rapide entretient l'anxiété, et pourquoi la respiration diaphragmatique est une solution immédiate.",
+        "concept_cle": "Hyperventilation et déséquilibre oxygène/dioxyde de carbone",
+        "exemple": "Claire réalise qu'elle respire par saccades en approchant d'une bretelle, ce qui amplifie sa sensation d'étouffement.",
+        "limite": "N'explique pas comment appliquer la respiration diaphragmatique en mouvement (traité en section 2).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "2",
-        "titre_section": "Comment analyser la concurrence pour vous différencier ?",
-        "objectif": "Vous utiliserez des outils simples (matrice SWOT, analyse des offres concurrentes) pour identifier vos avantages concurrentiels et affiner votre positionnement.",
-        "concept_cle": "Méthodes d’analyse concurrentielle pour les freelances.",
-        "exemple": "Thomas analyse les offres de ses concurrents sur les plateformes de freelancing et identifie un créneau : le développement d’applications mobiles pour les artisans locaux.",
-        "limite": "N’aborde pas la formulation de la proposition de valeur (Section 3 de ce chapitre).",
-        "mots_cible": "600-800"
+        "titre_section": "Respirer pour calmer : la technique diaphragmatique adaptée à la conduite",
+        "objectif": "Vous maîtriserez la respiration 4-7-8 (inspiration, rétention, expiration) et sa variante discrète pour l'utiliser sans quitter la route des yeux.",
+        "concept_cle": "Régulation du système nerveux parasympathique par l'expiration prolongée",
+        "exemple": "Claire pratique la respiration 4-7-8 en attendant à un feu rouge, ce qui réduit sa tachycardie en 2 minutes.",
+        "limite": "Ne traite pas les techniques d'ancrage sensoriel (section 3) ni les cas de crises sévères (chapitre 6).",
+        "mots_cible": "500-700"
       },
       {
         "numero": "3",
-        "titre_section": "Comment formuler une proposition de valeur claire et percutante ?",
-        "objectif": "Vous rédigerez une proposition de valeur qui répond aux besoins de vos clients cibles, avec des exemples concrets et des erreurs à éviter.",
-        "concept_cle": "Structure d’une proposition de valeur efficace.",
-        "exemple": "Thomas reformule son offre pour mettre en avant son expertise locale et son accompagnement personnalisé, plutôt que ses compétences techniques.",
-        "limite": "N’aborde pas les techniques de rédaction de propositions commerciales (Chapitre 5).",
-        "mots_cible": "500-700"
+        "titre_section": "Ancrage sensoriel : comment revenir au présent quand la panique monte",
+        "objectif": "Vous appliquerez la technique 5-4-3-2-1 pour interrompre les pensées catastrophistes et recentrer votre attention sur l'environnement immédiat.",
+        "concept_cle": "Redirection de l'attention vers les stimuli externes",
+        "exemple": "Claire utilise la technique en nommant 5 choses qu'elle voit, 4 qu'elle touche, etc., pour sortir de sa spirale anxieuse sur une bretelle.",
+        "limite": "Ne remplace pas les stratégies d'exposition (chapitre 5) ni les protocoles pour les crises prolongées (chapitre 6).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "4",
-        "titre_section": "Comment calculer votre TJM sans vous sous-évaluer ?",
-        "objectif": "Vous calculerez votre TJM (Taux Journalier Moyen) en intégrant vos charges sociales, vos congés non payés et vos jours non facturables, pour éviter les erreurs de tarification.",
-        "concept_cle": "Formule de calcul du TJM et ajustements sectoriels.",
-        "exemple": "Thomas calcule que son TJM doit être de 500 € pour couvrir ses charges et dégager un revenu net équivalent à son salaire actuel.",
-        "limite": "N’aborde pas les stratégies de négociation des tarifs (Chapitre 5).",
-        "mots_cible": "500-700"
+        "titre_section": "Respiration + ancrage : comment combiner les techniques pour un effet maximal",
+        "objectif": "Vous intégrerez respiration diaphragmatique et ancrage sensoriel dans un protocole en 3 étapes pour désamorcer une montée d'anxiété en moins de 2 minutes.",
+        "concept_cle": "Synergie entre régulation physiologique et cognitive",
+        "exemple": "Claire combine respiration 4-7-8 et ancrage 5-4-3-2-1 lors d'un épisode de panique sur l'autoroute, ce qui lui permet de poursuivre son trajet.",
+        "limite": "Ne traite pas les cas où l'arrêt du véhicule est nécessaire (chapitre 6).",
+        "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2100-2900"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "5",
-    "titre": "Trouver ses premiers clients",
+    "titre": "Affronter les situations redoutées pas à pas",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment prospecter efficacement sans réseau existant ?",
-        "objectif": "Vous découvrirez des stratégies pour prospecter même sans réseau professionnel (LinkedIn, événements, plateformes de freelancing) et générer vos premières opportunités.",
-        "concept_cle": "Méthodes de prospection pour les débutants.",
-        "exemple": "Thomas utilise LinkedIn pour contacter des PME locales et propose un audit gratuit de leur présence mobile, ce qui lui permet de signer ses premiers contrats.",
-        "limite": "N’aborde pas les techniques de rédaction de propositions commerciales (Section 3 de ce chapitre).",
-        "mots_cible": "600-800"
+        "titre_section": "Pourquoi affronter vos peurs est-il indispensable (et comment le faire sans risque) ?",
+        "objectif": "Vous comprendrez les principes de l'exposition progressive et pourquoi elle est la méthode la plus efficace pour surmonter l'anxiété au volant, sans forcer les étapes.",
+        "concept_cle": "Habituation par exposition graduée aux stimuli anxiogènes",
+        "exemple": "Claire apprend que son cerveau a besoin de \"réapprendre\" que les bretelles ne sont pas dangereuses, par des expositions courtes et contrôlées.",
+        "limite": "Ne détaille pas les techniques pour gérer les crises pendant l'exposition (chapitre 6).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "2",
-        "titre_section": "Quelles plateformes de freelancing choisir pour vos premières missions ?",
-        "objectif": "Vous comparerez les plateformes de freelancing (Malt, Upwork, etc.) et choisirez celles adaptées à votre secteur et à votre niveau d’expérience.",
-        "concept_cle": "Critères de choix des plateformes et pièges à éviter.",
-        "exemple": "Thomas sélectionne Malt pour ses premières missions, car la plateforme est adaptée aux freelances en France et offre une bonne visibilité.",
-        "limite": "N’aborde pas les techniques de négociation ou de gestion des contrats (Section 4 de ce chapitre).",
-        "mots_cible": "500-700"
+        "titre_section": "Construire votre hiérarchie des peurs : quelles situations vous angoissent le plus ?",
+        "objectif": "Vous établirez une liste personnalisée de situations anxiogènes (ex : rond-points, autoroutes, conduite de nuit), classées de la moins à la plus stressante.",
+        "concept_cle": "Échelle subjective d'anxiété pour prioriser les étapes",
+        "exemple": "Claire identifie que les bretelles d'autoroute (niveau 9/10) sont plus anxiogènes que les routes de campagne (niveau 4/10).",
+        "limite": "Ne propose pas de plan d'action concret (traité en section 3).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "3",
-        "titre_section": "Comment rédiger des propositions commerciales qui convertissent ?",
-        "objectif": "Vous apprendrez à structurer une proposition commerciale percutante, avec des exemples concrets et des erreurs à éviter pour maximiser vos chances de signature.",
-        "concept_cle": "Structure d’une proposition commerciale efficace.",
-        "exemple": "Thomas utilise un template pour rédiger ses propositions, en mettant en avant les bénéfices pour le client plutôt que ses compétences techniques.",
-        "limite": "N’aborde pas les techniques de négociation des tarifs (Section 4 de ce chapitre).",
-        "mots_cible": "600-800"
-      },
-      {
-        "numero": "4",
-        "titre_section": "Comment négocier vos premiers contrats sans vous brader ?",
-        "objectif": "Vous maîtriserez les techniques de négociation pour défendre vos tarifs et vos conditions, sans accepter des missions sous-payées ou déséquilibrées.",
-        "concept_cle": "Méthodes de négociation pour les freelances débutants.",
-        "exemple": "Thomas refuse une mission sous-payée en expliquant sa valeur ajoutée et propose un tarif adapté au budget du client.",
-        "limite": "N’aborde pas la gestion des conflits clients ou des impayés (Chapitre 8).",
+        "titre_section": "Planifier vos sessions d'exposition : comment progresser sans vous décourager",
+        "objectif": "Vous concevrez un plan d'exposition hebdomadaire, avec des objectifs réalistes et des critères pour passer à l'étape suivante.",
+        "concept_cle": "Découpage des défis en micro-étapes gérables",
+        "exemple": "Claire planifie sa première semaine : 3 trajets de 10 minutes sur des routes peu fréquentées, avant d'aborder les bretelles.",
+        "limite": "Ne traite pas les ajustements en cas de crise pendant une session (chapitre 6).",
         "mots_cible": "500-700"
       },
       {
-        "numero": "5",
-        "titre_section": "Comment éviter la dépendance à un seul client ?",
-        "objectif": "Vous découvrirez des stratégies pour diversifier votre portefeuille clients et limiter les risques de dépendance, avec des outils pour suivre votre prospection.",
-        "concept_cle": "Règles de diversification du portefeuille clients.",
-        "exemple": "Thomas utilise un tableau de suivi pour équilibrer ses missions entre plusieurs clients et éviter de dépendre d’un seul contrat.",
-        "limite": "N’aborde pas la gestion des revenus variables (Chapitre 6).",
+        "numero": "4",
+        "titre_section": "Erreurs à éviter : pourquoi forcer les étapes peut aggraver votre peur",
+        "objectif": "Vous identifierez les pièges courants (ex : sauter des étapes, ignorer les signaux de stress) et leurs conséquences sur votre progression.",
+        "concept_cle": "Surenchère anxieuse par exposition non graduée",
+        "exemple": "Un lecteur tente de prendre l'autoroute dès sa première session et déclenche une crise de panique, ce qui renforce sa peur.",
+        "limite": "Ne propose pas de solutions pour les rechutes (traité au chapitre 8).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2600-3600"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "6",
-    "titre": "Gérer son budget et ses revenus variables",
+    "titre": "Gérer les crises en temps réel",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment estimer vos besoins financiers pour survivre en freelance ?",
-        "objectif": "Vous calculerez vos charges fixes personnelles et professionnelles, et déterminerez le revenu minimum nécessaire pour couvrir vos besoins.",
-        "concept_cle": "Méthode de calcul des besoins financiers mensuels.",
-        "exemple": "Thomas liste ses charges (loyer, prêt immobilier, assurances) et estime qu’il a besoin d’un revenu net de 3 000 € par mois pour vivre décemment.",
-        "limite": "N’aborde pas les méthodes pour provisionner les charges sociales ou fiscales (Section 2 de ce chapitre).",
-        "mots_cible": "500-700"
+        "titre_section": "Reconnaître les signes avant-coureurs : comment anticiper une crise de panique",
+        "objectif": "Vous identifierez les signaux précoces d'une crise (étourdissements, vision tunnel, sensation de déréalisation) pour agir avant qu'elle ne s'aggrave.",
+        "concept_cle": "Détection précoce des symptômes pour une intervention rapide",
+        "exemple": "Claire remarque que ses mains deviennent moites et que sa vision se rétrécit avant une crise sur une bretelle.",
+        "limite": "Ne traite pas les techniques de prévention avant la conduite (chapitre 3).",
+        "mots_cible": "400-600"
       },
       {
         "numero": "2",
-        "titre_section": "Comment provisionner vos charges sociales, fiscales et la TVA ?",
-        "objectif": "Vous apprendrez à calculer et à provisionner vos charges sociales, fiscales et la TVA pour éviter les mauvaises surprises en fin d’année.",
-        "concept_cle": "Calcul des provisions pour charges et TVA.",
-        "exemple": "Thomas met de côté 25 % de son chiffre d’affaires pour ses charges sociales et 10 % pour la TVA, afin de ne pas être pris au dépourvu.",
-        "limite": "N’aborde pas les stratégies d’optimisation fiscale (hors périmètre).",
-        "mots_cible": "600-800"
+        "titre_section": "Arrêt sécurisé : quand et comment vous garer sans aggraver la situation",
+        "objectif": "Vous saurez évaluer quand il est nécessaire de vous arrêter (et comment le faire en toute sécurité) pour désamorcer une crise.",
+        "concept_cle": "Priorisation de la sécurité physique sur la poursuite du trajet",
+        "exemple": "Claire apprend à repérer les zones de stationnement sécurisées sur autoroute et à signaler son arrêt avec les warnings.",
+        "limite": "Ne traite pas les techniques pour reprendre la conduite après l'arrêt (section 4).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "3",
-        "titre_section": "Comment gérer les revenus variables sans stress financier ?",
-        "objectif": "Vous découvrirez des outils pour lisser vos revenus variables (épargne de précaution, budget mensuel glissant) et anticiper les trous de trésorerie.",
-        "concept_cle": "Stratégies de gestion des revenus irréguliers.",
-        "exemple": "Thomas constitue une épargne de précaution équivalente à 6 mois de charges, et utilise un budget mensuel glissant pour ajuster ses dépenses.",
-        "limite": "N’aborde pas les stratégies de placement financier (hors périmètre).",
+        "titre_section": "Techniques d'urgence : comment réduire l'intensité d'une crise en 2 minutes",
+        "objectif": "Vous appliquerez un protocole en 3 étapes (respiration, ancrage, recentrage) pour réduire rapidement les symptômes physiques et mentaux d'une crise.",
+        "concept_cle": "Interruption de la boucle physiologique de la panique",
+        "exemple": "Claire utilise la respiration 4-7-8 et l'ancrage 5-4-3-2-1 pour calmer une crise sur une bretelle, en moins de 2 minutes.",
+        "limite": "Ne remplace pas les stratégies de prévention (chapitre 3) ni les protocoles pour les crises prolongées (section 4).",
         "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Chiffre d’affaires vs. revenu net : comment éviter les confusions dangereuses ?",
-        "objectif": "Vous distinguerez clairement votre chiffre d’affaires de votre revenu net, et éviterez les erreurs de gestion qui mènent à la précarité financière.",
-        "concept_cle": "Différence entre CA et revenu net, et impact sur la trésorerie.",
-        "exemple": "Thomas réalise qu’un CA de 5 000 € ne signifie pas un revenu net de 5 000 €, après avoir déduit ses charges sociales et ses frais professionnels.",
-        "limite": "N’aborde pas les méthodes pour optimiser sa fiscalité (hors périmètre).",
+        "titre_section": "Reprendre le volant ou rentrer : comment décider après une crise",
+        "objectif": "Vous évaluerez si vous pouvez poursuivre votre trajet en toute sécurité ou si vous devez reporter, en fonction de critères objectifs.",
+        "concept_cle": "Évaluation post-crise pour éviter les rechutes",
+        "exemple": "Après une crise, Claire vérifie si sa respiration est redevenue normale et si ses pensées sont moins catastrophistes avant de repartir.",
+        "limite": "Ne traite pas les stratégies pour éviter les rechutes à long terme (chapitre 8).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2000-2800"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "7",
-    "titre": "Organiser son temps et son espace de travail",
+    "titre": "Renforcer la confiance par la pratique",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment structurer votre emploi du temps pour équilibrer production et prospection ?",
-        "objectif": "Vous organiserez votre semaine pour consacrer du temps à la production, à la prospection et à l’administration, sans négliger aucun aspect de votre activité.",
-        "concept_cle": "Méthode de répartition du temps entre les différentes tâches.",
-        "exemple": "Thomas utilise la méthode \"time blocking\" pour réserver des plages horaires dédiées à la prospection, à la production et à l’administration.",
-        "limite": "N’aborde pas les outils de productivité (Section 3 de ce chapitre).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Comment gérer les distractions et rester productif en télétravail ?",
-        "objectif": "Vous identifierez les distractions courantes en télétravail et découvrirez des méthodes pour les limiter et rester concentré.",
-        "concept_cle": "Stratégies de gestion des distractions en télétravail.",
-        "exemple": "Thomas utilise la technique Pomodoro pour rester concentré et évite les réseaux sociaux pendant ses plages de travail.",
-        "limite": "N’aborde pas les outils de productivité (Section 3 de ce chapitre).",
+        "titre_section": "Pourquoi la régularité est-elle plus importante que la durée de vos trajets ?",
+        "objectif": "Vous comprendrez pourquoi des sessions courtes mais fréquentes renforcent davantage la confiance que des trajets longs et espacés.",
+        "concept_cle": "Renforcement progressif par répétition des succès",
+        "exemple": "Claire conduit 15 minutes par jour sur des routes familières, plutôt qu'une heure une fois par semaine, ce qui réduit son anxiété plus rapidement.",
+        "limite": "Ne traite pas les techniques pour gérer les crises pendant les trajets (chapitre 6).",
         "mots_cible": "400-600"
       },
       {
+        "numero": "2",
+        "titre_section": "Journal de bord : comment suivre vos progrès et rester motivé",
+        "objectif": "Vous utiliserez un modèle de journal pour noter vos trajets, votre niveau d'anxiété, et les techniques qui ont fonctionné, afin d'objectiver vos progrès.",
+        "concept_cle": "Auto-observation pour renforcer la perception des améliorations",
+        "exemple": "Claire remplit son journal après chaque trajet, ce qui lui permet de constater que son anxiété sur les bretelles est passée de 9/10 à 5/10 en un mois.",
+        "limite": "Ne propose pas de méthodes pour ajuster son plan d'exposition (traité au chapitre 8).",
+        "mots_cible": "450-650"
+      },
+      {
         "numero": "3",
-        "titre_section": "Quels outils utiliser pour optimiser votre productivité ?",
-        "objectif": "Vous découvrirez des outils simples (Trello, Notion, etc.) pour organiser votre travail, suivre vos tâches et gagner en efficacité.",
-        "concept_cle": "Outils de productivité pour les freelances.",
-        "exemple": "Thomas utilise Trello pour suivre ses projets clients et Notion pour centraliser ses documents administratifs.",
-        "limite": "N’aborde pas l’aménagement de l’espace de travail (Section 4 de ce chapitre).",
+        "titre_section": "Défis progressifs : comment sortir de votre zone de confort sans risque",
+        "objectif": "Vous concevrez une liste de défis adaptés à votre progression (ex : conduire sous la pluie, emprunter un nouvel itinéraire) pour élargir vos compétences en douceur.",
+        "concept_cle": "Extension graduelle des situations maîtrisées",
+        "exemple": "Claire ajoute un défi par semaine : d'abord conduire de nuit dans son quartier, puis sur une route départementale.",
+        "limite": "Ne traite pas les ajustements en cas de rechute (chapitre 8).",
         "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Comment aménager un espace de travail ergonomique et professionnel ?",
-        "objectif": "Vous apprendrez à aménager un espace de travail adapté à vos besoins, avec des conseils pour éviter les problèmes de santé (maux de dos, fatigue oculaire).",
-        "concept_cle": "Principes d’ergonomie pour un espace de travail sain.",
-        "exemple": "Thomas investit dans un bureau réglable en hauteur et un siège ergonomique pour éviter les douleurs lombaires.",
-        "limite": "N’aborde pas la gestion des frontières entre vie pro et perso (Section 5 de ce chapitre).",
-        "mots_cible": "400-600"
-      },
-      {
-        "numero": "5",
-        "titre_section": "Comment préserver votre équilibre vie pro-vie perso en freelance ?",
-        "objectif": "Vous découvrirez des méthodes pour fixer des limites entre votre vie professionnelle et personnelle, et éviter le burnout.",
-        "concept_cle": "Stratégies pour séparer vie pro et vie perso.",
-        "exemple": "Thomas définit des horaires de travail fixes et évite de consulter ses emails le soir ou le week-end.",
-        "limite": "N’aborde pas les aspects psychologiques approfondis (hors périmètre).",
+        "titre_section": "Éviter la dépendance : comment conduire seul sans accompagnateur",
+        "objectif": "Vous identifierez les stratégies pour réduire progressivement votre besoin d'un accompagnateur, en utilisant des techniques d'auto-rassurance.",
+        "concept_cle": "Autonomisation par désensibilisation à la solitude au volant",
+        "exemple": "Claire commence par conduire seule sur des trajets courts, en utilisant la respiration diaphragmatique pour se rassurer.",
+        "limite": "Ne traite pas les cas où un accompagnement professionnel est nécessaire (hors périmètre).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2200-3200"
+    "total_mots_chapitre": "1750-2550"
   },
   {
     "numero": "8",
-    "titre": "Anticiper les pièges du freelancing",
+    "titre": "Maintenir ses progrès sur le long terme",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment éviter la dépendance à un seul client et ses risques financiers ?",
-        "objectif": "Vous identifierez les signes de dépendance à un client et découvrirez des stratégies pour diversifier votre portefeuille et limiter les risques.",
-        "concept_cle": "Règles de diversification du portefeuille clients.",
-        "exemple": "Thomas fixe une limite : aucun client ne doit représenter plus de 30 % de son chiffre d’affaires, et prospecte activement pour équilibrer son portefeuille.",
-        "limite": "N’aborde pas les techniques de prospection (Chapitre 5).",
-        "mots_cible": "500-700"
+        "titre_section": "Pourquoi les rechutes font-elles partie du processus (et comment les anticiper) ?",
+        "objectif": "Vous comprendrez que les rechutes sont normales et comment les utiliser comme opportunités pour renforcer vos acquis.",
+        "concept_cle": "Fluctuation naturelle de l'anxiété malgré les progrès",
+        "exemple": "Claire ressent une rechute après un mois sans conduire, mais utilise son journal pour identifier les déclencheurs et ajuster son plan.",
+        "limite": "Ne propose pas de solutions pour les rechutes sévères (à orienter vers un professionnel).",
+        "mots_cible": "450-650"
       },
       {
         "numero": "2",
-        "titre_section": "Comment gérer les trous de trésorerie sans mettre votre activité en danger ?",
-        "objectif": "Vous apprendrez à anticiper les trous de trésorerie et à mettre en place des solutions pour les combler (épargne de précaution, crédit court terme).",
-        "concept_cle": "Stratégies de gestion des trous de trésorerie.",
-        "exemple": "Thomas utilise son épargne de précaution pour couvrir un mois sans mission, et négocie un délai de paiement avec un client en retard.",
-        "limite": "N’aborde pas les méthodes pour provisionner une épargne (Chapitre 6).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "3",
-        "titre_section": "Comment gérer les conflits clients et les impayés sans perdre votre sang-froid ?",
-        "objectif": "Vous découvrirez des méthodes pour gérer les conflits clients et les impayés, avec des scripts pour communiquer efficacement et des outils pour vous protéger.",
-        "concept_cle": "Techniques de gestion des conflits et des impayés.",
-        "exemple": "Thomas utilise un script pour relancer un client en retard de paiement, et propose un échéancier pour éviter un litige.",
-        "limite": "N’aborde pas les aspects juridiques des litiges (À définir avec l’auteur).",
-        "mots_cible": "600-800"
-      },
-      {
-        "numero": "4",
-        "titre_section": "Quelles arnaques ciblent les freelances et comment vous en protéger ?",
-        "objectif": "Vous identifierez les arnaques courantes (plateformes abusives, contrats déséquilibrés) et apprendrez à les éviter, avec des outils pour vous protéger.",
-        "concept_cle": "Liste des arnaques fréquentes et méthodes de protection.",
-        "exemple": "Thomas évite une plateforme qui propose des missions à des tarifs anormalement bas, après avoir vérifié les avis en ligne.",
-        "limite": "N’aborde pas les détails des contrats types (À définir avec l’auteur).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "5",
-        "titre_section": "Comment éviter la requalification en salarié déguisé et ses conséquences ?",
-        "objectif": "Vous comprendrez les critères de requalification en salarié déguisé et découvrirez des méthodes pour vous protéger (contrats clairs, autonomie réelle).",
-        "concept_cle": "Critères de requalification et bonnes pratiques pour les éviter.",
-        "exemple": "Thomas vérifie que ses contrats respectent les critères d’autonomie et évite de travailler exclusivement pour un seul client.",
-        "limite": "N’aborde pas les aspects juridiques approfondis (À définir avec l’auteur).",
+        "titre_section": "Reprendre après une pause : comment éviter de repartir de zéro",
+        "objectif": "Vous appliquerez un protocole en 3 étapes pour reprendre la conduite après une interruption (vacances, maladie), sans perdre vos acquis.",
+        "concept_cle": "Réactivation progressive des compétences par micro-étapes",
+        "exemple": "Après deux semaines sans conduire, Claire recommence par des trajets de 10 minutes sur des routes familières avant de reprendre son plan d'exposition.",
+        "limite": "Ne traite pas les cas de pauses prolongées liées à un traumatisme (hors périmètre).",
         "mots_cible": "400-600"
-      }
-    ],
-    "total_mots_chapitre": "2500-3500"
-  },
-  {
-    "numero": "9",
-    "titre": "Préparer un plan de repli",
-    "sections": [
-      {
-        "numero": "1",
-        "titre_section": "Quels critères définir pour savoir quand abandonner votre activité ?",
-        "objectif": "Vous déterminerez des critères objectifs (seuil de revenus, épuisement professionnel) pour évaluer la viabilité de votre activité et savoir quand arrêter.",
-        "concept_cle": "Définition des critères de sortie pour un plan de repli.",
-        "exemple": "Thomas fixe un seuil de revenus minimum (2 500 € net/mois) et un délai (12 mois) pour évaluer la viabilité de son activité.",
-        "limite": "N’aborde pas les options concrètes de repli (Section 2 de ce chapitre).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Quelles options concrètes pour rebondir après un échec en freelance ?",
-        "objectif": "Vous découvrirez des options concrètes pour rebondir (retour au salariat, reconversion, création d’entreprise) et les étapes pour les mettre en œuvre.",
-        "concept_cle": "Stratégies de repli et étapes de mise en œuvre.",
-        "exemple": "Thomas prépare un CV mettant en avant ses compétences en freelance, et maintient son réseau salarié pour faciliter un retour en CDI si nécessaire.",
-        "limite": "N’aborde pas les détails des statuts juridiques pour une création d’entreprise (hors périmètre).",
-        "mots_cible": "600-800"
       },
       {
         "numero": "3",
-        "titre_section": "Comment préserver vos droits sociaux en cas de retour au salariat ?",
-        "objectif": "Vous apprendrez à préserver vos droits sociaux (chômage, retraite) en cas de retour au salariat, avec des stratégies pour optimiser votre transition.",
-        "concept_cle": "Stratégies pour préserver ses droits sociaux.",
-        "exemple": "Thomas négocie une rupture conventionnelle pour conserver ses droits au chômage, et cotise à une retraite complémentaire en freelance.",
-        "limite": "N’aborde pas les détails des régimes de retraite ou de chômage (À définir avec l’auteur).",
+        "titre_section": "Gérer les situations nouvelles : comment adapter votre plan d'exposition",
+        "objectif": "Vous ajusterez votre hiérarchie des peurs et votre plan d'exposition pour intégrer de nouvelles situations (ex : conduite à l'étranger, véhicule différent).",
+        "concept_cle": "Flexibilité du plan d'exposition pour les défis imprévus",
+        "exemple": "Claire doit conduire une voiture de location plus grande que la sienne : elle adapte son plan en commençant par des trajets courts sur des parkings.",
+        "limite": "Ne propose pas de solutions pour les situations nécessitant un apprentissage technique (ex : conduite sur neige).",
         "mots_cible": "500-700"
       },
       {
         "numero": "4",
-        "titre_section": "Comment évaluer régulièrement la viabilité de votre activité ?",
-        "objectif": "Vous utiliserez des outils pour évaluer régulièrement la viabilité de votre activité (tableaux de bord, indicateurs clés) et ajuster votre plan de repli.",
-        "concept_cle": "Méthodes d’évaluation continue de la viabilité.",
-        "exemple": "Thomas utilise un tableau de bord mensuel pour suivre son chiffre d’affaires, ses charges et sa trésorerie, et ajuste son plan de repli en conséquence.",
-        "limite": "N’aborde pas les techniques de prospection ou de gestion financière (Chapitre 5 et 6).",
+        "titre_section": "Quand consulter un professionnel : les signes qui ne trompent pas",
+        "objectif": "Vous identifierez les signaux indiquant que votre anxiété nécessite un soutien spécialisé (ex : crises fréquentes, extension à d'autres situations).",
+        "concept_cle": "Limites de l'auto-gestion et critères de recours à un thérapeute",
+        "exemple": "Un lecteur dont l'anxiété s'étend aux transports en commun et aux lieux publics pourrait avoir besoin d'une évaluation par un psychologue.",
+        "limite": "Ne propose pas de protocoles thérapeutiques (hors périmètre).",
         "mots_cible": "400-600"
       }
     ],
-    "total_mots_chapitre": "2000-2800"
+    "total_mots_chapitre": "1750-2550"
   }
 ]

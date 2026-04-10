@@ -3,29 +3,20 @@
   "section": 2,
   "chapitre_numero": "6",
   "section_numero": "2",
-  "these_centrale": "Provisionner systématiquement ses charges sociales, fiscales et la TVA est une étape fondamentale pour éviter les mauvaises surprises financières et assurer la pérennité de son activité freelance.",
+  "these_centrale": "L'arrêt immédiat est la priorité absolue pour gérer les signes d'une crise et prévenir les dangers de la conduite.",
   "arguments_cles": [
-    "De nombreux freelances débutants négligent le provisionnement, confondant chiffre d'affaires et revenu disponible.",
-    "Le calcul des provisions dépend du statut juridique (micro-entreprise, entreprise individuelle, société).",
-    "Une règle générale recommandée est de mettre de côté 30 % à 40 % du chiffre d'affaires encaissé.",
-    "L'absence de provisionnement adéquat peut entraîner des difficultés financières, majorations, pénalités et contrôles.",
-    "Le provisionnement doit être effectué sur un compte bancaire dédié et le plus tôt possible."
+    "Ressentir une perte de contrôle impose de s'arrêter pour assurer la sécurité.",
+    "Il faut chercher un lieu sûr pour stationner hors de la circulation.",
+    "Les feux de détresse doivent être utilisés pour signaler l'arrêt imminent.",
+    "Continuer vers une aire de repos sécurisée est préférable en voie rapide."
   ],
   "concepts_introduits": [
-    "Charges sociales: Cotisations obligatoires pour la protection sociale.",
-    "Charges fiscales: Impôts et taxes dus à l'État.",
-    "TVA: Taxe sur la valeur ajoutée collectée et reversée.",
-    "Micro-entreprise: Régime simplifié de déclaration et paiement.",
-    "Entreprise individuelle (EURL): Forme juridique pour un entrepreneur individuel.",
-    "Société (SASU): Forme juridique de société par actions simplifiée unipersonnelle.",
-    "Provisionnement: Mise de côté d'une partie des revenus pour des dépenses futures."
+    "Crise : phase aiguë et incontrôlable d'une situation.",
+    "Déréalisation : perte de contact avec la réalité environnante.",
+    "Feux de détresse : signalisation lumineuse pour urgence."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "La formulation \"mauvaises surprises financières\".",
-    "L'idée que le chiffre d'affaires est égal au revenu disponible.",
-    "Le chiffre précis \"30 % à 40 %\" sans le contexte de règle générale et estimation."
-  ],
-  "ton_angle": "Pédagogique et préventif, expliquant les démarches à suivre et les risques à éviter.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Provisionner systématiquement ses charges sociales, fiscales et la TVA est une étape fondamentale pour éviter les mauvaises surprises financières et assurer la pérennité de son activité freelance.</these_centrale>\n<arguments_cles>\n- De nombreux freelances débutants négligent le provisionnement, confondant chiffre d'affaires et revenu disponible.\n- Le calcul des provisions dépend du statut juridique (micro-entreprise, entreprise individuelle, société).\n- Une règle générale recommandée est de mettre de côté 30 % à 40 % du chiffre d'affaires encaissé.\n- L'absence de provisionnement adéquat peut entraîner des difficultés financières, majorations, pénalités et contrôles.\n- Le provisionnement doit être effectué sur un compte bancaire dédié et le plus tôt possible.\n</arguments_cles>\n<concepts_introduits>\n- Charges sociales: Cotisations obligatoires pour la protection sociale.\n- Charges fiscales: Impôts et taxes dus à l'État.\n- TVA: Taxe sur la valeur ajoutée collectée et reversée.\n- Micro-entreprise: Régime simplifié de déclaration et paiement.\n- Entreprise individuelle (EURL): Forme juridique pour un entrepreneur individuel.\n- Société (SASU): Forme juridique de société par actions simplifiée unipersonnelle.\n- Provisionnement: Mise de côté d'une partie des revenus pour des dépenses futures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La formulation \"mauvaises surprises financières\".\n- L'idée que le chiffre d'affaires est égal au revenu disponible.\n- Le chiffre précis \"30 % à 40 %\" sans le contexte de règle générale et estimation.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et préventif, expliquant les démarches à suivre et les risques à éviter.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Le ton est préventif et pragmatique, axé sur la sécurité routière.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'arrêt immédiat est la priorité absolue pour gérer les signes d'une crise et prévenir les dangers de la conduite.</these_centrale>\n<arguments_cles>\n- Ressentir une perte de contrôle impose de s'arrêter pour assurer la sécurité.\n- Il faut chercher un lieu sûr pour stationner hors de la circulation.\n- Les feux de détresse doivent être utilisés pour signaler l'arrêt imminent.\n- Continuer vers une aire de repos sécurisée est préférable en voie rapide.\n</arguments_cles>\n<concepts_introduits>\n- Crise : phase aiguë et incontrôlable d'une situation.\n- Déréalisation : perte de contact avec la réalité environnante.\n- Feux de détresse : signalisation lumineuse pour urgence.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ignorer les signaux de crise au volant.\n- Se garer en bordure de voie sans dégagement adéquat.\n</a_ne_not_repeter>\n<ton_angle>Le ton est préventif et pragmatique, axé sur la sécurité routière.</ton_angle>\n</fiche>"
 }

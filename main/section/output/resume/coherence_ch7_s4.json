@@ -3,22 +3,24 @@
   "section": 4,
   "chapitre_numero": "7",
   "section_numero": "4",
-  "these_centrale": "L'aménagement d'un espace de travail adapté est essentiel pour le bien-être physique et mental, favorisant ainsi l'efficacité professionnelle et la pérennité de l'activité.",
+  "these_centrale": "La progression graduelle hors de sa zone de confort renforce la confiance et la résilience en conduite.",
   "arguments_cles": [
-    "L'ergonomie du poste de travail prévient les problèmes de santé comme les douleurs dorsales et la fatigue oculaire.",
-    "L'organisation matérielle et la séparation vie pro/perso améliorent l'équilibre et la concentration.",
-    "Le confort thermique et acoustique contribue à la concentration et à la productivité."
+    "Introduire des défis légèrement supérieurs à la maîtrise actuelle pour une progression sûre.",
+    "Varier les paramètres (distance, familiarité, trafic) pour stimuler l'adaptation du conducteur.",
+    "Tester de nouvelles conditions (route mouillée) avec prudence et techniques de recentrage.",
+    "Décomposer les défis insurmontables en étapes plus petites pour une meilleure gestion."
   ],
   "concepts_introduits": [
-    "Ergonomie : Conception de l'espace pour l'adaptation à l'humain et son confort.",
-    "Troubles musculo-squelettiques : Ailiments liés aux mouvements répétitifs ou aux mauvaises postures."
+    "Zone de confort : espace psychologique où l'on se sent en sécurité.",
+    "Défis progressifs : étapes qui augmentent légèrement la difficulté.",
+    "Recentrage : techniques pour ramener son attention à l'instant présent."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"Vous apprendrez à...\"",
-    "Mention de la \"sédentarité de travail\"",
-    "\"bases fondamentales\""
+    "Sortir de sa zone de confort en toute sécurité.",
+    "Ne pas provoquer une détresse insurmontable.",
+    "Construire une confiance solide en réussissant de petites victoires."
   ],
-  "ton_angle": "Pédagogique et pragmatique, axé sur les bénéfices pour la santé et la productivité.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'aménagement d'un espace de travail adapté est essentiel pour le bien-être physique et mental, favorisant ainsi l'efficacité professionnelle et la pérennité de l'activité.</these_centrale>\n<arguments_cles>\n- L'ergonomie du poste de travail prévient les problèmes de santé comme les douleurs dorsales et la fatigue oculaire.\n- L'organisation matérielle et la séparation vie pro/perso améliorent l'équilibre et la concentration.\n- Le confort thermique et acoustique contribue à la concentration et à la productivité.\n</arguments_cles>\n<concepts_introduits>\n- Ergonomie : Conception de l'espace pour l'adaptation à l'humain et son confort.\n- Troubles musculo-squelettiques : Ailiments liés aux mouvements répétitifs ou aux mauvaises postures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous apprendrez à...\"\n- Mention de la \"sédentarité de travail\"\n- \"bases fondamentales\"\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, axé sur les bénéfices pour la santé et la productivité.</ton_angle>\n</fiche>"
+  "ton_angle": "Didactique et encourageant, axé sur la confiance et l'adaptation progressive.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La progression graduelle hors de sa zone de confort renforce la confiance et la résilience en conduite.</these_centrale>\n<arguments_cles>\n- Introduire des défis légèrement supérieurs à la maîtrise actuelle pour une progression sûre.\n- Varier les paramètres (distance, familiarité, trafic) pour stimuler l'adaptation du conducteur.\n- Tester de nouvelles conditions (route mouillée) avec prudence et techniques de recentrage.\n- Décomposer les défis insurmontables en étapes plus petites pour une meilleure gestion.\n</arguments_cles>\n<concepts_introduits>\n- Zone de confort : espace psychologique où l'on se sent en sécurité.\n- Défis progressifs : étapes qui augmentent légèrement la difficulté.\n- Recentrage : techniques pour ramener son attention à l'instant présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Sortir de sa zone de confort en toute sécurité.\n- Ne pas provoquer une détresse insurmontable.\n- Construire une confiance solide en réussissant de petites victoires.\n</a_ne_pas_repeter>\n<ton_angle>Didactique et encourageant, axé sur la confiance et l'adaptation progressive.</ton_angle>\n</fiche>"
 }

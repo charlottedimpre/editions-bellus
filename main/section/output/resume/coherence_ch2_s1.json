@@ -3,25 +3,24 @@
   "section": 1,
   "chapitre_numero": "2",
   "section_numero": "1",
-  "these_centrale": "Distinguer une motivation d'autonomie réelle d'une fuite d'un environnement négatif est essentiel pour une transition réussie vers l'indépendance.",
+  "these_centrale": "La peur de la conduite automobile provient d'un système d'alerte hyperactif qui doit être rééduqué.",
   "arguments_cles": [
-    "L'autonomie réelle est une démarche constructive basée sur la recherche de liberté et l'anticipation des défis.",
-    "Une fuite, issue d'un contexte toxique, peut mener à un lancement précipité sans bases solides.",
-    "Les aspirations profondes et la vision d'une carrière idéale sont des moteurs durables pour une activité indépendante épanouissante.",
-    "L'introspection permet d'identifier les moteurs authentiques du projet pour éviter de reproduire les mêmes schémas.",
-    "Clarifier les motivations assure que le freelancing est la solution adaptée et non une réaction impulsive."
+    "Le système nerveux autonome déclenche une réaction disproportionnée face à des dangers perçus.",
+    "Les manifestations physiques sont une réponse normale aux hormones de stress libérées.",
+    "Les pensées négatives amplifient le cercle vicieux de l'anxiété et des réactions corporelles.",
+    "Une perception erronée du danger dérègle le système d'alerte, nécessitant une rééducation."
   ],
   "concepts_introduits": [
-    "Autonomie : Liberté de gérer projets, horaires et choix professionnels.",
-    "Fuite : Départ d'un environnement de travail négatif ou insatisfaisant.",
-    "Introspection : Analyse sincère de ses propres motivations et aspirations."
+    "Système nerveux autonome : régule les fonctions corporelles involontaires.",
+    "Système sympathique : prépare le corps à l'action (lutte ou fuite).",
+    "Système parasympathique : favorise le repos et la récupération.",
+    "Réaction de lutte ou de fuite : réponse instinctive au danger."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Se lancer précipitamment sans bases solides.",
-    "Transposer les problèmes de l'emploi précédent dans l'activité freelance.",
-    "Le freelancing comme simple réaction impulsive à une situation inconfortable."
+    "Les sensations physiques sont une conséquence de la libération d'hormones de stress.",
+    "Le cercle vicieux de l'anxiété se nourrit des pensées négatives et des réactions corporelles."
   ],
-  "ton_angle": "Analytique, axé sur l'auto-évaluation introspective.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Distinguer une motivation d'autonomie réelle d'une fuite d'un environnement négatif est essentiel pour une transition réussie vers l'indépendance.</these_centrale>\n<arguments_cles>\n- L'autonomie réelle est une démarche constructive basée sur la recherche de liberté et l'anticipation des défis.\n- Une fuite, issue d'un contexte toxique, peut mener à un lancement précipité sans bases solides.\n- Les aspirations profondes et la vision d'une carrière idéale sont des moteurs durables pour une activité indépendante épanouissante.\n- L'introspection permet d'identifier les moteurs authentiques du projet pour éviter de reproduire les mêmes schémas.\n- Clarifier les motivations assure que le freelancing est la solution adaptée et non une réaction impulsive.\n</arguments_cles>\n<concepts_introduits>\n- Autonomie : Liberté de gérer projets, horaires et choix professionnels.\n- Fuite : Départ d'un environnement de travail négatif ou insatisfaisant.\n- Introspection : Analyse sincère de ses propres motivations et aspirations.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Se lancer précipitamment sans bases solides.\n- Transposer les problèmes de l'emploi précédent dans l'activité freelance.\n- Le freelancing comme simple réaction impulsive à une situation inconfortable.\n</a_ne_pas_repeter>\n<ton_angle>Analytique, axé sur l'auto-évaluation introspective.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et rassurant, l'auteur dédramatise les réactions physiologiques.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La peur de la conduite automobile provient d'un système d'alerte hyperactif qui doit être rééduqué.</these_centrale>\n<arguments_cles>\n- Le système nerveux autonome déclenche une réaction disproportionnée face à des dangers perçus.\n- Les manifestations physiques sont une réponse normale aux hormones de stress libérées.\n- Les pensées négatives amplifient le cercle vicieux de l'anxiété et des réactions corporelles.\n- Une perception erronée du danger dérègle le système d'alerte, nécessitant une rééducation.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux autonome : régule les fonctions corporelles involontaires.\n- Système sympathique : prépare le corps à l'action (lutte ou fuite).\n- Système parasympathique : favorise le repos et la récupération.\n- Réaction de lutte ou de fuite : réponse instinctive au danger.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les sensations physiques sont une conséquence de la libération d'hormones de stress.\n- Le cercle vicieux de l'anxiété se nourrit des pensées négatives et des réactions corporelles.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, l'auteur dédramatise les réactions physiologiques.</ton_angle>\n</fiche>"
 }

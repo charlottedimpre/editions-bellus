@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import time
 from pathlib import Path
 
@@ -9,12 +10,16 @@ from google.genai.errors import ServerError
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 SECTION_DIR = BASE_DIR.parent / "section" / "output" / "section_fr"
 SECTION_OUTPUT_DIR = BASE_DIR.parent / "section" / "output" / "section"
 STRUCTURE_PATH = BASE_DIR.parent / "structure_chapitre" / "output" / "structure_chapitre.json"
 FIL_ROUGE_PATH = OUTPUT_DIR / "fil_rouge.json"
+
+from parser import parse_filrouge
 
 load_dotenv(ROOT_DIR / ".env")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -38,6 +43,38 @@ def get_insertion(fil_rouge_data: dict, chapitre: int, section: int) -> str:
         if int(ins.get("chapitre", -1)) == int(chapitre) and int(ins.get("section", -1)) == int(section):
             return ins.get("contenu", "")
     return ""
+
+
+def _normalize_fil_rouge_data(raw_data) -> dict:
+    if isinstance(raw_data, dict):
+        insertions = raw_data.get("insertions", [])
+        if isinstance(insertions, list):
+            for item in insertions:
+                if isinstance(item, dict) and item.get("contenu") is None and item.get("passage") is not None:
+                    item["contenu"] = item.get("passage")
+        return raw_data
+
+    if isinstance(raw_data, list):
+        normalized = parse_filrouge(json.dumps(raw_data, ensure_ascii=False))
+        if normalized.get("insertions"):
+            return normalized
+
+    if isinstance(raw_data, str):
+        text_value = raw_data
+        # Compatibilite historique: certains fichiers contiennent une chaine JSON encodee.
+        try:
+            decoded = json.loads(raw_data)
+            if isinstance(decoded, dict):
+                return _normalize_fil_rouge_data(decoded)
+            if isinstance(decoded, list):
+                return _normalize_fil_rouge_data(decoded)
+            if isinstance(decoded, str):
+                text_value = decoded
+        except (json.JSONDecodeError, TypeError):
+            pass
+        return parse_filrouge(text_value)
+
+    raise ValueError("Format fil_rouge.json invalide: dict ou str attendu.")
 
 
 def _parse_model_json(content: str) -> dict:
@@ -116,6 +153,7 @@ def incorporer(chapitre, section):
 
     with FIL_ROUGE_PATH.open("r", encoding="utf-8") as f:
         fil_rouge_data = json.load(f)
+    fil_rouge_data = _normalize_fil_rouge_data(fil_rouge_data)
 
     exemple = get_insertion(fil_rouge_data, chapitre, section)
 

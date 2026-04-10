@@ -3,27 +3,24 @@
   "section": 4,
   "chapitre_numero": "3",
   "section_numero": "4",
-  "these_centrale": "Les idées fausses courantes sur les statuts juridiques peuvent entraîner des risques financiers et une protection sociale insuffisante si elles ne sont pas corrigées.",
+  "these_centrale": "Un rituel personnalisé avant la conduite crée une routine rassurante pour réduire l'anxiété et améliorer le calme.",
   "arguments_cles": [
-    "La micro-entreprise peut devenir économiquement moins avantageuse avec une augmentation significative du chiffre d'affaires.",
-    "La responsabilité patrimoniale varie considérablement selon les statuts, certains confondant le patrimoine personnel et professionnel.",
-    "Le portage salarial simplifie la gestion mais peut réduire la rémunération nette et l'autonomie.",
-    "Le choix d'un statut n'est pas définitif et doit être réévalué pour optimiser la situation fiscale et sociale."
+    "Un rituel personnalisé sert d'ancre comportementale face à l'incertitude.",
+    "La répétition d'actions simples prépare le système nerveux au calme.",
+    "L'automatisation de la routine réduit la probabilité de pensées anxieuses.",
+    "L'intégration d'éléments apaisants renforce la préparation mentale."
   ],
   "concepts_introduits": [
-    "Micro-entreprise : Structure simplifiée avec cotisations calculées sur le chiffre d'affaires.",
-    "Responsabilité patrimoniale : Étendue de l'engagement des biens personnels face aux dettes.",
-    "Portage salarial : Mode de travail intermédiaire entre salarié et indépendant.",
-    "EURL : Entreprise Unipersonnelle à Responsabilité Limitée.",
-    "SASU : Société par Actions Simplifiée Unipersonnelle."
+    "Ancre comportementale : Signal réduisant l'incertitude par une action.",
+    "Respiration diaphragmatique : Respiration profonde pour favoriser la détente.",
+    "Visualisation positive : Imaginer un résultat favorable pour apaiser."
   ],
-  "liens_chapitres": "Aucun",
+  "liens_chapitres": "Chapitres suivants",
   "a_ne_pas_repeter": [
-    "La micro-entreprise est toujours la meilleure option.",
-    "Tous les statuts offrent la même protection des biens personnels.",
-    "Le portage salarial évite toutes les contraintes administratives et fiscales.",
-    "Le choix d'un statut est définitif."
+    "Le fait que la routine aide à l'automatisation.",
+    "L'idée que la routine est une stratégie préventive.",
+    "La description d'éléments possibles pour le rituel."
   ],
-  "ton_angle": "informatif, mettant en garde contre les idées reçues et soulignant les conséquences financières.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les idées fausses courantes sur les statuts juridiques peuvent entraîner des risques financiers et une protection sociale insuffisante si elles ne sont pas corrigées.</these_centrale>\n<arguments_cles>\n- La micro-entreprise peut devenir économiquement moins avantageuse avec une augmentation significative du chiffre d'affaires.\n- La responsabilité patrimoniale varie considérablement selon les statuts, certains confondant le patrimoine personnel et professionnel.\n- Le portage salarial simplifie la gestion mais peut réduire la rémunération nette et l'autonomie.\n- Le choix d'un statut n'est pas définitif et doit être réévalué pour optimiser la situation fiscale et sociale.\n</arguments_cles>\n<concepts_introduits>\n- Micro-entreprise : Structure simplifiée avec cotisations calculées sur le chiffre d'affaires.\n- Responsabilité patrimoniale : Étendue de l'engagement des biens personnels face aux dettes.\n- Portage salarial : Mode de travail intermédiaire entre salarié et indépendant.\n- EURL : Entreprise Unipersonnelle à Responsabilité Limitée.\n- SASU : Société par Actions Simplifiée Unipersonnelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La micro-entreprise est toujours la meilleure option.\n- Tous les statuts offrent la même protection des biens personnels.\n- Le portage salarial évite toutes les contraintes administratives et fiscales.\n- Le choix d'un statut est définitif.\n</a_ne_pas_repeter>\n<ton_angle>informatif, mettant en garde contre les idées reçues et soulignant les conséquences financières.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pratique, l'angle est celui de la gestion de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Un rituel personnalisé avant la conduite crée une routine rassurante pour réduire l'anxiété et améliorer le calme.</these_centrale>\n<arguments_cles>\n- Un rituel personnalisé sert d'ancre comportementale face à l'incertitude.\n- La répétition d'actions simples prépare le système nerveux au calme.\n- L'automatisation de la routine réduit la probabilité de pensées anxieuses.\n- L'intégration d'éléments apaisants renforce la préparation mentale.\n</arguments_cles>\n<concepts_introduits>\n- Ancre comportementale : Signal réduisant l'incertitude par une action.\n- Respiration diaphragmatique : Respiration profonde pour favoriser la détente.\n- Visualisation positive : Imaginer un résultat favorable pour apaiser.\n</concepts_introduits>\n<liens_chapitres>Chapitres suivants</liens_chapitres>\n<a_ne_pas_repeter>\n- Le fait que la routine aide à l'automatisation.\n- L'idée que la routine est une stratégie préventive.\n- La description d'éléments possibles pour le rituel.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de la gestion de l'anxiété.</ton_angle>\n</fiche>"
 }

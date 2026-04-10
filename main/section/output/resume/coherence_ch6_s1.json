@@ -3,26 +3,19 @@
   "section": 1,
   "chapitre_numero": "6",
   "section_numero": "1",
-  "these_centrale": "L'identification et la quantification précises des charges fixes personnelles et professionnelles sont la première étape essentielle pour déterminer le revenu minimum nécessaire à la couverture des dépenses essentielles et assurer la viabilité d'une activité indépendante.",
+  "these_centrale": "Identifier les signes avant-coureurs physiques, perceptuels et cognitifs permet de gérer une crise d'angoisse.",
   "arguments_cles": [
-    "Il est nécessaire d'identifier et de quantifier toutes les dépenses, personnelles et professionnelles, pour déterminer le revenu minimum requis.",
-    "Il faut lister exhaustivement les charges fixes personnelles (loyer, crédits, assurances, abonnements, garde d'enfants, etc.).",
-    "Il faut également lister les charges professionnelles fixes (espace de coworking, logiciels, domiciliation, cotisations minimales, etc.).",
-    "L'addition de ces charges donne le seuil minimal de revenus nécessaires pour couvrir les dépenses essentielles.",
-    "Ce montant minimal est un filet de sécurité et ne prend pas en compte les imprévus, impôts, charges variables ou épargne."
+    "Le corps envoie des signaux subtils avant qu'une crise ne se déclenche.",
+    "Des changements dans la perception et la conscience de soi accompagnent la montée d'anxiété.",
+    "Les manifestations sensorielles inhabituelles comme les sons ou la température alertent.",
+    "Les pensées négatives et incontrôlables surgissent, alimentant le cycle de l'anxiété."
   ],
   "concepts_introduits": [
-    "Charges fixes personnelles : Dépenses récurrentes et incompressées impactant le compte bancaire privé.",
-    "Charges professionnelles fixes : Dépenses récurrentes liées à l'activité indépendante.",
-    "Revenu minimum nécessaire : Montant absolu à générer pour couvrir les dépenses essentielles."
+    "Crise d'angoisse : état aigu de peur intense avec symptômes physiques.",
+    "Adrénaline : hormone de réponse au stress activant le système nerveux."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "La sécurité du salaire mensuel fixe n'est plus acquise.",
-    "Ce montant minimal est votre point de départ.",
-    "Il s'agit uniquement de la base indispensable pour ne pas vous retrouver en difficulté financière immédiate.",
-    "Considérez-le comme votre filet de sécurité, le plancher sous lequel vous ne devez jamais descendre une fois lancé en freelance."
-  ],
-  "ton_angle": "Informatif et pragmatique, axé sur l'auto-gestion financière pré-lancement.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'identification et la quantification précises des charges fixes personnelles et professionnelles sont la première étape essentielle pour déterminer le revenu minimum nécessaire à la couverture des dépenses essentielles et assurer la viabilité d'une activité indépendante.</these_centrale>\n<arguments_cles>\n- Il est nécessaire d'identifier et de quantifier toutes les dépenses, personnelles et professionnelles, pour déterminer le revenu minimum requis.\n- Il faut lister exhaustivement les charges fixes personnelles (loyer, crédits, assurances, abonnements, garde d'enfants, etc.).\n- Il faut également lister les charges professionnelles fixes (espace de coworking, logiciels, domiciliation, cotisations minimales, etc.).\n- L'addition de ces charges donne le seuil minimal de revenus nécessaires pour couvrir les dépenses essentielles.\n- Ce montant minimal est un filet de sécurité et ne prend pas en compte les imprévus, impôts, charges variables ou épargne.\n</arguments_cles>\n<concepts_introduits>\n- Charges fixes personnelles : Dépenses récurrentes et incompressées impactant le compte bancaire privé.\n- Charges professionnelles fixes : Dépenses récurrentes liées à l'activité indépendante.\n- Revenu minimum nécessaire : Montant absolu à générer pour couvrir les dépenses essentielles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La sécurité du salaire mensuel fixe n'est plus acquise.\n- Ce montant minimal est votre point de départ.\n- Il s'agit uniquement de la base indispensable pour ne pas vous retrouver en difficulté financière immédiate.\n- Considérez-le comme votre filet de sécurité, le plancher sous lequel vous ne devez jamais descendre une fois lancé en freelance.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, axé sur l'auto-gestion financière pré-lancement.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Informatif et pragmatique, axé sur la reconnaissance des symptômes.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Identifier les signes avant-coureurs physiques, perceptuels et cognitifs permet de gérer une crise d'angoisse.</these_centrale>\n<arguments_cles>\n- Le corps envoie des signaux subtils avant qu'une crise ne se déclenche.\n- Des changements dans la perception et la conscience de soi accompagnent la montée d'anxiété.\n- Les manifestations sensorielles inhabituelles comme les sons ou la température alertent.\n- Les pensées négatives et incontrôlables surgissent, alimentant le cycle de l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Crise d'angoisse : état aigu de peur intense avec symptômes physiques.\n- Adrénaline : hormone de réponse au stress activant le système nerveux.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Main moites, oppression poitrine, vertiges: indicateurs de crise imminente.\n- Activation du système nerveux sympathique.\n- Sensation de flottement ou hyperfocalisation.\n</a_ne_not_repeter>\n<ton_angle> Informatif et pragmatique, axé sur la reconnaissance des symptômes.</ton_angle>\n</fiche>"
 }

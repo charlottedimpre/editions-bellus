@@ -3,23 +3,22 @@
   "section": 2,
   "chapitre_numero": "5",
   "section_numero": "2",
-  "these_centrale": "Choisir les plateformes de freelancing appropriées est essentiel pour trouver rapidement des missions et maximiser ses revenus.",
+  "these_centrale": "Identifier et hiérarchiser ses appréhensions liées à la conduite permet de construire une feuille de route personnalisée.",
   "arguments_cles": [
-    "Analyser les caractéristiques, la clientèle cible et le modèle économique des plateformes.",
-    "Évaluer la structure des frais, les types de clients et le processus de mise en relation.",
-    "Se concentrer sur une ou deux plateformes prometteuses et observer les retours.",
-    "Optimiser la qualité du profil avec une description claire et des réalisations pertinentes."
+    "Lister précisément les situations stressantes aide à objectiver les peurs.",
+    "Évaluer chaque situation sur une échelle de 0 à 10 quantifie l'anxiété.",
+    "Une hiérarchie personnalisée sert de base pour des expositions progressives.",
+    "Affiner les situations similaires clarifie les déclencheurs spécifiques de peur."
   ],
   "concepts_introduits": [
-    "Plateformes de freelancing : Sites web pour mettre en relation freelances et clients.",
-    "Modèle économique : Structure des coûts et revenus d'une plateforme.",
-    "Proposition de valeur : Ce que le freelance apporte d'unique aux clients."
+    "Hiérarchie des situations anxiogènes : liste graduée des peurs.",
+    "Exposition progressive : technique pour affronter graduellement ses peurs."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas se disperser sur trop de plateformes.",
-    "Ne pas négliger la qualité du profil."
+    "La peur diffuse d'angoisse",
+    "Les causes profondes de la peur"
   ],
-  "ton_angle": "Informatif, pragmatique, axé sur la décision stratégique.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Choisir les plateformes de freelancing appropriées est essentiel pour trouver rapidement des missions et maximiser ses revenus.</these_centrale>\n<arguments_cles>\n- Analyser les caractéristiques, la clientèle cible et le modèle économique des plateformes.\n- Évaluer la structure des frais, les types de clients et le processus de mise en relation.\n- Se concentrer sur une ou deux plateformes prometteuses et observer les retours.\n- Optimiser la qualité du profil avec une description claire et des réalisations pertinentes.\n</arguments_cles>\n<concepts_introduits>\n- Plateformes de freelancing : Sites web pour mettre en relation freelances et clients.\n- Modèle économique : Structure des coûts et revenus d'une plateforme.\n- Proposition de valeur : Ce que le freelance apporte d'unique aux clients.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas se disperser sur trop de plateformes.\n- Ne pas négliger la qualité du profil.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, pragmatique, axé sur la décision stratégique.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructionnel et pragmatique, l'angle est celui de la résolution de problème.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Identifier et hiérarchiser ses appréhensions liées à la conduite permet de construire une feuille de route personnalisée.</these_centrale>\n<arguments_cles>\n- Lister précisément les situations stressantes aide à objectiver les peurs.\n- Évaluer chaque situation sur une échelle de 0 à 10 quantifie l'anxiété.\n- Une hiérarchie personnalisée sert de base pour des expositions progressives.\n- Affiner les situations similaires clarifie les déclencheurs spécifiques de peur.\n</arguments_cles>\n<concepts_introduits>\n- Hiérarchie des situations anxiogènes : liste graduée des peurs.\n- Exposition progressive : technique pour affronter graduellement ses peurs.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La peur diffuse d'angoisse\n- Les causes profondes de la peur\n</a_ne_pas_repeter>\n<ton_angle>Instructionnel et pragmatique, l'angle est celui de la résolution de problème.</ton_angle>\n</fiche>"
 }

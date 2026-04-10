@@ -3,21 +3,22 @@
   "section": 3,
   "chapitre_numero": "2",
   "section_numero": "3",
-  "these_centrale": "Tester la viabilité d'un projet entrepreneurial avant de démissionner est essentiel pour éviter un lancement risqué.",
+  "these_centrale": "Il est crucial de différencier l'anxiété situationnelle de la conduite d'un trouble anxieux généralisé.",
   "arguments_cles": [
-    "Le portage salarial permet d'exercer une activité indépendante tout en conservant un statut de salarié et ses droits sociaux.",
-    "Les missions ponctuelles ou projets annexes offrent une confrontation du projet à la réalité du marché et permettent de construire un portefeuille.",
-    "Ces approches progressives transforment une idée abstraite en une réalité testée, affinant l'offre et le positionnement."
+    "L'anxiété situationnelle est liée spécifiquement à la conduite et ses situations associées.",
+    "L'inquiétude touchant d'autres domaines de vie signale un trouble anxieux plus large.",
+    "La fatigue, les troubles du sommeil, l'irritabilité indiquent une détresse émotionnelle transcendant la conduite.",
+    "Les pensées catastrophistes sur divers sujets suggèrent une tendance anxieuse diffuse."
   ],
   "concepts_introduits": [
-    "Portage salarial : Activité indépendante avec statut de salarié et gestion administrative déléguée.",
-    "Missions ponctuelles : Projets annexes réalisés en dehors du temps de travail principal."
+    "Anxiété situationnelle : peur spécifique à la conduite ou aux situations routières.",
+    "Trouble anxieux généralisé : inquiétude s'étendant au-delà d'un domaine spécifique de la vie."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Lancement dans le vide",
-    "Transition précipitée"
+    "Exposition progressive pour la peur de conduire dans les troubles anxieux complexes.",
+    "Méthodes destinées à la seule peur de conduire."
   ],
-  "ton_angle": "Pragmatique, axé sur la sécurisation de la transition entrepreneuriale.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Tester la viabilité d'un projet entrepreneurial avant de démissionner est essentiel pour éviter un lancement risqué.</these_centrale>\n<arguments_cles>\n- Le portage salarial permet d'exercer une activité indépendante tout en conservant un statut de salarié et ses droits sociaux.\n- Les missions ponctuelles ou projets annexes offrent une confrontation du projet à la réalité du marché et permettent de construire un portefeuille.\n- Ces approches progressives transforment une idée abstraite en une réalité testée, affinant l'offre et le positionnement.\n</arguments_cles>\n<concepts_introduits>\n- Portage salarial : Activité indépendante avec statut de salarié et gestion administrative déléguée.\n- Missions ponctuelles : Projets annexes réalisés en dehors du temps de travail principal.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Lancement dans le vide\n- Transition précipitée\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique, axé sur la sécurisation de la transition entrepreneuriale.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et préventif, guidant vers une évaluation professionnelle adaptée.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Il est crucial de différencier l'anxiété situationnelle de la conduite d'un trouble anxieux généralisé.</these_centrale>\n<arguments_cles>\n- L'anxiété situationnelle est liée spécifiquement à la conduite et ses situations associées.\n- L'inquiétude touchant d'autres domaines de vie signale un trouble anxieux plus large.\n- La fatigue, les troubles du sommeil, l'irritabilité indiquent une détresse émotionnelle transcendant la conduite.\n- Les pensées catastrophistes sur divers sujets suggèrent une tendance anxieuse diffuse.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété situationnelle : peur spécifique à la conduite ou aux situations routières.\n- Trouble anxieux généralisé : inquiétude s'étendant au-delà d'un domaine spécifique de la vie.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Exposition progressive pour la peur de conduire dans les troubles anxieux complexes.\n- Méthodes destinées à la seule peur de conduire.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et préventif, guidant vers une évaluation professionnelle adaptée.</ton_angle>\n</fiche>"
 }

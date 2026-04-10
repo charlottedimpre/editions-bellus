@@ -1,34 +1,32 @@
 {
-  "sujet": "Passer du salariat en CDI à l’indépendance professionnelle : méthodes, risques et préparation pour une transition sécurisée vers le freelancing",
+  "sujet": "Surmonter l'anxiété au volant : une approche progressive pour conduire sans panique",
   "sommaire": [
-    "Pourquoi quitter son CDI aujourd’hui",
-    "Évaluer sa motivation et sa préparation",
-    "Choisir son statut juridique et fiscal",
-    "Construire son offre et son positionnement",
-    "Trouver ses premiers clients",
-    "Gérer son budget et ses revenus variables",
-    "Organiser son temps et son espace de travail",
-    "Anticiper les pièges du freelancing",
-    "Préparer un plan de repli"
+    "Reconnaître les signes de la peur au volant",
+    "Comprendre les mécanismes de l'anxiété",
+    "Préparer son corps avant de conduire",
+    "Techniques de respiration et ancrage",
+    "Affronter les situations redoutées pas à pas",
+    "Gérer les crises en temps réel",
+    "Renforcer la confiance par la pratique",
+    "Maintenir ses progrès sur le long terme"
   ],
   "hors_perimetre": [
-    "Les détails des régimes fiscaux étrangers — seules les règles françaises sont abordées, avec renvoi vers un expert-comptable pour les cas transfrontaliers",
-    "Les stratégies de croissance vers l’embauche ou la création d’entreprise — le livre se limite à la phase de lancement en solo, avec mention des ressources pour aller plus loin",
-    "Les évolutions législatives récentes non consolidées — seules les règles stables à la date de publication sont traitées, avec invitation à vérifier les mises à jour officielles",
-    "Les aspects psychologiques approfondis (syndrome de l’imposteur, burnout) — abordés sous l’angle des risques concrets, avec orientation vers un professionnel de santé mentale pour un accompagnement personnalisé"
+    "Les troubles anxieux sévères non liés à la conduite — rediriger vers un psychologue spécialisé en TCC",
+    "Les phobies spécifiques autres que la peur de conduire — exclues sauf mention explicite de leur interaction avec la conduite",
+    "Les évolutions récentes des thérapies médicamenteuses — renvoyer vers un médecin pour un avis actualisé",
+    "Les cas de traumatismes post-accidentels complexes — orienter vers un professionnel en EMDR ou psychotraumatologie"
   ],
   "contraintes_specifiques": [
     "Le ton doit rester pédagogique et rigoureux",
-    "Mention des risques à chaque étape clé",
-    "Mention des limites des méthodes proposées",
-    "Mention des erreurs fréquentes et des idées reçues",
-    "Précision systématique des conditions d’application (secteur, expérience, situation personnelle)",
-    "Rappel explicite de non-substitution à un conseil juridique ou financier personnalisé"
+    "Mention des risques liés à l'évitement prolongé de la conduite",
+    "Mention des limites des techniques proposées selon les profils",
+    "Mention des erreurs fréquentes (ex : forcer les étapes, ignorer les signaux corporels)",
+    "Préciser que ce livre ne remplace pas un suivi thérapeutique en cas de trouble anxieux généralisé"
   ],
-  "cible_principale": "Un salarié en CDI depuis au moins 3 ans, insatisfait de son emploi ou attiré par l’autonomie, qui envisage le freelancing mais craint l’instabilité et manque de repères pour structurer sa transition",
+  "cible_principale": "Un adulte ayant développé une peur de conduire après un événement déclencheur ou une accumulation de stress, qui souhaite retrouver une autonomie progressive sans dépendre d'un accompagnement permanent",
   "niveau": "Débutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)",
-  "objectif_lecteur": "Vous serez capable d’évaluer si le freelancing vous convient, de préparer votre transition étape par étape, d’éviter les pièges courants, et de sécuriser vos premiers mois d’activité en limitant les risques financiers et professionnels",
-  "nbre_chapitres": 9,
-  "_raw": "<fiche_cadrage>\n\n<sujet>\nPasser du salariat en CDI à l’indépendance professionnelle : méthodes, risques et préparation pour une transition sécurisée vers le freelancing\n</sujet>\n\n<sommaire>\n- Chapitre 1 : Pourquoi quitter son CDI aujourd’hui\n- Chapitre 2 : Évaluer sa motivation et sa préparation\n- Chapitre 3 : Choisir son statut juridique et fiscal\n- Chapitre 4 : Construire son offre et son positionnement\n- Chapitre 5 : Trouver ses premiers clients\n- Chapitre 6 : Gérer son budget et ses revenus variables\n- Chapitre 7 : Organiser son temps et son espace de travail\n- Chapitre 8 : Anticiper les pièges du freelancing\n- Chapitre 9 : Préparer un plan de repli\n</sommaire>\n\n<hors_perimetre>\n- Les détails des régimes fiscaux étrangers — seules les règles françaises sont abordées, avec renvoi vers un expert-comptable pour les cas transfrontaliers\n- Les stratégies de croissance vers l’embauche ou la création d’entreprise — le livre se limite à la phase de lancement en solo, avec mention des ressources pour aller plus loin\n- Les évolutions législatives récentes non consolidées — seules les règles stables à la date de publication sont traitées, avec invitation à vérifier les mises à jour officielles\n- Les aspects psychologiques approfondis (syndrome de l’imposteur, burnout) — abordés sous l’angle des risques concrets, avec orientation vers un professionnel de santé mentale pour un accompagnement personnalisé\n</hors_perimetre>\n\n<contraintes_specifiques>\n- Le ton doit rester pédagogique et rigoureux\n- Mention des risques à chaque étape clé\n- Mention des limites des méthodes proposées\n- Mention des erreurs fréquentes et des idées reçues\n- Précision systématique des conditions d’application (secteur, expérience, situation personnelle)\n- Rappel explicite de non-substitution à un conseil juridique ou financier personnalisé\n</contraintes_specifiques>\n\n<cible_principale>\nUn salarié en CDI depuis au moins 3 ans, insatisfait de son emploi ou attiré par l’autonomie, qui envisage le freelancing mais craint l’instabilité et manque de repères pour structurer sa transition\n</cible_principale>\n\n<niveau>\nDébutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)\n</niveau>\n\n<objectif_lecteur>\nVous serez capable d’évaluer si le freelancing vous convient, de préparer votre transition étape par étape, d’éviter les pièges courants, et de sécuriser vos premiers mois d’activité en limitant les risques financiers et professionnels\n</objectif_lecteur>\n\n</fiche_cadrage>",
-  "titre_saisi_utilisateur": "Quitter son CDI pour devenir freelance"
+  "objectif_lecteur": "Vous serez capable d'identifier vos déclencheurs d'anxiété au volant, d'appliquer des techniques immédiates pour réduire la panique, et de concevoir un plan d'exposition progressive adapté à votre rythme, tout en sachant quand solliciter un soutien professionnel si nécessaire",
+  "nbre_chapitres": 8,
+  "_raw": "<fiche_cadrage>\n\n<sujet>\nSurmonter l'anxiété au volant : une approche progressive pour conduire sans panique\n</sujet>\n\n<sommaire>\n- Chapitre 1 : Reconnaître les signes de la peur au volant\n- Chapitre 2 : Comprendre les mécanismes de l'anxiété\n- Chapitre 3 : Préparer son corps avant de conduire\n- Chapitre 4 : Techniques de respiration et ancrage\n- Chapitre 5 : Affronter les situations redoutées pas à pas\n- Chapitre 6 : Gérer les crises en temps réel\n- Chapitre 7 : Renforcer la confiance par la pratique\n- Chapitre 8 : Maintenir ses progrès sur le long terme\n</sommaire>\n\n<hors_perimetre>\n- Les troubles anxieux sévères non liés à la conduite — rediriger vers un psychologue spécialisé en TCC\n- Les phobies spécifiques autres que la peur de conduire — exclues sauf mention explicite de leur interaction avec la conduite\n- Les évolutions récentes des thérapies médicamenteuses — renvoyer vers un médecin pour un avis actualisé\n- Les cas de traumatismes post-accidentels complexes — orienter vers un professionnel en EMDR ou psychotraumatologie\n</hors_perimetre>\n\n<contraintes_specifiques>\n- Le ton doit rester pédagogique et rigoureux\n- Mention des risques liés à l'évitement prolongé de la conduite\n- Mention des limites des techniques proposées selon les profils\n- Mention des erreurs fréquentes (ex : forcer les étapes, ignorer les signaux corporels)\n- Préciser que ce livre ne remplace pas un suivi thérapeutique en cas de trouble anxieux généralisé\n</contraintes_specifiques>\n\n<cible_principale>\nUn adulte ayant développé une peur de conduire après un événement déclencheur ou une accumulation de stress, qui souhaite retrouver une autonomie progressive sans dépendre d'un accompagnement permanent\n</cible_principale>\n\n<niveau>\nDébutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)\n</niveau>\n\n<objectif_lecteur>\nVous serez capable d'identifier vos déclencheurs d'anxiété au volant, d'appliquer des techniques immédiates pour réduire la panique, et de concevoir un plan d'exposition progressive adapté à votre rythme, tout en sachant quand solliciter un soutien professionnel si nécessaire\n</objectif_lecteur>\n\n</fiche_cadrage>",
+  "titre_saisi_utilisateur": "« Peur de conduire : la méthode pour ne plus paniquer au volant, gérer votre anxiété et conduire sereinement »"
 }

@@ -3,32 +3,23 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "Comparer les risques concrets du freelancing aux sécurités du CDI est essentiel pour une prise de décision éclairée quant à son parcours professionnel.",
+  "these_centrale": "L'origine de la peur au volant peut être un trouble anxieux généralisé ou un traumatisme, nécessitant une aide professionnelle.",
   "arguments_cles": [
-    "La précarité financière due à des revenus fluctuants nécessite une gestion budgétaire rigoureuse.",
-    "La protection sociale (santé, chômage) est souvent moins étendue en tant qu'indépendant.",
-    "L'isolement professionnel peut impacter le bien-être et la créativité, nécessitant des stratégies de lien social.",
-    "La charge administrative peut devenir chronophage si elle n'est pas anticipée ou déléguée.",
-    "L'absence de limites claires entre vie professionnelle et personnelle peut mener à l'épuisement."
+    "La peur du volant peut masquer une anxiété généralisée plus large.",
+    "Un événement traumatisant antérieur peut être la cause profonde de la phobie.",
+    "Les techniques spécifiques à la conduite ne suffisent pas pour des troubles plus complexes.",
+    "Une évaluation professionnelle est nécessaire pour les anxiétés intenses ou post-traumatiques."
   ],
   "concepts_introduits": [
-    "Freelancing : Travail indépendant sans lien de subordination permanent.",
-    "CDI : Contrat à durée indéterminée garantissant stabilité et protections.",
-    "Précarité : Instabilité de la situation professionnelle et financière.",
-    "Protection sociale : Ensemble des garanties (santé, chômage, retraite) fournies par l'État.",
-    "Isolement professionnel : Manque d'interactions sociales et professionnelles.",
-    "Charge administrative : Tâches liées à la gestion d'une activité (facturation, impôts).",
-    "Épuisement professionnel : État de fatigue intense liée au travail."
+    "Trouble anxieux généralisé : inquiétude excessive affectant plusieurs domaines de vie.",
+    "Trouble de stress post-traumatique : réaction à un événement traumatisant marquant.",
+    "EMDR : thérapie pour traiter les traumatismes psychologiques profonds."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Renoncer à certaines protections offertes par le salariat.",
-    "Capacité à anticiper et à provisionner pour les périodes creuses.",
-    "Droits recalculés en fonction du statut juridique et des cotisations.",
-    "Échanges informels bénéfiques à la créativité.",
-    "S'avérer chronophage et vous éloigner de votre cœur de métier.",
-    "Préserver votre équilibre et votre santé sur le long terme."
+    "Les techniques proposées sont spécifiques à la peur de conduire.",
+    "Consulter un professionnel est une démarche responsable."
   ],
-  "ton_angle": "Informatif, comparatif et axé sur la gestion des risques.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Comparer les risques concrets du freelancing aux sécurités du CDI est essentiel pour une prise de décision éclairée quant à son parcours professionnel.</these_centrale>\n<arguments_cles>\n- La précarité financière due à des revenus fluctuants nécessite une gestion budgétaire rigoureuse.\n- La protection sociale (santé, chômage) est souvent moins étendue en tant qu'indépendant.\n- L'isolement professionnel peut impacter le bien-être et la créativité, nécessitant des stratégies de lien social.\n- La charge administrative peut devenir chronophage si elle n'est pas anticipée ou déléguée.\n- L'absence de limites claires entre vie professionnelle et personnelle peut mener à l'épuisement.\n</arguments_cles>\n<concepts_introduits>\n- Freelancing : Travail indépendant sans lien de subordination permanent.\n- CDI : Contrat à durée indéterminée garantissant stabilité et protections.\n- Précarité : Instabilité de la situation professionnelle et financière.\n- Protection sociale : Ensemble des garanties (santé, chômage, retraite) fournies par l'État.\n- Isolement professionnel : Manque d'interactions sociales et professionnelles.\n- Charge administrative : Tâches liées à la gestion d'une activité (facturation, impôts).\n- Épuisement professionnel : État de fatigue intense liée au travail.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Renoncer à certaines protections offertes par le salariat.\n- Capacité à anticiper et à provisionner pour les périodes creuses.\n- Droits recalculés en fonction du statut juridique et des cotisations.\n- Échanges informels bénéfiques à la créativité.\n- S'avérer chronophage et vous éloigner de votre cœur de métier.\n- Préserver votre équilibre et votre santé sur le long terme.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, comparatif et axé sur la gestion des risques.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et préventif, soulignant l'importance de la distinction des origines de la peur.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'origine de la peur au volant peut être un trouble anxieux généralisé ou un traumatisme, nécessitant une aide professionnelle.</these_centrale>\n<arguments_cles>\n- La peur du volant peut masquer une anxiété généralisée plus large.\n- Un événement traumatisant antérieur peut être la cause profonde de la phobie.\n- Les techniques spécifiques à la conduite ne suffisent pas pour des troubles plus complexes.\n- Une évaluation professionnelle est nécessaire pour les anxiétés intenses ou post-traumatiques.\n</arguments_cles>\n<concepts_introduits>\n- Trouble anxieux généralisé : inquiétude excessive affectant plusieurs domaines de vie.\n- Trouble de stress post-traumatique : réaction à un événement traumatisant marquant.\n- EMDR : thérapie pour traiter les traumatismes psychologiques profonds.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les techniques proposées sont spécifiques à la peur de conduire.\n- Consulter un professionnel est une démarche responsable.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant l'importance de la distinction des origines de la peur.</ton_angle>\n</fiche>"
 }

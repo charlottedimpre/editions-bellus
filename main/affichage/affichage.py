@@ -10,7 +10,7 @@ CONCLUSION_PATH = BASE_DIR.parent / "conclusion" / "output" / "conclusion.json"
 FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PDF_TITLE = "Introduction"
 OUTPUT_PDF_PATH = BASE_DIR / "output" / "livre.pdf"
-AUTHOR_PLACEHOLDER = "[AUTEUR]"
+AUTHOR_PLACEHOLDER = "Lise Genest"
 PUBLISHER_NAME = "Editions Bellus"
 BOOK_FORMAT_6X9_MM = (152.4, 228.6)
 
