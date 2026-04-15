@@ -1,6 +1,7 @@
 import sys
 import json
 from pathlib import Path
+from parser import normalize_resume_from
 
 # Permet l'execution directe de ce fichier (python suivi.py) en resolvant les imports freres.
 CURRENT_DIR = Path(__file__).resolve().parent
@@ -10,7 +11,7 @@ if str(MAIN_DIR) not in sys.path:
 
 from conclusion.conclusion import gen_conclu
 from fiche_cadrage.fiche_cadrage import fc
-from fil_rouge.fil_rouge import gen_filrouge
+from fil_rouge.fil_rouge import gen_filrouge_with_validation
 from fil_rouge.merge_filrouge import merge_filrouge_wrapper
 from introduction.introduction import gen_intro
 from section.section import gen_section, merge_all_chapters, load_structure
@@ -24,14 +25,7 @@ from suivi.check import check_book_progress, get_resume_instructions
 
 
 def _normalize_resume_from(resume_from):
-    if not isinstance(resume_from, dict):
-        return None
-    try:
-        ch_num = int(resume_from.get("chapitre"))
-        sec_num = int(resume_from.get("section"))
-    except (TypeError, ValueError):
-        return None
-    return {"chapitre": ch_num, "section": sec_num}
+    return normalize_resume_from(resume_from)
 
 
 def _run_resume_auto(auto_confirm=False):
@@ -189,6 +183,18 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
     if fonction == "fc":
         fc()
 
+    elif fonction == "webinput":
+        webinput_wrapper()
+
+    elif fonction == "web_search_step":
+        web_search_wrapper()
+
+    elif fonction == "webfetch":
+        webfetch_wrapper()
+
+    elif fonction == "weboutput":
+        weboutput_wrapper()
+
     elif fonction == "web_search":
         webinput_wrapper()
         web_search_wrapper()
@@ -211,7 +217,7 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
         gen_conclu()
 
     elif fonction == "gen_filrouge":
-        gen_filrouge()
+        gen_filrouge_with_validation()
 
     elif fonction in ("merge_filrouge", "merge_filrouge_wrapper"):
         merge_filrouge_wrapper(start_from=resume_from)

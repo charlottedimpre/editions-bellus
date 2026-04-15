@@ -1,7 +1,54 @@
 import json
 import re
 from pathlib import Path
-from typing import Optional, Union
+from typing import Any, Optional, Union
+
+
+def read_text_file(path: Path, label: str, require_non_empty: bool = True) -> str:
+    """Lit un fichier texte UTF-8 avec validations standardisees."""
+    if not path.exists():
+        raise FileNotFoundError(f"Fichier introuvable pour {label}: {path}")
+    content = path.read_text(encoding="utf-8")
+    if require_non_empty and not content.strip():
+        raise ValueError(f"Contenu vide pour {label}: {path}")
+    return content
+
+
+def read_json_file(path: Path, label: str, require_non_empty: bool = True) -> Any:
+    """Charge un JSON depuis disque avec erreurs homogenes."""
+    try:
+        return json.loads(read_text_file(path, label, require_non_empty=require_non_empty))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"JSON invalide pour {label}: {path}") from exc
+
+
+def write_json_file(path: Path, payload: Any, label: str, indent: int = 2) -> None:
+    """Ecrit un payload JSON UTF-8 en creant les dossiers parents."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        path.write_text(json.dumps(payload, ensure_ascii=False, indent=indent), encoding="utf-8")
+    except TypeError as exc:
+        raise ValueError(f"Donnees non serialisables pour {label}: {path}") from exc
+
+
+def to_int_or_raise(value: Any, field_name: str) -> int:
+    """Convertit en int avec message d'erreur explicite."""
+    try:
+        return int(value)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"Valeur invalide pour {field_name}: {value!r}") from exc
+
+
+def normalize_resume_from(value: Any) -> Optional[dict[str, int]]:
+    """Normalise un point de reprise {'chapitre': x, 'section': y} ou retourne None."""
+    if not isinstance(value, dict):
+        return None
+    try:
+        ch_num = to_int_or_raise(value.get("chapitre"), "resume_from.chapitre")
+        sec_num = to_int_or_raise(value.get("section"), "resume_from.section")
+    except ValueError:
+        return None
+    return {"chapitre": ch_num, "section": sec_num}
 
 
 def _collapse_newlines(s: Optional[str]) -> Optional[str]:
