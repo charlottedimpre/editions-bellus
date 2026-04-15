@@ -3,7 +3,7 @@ from pathlib import Path
 
 from ollama import ChatResponse, chat
 
-from parser import parse_plan_detaille
+from parser import parse_plan_detaille, read_json_file as _read_json, read_text_file as _read_text
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
@@ -31,36 +31,46 @@ def _normalize_ws_final(payload):
 
 
 def sources() -> dict:
-    with WS_FINAL_PATH.open("r", encoding="utf-8") as f:
-        payload = json.load(f)
+    payload = _read_json(WS_FINAL_PATH, "sources web")
     return _normalize_ws_final(payload)
 
 
 def plan_detail():
     input_path = INPUT_DIR / "pd_prompt.txt"
-    with input_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
+    prompt = _read_text(input_path, "prompt plan detaille")
 
-    with FICHE_CADRAGE_PATH.open("r", encoding="utf-8") as f:
-        fiche_cadrage = f.read()
+    _read_json(FICHE_CADRAGE_PATH, "fiche de cadrage")
+    fiche_cadrage = _read_text(FICHE_CADRAGE_PATH, "fiche de cadrage")
 
     sources_web = json.dumps(sources(), ensure_ascii=False, indent=2)
 
-    response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
+    response: ChatResponse = chat(model="mistral-large-3:675b-cloud", messages=[
         {
-            'role': 'user',
-            'content': (
-                f'{prompt}\n\n'
-                f'FICHE DE CADRAGE : {fiche_cadrage}\n\n'
-                f'SOURCES WEB (JSON) : {sources_web}'
+            "role": "user",
+            "content": (
+                f"{prompt}\n\n"
+                f"FICHE DE CADRAGE : {fiche_cadrage}\n\n"
+                f"SOURCES WEB (JSON) : {sources_web}"
             ),
         },
     ])
+
+    if response.message is None or not response.message.content:
+        raise ValueError("Reponse vide du modele pour le plan detaille.")
+
     parsed = parse_plan_detaille(response.message.content)
+    if not isinstance(parsed, dict):
+        raise ValueError("Le plan detaille parse doit etre un objet JSON.")
+
+    chapitres = parsed.get("chapitres")
+    if not isinstance(chapitres, list) or len(chapitres) == 0:
+        raise ValueError("Le plan detaille parse doit contenir une liste de chapitres non vide.")
 
     filepath = OUTPUT_DIR / "plan_detaille.json"
     with filepath.open("w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
+
+    return parsed
 
 
 if __name__ == '__main__':

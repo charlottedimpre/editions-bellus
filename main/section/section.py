@@ -8,9 +8,20 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai.errors import ServerError
 
-from parser import parse_section, parse_resume
-from section.section_cleaner import normalize_section_content, strip_leading_title
-from section.section_verification import verification_section_report as run_section_verification_report
+from parser import (
+    parse_resume,
+    parse_section,
+    read_json_file as _read_json,
+    read_text_file as _read_text,
+    to_int_or_raise as _to_int,
+    write_json_file as _write_json,
+)
+try:
+    from section.section_cleaner import normalize_section_content, strip_leading_title
+    from section.section_verification import verification_section_report as run_section_verification_report
+except ModuleNotFoundError:
+    from section_cleaner import normalize_section_content, strip_leading_title
+    from section_verification import verification_section_report as run_section_verification_report
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -49,7 +60,7 @@ def _generate_text_with_retry(contents: str, context_label: str) -> str:
                 model=GEMINI_MODEL,
                 contents=contents,
             )
-            text = (response.text or "").strip()
+            text: str = (response.text or "").strip()
             if not text:
                 raise RuntimeError(f"Reponse vide de Gemini ({context_label}).")
             return text
@@ -68,20 +79,35 @@ def _generate_text_with_retry(contents: str, context_label: str) -> str:
                 f"Gemini indisponible (503) [{context_label}] tentative {attempt}/{MAX_RETRIES}, nouvelle tentative dans {RETRY_DELAY_SECONDS}s..."
             )
             time.sleep(RETRY_DELAY_SECONDS)
+    raise RuntimeError(f"Echec de generation Gemini ({context_label}).")
 
 
 def load_structure():
     """Charge structure_chapitre.json et retourne la liste des chapitres."""
-    with STRUCTURE_PATH.open("r", encoding="utf-8") as f:
-        return json.load(f)
+    structure = _read_json(STRUCTURE_PATH, "structure des chapitres")
+    if not isinstance(structure, list):
+        raise ValueError("La structure des chapitres doit etre une liste.")
+    return structure
 
 
 def _find_section_title(chapitre: int, section: int) -> str | None:
     for chap in load_structure():
-        if int(chap.get("numero", 0)) != chapitre:
+        if not isinstance(chap, dict):
+            continue
+        try:
+            chapitre_num = _to_int(chap.get("numero", 0), "chapitre.numero")
+        except ValueError:
+            continue
+        if chapitre_num != chapitre:
             continue
         for sec in chap.get("sections", []):
-            if int(sec.get("numero", 0)) == section:
+            if not isinstance(sec, dict):
+                continue
+            try:
+                section_num = _to_int(sec.get("numero", 0), "section.numero")
+            except ValueError:
+                continue
+            if section_num == section:
                 title = sec.get("titre_section")
                 if isinstance(title, str) and title.strip():
                     return title.strip()
@@ -94,8 +120,9 @@ def _count_words(text: str) -> int:
 
 
 def _count_content_words_from_file(filepath: Path) -> int:
-    with filepath.open("r", encoding="utf-8") as f:
-        section_data = json.load(f)
+    section_data = _read_json(filepath, "section redigee")
+    if not isinstance(section_data, dict):
+        raise ValueError(f"Format invalide pour section redigee: {filepath}")
     content = normalize_section_content(section_data.get("contenu", ""))
     return _count_words(content)
 
@@ -127,7 +154,13 @@ def _load_previous_coherence_context(chapitre: int, section: int, structure_data
     if section == 1:
         nb_sec = None
         for chap in structure_data:
-            if int(chap["numero"]) == chapitre - 1:
+            if not isinstance(chap, dict):
+                continue
+            try:
+                chap_num = _to_int(chap.get("numero"), "chapitre.numero")
+            except ValueError:
+                continue
+            if chap_num == chapitre - 1:
                 nb_sec = len(chap["sections"])
                 break
         if nb_sec is None:
@@ -142,8 +175,7 @@ def _load_previous_coherence_context(chapitre: int, section: int, structure_data
         coherence_path = RESUME_DIR / coherence_name
 
     if coherence_path.exists():
-        with coherence_path.open("r", encoding="utf-8") as f:
-            coherence = f.read()
+        coherence = _read_text(coherence_path, "coherence precedente")
         print(f"Vérification de cohérence avec la section précédente : {coherence_name}...")
         return coherence
 
@@ -155,18 +187,20 @@ def _load_previous_coherence_context(chapitre: int, section: int, structure_data
 
 
 def gen_section(chapitre, section, verification_section: bool = True):
-    with FICHE_PATH.open("r", encoding="utf-8") as f:
-        fiche = f.read()
+    chapitre = _to_int(chapitre, "chapitre")
+    section = _to_int(section, "section")
 
-    with PLAN_PATH.open("r", encoding="utf-8") as f:
-        plan = f.read()
+    _read_json(FICHE_PATH, "fiche de cadrage")
+    fiche = _read_text(FICHE_PATH, "fiche de cadrage")
 
-    with STRUCTURE_PATH.open("r", encoding="utf-8") as f:
-        structure = f.read()
+    _read_json(PLAN_PATH, "plan detaille")
+    plan = _read_text(PLAN_PATH, "plan detaille")
+
+    _read_json(STRUCTURE_PATH, "structure chapitre")
+    structure = _read_text(STRUCTURE_PATH, "structure chapitre")
 
     prompt_path = INPUT_DIR / "s_prompt.txt"
-    with prompt_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
+    prompt = _read_text(prompt_path, "prompt section")
 
     structure_data = load_structure()
     total_sections = _count_total_sections(structure_data)
@@ -229,6 +263,10 @@ def gen_section(chapitre, section, verification_section: bool = True):
         )
 
         parsed = parse_section(response_text, chapitre, section)
+        if not isinstance(parsed, dict):
+            raise ValueError(f"Section parsee invalide pour ch{chapitre} s{section}: objet JSON attendu.")
+        if not isinstance(parsed.get("contenu"), str) or not parsed.get("contenu", "").strip():
+            raise ValueError(f"Contenu de section vide apres parsing pour ch{chapitre} s{section}.")
 
         # Nettoyage du contenu avant insertion dans le JSON de base.
         section_title = _find_section_title(chapitre, section)
@@ -242,8 +280,7 @@ def gen_section(chapitre, section, verification_section: bool = True):
                     f"Prefixe titre retire pour section_ch{chapitre}_s{section} ({matched_separator!r})."
                 )
 
-        with filepath.open("w", encoding="utf-8") as f:
-            json.dump(parsed, f, ensure_ascii=False, indent=2)
+        _write_json(filepath, parsed, f"section ch{chapitre} s{section}")
 
         word_count = _count_content_words_from_file(filepath)
         print(
@@ -323,32 +360,40 @@ def gen_section(chapitre, section, verification_section: bool = True):
 
 
 def coherence_check(chapitre, section):
+    chapitre = _to_int(chapitre, "chapitre")
+    section = _to_int(section, "section")
     filename = f"section_ch{chapitre}_s{section}.json"
     filepath = SECTION_DIR / filename
-    with filepath.open("r", encoding="utf-8") as f:
-        fiche = f.read()
+    fiche = _read_text(filepath, f"section ch{chapitre} s{section}")
 
     prompt_path = INPUT_DIR / "c_prompt.txt"
-    with prompt_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
+    prompt = _read_text(prompt_path, "prompt coherence")
 
     response_text = _generate_text_with_retry(
         contents=f"{prompt}\n\nSection à étudier :{fiche}",
         context_label=f"coherence_ch{chapitre}_s{section}",
     )
     parsed = parse_resume(response_text, chapitre, section)
+    if not isinstance(parsed, dict):
+        raise ValueError(f"Resume parse invalide pour ch{chapitre} s{section}: objet JSON attendu.")
     filename = f"coherence_ch{chapitre}_s{section}.json"
     filepath = RESUME_DIR / filename
-    with filepath.open("w", encoding="utf-8") as f:
-        json.dump(parsed, f, ensure_ascii=False, indent=2)
+    _write_json(filepath, parsed, f"coherence ch{chapitre} s{section}")
     return parsed
 
 
 def merge_chapter_sections(chapitre_num: int):
+    chapitre_num = _to_int(chapitre_num, "chapitre_num")
     chapitres = load_structure()
     chapitre_data = None
     for chap in chapitres:
-        if int(chap["numero"]) == chapitre_num:
+        if not isinstance(chap, dict):
+            continue
+        try:
+            chap_num = _to_int(chap.get("numero"), "chapitre.numero")
+        except ValueError:
+            continue
+        if chap_num == chapitre_num:
             chapitre_data = chap
             break
 
@@ -357,14 +402,21 @@ def merge_chapter_sections(chapitre_num: int):
         return
 
     sections = []
-    for sec in chapitre_data["sections"]:
-        sec_num = int(sec["numero"])
+    sections_data = chapitre_data.get("sections", [])
+    if not isinstance(sections_data, list):
+        raise ValueError(f"Sections invalides pour chapitre {chapitre_num}: liste attendue.")
+
+    for sec in sections_data:
+        if not isinstance(sec, dict):
+            continue
+        sec_num = _to_int(sec.get("numero"), f"section.numero (chapitre {chapitre_num})")
         filepath = SECTION_FR_DIR / f"section_ch{chapitre_num}_s{sec_num}.json"
         if not filepath.exists():
             print(f"   Fichier manquant : {filepath}")
             continue
-        with filepath.open("r", encoding="utf-8") as f:
-            data = json.load(f)
+        data = _read_json(filepath, f"section_fr ch{chapitre_num} s{sec_num}")
+        if not isinstance(data, dict):
+            raise ValueError(f"Format invalide pour section_fr ch{chapitre_num} s{sec_num}: objet JSON attendu.")
         sections.append({
             "section": sec_num,
             "titre": sec.get("titre_section", ""),
@@ -379,8 +431,7 @@ def merge_chapter_sections(chapitre_num: int):
     }
 
     output_path = CHAPITRE_DIR / f"chapitre_{chapitre_num}.json"
-    with output_path.open("w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+    _write_json(output_path, result, f"chapitre fusionne {chapitre_num}")
 
     print(f"Chapitre {chapitre_num} fusionné -> {output_path} ({len(sections)} sections)")
 
@@ -389,7 +440,9 @@ def merge_all_chapters():
     chapitres = load_structure()
     print(f"Fusion des sections pour {len(chapitres)} chapitres...\n")
     for chap in chapitres:
-        merge_chapter_sections(int(chap["numero"]))
+        if not isinstance(chap, dict):
+            continue
+        merge_chapter_sections(_to_int(chap.get("numero"), "chapitre.numero"))
     print("\nFusion terminée.")
 
 

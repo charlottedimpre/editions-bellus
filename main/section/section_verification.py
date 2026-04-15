@@ -57,9 +57,6 @@ def _generate_text_with_retry(contents: str, context_label: str) -> str:
                     f"Erreur 503 Gemini apres {MAX_RETRIES} tentatives ({context_label})."
                 ) from err
 
-            print(
-                f"Gemini indisponible (503) [{context_label}] tentative {attempt}/{MAX_RETRIES}, nouvelle tentative dans {RETRY_DELAY_SECONDS}s..."
-            )
             time.sleep(RETRY_DELAY_SECONDS)
 
     raise RuntimeError(f"Aucune reponse exploitable de Gemini ({context_label}).")
@@ -148,7 +145,6 @@ def verification_artefact_section_report(chapitre: int, section: int) -> dict[st
         ),
         context_label=f"verification_artefact_ch{chapitre}_s{section}",
     )
-    print(response_text)
     is_valid = _parse_yes_no(response_text)
     critique = _extract_critique(response_text, is_valid)
 
@@ -160,7 +156,6 @@ def verification_artefact_section_report(chapitre: int, section: int) -> dict[st
         "raw": response_text,
     }
     _save_report(f"verification_artefact_ch{chapitre}_s{section}.json", result)
-    print(result)
     return result
 
 
@@ -197,7 +192,6 @@ def verification_fluidite_section_report(chapitre: int, section: int) -> dict[st
         ),
         context_label=f"verification_fluidite_ch{chapitre}_s{section}",
     )
-    print(response_text)
     is_valid = _parse_yes_no(response_text)
     critique = _extract_critique(response_text, is_valid)
 
@@ -209,7 +203,6 @@ def verification_fluidite_section_report(chapitre: int, section: int) -> dict[st
         "raw": response_text,
     }
     _save_report(f"verification_fluidite_ch{chapitre}_s{section}.json", result)
-    print(result)
     return result
 
 def verification_fluidite_section(chapitre: int, section: int) -> bool:
@@ -311,7 +304,6 @@ def verification_coherence_interne_section_report(chapitre: int, section: int) -
         ),
         context_label=f"verification_coherence_interne_ch{chapitre}_s{section}",
     )
-    print(response_text)
     is_valid = _parse_yes_no(response_text)
     critique = _extract_critique(response_text, is_valid)
 
@@ -323,7 +315,6 @@ def verification_coherence_interne_section_report(chapitre: int, section: int) -
         "raw": response_text,
     }
     _save_report(f"verification_coherence_interne_ch{chapitre}_s{section}.json", result)
-    print(result)
     return result
 
 
@@ -343,7 +334,6 @@ def verification_linguistique_section_report(chapitre: int, section: int) -> dic
         ),
         context_label=f"verification_linguistique_ch{chapitre}_s{section}",
     )
-    print(response_text)
     is_valid = _parse_yes_no(response_text)
     critique = _extract_critique(response_text, is_valid)
 
@@ -355,7 +345,6 @@ def verification_linguistique_section_report(chapitre: int, section: int) -> dic
         "raw": response_text,
     }
     _save_report(f"verification_linguistique_ch{chapitre}_s{section}.json", result)
-    print(result)
     return result
 
 
@@ -382,7 +371,6 @@ def verification_redondance_inter_sections_report(chapitre: int, section: int) -
             context_label=f"verification_redondance_inter_sections_ch{chapitre}_s{section}",
         )
 
-    print(response_text)
     is_valid = _parse_yes_no(response_text)
     critique = _extract_critique(response_text, is_valid)
 
@@ -396,7 +384,6 @@ def verification_redondance_inter_sections_report(chapitre: int, section: int) -
     }
     result = _normalize_non_actionable_non(result, "redondance_inter_sections")
     _save_report(f"verification_redondance_inter_sections_ch{chapitre}_s{section}.json", result)
-    print(result)
     return result
 
 
@@ -448,5 +435,4 @@ def verification_section(chapitre: int, section: int) -> bool:
     return report["decision"] == "OUI"
 
 if __name__ == '__main__':
-    print(verification_section(1, 4))
-    print("Utilise verification_section(chapitre, section) depuis section.py")
+    verification_section(1, 4)

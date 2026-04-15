@@ -10,13 +10,28 @@ ROOT_DIR = BASE_DIR.parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from parser import parse_conclusion, parse_resume
+from parser import (
+    parse_conclusion,
+    parse_resume,
+    read_json_file,
+    read_text_file,
+    to_int_or_raise as _to_int,
+)
+
+def _read_text(path: Path, label: str) -> str:
+    return read_text_file(path, label, require_non_empty=False)
+
+
+def _read_json(path: Path, label: str):
+    return read_json_file(path, label, require_non_empty=False)
 
 
 def load_structure():
     structure_path = BASE_DIR.parent / "structure_chapitre" / "output" / ("structure_chapitre.json")
-    with structure_path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+    structure = _read_json(structure_path, "structure des chapitres")
+    if not isinstance(structure, list):
+        raise ValueError("La structure des chapitres doit etre une liste.")
+    return structure
 
 
 def build_resume_mashup(chapitres: list[dict]) -> list[dict]:
@@ -24,9 +39,19 @@ def build_resume_mashup(chapitres: list[dict]) -> list[dict]:
     mashup = []
 
     for chapitre in chapitres:
-        ch_num = int(chapitre["numero"])
-        for section in chapitre["sections"]:
-            sec_num = int(section["numero"])
+        if not isinstance(chapitre, dict):
+            continue
+
+        ch_num = _to_int(chapitre.get("numero"), "chapitre.numero")
+        sections = chapitre.get("sections")
+        if not isinstance(sections, list):
+            raise ValueError(f"chapitre.sections invalide pour chapitre {ch_num}")
+
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+
+            sec_num = _to_int(section.get("numero"), f"section.numero (chapitre {ch_num})")
             coherence_path = resume_dir / f"coherence_ch{ch_num}_s{sec_num}.json"
 
             if not coherence_path.exists():
@@ -38,8 +63,16 @@ def build_resume_mashup(chapitres: list[dict]) -> list[dict]:
                 })
                 continue
 
-            with coherence_path.open("r", encoding="utf-8") as f:
-                coherence = json.load(f)
+            try:
+                coherence = _read_json(coherence_path, f"resume ch{ch_num} s{sec_num}")
+            except ValueError:
+                mashup.append({
+                    "chapitre": ch_num,
+                    "section": sec_num,
+                    "resume": None,
+                    "invalid_json_file": str(coherence_path),
+                })
+                continue
 
             if isinstance(coherence, str):
                 coherence = parse_resume(coherence, ch_num, sec_num)
@@ -58,23 +91,20 @@ def gen_conclu():
     chapitres = load_structure()
 
     fiche_path = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
-    with fiche_path.open("r", encoding="utf-8") as f:
-        fiche_raw = f.read()
+    fiche_raw = _read_text(fiche_path, "fiche cadrage")
 
     plan_path = BASE_DIR.parent / "plan_detaille" / "output" / "plan_detaille.json"
-    with plan_path.open("r", encoding="utf-8") as f:
-        plan_raw = f.read()
+    plan_raw = _read_text(plan_path, "plan detaille")
 
     resume_mashup = build_resume_mashup(chapitres)
 
     prompt_path = BASE_DIR / "input" / "c_prompt.txt"
-    with prompt_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
+    prompt = _read_text(prompt_path, "prompt conclusion")
 
-    response: ChatResponse = chat(model='kimi-k2.5:cloud', messages=[
+    response: ChatResponse = chat(model="kimi-k2.5:cloud", messages=[
         {
-            'role': 'user',
-            'content': (
+            "role": "user",
+            "content": (
                 f"{prompt}\n\n"
                 f"FICHE DE CADRAGE :{fiche_raw}\n\n"
                 f"PLAN DETAILE :{plan_raw}\n\n"
@@ -82,10 +112,21 @@ def gen_conclu():
             ),
         },
     ])
+
+    if response.message is None or not response.message.content:
+        raise ValueError("Reponse vide du modele pour la conclusion.")
+
     parsed = parse_conclusion(response.message.content)
-    filepath = BASE_DIR / "output" / "conclusion.json"
+    if not isinstance(parsed, dict):
+        raise ValueError("La conclusion parsee doit etre un objet JSON.")
+
+    output_dir = BASE_DIR / "output"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    filepath = output_dir / "conclusion.json"
     with filepath.open("w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
+
+    return parsed
 
 
 if __name__ == '__main__':

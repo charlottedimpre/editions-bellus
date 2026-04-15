@@ -23,6 +23,7 @@ Règles de style :
 - Pas de jargon médical sans définition immédiate
 - Vérifier la cohérence grammaticale avant de finaliser
 - Rédiger exclusivement en français
+- Paragraphes de 6 à 10 lignes, 12 lignes maximum
 
 Interdit :
 - Écrire hors du périmètre défini dans <hors_perimetre>

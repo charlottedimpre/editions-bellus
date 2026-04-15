@@ -1,7 +1,7 @@
 from pathlib import Path
-import json
 import requests
 from bs4 import BeautifulSoup
+from parser import read_json_file, write_json_file as _write_json
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
@@ -30,9 +30,15 @@ HEADERS = {
 
 TAGS_TO_REMOVE = ["script", "style", "nav", "footer", "header", "aside", "form", "noscript", "iframe"]
 
+def _read_json(path: Path, label: str):
+    return read_json_file(path, label, require_non_empty=False)
+
 
 def fetch_page_content(url: str, timeout: int = 15) -> str | None:
     """Récupère le contenu textuel principal d'une page web."""
+    if not isinstance(url, str) or not url.strip():
+        return None
+
     try:
         response = requests.get(url, headers=HEADERS, timeout=timeout)
         response.raise_for_status()
@@ -49,28 +55,31 @@ def fetch_page_content(url: str, timeout: int = 15) -> str | None:
         if main is None:
             return None
 
-        text = main.get_text(separator="\n", strip=True)
+        text = main.get_text(separator="\n")
 
         # Nettoyer les lignes vides multiples
         lines = [line.strip() for line in text.splitlines() if line.strip()]
         return "\n".join(lines)
 
-    except Exception as e:
+    except requests.RequestException as e:
         print(f"  ✗ Erreur pour {url} : {e}")
         return None
 
 
 def fetch_all_sources(input_path: Path, output_path: Path, search_path: Path | None = None):
     """Lit ws_pertinent.json, visite chaque URL et sauvegarde le contenu."""
-    with input_path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
+    data = _read_json(input_path, "sources web pertinentes")
+    if not isinstance(data, list):
+        raise ValueError("ws_pertinent.json doit contenir une liste.")
 
     # Charger les sujets depuis ws_search.json si disponible
     sujets = []
     if search_path and search_path.exists():
-        with search_path.open("r", encoding="utf-8") as f:
-            search_data = json.load(f)
-        sujets = [_extract_query(idee) for idee in search_data.get("idees", [])]
+        search_data = _read_json(search_path, "requetes web")
+        if isinstance(search_data, dict):
+            raw_idees = search_data.get("idees", [])
+            if isinstance(raw_idees, list):
+                sujets = [_extract_query(idee) for idee in raw_idees if isinstance(idee, dict)]
 
     results = []
 
@@ -79,13 +88,22 @@ def fetch_all_sources(input_path: Path, output_path: Path, search_path: Path | N
         if isinstance(bloc, list):
             sources = bloc
             sujet = sujets[i] if i < len(sujets) else f"Recherche {i + 1}"
-        else:
+        elif isinstance(bloc, dict):
             sujet = bloc.get("sujet", f"Recherche {i + 1}")
             sources = bloc.get("sources", [])
+            if not isinstance(sources, list):
+                sources = []
+        else:
+            sujet = f"Recherche {i + 1}"
+            sources = []
+
         print(f"\n[Bloc {i + 1}] {sujet[:80]}...")
 
         fetched_sources = []
         for source in sources:
+            if not isinstance(source, dict):
+                continue
+
             url = source.get("url", "")
             title = source.get("title", source.get("titre", ""))
             print(f"  → {title}")
@@ -105,18 +123,19 @@ def fetch_all_sources(input_path: Path, output_path: Path, search_path: Path | N
             print(f"    {status}")
 
         results.append({
-            "sujet": sujet,
+            "sujet": str(sujet),
             "sources": fetched_sources,
         })
 
-    with output_path.open("w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+    _write_json(output_path, results, "contenus web recuperes")
 
     # Stats
     total = sum(len(r["sources"]) for r in results)
     ok = sum(1 for r in results for s in r["sources"] if s["success"])
     print(f"\nTerminé : {ok}/{total} pages récupérées")
     print(f"Résultat sauvegardé dans {output_path}")
+
+    return results
 
 
 def webfetch_wrapper():

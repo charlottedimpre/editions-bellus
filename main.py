@@ -65,11 +65,11 @@ def run_resume_until_done(max_cycles=20):
         instructions = suivi("resume_auto", auto_confirm=True)
         if not isinstance(instructions, dict):
             print("Arret reprise auto: reponse inattendue.")
-            return
+            return False
 
         if not instructions.get("possible"):
             print("Reprise automatique terminee.")
-            return
+            return True
 
         signature = (
             instructions.get("next_step"),
@@ -77,58 +77,57 @@ def run_resume_until_done(max_cycles=20):
         )
         if signature == last_signature:
             print("Arret reprise auto: progression bloquee, verification manuelle conseillee.")
-            return
+            return False
         last_signature = signature
 
     print("Arret reprise auto: limite de cycles atteinte.")
+    return False
 
+
+def run_generation_with_auto_resume():
+    print("Generation/reprise automatique en cours...")
+    completed = run_resume_until_done()
+    if completed:
+        auto_clean_section_errors(remove_all_numero_blocks=True, section_subdir="section_fr")
+        print("Generation terminee.")
+
+
+
+def ask_menu_choice():
+    prompt = (
+        "Tu veux redemarrer tout le projet (1), lancer la generation/reprise auto (2), "
+        "vider un seul dossier (3), generer le PDF (4), ou quitter (5) ? "
+    )
+    valid_choices = {"1", "2", "3", "4", "5"}
+
+    choice = input(prompt)
+    while choice not in valid_choices:
+        print("Le nombre entre doit etre 1, 2, 3, 4 ou 5.")
+        choice = input(prompt)
+    return choice
+
+
+def handle_partial_cleanup():
+    selected_paths = choose_restart_paths_from_index()
+    for selected_path in selected_paths:
+        if clear_output_path(selected_path):
+            print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
+        else:
+            print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
 
 
 if __name__ == '__main__':
     while True:
-        inputthething = input(
-            "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), generer le PDF (5), ou quitter (6) ? "
-        )
-        while inputthething not in ['1', '2', '3', '4', '5', '6']:
-            print("Le nombre entre doit etre 1, 2, 3, 4, 5 ou 6.")
-            inputthething = input(
-                "Tu veux redemarrer tout le projet (1), lancer la generation (2), vider un seul dossier (3), reprendre automatiquement (4), generer le PDF (5), ou quitter (6) ? "
-            )
+        choice = ask_menu_choice()
 
-        if inputthething == '1':
-
+        if choice == '1':
             restart()
             print("Projet redemarre. Tous les fichiers de sortie ont ete supprimes.")
-
-        elif inputthething == '2':
-
-            suivi("fc")
-
-            suivi("web_search")
-
-            suivi("plan_detail")
-            suivi("structure_chapitre")
-
-            suivi("gen_intro")
-            suivi("gen_all_sections")
-            suivi("gen_conclu")
-
-            suivi("gen_filrouge")
-            suivi("merge_filrouge_wrapper")
-            auto_clean_section_errors(remove_all_numero_blocks=True, section_subdir="section_fr")
-
-            suivi("merge_all_chapters")
-            print("Generation terminee.")
-        elif inputthething == '3':
-            selected_paths = choose_restart_paths_from_index()
-            for selected_path in selected_paths:
-                if clear_output_path(selected_path):
-                    print(f"Dossier vide: {selected_path.relative_to(ROOT_DIR)}")
-                else:
-                    print(f"Dossier introuvable ou invalide: {selected_path.relative_to(ROOT_DIR)}")
-        elif inputthething == '4':
-            run_resume_until_done()
-        elif inputthething == '5':
+        elif choice == '2':
+            run_generation_with_auto_resume()
+        elif choice == '3':
+            handle_partial_cleanup()
+        elif choice == '4':
             affichage()
             print("PDF genere.")
         else:

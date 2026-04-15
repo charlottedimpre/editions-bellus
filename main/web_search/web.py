@@ -5,6 +5,7 @@ import requests
 import json
 from datetime import datetime
 from dotenv import load_dotenv
+from parser import read_json_file as _read_json, write_json_file as _write_json
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -25,6 +26,9 @@ QUERY_KEYS = (
 
 
 def _extract_query(idee: dict, index: int) -> str:
+    if not isinstance(idee, dict):
+        raise ValueError(f"idees[{index}] doit etre un objet JSON.")
+
     for key in QUERY_KEYS:
         value = idee.get(key)
         if isinstance(value, str) and value.strip():
@@ -37,10 +41,14 @@ def _extract_query(idee: dict, index: int) -> str:
 
 
 def _load_queries(payload: dict) -> list[str]:
+    if not isinstance(payload, dict):
+        raise ValueError("Le contenu de ws_search.json doit etre un objet JSON.")
+
     idees = payload.get("idees")
     if not isinstance(idees, list):
         raise ValueError("Le fichier ws_search.json doit contenir une liste 'idees'.")
     return [_extract_query(idee, idx) for idx, idee in enumerate(idees)]
+
 
 
 def _safe_api_json(api_result: requests.Response, query: str) -> dict:
@@ -70,6 +78,9 @@ def _extract_organic_results(payload: dict, query: str) -> list[dict]:
 
 
 def web_search(query, timestamp):
+    if not isinstance(query, str) or not query.strip():
+        raise ValueError("La requete web_search doit etre une chaine non vide.")
+
     params = {
         'api_key': SERP_API_KEY,
         'q': f'{query}',
@@ -82,6 +93,7 @@ def web_search(query, timestamp):
 
     try:
         api_result = requests.get('https://api.valueserp.com/search', params=params, timeout=20)
+        api_result.raise_for_status()
     except requests.RequestException as exc:
         print(f"Echec HTTP pour la requete '{query}': {exc}")
         return json.dumps([], ensure_ascii=False, indent=2)
@@ -99,15 +111,13 @@ def web_search(query, timestamp):
         })
 
     filepath = OUTPUT_DIR / f"api_result-{timestamp}.json"
-    with filepath.open("w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+    _write_json(filepath, results, f"resultat API '{query}'")
     return json.dumps(clean_results, ensure_ascii=False, indent=2)
 
 
 def web_search_wrapper():
     sujet_path = OUTPUT_DIR / "ws_search.json"
-    with sujet_path.open("r", encoding="utf-8") as f:
-        sujets = json.load(f)
+    sujets = _read_json(sujet_path, "requetes web")
 
     queries = _load_queries(sujets)
 
@@ -123,8 +133,9 @@ def web_search_wrapper():
         all_results.append(parsed)
 
     filepath = OUTPUT_DIR / "ws_pertinent.json"
-    with filepath.open("w", encoding="utf-8") as f:
-        json.dump(all_results, f, ensure_ascii=False, indent=2)
+    _write_json(filepath, all_results, "resultats web pertinents")
+
+    return all_results
 
 
 if __name__ == '__main__':

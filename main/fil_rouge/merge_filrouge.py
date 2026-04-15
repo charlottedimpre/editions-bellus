@@ -19,7 +19,19 @@ SECTION_OUTPUT_DIR = BASE_DIR.parent / "section" / "output" / "section"
 STRUCTURE_PATH = BASE_DIR.parent / "structure_chapitre" / "output" / "structure_chapitre.json"
 FIL_ROUGE_PATH = OUTPUT_DIR / "fil_rouge.json"
 
-from parser import parse_filrouge
+from parser import (
+    normalize_resume_from,
+    parse_filrouge,
+    read_json_file,
+    read_text_file,
+    to_int_or_raise as _to_int,
+    write_json_file as _write_json,
+)
+
+try:
+    from fil_rouge.verification_merge_filrouge import verify_single_section_size
+except ModuleNotFoundError:
+    from verification_merge_filrouge import verify_single_section_size
 
 load_dotenv(ROOT_DIR / ".env")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -29,18 +41,35 @@ if not GEMINI_API_KEY:
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-2.5-flash-lite"
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
+MAX_MERGE_SECTION_ATTEMPTS = 3
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
+
+def _read_text(path: Path, label: str) -> str:
+    return read_text_file(path, label, require_non_empty=False)
+
+
+def _read_json(path: Path, label: str):
+    return read_json_file(path, label, require_non_empty=False)
 
 
 def load_structure():
     """Charge structure_chapitre.json et retourne la liste des chapitres."""
-    with STRUCTURE_PATH.open("r", encoding="utf-8") as f:
-        return json.load(f)
+    structure = _read_json(STRUCTURE_PATH, "structure des chapitres")
+    if not isinstance(structure, list):
+        raise ValueError("La structure des chapitres doit etre une liste.")
+    return structure
 
 
 def get_insertion(fil_rouge_data: dict, chapitre: int, section: int) -> str:
     for ins in fil_rouge_data.get("insertions", []):
-        if int(ins.get("chapitre", -1)) == int(chapitre) and int(ins.get("section", -1)) == int(section):
+        if not isinstance(ins, dict):
+            continue
+        try:
+            ins_chapitre = _to_int(ins.get("chapitre", -1), "insertion.chapitre")
+            ins_section = _to_int(ins.get("section", -1), "insertion.section")
+        except ValueError:
+            continue
+        if ins_chapitre == int(chapitre) and ins_section == int(section):
             return ins.get("contenu", "")
     return ""
 
@@ -144,16 +173,17 @@ def _generate_json_with_retry(contents: str, context_label: str) -> dict:
 
 def incorporer(chapitre, section):
     prompt_path = INPUT_DIR / "mf_prompt.txt"
-    with prompt_path.open("r", encoding="utf-8") as f:
-        prompt = f.read()
+    prompt = _read_text(prompt_path, "prompt merge fil rouge")
 
     section_path = SECTION_OUTPUT_DIR / f"section_ch{chapitre}_s{section}.json"
-    with section_path.open("r", encoding="utf-8") as f:
-        section_data = json.load(f)
+    section_data = _read_json(section_path, f"section ch{chapitre} s{section}")
+    if not isinstance(section_data, dict):
+        raise ValueError(f"Format invalide pour la section ch{chapitre} s{section}: objet JSON attendu.")
 
-    with FIL_ROUGE_PATH.open("r", encoding="utf-8") as f:
-        fil_rouge_data = json.load(f)
+    fil_rouge_data = _read_json(FIL_ROUGE_PATH, "fil rouge")
     fil_rouge_data = _normalize_fil_rouge_data(fil_rouge_data)
+    if not isinstance(fil_rouge_data, dict):
+        raise ValueError("Le fil rouge normalise doit etre un objet JSON.")
 
     exemple = get_insertion(fil_rouge_data, chapitre, section)
 
@@ -182,14 +212,7 @@ def incorporer(chapitre, section):
 
 
 def _normalize_resume_from(resume_from):
-    if not isinstance(resume_from, dict):
-        return None
-    try:
-        ch_num = int(resume_from.get("chapitre"))
-        sec_num = int(resume_from.get("section"))
-    except (TypeError, ValueError):
-        return None
-    return {"chapitre": ch_num, "section": sec_num}
+    return normalize_resume_from(resume_from)
 
 
 def _find_start_indices(chapitres, start_from):
@@ -202,12 +225,22 @@ def _find_start_indices(chapitres, start_from):
         return 0, 0
 
     for chap_idx, chapitre in enumerate(chapitres):
-        chapitre_num = int(chapitre.get("numero", 0))
+        if not isinstance(chapitre, dict):
+            continue
+        try:
+            chapitre_num = _to_int(chapitre.get("numero", 0), "chapitre.numero")
+        except ValueError:
+            continue
         if chapitre_num != target["chapitre"]:
             continue
 
         for sec_idx, section in enumerate(chapitre.get("sections", [])):
-            section_num = int(section.get("numero", 0))
+            if not isinstance(section, dict):
+                continue
+            try:
+                section_num = _to_int(section.get("numero", 0), "section.numero")
+            except ValueError:
+                continue
             if section_num == target["section"]:
                 return chap_idx, sec_idx
 
@@ -217,27 +250,64 @@ def _find_start_indices(chapitres, start_from):
 
 def merge_filrouge_wrapper(start_from=None):
     chapitres = load_structure()
+    SECTION_DIR.mkdir(parents=True, exist_ok=True)
     chap_idx, sec_start_idx = _find_start_indices(chapitres, start_from)
     start_chap_idx = chap_idx
 
     if start_from and (chap_idx != 0 or sec_start_idx != 0):
-        start_ch = int(chapitres[chap_idx]["numero"])
-        start_sec = int(chapitres[chap_idx]["sections"][sec_start_idx]["numero"])
+        start_ch = _to_int(chapitres[chap_idx]["numero"], "chapitre.numero")
+        start_sec = _to_int(chapitres[chap_idx]["sections"][sec_start_idx]["numero"], "section.numero")
         print(f"Reprise merge fil rouge activee depuis chapitre {start_ch} section {start_sec}.")
 
     while chap_idx < len(chapitres):
         chapitre = chapitres[chap_idx]
-        chapitre_num = int(chapitre["numero"])
+        if not isinstance(chapitre, dict):
+            chap_idx += 1
+            sec_start_idx = 0
+            continue
+
+        chapitre_num = _to_int(chapitre.get("numero"), "chapitre.numero")
 
         start_idx_for_chapter = sec_start_idx if chap_idx == start_chap_idx else 0
         for section in chapitre.get("sections", [])[start_idx_for_chapter:]:
-            section_num = int(section["numero"])
-            result = incorporer(chapitre_num, section_num)
-            print(f"Résultat pour Chapitre {chapitre_num} Section {section_num}\n{'-' * 80}")
+            if not isinstance(section, dict):
+                continue
 
+            section_num = _to_int(section.get("numero"), f"section.numero (chapitre {chapitre_num})")
             filepath = SECTION_DIR / f"section_ch{chapitre_num}_s{section_num}.json"
-            with filepath.open("w", encoding="utf-8") as f:
-                json.dump(result, f, ensure_ascii=False, indent=2)
+            section_ok = False
+
+            for attempt in range(1, MAX_MERGE_SECTION_ATTEMPTS + 1):
+                result = incorporer(chapitre_num, section_num)
+                _write_json(filepath, result, f"section mergee ch{chapitre_num} s{section_num}")
+
+                size_check = verify_single_section_size(
+                    chapitre=chapitre_num,
+                    section=section_num,
+                    section_dir=SECTION_OUTPUT_DIR,
+                    section_fr_dir=SECTION_DIR,
+                )
+                if size_check["ok"]:
+                    section_ok = True
+                    print(
+                        f"Résultat pour Chapitre {chapitre_num} Section {section_num} "
+                        f"(tentative {attempt}/{MAX_MERGE_SECTION_ATTEMPTS})\n{'-' * 80}"
+                    )
+                    break
+
+                print(
+                    f"[WARN] Merge invalide pour section_ch{chapitre_num}_s{section_num} "
+                    f"(tentative {attempt}/{MAX_MERGE_SECTION_ATTEMPTS}) | "
+                    f"section={size_check.get('section_length')} | "
+                    f"section_fr={size_check.get('section_fr_length')}"
+                )
+
+            if not section_ok:
+                raise RuntimeError(
+                    f"Echec merge_filrouge pour section_ch{chapitre_num}_s{section_num}: "
+                    f"impossible de respecter len(section) < len(section_fr) "
+                    f"apres {MAX_MERGE_SECTION_ATTEMPTS} tentatives."
+                )
 
         chap_idx += 1
         sec_start_idx = 0

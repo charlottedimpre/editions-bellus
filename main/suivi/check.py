@@ -106,15 +106,46 @@ def _resolve_section_start(
         return start
 
 
+def _resolve_web_resume_target() -> tuple[str, str]:
+    """Determine la prochaine sous-etape web a lancer selon les artefacts disponibles."""
+    web_output_dir = MAIN_DIR / "web_search" / "output"
+    ws_search_path = web_output_dir / "ws_search.json"
+    ws_pertinent_path = web_output_dir / "ws_pertinent.json"
+    ws_content_path = web_output_dir / "ws_content.json"
+
+    if _json_exists(ws_content_path):
+        return "weboutput", "weboutput"
+    if _json_exists(ws_pertinent_path):
+        return "webfetch", "webfetch"
+    if _json_exists(ws_search_path):
+        return "web_search", "web_search_step"
+    return "webinput", "webinput"
+
+
 def _build_resume_plan(progress_data: dict, expected_pairs: list[tuple[int, int]]) -> dict:
     """Construit un plan de reprise concret base sur les outputs manquants."""
     steps = progress_data.get("etapes", {})
     missing = progress_data.get("manquants", {})
 
     # Etapes lineaires avant la generation des sections
+    if not steps.get("fiche_cadrage", False):
+        return {
+            "possible": True,
+            "next_step": "fiche_cadrage",
+            "next_function": "fc",
+            "resume_from": None,
+        }
+
+    if not steps.get("web_search", False):
+        web_step, web_function = _resolve_web_resume_target()
+        return {
+            "possible": True,
+            "next_step": web_step,
+            "next_function": web_function,
+            "resume_from": None,
+        }
+
     prereq_map = [
-        ("fiche_cadrage", "fc"),
-        ("web_search", "web_search"),
         ("plan_detaille", "plan_detail"),
         ("structure_chapitre", "structure_chapitre"),
         ("introduction", "gen_intro"),
