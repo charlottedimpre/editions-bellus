@@ -9,11 +9,9 @@ Respecte EXACTEMENT ce format :
 [Reformulation précise et éditoriale du sujet brut]
 </sujet>
 
-<sommaire>
-- Chapitre 1 : [titre]
-- Chapitre 2 : [titre]
-- [Autant de chapitres que le sujet le justifie, entre 6 et 10]
-</sommaire>
+<nbre_chapitres>
+[Nombre total de chapitres, entier entre 6 et 10]
+</nbre_chapitres>
 
 <hors_perimetre>
 - [aspect exclu] — [ce qui reste autorisé à la frontière]
@@ -54,11 +52,8 @@ Règles strictes :
 
 — SOMMAIRE —
 - La progression par défaut est chronologique (étapes) — toute autre logique d\organisation doit être explicitement justifiée par la nature du sujet
-- Le sommaire doit être logiquement progressif, pas thématiquement redondant
 - Le nombre de chapitres doit être déterminé par la densité du sujet, pas maximisé par défaut — un sujet simple peut tenir en 6 chapitres, un sujet complexe en justifie 10
-- Aucun chapitre ne doit pouvoir être supprimé sans créer un vide logique dans la progression
-- Deux chapitres consécutifs ne peuvent pas traiter du même pôle thématique (ex : deux chapitres émotionnels de suite)
-- Le sommaire ne doit jamais inclure de chapitres portant sur la sexualité, l\intimité physique ou le désir, même abordés sous un angle scientifique ou thérapeutique
+- La balise <nbre_chapitres> est obligatoire
 
 — TITRES DE CHAPITRES —
 - Les titres évitent "Les défis de", "Gérer les", "Comprendre le" — ils doivent formuler une tension ou une promesse concrète

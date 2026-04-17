@@ -3,7 +3,12 @@ from pathlib import Path
 
 from ollama import ChatResponse, chat
 
-from parser import parse_plan_detaille, read_json_file as _read_json, read_text_file as _read_text
+from parser import (
+    clean_plan_detaille_titles_in_file,
+    parse_plan_detaille,
+    read_json_file as _read_json,
+    read_text_file as _read_text,
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
@@ -39,7 +44,8 @@ def plan_detail():
     input_path = INPUT_DIR / "pd_prompt.txt"
     prompt = _read_text(input_path, "prompt plan detaille")
 
-    _read_json(FICHE_CADRAGE_PATH, "fiche de cadrage")
+    fiche_cadrage_payload = _read_json(FICHE_CADRAGE_PATH, "fiche de cadrage")
+    expected_chapters = fiche_cadrage_payload.get("nbre_chapitres") if isinstance(fiche_cadrage_payload, dict) else None
     fiche_cadrage = _read_text(FICHE_CADRAGE_PATH, "fiche de cadrage")
 
     sources_web = json.dumps(sources(), ensure_ascii=False, indent=2)
@@ -65,10 +71,16 @@ def plan_detail():
     chapitres = parsed.get("chapitres")
     if not isinstance(chapitres, list) or len(chapitres) == 0:
         raise ValueError("Le plan detaille parse doit contenir une liste de chapitres non vide.")
+    if expected_chapters is not None and len(chapitres) != int(expected_chapters):
+        raise ValueError(
+            f"Nombre de chapitres invalide: attendu {int(expected_chapters)} depuis la fiche, obtenu {len(chapitres)}."
+        )
 
     filepath = OUTPUT_DIR / "plan_detaille.json"
     with filepath.open("w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
+
+    clean_plan_detaille_titles_in_file(filepath)
 
     return parsed
 

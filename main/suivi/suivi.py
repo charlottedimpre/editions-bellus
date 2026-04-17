@@ -10,7 +10,7 @@ if str(MAIN_DIR) not in sys.path:
     sys.path.insert(0, str(MAIN_DIR))
 
 from conclusion.conclusion import gen_conclu
-from fiche_cadrage.fiche_cadrage import fc
+from fiche_cadrage.fiche_cadrage import fc, insert_fc
 from fil_rouge.fil_rouge import gen_filrouge_with_validation
 from fil_rouge.merge_filrouge import merge_filrouge_wrapper
 from introduction.introduction import gen_intro
@@ -28,7 +28,7 @@ def _normalize_resume_from(resume_from):
     return normalize_resume_from(resume_from)
 
 
-def _run_resume_auto(auto_confirm=False):
+def _run_resume_auto(auto_confirm=False, mode=None):
     instructions = get_resume_instructions()
 
     if not instructions.get("possible"):
@@ -48,7 +48,7 @@ def _run_resume_auto(auto_confirm=False):
         return instructions
 
     print(f"Lancement de suivi('{next_function}')...")
-    suivi(next_function, resume_from=resume_from, auto_confirm=auto_confirm)
+    suivi(next_function, resume_from=resume_from, auto_confirm=auto_confirm, mode=mode)
     return instructions
 
 def _section(ch_num, sec_num):
@@ -171,9 +171,9 @@ def suivisection(start_from=None, auto_confirm=False):
 
 
 
-def suivi(fonction, resume_from=None, auto_confirm=False, **_):
+def suivi(fonction, resume_from=None, auto_confirm=False, mode=None, **_):
     if fonction == "resume_auto":
-        return _run_resume_auto(auto_confirm=auto_confirm)
+        return _run_resume_auto(auto_confirm=auto_confirm, mode=mode)
 
     elif fonction == "check_progress":
         progress = check_book_progress()
@@ -182,6 +182,9 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
 
     if fonction == "fc":
         fc()
+        normalized_mode = str(mode).strip() if mode is not None else ""
+        if normalized_mode == "1":
+            insert_fc()
 
     elif fonction == "webinput":
         webinput_wrapper()
@@ -243,5 +246,5 @@ def suivi(fonction, resume_from=None, auto_confirm=False, **_):
         return True
     else:
         print("Étape à retravailler")
-        suivi(fonction, resume_from=resume_from, auto_confirm=auto_confirm)
+        suivi(fonction, resume_from=resume_from, auto_confirm=auto_confirm, mode=mode)
         return None

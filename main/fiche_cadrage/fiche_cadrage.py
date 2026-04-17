@@ -3,7 +3,7 @@ from typing import Any
 
 from ollama import chat
 from ollama import ChatResponse
-from parser import parse_fiche_cadrage, read_text_file, to_json_file
+from parser import parse_fiche_cadrage, read_json_file, read_text_file, to_json_file
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
@@ -89,6 +89,40 @@ def fc():
     output_payload = _build_output_payload(txt, sujet)
     print(f"Fiche de cadrage générée : {sujet} {niveau_file}")
     to_json_file(output_payload, OUTPUT_DIR / "fiche_cadrage.json")
+
+
+def insert_fc():
+    fiche_path = OUTPUT_DIR / "fiche_cadrage.json"
+    config_path = BASE_DIR.parent / "config.json"
+
+    fiche_payload = read_json_file(fiche_path, "fiche cadrage", require_non_empty=True)
+    config_payload = read_json_file(config_path, "config", require_non_empty=True)
+
+    if not isinstance(fiche_payload, dict):
+        raise ValueError("Le fichier fiche_cadrage.json doit contenir un objet JSON.")
+    if not isinstance(config_payload, dict):
+        raise ValueError("Le fichier config.json doit contenir un objet JSON.")
+
+    livre_config = config_payload.get("livre")
+    if not isinstance(livre_config, dict) or "nbre_chapitres" not in livre_config:
+        raise ValueError("Le champ livre.nbre_chapitres est manquant dans config.json.")
+
+    try:
+        expected_chapters = int(livre_config["nbre_chapitres"])
+    except (TypeError, ValueError) as exc:
+        raise ValueError("Le champ livre.nbre_chapitres de config.json doit etre un entier.") from exc
+
+    fiche_key = "nbre_chapitres" if "nbre_chapitres" in fiche_payload else "nb_chapitres"
+    current_chapters = fiche_payload.get(fiche_key)
+
+    if current_chapters != expected_chapters:
+        fiche_payload[fiche_key] = expected_chapters
+        to_json_file(fiche_payload, fiche_path)
+        print(f"Mise a jour de {fiche_key}: {current_chapters} -> {expected_chapters}")
+        return True
+
+    print(f"Aucune mise a jour: {fiche_key} est deja a {expected_chapters}.")
+    return False
 
 
 if __name__ == '__main__':

@@ -60,6 +60,14 @@ def _collapse_newlines(s: Optional[str]) -> Optional[str]:
     return re.sub(r"\s+", " ", s).strip()
 
 
+def _clean_title_text(s: Optional[str]) -> Optional[str]:
+    """Retire les marqueurs markdown de titre (ex: **Titre**) et normalise les espaces."""
+    if s is None:
+        return None
+    cleaned = s.replace("*", "")
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
 def extract_tag(text: str, tag_name: str) -> Optional[str]:
     """
     Extrait le contenu entre <tag_name> et </tag_name>.
@@ -119,6 +127,18 @@ def parse_fiche_cadrage(text: str) -> dict:
     sommaire_raw = extract_tag(fiche, "sommaire") or ""
     chapitres = re.findall(r"-\s*Chapitre\s+\d+\s*:\s*(.+)", sommaire_raw)
 
+    # Nombre de chapitres explicite (nouveau contrat).
+    # Compatibilite legacy: on derive depuis <sommaire> uniquement si present.
+    nbre_chapitres_raw = extract_tag(fiche, "nbre_chapitres")
+    if nbre_chapitres_raw is not None and nbre_chapitres_raw.strip():
+        nbre_chapitres = to_int_or_raise(nbre_chapitres_raw.strip(), "nbre_chapitres")
+        if nbre_chapitres <= 0:
+            raise ValueError(f"Valeur invalide pour nbre_chapitres: {nbre_chapitres!r}")
+    elif chapitres:
+        nbre_chapitres = len(chapitres)
+    else:
+        raise ValueError("La fiche de cadrage doit contenir la balise <nbre_chapitres>.")
+
     # Extraire les exclusions du hors périmètre
     hp_raw = extract_tag(fiche, "hors_perimetre") or ""
     exclusions = [line.strip("- ").strip() for line in hp_raw.splitlines() if line.strip().startswith("-")]
@@ -135,7 +155,7 @@ def parse_fiche_cadrage(text: str) -> dict:
         "cible_principale": extract_tag(fiche, "cible_principale"),
         "niveau": extract_tag(fiche, "niveau"),
         "objectif_lecteur": extract_tag(fiche, "objectif_lecteur"),
-        "nbre_chapitres": len(chapitres),
+        "nbre_chapitres": nbre_chapitres,
         "_raw": text,
     }
 
@@ -168,7 +188,7 @@ def parse_plan_detaille(text: str) -> dict:
         if titre_match:
             chapitres.append({
                 "numero": int(titre_match.group(1)),
-                "titre": titre_match.group(2).strip(),
+                "titre": _clean_title_text(titre_match.group(2)),
                 "traite": extract_tag(block, "traite"),
                 "ne_traite_pas": extract_tag(block, "ne_traite_pas"),
                 "pourquoi_distinct": extract_tag(block, "pourquoi_distinct"),
@@ -236,7 +256,7 @@ def parse_structure_chapitres(text: str) -> list[dict]:
 
         chapitres.append({
             "numero": bloc["attrs"].get("numero"),
-            "titre": bloc["attrs"].get("titre"),
+            "titre": _clean_title_text(bloc["attrs"].get("titre")),
             "sections": sections,
             "total_mots_chapitre": extract_tag(bloc["content"], "total_mots_chapitre"),
         })
@@ -465,6 +485,37 @@ def to_json_file(data: Union[dict, list], path: Union[str, Path], indent: int = 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=indent), encoding="utf-8")
     return path
+
+
+def clean_plan_detaille_titles_in_file(path: Union[str, Path]) -> int:
+    """
+    Nettoie les asterisques markdown dans les titres de chapitres
+    d'un plan_detaille.json deja ecrit sur disque.
+
+    Retourne le nombre de titres modifies.
+    """
+    filepath = Path(path)
+    payload = read_json_file(filepath, "plan detaille", require_non_empty=True)
+
+    if not isinstance(payload, dict):
+        raise ValueError(f"Le fichier {filepath} doit contenir un objet JSON.")
+
+    chapitres = payload.get("chapitres")
+    if not isinstance(chapitres, list):
+        raise ValueError("Le plan detaille doit contenir une liste 'chapitres'.")
+
+    updates = 0
+    for chapitre in chapitres:
+        if not isinstance(chapitre, dict):
+            continue
+        titre = chapitre.get("titre")
+        cleaned_title = _clean_title_text(titre)
+        if cleaned_title != titre:
+            chapitre["titre"] = cleaned_title
+            updates += 1
+
+    filepath.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return updates
 
 
 # ---------------------------------------------------------------------------

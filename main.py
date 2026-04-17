@@ -58,11 +58,11 @@ def choose_restart_paths_from_index():
     return paths[int(selected) - 1 :]
 
 
-def run_resume_until_done(max_cycles=20):
+def run_resume_until_done(mode, max_cycles=20):
     last_signature = None
 
     for _ in range(max_cycles):
-        instructions = suivi("resume_auto", auto_confirm=True)
+        instructions = suivi("resume_auto", auto_confirm=True, mode=mode)
         if not isinstance(instructions, dict):
             print("Arret reprise auto: reponse inattendue.")
             return False
@@ -84,13 +84,24 @@ def run_resume_until_done(max_cycles=20):
     return False
 
 
-def run_generation_with_auto_resume():
+def run_generation_with_auto_resume(mode):
     print("Generation/reprise automatique en cours...")
-    completed = run_resume_until_done()
+    completed = run_resume_until_done(mode)
     if completed:
         auto_clean_section_errors(remove_all_numero_blocks=True, section_subdir="section_fr")
         print("Generation terminee.")
 
+
+
+def ask_generation_subchoice():
+    prompt = "Tu veux lancer l'option 1 ou 2 pour la reprise auto ? "
+    valid_choices = {"1", "2"}
+
+    choice = input(prompt)
+    while choice not in valid_choices:
+        print("Le nombre entre doit etre 1 ou 2.")
+        choice = input(prompt)
+    return choice
 
 
 def ask_menu_choice():
@@ -124,7 +135,11 @@ if __name__ == '__main__':
             restart()
             print("Projet redemarre. Tous les fichiers de sortie ont ete supprimes.")
         elif choice == '2':
-            run_generation_with_auto_resume()
+            subchoice = ask_generation_subchoice()
+            if subchoice == "1":
+                run_generation_with_auto_resume("1")
+            else:
+                run_generation_with_auto_resume("2")
         elif choice == '3':
             handle_partial_cleanup()
         elif choice == '4':

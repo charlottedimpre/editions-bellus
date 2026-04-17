@@ -43,15 +43,25 @@ Respecte EXACTEMENT ce format :
 
 </plan_detaille>
 
+QUALITÉ DES TITRES DE CHAPITRES (OBLIGATOIRE) :
+- Chaque titre doit être concret, spécifique au sujet et compréhensible sans lire le contenu du chapitre
+- Chaque titre contient entre 6 et 11 mots
+- Chaque titre exprime une étape distincte du parcours du lecteur (pas de doublon fonctionnel entre chapitres)
+- Chaque titre doit éviter les formulations vagues ou passe-partout (exemples interdits : "Introduction", "Comprendre", "Guide", "Les bases")
+- Aucun titre ne doit reprendre plus de 40% des mots d'un autre titre
+- Chaque titre doit rester en français naturel, sans anglicisme, sans jargon inutile, sans effet marketing
+- Aucun titre ne se termine par un point, un point d'exclamation ou un point d'interrogation
+- Avant de finaliser, relire la liste complète des titres et réécrire ceux qui sont trop proches, trop abstraits ou trop génériques
+
 Règles strictes :
 - Ne jamais écrire hors des balises
 - Ne jamais modifier les noms de balises
 - Si une information ne peut pas être déterminée, écrire "À définir avec l'auteur"
-- Les titres de chapitres reprennent ceux définis dans <sommaire> sans modification
-- Le nombre de chapitres doit être déterminé par la densité du sujet, pas maximisé par défaut
+- Les titres de chapitres sont generes dans ce plan detaille (ils ne viennent pas de la fiche de cadrage)
+- Le nombre de chapitres doit etre strictement egal a <nbre_chapitres> fourni par la fiche de cadrage
 - Chaque chapitre doit passer le test de fusion : si deux chapitres peuvent être fusionnés sans perte, le plan est invalide — les reformuler ou les fusionner
 - L'introduction ne doit pas être marketing ou vague — chaque balise doit contenir une information concrète et spécifique au sujet
 - La conclusion ne répète pas mot pour mot le contenu des chapitres
-- Le sommaire ne doit jamais inclure de chapitres portant sur la sexualité, l'intimité physique ou le désir, même abordés sous un angle scientifique ou thérapeutique
+- Les chapitres ne doivent jamais porter sur la sexualité, l'intimité physique ou le désir, même abordés sous un angle scientifique ou thérapeutique
 - L'exemple fil rouge doit être anonymisé et composite (pas un cas réel unique)
 - L'exemple fil rouge doit contenir au minimum un personnage nommé
