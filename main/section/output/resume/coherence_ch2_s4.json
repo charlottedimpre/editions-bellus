@@ -3,27 +3,23 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "L'anxiété de conduite se combat par la rééducation du cerveau et la confrontation progressive des situations évitées.",
+  "these_centrale": "Hiérarchiser les situations anxiogènes sur une échelle personnelle rend la maîtrise de la claustrophobie une démarche précise et gérable.",
   "arguments_cles": [
-    "Le cerveau associe conduite et peur via des réactions hormonales de stress.",
-    "L'évitement renforce l'anxiété en confirmant une fausse perception du danger.",
-    "L'anxiété situationnelle de conduite diffère d'un trouble anxieux généralisé.",
-    "La neuroplasticité permet de modifier les schémas neuronaux liés à la peur."
+    "Classifier l'anxiété permet de passer d'une appréhension diffuse à une identification des déclencheurs.",
+    "Une échelle personnelle de 0 à 10 quantifie l'intensité de l'anxiété subjective pour chaque situation.",
+    "Affronter les situations de faible intensité renforce la confiance et permet une progression maîtrisée.",
+    "L'échelle d'anxiété évolue avec les progrès, servant d'outil d'auto-évaluation dynamique."
   ],
   "concepts_introduits": [
-    "Système nerveux autonome : Régule les fonctions involontaires du corps.",
-    "Adrénaline : Hormone de stress déclenchant la réaction de combat ou de fuite.",
-    "Comportement d'évitement : Fuite ou omission face à une situation redoutée.",
-    "Anxiété situationnelle : Peur spécifique liée à un contexte particulier.",
-    "Trouble anxieux généralisé : Anxiété excessive dans de multiples domaines de vie.",
-    "Neuroplasticité : Capacité du cerveau à se modifier et à créer de nouvelles connexions."
+    "Anxiété : Sentiment de malaise, d'inquiétude ou de peur face à une situation future.",
+    "Claustrophobie : Peur irrationnelle des espaces clos et confinés.",
+    "Échelle d'anxiété : Outil de mesure subjective de l'intensité d'une émotion négative."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le cerveau associe la situation de conduite à la sensation de peur ou de danger.",
-    "Le comportement d'évitement procure un soulagement immédiat.",
-    "Il est essentiel de distinguer une peur spécifique liée à la conduite d'un trouble anxieux plus généralisé."
+    "La peur devient concrète et gérable.",
+    "C'est un outil précieux pour suivre ses progrès."
   ],
-  "ton_angle": "Explicatif et encourageant, il déconstruit la peur de conduire.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'anxiété de conduite se combat par la rééducation du cerveau et la confrontation progressive des situations évitées.</these_centrale>\n<arguments_cles>\n- Le cerveau associe conduite et peur via des réactions hormonales de stress.\n- L'évitement renforce l'anxiété en confirmant une fausse perception du danger.\n- L'anxiété situationnelle de conduite diffère d'un trouble anxieux généralisé.\n- La neuroplasticité permet de modifier les schémas neuronaux liés à la peur.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux autonome : Régule les fonctions involontaires du corps.\n- Adrénaline : Hormone de stress déclenchant la réaction de combat ou de fuite.\n- Comportement d'évitement : Fuite ou omission face à une situation redoutée.\n- Anxiété situationnelle : Peur spécifique liée à un contexte particulier.\n- Trouble anxieux généralisé : Anxiété excessive dans de multiples domaines de vie.\n- Neuroplasticité : Capacité du cerveau à se modifier et à créer de nouvelles connexions.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau associe la situation de conduite à la sensation de peur ou de danger.\n- Le comportement d'évitement procure un soulagement immédiat.\n- Il est essentiel de distinguer une peur spécifique liée à la conduite d'un trouble anxieux plus généralisé.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, il déconstruit la peur de conduire.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et pratique, l'angle est celui de la maîtrise active des peurs.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Hiérarchiser les situations anxiogènes sur une échelle personnelle rend la maîtrise de la claustrophobie une démarche précise et gérable.</these_centrale>\n<arguments_cles>\n- Classifier l'anxiété permet de passer d'une appréhension diffuse à une identification des déclencheurs.\n- Une échelle personnelle de 0 à 10 quantifie l'intensité de l'anxiété subjective pour chaque situation.\n- Affronter les situations de faible intensité renforce la confiance et permet une progression maîtrisée.\n- L'échelle d'anxiété évolue avec les progrès, servant d'outil d'auto-évaluation dynamique.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : Sentiment de malaise, d'inquiétude ou de peur face à une situation future.\n- Claustrophobie : Peur irrationnelle des espaces clos et confinés.\n- Échelle d'anxiété : Outil de mesure subjective de l'intensité d'une émotion négative.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La peur devient concrète et gérable.\n- C'est un outil précieux pour suivre ses progrès.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pratique, l'angle est celui de la maîtrise active des peurs.</ton_angle>\n</fiche>"
 }

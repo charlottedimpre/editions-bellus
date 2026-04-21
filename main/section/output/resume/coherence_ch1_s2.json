@@ -3,20 +3,24 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "Le dialogue intérieur est un moteur puissant de l'anxiété de conduite, nécessitant son identification pour être déconstruit.",
+  "these_centrale": "Le corps interprète les espaces confinés comme une menace, déclenchant des réactions physiologiques involontaires.",
   "arguments_cles": [
-    "Les pensées catastrophistes anticipent le pire, activant le cerveau comme un danger réel.",
-    "La perception amplifiée du danger extérieur augmente la vigilance et la méfiance.",
-    "L'anxiété influence le comportement, menant à l'évitement ou à l'hypervigilance.",
-    "Nommer les pensées négatives est la première étape pour prendre du recul."
+    "L'accélération cardiaque prépare les muscles à l'action.",
+    "La respiration rapide augmente l'apport en oxygène.",
+    "La tension musculaire accroît l'alerte et la réactivité.",
+    "Ces réactions sont des réponses d'alarme automatiques du système nerveux."
   ],
   "concepts_introduits": [
-    "Dialogue intérieur : pensées conscientes ou subconscientes influençant émotions et actions.",
-    "Pensées catastrophistes : anticipation de scénarios négatifs extrêmes et improbables.",
-    "Hypervigilance : état de vigilance excessive et constante face à une menace perçue."
+    "Claustrophobie : Peur irrationnelle des espaces confinés.",
+    "Système nerveux : Réseau de communication du corps.",
+    "Réactions physiologiques : Changements corporels involontaires."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et analytique, pointant les mécanismes psychologiques de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le dialogue intérieur est un moteur puissant de l'anxiété de conduite, nécessitant son identification pour être déconstruit.</these_centrale>\n<arguments_cles>\n- Les pensées catastrophistes anticipent le pire, activant le cerveau comme un danger réel.\n- La perception amplifiée du danger extérieur augmente la vigilance et la méfiance.\n- L'anxiété influence le comportement, menant à l'évitement ou à l'hypervigilance.\n- Nommer les pensées négatives est la première étape pour prendre du recul.\n</arguments_cles>\n<concepts_introduits>\n- Dialogue intérieur : pensées conscientes ou subconscientes influençant émotions et actions.\n- Pensées catastrophistes : anticipation de scénarios négatifs extrêmes et improbables.\n- Hypervigilance : état de vigilance excessive et constante face à une menace perçue.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Pensées irrationnelles\n- Schémas de pensée\n- Réalité objective\n</a_ne_not_repeat>\n<ton_angle>Informatif et analytique, pointant les mécanismes psychologiques de l'anxiété.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Les réactions physiologiques sont une faiblesse.",
+    "La volonté peut contrôler ces réactions immédiatement.",
+    "La peur de manquer d'air est une réalité objective."
+  ],
+  "ton_angle": "Informatif, expliquant le fonctionnement biologique de la peur en milieu clos.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le corps interprète les espaces confinés comme une menace, déclenchant des réactions physiologiques involontaires.</these_centrale>\n<arguments_cles>\n- L'accélération cardiaque prépare les muscles à l'action.\n- La respiration rapide augmente l'apport en oxygène.\n- La tension musculaire accroît l'alerte et la réactivité.\n- Ces réactions sont des réponses d'alarme automatiques du système nerveux.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : Peur irrationnelle des espaces confinés.\n- Système nerveux : Réseau de communication du corps.\n- Réactions physiologiques : Changements corporels involontaires.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les réactions physiologiques sont une faiblesse.\n- La volonté peut contrôler ces réactions immédiatement.\n- La peur de manquer d'air est une réalité objective.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, expliquant le fonctionnement biologique de la peur en milieu clos.</ton_angle>\n</fiche>"
 }

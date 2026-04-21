@@ -3,23 +3,26 @@
   "section": 4,
   "chapitre_numero": "5",
   "section_numero": "4",
-  "these_centrale": "La progression forcée et l'ignorance des signaux corporels renforcent la peur au lieu de la diminuer.",
+  "these_centrale": "Impliquer son entourage est essentiel pour surmonter la claustrophobie en communiquant clairement les besoins de soutien.",
   "arguments_cles": [
-    "La progression rapide provoque la submersion et annule les bénéfices acquis.",
-    "Forcer les étapes confirme au cerveau la dangerosité d'une situation.",
-    "Ignorer les signaux d'anxiété empêche la gestion proactive des réactions.",
-    "La comparaison avec autrui crée une pression et fausse le parcours personnel."
+    "Informer l'entourage sur les exercices progressifs pour vaincre la peur.",
+    "Éviter la surprotection qui entretient le mécanisme d'évitement.",
+    "Laisser appliquer les stratégies apprises sans interruption ni jugement.",
+    "Devenir un allié informé plutôt qu'une source de maintien de la phobie.",
+    "Construire une compréhension partagée qui nourrit l'auto-efficacité."
   ],
   "concepts_introduits": [
-    "Exposition : Progressive confrontation à des situations anxiogènes.",
-    "Signaux corporels : Manifestations physiques de l'anxiété débutante.",
-    "Submersion : État de détresse face à une surcharge émotionnelle."
+    "Claustrophobie : peur irrationnelle des espaces clos.",
+    "Mécanisme d'évitement : comportement pour fuir une situation anxiogène.",
+    "Respiration diaphragmatique : technique de relaxation par le souffle.",
+    "Auto-efficacité : confiance en sa capacité à réussir."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les pièges courants de l'exposition sont expliqués.",
-    "Ne pas ignorer les signaux du corps pour progresser."
+    "Demander le soutien de votre entourage est une étape importante.",
+    "Ne pas entrer dans les détails techniques complexes.",
+    "Le piège de la surprotection est particulièrement insidieux."
   ],
-  "ton_angle": "Pédagogique et préventif, soulignant les erreurs à éviter.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La progression forcée et l'ignorance des signaux corporels renforcent la peur au lieu de la diminuer.</these_centrale>\n<arguments_cles>\n- La progression rapide provoque la submersion et annule les bénéfices acquis.\n- Forcer les étapes confirme au cerveau la dangerosité d'une situation.\n- Ignorer les signaux d'anxiété empêche la gestion proactive des réactions.\n- La comparaison avec autrui crée une pression et fausse le parcours personnel.\n</arguments_cles>\n<concepts_introduits>\n- Exposition : Progressive confrontation à des situations anxiogènes.\n- Signaux corporels : Manifestations physiques de l'anxiété débutante.\n- Submersion : État de détresse face à une surcharge émotionnelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les pièges courants de l'exposition sont expliqués.\n- Ne pas ignorer les signaux du corps pour progresser.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et préventif, soulignant les erreurs à éviter.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et pratique, axé sur la communication bienveillante pour le soutien.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Impliquer son entourage est essentiel pour surmonter la claustrophobie en communiquant clairement les besoins de soutien.</these_centrale>\n<arguments_cles>\n- Informer l'entourage sur les exercices progressifs pour vaincre la peur.\n- Éviter la surprotection qui entretient le mécanisme d'évitement.\n- Laisser appliquer les stratégies apprises sans interruption ni jugement.\n- Devenir un allié informé plutôt qu'une source de maintien de la phobie.\n- Construire une compréhension partagée qui nourrit l'auto-efficacité.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : peur irrationnelle des espaces clos.\n- Mécanisme d'évitement : comportement pour fuir une situation anxiogène.\n- Respiration diaphragmatique : technique de relaxation par le souffle.\n- Auto-efficacité : confiance en sa capacité à réussir.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Demander le soutien de votre entourage est une étape importante.\n- Ne pas entrer dans les détails techniques complexes.\n- Le piège de la surprotection est particulièrement insidieux.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pratique, axé sur la communication bienveillante pour le soutien.</ton_angle>\n</fiche>"
 }

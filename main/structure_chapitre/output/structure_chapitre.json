@@ -1,346 +1,267 @@
 [
   {
     "numero": "1",
-    "titre": "Reconnaître les signes de la peur au volant",
+    "titre": "Reconnaître les mécanismes de la claustrophobie",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi votre corps réagit-il avant même de démarrer ?",
-        "objectif": "Vous identifierez les signaux physiques précoces de l'anxiété au volant (tachycardie, sueurs, tensions musculaires) et les distinguerez d'un stress passager.",
-        "concept_cle": "Activation du système nerveux sympathique en anticipation",
-        "exemple": "Claire ressent des mains moites et une boule au ventre dès qu'elle approche de sa voiture pour un trajet prévu.",
-        "limite": "N'aborde pas les causes profondes de l'anxiété (traitées au chapitre 2) ni les techniques pour y répondre (chapitres 3 et 4).",
-        "mots_cible": "500-700"
+        "titre_section": "Pourquoi votre corps réagit-il comme s'il était en danger ?",
+        "objectif": "Vous identifierez les trois réactions physiologiques clés de la claustrophobie et comprendrez leur utilité évolutive pour mieux les désamorcer.",
+        "concept_cle": "Réponse de lutte-fuite-immobilisation : mécanisme de survie déclenché à tort.",
+        "exemple": "Thomas sent son cœur s'emballer dans un ascenseur, alors qu'il sait rationnellement qu'il n'y a aucun danger.",
+        "limite": "N'explique pas comment calmer ces réactions (abordé en chapitre 3).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "2",
-        "titre_section": "Ces pensées qui vous paralysent : comment les repérer ?",
-        "objectif": "Vous repérerez vos pensées catastrophistes typiques (\"Je vais perdre le contrôle\", \"Les autres conducteurs sont dangereux\") et leur impact sur votre comportement.",
-        "concept_cle": "Biais cognitifs amplifiant la perception du danger",
-        "exemple": "Claire imagine systématiquement un accident en abordant une bretelle d'autoroute, même sans incident passé.",
-        "limite": "N'explique pas comment modifier ces pensées (traité au chapitre 5) ni comment les désamorcer en temps réel (chapitre 6).",
-        "mots_cible": "400-600"
+        "titre_section": "Claustrophobie ou simple inconfort : où se situe votre seuil ?",
+        "objectif": "Vous distinguerez les symptômes de la claustrophobie des réactions normales d'anxiété, et repérerez vos signaux d'alerte personnels.",
+        "concept_cle": "Seuil de tolérance : point où l'anxiété devient ingérable.",
+        "exemple": "Thomas réalise que sa peur des ascenseurs s'accompagne toujours de sueurs froides et d'une envie irrépressible de fuir.",
+        "limite": "Ne propose pas d'outils pour évaluer ce seuil (abordé en chapitre 2).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "3",
-        "titre_section": "Évitement ou hypervigilance : quel est votre piège ?",
-        "objectif": "Vous déterminerez si votre anxiété se manifeste par l'évitement (annuler des trajets) ou l'hypervigilance (vérifier sans cesse les rétroviseurs), et en quoi ces comportements entretiennent la peur.",
-        "concept_cle": "Renforcement négatif par l'évitement ou la surcompensation",
-        "exemple": "Claire demande à son conjoint de conduire pour les trajets longs, ce qui réduit son stress à court terme mais aggrave sa peur.",
-        "limite": "Ne propose pas de solutions pour sortir de ces pièges (traitées aux chapitres 5 et 7).",
-        "mots_cible": "450-650"
+        "titre_section": "Le cercle vicieux qui aggrave votre phobie sans que vous le sachiez",
+        "objectif": "Vous reconnaîtrez comment l'évitement et la surprotection renforcent votre claustrophobie, même avec de bonnes intentions.",
+        "concept_cle": "Cycle peur-évitement-renforcement : la phobie s'auto-alimente.",
+        "exemple": "Thomas évite les ascenseurs depuis 5 ans, ce qui a rendu sa peur plus intense et généralisée aux transports en commun.",
+        "limite": "Ne donne pas de stratégies pour briser ce cycle (abordé en chapitre 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "4",
-        "titre_section": "Quand l'anxiété au volant cache-t-elle autre chose ?",
-        "objectif": "Vous saurez repérer les signes indiquant que votre peur de conduire pourrait être liée à un trouble anxieux plus large ou à un traumatisme, nécessitant un soutien professionnel.",
-        "concept_cle": "Différenciation entre anxiété situationnelle et trouble généralisé",
-        "exemple": "Claire réalise que sa peur des bretelles s'étend désormais aux ponts et aux tunnels, avec des crises de panique même en tant que passagère.",
-        "limite": "Ne traite pas les protocoles thérapeutiques pour ces cas (hors périmètre, à orienter vers un professionnel).",
-        "mots_cible": "350-500"
+        "titre_section": "Les trois déclencheurs universels que votre cerveau confond avec un danger mortel",
+        "objectif": "Vous identifierez les situations qui activent systématiquement votre claustrophobie, même si elles semblent anodines.",
+        "concept_cle": "Déclencheurs primaires : enfermement, impossibilité de fuite, perte de contrôle.",
+        "exemple": "Thomas panique dans un IRM non pas à cause du bruit, mais parce qu'il ne peut pas bouger ni sortir.",
+        "limite": "Ne propose pas de méthode pour hiérarchiser ces déclencheurs (abordé en chapitre 2).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       }
     ],
-    "total_mots_chapitre": "1700-2450"
+    "total_mots_chapitre": 1740
   },
   {
     "numero": "2",
-    "titre": "Comprendre les mécanismes de l'anxiété",
+    "titre": "Cartographier ses déclencheurs personnels",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi votre cerveau déclenche-t-il l'alerte sans danger réel ?",
-        "objectif": "Vous comprendrez le rôle du système nerveux autonome (réaction de lutte/fuite) et pourquoi il s'active de manière disproportionnée au volant.",
-        "concept_cle": "Fausse alarme du cerveau face à un danger perçu",
-        "exemple": "Claire ressent une montée d'adrénaline en voyant une bretelle d'autoroute, comme si elle était en danger imminent.",
-        "limite": "N'explique pas comment réguler cette réaction (traité aux chapitres 3 et 4).",
-        "mots_cible": "500-700"
+        "titre_section": "Comment repérer les situations qui vous font paniquer sans même vous en rendre compte ?",
+        "objectif": "Vous apprendrez à observer vos réactions en temps réel pour identifier vos déclencheurs cachés, même ceux que vous minimisez.",
+        "concept_cle": "Auto-observation active : noter les détails pour révéler les schémas.",
+        "exemple": "Thomas découvre que sa peur des ascenseurs est liée à l'odeur de renfermé, pas seulement à l'enfermement.",
+        "limite": "Ne propose pas d'outils pour agir sur ces déclencheurs (abordé en chapitre 3 et 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "2",
-        "titre_section": "Le cercle vicieux de l'évitement : comment en sortir ?",
-        "objectif": "Vous identifierez comment l'évitement des situations anxiogènes renforce votre peur à long terme, et pourquoi affronter progressivement est nécessaire.",
-        "concept_cle": "Conditionnement négatif par l'évitement des stimuli",
-        "exemple": "Claire évite les bretelles depuis six mois, ce qui a étendu sa peur aux routes à grande vitesse.",
-        "limite": "Ne détaille pas les méthodes d'exposition progressive (traité au chapitre 5).",
-        "mots_cible": "450-650"
+        "titre_section": "Le journal des crises : votre allié pour décrypter vos peurs",
+        "objectif": "Vous saurez remplir un journal des crises pour repérer les motifs récurrents et les exceptions qui contredisent vos croyances.",
+        "concept_cle": "Journal des crises : outil de traçabilité pour objectiver les déclencheurs.",
+        "exemple": "Thomas note que ses crises sont plus intenses le matin, ce qui l'aide à planifier ses expositions (chapitre 4).",
+        "limite": "Ne propose pas de méthode pour hiérarchiser les déclencheurs (abordé en section 3).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "3",
-        "titre_section": "Anxiété situationnelle ou trouble anxieux : comment faire la différence ?",
-        "objectif": "Vous saurez distinguer une peur spécifique de la conduite d'un trouble anxieux généralisé, et quand consulter un professionnel.",
-        "concept_cle": "Spécificité vs. généralisation des déclencheurs anxieux",
-        "exemple": "Contrairement à Claire, un lecteur dont l'anxiété s'étend à tous les déplacements (même en transports) pourrait avoir un trouble plus large.",
-        "limite": "Ne propose pas de diagnostic ni de protocole thérapeutique (hors périmètre).",
-        "mots_cible": "400-600"
+        "titre_section": "Classer vos déclencheurs du moins au plus angoissant : la méthode des petits pas",
+        "objectif": "Vous construirez une échelle personnelle de vos déclencheurs pour prioriser vos efforts et éviter la surcharge.",
+        "concept_cle": "Échelle d'anxiété : hiérarchisation des situations du moins au plus intense.",
+        "exemple": "Thomas classe \"rester dans sa voiture portes fermées\" comme moins angoissant que \"prendre l'ascenseur\".",
+        "limite": "Ne propose pas de plan d'action pour affronter ces déclencheurs (abordé en chapitre 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "4",
-        "titre_section": "Pourquoi les techniques de ce livre fonctionnent-elles ?",
-        "objectif": "Vous comprendrez les principes scientifiques derrière les techniques proposées (respiration, exposition, ancrage) et leur efficacité pour rééduquer votre cerveau.",
-        "concept_cle": "Neuroplasticité et réapprentissage des réponses anxieuses",
-        "exemple": "Claire apprend que la respiration diaphragmatique active son système nerveux parasympathique, contrecarrant l'effet de l'adrénaline.",
-        "limite": "Ne détaille pas les techniques elles-mêmes (traitées aux chapitres 3, 4 et 5).",
-        "mots_cible": "400-600"
+        "titre_section": "Peurs primaires vs. peurs secondaires : ce qui vous bloque vraiment",
+        "objectif": "Vous distinguerez vos peurs profondes (ex. étouffement) des peurs superficielles (ex. jugement d'autrui) pour cibler vos efforts.",
+        "concept_cle": "Peurs primaires/secondaires : distinguer la cause de la conséquence.",
+        "exemple": "Thomas réalise que sa peur des transports bondés vient d'une peur de l'étouffement, pas de la promiscuité.",
+        "limite": "Ne propose pas de techniques pour gérer les peurs primaires (abordé en chapitre 3).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": 1740
   },
   {
     "numero": "3",
-    "titre": "Préparer son corps avant de conduire",
+    "titre": "Techniques immédiates pour désamorcer une crise",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi votre corps est-il déjà tendu avant même de monter en voiture ?",
-        "objectif": "Vous identifierez les tensions musculaires accumulées avant la conduite et leur impact sur votre niveau d'anxiété initial.",
-        "concept_cle": "Mémoire corporelle des situations anxiogènes passées",
-        "exemple": "Claire remarque que ses épaules sont crispées et sa mâchoire serrée dès qu'elle s'assoit au volant, avant même d'avoir démarré.",
-        "limite": "Ne traite pas les techniques pour gérer l'anxiété *pendant* la conduite (chapitre 4 et 6).",
-        "mots_cible": "400-600"
+        "titre_section": "Respirer pour reprendre le contrôle : la technique qui calme votre système nerveux en 30 secondes",
+        "objectif": "Vous maîtriserez la respiration diaphragmatique pour réduire votre rythme cardiaque et votre tension musculaire pendant une crise.",
+        "concept_cle": "Respiration diaphragmatique : activer le système nerveux parasympathique.",
+        "exemple": "Thomas utilise cette technique dans un ascenseur bloqué pour éviter une crise de panique.",
+        "limite": "Ne traite pas les cas où la respiration seule ne suffit pas (combinaison avec d'autres outils en section 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "2",
-        "titre_section": "Relâcher les tensions : la méthode progressive pour un corps détendu",
-        "objectif": "Vous maîtriserez la technique de relaxation musculaire progressive pour réduire l'activation physiologique avant de conduire.",
-        "concept_cle": "Alternance contraction/détente pour rééduquer la perception corporelle",
-        "exemple": "Claire applique la méthode en serrant puis relâchant ses poings, ses bras, et ses épaules avant de prendre le volant.",
-        "limite": "N'aborde pas les techniques d'urgence pour les crises en cours (chapitre 6).",
-        "mots_cible": "500-700"
+        "titre_section": "Cohérence cardiaque : le protocole en 5 étapes pour stabiliser votre rythme en situation de stress",
+        "objectif": "Vous appliquerez la méthode 3-6-5 pour réguler votre fréquence cardiaque et retrouver un état de calme en 5 minutes.",
+        "concept_cle": "Cohérence cardiaque : synchronisation respiration/rythme cardiaque.",
+        "exemple": "Thomas pratique la cohérence cardiaque avant d'entrer dans un IRM pour prévenir une crise.",
+        "limite": "Ne traite pas les contextes où le temps manque (ex. crise soudaine en métro, abordé en section 3).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "3",
-        "titre_section": "Visualiser la réussite : comment reprogrammer votre esprit avant de conduire",
-        "objectif": "Vous utiliserez la visualisation positive pour créer des associations mentales apaisantes avec la conduite, et réduire l'anticipation anxieuse.",
-        "concept_cle": "Imagerie mentale pour désamorcer les scénarios catastrophistes",
-        "exemple": "Claire s'imagine en train de conduire sereinement sur une bretelle d'autoroute, en ressentant la détente dans son corps.",
-        "limite": "Ne remplace pas la pratique réelle (traité au chapitre 5) ni les techniques en temps réel (chapitre 4).",
-        "mots_cible": "450-650"
+        "titre_section": "Ancrage sensoriel : comment utiliser vos 5 sens pour sortir de la spirale de la panique",
+        "objectif": "Vous utiliserez des stimuli sensoriels (toucher, vue, ouïe) pour recentrer votre attention et interrompre une crise en cours.",
+        "concept_cle": "Ancrage sensoriel : technique de distraction cognitive par les sens.",
+        "exemple": "Thomas se concentre sur la texture de ses clés dans sa poche pour éviter de paniquer dans un métro bondé.",
+        "limite": "Ne traite pas les cas où l'ancrage sensoriel n'est pas accessible (ex. IRM, abordé en section 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "4",
-        "titre_section": "Routine pré-conduite : comment créer un rituel rassurant",
-        "objectif": "Vous concevrez une routine personnalisée (respiration, étirements, vérifications) pour aborder chaque trajet dans un état de calme optimal.",
-        "concept_cle": "Ancrage comportemental pour réduire l'incertitude",
-        "exemple": "Claire établit une routine de 5 minutes incluant respiration diaphragmatique, vérification des rétroviseurs, et visualisation avant chaque trajet.",
-        "limite": "Ne traite pas les ajustements nécessaires en cas de crise pendant la conduite (chapitre 6).",
-        "mots_cible": "400-600"
+        "titre_section": "Restructuration cognitive en temps réel : transformer vos pensées catastrophiques en 3 questions",
+        "objectif": "Vous apprendrez à challenger vos pensées irrationnelles pendant une crise pour réduire leur intensité.",
+        "concept_cle": "Restructuration cognitive : remplacer les pensées automatiques par des alternatives réalistes.",
+        "exemple": "Thomas se demande : \"Quelle est la preuve que je vais étouffer ?\" pour calmer sa peur dans un ascenseur.",
+        "limite": "Ne traite pas les cas où les pensées sont trop envahissantes (combinaison avec d'autres outils en section 5).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
+      },
+      {
+        "numero": "5",
+        "titre_section": "Adapter les techniques à votre contexte : ascenseur, IRM ou transports, quelle méthode choisir ?",
+        "objectif": "Vous saurez sélectionner et combiner les outils en fonction de la situation pour une efficacité maximale.",
+        "concept_cle": "Adaptation contextuelle : choisir la technique en fonction des contraintes.",
+        "exemple": "Thomas utilise l'ancrage sensoriel dans le métro (où il peut toucher des objets) et la respiration diaphragmatique dans un IRM (où il est immobile).",
+        "limite": "Ne propose pas de plan pour intégrer ces techniques dans une exposition progressive (abordé en chapitre 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": 2175
   },
   {
     "numero": "4",
-    "titre": "Techniques de respiration et ancrage",
+    "titre": "Construire un plan d'exposition progressive",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi la respiration superficielle aggrave-t-elle votre panique ?",
-        "objectif": "Vous comprendrez comment une respiration thoracique rapide entretient l'anxiété, et pourquoi la respiration diaphragmatique est une solution immédiate.",
-        "concept_cle": "Hyperventilation et déséquilibre oxygène/dioxyde de carbone",
-        "exemple": "Claire réalise qu'elle respire par saccades en approchant d'une bretelle, ce qui amplifie sa sensation d'étouffement.",
-        "limite": "N'explique pas comment appliquer la respiration diaphragmatique en mouvement (traité en section 2).",
-        "mots_cible": "400-600"
+        "titre_section": "Pourquoi l'exposition brutale aggrave votre phobie (et comment faire autrement)",
+        "objectif": "Vous comprendrez les risques de l'exposition non graduée et les principes de l'exposition progressive pour des résultats durables.",
+        "concept_cle": "Exposition progressive : désensibilisation par paliers sécurisés.",
+        "exemple": "Thomas évite de forcer son entrée dans un ascenseur et commence par rester devant les portes ouvertes.",
+        "limite": "Ne propose pas de méthode pour créer des paliers (abordé en section 2).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "2",
-        "titre_section": "Respirer pour calmer : la technique diaphragmatique adaptée à la conduite",
-        "objectif": "Vous maîtriserez la respiration 4-7-8 (inspiration, rétention, expiration) et sa variante discrète pour l'utiliser sans quitter la route des yeux.",
-        "concept_cle": "Régulation du système nerveux parasympathique par l'expiration prolongée",
-        "exemple": "Claire pratique la respiration 4-7-8 en attendant à un feu rouge, ce qui réduit sa tachycardie en 2 minutes.",
-        "limite": "Ne traite pas les techniques d'ancrage sensoriel (section 3) ni les cas de crises sévères (chapitre 6).",
-        "mots_cible": "500-700"
+        "titre_section": "Créer votre échelle d'anxiété personnelle : de 0 à 10, où se situent vos limites ?",
+        "objectif": "Vous construirez une échelle d'anxiété sur mesure pour évaluer vos progrès et ajuster vos paliers.",
+        "concept_cle": "Échelle d'anxiété subjective : outil de mesure personnalisé.",
+        "exemple": "Thomas note qu'un ascenseur avec portes ouvertes est un 3/10, tandis qu'un ascenseur bondé est un 8/10.",
+        "limite": "Ne propose pas de paliers concrets (abordé en section 3).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "3",
-        "titre_section": "Ancrage sensoriel : comment revenir au présent quand la panique monte",
-        "objectif": "Vous appliquerez la technique 5-4-3-2-1 pour interrompre les pensées catastrophistes et recentrer votre attention sur l'environnement immédiat.",
-        "concept_cle": "Redirection de l'attention vers les stimuli externes",
-        "exemple": "Claire utilise la technique en nommant 5 choses qu'elle voit, 4 qu'elle touche, etc., pour sortir de sa spirale anxieuse sur une bretelle.",
-        "limite": "Ne remplace pas les stratégies d'exposition (chapitre 5) ni les protocoles pour les crises prolongées (chapitre 6).",
-        "mots_cible": "450-650"
+        "titre_section": "Concevoir vos paliers : comment passer de \"je panique\" à \"je gère\" sans sauter d'étapes",
+        "objectif": "Vous élaborerez des paliers réalistes et progressifs pour élargir votre zone de confort sans risque de rechute.",
+        "concept_cle": "Paliers d'exposition : étapes mesurables et sécurisées.",
+        "exemple": "Thomas commence par rester 30 secondes dans sa voiture portes fermées, puis 1 minute, avant de tenter l'ascenseur.",
+        "limite": "Ne traite pas la gestion des rechutes (abordé en section 4).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       },
       {
         "numero": "4",
-        "titre_section": "Respiration + ancrage : comment combiner les techniques pour un effet maximal",
-        "objectif": "Vous intégrerez respiration diaphragmatique et ancrage sensoriel dans un protocole en 3 étapes pour désamorcer une montée d'anxiété en moins de 2 minutes.",
-        "concept_cle": "Synergie entre régulation physiologique et cognitive",
-        "exemple": "Claire combine respiration 4-7-8 et ancrage 5-4-3-2-1 lors d'un épisode de panique sur l'autoroute, ce qui lui permet de poursuivre son trajet.",
-        "limite": "Ne traite pas les cas où l'arrêt du véhicule est nécessaire (chapitre 6).",
-        "mots_cible": "400-600"
+        "titre_section": "Gérer les rechutes : pourquoi elles sont normales et comment les surmonter sans abandonner",
+        "objectif": "Vous apprendrez à anticiper et gérer les rechutes pour éviter la culpabilité et maintenir vos progrès.",
+        "concept_cle": "Rechute normale : partie intégrante du processus d'exposition.",
+        "exemple": "Thomas panique dans un métro bloqué mais utilise ses techniques (chapitre 3) et reprend son plan sans tout recommencer.",
+        "limite": "Ne traite pas les stratégies pour pérenniser les progrès (abordé en chapitre 5).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
+      },
+      {
+        "numero": "5",
+        "titre_section": "Intégrer les techniques de crise dans votre plan : comment ne pas dépendre d'un seul outil",
+        "objectif": "Vous combinerez les outils du chapitre 3 avec vos paliers d'exposition pour une approche globale et résiliente.",
+        "concept_cle": "Combinaison outils/paliers : approche intégrée pour une exposition sécurisée.",
+        "exemple": "Thomas utilise la respiration diaphragmatique avant d'entrer dans un ascenseur et l'ancrage sensoriel pendant le trajet.",
+        "limite": "Ne traite pas le rôle de l'entourage (abordé en chapitre 5).",
+        "mots_cible": "348-522",
+        "nombre_mots_section": 435
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": 2175
   },
   {
     "numero": "5",
-    "titre": "Affronter les situations redoutées pas à pas",
+    "titre": "Pérenniser ses progrès et prévenir les rechutes",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi affronter vos peurs est-il indispensable (et comment le faire sans risque) ?",
-        "objectif": "Vous comprendrez les principes de l'exposition progressive et pourquoi elle est la méthode la plus efficace pour surmonter l'anxiété au volant, sans forcer les étapes.",
-        "concept_cle": "Habituation par exposition graduée aux stimuli anxiogènes",
-        "exemple": "Claire apprend que son cerveau a besoin de \"réapprendre\" que les bretelles ne sont pas dangereuses, par des expositions courtes et contrôlées.",
-        "limite": "Ne détaille pas les techniques pour gérer les crises pendant l'exposition (chapitre 6).",
-        "mots_cible": "450-650"
+        "titre_section": "Pourquoi vos progrès peuvent s'estomper (et comment les ancrer dans la durée)",
+        "objectif": "Vous comprendrez les mécanismes de l'extinction de la peur et les stratégies pour maintenir vos acquis.",
+        "concept_cle": "Extinction de la peur : processus fragile nécessitant un entretien.",
+        "exemple": "Thomas réalise qu'il doit continuer à prendre l'ascenseur régulièrement, même s'il ne panique plus.",
+        "limite": "Ne propose pas de fréquence d'entretien (abordé en section 2).",
+        "mots_cible": "347-521",
+        "nombre_mots_section": 434
       },
       {
         "numero": "2",
-        "titre_section": "Construire votre hiérarchie des peurs : quelles situations vous angoissent le plus ?",
-        "objectif": "Vous établirez une liste personnalisée de situations anxiogènes (ex : rond-points, autoroutes, conduite de nuit), classées de la moins à la plus stressante.",
-        "concept_cle": "Échelle subjective d'anxiété pour prioriser les étapes",
-        "exemple": "Claire identifie que les bretelles d'autoroute (niveau 9/10) sont plus anxiogènes que les routes de campagne (niveau 4/10).",
-        "limite": "Ne propose pas de plan d'action concret (traité en section 3).",
-        "mots_cible": "400-600"
+        "titre_section": "La fréquence idéale pour vos exercices : comment éviter l'abandon prématuré",
+        "objectif": "Vous déterminerez un rythme d'exposition réaliste pour consolider vos progrès sans surcharge.",
+        "concept_cle": "Fréquence d'exposition : équilibre entre régularité et surmenage.",
+        "exemple": "Thomas planifie une exposition par semaine, même courte, pour éviter de perdre ses acquis.",
+        "limite": "Ne traite pas les ajustements en cas de rechute (abordé en section 3).",
+        "mots_cible": "347-521",
+        "nombre_mots_section": 434
       },
       {
         "numero": "3",
-        "titre_section": "Planifier vos sessions d'exposition : comment progresser sans vous décourager",
-        "objectif": "Vous concevrez un plan d'exposition hebdomadaire, avec des objectifs réalistes et des critères pour passer à l'étape suivante.",
-        "concept_cle": "Découpage des défis en micro-étapes gérables",
-        "exemple": "Claire planifie sa première semaine : 3 trajets de 10 minutes sur des routes peu fréquentées, avant d'aborder les bretelles.",
-        "limite": "Ne traite pas les ajustements en cas de crise pendant une session (chapitre 6).",
-        "mots_cible": "500-700"
+        "titre_section": "Ajuster vos paliers : quand et comment monter en difficulté sans risque",
+        "objectif": "Vous saurez évaluer vos progrès pour faire évoluer vos paliers de manière sécurisée.",
+        "concept_cle": "Ajustement des paliers : progression adaptative.",
+        "exemple": "Thomas passe d'un ascenseur vide à un ascenseur avec une personne, puis deux, en fonction de son niveau d'anxiété.",
+        "limite": "Ne traite pas les signes indiquant un besoin de suivi professionnel (abordé en section 5).",
+        "mots_cible": "347-521",
+        "nombre_mots_section": 434
       },
       {
         "numero": "4",
-        "titre_section": "Erreurs à éviter : pourquoi forcer les étapes peut aggraver votre peur",
-        "objectif": "Vous identifierez les pièges courants (ex : sauter des étapes, ignorer les signaux de stress) et leurs conséquences sur votre progression.",
-        "concept_cle": "Surenchère anxieuse par exposition non graduée",
-        "exemple": "Un lecteur tente de prendre l'autoroute dès sa première session et déclenche une crise de panique, ce qui renforce sa peur.",
-        "limite": "Ne propose pas de solutions pour les rechutes (traité au chapitre 8).",
-        "mots_cible": "400-600"
-      }
-    ],
-    "total_mots_chapitre": "1750-2550"
-  },
-  {
-    "numero": "6",
-    "titre": "Gérer les crises en temps réel",
-    "sections": [
-      {
-        "numero": "1",
-        "titre_section": "Reconnaître les signes avant-coureurs : comment anticiper une crise de panique",
-        "objectif": "Vous identifierez les signaux précoces d'une crise (étourdissements, vision tunnel, sensation de déréalisation) pour agir avant qu'elle ne s'aggrave.",
-        "concept_cle": "Détection précoce des symptômes pour une intervention rapide",
-        "exemple": "Claire remarque que ses mains deviennent moites et que sa vision se rétrécit avant une crise sur une bretelle.",
-        "limite": "Ne traite pas les techniques de prévention avant la conduite (chapitre 3).",
-        "mots_cible": "400-600"
+        "titre_section": "Impliquer votre entourage : comment communiquer vos besoins sans surprotection",
+        "objectif": "Vous apprendrez à expliquer votre claustrophobie à vos proches et à solliciter leur soutien de manière constructive.",
+        "concept_cle": "Communication bienveillante : exprimer ses besoins sans dépendre des autres.",
+        "exemple": "Thomas demande à son collègue de l'accompagner dans l'ascenseur sans lui tenir la main, pour éviter la surprotection.",
+        "limite": "Ne traite pas les cas où l'entourage est en opposition (À définir avec l'auteur).",
+        "mots_cible": "347-521",
+        "nombre_mots_section": 434
       },
       {
-        "numero": "2",
-        "titre_section": "Arrêt sécurisé : quand et comment vous garer sans aggraver la situation",
-        "objectif": "Vous saurez évaluer quand il est nécessaire de vous arrêter (et comment le faire en toute sécurité) pour désamorcer une crise.",
-        "concept_cle": "Priorisation de la sécurité physique sur la poursuite du trajet",
-        "exemple": "Claire apprend à repérer les zones de stationnement sécurisées sur autoroute et à signaler son arrêt avec les warnings.",
-        "limite": "Ne traite pas les techniques pour reprendre la conduite après l'arrêt (section 4).",
-        "mots_cible": "450-650"
-      },
-      {
-        "numero": "3",
-        "titre_section": "Techniques d'urgence : comment réduire l'intensité d'une crise en 2 minutes",
-        "objectif": "Vous appliquerez un protocole en 3 étapes (respiration, ancrage, recentrage) pour réduire rapidement les symptômes physiques et mentaux d'une crise.",
-        "concept_cle": "Interruption de la boucle physiologique de la panique",
-        "exemple": "Claire utilise la respiration 4-7-8 et l'ancrage 5-4-3-2-1 pour calmer une crise sur une bretelle, en moins de 2 minutes.",
-        "limite": "Ne remplace pas les stratégies de prévention (chapitre 3) ni les protocoles pour les crises prolongées (section 4).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "4",
-        "titre_section": "Reprendre le volant ou rentrer : comment décider après une crise",
-        "objectif": "Vous évaluerez si vous pouvez poursuivre votre trajet en toute sécurité ou si vous devez reporter, en fonction de critères objectifs.",
-        "concept_cle": "Évaluation post-crise pour éviter les rechutes",
-        "exemple": "Après une crise, Claire vérifie si sa respiration est redevenue normale et si ses pensées sont moins catastrophistes avant de repartir.",
-        "limite": "Ne traite pas les stratégies pour éviter les rechutes à long terme (chapitre 8).",
-        "mots_cible": "400-600"
-      }
-    ],
-    "total_mots_chapitre": "1750-2550"
-  },
-  {
-    "numero": "7",
-    "titre": "Renforcer la confiance par la pratique",
-    "sections": [
-      {
-        "numero": "1",
-        "titre_section": "Pourquoi la régularité est-elle plus importante que la durée de vos trajets ?",
-        "objectif": "Vous comprendrez pourquoi des sessions courtes mais fréquentes renforcent davantage la confiance que des trajets longs et espacés.",
-        "concept_cle": "Renforcement progressif par répétition des succès",
-        "exemple": "Claire conduit 15 minutes par jour sur des routes familières, plutôt qu'une heure une fois par semaine, ce qui réduit son anxiété plus rapidement.",
-        "limite": "Ne traite pas les techniques pour gérer les crises pendant les trajets (chapitre 6).",
-        "mots_cible": "400-600"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Journal de bord : comment suivre vos progrès et rester motivé",
-        "objectif": "Vous utiliserez un modèle de journal pour noter vos trajets, votre niveau d'anxiété, et les techniques qui ont fonctionné, afin d'objectiver vos progrès.",
-        "concept_cle": "Auto-observation pour renforcer la perception des améliorations",
-        "exemple": "Claire remplit son journal après chaque trajet, ce qui lui permet de constater que son anxiété sur les bretelles est passée de 9/10 à 5/10 en un mois.",
-        "limite": "Ne propose pas de méthodes pour ajuster son plan d'exposition (traité au chapitre 8).",
-        "mots_cible": "450-650"
-      },
-      {
-        "numero": "3",
-        "titre_section": "Défis progressifs : comment sortir de votre zone de confort sans risque",
-        "objectif": "Vous concevrez une liste de défis adaptés à votre progression (ex : conduire sous la pluie, emprunter un nouvel itinéraire) pour élargir vos compétences en douceur.",
-        "concept_cle": "Extension graduelle des situations maîtrisées",
-        "exemple": "Claire ajoute un défi par semaine : d'abord conduire de nuit dans son quartier, puis sur une route départementale.",
-        "limite": "Ne traite pas les ajustements en cas de rechute (chapitre 8).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "4",
-        "titre_section": "Éviter la dépendance : comment conduire seul sans accompagnateur",
-        "objectif": "Vous identifierez les stratégies pour réduire progressivement votre besoin d'un accompagnateur, en utilisant des techniques d'auto-rassurance.",
-        "concept_cle": "Autonomisation par désensibilisation à la solitude au volant",
-        "exemple": "Claire commence par conduire seule sur des trajets courts, en utilisant la respiration diaphragmatique pour se rassurer.",
-        "limite": "Ne traite pas les cas où un accompagnement professionnel est nécessaire (hors périmètre).",
-        "mots_cible": "400-600"
-      }
-    ],
-    "total_mots_chapitre": "1750-2550"
-  },
-  {
-    "numero": "8",
-    "titre": "Maintenir ses progrès sur le long terme",
-    "sections": [
-      {
-        "numero": "1",
-        "titre_section": "Pourquoi les rechutes font-elles partie du processus (et comment les anticiper) ?",
-        "objectif": "Vous comprendrez que les rechutes sont normales et comment les utiliser comme opportunités pour renforcer vos acquis.",
-        "concept_cle": "Fluctuation naturelle de l'anxiété malgré les progrès",
-        "exemple": "Claire ressent une rechute après un mois sans conduire, mais utilise son journal pour identifier les déclencheurs et ajuster son plan.",
-        "limite": "Ne propose pas de solutions pour les rechutes sévères (à orienter vers un professionnel).",
-        "mots_cible": "450-650"
-      },
-      {
-        "numero": "2",
-        "titre_section": "Reprendre après une pause : comment éviter de repartir de zéro",
-        "objectif": "Vous appliquerez un protocole en 3 étapes pour reprendre la conduite après une interruption (vacances, maladie), sans perdre vos acquis.",
-        "concept_cle": "Réactivation progressive des compétences par micro-étapes",
-        "exemple": "Après deux semaines sans conduire, Claire recommence par des trajets de 10 minutes sur des routes familières avant de reprendre son plan d'exposition.",
-        "limite": "Ne traite pas les cas de pauses prolongées liées à un traumatisme (hors périmètre).",
-        "mots_cible": "400-600"
-      },
-      {
-        "numero": "3",
-        "titre_section": "Gérer les situations nouvelles : comment adapter votre plan d'exposition",
-        "objectif": "Vous ajusterez votre hiérarchie des peurs et votre plan d'exposition pour intégrer de nouvelles situations (ex : conduite à l'étranger, véhicule différent).",
-        "concept_cle": "Flexibilité du plan d'exposition pour les défis imprévus",
-        "exemple": "Claire doit conduire une voiture de location plus grande que la sienne : elle adapte son plan en commençant par des trajets courts sur des parkings.",
-        "limite": "Ne propose pas de solutions pour les situations nécessitant un apprentissage technique (ex : conduite sur neige).",
-        "mots_cible": "500-700"
-      },
-      {
-        "numero": "4",
+        "numero": "5",
         "titre_section": "Quand consulter un professionnel : les signes qui ne trompent pas",
-        "objectif": "Vous identifierez les signaux indiquant que votre anxiété nécessite un soutien spécialisé (ex : crises fréquentes, extension à d'autres situations).",
-        "concept_cle": "Limites de l'auto-gestion et critères de recours à un thérapeute",
-        "exemple": "Un lecteur dont l'anxiété s'étend aux transports en commun et aux lieux publics pourrait avoir besoin d'une évaluation par un psychologue.",
-        "limite": "Ne propose pas de protocoles thérapeutiques (hors périmètre).",
-        "mots_cible": "400-600"
+        "objectif": "Vous identifierez les situations où un suivi psychologique ou médical est nécessaire pour éviter l'impasse.",
+        "concept_cle": "Seuils d'alerte : indicateurs d'un besoin de soutien externe.",
+        "exemple": "Thomas consulte un thérapeute quand ses crises l'empêchent de prendre l'avion pour son travail.",
+        "limite": "Ne propose pas de recommandations de professionnels ou de thérapies (hors périmètre).",
+        "mots_cible": "347-521",
+        "nombre_mots_section": 434
       }
     ],
-    "total_mots_chapitre": "1750-2550"
+    "total_mots_chapitre": 2170
   }
 ]

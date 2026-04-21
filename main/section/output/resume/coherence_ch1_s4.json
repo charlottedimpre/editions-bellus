@@ -3,23 +3,22 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "L'origine de la peur au volant peut être un trouble anxieux généralisé ou un traumatisme, nécessitant une aide professionnelle.",
+  "these_centrale": "La claustrophobie résulte d'une activation inappropriée du système de survie face à des espaces confinés interprétés comme menaçants.",
   "arguments_cles": [
-    "La peur du volant peut masquer une anxiété généralisée plus large.",
-    "Un événement traumatisant antérieur peut être la cause profonde de la phobie.",
-    "Les techniques spécifiques à la conduite ne suffisent pas pour des troubles plus complexes.",
-    "Une évaluation professionnelle est nécessaire pour les anxiétés intenses ou post-traumatiques."
+    "Le cerveau active des réactions physiologiques d'urgence face à des menaces perçues.",
+    "Les espaces confinés déclenchent le mécanisme de lutte ou de fuite de manière inappropriée.",
+    "La sensation de suffocation est due à l'hyperventilation, pas au manque d'air.",
+    "Trois éléments clés (enfermement, impossibilité de fuir, perte de contrôle) déclenchent la peur."
   ],
   "concepts_introduits": [
-    "Trouble anxieux généralisé : inquiétude excessive affectant plusieurs domaines de vie.",
-    "Trouble de stress post-traumatique : réaction à un événement traumatisant marquant.",
-    "EMDR : thérapie pour traiter les traumatismes psychologiques profonds."
+    "Système nerveux : Ensemble contrôlant les réactions corporelles.",
+    "Lutte ou fuite : Mécanisme de survie face au danger.",
+    "Hyperventilation : Respiration rapide et profonde altérant l'équilibre corporel."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les techniques proposées sont spécifiques à la peur de conduire.",
-    "Consulter un professionnel est une démarche responsable."
+    "Les manifestations physiques sont une réponse automatique, pas une faiblesse."
   ],
-  "ton_angle": "Informatif et préventif, soulignant l'importance de la distinction des origines de la peur.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'origine de la peur au volant peut être un trouble anxieux généralisé ou un traumatisme, nécessitant une aide professionnelle.</these_centrale>\n<arguments_cles>\n- La peur du volant peut masquer une anxiété généralisée plus large.\n- Un événement traumatisant antérieur peut être la cause profonde de la phobie.\n- Les techniques spécifiques à la conduite ne suffisent pas pour des troubles plus complexes.\n- Une évaluation professionnelle est nécessaire pour les anxiétés intenses ou post-traumatiques.\n</arguments_cles>\n<concepts_introduits>\n- Trouble anxieux généralisé : inquiétude excessive affectant plusieurs domaines de vie.\n- Trouble de stress post-traumatique : réaction à un événement traumatisant marquant.\n- EMDR : thérapie pour traiter les traumatismes psychologiques profonds.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les techniques proposées sont spécifiques à la peur de conduire.\n- Consulter un professionnel est une démarche responsable.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant l'importance de la distinction des origines de la peur.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et dédramatisant, centré sur le fonctionnement physiologique du cerveau.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La claustrophobie résulte d'une activation inappropriée du système de survie face à des espaces confinés interprétés comme menaçants.</these_centrale>\n<arguments_cles>\n- Le cerveau active des réactions physiologiques d'urgence face à des menaces perçues.\n- Les espaces confinés déclenchent le mécanisme de lutte ou de fuite de manière inappropriée.\n- La sensation de suffocation est due à l'hyperventilation, pas au manque d'air.\n- Trois éléments clés (enfermement, impossibilité de fuir, perte de contrôle) déclenchent la peur.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux : Ensemble contrôlant les réactions corporelles.\n- Lutte ou fuite : Mécanisme de survie face au danger.\n- Hyperventilation : Respiration rapide et profonde altérant l'équilibre corporel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les manifestations physiques sont une réponse automatique, pas une faiblesse.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et dédramatisant, centré sur le fonctionnement physiologique du cerveau.</ton_angle>\n</fiche>"
 }

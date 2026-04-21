@@ -3,22 +3,27 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "L'exposition progressive, basée sur l'habituation, est la méthode clé pour surmonter l'anxiété au volant en réapprenant au cerveau à gérer le risque.",
+  "these_centrale": "Les progrès dans la gestion de la claustrophobie nécessitent un entretien continu pour ancrer les acquis et consolider de nouvelles associations positives.",
   "arguments_cles": [
-    "L'évitement renforce l'anxiété en confirmant à tort la perception du danger.",
-    "L'habituation expose le système nerveux à des stimuli anxiogènes de manière contrôlée.",
-    "Chaque succès d'exposition renforce la confiance et crée une nouvelle image mentale.",
-    "L'absence d'évitement permet la mise à jour des schémas de réponse du cerveau."
+    "L'oubli des acquis survient si exercices et habitudes ne sont pas entretenus.",
+    "La réactivation des associations anciennes de danger se produit sans exposition régulière.",
+    "Maintenir une pratique régulière solidifie les nouvelles réponses et les rend automatiques.",
+    "Les petites actions régulières renforcent le sentiment de sécurité et les connexions neuronales.",
+    "La vigilance active est nécessaire pour renforcer activement de nouvelles associations positives."
   ],
   "concepts_introduits": [
-    "Exposition progressive : méthode d'habituation contrôlée et graduelle aux stimuli anxiogènes.",
-    "Habituation : processus de désensibilisation par exposition répétée et gérable.",
-    "Anxiété au volant : peur excessive et irrationnelle associée à la conduite.",
-    "Évitement : comportement de fuite qui maintient et renforce la peur.",
-    "Ancrage : technique pour se centrer sur le moment présent et gérer le stress."
+    "Extinction de la peur : Remplacement des associations peur-stimulus par des associations neutres.",
+    "Associations positives : Liens cerveau-environnement qui renforcent le sentiment de sécurité.",
+    "Connexions neuronales : Établissement de nouveaux chemins dans le cerveau par la pratique.",
+    "Ancrage sensoriel : Technique de recentrage sur les sens pour calmer l'anxiété."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Didactique et rassurant, promouvant une approche graduée et basée sur la psychologie.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'exposition progressive, basée sur l'habituation, est la méthode clé pour surmonter l'anxiété au volant en réapprenant au cerveau à gérer le risque.</these_centrale>\n<arguments_cles>\n- L'évitement renforce l'anxiété en confirmant à tort la perception du danger.\n- L'habituation expose le système nerveux à des stimuli anxiogènes de manière contrôlée.\n- Chaque succès d'exposition renforce la confiance et crée une nouvelle image mentale.\n- L'absence d'évitement permet la mise à jour des schémas de réponse du cerveau.\n</arguments_cles>\n<concepts_introduits>\n- Exposition progressive : méthode d'habituation contrôlée et graduelle aux stimuli anxiogènes.\n- Habituation : processus de désensibilisation par exposition répétée et gérable.\n- Anxiété au volant : peur excessive et irrationnelle associée à la conduite.\n- Évitement : comportement de fuite qui maintient et renforce la peur.\n- Ancrage : technique pour se centrer sur le moment présent et gérer le stress.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau est équipé pour apprendre et s'adapter.\n- Le soulagement temporaire de l'évitement.\n- Le cercle vicieux de l'anxiété.\n- Le danger n'est pas réel ou est gérable.\n- Chaque étape doit être réalisable.\n- L'idée n'est pas de se mettre en danger.\n- L'absence d'évitement permet la mise à jour des schémas de réponse.\n- Les techniques de relaxation et d'ancrage fournissent des moyens concrets.\n- L'utilisation deviendra de plus en plus automatique et efficace.\n</a_ne_not_repeter>\n<ton_angle>Didactique et rassurant, promouvant une approche graduée et basée sur la psychologie.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Les progrès ne sont pas définitifs par nature.",
+    "Le cerveau peut réactiver les associations anciennes si l'exposition cesse.",
+    "L'apprentissage d'une nouvelle langue sans pratique s'efface.",
+    "Les anciennes associations étaient perçues comme des mécanismes de survie."
+  ],
+  "ton_angle": "Informatif et pragmatique, soulignant l'importance de la discipline personnelle pour le maintien des progrès.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les progrès dans la gestion de la claustrophobie nécessitent un entretien continu pour ancrer les acquis et consolider de nouvelles associations positives.</these_centrale>\n<arguments_cles>\n- L'oubli des acquis survient si exercices et habitudes ne sont pas entretenus.\n- La réactivation des associations anciennes de danger se produit sans exposition régulière.\n- Maintenir une pratique régulière solidifie les nouvelles réponses et les rend automatiques.\n- Les petites actions régulières renforcent le sentiment de sécurité et les connexions neuronales.\n- La vigilance active est nécessaire pour renforcer activement de nouvelles associations positives.\n</arguments_cles>\n<concepts_introduits>\n- Extinction de la peur : Remplacement des associations peur-stimulus par des associations neutres.\n- Associations positives : Liens cerveau-environnement qui renforcent le sentiment de sécurité.\n- Connexions neuronales : Établissement de nouveaux chemins dans le cerveau par la pratique.\n- Ancrage sensoriel : Technique de recentrage sur les sens pour calmer l'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les progrès ne sont pas définitifs par nature.\n- Le cerveau peut réactiver les associations anciennes si l'exposition cesse.\n- L'apprentissage d'une nouvelle langue sans pratique s'efface.\n- Les anciennes associations étaient perçues comme des mécanismes de survie.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, soulignant l'importance de la discipline personnelle pour le maintien des progrès.</ton_angle>\n</fiche>"
 }

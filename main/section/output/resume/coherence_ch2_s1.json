@@ -3,24 +3,23 @@
   "section": 1,
   "chapitre_numero": "2",
   "section_numero": "1",
-  "these_centrale": "La peur de la conduite automobile provient d'un système d'alerte hyperactif qui doit être rééduqué.",
+  "these_centrale": "Reconnaître les signaux subtils de l'anxiété est essentiel pour prévenir la panique avant son intensification.",
   "arguments_cles": [
-    "Le système nerveux autonome déclenche une réaction disproportionnée face à des dangers perçus.",
-    "Les manifestations physiques sont une réponse normale aux hormones de stress libérées.",
-    "Les pensées négatives amplifient le cercle vicieux de l'anxiété et des réactions corporelles.",
-    "Une perception erronée du danger dérègle le système d'alerte, nécessitant une rééducation."
+    "Les signaux corporels discrets précèdent souvent le pic de détresse.",
+    "L'auto-observation attentive révèle les déclencheurs cachés de la peur.",
+    "Les détails sensoriels, comme les odeurs, peuvent activer des réactions émotionnelles.",
+    "Intervenir tôt désamorce la réaction anxieuse avant qu'elle ne devienne incontrôlable."
   ],
   "concepts_introduits": [
-    "Système nerveux autonome : régule les fonctions corporelles involontaires.",
-    "Système sympathique : prépare le corps à l'action (lutte ou fuite).",
-    "Système parasympathique : favorise le repos et la récupération.",
-    "Réaction de lutte ou de fuite : réponse instinctive au danger."
+    "Anxiété : détresse émotionnelle subtile précédant la panique.",
+    "Déclencheurs cachés : stimuli anodins provoquant une réaction de peur.",
+    "Auto-observation : observer ses propres réactions physiologiques et cognitives."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les sensations physiques sont une conséquence de la libération d'hormones de stress.",
-    "Le cercle vicieux de l'anxiété se nourrit des pensées négatives et des réactions corporelles."
+    "Les manifestations de l'anxiété sont ignorées ou minimisées.",
+    "La panique immédiate et évidente."
   ],
-  "ton_angle": "Explicatif et rassurant, l'auteur dédramatise les réactions physiologiques.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La peur de la conduite automobile provient d'un système d'alerte hyperactif qui doit être rééduqué.</these_centrale>\n<arguments_cles>\n- Le système nerveux autonome déclenche une réaction disproportionnée face à des dangers perçus.\n- Les manifestations physiques sont une réponse normale aux hormones de stress libérées.\n- Les pensées négatives amplifient le cercle vicieux de l'anxiété et des réactions corporelles.\n- Une perception erronée du danger dérègle le système d'alerte, nécessitant une rééducation.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux autonome : régule les fonctions corporelles involontaires.\n- Système sympathique : prépare le corps à l'action (lutte ou fuite).\n- Système parasympathique : favorise le repos et la récupération.\n- Réaction de lutte ou de fuite : réponse instinctive au danger.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les sensations physiques sont une conséquence de la libération d'hormones de stress.\n- Le cercle vicieux de l'anxiété se nourrit des pensées négatives et des réactions corporelles.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, l'auteur dédramatise les réactions physiologiques.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et didactique, axé sur la prévention et la maîtrise de soi.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Reconnaître les signaux subtils de l'anxiété est essentiel pour prévenir la panique avant son intensification.</these_centrale>\n<arguments_cles>\n- Les signaux corporels discrets précèdent souvent le pic de détresse.\n- L'auto-observation attentive révèle les déclencheurs cachés de la peur.\n- Les détails sensoriels, comme les odeurs, peuvent activer des réactions émotionnelles.\n- Intervenir tôt désamorce la réaction anxieuse avant qu'elle ne devienne incontrôlable.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : détresse émotionnelle subtile précédant la panique.\n- Déclencheurs cachés : stimuli anodins provoquant une réaction de peur.\n- Auto-observation : observer ses propres réactions physiologiques et cognitives.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les manifestations de l'anxiété sont ignorées ou minimisées.\n- La panique immédiate et évidente.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et didactique, axé sur la prévention et la maîtrise de soi.</ton_angle>\n</fiche>"
 }

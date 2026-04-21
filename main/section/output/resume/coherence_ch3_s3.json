@@ -3,19 +3,20 @@
   "section": 3,
   "chapitre_numero": "3",
   "section_numero": "3",
-  "these_centrale": "La visualisation positive crée des associations mentales apaisantes pour réduire l'anxiété liée à la conduite automobile.",
+  "these_centrale": "L'ancrage sensoriel utilise les cinq sens pour ramener l'esprit à la réalité immédiate et contrer l'anxiété.",
   "arguments_cles": [
-    "Représenter mentalement des scénarios de conduite réussis calme l'anxiété.",
-    "Générer des images agréables remplace les scénarios catastrophistes.",
-    "Se concentrer sur les sensations sensorielles renforce la confiance.",
-    "Émotion de confiance et sérénité sont cultivées activement."
+    "Focaliser sur les perceptions concrètes détourne des scénarios anxieux imaginés.",
+    "Mobiliser les cinq sens crée une connexion tangible avec le moment présent.",
+    "Cette technique offre une alternative pratique quand la respiration est difficile.",
+    "Elle permet de désamorcer la réaction immédiate pour penser plus clairement."
   ],
   "concepts_introduits": [
-    "Visualisation positive : se représenter mentalement des scénarios agréables.",
-    "Associations mentales : liens créés entre stimulus et émotion."
+    "Ancrage sensoriel : stratégie utilisant les sens pour se connecter au présent."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Instructif et encourageant, adoptant une approche psychologique pratique.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La visualisation positive crée des associations mentales apaisantes pour réduire l'anxiété liée à la conduite automobile.</these_centrale>\n<arguments_cles>\n- Représenter mentalement des scénarios de conduite réussis calme l'anxiété.\n- Générer des images agréables remplace les scénarios catastrophistes.\n- Se concentrer sur les sensations sensorielles renforce la confiance.\n- Émotion de confiance et sérénité sont cultivées activement.\n</arguments_cles>\n<concepts_introduits>\n- Visualisation positive : se représenter mentalement des scénarios agréables.\n- Associations mentales : liens créés entre stimulus et émotion.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les pensées négatives doivent être reconnues sans jugement.\n</a_ne_not_repeter>\n<ton_angle>Instructif et encourageant, adoptant une approche psychologique pratique.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Ne pas traiter directement les pensées irrationnelles elles-mêmes."
+  ],
+  "ton_angle": "Explicatif et pragmatique, l'angle est celui d'une stratégie d'intervention immédiate.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'ancrage sensoriel utilise les cinq sens pour ramener l'esprit à la réalité immédiate et contrer l'anxiété.</these_centrale>\n<arguments_cles>\n- Focaliser sur les perceptions concrètes détourne des scénarios anxieux imaginés.\n- Mobiliser les cinq sens crée une connexion tangible avec le moment présent.\n- Cette technique offre une alternative pratique quand la respiration est difficile.\n- Elle permet de désamorcer la réaction immédiate pour penser plus clairement.\n</arguments_cles>\n<concepts_introduits>\n- Ancrage sensoriel : stratégie utilisant les sens pour se connecter au présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas traiter directement les pensées irrationnelles elles-mêmes.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et pragmatique, l'angle est celui d'une stratégie d'intervention immédiate.</ton_angle>\n</fiche>"
 }

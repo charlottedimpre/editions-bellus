@@ -3,24 +3,22 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "L'évitement et la surcompensation des situations de conduite renforcent l'anxiété en créant un cercle vicieux.",
+  "these_centrale": "Les réactions physiologiques à la claustrophobie sont des mécanismes de survie déclenchés par une perception inappropriée du danger.",
   "arguments_cles": [
-    "Éviter renforce la perception du danger et maintient la peur.",
-    "Le soulagement temporaire par l'évitement renforce le conditionnement négatif.",
-    "L'hypervigilance maintient le système nerveux en tension constante.",
-    "Identifier ces comportements est la première étape vers le changement.",
-    "Cesser l'évitement ou la surcompensation crée de l'espace pour des expériences rassurantes."
+    "Le système nerveux interprète les espaces confinés comme une menace imminente.",
+    "Le corps augmente l'apport d'oxygène et de sang pour préparer à l'action.",
+    "Ces réactions sont des mécanismes de survie hérités, activés sans danger réel.",
+    "La compréhension de ces réactions est essentielle pour désamorcer la réponse automatique."
   ],
   "concepts_introduits": [
-    "Renforcement négatif : supprimer le désagréable par une action.",
-    "Hypervigilance : vigilance excessive anticipant un danger inexistant."
+    "Claustrophobie : Peur irrationnelle des espaces clos ou confinés.",
+    "Système nerveux : Réseau de communication gérant les réactions corporelles."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le cercle vicieux de la peur",
-    "La peur de conduire",
-    "Des comportements volontaires"
+    "Ces réactions ne sont pas un manque de volonté ou une mauvaise pensée.",
+    "Les symptômes sont les manifestations concrètes d'une réponse d'urgence."
   ],
-  "ton_angle": "Explicatif et incitatif, l'angle est celui de la prise de conscience pour agir.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'évitement et la surcompensation des situations de conduite renforcent l'anxiété en créant un cercle vicieux.</these_centrale>\n<arguments_cles>\n- Éviter renforce la perception du danger et maintient la peur.\n- Le soulagement temporaire par l'évitement renforce le conditionnement négatif.\n- L'hypervigilance maintient le système nerveux en tension constante.\n- Identifier ces comportements est la première étape vers le changement.\n- Cesser l'évitement ou la surcompensation crée de l'espace pour des expériences rassurantes.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : supprimer le désagréable par une action.\n- Hypervigilance : vigilance excessive anticipant un danger inexistant.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cercle vicieux de la peur\n- La peur de conduire\n- Des comportements volontaires\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et incitatif, l'angle est celui de la prise de conscience pour agir.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et déculpabilisant, soulignant la base neurologique des peurs.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les réactions physiologiques à la claustrophobie sont des mécanismes de survie déclenchés par une perception inappropriée du danger.</these_centrale>\n<arguments_cles>\n- Le système nerveux interprète les espaces confinés comme une menace imminente.\n- Le corps augmente l'apport d'oxygène et de sang pour préparer à l'action.\n- Ces réactions sont des mécanismes de survie hérités, activés sans danger réel.\n- La compréhension de ces réactions est essentielle pour désamorcer la réponse automatique.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : Peur irrationnelle des espaces clos ou confinés.\n- Système nerveux : Réseau de communication gérant les réactions corporelles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ces réactions ne sont pas un manque de volonté ou une mauvaise pensée.\n- Les symptômes sont les manifestations concrètes d'une réponse d'urgence.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et déculpabilisant, soulignant la base neurologique des peurs.</ton_angle>\n</fiche>"
 }

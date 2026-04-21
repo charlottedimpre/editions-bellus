@@ -3,22 +3,23 @@
   "section": 2,
   "chapitre_numero": "4",
   "section_numero": "2",
-  "these_centrale": "La respiration diaphragmatique est une première étape pour réguler votre réponse physiologique au stress au volant.",
+  "these_centrale": "L'échelle d'anxiété personnelle quantifie le ressenti pour mesurer les progrès et ajuster l'exposition aux situations redoutées.",
   "arguments_cles": [
-    "Elle active le système nerveux parasympathique pour induire la détente.",
-    "Elle transforme une respiration haute et rapide en une respiration basse et ample.",
-    "La pratique régulière la rend un réflexe puissant et instinctif.",
-    "L'adaptation en conduite se fait par anticipation aux moments de légère tension."
+    "Évaluer objectivement le niveau de peur de 0 (absence) à 10 (pic).",
+    "Associer des niveaux d'anxiété spécifiques à des situations précises.",
+    "Débuter l'exposition par des situations d'anxiété faible (1 à 3).",
+    "Maintenir l'anxiété à un niveau gérable pendant l'exposition."
   ],
   "concepts_introduits": [
-    "Respiration diaphragmatique : Gonfler le ventre à l'inspiration, expirer lentement.",
-    "Système nerveux parasympathique : Régulateur de la détente corporelle."
+    "Échelle d'anxiété : Outil de quantification du ressenti de peur.",
+    "Exposition : Confrontation progressive aux situations redoutées."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Il est crucial de comprendre que cette pratique requiert de la constance pour devenir un réflexe.",
-    "Ne vous découragez pas si les premiers essais vous semblent artificiels ; la régularité transformera cette technique en un outil puissant et instinctif."
+    "Construire une échelle d'anxiété personnelle.",
+    "Zéro représente l'absence totale de peur.",
+    "Dix symbolise le pic de votre anxiété."
   ],
-  "ton_angle": "Instructif et pragmatique, il détaille une technique de gestion du stress.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La respiration diaphragmatique est une première étape pour réguler votre réponse physiologique au stress au volant.</these_centrale>\n<arguments_cles>\n- Elle active le système nerveux parasympathique pour induire la détente.\n- Elle transforme une respiration haute et rapide en une respiration basse et ample.\n- La pratique régulière la rend un réflexe puissant et instinctif.\n- L'adaptation en conduite se fait par anticipation aux moments de légère tension.\n</arguments_cles>\n<concepts_introduits>\n- Respiration diaphragmatique : Gonfler le ventre à l'inspiration, expirer lentement.\n- Système nerveux parasympathique : Régulateur de la détente corporelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Il est crucial de comprendre que cette pratique requiert de la constance pour devenir un réflexe.\n- Ne vous découragez pas si les premiers essais vous semblent artificiels ; la régularité transformera cette technique en un outil puissant et instinctif.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, il détaille une technique de gestion du stress.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pratique, l'angle est celui de l'auto-évaluation et de la progression graduelle.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'échelle d'anxiété personnelle quantifie le ressenti pour mesurer les progrès et ajuster l'exposition aux situations redoutées.</these_centrale>\n<arguments_cles>\n- Évaluer objectivement le niveau de peur de 0 (absence) à 10 (pic).\n- Associer des niveaux d'anxiété spécifiques à des situations précises.\n- Débuter l'exposition par des situations d'anxiété faible (1 à 3).\n- Maintenir l'anxiété à un niveau gérable pendant l'exposition.\n</arguments_cles>\n<concepts_introduits>\n- Échelle d'anxiété : Outil de quantification du ressenti de peur.\n- Exposition : Confrontation progressive aux situations redoutées.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Construire une échelle d'anxiété personnelle.\n- Zéro représente l'absence totale de peur.\n- Dix symbolise le pic de votre anxiété.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de l'auto-évaluation et de la progression graduelle.</ton_angle>\n</fiche>"
 }

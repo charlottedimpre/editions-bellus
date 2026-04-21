@@ -3,24 +3,23 @@
   "section": 1,
   "chapitre_numero": "3",
   "section_numero": "1",
-  "these_centrale": "Relâcher les tensions musculaires préexistantes est essentiel pour aborder la conduite avec sérénité et réduire la réactivité au stress.",
+  "these_centrale": "La réaction corporelle face à la claustrophobie est un système d'alarme activé par une perception erronée du danger.",
   "arguments_cles": [
-    "Le corps anticipe le stress par des tensions physiques avant même de conduire.",
-    "Identifier et relâcher ces tensions préexistantes améliore la gestion émotionnelle au volant.",
-    "La relaxation musculaire prépare le corps à mieux gérer les stresseurs potentiels de la conduite.",
-    "Un corps non tendu offre une plus grande marge pour gérer les émotions lors du trajet."
+    "Le cerveau interprète mal les espaces clos comme une menace, déclenchant la réponse lutte-fuite-immobilisation.",
+    "Les symptômes physiques tels que l'accélération cardiaque sont des réactions physiologiques de survie, non un danger réel.",
+    "Reconnaître ces manifestations comme un système d'alarme inapproprié est la première étape pour réduire leur intensité.",
+    "Le système nerveux autonome active ces réactions sans distinguer un prédateur d'une situation perçue comme piégeante."
   ],
   "concepts_introduits": [
-    "Mémoire corporelle : réactivation des sensations passées par des signaux similaires.",
-    "Relaxation musculaire progressive : alternance contraction/détente pour rééduquer le corps.",
-    "Lutte ou fuite : réaction physiologique involontaire face à un danger perçu."
+    "Lutte-fuite-immobilisation : Réponse physiologique préparant à l'action face au danger.",
+    "Système nerveux autonome : Contrôle les réactions corporelles involontaires."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Incipit sur le corps manifestant des signes de tension.",
-    "Gêne physique diffuse.",
-    "Préparation involontaire de l'organisme."
+    "Le corps réagit comme s'il était en danger.",
+    "La claustrophobie déclenche une alarme.",
+    "C'est une réaction physiologique."
   ],
-  "ton_angle": "Ton informatif et préventif, axé sur la préparation corporelle à la gestion du stress.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Relâcher les tensions musculaires préexistantes est essentiel pour aborder la conduite avec sérénité et réduire la réactivité au stress.</these_centrale>\n<arguments_cles>\n- Le corps anticipe le stress par des tensions physiques avant même de conduire.\n- Identifier et relâcher ces tensions préexistantes améliore la gestion émotionnelle au volant.\n- La relaxation musculaire prépare le corps à mieux gérer les stresseurs potentiels de la conduite.\n- Un corps non tendu offre une plus grande marge pour gérer les émotions lors du trajet.\n</arguments_cles>\n<concepts_introduits>\n- Mémoire corporelle : réactivation des sensations passées par des signaux similaires.\n- Relaxation musculaire progressive : alternance contraction/détente pour rééduquer le corps.\n- Lutte ou fuite : réaction physiologique involontaire face à un danger perçu.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Incipit sur le corps manifestant des signes de tension.\n- Gêne physique diffuse.\n- Préparation involontaire de l'organisme.\n</a_ne_pas_repeter>\n<ton_angle>Ton informatif et préventif, axé sur la préparation corporelle à la gestion du stress.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et rassurant, il dédramatise les réactions corporelles.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La réaction corporelle face à la claustrophobie est un système d'alarme activé par une perception erronée du danger.</these_centrale>\n<arguments_cles>\n- Le cerveau interprète mal les espaces clos comme une menace, déclenchant la réponse lutte-fuite-immobilisation.\n- Les symptômes physiques tels que l'accélération cardiaque sont des réactions physiologiques de survie, non un danger réel.\n- Reconnaître ces manifestations comme un système d'alarme inapproprié est la première étape pour réduire leur intensité.\n- Le système nerveux autonome active ces réactions sans distinguer un prédateur d'une situation perçue comme piégeante.\n</arguments_cles>\n<concepts_introduits>\n- Lutte-fuite-immobilisation : Réponse physiologique préparant à l'action face au danger.\n- Système nerveux autonome : Contrôle les réactions corporelles involontaires.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le corps réagit comme s'il était en danger.\n- La claustrophobie déclenche une alarme.\n- C'est une réaction physiologique.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, il dédramatise les réactions corporelles.</ton_angle>\n</fiche>"
 }

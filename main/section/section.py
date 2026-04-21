@@ -1,4 +1,3 @@
-import json
 import os
 import re
 import time
@@ -142,48 +141,182 @@ def _count_total_sections(chapitres: list[dict]) -> int:
     return sum(len(chap.get("sections", [])) for chap in chapitres if isinstance(chap, dict))
 
 
-def _load_previous_coherence_context(chapitre: int, section: int, structure_data: list[dict]) -> str:
-    if chapitre == 1 and section == 1:
-        msg = "il n'y a pas de section précédente, c'est la première section du premier chapitre, aucune vérification de cohérence nécessaire."
-        print(msg)
-        return msg
+def _parse_mots_cible_range(raw_value) -> tuple[int, int] | None:
+    if raw_value is None:
+        return None
 
-    coherence_path = None
-    coherence_name = ""
+    if isinstance(raw_value, int):
+        value = max(1, raw_value)
+        return value, value
 
-    if section == 1:
-        nb_sec = None
-        for chap in structure_data:
-            if not isinstance(chap, dict):
+    if isinstance(raw_value, dict):
+        min_raw = raw_value.get("min")
+        max_raw = raw_value.get("max")
+        if min_raw is None or max_raw is None:
+            return None
+        min_words = max(1, int(min_raw))
+        max_words = max(min_words, int(max_raw))
+        return min_words, max_words
+
+    if isinstance(raw_value, str):
+        text = raw_value.strip()
+        if not text:
+            return None
+
+        # Supporte les variantes de tirets Unicode courantes.
+        text = text.replace("–", "-").replace("—", "-").replace("−", "-")
+
+        exact_int = re.fullmatch(r"\d+", text)
+        if exact_int:
+            value = max(1, int(text))
+            return value, value
+
+        range_match = re.fullmatch(r"(\d+)\s*-\s*(\d+)", text)
+        if range_match:
+            min_words = max(1, int(range_match.group(1)))
+            max_words = max(min_words, int(range_match.group(2)))
+            return min_words, max_words
+
+    return None
+
+
+def _resolve_section_word_bounds(
+    chapitre: int,
+    section: int,
+    structure_data: list[dict],
+) -> tuple[int, int, int, str]:
+    for chap in structure_data:
+        if not isinstance(chap, dict):
+            continue
+        try:
+            chapitre_num = _to_int(chap.get("numero", 0), "chapitre.numero")
+        except ValueError:
+            continue
+        if chapitre_num != chapitre:
+            continue
+
+        sections = chap.get("sections", [])
+        if not isinstance(sections, list):
+            break
+
+        for sec in sections:
+            if not isinstance(sec, dict):
                 continue
             try:
-                chap_num = _to_int(chap.get("numero"), "chapitre.numero")
+                section_num = _to_int(sec.get("numero", 0), "section.numero")
             except ValueError:
                 continue
-            if chap_num == chapitre - 1:
-                nb_sec = len(chap["sections"])
-                break
-        if nb_sec is None:
-            msg = "Section précédente introuvable dans la structure."
-            print(msg)
-            return msg
+            if section_num != section:
+                continue
 
-        coherence_name = f"coherence_ch{chapitre - 1}_s{nb_sec}.json"
-        coherence_path = RESUME_DIR / coherence_name
-    else:
-        coherence_name = f"coherence_ch{chapitre}_s{section - 1}.json"
-        coherence_path = RESUME_DIR / coherence_name
+            section_range = _parse_mots_cible_range(sec.get("mots_cible"))
 
-    if coherence_path.exists():
-        coherence = _read_text(coherence_path, "coherence precedente")
-        print(f"Vérification de cohérence avec la section précédente : {coherence_name}...")
-        return coherence
+            target_words = None
+            raw_target = sec.get("nombre_mots_section")
+            if raw_target not in (None, ""):
+                try:
+                    target_words = max(1, int(raw_target))
+                except (TypeError, ValueError):
+                    target_words = None
 
-    print(
-        f"[WARN] Fichier de cohérence manquant: {coherence_name}. "
-        "Continuation sans contexte de cohérence précédent."
-    )
-    return "Contexte de cohérence précédent indisponible (resume manquant)."
+            if section_range:
+                min_words, max_words = section_range
+                if target_words is None:
+                    target_words = round((min_words + max_words) / 2)
+                else:
+                    target_words = max(min_words, min(max_words, target_words))
+                return min_words, max_words, target_words, "structure_chapitre"
+
+            if target_words is not None:
+                half_range = max(1, SECTION_WORD_RANGE // 2)
+                min_words = max(1, target_words - half_range)
+                max_words = max(min_words, target_words + half_range)
+                return min_words, max_words, target_words, "structure_chapitre"
+
+            break
+
+    total_sections = _count_total_sections(structure_data)
+    min_words, max_words, target_words = _compute_section_word_bounds(total_sections)
+    return min_words, max_words, target_words, "fallback_global"
+
+
+def _iter_previous_sections(
+    chapitre: int,
+    section: int,
+    structure_data: list[dict],
+) -> list[tuple[int, int]]:
+    previous_sections: list[tuple[int, int]] = []
+    for chap in structure_data:
+        if not isinstance(chap, dict):
+            continue
+        try:
+            chap_num = _to_int(chap.get("numero", 0), "chapitre.numero")
+        except ValueError:
+            continue
+
+        sections = chap.get("sections", [])
+        if not isinstance(sections, list):
+            continue
+
+        for sec in sections:
+            if not isinstance(sec, dict):
+                continue
+            try:
+                sec_num = _to_int(sec.get("numero", 0), "section.numero")
+            except ValueError:
+                continue
+
+            if chap_num < chapitre or (chap_num == chapitre and sec_num < section):
+                previous_sections.append((chap_num, sec_num))
+
+    return sorted(previous_sections)
+
+
+def _load_previous_coherence_context(
+    chapitre: int,
+    section: int,
+    structure_data: list[dict],
+) -> str:
+    previous_sections = _iter_previous_sections(chapitre, section, structure_data)
+    if not previous_sections:
+        return "Aucun contexte precedent (premiere section du livre)."
+
+    for prev_chapitre, prev_section in reversed(previous_sections):
+        resume_path = RESUME_DIR / f"coherence_ch{prev_chapitre}_s{prev_section}.json"
+        if not resume_path.exists():
+            continue
+
+        try:
+            resume_data = _read_json(resume_path, "resume coherence precedent")
+        except Exception:
+            continue
+        if not isinstance(resume_data, dict):
+            continue
+
+        these = str(resume_data.get("these_centrale") or "").strip()
+        arguments = resume_data.get("arguments_cles") or []
+        concepts = resume_data.get("concepts_introduits") or []
+        no_repeat = resume_data.get("a_ne_pas_repeter") or []
+
+        argument_line = "; ".join(str(a).strip() for a in arguments if str(a).strip())
+        concept_line = "; ".join(str(c).strip() for c in concepts if str(c).strip())
+        no_repeat_line = "; ".join(str(n).strip() for n in no_repeat if str(n).strip())
+
+        parts = [f"Reference precedente: chapitre {prev_chapitre}, section {prev_section}."]
+        if these:
+            parts.append(f"These centrale: {these}")
+        if argument_line:
+            parts.append(f"Arguments cles: {argument_line}")
+        if concept_line:
+            parts.append(f"Concepts introduits: {concept_line}")
+        if no_repeat_line:
+            parts.append(f"A ne pas repeter: {no_repeat_line}")
+
+        if len(parts) == 1:
+            return parts[0]
+        return "\n".join(parts)
+
+    return "Aucun resume precedent exploitable trouve."
 
 
 def gen_section(chapitre, section, verification_section: bool = True):
@@ -203,11 +336,20 @@ def gen_section(chapitre, section, verification_section: bool = True):
     prompt = _read_text(prompt_path, "prompt section")
 
     structure_data = load_structure()
-    total_sections = _count_total_sections(structure_data)
-    min_words, max_words, target_words = _compute_section_word_bounds(total_sections)
-    print(
-        f"Contraintes dynamiques section: cible {target_words} mots, plage {min_words}-{max_words} (total sections: {total_sections}, max livre: {MAX_BOOK_WORDS})."
+    min_words, max_words, target_words, bounds_source = _resolve_section_word_bounds(
+        chapitre, section, structure_data
     )
+    if bounds_source == "structure_chapitre":
+        print(
+            f"Contraintes section depuis structure_chapitre: cible {target_words} mots, plage {min_words}-{max_words}."
+        )
+    else:
+        total_sections = _count_total_sections(structure_data)
+        print(
+            f"[WARN] Contraintes absentes dans structure_chapitre pour ch{chapitre}s{section}. "
+            f"Fallback global: cible {target_words} mots, plage {min_words}-{max_words} "
+            f"(total sections: {total_sections}, max livre: {MAX_BOOK_WORDS})."
+        )
 
     coherence = _load_previous_coherence_context(chapitre, section, structure_data)
 

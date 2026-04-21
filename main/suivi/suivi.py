@@ -208,7 +208,7 @@ def suivi(fonction, resume_from=None, auto_confirm=False, mode=None, **_):
         plan_detail()
 
     elif fonction == "structure_chapitre":
-        structure_chapitre()
+        structure_chapitre(mode)
 
     elif fonction == "gen_intro":
         gen_intro()

@@ -3,23 +3,20 @@
   "section": 3,
   "chapitre_numero": "5",
   "section_numero": "3",
-  "these_centrale": "Un plan d'exposition hebdomadaire, séquencé en micro-étapes réalistes, est essentiel pour surmonter l'anxiété.",
+  "these_centrale": "Ajuster progressivement la difficulté des exercices renforce la confiance et consolide les nouveaux schémas neuronaux face à la peur.",
   "arguments_cles": [
-    "Des objectifs hebdomadaires réalistes permettent une progression mesurée et évite le sentiment de submersion.",
-    "Fixer des objectifs spécifiques et mesurables pour chaque session favorise la réussite et la motivation.",
-    "L'adaptation des objectifs au rythme personnel et l'anticipation des difficultés renforcent le contrôle.",
-    "Le découpage des défis en étapes accessibles permet une familiarisation progressive et renforce la conviction."
+    "L'évaluation objective du niveau d'aisance permet d'ajuster la difficulté des exercices.",
+    "La consolidation des connexions neuronales remplace les schémas de peur par des associations sereines.",
+    "L'augmentation graduelle de la difficulté maintient un léger défi stimulant l'apprentissage.",
+    "Revenir à un palier précédent est une sagesse face à une anxiété trop intense."
   ],
   "concepts_introduits": [
-    "Micro-étapes : Petites actions gérables pour atteindre un objectif plus large.",
-    "Critères d'évaluation : Indicateurs objectifs pour mesurer l'atteinte d'un objectif.",
-    "Routine de confrontation : Pratique régulière pour désapprendre les réactions d'évitement."
+    "Connexions neuronales : liaisons entre neurones facilitant la communication.",
+    "Schémas de peur : associations mentales négatives déclenchant l'anxiété.",
+    "Auto-efficacité : confiance en sa capacité à réussir une tâche."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "L'importance réside dans la régularité plutôt que la recherche d'exploits.",
-    "Chaque petite victoire renforce la conviction que vous pouvez surmonter votre peur."
-  ],
-  "ton_angle": "Ton pragmatique et encourageant, axé sur la décomposition des défis pour vaincre l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Un plan d'exposition hebdomadaire, séquencé en micro-étapes réalistes, est essentiel pour surmonter l'anxiété.</these_centrale>\n<arguments_cles>\n- Des objectifs hebdomadaires réalistes permettent une progression mesurée et évite le sentiment de submersion.\n- Fixer des objectifs spécifiques et mesurables pour chaque session favorise la réussite et la motivation.\n- L'adaptation des objectifs au rythme personnel et l'anticipation des difficultés renforcent le contrôle.\n- Le découpage des défis en étapes accessibles permet une familiarisation progressive et renforce la conviction.\n</arguments_cles>\n<concepts_introduits>\n- Micro-étapes : Petites actions gérables pour atteindre un objectif plus large.\n- Critères d'évaluation : Indicateurs objectifs pour mesurer l'atteinte d'un objectif.\n- Routine de confrontation : Pratique régulière pour désapprendre les réactions d'évitement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'importance réside dans la régularité plutôt que la recherche d'exploits.\n- Chaque petite victoire renforce la conviction que vous pouvez surmonter votre peur.\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur la décomposition des défis pour vaincre l'anxiété.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pédagogique et encourageant, l'angle est centré sur la gestion de la peur par l'adaptation.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Ajuster progressivement la difficulté des exercices renforce la confiance et consolide les nouveaux schémas neuronaux face à la peur.</these_centrale>\n<arguments_cles>\n- L'évaluation objective du niveau d'aisance permet d'ajuster la difficulté des exercices.\n- La consolidation des connexions neuronales remplace les schémas de peur par des associations sereines.\n- L'augmentation graduelle de la difficulté maintient un léger défi stimulant l'apprentissage.\n- Revenir à un palier précédent est une sagesse face à une anxiété trop intense.\n</arguments_cles>\n<concepts_introduits>\n- Connexions neuronales : liaisons entre neurones facilitant la communication.\n- Schémas de peur : associations mentales négatives déclenchant l'anxiété.\n- Auto-efficacité : confiance en sa capacité à réussir une tâche.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- \"ne pas aller trop vite\"\n- \"saut dans le vide\"\n</a_ne_not_repeter>\n<ton_angle>Pédagogique et encourageant, l'angle est centré sur la gestion de la peur par l'adaptation.</ton_angle>\n</fiche>"
 }

@@ -3,24 +3,22 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "Identifier les manifestations physiques précoces est essentiel pour comprendre l'anxiété liée à la conduite.",
+  "these_centrale": "La réaction de survie ancestrale face à un danger perçu, même imaginaire, se manifeste par des signaux physiologiques automatiques.",
   "arguments_cles": [
-    "Les sensations physiques comme la tachycardie alertent d'une anxiété profonde.",
-    "Les symptômes physiques précèdent souvent la pensée consciente du danger.",
-    "Le corps réagit en anticipation, déclenchant des mécanismes de défense.",
-    "Ces manifestations indiquent une sensibilité accrue à la conduite."
+    "Le corps réagit à la menace réelle ou imaginée par une réponse de survie.",
+    "Les manifestations incluent accélération cardiaque, tension musculaire et respiration rapide.",
+    "Ces réactions sont une alarme involontaire du cerveau face à un espace restreint.",
+    "Distinguer une véritable menace d'une alarme mal calibrée est essentiel."
   ],
   "concepts_introduits": [
-    "Anxiété : Réaction émotionnelle à une menace perçue.",
-    "Tachycardie : Accélération du rythme cardiaque.",
-    "Système nerveux autonome : Contrôle les fonctions involontaires du corps."
+    "Réponse de survie : Mécanisme physiologique face à un danger perçu.",
+    "Réaction d'alarme : Déclenchement involontaire du système nerveux face à une menace."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le cœur bat la chamade",
-    "Les mains deviennent moites",
-    "Une boule se forme dans l'estomac"
+    "Le corps se prépare à une éventualité qui ne se réalisera pas.",
+    "Ces sensations physiques intenses sont la preuve que votre organisme fonctionne."
   ],
-  "ton_angle": "Informatif et dédramatisant, abordant les réactions physiques de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Identifier les manifestations physiques précoces est essentiel pour comprendre l'anxiété liée à la conduite.</these_centrale>\n<arguments_cles>\n- Les sensations physiques comme la tachycardie alertent d'une anxiété profonde.\n- Les symptômes physiques précèdent souvent la pensée consciente du danger.\n- Le corps réagit en anticipation, déclenchant des mécanismes de défense.\n- Ces manifestations indiquent une sensibilité accrue à la conduite.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : Réaction émotionnelle à une menace perçue.\n- Tachycardie : Accélération du rythme cardiaque.\n- Système nerveux autonome : Contrôle les fonctions involontaires du corps.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cœur bat la chamade\n- Les mains deviennent moites\n- Une boule se forme dans l'estomac\n</a_ne_pas_repeter>\n<ton_angle>Informatif et dédramatisant, abordant les réactions physiques de l'anxiété.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et rassurant, visant à normaliser les réactions physiologiques de survie.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La réaction de survie ancestrale face à un danger perçu, même imaginaire, se manifeste par des signaux physiologiques automatiques.</these_centrale>\n<arguments_cles>\n- Le corps réagit à la menace réelle ou imaginée par une réponse de survie.\n- Les manifestations incluent accélération cardiaque, tension musculaire et respiration rapide.\n- Ces réactions sont une alarme involontaire du cerveau face à un espace restreint.\n- Distinguer une véritable menace d'une alarme mal calibrée est essentiel.\n</arguments_cles>\n<concepts_introduits>\n- Réponse de survie : Mécanisme physiologique face à un danger perçu.\n- Réaction d'alarme : Déclenchement involontaire du système nerveux face à une menace.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le corps se prépare à une éventualité qui ne se réalisera pas.\n- Ces sensations physiques intenses sont la preuve que votre organisme fonctionne.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, visant à normaliser les réactions physiologiques de survie.</ton_angle>\n</fiche>"
 }

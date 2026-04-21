@@ -3,24 +3,21 @@
   "section": 4,
   "chapitre_numero": "3",
   "section_numero": "4",
-  "these_centrale": "Un rituel personnalisé avant la conduite crée une routine rassurante pour réduire l'anxiété et améliorer le calme.",
+  "these_centrale": "La restructuration cognitive permet de modifier les pensées négatives pendant une crise pour retrouver une perspective plus réaliste.",
   "arguments_cles": [
-    "Un rituel personnalisé sert d'ancre comportementale face à l'incertitude.",
-    "La répétition d'actions simples prépare le système nerveux au calme.",
-    "L'automatisation de la routine réduit la probabilité de pensées anxieuses.",
-    "L'intégration d'éléments apaisants renforce la préparation mentale."
+    "Identifier et modifier les pensées irrationnelles nourissant la peur.",
+    "Remplacer les scénarios catastrophiques par des réflexions constructives.",
+    "Reprendre le contrôle sur les réactions émotionnelles face à l'anxiété.",
+    "Pratiquer des questionnements pour évaluer la réalité des peurs."
   ],
   "concepts_introduits": [
-    "Ancre comportementale : Signal réduisant l'incertitude par une action.",
-    "Respiration diaphragmatique : Respiration profonde pour favoriser la détente.",
-    "Visualisation positive : Imaginer un résultat favorable pour apaiser."
+    "Restructuration cognitive : modifier l'interprétation des pensées anxieuses."
   ],
-  "liens_chapitres": "Chapitres suivants",
+  "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le fait que la routine aide à l'automatisation.",
-    "L'idée que la routine est une stratégie préventive.",
-    "La description d'éléments possibles pour le rituel."
+    "Penser que l'on peut supprimer la pensée d'un coup.",
+    "Utiliser les mêmes exemples de pensées négatives."
   ],
-  "ton_angle": "Instructif et pratique, l'angle est celui de la gestion de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Un rituel personnalisé avant la conduite crée une routine rassurante pour réduire l'anxiété et améliorer le calme.</these_centrale>\n<arguments_cles>\n- Un rituel personnalisé sert d'ancre comportementale face à l'incertitude.\n- La répétition d'actions simples prépare le système nerveux au calme.\n- L'automatisation de la routine réduit la probabilité de pensées anxieuses.\n- L'intégration d'éléments apaisants renforce la préparation mentale.\n</arguments_cles>\n<concepts_introduits>\n- Ancre comportementale : Signal réduisant l'incertitude par une action.\n- Respiration diaphragmatique : Respiration profonde pour favoriser la détente.\n- Visualisation positive : Imaginer un résultat favorable pour apaiser.\n</concepts_introduits>\n<liens_chapitres>Chapitres suivants</liens_chapitres>\n<a_ne_pas_repeter>\n- Le fait que la routine aide à l'automatisation.\n- L'idée que la routine est une stratégie préventive.\n- La description d'éléments possibles pour le rituel.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de la gestion de l'anxiété.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et directif, l'angle est celui de la maîtrise émotionnelle.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La restructuration cognitive permet de modifier les pensées négatives pendant une crise pour retrouver une perspective plus réaliste.</these_centrale>\n<arguments_cles>\n- Identifier et modifier les pensées irrationnelles nourissant la peur.\n- Remplacer les scénarios catastrophiques par des réflexions constructives.\n- Reprendre le contrôle sur les réactions émotionnelles face à l'anxiété.\n- Pratiquer des questionnements pour évaluer la réalité des peurs.\n</arguments_cles>\n<concepts_introduits>\n- Restructuration cognitive : modifier l'interprétation des pensées anxieuses.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Penser que l'on peut supprimer la pensée d'un coup.\n- Utiliser les mêmes exemples de pensées négatives.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et directif, l'angle est celui de la maîtrise émotionnelle.</ton_angle>\n</fiche>"
 }

@@ -3,23 +3,27 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "Les techniques d'ancrage sensoriel ramènent au présent pour reprendre le contrôle face à l'anxiété.",
+  "these_centrale": "Élargir la zone de confort nécessite une exposition graduelle et contrôlée aux situations anxiogènes.",
   "arguments_cles": [
-    "L'ancrage sensoriel détourne l'attention des pensées négatives vers le concret immédiat.",
-    "La méthode 5-4-3-2-1 concentre le cerveau sur des informations factuelles extérieures.",
-    "Cette technique occupe l'esprit avec des éléments neutres, freinant les pensées catastrophistes.",
-    "Elle permet un retour au calme discret et utilisable en toute situation."
+    "Fixer des paliers réalistes pour gérer l'anxiété entre 3 et 5.",
+    "Confronter des situations légèrement inconfortables de manière répétée.",
+    "Identifier des petites variations des situations déclencheuses pour progresser.",
+    "Éviter de brûler les étapes en revenant si nécessaire à un palier inférieur.",
+    "Chaque palier réussi renforce la conviction que la situation n'est pas dangereuse."
   ],
   "concepts_introduits": [
-    "Ancrage sensoriel : techniques pour se reconnecter au moment présent via les sens.",
-    "Méthode 5-4-3-2-1 : identification d'éléments visuels, tactiles, sonores, olfactifs, gustatifs."
+    "Zone de confort : Espace psychologique où l'on se sent en sécurité.",
+    "Paliers : Étapes progressives dans l'exposition à une situation.",
+    "Anxiété : Sentiment d'inquiétude ou de malaise face à une menace.",
+    "Respiration : Technique de gestion du stress par le souffle.",
+    "Ancrage : Technique pour se reconnecter au présent."
   ],
-  "liens_chapitres": "Chapitre suivant",
+  "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Outils pour retrouver son calme",
-    "Retrouver votre calme",
-    "Outils de gestion ponctuelle"
+    "L'anxiété doit être maintenue à un seuil gérable, entre 3 et 5.",
+    "Il ne faut pas provoquer une panique intense.",
+    "L'exposition est un marathon, pas un sprint."
   ],
-  "ton_angle": "Instructif et pratique, l'angle est celui de l'aide à la gestion immédiate de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les techniques d'ancrage sensoriel ramènent au présent pour reprendre le contrôle face à l'anxiété.</these_centrale>\n<arguments_cles>\n- L'ancrage sensoriel détourne l'attention des pensées négatives vers le concret immédiat.\n- La méthode 5-4-3-2-1 concentre le cerveau sur des informations factuelles extérieures.\n- Cette technique occupe l'esprit avec des éléments neutres, freinant les pensées catastrophistes.\n- Elle permet un retour au calme discret et utilisable en toute situation.\n</arguments_cles>\n<concepts_introduits>\n- Ancrage sensoriel : techniques pour se reconnecter au moment présent via les sens.\n- Méthode 5-4-3-2-1 : identification d'éléments visuels, tactiles, sonores, olfactifs, gustatifs.\n</concepts_introduits>\n<liens_chapitres>Chapitre suivant</liens_chapitres>\n<a_ne_pas_repeter>\n- Outils pour retrouver son calme\n- Retrouver votre calme\n- Outils de gestion ponctuelle\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de l'aide à la gestion immédiate de l'anxiété.</ton_angle>\n</fiche>"
+  "ton_angle": "Didactique et encourageant, axé sur la progression par étapes.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Élargir la zone de confort nécessite une exposition graduelle et contrôlée aux situations anxiogènes.</these_centrale>\n<arguments_cles>\n- Fixer des paliers réalistes pour gérer l'anxiété entre 3 et 5.\n- Confronter des situations légèrement inconfortables de manière répétée.\n- Identifier des petites variations des situations déclencheuses pour progresser.\n- Éviter de brûler les étapes en revenant si nécessaire à un palier inférieur.\n- Chaque palier réussi renforce la conviction que la situation n'est pas dangereuse.\n</arguments_cles>\n<concepts_introduits>\n- Zone de confort : Espace psychologique où l'on se sent en sécurité.\n- Paliers : Étapes progressives dans l'exposition à une situation.\n- Anxiété : Sentiment d'inquiétude ou de malaise face à une menace.\n- Respiration : Technique de gestion du stress par le souffle.\n- Ancrage : Technique pour se reconnecter au présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'anxiété doit être maintenue à un seuil gérable, entre 3 et 5.\n- Il ne faut pas provoquer une panique intense.\n- L'exposition est un marathon, pas un sprint.\n</a_ne_pas_repeter>\n<ton_angle>Didactique et encourageant, axé sur la progression par étapes.</ton_angle>\n</fiche>"
 }

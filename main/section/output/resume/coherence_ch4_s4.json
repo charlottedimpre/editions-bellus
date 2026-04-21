@@ -3,24 +3,21 @@
   "section": 4,
   "chapitre_numero": "4",
   "section_numero": "4",
-  "these_centrale": "Un protocole de deux minutes combine respiration et ancrage sensoriel pour désamorcer rapidement l'anxiété.",
+  "these_centrale": "Les rechutes d'anxiété sont une étape normale du rétablissement, nécessitant une approche compréhensive et ajustée pour continuer à progresser.",
   "arguments_cles": [
-    "La respiration diaphragmatique ralentit le rythme cardiaque et oxygène le cerveau.",
-    "L'ancrage sensoriel focalise l'attention sur le présent, éloignant les pensées anxieuses.",
-    "La combinaison des deux techniques renforce l'apaisement et le contrôle.",
-    "Ce mécanisme agit sur le corps et l'esprit pour contrer l'anxiété."
+    "Les rechutes sont des signaux d'apprentissage, pas des échecs définitifs.",
+    "Utiliser des techniques familières aide à réguler le système nerveux.",
+    "Revenir à des paliers d'exposition précédents renforce la confiance.",
+    "Rappeler les bénéfices acquis maintient la motivation et l'engagement."
   ],
   "concepts_introduits": [
-    "Respiration diaphragmatique : inspiration profonde, expiration lente par le diaphragme.",
-    "Ancrage sensoriel : perception de l'environnement et du corps par les sens.",
-    "Boucle de rétroaction de la panique : cercle vicieux de pensées et sensations anxieuses."
+    "Rechute : régression temporaire dans un état ou un comportement précédent.",
+    "Schémas appris : réponses comportementales ou émotionnelles conditionnées.",
+    "Palier d'exposition : étape spécifique d'une thérapie graduée.",
+    "Techniques d'ancrage : méthodes pour revenir au moment présent."
   ],
-  "liens_chapitres": "- chapitre traitant de la gestion des crises en temps réel",
-  "a_ne_pas_repeter": [
-    "En moins de deux minutes",
-    "Méthode 5-4-3-2-1",
-    "Vous intégrez"
-  ],
-  "ton_angle": "Pragmatique et rassurant, il offre une solution concrète à la gestion de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Un protocole de deux minutes combine respiration et ancrage sensoriel pour désamorcer rapidement l'anxiété.</these_centrale>\n<arguments_cles>\n- La respiration diaphragmatique ralentit le rythme cardiaque et oxygène le cerveau.\n- L'ancrage sensoriel focalise l'attention sur le présent, éloignant les pensées anxieuses.\n- La combinaison des deux techniques renforce l'apaisement et le contrôle.\n- Ce mécanisme agit sur le corps et l'esprit pour contrer l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Respiration diaphragmatique : inspiration profonde, expiration lente par le diaphragme.\n- Ancrage sensoriel : perception de l'environnement et du corps par les sens.\n- Boucle de rétroaction de la panique : cercle vicieux de pensées et sensations anxieuses.\n</concepts_introduits>\n<liens_chapitres>\n- chapitre traitant de la gestion des crises en temps réel\n</liens_chapitres>\n<a_ne_pas_repeter>\n- En moins de deux minutes\n- Méthode 5-4-3-2-1\n- Vous intégrez\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et rassurant, il offre une solution concrète à la gestion de l'anxiété.</ton_angle>\n</fiche>"
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Bienveillant et pragmatique, centré sur la résilience et l'ajustement.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les rechutes d'anxiété sont une étape normale du rétablissement, nécessitant une approche compréhensive et ajustée pour continuer à progresser.</these_centrale>\n<arguments_cles>\n- Les rechutes sont des signaux d'apprentissage, pas des échecs définitifs.\n- Utiliser des techniques familières aide à réguler le système nerveux.\n- Revenir à des paliers d'exposition précédents renforce la confiance.\n- Rappeler les bénéfices acquis maintient la motivation et l'engagement.\n</arguments_cles>\n<concepts_introduits>\n- Rechute : régression temporaire dans un état ou un comportement précédent.\n- Schémas appris : réponses comportementales ou émotionnelles conditionnées.\n- Palier d'exposition : étape spécifique d'une thérapie graduée.\n- Techniques d'ancrage : méthodes pour revenir au moment présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La rechute est une preuve d'échec.\n- Tout est perdu après une rechute.\n- Recommencer tout à zéro après une rechute.\n</a_ne_not_repeat>\n<ton_angle>Bienveillant et pragmatique, centré sur la résilience et l'ajustement.</ton_angle>\n</fiche>"
 }
