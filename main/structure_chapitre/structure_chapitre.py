@@ -7,7 +7,7 @@ from ollama import ChatResponse, chat
 
 from parser import parse_structure_chapitres, read_json_file as _read_json, read_text_file as _read_text
 
-MODEL = "mistral-large-3:675b-cloud"
+MODEL = os.getenv("ED_BELLUS_OLLAMA_MODEL_COURT") or "mistral-large-3:675b-cloud"
 LLM_MAX_RETRIES = 4
 LLM_BASE_DELAY_SECONDS = 2
 

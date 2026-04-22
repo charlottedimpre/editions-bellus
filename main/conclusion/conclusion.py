@@ -1,14 +1,19 @@
 import json
+import os
 import sys
 from pathlib import Path
 
-from ollama import ChatResponse, chat
+from dotenv import load_dotenv
+from llm_fallback import chat_with_major_error_fallback
+
 
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
+
+load_dotenv(ROOT_DIR / ".env")
 
 from parser import (
     parse_conclusion,
@@ -18,6 +23,9 @@ from parser import (
     to_int_or_raise as _to_int,
 )
 
+LLM_MAX_RETRIES = 3
+LLM_RETRY_DELAY_SECONDS = 2
+MODEL = os.getenv("ED_BELLUS_OLLAMA_MODEL_LONG")
 def _read_text(path: Path, label: str) -> str:
     return read_text_file(path, label, require_non_empty=False)
 
@@ -101,22 +109,20 @@ def gen_conclu():
     prompt_path = BASE_DIR / "input" / "c_prompt.txt"
     prompt = _read_text(prompt_path, "prompt conclusion")
 
-    response: ChatResponse = chat(model="kimi-k2.5:cloud", messages=[
-        {
-            "role": "user",
-            "content": (
-                f"{prompt}\n\n"
-                f"FICHE DE CADRAGE :{fiche_raw}\n\n"
-                f"PLAN DETAILE :{plan_raw}\n\n"
-                f"RESUMES MASHUP (JSON) :{json.dumps(resume_mashup, ensure_ascii=False)}"
-            ),
-        },
-    ])
+    response_content = chat_with_major_error_fallback(
+        ollama_model=MODEL,
+        message_content=(
+            f"{prompt}\n\n"
+            f"FICHE DE CADRAGE :{fiche_raw}\n\n"
+            f"PLAN DETAILE :{plan_raw}\n\n"
+            f"RESUMES MASHUP (JSON) :{json.dumps(resume_mashup, ensure_ascii=False)}"
+        ),
+        context_label="conclusion",
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
+    )
 
-    if response.message is None or not response.message.content:
-        raise ValueError("Reponse vide du modele pour la conclusion.")
-
-    parsed = parse_conclusion(response.message.content)
+    parsed = parse_conclusion(response_content)
     if not isinstance(parsed, dict):
         raise ValueError("La conclusion parsee doit etre un objet JSON.")
 

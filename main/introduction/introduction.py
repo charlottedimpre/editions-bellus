@@ -1,8 +1,8 @@
 import json
+import os
 from pathlib import Path
 
-from ollama import ChatResponse, chat
-
+from llm_fallback import chat_with_major_error_fallback
 from parser import parse_introduction, read_json_file as _read_json, read_text_file as _read_text
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -11,6 +11,9 @@ OUTPUT_DIR = BASE_DIR / "output"
 FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PLAN_DETAIL_PATH = BASE_DIR.parent / "plan_detaille" / "output" / "plan_detaille.json"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+LLM_MAX_RETRIES = 3
+LLM_RETRY_DELAY_SECONDS = 2
+MODEL = os.getenv("ED_BELLUS_OLLAMA_MODEL_LONG")
 
 
 def gen_intro():
@@ -23,17 +26,15 @@ def gen_intro():
     prompt_path = INPUT_DIR / "i_prompt.txt"
     prompt = _read_text(prompt_path, "prompt introduction")
 
-    response: ChatResponse = chat(model="kimi-k2.5:cloud", messages=[
-        {
-            "role": "user",
-            "content": f"{prompt}\n\nFICHE DE CADRAGE :{fiche_raw}\n\nPLAN DETAILLE :{plan_raw}",
-        },
-    ])
+    response_content = chat_with_major_error_fallback(
+        ollama_model=MODEL,
+        message_content=f"{prompt}\n\nFICHE DE CADRAGE :{fiche_raw}\n\nPLAN DETAILLE :{plan_raw}",
+        context_label="introduction",
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
+    )
 
-    if response.message is None or not response.message.content:
-        raise ValueError("Reponse vide du modele pour l'introduction.")
-
-    parsed = parse_introduction(response.message.content)
+    parsed = parse_introduction(response_content)
     if not isinstance(parsed, dict):
         raise ValueError("L'introduction parsee doit etre un objet JSON.")
 

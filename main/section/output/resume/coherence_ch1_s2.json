@@ -3,24 +3,25 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "Le corps interprète les espaces confinés comme une menace, déclenchant des réactions physiologiques involontaires.",
+  "these_centrale": "Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.",
   "arguments_cles": [
-    "L'accélération cardiaque prépare les muscles à l'action.",
-    "La respiration rapide augmente l'apport en oxygène.",
-    "La tension musculaire accroît l'alerte et la réactivité.",
-    "Ces réactions sont des réponses d'alarme automatiques du système nerveux."
+    "Répétition involontaire et constante indique une obsession.",
+    "Incohérence avec les valeurs profondes confirme une pensée intrusive.",
+    "Résistance active et lutte interne signalent une obsession.",
+    "L'objectif est de catégoriser la pensée pour mieux la gérer."
   ],
   "concepts_introduits": [
-    "Claustrophobie : Peur irrationnelle des espaces confinés.",
-    "Système nerveux : Réseau de communication du corps.",
-    "Réactions physiologiques : Changements corporels involontaires."
+    "Obsession : Pensée involontaire, répétitive et non sollicitée.",
+    "Intention : Pensée délibérée, alignée avec valeurs et désirs.",
+    "Pensée intrusive : Pensée allant à l'encontre des valeurs.",
+    "Phobie d'impulsion : Peur de réaliser une pensée effrayante."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les réactions physiologiques sont une faiblesse.",
-    "La volonté peut contrôler ces réactions immédiatement.",
-    "La peur de manquer d'air est une réalité objective."
+    "\"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"",
+    "\"indépendamment de l'intensité de votre anxiété\"",
+    "\"ce qui est le premier pas pour désamorcer son pouvoir.\""
   ],
-  "ton_angle": "Informatif, expliquant le fonctionnement biologique de la peur en milieu clos.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le corps interprète les espaces confinés comme une menace, déclenchant des réactions physiologiques involontaires.</these_centrale>\n<arguments_cles>\n- L'accélération cardiaque prépare les muscles à l'action.\n- La respiration rapide augmente l'apport en oxygène.\n- La tension musculaire accroît l'alerte et la réactivité.\n- Ces réactions sont des réponses d'alarme automatiques du système nerveux.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : Peur irrationnelle des espaces confinés.\n- Système nerveux : Réseau de communication du corps.\n- Réactions physiologiques : Changements corporels involontaires.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les réactions physiologiques sont une faiblesse.\n- La volonté peut contrôler ces réactions immédiatement.\n- La peur de manquer d'air est une réalité objective.\n</a_ne_pas_repeter>\n<ton_angle>Informatif, expliquant le fonctionnement biologique de la peur en milieu clos.</ton_angle>\n</fiche>"
+  "ton_angle": "Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.</these_centrale>\n<arguments_cles>\n- Répétition involontaire et constante indique une obsession.\n- Incohérence avec les valeurs profondes confirme une pensée intrusive.\n- Résistance active et lutte interne signalent une obsession.\n- L'objectif est de catégoriser la pensée pour mieux la gérer.\n</arguments_cles>\n<concepts_introduits>\n- Obsession : Pensée involontaire, répétitive et non sollicitée.\n- Intention : Pensée délibérée, alignée avec valeurs et désirs.\n- Pensée intrusive : Pensée allant à l'encontre des valeurs.\n- Phobie d'impulsion : Peur de réaliser une pensée effrayante.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"\n- \"indépendamment de l'intensité de votre anxiété\"\n- \"ce qui est le premier pas pour désamorcer son pouvoir.\"\n</a_ne_pas_repeter>\n<ton_angle>Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.</ton_angle>\n</fiche>"
 }

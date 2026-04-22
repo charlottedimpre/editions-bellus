@@ -3,23 +3,21 @@
   "section": 2,
   "chapitre_numero": "4",
   "section_numero": "2",
-  "these_centrale": "L'échelle d'anxiété personnelle quantifie le ressenti pour mesurer les progrès et ajuster l'exposition aux situations redoutées.",
+  "these_centrale": "Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.",
   "arguments_cles": [
-    "Évaluer objectivement le niveau de peur de 0 (absence) à 10 (pic).",
-    "Associer des niveaux d'anxiété spécifiques à des situations précises.",
-    "Débuter l'exposition par des situations d'anxiété faible (1 à 3).",
-    "Maintenir l'anxiété à un niveau gérable pendant l'exposition."
+    "La quête de certitude renforce les pensées intrusives et l'anxiété.",
+    "Observer sans jugement et sans analyse les pensées réduit leur impact.",
+    "L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.",
+    "Les pensées sont des événements mentaux transitoires, pas des reflets de soi."
   ],
   "concepts_introduits": [
-    "Échelle d'anxiété : Outil de quantification du ressenti de peur.",
-    "Exposition : Confrontation progressive aux situations redoutées."
+    "Pensées intrusives : pensées involontaires et souvent effrayantes.",
+    "Incertitude : absence de connaissance certaine sur un événement futur.",
+    "Exposition : confrontation volontaire à une situation anxiogène.",
+    "Acceptation : reconnaître et tolérer une expérience sans la combattre."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Construire une échelle d'anxiété personnelle.",
-    "Zéro représente l'absence totale de peur.",
-    "Dix symbolise le pic de votre anxiété."
-  ],
-  "ton_angle": "Instructif et pratique, l'angle est celui de l'auto-évaluation et de la progression graduelle.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'échelle d'anxiété personnelle quantifie le ressenti pour mesurer les progrès et ajuster l'exposition aux situations redoutées.</these_centrale>\n<arguments_cles>\n- Évaluer objectivement le niveau de peur de 0 (absence) à 10 (pic).\n- Associer des niveaux d'anxiété spécifiques à des situations précises.\n- Débuter l'exposition par des situations d'anxiété faible (1 à 3).\n- Maintenir l'anxiété à un niveau gérable pendant l'exposition.\n</arguments_cles>\n<concepts_introduits>\n- Échelle d'anxiété : Outil de quantification du ressenti de peur.\n- Exposition : Confrontation progressive aux situations redoutées.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Construire une échelle d'anxiété personnelle.\n- Zéro représente l'absence totale de peur.\n- Dix symbolise le pic de votre anxiété.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pratique, l'angle est celui de l'auto-évaluation et de la progression graduelle.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.</these_centrale>\n<arguments_cles>\n- La quête de certitude renforce les pensées intrusives et l'anxiété.\n- Observer sans jugement et sans analyse les pensées réduit leur impact.\n- L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.\n- Les pensées sont des événements mentaux transitoires, pas des reflets de soi.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées involontaires et souvent effrayantes.\n- Incertitude : absence de connaissance certaine sur un événement futur.\n- Exposition : confrontation volontaire à une situation anxiogène.\n- Acceptation : reconnaître et tolérer une expérience sans la combattre.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Chercher la certitude absolue est une impasse.\n- Les comportements d'évitement et de réassurance prolongent l'anxiété.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.</ton_angle>\n</fiche>"
 }

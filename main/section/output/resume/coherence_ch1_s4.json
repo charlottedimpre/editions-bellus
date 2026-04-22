@@ -3,22 +3,22 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "La claustrophobie résulte d'une activation inappropriée du système de survie face à des espaces confinés interprétés comme menaçants.",
+  "these_centrale": "La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.",
   "arguments_cles": [
-    "Le cerveau active des réactions physiologiques d'urgence face à des menaces perçues.",
-    "Les espaces confinés déclenchent le mécanisme de lutte ou de fuite de manière inappropriée.",
-    "La sensation de suffocation est due à l'hyperventilation, pas au manque d'air.",
-    "Trois éléments clés (enfermement, impossibilité de fuir, perte de contrôle) déclenchent la peur."
+    "Refouler une pensée augmente son importance perçue et l'anxiété associée.",
+    "La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.",
+    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.",
+    "Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse."
   ],
   "concepts_introduits": [
-    "Système nerveux : Ensemble contrôlant les réactions corporelles.",
-    "Lutte ou fuite : Mécanisme de survie face au danger.",
-    "Hyperventilation : Respiration rapide et profonde altérant l'équilibre corporel."
+    "Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.",
+    "Observation sans engagement : acceptation des pensées sans jugement ni réaction."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les manifestations physiques sont une réponse automatique, pas une faiblesse."
+    "L'esprit humain n'est pas conçu pour la suppression active des pensées.",
+    "La suppression active renforce involontairement le pouvoir de ce que l'on redoute."
   ],
-  "ton_angle": "Explicatif et dédramatisant, centré sur le fonctionnement physiologique du cerveau.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La claustrophobie résulte d'une activation inappropriée du système de survie face à des espaces confinés interprétés comme menaçants.</these_centrale>\n<arguments_cles>\n- Le cerveau active des réactions physiologiques d'urgence face à des menaces perçues.\n- Les espaces confinés déclenchent le mécanisme de lutte ou de fuite de manière inappropriée.\n- La sensation de suffocation est due à l'hyperventilation, pas au manque d'air.\n- Trois éléments clés (enfermement, impossibilité de fuir, perte de contrôle) déclenchent la peur.\n</arguments_cles>\n<concepts_introduits>\n- Système nerveux : Ensemble contrôlant les réactions corporelles.\n- Lutte ou fuite : Mécanisme de survie face au danger.\n- Hyperventilation : Respiration rapide et profonde altérant l'équilibre corporel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les manifestations physiques sont une réponse automatique, pas une faiblesse.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et dédramatisant, centré sur le fonctionnement physiologique du cerveau.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et incitatif, expliquant la contre-productivité de la suppression.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.</these_centrale>\n<arguments_cles>\n- Refouler une pensée augmente son importance perçue et l'anxiété associée.\n- La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n- Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.\n- Observation sans engagement : acceptation des pensées sans jugement ni réaction.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'esprit humain n'est pas conçu pour la suppression active des pensées.\n- La suppression active renforce involontairement le pouvoir de ce que l'on redoute.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et incitatif, expliquant la contre-productivité de la suppression.</ton_angle>\n</fiche>"
 }

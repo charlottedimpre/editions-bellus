@@ -3,21 +3,25 @@
   "section": 4,
   "chapitre_numero": "3",
   "section_numero": "4",
-  "these_centrale": "La restructuration cognitive permet de modifier les pensées négatives pendant une crise pour retrouver une perspective plus réaliste.",
+  "these_centrale": "Adapter les techniques de gestion de l'anxiété est essentiel pour surmonter les pièges d'une application rigide ou ritualisée.",
   "arguments_cles": [
-    "Identifier et modifier les pensées irrationnelles nourissant la peur.",
-    "Remplacer les scénarios catastrophiques par des réflexions constructives.",
-    "Reprendre le contrôle sur les réactions émotionnelles face à l'anxiété.",
-    "Pratiquer des questionnements pour évaluer la réalité des peurs."
+    "Les techniques ne sont pas des solutions miracles, leur efficacité varie individuellement.",
+    "Éviter l'utilisation des techniques comme rituels de contrôle des pensées intrusives.",
+    "Adopter une posture d'observation et d'expérimentation pour analyser l'efficacité des outils.",
+    "L'objectif est de modifier la relation aux pensées, pas de les éradiquer."
   ],
   "concepts_introduits": [
-    "Restructuration cognitive : modifier l'interprétation des pensées anxieuses."
+    "Pensées intrusives : Pensées involontaires, indésirables, souvent anxiogènes.",
+    "Évitement : Stratégie consistant à fuir les situations ou pensées anxiogènes.",
+    "Ancrage sensoriel : Technique de focalisation sur les sens pour se ramener au présent.",
+    "Restructuration cognitive : Méthode visant à modifier les schémas de pensée négatifs."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Penser que l'on peut supprimer la pensée d'un coup.",
-    "Utiliser les mêmes exemples de pensées négatives."
+    "Techniques comme des solutions miracles",
+    "Utilisation comme rituel",
+    "Élimination des pensées"
   ],
-  "ton_angle": "Pragmatique et directif, l'angle est celui de la maîtrise émotionnelle.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La restructuration cognitive permet de modifier les pensées négatives pendant une crise pour retrouver une perspective plus réaliste.</these_centrale>\n<arguments_cles>\n- Identifier et modifier les pensées irrationnelles nourissant la peur.\n- Remplacer les scénarios catastrophiques par des réflexions constructives.\n- Reprendre le contrôle sur les réactions émotionnelles face à l'anxiété.\n- Pratiquer des questionnements pour évaluer la réalité des peurs.\n</arguments_cles>\n<concepts_introduits>\n- Restructuration cognitive : modifier l'interprétation des pensées anxieuses.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Penser que l'on peut supprimer la pensée d'un coup.\n- Utiliser les mêmes exemples de pensées négatives.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et directif, l'angle est celui de la maîtrise émotionnelle.</ton_angle>\n</fiche>"
+  "ton_angle": "Objectif, analytique : Expliquer les limitations et proposer une démarche adaptative et expérimentale.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Adapter les techniques de gestion de l'anxiété est essentiel pour surmonter les pièges d'une application rigide ou ritualisée.</these_centrale>\n<arguments_cles>\n- Les techniques ne sont pas des solutions miracles, leur efficacité varie individuellement.\n- Éviter l'utilisation des techniques comme rituels de contrôle des pensées intrusives.\n- Adopter une posture d'observation et d'expérimentation pour analyser l'efficacité des outils.\n- L'objectif est de modifier la relation aux pensées, pas de les éradiquer.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : Pensées involontaires, indésirables, souvent anxiogènes.\n- Évitement : Stratégie consistant à fuir les situations ou pensées anxiogènes.\n- Ancrage sensoriel : Technique de focalisation sur les sens pour se ramener au présent.\n- Restructuration cognitive : Méthode visant à modifier les schémas de pensée négatifs.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Techniques comme des solutions miracles\n- Utilisation comme rituel\n- Élimination des pensées\n</a_ne_pas_repeter>\n<ton_angle>Objectif, analytique : Expliquer les limitations et proposer une démarche adaptative et expérimentale.</ton_angle>\n</fiche>"
 }

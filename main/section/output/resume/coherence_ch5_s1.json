@@ -3,27 +3,25 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "Les progrès dans la gestion de la claustrophobie nécessitent un entretien continu pour ancrer les acquis et consolider de nouvelles associations positives.",
+  "these_centrale": "L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.",
   "arguments_cles": [
-    "L'oubli des acquis survient si exercices et habitudes ne sont pas entretenus.",
-    "La réactivation des associations anciennes de danger se produit sans exposition régulière.",
-    "Maintenir une pratique régulière solidifie les nouvelles réponses et les rend automatiques.",
-    "Les petites actions régulières renforcent le sentiment de sécurité et les connexions neuronales.",
-    "La vigilance active est nécessaire pour renforcer activement de nouvelles associations positives."
+    "Chaque individu réagit différemment aux méthodes proposées.",
+    "Il faut évaluer objectivement l'impact et la facilité d'application des outils.",
+    "La recherche de la solution miracle peut nuire au processus d'adaptation.",
+    "L'engagement comportemental malgré l'anxiété est un signe de progrès."
   ],
   "concepts_introduits": [
-    "Extinction de la peur : Remplacement des associations peur-stimulus par des associations neutres.",
-    "Associations positives : Liens cerveau-environnement qui renforcent le sentiment de sécurité.",
-    "Connexions neuronales : Établissement de nouveaux chemins dans le cerveau par la pratique.",
-    "Ancrage sensoriel : Technique de recentrage sur les sens pour calmer l'anxiété."
+    "Respiration diaphragmatique : Technique apaisante pour les crises aiguës.",
+    "Ancrage sensoriel : Méthode pour revenir au moment présent.",
+    "Rumination : Cycle de pensées négatives répétitives.",
+    "Réassurance déguisée : Stratégie qui maintient l'anxiété.",
+    "Réengagement comportemental : Action malgré la présence d'anxiété."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les progrès ne sont pas définitifs par nature.",
-    "Le cerveau peut réactiver les associations anciennes si l'exposition cesse.",
-    "L'apprentissage d'une nouvelle langue sans pratique s'efface.",
-    "Les anciennes associations étaient perçues comme des mécanismes de survie."
+    "Thomas",
+    "Échelle d'anxiété de 0 à 10"
   ],
-  "ton_angle": "Informatif et pragmatique, soulignant l'importance de la discipline personnelle pour le maintien des progrès.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les progrès dans la gestion de la claustrophobie nécessitent un entretien continu pour ancrer les acquis et consolider de nouvelles associations positives.</these_centrale>\n<arguments_cles>\n- L'oubli des acquis survient si exercices et habitudes ne sont pas entretenus.\n- La réactivation des associations anciennes de danger se produit sans exposition régulière.\n- Maintenir une pratique régulière solidifie les nouvelles réponses et les rend automatiques.\n- Les petites actions régulières renforcent le sentiment de sécurité et les connexions neuronales.\n- La vigilance active est nécessaire pour renforcer activement de nouvelles associations positives.\n</arguments_cles>\n<concepts_introduits>\n- Extinction de la peur : Remplacement des associations peur-stimulus par des associations neutres.\n- Associations positives : Liens cerveau-environnement qui renforcent le sentiment de sécurité.\n- Connexions neuronales : Établissement de nouveaux chemins dans le cerveau par la pratique.\n- Ancrage sensoriel : Technique de recentrage sur les sens pour calmer l'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les progrès ne sont pas définitifs par nature.\n- Le cerveau peut réactiver les associations anciennes si l'exposition cesse.\n- L'apprentissage d'une nouvelle langue sans pratique s'efface.\n- Les anciennes associations étaient perçues comme des mécanismes de survie.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, soulignant l'importance de la discipline personnelle pour le maintien des progrès.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.</these_centrale>\n<arguments_cles>\n- Chaque individu réagit différemment aux méthodes proposées.\n- Il faut évaluer objectivement l'impact et la facilité d'application des outils.\n- La recherche de la solution miracle peut nuire au processus d'adaptation.\n- L'engagement comportemental malgré l'anxiété est un signe de progrès.\n</arguments_cles>\n<concepts_introduits>\n- Respiration diaphragmatique : Technique apaisante pour les crises aiguës.\n- Ancrage sensoriel : Méthode pour revenir au moment présent.\n- Rumination : Cycle de pensées négatives répétitives.\n- Réassurance déguisée : Stratégie qui maintient l'anxiété.\n- Réengagement comportemental : Action malgré la présence d'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Thomas\n- Échelle d'anxiété de 0 à 10\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.</ton_angle>\n</fiche>"
 }

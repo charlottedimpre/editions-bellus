@@ -3,20 +3,26 @@
   "section": 3,
   "chapitre_numero": "3",
   "section_numero": "3",
-  "these_centrale": "L'ancrage sensoriel utilise les cinq sens pour ramener l'esprit à la réalité immédiate et contrer l'anxiété.",
+  "these_centrale": "Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.",
   "arguments_cles": [
-    "Focaliser sur les perceptions concrètes détourne des scénarios anxieux imaginés.",
-    "Mobiliser les cinq sens crée une connexion tangible avec le moment présent.",
-    "Cette technique offre une alternative pratique quand la respiration est difficile.",
-    "Elle permet de désamorcer la réaction immédiate pour penser plus clairement."
+    "Déconnecter mentalement des pensées en modifiant la perception.",
+    "Observer les pensées avec détachement comme un scientifique.",
+    "Distinguer l'identité de la pensée par l'ajout de qualificatifs.",
+    "Rompre le cycle de rumination en traitant les pensées comme des observations.",
+    "Rendre les pensées inoffensives, pas les effacer totalement."
   ],
   "concepts_introduits": [
-    "Ancrage sensoriel : stratégie utilisant les sens pour se connecter au présent."
+    "Déconnexion mentale : Altérer la relation avec les pensées intrusives.",
+    "Rumination : Cycle infernal d'analyse excessive des pensées.",
+    "Défusion cognitive : Observer sans s'accrocher aux pensées."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas traiter directement les pensées irrationnelles elles-mêmes."
+    "Ne pas lutter directement contre la pensée.",
+    "Ne pas s'identifier à la pensée intrusive.",
+    "Ne pas considérer la pensée comme une vérité absolue.",
+    "Ne pas vouloir contrôler ou éliminer la pensée."
   ],
-  "ton_angle": "Explicatif et pragmatique, l'angle est celui d'une stratégie d'intervention immédiate.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'ancrage sensoriel utilise les cinq sens pour ramener l'esprit à la réalité immédiate et contrer l'anxiété.</these_centrale>\n<arguments_cles>\n- Focaliser sur les perceptions concrètes détourne des scénarios anxieux imaginés.\n- Mobiliser les cinq sens crée une connexion tangible avec le moment présent.\n- Cette technique offre une alternative pratique quand la respiration est difficile.\n- Elle permet de désamorcer la réaction immédiate pour penser plus clairement.\n</arguments_cles>\n<concepts_introduits>\n- Ancrage sensoriel : stratégie utilisant les sens pour se connecter au présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas traiter directement les pensées irrationnelles elles-mêmes.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et pragmatique, l'angle est celui d'une stratégie d'intervention immédiate.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.</these_centrale>\n<arguments_cles>\n- Déconnecter mentalement des pensées en modifiant la perception.\n- Observer les pensées avec détachement comme un scientifique.\n- Distinguer l'identité de la pensée par l'ajout de qualificatifs.\n- Rompre le cycle de rumination en traitant les pensées comme des observations.\n- Rendre les pensées inoffensives, pas les effacer totalement.\n</arguments_cles>\n<concepts_introduits>\n- Déconnexion mentale : Altérer la relation avec les pensées intrusives.\n- Rumination : Cycle infernal d'analyse excessive des pensées.\n- Défusion cognitive : Observer sans s'accrocher aux pensées.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas lutter directement contre la pensée.\n- Ne pas s'identifier à la pensée intrusive.\n- Ne pas considérer la pensée comme une vérité absolue.\n- Ne pas vouloir contrôler ou éliminer la pensée.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.</ton_angle>\n</fiche>"
 }

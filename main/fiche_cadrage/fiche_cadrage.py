@@ -1,14 +1,18 @@
 from pathlib import Path
+import os
+import time
 from typing import Any
 
 from ollama import chat
-from ollama import ChatResponse
 from parser import parse_fiche_cadrage, read_json_file, read_text_file, to_json_file
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+LLM_MAX_RETRIES = 3
+LLM_RETRY_DELAY_SECONDS = 2
+MODEL_COURT = os.getenv("ED_BELLUS_OLLAMA_MODEL_COURT")
 
 LEVEL_FILES = {
     "1": "fc_debutant",
@@ -30,6 +34,42 @@ def _normalize_sujet(sujet: Any) -> str:
     return cleaned
 
 
+def _is_retryable_ollama_error(exc: Exception) -> bool:
+    status_code = getattr(exc, "status_code", None)
+    if status_code in {429, 500, 502, 503, 504}:
+        return True
+
+    err_text = str(exc).lower()
+    return any(token in err_text for token in ["status code: 500", "status code: 503", "internal server error", "timeout"])
+
+
+def _chat_with_retry(model: str, message_content: str, context_label: str) -> str:
+    last_error: Exception | None = None
+
+    for attempt in range(1, LLM_MAX_RETRIES + 1):
+        try:
+            response = chat(model=model, messages=[
+                {
+                    "role": "user",
+                    "content": message_content,
+                },
+            ])
+            if response.message is None or not response.message.content:
+                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
+            return response.message.content
+        except Exception as exc:
+            last_error = exc
+            if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
+                break
+            print(
+                f"[WARN] Ollama indisponible pour {context_label} "
+                f"(tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}"
+            )
+            time.sleep(LLM_RETRY_DELAY_SECONDS)
+
+    raise RuntimeError(f"Echec appel LLM ({context_label}) apres {LLM_MAX_RETRIES} tentatives: {last_error}")
+
+
 def fiche_cadrage(sujet: str, niveau: str):
     sujet = _normalize_sujet(sujet)
     if not isinstance(niveau, str) or not niveau.strip():
@@ -39,17 +79,13 @@ def fiche_cadrage(sujet: str, niveau: str):
 
     prompt = _read_text(input_path, f"prompt {niveau}")
 
-    response: ChatResponse = chat(model="mistral-large-3:675b-cloud", messages=[
-        {
-            "role": "user",
-            "content": f"{prompt}\n\nSUJET : {sujet}",
-        },
-    ])
+    response_content = _chat_with_retry(
+        model=MODEL_COURT,
+        message_content=f"{prompt}\n\nSUJET : {sujet}",
+        context_label="fiche_cadrage",
+    )
 
-    if response.message is None or not response.message.content:
-        raise ValueError("Reponse vide du modele pour la fiche de cadrage.")
-
-    parsed = parse_fiche_cadrage(response.message.content)
+    parsed = parse_fiche_cadrage(response_content)
     if not isinstance(parsed, dict):
         raise ValueError("La fiche de cadrage parsee doit etre un objet JSON.")
 

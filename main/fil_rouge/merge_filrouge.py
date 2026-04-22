@@ -38,7 +38,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY introuvable dans le fichier .env")
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-2.5-flash-lite"
+GEMINI_MODEL = os.getenv("GEMINI_MODEL")
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
 MAX_MERGE_SECTION_ATTEMPTS = 3

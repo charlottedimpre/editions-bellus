@@ -3,22 +3,21 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "Les réactions physiologiques à la claustrophobie sont des mécanismes de survie déclenchés par une perception inappropriée du danger.",
+  "these_centrale": "La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.",
   "arguments_cles": [
-    "Le système nerveux interprète les espaces confinés comme une menace imminente.",
-    "Le corps augmente l'apport d'oxygène et de sang pour préparer à l'action.",
-    "Ces réactions sont des mécanismes de survie hérités, activés sans danger réel.",
-    "La compréhension de ces réactions est essentielle pour désamorcer la réponse automatique."
+    "Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.",
+    "L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.",
+    "La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.",
+    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle."
   ],
   "concepts_introduits": [
-    "Claustrophobie : Peur irrationnelle des espaces clos ou confinés.",
-    "Système nerveux : Réseau de communication gérant les réactions corporelles."
+    "Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.",
+    "Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.",
+    "Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.",
+    "Observation sans engagement : attitude d'observation des pensées sans jugement ni action."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Ces réactions ne sont pas un manque de volonté ou une mauvaise pensée.",
-    "Les symptômes sont les manifestations concrètes d'une réponse d'urgence."
-  ],
-  "ton_angle": "Explicatif et déculpabilisant, soulignant la base neurologique des peurs.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les réactions physiologiques à la claustrophobie sont des mécanismes de survie déclenchés par une perception inappropriée du danger.</these_centrale>\n<arguments_cles>\n- Le système nerveux interprète les espaces confinés comme une menace imminente.\n- Le corps augmente l'apport d'oxygène et de sang pour préparer à l'action.\n- Ces réactions sont des mécanismes de survie hérités, activés sans danger réel.\n- La compréhension de ces réactions est essentielle pour désamorcer la réponse automatique.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : Peur irrationnelle des espaces clos ou confinés.\n- Système nerveux : Réseau de communication gérant les réactions corporelles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ces réactions ne sont pas un manque de volonté ou une mauvaise pensée.\n- Les symptômes sont les manifestations concrètes d'une réponse d'urgence.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et déculpabilisant, soulignant la base neurologique des peurs.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.</these_centrale>\n<arguments_cles>\n- Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.\n- L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.\n- La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.\n- Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.\n- Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.\n- Observation sans engagement : attitude d'observation des pensées sans jugement ni action.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Lutter contre une pensée est une stratégie contre-productive.\n- Les pensées sont des événements mentaux transitoires.\n</a_ne_not_repeter>\n<ton_angle>Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.</ton_angle>\n</fiche>"
 }

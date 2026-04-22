@@ -1,12 +1,13 @@
 from pathlib import Path
 import json
+import os
 import time
 
 from ollama import chat
 from ollama import ChatResponse
 from parser import read_json_file as _read_json, read_text_file as _read_text
 
-MODEL = "mistral-large-3:675b-cloud"
+MODEL_COURT = os.getenv("ED_BELLUS_OLLAMA_MODEL_COURT")
 LLM_MAX_RETRIES = 4
 LLM_BASE_DELAY_SECONDS = 2
 
@@ -37,7 +38,7 @@ def _chat_with_retry(message_content: str, context_label: str) -> str:
 
     for attempt in range(1, LLM_MAX_RETRIES + 1):
         try:
-            response: ChatResponse = chat(model=MODEL, messages=[
+            response: ChatResponse = chat(model=MODEL_COURT, messages=[
                 {
                     "role": "user",
                     "content": message_content,
@@ -62,7 +63,7 @@ def _chat_with_retry(message_content: str, context_label: str) -> str:
             time.sleep(delay)
 
     raise RuntimeError(
-        f"Echec appel LLM pour {context_label} avec le modele {MODEL} "
+        f"Echec appel LLM pour {context_label} avec le modele {MODEL_COURT} "
         f"apres {LLM_MAX_RETRIES} tentatives: {last_error}"
     )
 

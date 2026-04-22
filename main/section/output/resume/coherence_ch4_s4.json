@@ -3,21 +3,24 @@
   "section": 4,
   "chapitre_numero": "4",
   "section_numero": "4",
-  "these_centrale": "Les rechutes d'anxiété sont une étape normale du rétablissement, nécessitant une approche compréhensive et ajustée pour continuer à progresser.",
+  "these_centrale": "Se réengager activement dans des activités sources de joie permet de reprendre le contrôle de sa vie malgré les pensées intrusives.",
   "arguments_cles": [
-    "Les rechutes sont des signaux d'apprentissage, pas des échecs définitifs.",
-    "Utiliser des techniques familières aide à réguler le système nerveux.",
-    "Revenir à des paliers d'exposition précédents renforce la confiance.",
-    "Rappeler les bénéfices acquis maintient la motivation et l'engagement."
+    "L'action concrète, même avec anxiété, démontre la capacité à vivre pleinement.",
+    "La reprise d'activités est une exposition graduelle aux situations évitées.",
+    "Se reconnecter aux valeurs et centres d'intérêt réduit le pouvoir des pensées envahissantes.",
+    "La persévérance renforce le sentiment d'efficacité personnelle et affaiblit l'emprise des obsessions.",
+    "La reconstruction des liens sociaux est cruciale pour le bien-être général."
   ],
   "concepts_introduits": [
-    "Rechute : régression temporaire dans un état ou un comportement précédent.",
-    "Schémas appris : réponses comportementales ou émotionnelles conditionnées.",
-    "Palier d'exposition : étape spécifique d'une thérapie graduée.",
-    "Techniques d'ancrage : méthodes pour revenir au moment présent."
+    "Réengagement comportemental : Reprise d'activités malgré l'anxiété.",
+    "Exposition graduelle : Confrontation progressive aux situations évitées.",
+    "Sentiment d'efficacité personnelle : Confiance en sa capacité d'agir."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Bienveillant et pragmatique, centré sur la résilience et l'ajustement.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les rechutes d'anxiété sont une étape normale du rétablissement, nécessitant une approche compréhensive et ajustée pour continuer à progresser.</these_centrale>\n<arguments_cles>\n- Les rechutes sont des signaux d'apprentissage, pas des échecs définitifs.\n- Utiliser des techniques familières aide à réguler le système nerveux.\n- Revenir à des paliers d'exposition précédents renforce la confiance.\n- Rappeler les bénéfices acquis maintient la motivation et l'engagement.\n</arguments_cles>\n<concepts_introduits>\n- Rechute : régression temporaire dans un état ou un comportement précédent.\n- Schémas appris : réponses comportementales ou émotionnelles conditionnées.\n- Palier d'exposition : étape spécifique d'une thérapie graduée.\n- Techniques d'ancrage : méthodes pour revenir au moment présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La rechute est une preuve d'échec.\n- Tout est perdu après une rechute.\n- Recommencer tout à zéro après une rechute.\n</a_ne_not_repeat>\n<ton_angle>Bienveillant et pragmatique, centré sur la résilience et l'ajustement.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Les pensées intrusives ne définissent pas la personne.",
+    "Il est possible de mener une vie épanouissante malgré les obsessions."
+  ],
+  "ton_angle": "Pragmatique et encourageant, visant à redonner le pouvoir d'agir au lecteur.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Se réengager activement dans des activités sources de joie permet de reprendre le contrôle de sa vie malgré les pensées intrusives.</these_centrale>\n<arguments_cles>\n- L'action concrète, même avec anxiété, démontre la capacité à vivre pleinement.\n- La reprise d'activités est une exposition graduelle aux situations évitées.\n- Se reconnecter aux valeurs et centres d'intérêt réduit le pouvoir des pensées envahissantes.\n- La persévérance renforce le sentiment d'efficacité personnelle et affaiblit l'emprise des obsessions.\n- La reconstruction des liens sociaux est cruciale pour le bien-être général.\n</arguments_cles>\n<concepts_introduits>\n- Réengagement comportemental : Reprise d'activités malgré l'anxiété.\n- Exposition graduelle : Confrontation progressive aux situations évitées.\n- Sentiment d'efficacité personnelle : Confiance en sa capacité d'agir.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les pensées intrusives ne définissent pas la personne.\n- Il est possible de mener une vie épanouissante malgré les obsessions.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et encourageant, visant à redonner le pouvoir d'agir au lecteur.</ton_angle>\n</fiche>"
 }

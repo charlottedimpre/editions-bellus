@@ -1,15 +1,15 @@
 import json
-import time
+import os
 from pathlib import Path
 
-from ollama import ChatResponse, chat
+from llm_fallback import chat_with_major_error_fallback
 from parser import (
     read_json_file as _read_json,
     read_text_file as _read_text,
     write_json_file as _write_json,
 )
 
-MODEL = 'kimi-k2.5:cloud'
+MODEL = os.getenv("ED_BELLUS_OLLAMA_MODEL_LONG")
 
 # Limites simples pour eviter les prompts trop lourds.
 MAX_SOURCE_CONTENT_CHARS = 30000
@@ -142,41 +142,14 @@ def _clear_resume_state() -> None:
             print(f"[WARN] Impossible de supprimer {path.name}: {exc}")
 
 
-def _is_retryable_ollama_error(exc: Exception) -> bool:
-    status_code = getattr(exc, "status_code", None)
-    if status_code in {429, 500, 502, 503, 504}:
-        return True
-
-    err_text = str(exc).lower()
-    return any(token in err_text for token in ["status code: 500", "status code: 503", "internal server error", "timeout"])
-
-
 def _chat_with_retry(message_content: str, context_label: str) -> str:
-    last_error: Exception | None = None
-
-    for attempt in range(1, LLM_MAX_RETRIES + 1):
-        try:
-            response: ChatResponse = chat(model=MODEL, messages=[
-                {
-                    'role': 'user',
-                    'content': message_content,
-                },
-            ])
-            if response.message is None or not response.message.content:
-                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-            return response.message.content.strip()
-        except Exception as exc:
-            last_error = exc
-            if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
-                break
-
-            print(
-                f"[WARN] Ollama indisponible pour {context_label} "
-                f"(tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}"
-            )
-            time.sleep(LLM_RETRY_DELAY_SECONDS)
-
-    raise RuntimeError(f"Echec appel LLM ({context_label}) apres {LLM_MAX_RETRIES} tentatives: {last_error}")
+    return chat_with_major_error_fallback(
+        ollama_model=MODEL,
+        message_content=message_content,
+        context_label=context_label,
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
+    )
 
 
 def _local_fallback_summary(sujet: str, source: dict, error_message: str) -> str:

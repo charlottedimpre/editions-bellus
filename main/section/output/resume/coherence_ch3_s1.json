@@ -3,23 +3,24 @@
   "section": 1,
   "chapitre_numero": "3",
   "section_numero": "1",
-  "these_centrale": "La réaction corporelle face à la claustrophobie est un système d'alarme activé par une perception erronée du danger.",
+  "these_centrale": "Comprendre que les pensées alarmantes sont une suractivation du système d'alerte cérébral aide à les désamorcer.",
   "arguments_cles": [
-    "Le cerveau interprète mal les espaces clos comme une menace, déclenchant la réponse lutte-fuite-immobilisation.",
-    "Les symptômes physiques tels que l'accélération cardiaque sont des réactions physiologiques de survie, non un danger réel.",
-    "Reconnaître ces manifestations comme un système d'alarme inapproprié est la première étape pour réduire leur intensité.",
-    "Le système nerveux autonome active ces réactions sans distinguer un prédateur d'une situation perçue comme piégeante."
+    "Les pensées intrusives ne reflètent pas vos intentions ou désirs réels.",
+    "Le ralentissement de la respiration active le système nerveux parasympathique calmant.",
+    "L'efficacité des exercices de respiration peut varier selon les individus et les situations.",
+    "La gestion de l'état interne est plus importante que la chasse de la pensée."
   ],
   "concepts_introduits": [
-    "Lutte-fuite-immobilisation : Réponse physiologique préparant à l'action face au danger.",
-    "Système nerveux autonome : Contrôle les réactions corporelles involontaires."
+    "Pensées intrusives : Pensées involontaires et alarmantes, signes d'anxiété.",
+    "Respiration diaphragmatique : Respiration profonde par le ventre pour calmer.",
+    "Système nerveux parasympathique : Frein naturel du système de réponse au stress."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le corps réagit comme s'il était en danger.",
-    "La claustrophobie déclenche une alarme.",
-    "C'est une réaction physiologique."
+    "Le cerveau anticipe les dangers",
+    "Exercice simple pour reprendre le contrôle",
+    "Méthode souvent appelée respiration diaphragmatique"
   ],
-  "ton_angle": "Explicatif et rassurant, il dédramatise les réactions corporelles.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La réaction corporelle face à la claustrophobie est un système d'alarme activé par une perception erronée du danger.</these_centrale>\n<arguments_cles>\n- Le cerveau interprète mal les espaces clos comme une menace, déclenchant la réponse lutte-fuite-immobilisation.\n- Les symptômes physiques tels que l'accélération cardiaque sont des réactions physiologiques de survie, non un danger réel.\n- Reconnaître ces manifestations comme un système d'alarme inapproprié est la première étape pour réduire leur intensité.\n- Le système nerveux autonome active ces réactions sans distinguer un prédateur d'une situation perçue comme piégeante.\n</arguments_cles>\n<concepts_introduits>\n- Lutte-fuite-immobilisation : Réponse physiologique préparant à l'action face au danger.\n- Système nerveux autonome : Contrôle les réactions corporelles involontaires.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le corps réagit comme s'il était en danger.\n- La claustrophobie déclenche une alarme.\n- C'est une réaction physiologique.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, il dédramatise les réactions corporelles.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et encourageant, centré sur la gestion émotionnelle.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Comprendre que les pensées alarmantes sont une suractivation du système d'alerte cérébral aide à les désamorcer.</these_centrale>\n<arguments_cles>\n- Les pensées intrusives ne reflètent pas vos intentions ou désirs réels.\n- Le ralentissement de la respiration active le système nerveux parasympathique calmant.\n- L'efficacité des exercices de respiration peut varier selon les individus et les situations.\n- La gestion de l'état interne est plus importante que la chasse de la pensée.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : Pensées involontaires et alarmantes, signes d'anxiété.\n- Respiration diaphragmatique : Respiration profonde par le ventre pour calmer.\n- Système nerveux parasympathique : Frein naturel du système de réponse au stress.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau anticipe les dangers\n- Exercice simple pour reprendre le contrôle\n- Méthode souvent appelée respiration diaphragmatique\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, centré sur la gestion émotionnelle.</ton_angle>\n</fiche>"
 }

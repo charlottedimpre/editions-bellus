@@ -3,26 +3,31 @@
   "section": 4,
   "chapitre_numero": "5",
   "section_numero": "4",
-  "these_centrale": "Impliquer son entourage est essentiel pour surmonter la claustrophobie en communiquant clairement les besoins de soutien.",
+  "these_centrale": "Les périodes de réinvestissement de l'anxiété sont normales et nécessitent une analyse objective et un ajustement des stratégies.",
   "arguments_cles": [
-    "Informer l'entourage sur les exercices progressifs pour vaincre la peur.",
-    "Éviter la surprotection qui entretient le mécanisme d'évitement.",
-    "Laisser appliquer les stratégies apprises sans interruption ni jugement.",
-    "Devenir un allié informé plutôt qu'une source de maintien de la phobie.",
-    "Construire une compréhension partagée qui nourrit l'auto-efficacité."
+    "Les fluctuations anxiogènes ne sont pas des échecs mais des étapes d'apprentissage.",
+    "Analyser objectivement les déclencheurs de la recrudescence anxiogène est essentiel.",
+    "Ajuster les stratégies d'adaptation en renforçant les techniques efficaces.",
+    "Solliciter un soutien professionnel si les fluctuations persistent ou s'intensifient."
   ],
   "concepts_introduits": [
-    "Claustrophobie : peur irrationnelle des espaces clos.",
-    "Mécanisme d'évitement : comportement pour fuir une situation anxiogène.",
-    "Respiration diaphragmatique : technique de relaxation par le souffle.",
-    "Auto-efficacité : confiance en sa capacité à réussir."
+    "Pensées intrusives : pensées non désirées et répétitives.",
+    "Stratégies d'adaptation : techniques pour gérer le stress et l'anxiété.",
+    "Anxiété : état de tension et d'inquiétude.",
+    "Analyse objective : observation neutre des faits.",
+    "Déclencheurs : facteurs provoquant une réaction.",
+    "Ancrage sensoriel : technique de centrage sur les sensations.",
+    "Défusion cognitive : détacher l'esprit des pensées.",
+    "Rumination : pensée répétitive et négative."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Demander le soutien de votre entourage est une étape importante.",
-    "Ne pas entrer dans les détails techniques complexes.",
-    "Le piège de la surprotection est particulièrement insidieux."
+    "Retour en arrière définitif",
+    "Cercle vicieux de l'anxiété",
+    "Céder à la panique ou à l'auto-critique",
+    "Supprimer ces pensées",
+    "Ne remette pas en cause vos progrès précédents"
   ],
-  "ton_angle": "Pédagogique et pratique, axé sur la communication bienveillante pour le soutien.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Impliquer son entourage est essentiel pour surmonter la claustrophobie en communiquant clairement les besoins de soutien.</these_centrale>\n<arguments_cles>\n- Informer l'entourage sur les exercices progressifs pour vaincre la peur.\n- Éviter la surprotection qui entretient le mécanisme d'évitement.\n- Laisser appliquer les stratégies apprises sans interruption ni jugement.\n- Devenir un allié informé plutôt qu'une source de maintien de la phobie.\n- Construire une compréhension partagée qui nourrit l'auto-efficacité.\n</arguments_cles>\n<concepts_introduits>\n- Claustrophobie : peur irrationnelle des espaces clos.\n- Mécanisme d'évitement : comportement pour fuir une situation anxiogène.\n- Respiration diaphragmatique : technique de relaxation par le souffle.\n- Auto-efficacité : confiance en sa capacité à réussir.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Demander le soutien de votre entourage est une étape importante.\n- Ne pas entrer dans les détails techniques complexes.\n- Le piège de la surprotection est particulièrement insidieux.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pratique, axé sur la communication bienveillante pour le soutien.</ton_angle>\n</fiche>"
+  "ton_angle": "Le ton est pragmatique et encourageant, l'angle est celui de la gestion proactive des difficultés.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les périodes de réinvestissement de l'anxiété sont normales et nécessitent une analyse objective et un ajustement des stratégies.</these_centrale>\n<arguments_cles>\n- Les fluctuations anxiogènes ne sont pas des échecs mais des étapes d'apprentissage.\n- Analyser objectivement les déclencheurs de la recrudescence anxiogène est essentiel.\n- Ajuster les stratégies d'adaptation en renforçant les techniques efficaces.\n- Solliciter un soutien professionnel si les fluctuations persistent ou s'intensifient.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées non désirées et répétitives.\n- Stratégies d'adaptation : techniques pour gérer le stress et l'anxiété.\n- Anxiété : état de tension et d'inquiétude.\n- Analyse objective : observation neutre des faits.\n- Déclencheurs : facteurs provoquant une réaction.\n- Ancrage sensoriel : technique de centrage sur les sensations.\n- Défusion cognitive : détacher l'esprit des pensées.\n- Rumination : pensée répétitive et négative.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Retour en arrière définitif\n- Cercle vicieux de l'anxiété\n- Céder à la panique ou à l'auto-critique\n- Supprimer ces pensées\n- Ne remette pas en cause vos progrès précédents\n</a_ne_pas_repeter>\n<ton_angle>Le ton est pragmatique et encourageant, l'angle est celui de la gestion proactive des difficultés.</ton_angle>\n</fiche>"
 }

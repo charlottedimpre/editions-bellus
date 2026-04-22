@@ -3,22 +3,25 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "La réaction de survie ancestrale face à un danger perçu, même imaginaire, se manifeste par des signaux physiologiques automatiques.",
+  "these_centrale": "Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.",
   "arguments_cles": [
-    "Le corps réagit à la menace réelle ou imaginée par une réponse de survie.",
-    "Les manifestations incluent accélération cardiaque, tension musculaire et respiration rapide.",
-    "Ces réactions sont une alarme involontaire du cerveau face à un espace restreint.",
-    "Distinguer une véritable menace d'une alarme mal calibrée est essentiel."
+    "Les pensées involontaires sont courantes et ne signifient pas un danger imminent.",
+    "La peur naît de l'interprétation erronée des pensées, pas de leur existence.",
+    "Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.",
+    "Distinguer la pensée de l'action est essentiel pour réduire l'anxiété."
   ],
   "concepts_introduits": [
-    "Réponse de survie : Mécanisme physiologique face à un danger perçu.",
-    "Réaction d'alarme : Déclenchement involontaire du système nerveux face à une menace."
+    "Pensée intrusive : pensée involontaire et souvent effrayante.",
+    "Rumination : tendance à ressasser des pensées négatives.",
+    "Hyper-vigilance : vigilance excessive face aux menaces potentielles."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le corps se prépare à une éventualité qui ne se réalisera pas.",
-    "Ces sensations physiques intenses sont la preuve que votre organisme fonctionne."
+    "Le cerveau est une machine complexe.",
+    "Il génère des scénarios effrayants.",
+    "Confusion entre penser et agir.",
+    "Vous n'êtes pas vos pensées."
   ],
-  "ton_angle": "Explicatif et rassurant, visant à normaliser les réactions physiologiques de survie.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La réaction de survie ancestrale face à un danger perçu, même imaginaire, se manifeste par des signaux physiologiques automatiques.</these_centrale>\n<arguments_cles>\n- Le corps réagit à la menace réelle ou imaginée par une réponse de survie.\n- Les manifestations incluent accélération cardiaque, tension musculaire et respiration rapide.\n- Ces réactions sont une alarme involontaire du cerveau face à un espace restreint.\n- Distinguer une véritable menace d'une alarme mal calibrée est essentiel.\n</arguments_cles>\n<concepts_introduits>\n- Réponse de survie : Mécanisme physiologique face à un danger perçu.\n- Réaction d'alarme : Déclenchement involontaire du système nerveux face à une menace.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le corps se prépare à une éventualité qui ne se réalisera pas.\n- Ces sensations physiques intenses sont la preuve que votre organisme fonctionne.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, visant à normaliser les réactions physiologiques de survie.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et rassurant, démystifiant la peur des pensées involontaires.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.</these_centrale>\n<arguments_cles>\n- Les pensées involontaires sont courantes et ne signifient pas un danger imminent.\n- La peur naît de l'interprétation erronée des pensées, pas de leur existence.\n- Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.\n- Distinguer la pensée de l'action est essentiel pour réduire l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire et souvent effrayante.\n- Rumination : tendance à ressasser des pensées négatives.\n- Hyper-vigilance : vigilance excessive face aux menaces potentielles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau est une machine complexe.\n- Il génère des scénarios effrayants.\n- Confusion entre penser et agir.\n- Vous n'êtes pas vos pensées.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, démystifiant la peur des pensées involontaires.</ton_angle>\n</fiche>"
 }

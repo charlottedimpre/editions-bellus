@@ -3,23 +3,23 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "Hiérarchiser les situations anxiogènes sur une échelle personnelle rend la maîtrise de la claustrophobie une démarche précise et gérable.",
+  "these_centrale": "L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.",
   "arguments_cles": [
-    "Classifier l'anxiété permet de passer d'une appréhension diffuse à une identification des déclencheurs.",
-    "Une échelle personnelle de 0 à 10 quantifie l'intensité de l'anxiété subjective pour chaque situation.",
-    "Affronter les situations de faible intensité renforce la confiance et permet une progression maîtrisée.",
-    "L'échelle d'anxiété évolue avec les progrès, servant d'outil d'auto-évaluation dynamique."
+    "Affronter graduellement les situations réduit la charge émotionnelle.",
+    "La peur diminue quand la catastrophe redoutée ne survient pas.",
+    "Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.",
+    "L'habituation et le réapprentissage modifient les réponses émotionnelles."
   ],
   "concepts_introduits": [
-    "Anxiété : Sentiment de malaise, d'inquiétude ou de peur face à une situation future.",
-    "Claustrophobie : Peur irrationnelle des espaces clos et confinés.",
-    "Échelle d'anxiété : Outil de mesure subjective de l'intensité d'une émotion négative."
+    "Exposition progressive : confronter graduellement des situations anxiogènes.",
+    "Hiérarchie des situations anxiogènes : classement des peurs par intensité.",
+    "Habitation : diminution de la réaction à un stimulus répété."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La peur devient concrète et gérable.",
-    "C'est un outil précieux pour suivre ses progrès."
+    "Supprimer les peurs",
+    "Surcharger soi-même"
   ],
-  "ton_angle": "Informatif et pratique, l'angle est celui de la maîtrise active des peurs.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Hiérarchiser les situations anxiogènes sur une échelle personnelle rend la maîtrise de la claustrophobie une démarche précise et gérable.</these_centrale>\n<arguments_cles>\n- Classifier l'anxiété permet de passer d'une appréhension diffuse à une identification des déclencheurs.\n- Une échelle personnelle de 0 à 10 quantifie l'intensité de l'anxiété subjective pour chaque situation.\n- Affronter les situations de faible intensité renforce la confiance et permet une progression maîtrisée.\n- L'échelle d'anxiété évolue avec les progrès, servant d'outil d'auto-évaluation dynamique.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : Sentiment de malaise, d'inquiétude ou de peur face à une situation future.\n- Claustrophobie : Peur irrationnelle des espaces clos et confinés.\n- Échelle d'anxiété : Outil de mesure subjective de l'intensité d'une émotion négative.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La peur devient concrète et gérable.\n- C'est un outil précieux pour suivre ses progrès.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pratique, l'angle est celui de la maîtrise active des peurs.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et encourageant, axé sur la gestion autonome des angoisses.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.</these_centrale>\n<arguments_cles>\n- Affronter graduellement les situations réduit la charge émotionnelle.\n- La peur diminue quand la catastrophe redoutée ne survient pas.\n- Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.\n- L'habituation et le réapprentissage modifient les réponses émotionnelles.\n</arguments_cles>\n<concepts_introduits>\n- Exposition progressive : confronter graduellement des situations anxiogènes.\n- Hiérarchie des situations anxiogènes : classement des peurs par intensité.\n- Habitation : diminution de la réaction à un stimulus répété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Supprimer les peurs\n- Surcharger soi-même\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, axé sur la gestion autonome des angoisses.</ton_angle>\n</fiche>"
 }

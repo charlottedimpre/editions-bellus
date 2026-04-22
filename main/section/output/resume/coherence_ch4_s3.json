@@ -3,27 +3,27 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "Élargir la zone de confort nécessite une exposition graduelle et contrôlée aux situations anxiogènes.",
+  "these_centrale": "Réduire les demandes de réassurance et poser des limites aide à gérer l'anxiété, en tolérant l'incertitude.",
   "arguments_cles": [
-    "Fixer des paliers réalistes pour gérer l'anxiété entre 3 et 5.",
-    "Confronter des situations légèrement inconfortables de manière répétée.",
-    "Identifier des petites variations des situations déclencheuses pour progresser.",
-    "Éviter de brûler les étapes en revenant si nécessaire à un palier inférieur.",
-    "Chaque palier réussi renforce la conviction que la situation n'est pas dangereuse."
+    "Les demandes de réassurance apportent un soulagement temporaire qui renforce l'anxiété.",
+    "Poser des limites claires informe sur l'impact involontaire de l'aide.",
+    "L'absence de réassurance confronte à l'incertitude et réduit la charge émotionnelle.",
+    "Développer une autonomie émotionnelle permet de tolérer les pensées intrusives."
   ],
   "concepts_introduits": [
-    "Zone de confort : Espace psychologique où l'on se sent en sécurité.",
-    "Paliers : Étapes progressives dans l'exposition à une situation.",
-    "Anxiété : Sentiment d'inquiétude ou de malaise face à une menace.",
-    "Respiration : Technique de gestion du stress par le souffle.",
-    "Ancrage : Technique pour se reconnecter au présent."
+    "Demandes de réassurance : sollicitation de preuves rassurantes auprès d'autrui.",
+    "Pensées intrusives : pensées indésirables et potentiellement anxiogènes.",
+    "Tolérer l'incertitude : accepter le manque de certitude sans anxiété excessive.",
+    "Autonomie émotionnelle : capacité à gérer ses émotions sans aide extérieure constante."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "L'anxiété doit être maintenue à un seuil gérable, entre 3 et 5.",
-    "Il ne faut pas provoquer une panique intense.",
-    "L'exposition est un marathon, pas un sprint."
+    "Soulagement temporaire",
+    "Cercle vicieux de l'anxiété",
+    "Illusion de sécurité",
+    "Pensées comme menaces réelles",
+    "Bruit mental"
   ],
-  "ton_angle": "Didactique et encourageant, axé sur la progression par étapes.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Élargir la zone de confort nécessite une exposition graduelle et contrôlée aux situations anxiogènes.</these_centrale>\n<arguments_cles>\n- Fixer des paliers réalistes pour gérer l'anxiété entre 3 et 5.\n- Confronter des situations légèrement inconfortables de manière répétée.\n- Identifier des petites variations des situations déclencheuses pour progresser.\n- Éviter de brûler les étapes en revenant si nécessaire à un palier inférieur.\n- Chaque palier réussi renforce la conviction que la situation n'est pas dangereuse.\n</arguments_cles>\n<concepts_introduits>\n- Zone de confort : Espace psychologique où l'on se sent en sécurité.\n- Paliers : Étapes progressives dans l'exposition à une situation.\n- Anxiété : Sentiment d'inquiétude ou de malaise face à une menace.\n- Respiration : Technique de gestion du stress par le souffle.\n- Ancrage : Technique pour se reconnecter au présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'anxiété doit être maintenue à un seuil gérable, entre 3 et 5.\n- Il ne faut pas provoquer une panique intense.\n- L'exposition est un marathon, pas un sprint.\n</a_ne_pas_repeter>\n<ton_angle>Didactique et encourageant, axé sur la progression par étapes.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pragmatique, visant l'autonomisation du lecteur.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Réduire les demandes de réassurance et poser des limites aide à gérer l'anxiété, en tolérant l'incertitude.</these_centrale>\n<arguments_cles>\n- Les demandes de réassurance apportent un soulagement temporaire qui renforce l'anxiété.\n- Poser des limites claires informe sur l'impact involontaire de l'aide.\n- L'absence de réassurance confronte à l'incertitude et réduit la charge émotionnelle.\n- Développer une autonomie émotionnelle permet de tolérer les pensées intrusives.\n</arguments_cles>\n<concepts_introduits>\n- Demandes de réassurance : sollicitation de preuves rassurantes auprès d'autrui.\n- Pensées intrusives : pensées indésirables et potentiellement anxiogènes.\n- Tolérer l'incertitude : accepter le manque de certitude sans anxiété excessive.\n- Autonomie émotionnelle : capacité à gérer ses émotions sans aide extérieure constante.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Soulagement temporaire\n- Cercle vicieux de l'anxiété\n- Illusion de sécurité\n- Pensées comme menaces réelles\n- Bruit mental\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, visant l'autonomisation du lecteur.</ton_angle>\n</fiche>"
 }

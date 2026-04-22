@@ -1,267 +1,237 @@
 [
   {
     "numero": "1",
-    "titre": "Reconnaître les mécanismes de la claustrophobie",
+    "titre": "Reconnaître une pensée intrusive sans la confondre avec un danger",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi votre corps réagit-il comme s'il était en danger ?",
-        "objectif": "Vous identifierez les trois réactions physiologiques clés de la claustrophobie et comprendrez leur utilité évolutive pour mieux les désamorcer.",
-        "concept_cle": "Réponse de lutte-fuite-immobilisation : mécanisme de survie déclenché à tort.",
-        "exemple": "Thomas sent son cœur s'emballer dans un ascenseur, alors qu'il sait rationnellement qu'il n'y a aucun danger.",
-        "limite": "N'explique pas comment calmer ces réactions (abordé en chapitre 3).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi votre cerveau vous envoie-t-il des pensées effrayantes sans raison ?",
+        "objectif": "Vous identifierez les mécanismes cérébraux qui génèrent les pensées intrusives et comprendrez pourquoi elles ne reflètent pas vos intentions réelles.",
+        "concept_cle": "Biais de fusion pensée-action : confusion entre penser et agir.",
+        "exemple": "Thomas croit que sa pensée \"blesser son neveu\" signifie qu'il en a l'intention, alors qu'elle est un symptôme d'anxiété.",
+        "limite": "N'explique pas les causes biologiques (neurotransmetteurs) — abordé en partie dans le chapitre 2.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "2",
-        "titre_section": "Claustrophobie ou simple inconfort : où se situe votre seuil ?",
-        "objectif": "Vous distinguerez les symptômes de la claustrophobie des réactions normales d'anxiété, et repérerez vos signaux d'alerte personnels.",
-        "concept_cle": "Seuil de tolérance : point où l'anxiété devient ingérable.",
-        "exemple": "Thomas réalise que sa peur des ascenseurs s'accompagne toujours de sueurs froides et d'une envie irrépressible de fuir.",
-        "limite": "Ne propose pas d'outils pour évaluer ce seuil (abordé en chapitre 2).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment distinguer une obsession d’une intention réelle en 3 questions ?",
+        "objectif": "Vous appliquerez une grille d'analyse simple pour évaluer si une pensée est intrusive ou dangereuse, sans vous fier à votre ressenti.",
+        "concept_cle": "Grille d'évaluation : répétition, incohérence, résistance.",
+        "exemple": "Thomas utilise la grille pour réaliser que sa peur des couteaux est une obsession, pas un désir.",
+        "limite": "Ne traite pas les cas où la pensée intrusive est liée à un traumatisme — redirigé vers un professionnel (chapitre 5).",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "3",
-        "titre_section": "Le cercle vicieux qui aggrave votre phobie sans que vous le sachiez",
-        "objectif": "Vous reconnaîtrez comment l'évitement et la surprotection renforcent votre claustrophobie, même avec de bonnes intentions.",
-        "concept_cle": "Cycle peur-évitement-renforcement : la phobie s'auto-alimente.",
-        "exemple": "Thomas évite les ascenseurs depuis 5 ans, ce qui a rendu sa peur plus intense et généralisée aux transports en commun.",
-        "limite": "Ne donne pas de stratégies pour briser ce cycle (abordé en chapitre 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi plus vous luttez contre une pensée, plus elle revient ?",
+        "objectif": "Vous comprendrez l'effet rebond des pensées intrusives et pourquoi les supprimer les renforce, avec des alternatives concrètes.",
+        "concept_cle": "Effet paradoxal : la suppression amplifie l'obsession.",
+        "exemple": "Thomas essaie d'ignorer ses pensées violentes, ce qui les rend plus fréquentes et angoissantes.",
+        "limite": "Ne propose pas de méthodes de suppression active — exclues du périmètre (voir fiche de cadrage).",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "4",
-        "titre_section": "Les trois déclencheurs universels que votre cerveau confond avec un danger mortel",
-        "objectif": "Vous identifierez les situations qui activent systématiquement votre claustrophobie, même si elles semblent anodines.",
-        "concept_cle": "Déclencheurs primaires : enfermement, impossibilité de fuite, perte de contrôle.",
-        "exemple": "Thomas panique dans un IRM non pas à cause du bruit, mais parce qu'il ne peut pas bouger ni sortir.",
-        "limite": "Ne propose pas de méthode pour hiérarchiser ces déclencheurs (abordé en chapitre 2).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Que faire quand une pensée intrusive vous glace le sang ?",
+        "objectif": "Vous saurez désamorcer l'urgence émotionnelle d'une pensée intrusive en 60 secondes, sans la combattre ni la fuir.",
+        "concept_cle": "Ancrage émotionnel : ramener l'attention au présent.",
+        "exemple": "Thomas utilise la technique des 5 sens pour calmer sa panique face à une pensée violente.",
+        "limite": "Ne détaille pas les outils avancés d'ancrage (ex. : méditation) — abordés dans le chapitre 3.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       }
     ],
-    "total_mots_chapitre": 1740
+    "total_mots_chapitre": 2000
   },
   {
     "numero": "2",
-    "titre": "Cartographier ses déclencheurs personnels",
+    "titre": "Briser le cercle vicieux de l’anxiété et de l’évitement",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment repérer les situations qui vous font paniquer sans même vous en rendre compte ?",
-        "objectif": "Vous apprendrez à observer vos réactions en temps réel pour identifier vos déclencheurs cachés, même ceux que vous minimisez.",
-        "concept_cle": "Auto-observation active : noter les détails pour révéler les schémas.",
-        "exemple": "Thomas découvre que sa peur des ascenseurs est liée à l'odeur de renfermé, pas seulement à l'enfermement.",
-        "limite": "Ne propose pas d'outils pour agir sur ces déclencheurs (abordé en chapitre 3 et 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi éviter les couteaux ou les escaliers aggrave votre anxiété ?",
+        "objectif": "Vous identifierez comment l'évitement renforce la peur et crée un cercle vicieux, avec des preuves concrètes.",
+        "concept_cle": "Conditionnement négatif : l'évitement nourrit l'anxiété.",
+        "exemple": "Thomas évite les couteaux, ce qui confirme à son cerveau que ces objets sont dangereux.",
+        "limite": "Ne propose pas de protocoles d'exposition avancés — réservés aux professionnels (chapitre 5).",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "2",
-        "titre_section": "Le journal des crises : votre allié pour décrypter vos peurs",
-        "objectif": "Vous saurez remplir un journal des crises pour repérer les motifs récurrents et les exceptions qui contredisent vos croyances.",
-        "concept_cle": "Journal des crises : outil de traçabilité pour objectiver les déclencheurs.",
-        "exemple": "Thomas note que ses crises sont plus intenses le matin, ce qui l'aide à planifier ses expositions (chapitre 4).",
-        "limite": "Ne propose pas de méthode pour hiérarchiser les déclencheurs (abordé en section 3).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment repérer vos déclencheurs invisibles avant qu’ils ne vous piègent ?",
+        "objectif": "Vous apprendrez à tenir un journal des situations redoutées pour anticiper et désamorcer vos réactions automatiques.",
+        "concept_cle": "Journal des déclencheurs : cartographier ses schémas d'évitement.",
+        "exemple": "Thomas note que ses pensées intrusives surviennent surtout le soir, quand il est fatigué.",
+        "limite": "Ne traite pas les déclencheurs liés à des traumatismes passés — redirigé vers un professionnel.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "3",
-        "titre_section": "Classer vos déclencheurs du moins au plus angoissant : la méthode des petits pas",
-        "objectif": "Vous construirez une échelle personnelle de vos déclencheurs pour prioriser vos efforts et éviter la surcharge.",
-        "concept_cle": "Échelle d'anxiété : hiérarchisation des situations du moins au plus intense.",
-        "exemple": "Thomas classe \"rester dans sa voiture portes fermées\" comme moins angoissant que \"prendre l'ascenseur\".",
-        "limite": "Ne propose pas de plan d'action pour affronter ces déclencheurs (abordé en chapitre 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi la rumination est-elle votre pire ennemie (et comment l’arrêter) ?",
+        "objectif": "Vous comprendrez pourquoi analyser sans fin vos pensées les amplifie, et découvrirez des techniques pour sortir de la boucle.",
+        "concept_cle": "Rumination : le piège de l'analyse excessive.",
+        "exemple": "Thomas passe des heures à chercher \"pourquoi\" il a cette pensée, ce qui l'épuise sans résultat.",
+        "limite": "Ne propose pas de thérapies cognitives avancées — abordées partiellement dans le chapitre 3.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "4",
-        "titre_section": "Peurs primaires vs. peurs secondaires : ce qui vous bloque vraiment",
-        "objectif": "Vous distinguerez vos peurs profondes (ex. étouffement) des peurs superficielles (ex. jugement d'autrui) pour cibler vos efforts.",
-        "concept_cle": "Peurs primaires/secondaires : distinguer la cause de la conséquence.",
-        "exemple": "Thomas réalise que sa peur des transports bondés vient d'une peur de l'étouffement, pas de la promiscuité.",
-        "limite": "Ne propose pas de techniques pour gérer les peurs primaires (abordé en chapitre 3).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment affronter une situation redoutée sans paniquer ?",
+        "objectif": "Vous appliquerez les principes de l'exposition progressive pour réduire l'anxiété, étape par étape, sans vous surcharger.",
+        "concept_cle": "Exposition hiérarchisée : affronter par paliers.",
+        "exemple": "Thomas commence par regarder une photo de couteau avant de toucher un couteau inoffensif.",
+        "limite": "Ne détaille pas les protocoles thérapeutiques complexes — réservés aux professionnels.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       }
     ],
-    "total_mots_chapitre": 1740
+    "total_mots_chapitre": 2000
   },
   {
     "numero": "3",
-    "titre": "Techniques immédiates pour désamorcer une crise",
+    "titre": "Désamorcer l’anxiété avec des techniques validées au quotidien",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Respirer pour reprendre le contrôle : la technique qui calme votre système nerveux en 30 secondes",
-        "objectif": "Vous maîtriserez la respiration diaphragmatique pour réduire votre rythme cardiaque et votre tension musculaire pendant une crise.",
-        "concept_cle": "Respiration diaphragmatique : activer le système nerveux parasympathique.",
-        "exemple": "Thomas utilise cette technique dans un ascenseur bloqué pour éviter une crise de panique.",
-        "limite": "Ne traite pas les cas où la respiration seule ne suffit pas (combinaison avec d'autres outils en section 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment respirer pour calmer une crise d’angoisse en 2 minutes ?",
+        "objectif": "Vous maîtriserez la respiration diaphragmatique pour réduire l'anxiété physique et mentale en situation de crise.",
+        "concept_cle": "Respiration lente : activer le système parasympathique.",
+        "exemple": "Thomas utilise cette technique quand une pensée intrusive le submerge au travail.",
+        "limite": "Ne traite pas les variantes avancées (ex. : cohérence cardiaque) — À définir avec l'auteur.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "2",
-        "titre_section": "Cohérence cardiaque : le protocole en 5 étapes pour stabiliser votre rythme en situation de stress",
-        "objectif": "Vous appliquerez la méthode 3-6-5 pour réguler votre fréquence cardiaque et retrouver un état de calme en 5 minutes.",
-        "concept_cle": "Cohérence cardiaque : synchronisation respiration/rythme cardiaque.",
-        "exemple": "Thomas pratique la cohérence cardiaque avant d'entrer dans un IRM pour prévenir une crise.",
-        "limite": "Ne traite pas les contextes où le temps manque (ex. crise soudaine en métro, abordé en section 3).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi vos cinq sens peuvent-ils sauver votre journée ?",
+        "objectif": "Vous utiliserez l'ancrage sensoriel pour ramener votre attention au présent et couper court à la spirale anxieuse.",
+        "concept_cle": "Ancrage 5-4-3-2-1 : recentrage par les sens.",
+        "exemple": "Thomas compte 5 choses qu'il voit, 4 qu'il touche, etc., pour sortir de sa rumination.",
+        "limite": "Ne propose pas de méditation de pleine conscience longue — exclue du périmètre.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "3",
-        "titre_section": "Ancrage sensoriel : comment utiliser vos 5 sens pour sortir de la spirale de la panique",
-        "objectif": "Vous utiliserez des stimuli sensoriels (toucher, vue, ouïe) pour recentrer votre attention et interrompre une crise en cours.",
-        "concept_cle": "Ancrage sensoriel : technique de distraction cognitive par les sens.",
-        "exemple": "Thomas se concentre sur la texture de ses clés dans sa poche pour éviter de paniquer dans un métro bondé.",
-        "limite": "Ne traite pas les cas où l'ancrage sensoriel n'est pas accessible (ex. IRM, abordé en section 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment transformer une pensée intrusive en simple \"bruit de fond\" ?",
+        "objectif": "Vous appliquerez la restructuration cognitive simplifiée pour relativiser le pouvoir de vos pensées sans les nier.",
+        "concept_cle": "Défusion cognitive : observer sans s'identifier.",
+        "exemple": "Thomas apprend à dire \"J'ai une pensée violente\" au lieu de \"Je veux blesser quelqu'un\".",
+        "limite": "Ne détaille pas les théories psychologiques sous-jacentes (ex. : TCC) — À définir avec l'auteur.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "4",
-        "titre_section": "Restructuration cognitive en temps réel : transformer vos pensées catastrophiques en 3 questions",
-        "objectif": "Vous apprendrez à challenger vos pensées irrationnelles pendant une crise pour réduire leur intensité.",
-        "concept_cle": "Restructuration cognitive : remplacer les pensées automatiques par des alternatives réalistes.",
-        "exemple": "Thomas se demande : \"Quelle est la preuve que je vais étouffer ?\" pour calmer sa peur dans un ascenseur.",
-        "limite": "Ne traite pas les cas où les pensées sont trop envahissantes (combinaison avec d'autres outils en section 5).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
-      },
-      {
-        "numero": "5",
-        "titre_section": "Adapter les techniques à votre contexte : ascenseur, IRM ou transports, quelle méthode choisir ?",
-        "objectif": "Vous saurez sélectionner et combiner les outils en fonction de la situation pour une efficacité maximale.",
-        "concept_cle": "Adaptation contextuelle : choisir la technique en fonction des contraintes.",
-        "exemple": "Thomas utilise l'ancrage sensoriel dans le métro (où il peut toucher des objets) et la respiration diaphragmatique dans un IRM (où il est immobile).",
-        "limite": "Ne propose pas de plan pour intégrer ces techniques dans une exposition progressive (abordé en chapitre 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi ces techniques ne marchent pas toujours (et que faire alors) ?",
+        "objectif": "Vous identifierez les pièges courants (ex. : utilisation comme rituel) et apprendrez à adapter les outils à votre situation.",
+        "concept_cle": "Variabilité individuelle : un outil ≠ une solution universelle.",
+        "exemple": "Thomas réalise que la respiration ne suffit pas les jours de grande fatigue, et combine avec l'ancrage.",
+        "limite": "Ne propose pas de solutions non étayées scientifiquement — exclues du périmètre.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       }
     ],
-    "total_mots_chapitre": 2175
+    "total_mots_chapitre": 2000
   },
   {
     "numero": "4",
-    "titre": "Construire un plan d'exposition progressive",
+    "titre": "Reconstruire la confiance en soi face aux pensées intrusives",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi l'exposition brutale aggrave votre phobie (et comment faire autrement)",
-        "objectif": "Vous comprendrez les risques de l'exposition non graduée et les principes de l'exposition progressive pour des résultats durables.",
-        "concept_cle": "Exposition progressive : désensibilisation par paliers sécurisés.",
-        "exemple": "Thomas évite de forcer son entrée dans un ascenseur et commence par rester devant les portes ouvertes.",
-        "limite": "Ne propose pas de méthode pour créer des paliers (abordé en section 2).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi vous sous-estimez vos réussites (et comment les compter) ?",
+        "objectif": "Vous créerez une liste de vos petites victoires pour contrer le sentiment d'impuissance et renforcer votre estime de soi.",
+        "concept_cle": "Capitalisation des réussites : rééquilibrer le focus.",
+        "exemple": "Thomas note qu'il a réussi à tenir un couteau sans paniquer, même brièvement.",
+        "limite": "Ne traite pas les échecs comme des \"preuves\" de danger — abordé dans la section 2.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "2",
-        "titre_section": "Créer votre échelle d'anxiété personnelle : de 0 à 10, où se situent vos limites ?",
-        "objectif": "Vous construirez une échelle d'anxiété sur mesure pour évaluer vos progrès et ajuster vos paliers.",
-        "concept_cle": "Échelle d'anxiété subjective : outil de mesure personnalisé.",
-        "exemple": "Thomas note qu'un ascenseur avec portes ouvertes est un 3/10, tandis qu'un ascenseur bondé est un 8/10.",
-        "limite": "Ne propose pas de paliers concrets (abordé en section 3).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment tolérer l’incertitude sans chercher à tout contrôler ?",
+        "objectif": "Vous pratiquerez l'exposition aux pensées intrusives sans chercher à les éliminer, pour réduire leur pouvoir anxiogène.",
+        "concept_cle": "Acceptation radicale : accueillir sans combattre.",
+        "exemple": "Thomas s'expose à l'idée \"Et si je perdais le contrôle ?\" sans chercher de réassurance.",
+        "limite": "Ne propose pas de thérapies d'acceptation avancées — réservées aux professionnels.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "3",
-        "titre_section": "Concevoir vos paliers : comment passer de \"je panique\" à \"je gère\" sans sauter d'étapes",
-        "objectif": "Vous élaborerez des paliers réalistes et progressifs pour élargir votre zone de confort sans risque de rechute.",
-        "concept_cle": "Paliers d'exposition : étapes mesurables et sécurisées.",
-        "exemple": "Thomas commence par rester 30 secondes dans sa voiture portes fermées, puis 1 minute, avant de tenter l'ascenseur.",
-        "limite": "Ne traite pas la gestion des rechutes (abordé en section 4).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Pourquoi vos proches aggravent-ils (sans le vouloir) votre anxiété ?",
+        "objectif": "Vous identifierez les demandes de réassurance qui maintiennent votre anxiété et apprendrez à poser des limites saines.",
+        "concept_cle": "Réassurance compulsive : un piège relationnel.",
+        "exemple": "Thomas demande sans cesse à sa compagne \"Tu crois que je suis dangereux ?\", ce qui renforce sa peur.",
+        "limite": "Ne traite pas les dynamiques familiales complexes — redirigé vers un professionnel.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "4",
-        "titre_section": "Gérer les rechutes : pourquoi elles sont normales et comment les surmonter sans abandonner",
-        "objectif": "Vous apprendrez à anticiper et gérer les rechutes pour éviter la culpabilité et maintenir vos progrès.",
-        "concept_cle": "Rechute normale : partie intégrante du processus d'exposition.",
-        "exemple": "Thomas panique dans un métro bloqué mais utilise ses techniques (chapitre 3) et reprend son plan sans tout recommencer.",
-        "limite": "Ne traite pas les stratégies pour pérenniser les progrès (abordé en chapitre 5).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
-      },
-      {
-        "numero": "5",
-        "titre_section": "Intégrer les techniques de crise dans votre plan : comment ne pas dépendre d'un seul outil",
-        "objectif": "Vous combinerez les outils du chapitre 3 avec vos paliers d'exposition pour une approche globale et résiliente.",
-        "concept_cle": "Combinaison outils/paliers : approche intégrée pour une exposition sécurisée.",
-        "exemple": "Thomas utilise la respiration diaphragmatique avant d'entrer dans un ascenseur et l'ancrage sensoriel pendant le trajet.",
-        "limite": "Ne traite pas le rôle de l'entourage (abordé en chapitre 5).",
-        "mots_cible": "348-522",
-        "nombre_mots_section": 435
+        "titre_section": "Comment redevenir acteur de votre vie malgré les pensées intrusives ?",
+        "objectif": "Vous réintégrerez des activités abandonnées (ex. : cuisiner, sortir) pour reprendre confiance en vos capacités.",
+        "concept_cle": "Réengagement comportemental : agir malgré la peur.",
+        "exemple": "Thomas recommence à cuisiner, même si cela déclenche des pensées intrusives.",
+        "limite": "Ne propose pas de thérapies de groupe — exclues du périmètre.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       }
     ],
-    "total_mots_chapitre": 2175
+    "total_mots_chapitre": 2000
   },
   {
     "numero": "5",
-    "titre": "Pérenniser ses progrès et prévenir les rechutes",
+    "titre": "Construire un plan d’action personnalisé et durable",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi vos progrès peuvent s'estomper (et comment les ancrer dans la durée)",
-        "objectif": "Vous comprendrez les mécanismes de l'extinction de la peur et les stratégies pour maintenir vos acquis.",
-        "concept_cle": "Extinction de la peur : processus fragile nécessitant un entretien.",
-        "exemple": "Thomas réalise qu'il doit continuer à prendre l'ascenseur régulièrement, même s'il ne panique plus.",
-        "limite": "Ne propose pas de fréquence d'entretien (abordé en section 2).",
-        "mots_cible": "347-521",
-        "nombre_mots_section": 434
+        "titre_section": "Comment choisir les outils qui vous correspondent vraiment ?",
+        "objectif": "Vous évaluerez l'efficacité des techniques testées et sélectionnerez celles qui fonctionnent le mieux pour vous, avec des critères concrets.",
+        "concept_cle": "Plan sur mesure : adapter, pas copier.",
+        "exemple": "Thomas réalise que l'ancrage sensoriel marche mieux que la respiration pour lui.",
+        "limite": "Ne propose pas de protocoles thérapeutiques détaillés — réservés aux professionnels.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "2",
-        "titre_section": "La fréquence idéale pour vos exercices : comment éviter l'abandon prématuré",
-        "objectif": "Vous déterminerez un rythme d'exposition réaliste pour consolider vos progrès sans surcharge.",
-        "concept_cle": "Fréquence d'exposition : équilibre entre régularité et surmenage.",
-        "exemple": "Thomas planifie une exposition par semaine, même courte, pour éviter de perdre ses acquis.",
-        "limite": "Ne traite pas les ajustements en cas de rechute (abordé en section 3).",
-        "mots_cible": "347-521",
-        "nombre_mots_section": 434
+        "titre_section": "Pourquoi les rechutes font partie du processus (et comment rebondir) ?",
+        "objectif": "Vous anticiperez les périodes de doute et appliquerez un protocole en 3 étapes pour éviter la spirale négative.",
+        "concept_cle": "Protocole de rebond : normaliser, ajuster, avancer.",
+        "exemple": "Thomas utilise ce protocole quand il évite à nouveau les couteaux après une mauvaise journée.",
+        "limite": "Ne promet pas une guérison définitive — exclue du périmètre.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "3",
-        "titre_section": "Ajuster vos paliers : quand et comment monter en difficulté sans risque",
-        "objectif": "Vous saurez évaluer vos progrès pour faire évoluer vos paliers de manière sécurisée.",
-        "concept_cle": "Ajustement des paliers : progression adaptative.",
-        "exemple": "Thomas passe d'un ascenseur vide à un ascenseur avec une personne, puis deux, en fonction de son niveau d'anxiété.",
-        "limite": "Ne traite pas les signes indiquant un besoin de suivi professionnel (abordé en section 5).",
-        "mots_cible": "347-521",
-        "nombre_mots_section": 434
+        "titre_section": "Quand et comment consulter un professionnel sans culpabiliser ?",
+        "objectif": "Vous identifierez les signes d'alerte qui nécessitent un accompagnement spécialisé et saurez comment en parler à un thérapeute.",
+        "concept_cle": "Seuils d'alerte : quand les outils ne suffisent plus.",
+        "exemple": "Thomas consulte quand ses pensées l'empêchent de travailler ou de dormir.",
+        "limite": "Ne détaille pas les types de thérapies (ex. : durée, tarifs) — À définir avec l'auteur.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       },
       {
         "numero": "4",
-        "titre_section": "Impliquer votre entourage : comment communiquer vos besoins sans surprotection",
-        "objectif": "Vous apprendrez à expliquer votre claustrophobie à vos proches et à solliciter leur soutien de manière constructive.",
-        "concept_cle": "Communication bienveillante : exprimer ses besoins sans dépendre des autres.",
-        "exemple": "Thomas demande à son collègue de l'accompagner dans l'ascenseur sans lui tenir la main, pour éviter la surprotection.",
-        "limite": "Ne traite pas les cas où l'entourage est en opposition (À définir avec l'auteur).",
-        "mots_cible": "347-521",
-        "nombre_mots_section": 434
-      },
-      {
-        "numero": "5",
-        "titre_section": "Quand consulter un professionnel : les signes qui ne trompent pas",
-        "objectif": "Vous identifierez les situations où un suivi psychologique ou médical est nécessaire pour éviter l'impasse.",
-        "concept_cle": "Seuils d'alerte : indicateurs d'un besoin de soutien externe.",
-        "exemple": "Thomas consulte un thérapeute quand ses crises l'empêchent de prendre l'avion pour son travail.",
-        "limite": "Ne propose pas de recommandations de professionnels ou de thérapies (hors périmètre).",
-        "mots_cible": "347-521",
-        "nombre_mots_section": 434
+        "titre_section": "Comment créer un calendrier réaliste pour ancrer vos progrès ?",
+        "objectif": "Vous élaborerez un plan hebdomadaire avec des objectifs progressifs et des critères d'ajustement pour éviter la surcharge.",
+        "concept_cle": "Calendrier d'action : petits pas, grands effets.",
+        "exemple": "Thomas planifie une exposition par semaine, avec des paliers adaptés à son niveau d'anxiété.",
+        "limite": "Ne propose pas de solutions rigides — insiste sur la flexibilité.",
+        "mots_cible": "400-600",
+        "nombre_mots_section": 500
       }
     ],
-    "total_mots_chapitre": 2170
+    "total_mots_chapitre": 2000
   }
 ]

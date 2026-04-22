@@ -3,20 +3,44 @@
   "section": 2,
   "chapitre_numero": "2",
   "section_numero": "2",
-  "these_centrale": "L'auto-observation attentive des signaux corporels subtils est essentielle pour identifier les déclencheurs discrets de la claustrophobie.",
+  "these_centrale": "L'analyse des pensées sombres les renforce ; il faut apprendre à les observer sans jugement pour diminuer leur pouvoir.",
   "arguments_cles": [
-    "Repérer les signaux corporels discrets avant l'anxiété permet une intervention précoce.",
-    "Le journal des crises détaille sensations, pensées et déclencheurs pour une analyse objective.",
-    "Identifier des motifs récurrents dans les réactions aide à objectiver les peurs.",
-    "Analyser les exceptions révèle des facteurs atténuant l'anxiété."
+    "Analyser les pensées sombres les ancre davantage dans l'esprit et les rend plus importantes.",
+    "Changer la perception et la réaction face aux pensées est essentiel pour sortir du cycle.",
+    "L'observation détachée des pensées les désamorce et diminue leur pouvoir anxiogène.",
+    "La rumination, par l'analyse, nourrit l'anxiété et renforce le problème des pensées intrusives."
   ],
   "concepts_introduits": [
-    "Auto-observation : attention consciente aux signaux internes et externes.",
-    "Journal des crises : outil d'enregistrement détaillé des expériences d'anxiété.",
-    "Déclencheurs subtils : stimuli discrets provoquant une réaction anxieuse."
+    "Rumination : analyse excessive des pensées sombres qui renforce leur impact.",
+    "Observation détachée : regarder passer les pensées sans y adhérer ou les juger.",
+    "Recentrage sensoriel : focalisation sur les perceptions immédiates pour s'ancrer dans le présent."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et analytique, il guide le lecteur dans l'identification factuelle de ses déclencheurs.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'auto-observation attentive des signaux corporels subtils est essentielle pour identifier les déclencheurs discrets de la claustrophobie.</these_centrale>\n<arguments_cles>\n- Repérer les signaux corporels discrets avant l'anxiété permet une intervention précoce.\n- Le journal des crises détaille sensations, pensées et déclencheurs pour une analyse objective.\n- Identifier des motifs récurrents dans les réactions aide à objectiver les peurs.\n- Analyser les exceptions révèle des facteurs atténuant l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Auto-observation : attention consciente aux signaux internes et externes.\n- Journal des crises : outil d'enregistrement détaillé des expériences d'anxiété.\n- Déclencheurs subtils : stimuli discrets provoquant une réaction anxieuse.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_paRepeter>\n- Phase d'auto-observation rigoureuse\n- Signaux discrets\n- Outil précieux\n- Analyse concrète\n</a_ne_paRepeter>\n<ton_angle>Pragmatique et analytique, il guide le lecteur dans l'identification factuelle de ses déclencheurs.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Mécanisme qui a l'effet inverse de celui recherché.",
+    "Mécanisme de la rumination.",
+    "Accorder une importance démesurée.",
+    "Cascade de réponses physiologiques.",
+    "Système nerveux en état d'alerte.",
+    "Toile de fond floue.",
+    "Éradiquer ces pensées.",
+    "Événement mental transitoire.",
+    "Indication de danger réel.",
+    "Désamorcer la réaction de peur.",
+    "Entraînement régulier.",
+    "Observation détachée.",
+    "Regarder passer des pensées sur un écran.",
+    "Noter mentalement et laisser passer.",
+    "Bruit de fond mental.",
+    "Inclination naturelle à analyser pour résoudre.",
+    "Disséquant les problèmes.",
+    "Boucle sans fin qui nourrit l'anxiété.",
+    "Prise de conscience fondamentale.",
+    "Rediriger votre attention.",
+    "Cycle vicieux.",
+    "Reconnexion avec le réel.",
+    "Tempête intérieure."
+  ],
+  "ton_angle": "Pragmatique et préventif, exposant les mécanismes psychologiques et proposant des solutions concrètes.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'analyse des pensées sombres les renforce ; il faut apprendre à les observer sans jugement pour diminuer leur pouvoir.</these_centrale>\n<arguments_cles>\n- Analyser les pensées sombres les ancre davantage dans l'esprit et les rend plus importantes.\n- Changer la perception et la réaction face aux pensées est essentiel pour sortir du cycle.\n- L'observation détachée des pensées les désamorce et diminue leur pouvoir anxiogène.\n- La rumination, par l'analyse, nourrit l'anxiété et renforce le problème des pensées intrusives.\n</arguments_cles>\n<concepts_introduits>\n- Rumination : analyse excessive des pensées sombres qui renforce leur impact.\n- Observation détachée : regarder passer les pensées sans y adhérer ou les juger.\n- Recentrage sensoriel : focalisation sur les perceptions immédiates pour s'ancrer dans le présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Mécanisme qui a l'effet inverse de celui recherché.\n- Mécanisme de la rumination.\n- Accorder une importance démesurée.\n- Cascade de réponses physiologiques.\n- Système nerveux en état d'alerte.\n- Toile de fond floue.\n- Éradiquer ces pensées.\n- Événement mental transitoire.\n- Indication de danger réel.\n- Désamorcer la réaction de peur.\n- Entraînement régulier.\n- Observation détachée.\n- Regarder passer des pensées sur un écran.\n- Noter mentalement et laisser passer.\n- Bruit de fond mental.\n- Inclination naturelle à analyser pour résoudre.\n- Disséquant les problèmes.\n- Boucle sans fin qui nourrit l'anxiété.\n- Prise de conscience fondamentale.\n- Rediriger votre attention.\n- Cycle vicieux.\n- Reconnexion avec le réel.\n- Tempête intérieure.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et préventif, exposant les mécanismes psychologiques et proposant des solutions concrètes.</ton_angle>\n</fiche>"
 }

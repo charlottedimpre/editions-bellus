@@ -14,20 +14,18 @@ ROOT_DIR = BASE_DIR.parents[1]
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 SECTION_DIR = OUTPUT_DIR / "section"
-VERIFICATION_DIR = OUTPUT_DIR / "verification"
 FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PLAN_DETAIL_PATH = BASE_DIR.parent / "plan_detaille" / "output" / "plan_detaille.json"
 STRUCTURE_PATH = BASE_DIR.parent / "structure_chapitre" / "output" / "structure_chapitre.json"
 RESUME_DIR = OUTPUT_DIR / "resume"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-VERIFICATION_DIR.mkdir(parents=True, exist_ok=True)
 
 load_dotenv(ROOT_DIR / ".env")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY introuvable dans le fichier .env")
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-2.5-flash-lite"
+GEMINI_MODEL = os.getenv("GEMINI_MODEL")
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
@@ -124,9 +122,8 @@ def _normalize_non_actionable_non(result: dict[str, Any], gate_name: str) -> dic
 
 
 def _save_report(filename: str, payload: dict[str, Any]) -> None:
-    report_path = VERIFICATION_DIR / filename
-    with report_path.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    # Sortie disque des rapports de verification desactivee.
+    _ = (filename, payload)
 
 
 def verification_artefact_section_report(chapitre: int, section: int) -> dict[str, Any]:

@@ -3,23 +3,23 @@
   "section": 2,
   "chapitre_numero": "5",
   "section_numero": "2",
-  "these_centrale": "Une exposition régulière mais modérée est cruciale pour ancrer durablement la gestion de la claustrophobie.",
+  "these_centrale": "Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.",
   "arguments_cles": [
-    "Maintenir une fréquence d'exposition qui réaffirme le contrôle sans épuisement.",
-    "Des expositions courtes et régulières consolident mieux les acquis neuronaux.",
-    "Cibler des niveaux d'anxiété faibles à modérés pour renforcer le contrôle.",
-    "La régularité empêche l'érosion des nouvelles associations positives et évite la rechute."
+    "Normaliser les moments de doute comme une étape d'adaptation normale.",
+    "Analyser objectivement les déclencheurs et les stratégies appliquées.",
+    "Ajuster le plan d'action pour renforcer les stratégies efficaces.",
+    "Transformer la détresse en levier de progrès et de confiance."
   ],
   "concepts_introduits": [
-    "Exposition : Répétition contrôlée de situations anxiogènes pour désapprendre la peur.",
-    "Associations positives : Nouvelles réponses émotionnelles et cognitives aux déclencheurs phobiques.",
-    "Connexions neuronales : Voies cérébrales modifiées par l'apprentissage et l'expérience répétée."
+    "Rechute : retour temporaire des symptômes ou difficultés.",
+    "Résilience : capacité à surmonter les difficultés.",
+    "Pensées intrusives : pensées non désirées et récurrentes."
   ],
-  "liens_chapitres": "- chapitre 3",
+  "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas revenir aux situations les plus anxiogènes de manière trop fréquente.",
-    "Ne pas espacer trop les expositions pour que les nouvelles associations s'ancrent."
+    "Ne pas interpréter une rechute comme un échec total.",
+    "Ne pas se décourager face aux fluctuations."
   ],
-  "ton_angle": "Ton pragmatique et encourageant, axé sur l'équilibre et la régularité pour la durabilité.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Une exposition régulière mais modérée est cruciale pour ancrer durablement la gestion de la claustrophobie.</these_centrale>\n<arguments_cles>\n- Maintenir une fréquence d'exposition qui réaffirme le contrôle sans épuisement.\n- Des expositions courtes et régulières consolident mieux les acquis neuronaux.\n- Cibler des niveaux d'anxiété faibles à modérés pour renforcer le contrôle.\n- La régularité empêche l'érosion des nouvelles associations positives et évite la rechute.\n</arguments_cles>\n<concepts_introduits>\n- Exposition : Répétition contrôlée de situations anxiogènes pour désapprendre la peur.\n- Associations positives : Nouvelles réponses émotionnelles et cognitives aux déclencheurs phobiques.\n- Connexions neuronales : Voies cérébrales modifiées par l'apprentissage et l'expérience répétée.\n</concepts_introduits>\n<liens_chapitres>\n- chapitre 3\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas revenir aux situations les plus anxiogènes de manière trop fréquente.\n- Ne pas espacer trop les expositions pour que les nouvelles associations s'ancrent.\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur l'équilibre et la régularité pour la durabilité.</ton_angle>\n</fiche>"
+  "ton_angle": "Instructif et pragmatique, l'angle est celui du développement personnel.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.</these_centrale>\n<arguments_cles>\n- Normaliser les moments de doute comme une étape d'adaptation normale.\n- Analyser objectivement les déclencheurs et les stratégies appliquées.\n- Ajuster le plan d'action pour renforcer les stratégies efficaces.\n- Transformer la détresse en levier de progrès et de confiance.\n</arguments_cles>\n<concepts_introduits>\n- Rechute : retour temporaire des symptômes ou difficultés.\n- Résilience : capacité à surmonter les difficultés.\n- Pensées intrusives : pensées non désirées et récurrentes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas interpréter une rechute comme un échec total.\n- Ne pas se décourager face aux fluctuations.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, l'angle est celui du développement personnel.</ton_angle>\n</fiche>"
 }
