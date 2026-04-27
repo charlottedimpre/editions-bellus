@@ -26,7 +26,7 @@ Respecte EXACTEMENT ce format :
   <ne_traite_pas>[Ce qui est explicitement exclu de ce chapitre]</ne_traite_pas>
   <pourquoi_distinct>[En quoi ce chapitre est irréductible aux autres]</pourquoi_distinct>
 
-- [Autant de chapitres que le sujet le justifie, entre 6 et 10]
+- [Autant de chapitres que la fiche de cadrage l'impose via <nbre_chapitres>]
 </chapitres>
 
 <conclusion>

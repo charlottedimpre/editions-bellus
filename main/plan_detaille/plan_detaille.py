@@ -23,6 +23,22 @@ LLM_RETRY_DELAY_SECONDS = 2
 MODEL_COURT = os.getenv("ED_BELLUS_OLLAMA_MODEL_COURT")
 
 
+def _build_fiche_cadrage_for_prompt(payload: dict) -> dict:
+    # Exclut les champs bruts/legacy pour eviter les contradictions dans le prompt.
+    allowed_keys = [
+        "sujet",
+        "sommaire",
+        "hors_perimetre",
+        "contraintes_specifiques",
+        "cible_principale",
+        "niveau",
+        "objectif_lecteur",
+        "nbre_chapitres",
+        "titre_saisi_utilisateur",
+    ]
+    return {key: payload.get(key) for key in allowed_keys if key in payload}
+
+
 def _normalize_ws_final(payload):
     if isinstance(payload, dict):
         return payload
@@ -86,8 +102,16 @@ def plan_detail():
     prompt = _read_text(input_path, "prompt plan detaille")
 
     fiche_cadrage_payload = _read_json(FICHE_CADRAGE_PATH, "fiche de cadrage")
-    expected_chapters = fiche_cadrage_payload.get("nbre_chapitres") if isinstance(fiche_cadrage_payload, dict) else None
-    fiche_cadrage = _read_text(FICHE_CADRAGE_PATH, "fiche de cadrage")
+    expected_chapters = None
+    if isinstance(fiche_cadrage_payload, dict):
+        raw_expected = fiche_cadrage_payload.get("nbre_chapitres")
+        if raw_expected is not None:
+            expected_chapters = int(raw_expected)
+        fiche_cadrage_for_prompt = _build_fiche_cadrage_for_prompt(fiche_cadrage_payload)
+    else:
+        fiche_cadrage_for_prompt = {"raw_fiche": fiche_cadrage_payload}
+
+    fiche_cadrage = json.dumps(fiche_cadrage_for_prompt, ensure_ascii=False, indent=2)
 
     sources_web = json.dumps(sources(), ensure_ascii=False, indent=2)
 
@@ -95,7 +119,7 @@ def plan_detail():
         model=MODEL_COURT,
         message_content=(
             f"{prompt}\n\n"
-            f"FICHE DE CADRAGE : {fiche_cadrage}\n\n"
+            f"FICHE DE CADRAGE (JSON) : {fiche_cadrage}\n\n"
             f"SOURCES WEB (JSON) : {sources_web}"
         ),
         context_label="plan_detaille",
@@ -109,9 +133,27 @@ def plan_detail():
     if not isinstance(chapitres, list) or len(chapitres) == 0:
         raise ValueError("Le plan detaille parse doit contenir une liste de chapitres non vide.")
     if expected_chapters is not None and len(chapitres) != int(expected_chapters):
-        raise ValueError(
-            f"Nombre de chapitres invalide: attendu {int(expected_chapters)} depuis la fiche, obtenu {len(chapitres)}."
+        print(
+            f"[WARN] Nombre de chapitres invalide ({len(chapitres)} au lieu de {int(expected_chapters)}). "
+            "Nouvelle tentative de generation forcee."
         )
+        response_content = _chat_with_retry(
+            model=MODEL_COURT,
+            message_content=(
+                f"{prompt}\n\n"
+                f"FICHE DE CADRAGE (JSON) : {fiche_cadrage}\n\n"
+                f"SOURCES WEB (JSON) : {sources_web}\n\n"
+                f"CONTRAINTE ABSOLUE: genere EXACTEMENT {int(expected_chapters)} chapitres. "
+                "Ne renvoie que le format demande."
+            ),
+            context_label="plan_detaille_count_fix",
+        )
+        parsed = parse_plan_detaille(response_content)
+        chapitres = parsed.get("chapitres")
+        if not isinstance(chapitres, list) or len(chapitres) != int(expected_chapters):
+            raise ValueError(
+                f"Nombre de chapitres invalide: attendu {int(expected_chapters)} depuis la fiche, obtenu {len(chapitres) if isinstance(chapitres, list) else 'invalide'} apres correction."
+            )
 
     filepath = OUTPUT_DIR / "plan_detaille.json"
     with filepath.open("w", encoding="utf-8") as f:
