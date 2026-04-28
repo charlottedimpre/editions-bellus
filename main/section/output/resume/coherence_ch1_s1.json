@@ -3,25 +3,18 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.",
+  "these_centrale": "Le biais de catastrophisme amplifie la dangerosité des sensations corporelles banales en générant des scénarios alarmants.",
   "arguments_cles": [
-    "Les pensées involontaires sont courantes et ne signifient pas un danger imminent.",
-    "La peur naît de l'interprétation erronée des pensées, pas de leur existence.",
-    "Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.",
-    "Distinguer la pensée de l'action est essentiel pour réduire l'anxiété."
+    "Les sensations corporelles sont faussement associées à des menaces graves et immédiates.",
+    "Le biais de catastrophisme filtre les perceptions corporelles vers les pires scénarios possibles.",
+    "La peur logique et la focalisation sur le danger maintiennent le système nerveux en alerte.",
+    "Reconnaître ce biais cognitif est la première étape pour une évaluation plus nuancée des symptômes."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire et souvent effrayante.",
-    "Rumination : tendance à ressasser des pensées négatives.",
-    "Hyper-vigilance : vigilance excessive face aux menaces potentielles."
+    "Biais de catastrophisme : interprétation excessivement négative des sensations corporelles."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Le cerveau est une machine complexe.",
-    "Il génère des scénarios effrayants.",
-    "Confusion entre penser et agir.",
-    "Vous n'êtes pas vos pensées."
-  ],
-  "ton_angle": "Explicatif et rassurant, démystifiant la peur des pensées involontaires.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.</these_centrale>\n<arguments_cles>\n- Les pensées involontaires sont courantes et ne signifient pas un danger imminent.\n- La peur naît de l'interprétation erronée des pensées, pas de leur existence.\n- Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.\n- Distinguer la pensée de l'action est essentiel pour réduire l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire et souvent effrayante.\n- Rumination : tendance à ressasser des pensées négatives.\n- Hyper-vigilance : vigilance excessive face aux menaces potentielles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau est une machine complexe.\n- Il génère des scénarios effrayants.\n- Confusion entre penser et agir.\n- Vous n'êtes pas vos pensées.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, démystifiant la peur des pensées involontaires.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Objectif et informatif, expliquant un mécanisme psychologique et son impact.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le biais de catastrophisme amplifie la dangerosité des sensations corporelles banales en générant des scénarios alarmants.</these_centrale>\n<arguments_cles>\n- Les sensations corporelles sont faussement associées à des menaces graves et immédiates.\n- Le biais de catastrophisme filtre les perceptions corporelles vers les pires scénarios possibles.\n- La peur logique et la focalisation sur le danger maintiennent le système nerveux en alerte.\n- Reconnaître ce biais cognitif est la première étape pour une évaluation plus nuancée des symptômes.\n</arguments_cles>\n<concepts_introduits>\n- Biais de catastrophisme : interprétation excessivement négative des sensations corporelles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le piège se referme lorsque ces perceptions sont immédiatement associées à une menace grave.\n- Votre esprit, s'il est prédisposé à l'inquiétude, peut ignorer ces explications plausibles.\n- Ce mécanisme psychologique, même s'il est inconscient, transforme votre corps en une source constante d'alerte.\n- Il est crucial de comprendre que ce biais n'est pas une faiblesse de caractère.\n- Le fait que vous interprétiez une sensation comme dangereuse ne signifie pas qu'elle l'est réellement.\n</a_ne_pas_repeter>\n<ton_angle>Objectif et informatif, expliquant un mécanisme psychologique et son impact.</ton_angle>\n</fiche>"
 }

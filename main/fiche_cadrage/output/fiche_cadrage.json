@@ -1,26 +1,22 @@
 {
-  "sujet": "Comprendre et surmonter la phobie d’impulsion : mécanismes, outils pratiques et reconstruction de la confiance",
-  "sommaire": [],
+  "sujet": "Apaiser l’anxiété de santé : comprendre, désamorcer et vivre sans la peur des maladies",
   "hors_perimetre": [
-    "Diagnostic clinique — les critères d’évaluation sont présentés sans substitution à un avis médical ou psychologique",
-    "Traitements médicamenteux — mention des options thérapeutiques sans recommandation ni posologie",
-    "Cas complexes (troubles comorbides sévères) — redirection vers un professionnel spécialisé en santé mentale",
-    "Évolution récente des thérapies (moins de 2 ans) — focus sur les méthodes validées et stabilisées",
-    "Approches spirituelles ou alternatives non étayées — exclusion des pratiques sans base scientifique reconnue"
+    "Diagnostiquer ou traiter des troubles médicaux — renvoyer vers un professionnel de santé pour toute évaluation clinique",
+    "Proposer des solutions universelles ou instantanées — reconnaître la variabilité des parcours et des réponses individuelles",
+    "Ignorer le rôle des facteurs externes (environnement, accès aux soins, inégalités sociales) — aborder leur impact sans en faire une analyse exhaustive",
+    "Remplacer un suivi psychologique ou psychiatrique — insister sur la complémentarité des approches",
+    "Couvrir les évolutions récentes des classifications médicales (DSM-5-TR, CIM-11) — se limiter aux mécanismes psychologiques stables"
   ],
   "contraintes_specifiques": [
-    "Le ton doit rester pédagogique et rigoureux",
-    "Mention des risques liés aux interprétations erronées des pensées intrusives",
-    "Mention des limites des outils proposés (efficacité variable selon les individus)",
-    "Mention des erreurs fréquentes dans la gestion de l’anxiété (évitement, rumination, auto-jugement)",
-    "Précision explicite que ce livre ne remplace pas un suivi thérapeutique professionnel",
-    "Intégration systématique de la variabilité individuelle dans les stratégies proposées",
-    "Rappel régulier des conditions d’application des méthodes (contexte, durée, adaptation)"
+    "Le ton alterne entre bienveillance et fermeté, sans minimiser la souffrance ni céder à la dramatisation",
+    "Mention systématique des risques liés aux stratégies d’évitement ou aux auto-diagnostics",
+    "Explicitation des limites des outils proposés (contexte d’application, efficacité variable)",
+    "Identification des erreurs fréquentes (recherche compulsive d’informations, vérifications corporelles répétées)",
+    "Rappel que ce livre ne se substitue pas à un accompagnement professionnel en cas de trouble anxieux sévère"
   ],
-  "cible_principale": "Personne souffrant de phobie d’impulsion sans diagnostic formel, en quête d’outils concrets pour réduire son anxiété et reprendre le contrôle de ses pensées au quotidien",
-  "niveau": "Débutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)",
-  "objectif_lecteur": "Vous saurez distinguer une pensée intrusive d’un danger réel, appliquer des techniques validées pour désamorcer l’anxiété au quotidien, et construire une relation apaisée avec vos pensées sans les craindre ni les combattre systématiquement",
+  "cible_principale": "Adultes de 25–45 ans en situation de stress chronique ou de transition (parentalité, changement professionnel, deuil), ayant déjà identifié leur anxiété de santé comme un frein à leur quotidien et cherchant des outils concrets pour la réguler sans dépendre de la réassurance médicale",
+  "niveau": "Débutant (suppose aucune connaissance préalable en psychologie ou en mécanismes de l’anxiété, n’exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d’un grand public novice, intègre un rappel régulier des limites et des conditions d’application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)",
+  "objectif_lecteur": "Vous saurez reconnaître les mécanismes de votre anxiété de santé, appliquer des techniques pour réduire les crises de panique liées à votre corps, et construire une relation apaisée avec vos symptômes sans recourir systématiquement à des examens médicaux ou à des recherches en ligne.",
   "nbre_chapitres": 5,
-  "_raw": "<fiche_cadrage>\n\n<sujet>\nComprendre et surmonter la phobie d’impulsion : mécanismes, outils pratiques et reconstruction de la confiance\n</sujet>\n\n<nbre_chapitres>\n8\n</nbre_chapitres>\n\n<hors_perimetre>\n- Diagnostic clinique — les critères d’évaluation sont présentés sans substitution à un avis médical ou psychologique\n- Traitements médicamenteux — mention des options thérapeutiques sans recommandation ni posologie\n- Cas complexes (troubles comorbides sévères) — redirection vers un professionnel spécialisé en santé mentale\n- Évolution récente des thérapies (moins de 2 ans) — focus sur les méthodes validées et stabilisées\n- Approches spirituelles ou alternatives non étayées — exclusion des pratiques sans base scientifique reconnue\n</hors_perimetre>\n\n<contraintes_specifiques>\n- Le ton doit rester pédagogique et rigoureux\n- Mention des risques liés aux interprétations erronées des pensées intrusives\n- Mention des limites des outils proposés (efficacité variable selon les individus)\n- Mention des erreurs fréquentes dans la gestion de l’anxiété (évitement, rumination, auto-jugement)\n- Précision explicite que ce livre ne remplace pas un suivi thérapeutique professionnel\n- Intégration systématique de la variabilité individuelle dans les stratégies proposées\n- Rappel régulier des conditions d’application des méthodes (contexte, durée, adaptation)\n</contraintes_specifiques>\n\n<cible_principale>\nPersonne souffrant de phobie d’impulsion sans diagnostic formel, en quête d’outils concrets pour réduire son anxiété et reprendre le contrôle de ses pensées au quotidien\n</cible_principale>\n\n<niveau>\nDébutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire technique acquis, nécessite des définitions explicites des concepts dès leur première apparition, privilégie une progression lente et cumulative, impose des transitions pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites et des conditions d'application, et vise une autonomie de compréhension de base sans prérequis de lecture complémentaire)\n</niveau>\n\n<objectif_lecteur>\nVous saurez distinguer une pensée intrusive d’un danger réel, appliquer des techniques validées pour désamorcer l’anxiété au quotidien, et construire une relation apaisée avec vos pensées sans les craindre ni les combattre systématiquement\n</objectif_lecteur>\n\n</fiche_cadrage>",
-  "titre_saisi_utilisateur": "« Phobie d’impulsion : la méthode pour ne plus paniquer face à vos pensées, gérer votre anxiété et retrouver le contrôle »"
+  "titre_saisi_utilisateur": "« Hypocondrie (anxiété de santé) : la méthode pour ne plus paniquer pour votre santé, gérer votre anxiété et retrouver l’apaisement »"
 }

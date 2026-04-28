@@ -3,26 +3,23 @@
   "section": 3,
   "chapitre_numero": "3",
   "section_numero": "3",
-  "these_centrale": "Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.",
+  "these_centrale": "L'ancrage sensoriel par la méthode 5-4-3-2-1 recentre l'attention et combat l'anxiété de santé.",
   "arguments_cles": [
-    "Déconnecter mentalement des pensées en modifiant la perception.",
-    "Observer les pensées avec détachement comme un scientifique.",
-    "Distinguer l'identité de la pensée par l'ajout de qualificatifs.",
-    "Rompre le cycle de rumination en traitant les pensées comme des observations.",
-    "Rendre les pensées inoffensives, pas les effacer totalement."
+    "Le recentrage sur le présent protège contre les pensées catastrophiques.",
+    "La méthode détourne l'attention des ruminations vers le monde tangible.",
+    "Mobiliser les sens permet de se reconnecter au corps physique.",
+    "La pratique régulière renforce la maîtrise de son attention."
   ],
   "concepts_introduits": [
-    "Déconnexion mentale : Altérer la relation avec les pensées intrusives.",
-    "Rumination : Cycle infernal d'analyse excessive des pensées.",
-    "Défusion cognitive : Observer sans s'accrocher aux pensées."
+    "Ancrage sensoriel : technique pour se connecter au moment présent via les sens.",
+    "Pensées catastrophiques : scénarios futurs effrayants qui alimentent l'anxiété."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas lutter directement contre la pensée.",
-    "Ne pas s'identifier à la pensée intrusive.",
-    "Ne pas considérer la pensée comme une vérité absolue.",
-    "Ne pas vouloir contrôler ou éliminer la pensée."
+    "La spirale anxieuse",
+    "L'anxiété de santé",
+    "Les pensées intrusives"
   ],
-  "ton_angle": "Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.</these_centrale>\n<arguments_cles>\n- Déconnecter mentalement des pensées en modifiant la perception.\n- Observer les pensées avec détachement comme un scientifique.\n- Distinguer l'identité de la pensée par l'ajout de qualificatifs.\n- Rompre le cycle de rumination en traitant les pensées comme des observations.\n- Rendre les pensées inoffensives, pas les effacer totalement.\n</arguments_cles>\n<concepts_introduits>\n- Déconnexion mentale : Altérer la relation avec les pensées intrusives.\n- Rumination : Cycle infernal d'analyse excessive des pensées.\n- Défusion cognitive : Observer sans s'accrocher aux pensées.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas lutter directement contre la pensée.\n- Ne pas s'identifier à la pensée intrusive.\n- Ne pas considérer la pensée comme une vérité absolue.\n- Ne pas vouloir contrôler ou éliminer la pensée.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et instructif, offrant une solution concrète et accessible.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'ancrage sensoriel par la méthode 5-4-3-2-1 recentre l'attention et combat l'anxiété de santé.</these_centrale>\n<arguments_cles>\n- Le recentrage sur le présent protège contre les pensées catastrophiques.\n- La méthode détourne l'attention des ruminations vers le monde tangible.\n- Mobiliser les sens permet de se reconnecter au corps physique.\n- La pratique régulière renforce la maîtrise de son attention.\n</arguments_cles>\n<concepts_introduits>\n- Ancrage sensoriel : technique pour se connecter au moment présent via les sens.\n- Pensées catastrophiques : scénarios futurs effrayants qui alimentent l'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La spirale anxieuse\n- L'anxiété de santé\n- Les pensées intrusives\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et instructif, offrant une solution concrète et accessible.</ton_angle>\n</fiche>"
 }

@@ -3,22 +3,18 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.",
+  "these_centrale": "La recherche de réassurance médicale, bien que temporairement apaisante, perpétue l'anxiété de santé en renforçant le comportement anxieux.",
   "arguments_cles": [
-    "Refouler une pensée augmente son importance perçue et l'anxiété associée.",
-    "La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.",
-    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.",
-    "Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse."
+    "Le soulagement obtenu après un examen normal renforce le comportement de recherche de réassurance.",
+    "La répétition de cette recherche ne résout pas la perception biaisée du danger.",
+    "Cette démarche crée une dépendance et empêche le développement de l'auto-régulation.",
+    "La méfiance envers le jugement médical est développée au profit du ressenti anxieux."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.",
-    "Observation sans engagement : acceptation des pensées sans jugement ni réaction."
+    "Renforcement négatif : comportement amplifié par la disparition d'un stimulus désagréable."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "L'esprit humain n'est pas conçu pour la suppression active des pensées.",
-    "La suppression active renforce involontairement le pouvoir de ce que l'on redoute."
-  ],
-  "ton_angle": "Pédagogique et incitatif, expliquant la contre-productivité de la suppression.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.</these_centrale>\n<arguments_cles>\n- Refouler une pensée augmente son importance perçue et l'anxiété associée.\n- La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n- Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.\n- Observation sans engagement : acceptation des pensées sans jugement ni réaction.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'esprit humain n'est pas conçu pour la suppression active des pensées.\n- La suppression active renforce involontairement le pouvoir de ce que l'on redoute.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et incitatif, expliquant la contre-productivité de la suppression.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Explicatif et didactique, démontrant le mécanisme de l'anxiété par le renforcement.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La recherche de réassurance médicale, bien que temporairement apaisante, perpétue l'anxiété de santé en renforçant le comportement anxieux.</these_centrale>\n<arguments_cles>\n- Le soulagement obtenu après un examen normal renforce le comportement de recherche de réassurance.\n- La répétition de cette recherche ne résout pas la perception biaisée du danger.\n- Cette démarche crée une dépendance et empêche le développement de l'auto-régulation.\n- La méfiance envers le jugement médical est développée au profit du ressenti anxieux.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : comportement amplifié par la disparition d'un stimulus désagréable.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le soulagement est temporaire.\n- Cercle vicieux.\n- Pensée inquiétante.\n</a_ne_put_repeter>\n<ton_angle>Explicatif et didactique, démontrant le mécanisme de l'anxiété par le renforcement.</ton_angle>\n</fiche>"
 }

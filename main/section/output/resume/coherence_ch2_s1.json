@@ -3,25 +3,27 @@
   "section": 1,
   "chapitre_numero": "2",
   "section_numero": "1",
-  "these_centrale": "Lutter contre les pensées indésirables renforce l'anxiété en amplifiant leur importance et leur saillance.",
+  "these_centrale": "Identifier les déclencheurs externes, internes et émotionnels est essentiel pour maîtriser l'anxiété de santé.",
   "arguments_cles": [
-    "Chercher à faire disparaître une pensée lui accorde paradoxalement plus d'importance.",
-    "Le cerveau active des réponses de lutte ou fuite face à la menace perçue.",
-    "La lutte interne détourne l'attention de la réalité, maintenant le système nerveux en alerte.",
-    "Observer sans jugement permet de dissocier la pensée de la réaction émotionnelle."
+    "Les situations extérieures comme articles ou commentaires peuvent activer l'anxiété.",
+    "Les pensées intrusives sur des symptômes mineurs créent des scénarios catastrophiques.",
+    "La fatigue, le stress ou la tristesse augmentent la vulnérabilité anxieuse.",
+    "L'auto-observation transforme l'expérience anxieuse en données analysables.",
+    "Distinguer les réactions normales des réponses anxieuses disproportionnées est clé."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire, souvent effrayante ou dérangeante.",
-    "Cycle vicieux : processus auto-entretenu qui amplifie un problème initial.",
-    "Observation sans engagement : reconnaître une pensée sans y adhérer ni la juger.",
-    "Recentrage sensoriel : focaliser l'attention sur les perceptions du moment présent."
+    "Déclencheurs : Stimuli qui activent le système d'alerte interne.",
+    "Pensées intrusives : Pensées non désirées, surgissant spontanément.",
+    "Auto-observation : Observation détaillée de ses propres pensées et émotions."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La métaphore de l'éléphant rose.",
-    "La description du corps en état d'alerte.",
-    "L'analogie des nuages dans le ciel."
+    "Les interrupteurs de l'anxiété",
+    "Spirale de doutes",
+    "Cartographier le paysage anxieux",
+    "Socle pour construire des stratégies",
+    "Recommencer à observer"
   ],
-  "ton_angle": "Explicatif et didactique, l'angle est d'exposer le paradoxe de la lutte contre les pensées.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Lutter contre les pensées indésirables renforce l'anxiété en amplifiant leur importance et leur saillance.</these_centrale>\n<arguments_cles>\n- Chercher à faire disparaître une pensée lui accorde paradoxalement plus d'importance.\n- Le cerveau active des réponses de lutte ou fuite face à la menace perçue.\n- La lutte interne détourne l'attention de la réalité, maintenant le système nerveux en alerte.\n- Observer sans jugement permet de dissocier la pensée de la réaction émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire, souvent effrayante ou dérangeante.\n- Cycle vicieux : processus auto-entretenu qui amplifie un problème initial.\n- Observation sans engagement : reconnaître une pensée sans y adhérer ni la juger.\n- Recentrage sensoriel : focaliser l'attention sur les perceptions du moment présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La métaphore de l'éléphant rose.\n- La description du corps en état d'alerte.\n- L'analogie des nuages dans le ciel.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et didactique, l'angle est d'exposer le paradoxe de la lutte contre les pensées.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et analytique, visant à la compréhension et au contrôle de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Identifier les déclencheurs externes, internes et émotionnels est essentiel pour maîtriser l'anxiété de santé.</these_centrale>\n<arguments_cles>\n- Les situations extérieures comme articles ou commentaires peuvent activer l'anxiété.\n- Les pensées intrusives sur des symptômes mineurs créent des scénarios catastrophiques.\n- La fatigue, le stress ou la tristesse augmentent la vulnérabilité anxieuse.\n- L'auto-observation transforme l'expérience anxieuse en données analysables.\n- Distinguer les réactions normales des réponses anxieuses disproportionnées est clé.\n</arguments_cles>\n<concepts_introduits>\n- Déclencheurs : Stimuli qui activent le système d'alerte interne.\n- Pensées intrusives : Pensées non désirées, surgissant spontanément.\n- Auto-observation : Observation détaillée de ses propres pensées et émotions.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les interrupteurs de l'anxiété\n- Spirale de doutes\n- Cartographier le paysage anxieux\n- Socle pour construire des stratégies\n- Recommencer à observer\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et analytique, visant à la compréhension et au contrôle de l'anxiété.</ton_angle>\n</fiche>"
 }

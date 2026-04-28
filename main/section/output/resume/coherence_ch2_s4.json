@@ -3,23 +3,23 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.",
+  "these_centrale": "Les vérifications corporelles répétées maintiennent l'anxiété en créant un cycle de réassurance éphémère et une fausse perception du danger.",
   "arguments_cles": [
-    "Affronter graduellement les situations réduit la charge émotionnelle.",
-    "La peur diminue quand la catastrophe redoutée ne survient pas.",
-    "Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.",
-    "L'habituation et le réapprentissage modifient les réponses émotionnelles."
+    "Ces vérifications créent un renforcement négatif, rendant dépendant d'une réassurance temporaire.",
+    "Elles induisent une attention sélective sur les sensations corporelles, interprétées comme des menaces.",
+    "Le système nerveux interprète ces gestes comme des preuves concrètes de danger.",
+    "L'acceptation de l'incertitude est rendue impossible par la vigilance constante."
   ],
   "concepts_introduits": [
-    "Exposition progressive : confronter graduellement des situations anxiogènes.",
-    "Hiérarchie des situations anxiogènes : classement des peurs par intensité.",
-    "Habitation : diminution de la réaction à un stimulus répété."
+    "Renforcement négatif : comportement renforcé par la suppression d'un stimulus désagréable.",
+    "Attention sélective : focalisation sur certains stimuli au détriment d'autres."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Supprimer les peurs",
-    "Surcharger soi-même"
+    "L'idée que les vérifications corporelles apportent une aide réelle.",
+    "L'illusion de contrôle qu'elles procurent.",
+    "Le cycle vicieux de la recherche de réassurance éphémère."
   ],
-  "ton_angle": "Explicatif et encourageant, axé sur la gestion autonome des angoisses.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.</these_centrale>\n<arguments_cles>\n- Affronter graduellement les situations réduit la charge émotionnelle.\n- La peur diminue quand la catastrophe redoutée ne survient pas.\n- Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.\n- L'habituation et le réapprentissage modifient les réponses émotionnelles.\n</arguments_cles>\n<concepts_introduits>\n- Exposition progressive : confronter graduellement des situations anxiogènes.\n- Hiérarchie des situations anxiogènes : classement des peurs par intensité.\n- Habitation : diminution de la réaction à un stimulus répété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Supprimer les peurs\n- Surcharger soi-même\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, axé sur la gestion autonome des angoisses.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et déconstructeur, montrant le paradoxe de l'autocontrôle anxiogène.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les vérifications corporelles répétées maintiennent l'anxiété en créant un cycle de réassurance éphémère et une fausse perception du danger.</these_centrale>\n<arguments_cles>\n- Ces vérifications créent un renforcement négatif, rendant dépendant d'une réassurance temporaire.\n- Elles induisent une attention sélective sur les sensations corporelles, interprétées comme des menaces.\n- Le système nerveux interprète ces gestes comme des preuves concrètes de danger.\n- L'acceptation de l'incertitude est rendue impossible par la vigilance constante.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : comportement renforcé par la suppression d'un stimulus désagréable.\n- Attention sélective : focalisation sur certains stimuli au détriment d'autres.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'idée que les vérifications corporelles apportent une aide réelle.\n- L'illusion de contrôle qu'elles procurent.\n- Le cycle vicieux de la recherche de réassurance éphémère.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et déconstructeur, montrant le paradoxe de l'autocontrôle anxiogène.</ton_angle>\n</fiche>"
 }

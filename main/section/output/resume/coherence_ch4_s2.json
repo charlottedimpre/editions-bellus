@@ -3,21 +3,22 @@
   "section": 2,
   "chapitre_numero": "4",
   "section_numero": "2",
-  "these_centrale": "Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.",
+  "these_centrale": "Contester directement les pensées catastrophiques renforce leur emprise ; une évaluation critique est nécessaire.",
   "arguments_cles": [
-    "La quête de certitude renforce les pensées intrusives et l'anxiété.",
-    "Observer sans jugement et sans analyse les pensées réduit leur impact.",
-    "L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.",
-    "Les pensées sont des événements mentaux transitoires, pas des reflets de soi."
+    "L'opposition directe aux pensées les rend plus insistantes et fortes.",
+    "Évaluer la pensée avec des preuves concrètes et des faits tangibles.",
+    "Examiner les preuves qui contredisent ou rendent la pensée improbable.",
+    "Estimer la probabilité réaliste et les conséquences les plus probables."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : pensées involontaires et souvent effrayantes.",
-    "Incertitude : absence de connaissance certaine sur un événement futur.",
-    "Exposition : confrontation volontaire à une situation anxiogène.",
-    "Acceptation : reconnaître et tolérer une expérience sans la combattre."
+    "Pensée catastrophique : imaginer le pire scénario possible.",
+    "Évaluation critique : analyser objectivement une pensée ou une situation."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.</these_centrale>\n<arguments_cles>\n- La quête de certitude renforce les pensées intrusives et l'anxiété.\n- Observer sans jugement et sans analyse les pensées réduit leur impact.\n- L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.\n- Les pensées sont des événements mentaux transitoires, pas des reflets de soi.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées involontaires et souvent effrayantes.\n- Incertitude : absence de connaissance certaine sur un événement futur.\n- Exposition : confrontation volontaire à une situation anxiogène.\n- Acceptation : reconnaître et tolérer une expérience sans la combattre.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Chercher la certitude absolue est une impasse.\n- Les comportements d'évitement et de réassurance prolongent l'anxiété.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Chercher des arguments pour réfuter immédiatement une pensée.",
+    "Le cerveau interprète la résistance comme une confirmation de la pensée."
+  ],
+  "ton_angle": "Instructif et pragmatique, proposant des outils pour l'auto-évaluation.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Contester directement les pensées catastrophiques renforce leur emprise ; une évaluation critique est nécessaire.</these_centrale>\n<arguments_cles>\n- L'opposition directe aux pensées les rend plus insistantes et fortes.\n- Évaluer la pensée avec des preuves concrètes et des faits tangibles.\n- Examiner les preuves qui contredisent ou rendent la pensée improbable.\n- Estimer la probabilité réaliste et les conséquences les plus probables.\n</arguments_cles>\n<concepts_introduits>\n- Pensée catastrophique : imaginer le pire scénario possible.\n- Évaluation critique : analyser objectivement une pensée ou une situation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Chercher des arguments pour réfuter immédiatement une pensée.\n- Le cerveau interprète la résistance comme une confirmation de la pensée.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, proposant des outils pour l'auto-évaluation.</ton_angle>\n</fiche>"
 }

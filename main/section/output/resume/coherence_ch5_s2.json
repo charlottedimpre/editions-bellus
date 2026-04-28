@@ -3,23 +3,24 @@
   "section": 2,
   "chapitre_numero": "5",
   "section_numero": "2",
-  "these_centrale": "Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.",
+  "these_centrale": "L'alimentation et les boissons courantes influencent directement notre état nerveux et peuvent intensifier l'anxiété.",
   "arguments_cles": [
-    "Normaliser les moments de doute comme une étape d'adaptation normale.",
-    "Analyser objectivement les déclencheurs et les stratégies appliquées.",
-    "Ajuster le plan d'action pour renforcer les stratégies efficaces.",
-    "Transformer la détresse en levier de progrès et de confiance."
+    "La caféine et les sucres perturbent le système nerveux et augmentent la réactivité.",
+    "L'alcool altère le sommeil et accroît paradoxalement l'anxiété à moyen terme.",
+    "Identifier les sources cachées de ces substances est la première étape de gestion.",
+    "Une approche progressive de réduction et une alimentation équilibrée favorisent la sérénité."
   ],
   "concepts_introduits": [
-    "Rechute : retour temporaire des symptômes ou difficultés.",
-    "Résilience : capacité à surmonter les difficultés.",
-    "Pensées intrusives : pensées non désirées et récurrentes."
+    "Caféine : Stimulant qui peut provoquer palpitations et inquiétudes.",
+    "Sucres raffinés : Cause de variations glycémiques affectant humeur et sensibilité.",
+    "Alcool : Perturbe le sommeil et déséquilibre la chimie cérébrale."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas interpréter une rechute comme un échec total.",
-    "Ne pas se décourager face aux fluctuations."
+    "Les palpitations, tremblements et inquiétudes sont interprétés comme des signes de maladie grave.",
+    "La consommation modérée peut avoir des répercussions sur le système nerveux.",
+    "L'objectif est de trouver un équilibre, non de bannir totalement."
   ],
-  "ton_angle": "Instructif et pragmatique, l'angle est celui du développement personnel.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.</these_centrale>\n<arguments_cles>\n- Normaliser les moments de doute comme une étape d'adaptation normale.\n- Analyser objectivement les déclencheurs et les stratégies appliquées.\n- Ajuster le plan d'action pour renforcer les stratégies efficaces.\n- Transformer la détresse en levier de progrès et de confiance.\n</arguments_cles>\n<concepts_introduits>\n- Rechute : retour temporaire des symptômes ou difficultés.\n- Résilience : capacité à surmonter les difficultés.\n- Pensées intrusives : pensées non désirées et récurrentes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas interpréter une rechute comme un échec total.\n- Ne pas se décourager face aux fluctuations.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, l'angle est celui du développement personnel.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton informatif et pragmatique, adoptant un angle préventif et de gestion de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'alimentation et les boissons courantes influencent directement notre état nerveux et peuvent intensifier l'anxiété.</these_centrale>\n<arguments_cles>\n- La caféine et les sucres perturbent le système nerveux et augmentent la réactivité.\n- L'alcool altère le sommeil et accroît paradoxalement l'anxiété à moyen terme.\n- Identifier les sources cachées de ces substances est la première étape de gestion.\n- Une approche progressive de réduction et une alimentation équilibrée favorisent la sérénité.\n</arguments_cles>\n<concepts_introduits>\n- Caféine : Stimulant qui peut provoquer palpitations et inquiétudes.\n- Sucres raffinés : Cause de variations glycémiques affectant humeur et sensibilité.\n- Alcool : Perturbe le sommeil et déséquilibre la chimie cérébrale.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les palpitations, tremblements et inquiétudes sont interprétés comme des signes de maladie grave.\n- La consommation modérée peut avoir des répercussions sur le système nerveux.\n- L'objectif est de trouver un équilibre, non de bannir totalement.\n</a_ne_pas_repeter>\n<ton_angle>Ton informatif et pragmatique, adoptant un angle préventif et de gestion de l'anxiété.</ton_angle>\n</fiche>"
 }

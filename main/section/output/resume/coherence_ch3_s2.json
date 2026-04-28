@@ -3,22 +3,24 @@
   "section": 2,
   "chapitre_numero": "3",
   "section_numero": "2",
-  "these_centrale": "Utiliser les sens permet un ancrage immédiat pour contrer l'anxiété et la rumination mentale.",
+  "these_centrale": "La régulation volontaire de la respiration permet de calmer le système nerveux et de réduire l'anxiété.",
   "arguments_cles": [
-    "L'exercice 5-4-3-2-1 ramène au moment présent par perceptions concrètes.",
-    "Il redirige l'attention des scénarios anxieux vers des éléments tangibles.",
-    "Cet ancrage court-circuite le mécanisme de la rumination et de l'analyse mentale.",
-    "Il offre une échappatoire momentanée aux pensées intrusives et à la panique."
+    "L'hyperventilation déclenche la réaction de fuite ou combat.",
+    "Ralentir la respiration active le système nerveux parasympathique.",
+    "La technique 4-7-8 stimule le nerf vague pour le relâchement.",
+    "La concentration sur la respiration ancre dans le présent."
   ],
   "concepts_introduits": [
-    "Rumination : Cycle de pensées négatives qui s'auto-entretient.",
-    "Ancrage : Technique pour se reconnecter au moment présent et au réel."
+    "Hyperventilation : Respiration rapide et superficielle qui accentue l'angoisse.",
+    "Système nerveux sympathique : Réaction de fuite ou combat.",
+    "Système nerveux parasympathique : Relaxation, digestion, ralentissement cardiaque.",
+    "Nerf vague : Principal acteur du système nerveux parasympathique."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La répétition des étapes sensorielles peut être nécessaire.",
-    "L'efficacité varie selon la personne et le contexte."
+    "Le cercle vicieux de l'angoisse.",
+    "Les sensations physiques spécifiques (picotements, étouffement, palpitations, vertiges)."
   ],
-  "ton_angle": "Pragmatique et rassurant, expliquant une méthode concrète de gestion de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Utiliser les sens permet un ancrage immédiat pour contrer l'anxiété et la rumination mentale.</these_centrale>\n<arguments_cles>\n- L'exercice 5-4-3-2-1 ramène au moment présent par perceptions concrètes.\n- Il redirige l'attention des scénarios anxieux vers des éléments tangibles.\n- Cet ancrage court-circuite le mécanisme de la rumination et de l'analyse mentale.\n- Il offre une échappatoire momentanée aux pensées intrusives et à la panique.\n</arguments_cles>\n<concepts_introduits>\n- Rumination : Cycle de pensées négatives qui s'auto-entretient.\n- Ancrage : Technique pour se reconnecter au moment présent et au réel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La répétition des étapes sensorielles peut être nécessaire.\n- L'efficacité varie selon la personne et le contexte.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et rassurant, expliquant une méthode concrète de gestion de l'anxiété.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et directif, proposant une solution immédiate à l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La régulation volontaire de la respiration permet de calmer le système nerveux et de réduire l'anxiété.</these_centrale>\n<arguments_cles>\n- L'hyperventilation déclenche la réaction de fuite ou combat.\n- Ralentir la respiration active le système nerveux parasympathique.\n- La technique 4-7-8 stimule le nerf vague pour le relâchement.\n- La concentration sur la respiration ancre dans le présent.\n</arguments_cles>\n<concepts_introduits>\n- Hyperventilation : Respiration rapide et superficielle qui accentue l'angoisse.\n- Système nerveux sympathique : Réaction de fuite ou combat.\n- Système nerveux parasympathique : Relaxation, digestion, ralentissement cardiaque.\n- Nerf vague : Principal acteur du système nerveux parasympathique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cercle vicieux de l'angoisse.\n- Les sensations physiques spécifiques (picotements, étouffement, palpitations, vertiges).\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et directif, proposant une solution immédiate à l'anxiété.</ton_angle>\n</fiche>"
 }

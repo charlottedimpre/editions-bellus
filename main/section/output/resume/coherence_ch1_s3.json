@@ -3,21 +3,19 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.",
+  "these_centrale": "Les comportements répétitifs liés à l'anxiété de santé maintiennent un cycle d'inquiétude en renforçant le sentiment de danger.",
   "arguments_cles": [
-    "Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.",
-    "L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.",
-    "La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.",
-    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle."
+    "La vérification corporelle compulsive renforce la perception erronée d'un danger imminent.",
+    "L'évitement prive d'expériences potentiellement rassurantes, renforçant l'idée de danger.",
+    "La recherche excessive d'informations médicales alimente l'inquiétude au lieu de rassurer.",
+    "La sollicitation répétée de réassurance auprès des autres est une quête éphémère."
   ],
   "concepts_introduits": [
-    "Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.",
-    "Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.",
-    "Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.",
-    "Observation sans engagement : attitude d'observation des pensées sans jugement ni action."
+    "Renforcement négatif : Comportement qui augmente la probabilité de sa propre répétition.",
+    "Cybercondrie : Recherche compulsive d'informations médicales sur internet."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [],
-  "ton_angle": "Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.</these_centrale>\n<arguments_cles>\n- Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.\n- L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.\n- La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.\n- Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.\n- Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.\n- Observation sans engagement : attitude d'observation des pensées sans jugement ni action.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Lutter contre une pensée est une stratégie contre-productive.\n- Les pensées sont des événements mentaux transitoires.\n</a_ne_not_repeter>\n<ton_angle>Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.</ton_angle>\n</fiche>"
+  "ton_angle": "Analytique et informatif, expliquant les mécanismes psychologiques de l'anxiété de santé.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les comportements répétitifs liés à l'anxiété de santé maintiennent un cycle d'inquiétude en renforçant le sentiment de danger.</these_centrale>\n<arguments_cles>\n- La vérification corporelle compulsive renforce la perception erronée d'un danger imminent.\n- L'évitement prive d'expériences potentiellement rassurantes, renforçant l'idée de danger.\n- La recherche excessive d'informations médicales alimente l'inquiétude au lieu de rassurer.\n- La sollicitation répétée de réassurance auprès des autres est une quête éphémère.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : Comportement qui augmente la probabilité de sa propre répétition.\n- Cybercondrie : Recherche compulsive d'informations médicales sur internet.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Les conduites automatiques apaisent temporairement mais maintiennent l'état anxieux.\n- Le sentiment fugace de contrôle ou de réassurance est à court terme.\n</a_ne_pas_repeter>\n<ton_angle>Analytique et informatif, expliquant les mécanismes psychologiques de l'anxiété de santé.</ton_angle>\n</fiche>"
 }

@@ -15,17 +15,21 @@ Respecte EXACTEMENT ce format :
 
 <hors_perimetre>
 - [aspect exclu] — [ce qui reste autorisé à la frontière]
+- faire porter toute la responsabilité sur l’individu
+- ignore les structures (économiques, sociales, symboliques)
+- promet des résultats rapides
+- remplace la pensée par des slogans
 </hors_perimetre>
 
 <contraintes_specifiques>
-- Le ton doit rester pédagogique et rigoureux
+- Le ton doit rester incarnée, pédagogique mais tranchante, responsabilisante
 - Mention des risques
 - Mention des limites
 - Mention des erreurs fréquentes
 </contraintes_specifiques>
 
 <cible_principale>
-[1 profil unique, situation + besoin en 1 phrase]
+Adultes 25–45 ans, déjà attirés par le développement personnel, en transition (professionnelle, intellectuelle, existentielle), intéressés par [sujet]
 </cible_principale>
 
 <niveau>

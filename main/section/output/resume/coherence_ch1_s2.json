@@ -3,25 +3,23 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.",
+  "these_centrale": "L'anxiété de santé transforme les sensations corporelles anodines en menaces graves par amplification.",
   "arguments_cles": [
-    "Répétition involontaire et constante indique une obsession.",
-    "Incohérence avec les valeurs profondes confirme une pensée intrusive.",
-    "Résistance active et lutte interne signalent une obsession.",
-    "L'objectif est de catégoriser la pensée pour mieux la gérer."
+    "L'inquiétude normale tolère l'incertitude et cherche un avis professionnel si besoin.",
+    "L'anxiété amplifie les pires scénarios possibles à partir de sensations minimes.",
+    "Le catastrophisme interprète les faits anodins comme des preuves de danger imminent.",
+    "L'hyper-vigilance corporelle maintient le système nerveux en état de tension élevé."
   ],
   "concepts_introduits": [
-    "Obsession : Pensée involontaire, répétitive et non sollicitée.",
-    "Intention : Pensée délibérée, alignée avec valeurs et désirs.",
-    "Pensée intrusive : Pensée allant à l'encontre des valeurs.",
-    "Phobie d'impulsion : Peur de réaliser une pensée effrayante."
+    "Amplification des menaces : accentuation des interprétations négatives des signaux corporels.",
+    "Catastrophisme : tendance à imaginer le pire à partir de faits anodins.",
+    "Hyper-vigilance : attention excessive portée aux sensations corporelles et aux changements."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"",
-    "\"indépendamment de l'intensité de votre anxiété\"",
-    "\"ce qui est le premier pas pour désamorcer son pouvoir.\""
+    "Le corps produit en permanence des sensations diverses.",
+    "La recherche compulsive d'informations sur internet."
   ],
-  "ton_angle": "Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.</these_centrale>\n<arguments_cles>\n- Répétition involontaire et constante indique une obsession.\n- Incohérence avec les valeurs profondes confirme une pensée intrusive.\n- Résistance active et lutte interne signalent une obsession.\n- L'objectif est de catégoriser la pensée pour mieux la gérer.\n</arguments_cles>\n<concepts_introduits>\n- Obsession : Pensée involontaire, répétitive et non sollicitée.\n- Intention : Pensée délibérée, alignée avec valeurs et désirs.\n- Pensée intrusive : Pensée allant à l'encontre des valeurs.\n- Phobie d'impulsion : Peur de réaliser une pensée effrayante.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"\n- \"indépendamment de l'intensité de votre anxiété\"\n- \"ce qui est le premier pas pour désamorcer son pouvoir.\"\n</a_ne_pas_repeter>\n<ton_angle>Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.</ton_angle>\n</fiche>"
+  "ton_angle": "Analytique et informatif, expliquant les mécanismes psychologiques de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'anxiété de santé transforme les sensations corporelles anodines en menaces graves par amplification. </these_centrale>\n<arguments_cles>\n- L'inquiétude normale tolère l'incertitude et cherche un avis professionnel si besoin.\n- L'anxiété amplifie les pires scénarios possibles à partir de sensations minimes.\n- Le catastrophisme interprète les faits anodins comme des preuves de danger imminent.\n- L'hyper-vigilance corporelle maintient le système nerveux en état de tension élevé.\n</arguments_cles>\n<concepts_introduits>\n- Amplification des menaces : accentuation des interprétations négatives des signaux corporels.\n- Catastrophisme : tendance à imaginer le pire à partir de faits anodins.\n- Hyper-vigilance : attention excessive portée aux sensations corporelles et aux changements.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le corps produit en permanence des sensations diverses.\n- La recherche compulsive d'informations sur internet.\n</a_ne_pas_repeter>\n<ton_angle>Analytique et informatif, expliquant les mécanismes psychologiques de l'anxiété.</ton_angle>\n</fiche>"
 }

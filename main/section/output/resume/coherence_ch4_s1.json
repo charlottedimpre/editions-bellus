@@ -3,25 +3,21 @@
   "section": 1,
   "chapitre_numero": "4",
   "section_numero": "1",
-  "these_centrale": "Documenter les réussites, même minimes, est essentiel pour contrer la sous-estimation de soi et renforcer la confiance.",
+  "these_centrale": "La suppression active des pensées anxieuses renforce leur emprise, créant un cercle vicieux préjudiciable.",
   "arguments_cles": [
-    "Sous-estimer ses succès érode la confiance et alimente l'impuissance.",
-    "Un registre des réussites prouve la résilience et la capacité d'adaptation.",
-    "Le catalogue de succès sert de preuve tangible contre le doute.",
-    "Capitaliser les réussites rééquilibre le focus sur les moments de force."
+    "La lutte contre une pensée lui accorde paradoxalement plus d'attention.",
+    "Le cerveau interprète la résistance comme une confirmation de l'importance de la pensée.",
+    "L'approche par observation détache permet de réduire l'impact émotionnel des pensées.",
+    "La défusion cognitive aide à distinguer pensée et réalité objective pour moins de charge émotionnelle."
   ],
   "concepts_introduits": [
-    "Sous-estimation : tendance à minimiser ses propres capacités.",
-    "Pensées intrusives : pensées indésirables et récurrentes.",
-    "Estime de soi : évaluation subjective de sa propre valeur.",
-    "Résilience : capacité à surmonter les épreuves."
+    "Défusion cognitive : distanciation des pensées sans les combattre."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Attribuer les succès à la chance.",
-    "Ignorer les petites victoires.",
-    "Nier les difficultés rencontrées."
+    "Essayer de chasser les pensées les rend plus fortes.",
+    "Observer les pensées sans interagir avec elles."
   ],
-  "ton_angle": "Pragmatique et encourageant, axé sur des stratégies concrètes de renforcement.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Documenter les réussites, même minimes, est essentiel pour contrer la sous-estimation de soi et renforcer la confiance.</these_centrale>\n<arguments_cles>\n- Sous-estimer ses succès érode la confiance et alimente l'impuissance.\n- Un registre des réussites prouve la résilience et la capacité d'adaptation.\n- Le catalogue de succès sert de preuve tangible contre le doute.\n- Capitaliser les réussites rééquilibre le focus sur les moments de force.\n</arguments_cles>\n<concepts_introduits>\n- Sous-estimation : tendance à minimiser ses propres capacités.\n- Pensées intrusives : pensées indésirables et récurrentes.\n- Estime de soi : évaluation subjective de sa propre valeur.\n- Résilience : capacité à surmonter les épreuves.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Attribuer les succès à la chance.\n- Ignorer les petites victoires.\n- Nier les difficultés rencontrées.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et encourageant, axé sur des stratégies concrètes de renforcement.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et informatif, adoptant un angle argumentatif sur l'inefficacité de la suppression.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La suppression active des pensées anxieuses renforce leur emprise, créant un cercle vicieux préjudiciable.</these_centrale>\n<arguments_cles>\n- La lutte contre une pensée lui accorde paradoxalement plus d'attention.\n- Le cerveau interprète la résistance comme une confirmation de l'importance de la pensée.\n- L'approche par observation détache permet de réduire l'impact émotionnel des pensées.\n- La défusion cognitive aide à distinguer pensée et réalité objective pour moins de charge émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Défusion cognitive : distanciation des pensées sans les combattre.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Essayer de chasser les pensées les rend plus fortes.\n- Observer les pensées sans interagir avec elles.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et informatif, adoptant un angle argumentatif sur l'inefficacité de la suppression.</ton_angle>\n</fiche>"
 }

@@ -12,6 +12,8 @@ from affichage import (
     _load_chapter_files,
     _load_conclusion_text,
     _load_json_file,
+    _load_postface_text,
+    _load_preface_text,
 )
 
 OUTPUT_MD_PATH = BASE_DIR / "output" / "livre.md"
@@ -41,11 +43,18 @@ def _slugify_heading(title: str) -> str:
 
 def _build_markdown(
     book_title: str,
+    preface_text: str,
     intro: str,
     chapters_data: list[dict[str, Any]],
     conclusion_text: str,
+    postface_text: str,
 ) -> str:
-    toc_entries = _build_toc_entries(chapters_data, has_conclusion=bool(conclusion_text))
+    toc_entries = _build_toc_entries(
+        chapters_data,
+        has_preface=bool(preface_text),
+        has_conclusion=bool(conclusion_text),
+        has_postface=bool(postface_text),
+    )
     lines: list[str] = []
 
     lines.append(f"# {book_title}")
@@ -58,6 +67,17 @@ def _build_markdown(
         lines.append(f"- [{title}](#{anchor})")
 
     lines.append("")
+
+    if preface_text:
+        lines.append("## Préface")
+        lines.append("")
+        preface = _normalize_block_text(preface_text)
+        if preface:
+            lines.append(preface)
+            lines.append("")
+            lines.append("— Éditions Bellus")
+            lines.append("")
+
     lines.append(f"## {PDF_TITLE}")
     lines.append("")
     intro_text = _normalize_block_text(intro)
@@ -95,6 +115,16 @@ def _build_markdown(
             lines.append(conclusion)
             lines.append("")
 
+    if postface_text:
+        lines.append("## Postface")
+        lines.append("")
+        postface = _normalize_block_text(postface_text)
+        if postface:
+            lines.append(postface)
+            lines.append("")
+            lines.append("— Éditions Bellus")
+            lines.append("")
+
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -111,12 +141,13 @@ def affichage_md() -> None:
             chapters_data.append(chapter_payload)
 
     conclusion_text = _load_conclusion_text()
+    postface_text = _load_postface_text()
+    preface_text = _load_preface_text()
 
-    markdown = _build_markdown(book_title, intro, chapters_data, conclusion_text)
+    markdown = _build_markdown(book_title, preface_text, intro, chapters_data, conclusion_text, postface_text)
     OUTPUT_MD_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_MD_PATH.write_text(markdown, encoding="utf-8")
 
 
 if __name__ == "__main__":
     affichage_md()
-

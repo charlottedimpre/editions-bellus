@@ -3,24 +3,23 @@
   "section": 4,
   "chapitre_numero": "4",
   "section_numero": "4",
-  "these_centrale": "Se réengager activement dans des activités sources de joie permet de reprendre le contrôle de sa vie malgré les pensées intrusives.",
+  "these_centrale": "Accepter l'incertitude inhérente à la santé est crucial pour réduire l'anxiété et retrouver une relation sereine.",
   "arguments_cles": [
-    "L'action concrète, même avec anxiété, démontre la capacité à vivre pleinement.",
-    "La reprise d'activités est une exposition graduelle aux situations évitées.",
-    "Se reconnecter aux valeurs et centres d'intérêt réduit le pouvoir des pensées envahissantes.",
-    "La persévérance renforce le sentiment d'efficacité personnelle et affaiblit l'emprise des obsessions.",
-    "La reconstruction des liens sociaux est cruciale pour le bien-être général."
+    "Chercher une certitude absolue sur sa santé engendre tension et anxiété incontrôlable.",
+    "L'incertitude corporelle est normale et son élimination complète est une quête vaine.",
+    "L'exposition progressive à l'incertitude améliore la tolérance et réduit les peurs.",
+    "Il faut distinguer la vigilance saine de l'anxiété qui déforme la perception."
   ],
   "concepts_introduits": [
-    "Réengagement comportemental : Reprise d'activités malgré l'anxiété.",
-    "Exposition graduelle : Confrontation progressive aux situations évitées.",
-    "Sentiment d'efficacité personnelle : Confiance en sa capacité d'agir."
+    "Anxiété de santé : obsession de la santé causant une suspicion constante.",
+    "Exposition à l'incertitude : confrontation volontaire à des situations sans certitude."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les pensées intrusives ne définissent pas la personne.",
-    "Il est possible de mener une vie épanouissante malgré les obsessions."
+    "Contrôler l'incontrôlable",
+    "Quête vouée à l'échec",
+    "Signaux de danger extrême"
   ],
-  "ton_angle": "Pragmatique et encourageant, visant à redonner le pouvoir d'agir au lecteur.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Se réengager activement dans des activités sources de joie permet de reprendre le contrôle de sa vie malgré les pensées intrusives.</these_centrale>\n<arguments_cles>\n- L'action concrète, même avec anxiété, démontre la capacité à vivre pleinement.\n- La reprise d'activités est une exposition graduelle aux situations évitées.\n- Se reconnecter aux valeurs et centres d'intérêt réduit le pouvoir des pensées envahissantes.\n- La persévérance renforce le sentiment d'efficacité personnelle et affaiblit l'emprise des obsessions.\n- La reconstruction des liens sociaux est cruciale pour le bien-être général.\n</arguments_cles>\n<concepts_introduits>\n- Réengagement comportemental : Reprise d'activités malgré l'anxiété.\n- Exposition graduelle : Confrontation progressive aux situations évitées.\n- Sentiment d'efficacité personnelle : Confiance en sa capacité d'agir.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les pensées intrusives ne définissent pas la personne.\n- Il est possible de mener une vie épanouissante malgré les obsessions.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et encourageant, visant à redonner le pouvoir d'agir au lecteur.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton pragmatique, angle argumentatif sur l'acceptation et la gestion de l'anxiété.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Accepter l'incertitude inhérente à la santé est crucial pour réduire l'anxiété et retrouver une relation sereine.</these_centrale>\n<arguments_cles>\n- Chercher une certitude absolue sur sa santé engendre tension et anxiété incontrôlable.\n- L'incertitude corporelle est normale et son élimination complète est une quête vaine.\n- L'exposition progressive à l'incertitude améliore la tolérance et réduit les peurs.\n- Il faut distinguer la vigilance saine de l'anxiété qui déforme la perception.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété de santé : obsession de la santé causant une suspicion constante.\n- Exposition à l'incertitude : confrontation volontaire à des situations sans certitude.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Contrôler l'incontrôlable\n- Quête vouée à l'échec\n- Signaux de danger extrême\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique, angle argumentatif sur l'acceptation et la gestion de l'anxiété.</ton_angle>\n</fiche>"
 }

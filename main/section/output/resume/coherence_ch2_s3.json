@@ -3,20 +3,22 @@
   "section": 3,
   "chapitre_numero": "2",
   "section_numero": "3",
-  "these_centrale": "L'analyse excessive des pensées intrusives renforce l'anxiété ; une observation détachée permet de s'en libérer.",
+  "these_centrale": "Les vérifications corporelles, loin de calmer, entretiennent l'anxiété en renforçant négativement le comportement et en focalisant sur des sensations anodines.",
   "arguments_cles": [
-    "Traiter les pensées comme des problèmes à résoudre crée une boucle d'anxiété.",
-    "Chercher le \"pourquoi\" leur donne une importance injustifiée et les nourrit.",
-    "Observer les pensées sans jugement permet de les laisser passer naturellement.",
-    "L'identification à la pensée amplifie sa charge émotionnelle négative.",
-    "Le recentrage sensoriel ramène au présent, brisant la rumination."
+    "Les vérifications corporelles réduisent temporairement l'anxiété, incitant à répéter le comportement.",
+    "Elles poussent à rechercher activement des preuves de maladie, biaisant l'attention.",
+    "Elles transforment des manifestations physiques mineures en menaces imminentes perçues comme dangereuses.",
+    "Elles créent une dépendance à la réassurance externe, empêchant l'acceptation de l'incertitude."
   ],
   "concepts_introduits": [
-    "Rumination : réflexion excessive source d'anxiété accrue.",
-    "Observation détachée : observer les pensées sans jugement ni adhésion."
+    "Renforcement négatif : comportement répété pour réduire un malaise temporaire.",
+    "Attention sélective : focalisation sur des sensations spécifiques, ignorant le reste."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Explicatif et prescriptif, démontrant le piège et offrant une solution.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'analyse excessive des pensées intrusives renforce l'anxiété ; une observation détachée permet de s'en libérer.</these_centrale>\n<arguments_cles>\n- Traiter les pensées comme des problèmes à résoudre crée une boucle d'anxiété.\n- Chercher le \"pourquoi\" leur donne une importance injustifiée et les nourrit.\n- Observer les pensées sans jugement permet de les laisser passer naturellement.\n- L'identification à la pensée amplifie sa charge émotionnelle négative.\n- Le recentrage sensoriel ramène au présent, brisant la rumination.\n</arguments_cles>\n<concepts_introduits>\n- Rumination : réflexion excessive source d'anxiété accrue.\n- Observation détachée : observer les pensées sans jugement ni adhésion.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Analyse intensive des pensées intrusives\n- Accorder une importance démesurée aux pensées\n- Boucle sans fin\n- Problème à résoudre / énigme à déchiffrer\n- Nuages qui traversent le ciel\n</a_ne_not_repeter>\n<ton_angle>Explicatif et prescriptif, démontrant le piège et offrant une solution.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Le soulagement ressenti après une vérification est de courte durée.",
+    "Les bilans médicaux rassurants ne suffisent pas à apaiser sur le long terme."
+  ],
+  "ton_angle": "Explicatif et analytique, soulignant le caractère contre-productif des vérifications corporelles.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les vérifications corporelles, loin de calmer, entretiennent l'anxiété en renforçant négativement le comportement et en focalisant sur des sensations anodines.</these_centrale>\n<arguments_cles>\n- Les vérifications corporelles réduisent temporairement l'anxiété, incitant à répéter le comportement.\n- Elles poussent à rechercher activement des preuves de maladie, biaisant l'attention.\n- Elles transforment des manifestations physiques mineures en menaces imminentes perçues comme dangereuses.\n- Elles créent une dépendance à la réassurance externe, empêchant l'acceptation de l'incertitude.\n</arguments_cles>\n<concepts_introduits>\n- Renforcement négatif : comportement répété pour réduire un malaise temporaire.\n- Attention sélective : focalisation sur des sensations spécifiques, ignorant le reste.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le soulagement ressenti après une vérification est de courte durée.\n- Les bilans médicaux rassurants ne suffisent pas à apaiser sur le long terme.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et analytique, soulignant le caractère contre-productif des vérifications corporelles.</ton_angle>\n</fiche>"
 }

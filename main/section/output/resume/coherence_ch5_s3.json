@@ -3,20 +3,27 @@
   "section": 3,
   "chapitre_numero": "5",
   "section_numero": "3",
-  "these_centrale": "Les fluctuations et rechutes sont des phases normales d'apprentissage qu'il faut normaliser et analyser pour s'adapter.",
+  "these_centrale": "Identifier et limiter les substances nocives améliore la gestion de l'anxiété physique et le bien-être général.",
   "arguments_cles": [
-    "Normaliser les fluctuations comme partie intégrante de l'apprentissage.",
-    "Analyser objectivement les déclencheurs et les stratégies utilisées.",
-    "Ajuster le plan d'action en renforçant les techniques efficaces.",
-    "Demander de l'aide professionnelle si les difficultés s'intensifient."
+    "La caféine stimule le système nerveux, mimant des symptômes d'alarme.",
+    "Les sucres raffinés provoquent des variations de glycémie affectant l'humeur.",
+    "L'alcool perturbe le sommeil et déséquilibre les neurotransmetteurs à terme.",
+    "Une alimentation équilibrée stabilise l'énergie et soutient le système nerveux."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire, récurrente et indésirable.",
-    "Rechute : retour temporaire aux difficultés après une période d'amélioration.",
-    "Ancrage sensoriel : technique pour se reconnecter au présent via les sens."
+    "Caféine : Stimulant puissant affectant rythme cardiaque et agitation.",
+    "Sucres raffinés : Provoquent fluctuations glycémiques, irritabilité et fatigue.",
+    "Alcool : Détente apparente mais perturbe sommeil et neurotransmetteurs.",
+    "Anxiété de santé : Angoisse liée à des sensations physiques inquiétantes."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et encourageant, soulignant la normalité des difficultés.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les fluctuations et rechutes sont des phases normales d'apprentissage qu'il faut normaliser et analyser pour s'adapter.</these_centrale>\n<arguments_cles>\n- Normaliser les fluctuations comme partie intégrante de l'apprentissage.\n- Analyser objectivement les déclencheurs et les stratégies utilisées.\n- Ajuster le plan d'action en renforçant les techniques efficaces.\n- Demander de l'aide professionnelle si les difficultés s'intensifient.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire, récurrente et indésirable.\n- Rechute : retour temporaire aux difficultés après une période d'amélioration.\n- Ancrage sensoriel : technique pour se reconnecter au présent via les sens.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La rechute est un échec total.\n- Le doute signifie que les outils ne fonctionnent pas.\n</a_ne_not_repeter>\n<ton_angle>Informatif et encourageant, soulignant la normalité des difficultés.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Substances qui perturbent le système nerveux.",
+    "Diminuer les manifestations physiques de l'anxiété.",
+    "Stimulant puissant.",
+    "Fluctuations rapides de la glycémie.",
+    "Accompagné à la détente à court terme."
+  ],
+  "ton_angle": "Informatif et préventif, axé sur la compréhension des mécanismes corporels.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Identifier et limiter les substances nocives améliore la gestion de l'anxiété physique et le bien-être général.</these_centrale>\n<arguments_cles>\n- La caféine stimule le système nerveux, mimant des symptômes d'alarme.\n- Les sucres raffinés provoquent des variations de glycémie affectant l'humeur.\n- L'alcool perturbe le sommeil et déséquilibre les neurotransmetteurs à terme.\n- Une alimentation équilibrée stabilise l'énergie et soutient le système nerveux.\n</arguments_cles>\n<concepts_introduits>\n- Caféine : Stimulant puissant affectant rythme cardiaque et agitation.\n- Sucres raffinés : Provoquent fluctuations glycémiques, irritabilité et fatigue.\n- Alcool : Détente apparente mais perturbe sommeil et neurotransmetteurs.\n- Anxiété de santé : Angoisse liée à des sensations physiques inquiétantes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Substances qui perturbent le système nerveux.\n- Diminuer les manifestations physiques de l'anxiété.\n- Stimulant puissant.\n- Fluctuations rapides de la glycémie.\n- Accompagné à la détente à court terme.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, axé sur la compréhension des mécanismes corporels.</ton_angle>\n</fiche>"
 }

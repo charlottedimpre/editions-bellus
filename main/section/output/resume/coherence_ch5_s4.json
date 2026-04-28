@@ -3,31 +3,25 @@
   "section": 4,
   "chapitre_numero": "5",
   "section_numero": "4",
-  "these_centrale": "Les périodes de réinvestissement de l'anxiété sont normales et nécessitent une analyse objective et un ajustement des stratégies.",
+  "these_centrale": "Le soutien social est crucial pour contrer l'isolement de l'anxiété et restaurer une perspective équilibrée.",
   "arguments_cles": [
-    "Les fluctuations anxiogènes ne sont pas des échecs mais des étapes d'apprentissage.",
-    "Analyser objectivement les déclencheurs de la recrudescence anxiogène est essentiel.",
-    "Ajuster les stratégies d'adaptation en renforçant les techniques efficaces.",
-    "Solliciter un soutien professionnel si les fluctuations persistent ou s'intensifient."
+    "Le soutien émotionnel valide les ressentis sans les confirmer comme dangereux.",
+    "Le soutien pratique aide aux tâches quotidiennes paralysées par l'anxiété.",
+    "Le soutien informationnel combat la désinformation et trouve des ressources fiables.",
+    "Les interactions sociales renforcent le sentiment d'appartenance et la résilience."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : pensées non désirées et répétitives.",
-    "Stratégies d'adaptation : techniques pour gérer le stress et l'anxiété.",
-    "Anxiété : état de tension et d'inquiétude.",
-    "Analyse objective : observation neutre des faits.",
-    "Déclencheurs : facteurs provoquant une réaction.",
-    "Ancrage sensoriel : technique de centrage sur les sensations.",
-    "Défusion cognitive : détacher l'esprit des pensées.",
-    "Rumination : pensée répétitive et négative."
+    "Isolement social : contexte favorisant l'anxiété et le sentiment de solitude.",
+    "Soutien émotionnel : validation des ressentis sans jugement.",
+    "Soutien pratique : aide concrète aux activités quotidiennes.",
+    "Soutien informationnel : partage de connaissances fiables et pertinentes."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Retour en arrière définitif",
-    "Cercle vicieux de l'anxiété",
-    "Céder à la panique ou à l'auto-critique",
-    "Supprimer ces pensées",
-    "Ne remette pas en cause vos progrès précédents"
+    "La solitude engendrée par l'anxiété de santé.",
+    "La nécessité de briser l'isolement.",
+    "L'anxiété comme créatrice d'isolement."
   ],
-  "ton_angle": "Le ton est pragmatique et encourageant, l'angle est celui de la gestion proactive des difficultés.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les périodes de réinvestissement de l'anxiété sont normales et nécessitent une analyse objective et un ajustement des stratégies.</these_centrale>\n<arguments_cles>\n- Les fluctuations anxiogènes ne sont pas des échecs mais des étapes d'apprentissage.\n- Analyser objectivement les déclencheurs de la recrudescence anxiogène est essentiel.\n- Ajuster les stratégies d'adaptation en renforçant les techniques efficaces.\n- Solliciter un soutien professionnel si les fluctuations persistent ou s'intensifient.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées non désirées et répétitives.\n- Stratégies d'adaptation : techniques pour gérer le stress et l'anxiété.\n- Anxiété : état de tension et d'inquiétude.\n- Analyse objective : observation neutre des faits.\n- Déclencheurs : facteurs provoquant une réaction.\n- Ancrage sensoriel : technique de centrage sur les sensations.\n- Défusion cognitive : détacher l'esprit des pensées.\n- Rumination : pensée répétitive et négative.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Retour en arrière définitif\n- Cercle vicieux de l'anxiété\n- Céder à la panique ou à l'auto-critique\n- Supprimer ces pensées\n- Ne remette pas en cause vos progrès précédents\n</a_ne_pas_repeter>\n<ton_angle>Le ton est pragmatique et encourageant, l'angle est celui de la gestion proactive des difficultés.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et encourageant, soulignant la force du lien social.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Le soutien social est crucial pour contrer l'isolement de l'anxiété et restaurer une perspective équilibrée.</these_centrale>\n<arguments_cles>\n- Le soutien émotionnel valide les ressentis sans les confirmer comme dangereux.\n- Le soutien pratique aide aux tâches quotidiennes paralysées par l'anxiété.\n- Le soutien informationnel combat la désinformation et trouve des ressources fiables.\n- Les interactions sociales renforcent le sentiment d'appartenance et la résilience.\n</arguments_cles>\n<concepts_introduits>\n- Isolement social : contexte favorisant l'anxiété et le sentiment de solitude.\n- Soutien émotionnel : validation des ressentis sans jugement.\n- Soutien pratique : aide concrète aux activités quotidiennes.\n- Soutien informationnel : partage de connaissances fiables et pertinentes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La solitude engendrée par l'anxiété de santé.\n- La nécessité de briser l'isolement.\n- L'anxiété comme créatrice d'isolement.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et encourageant, soulignant la force du lien social.</ton_angle>\n</fiche>"
 }

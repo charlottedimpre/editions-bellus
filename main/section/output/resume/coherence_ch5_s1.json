@@ -3,25 +3,26 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.",
+  "these_centrale": "Un sommeil de qualité est essentiel pour réguler l'anxiété liée à la santé en réduisant la réactivité nerveuse.",
   "arguments_cles": [
-    "Chaque individu réagit différemment aux méthodes proposées.",
-    "Il faut évaluer objectivement l'impact et la facilité d'application des outils.",
-    "La recherche de la solution miracle peut nuire au processus d'adaptation.",
-    "L'engagement comportemental malgré l'anxiété est un signe de progrès."
+    "La privation de sommeil rend le système nerveux plus réactif aux sensations corporelles.",
+    "Les stimulants, les écrans et la rumination mentale perturbent le sommeil réparateur.",
+    "L'élimination des stimulants et des écrans avant le coucher améliore l'endormissement.",
+    "Une routine de gestion des soucis aide à calmer l'esprit anxieux avant le sommeil."
   ],
   "concepts_introduits": [
-    "Respiration diaphragmatique : Technique apaisante pour les crises aiguës.",
-    "Ancrage sensoriel : Méthode pour revenir au moment présent.",
-    "Rumination : Cycle de pensées négatives répétitives.",
-    "Réassurance déguisée : Stratégie qui maintient l'anxiété.",
-    "Réengagement comportemental : Action malgré la présence d'anxiété."
+    "Anxiété : Mal-être diffus, vague inquiétude sans cause précise identifiée.",
+    "Stimulants : Substances qui augmentent temporairement l'activité mentale ou physique.",
+    "Mélatonine : Hormone régulant le cycle veille-sommeil, produite par le cerveau.",
+    "Horloge biologique : Rythme interne régulant les fonctions physiologiques sur 24 heures.",
+    "Routine de gestion des soucis : Technique pour reléguer les pensées anxieuses."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Thomas",
-    "Échelle d'anxiété de 0 à 10"
+    "Le sommeil est le pilier fondamental pour contenir la montée de l'anxiété.",
+    "La lumière bleue inhibe la production de mélatonine.",
+    "Instaurez une routine de gestion des soucis pour la nuit."
   ],
-  "ton_angle": "Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.</these_centrale>\n<arguments_cles>\n- Chaque individu réagit différemment aux méthodes proposées.\n- Il faut évaluer objectivement l'impact et la facilité d'application des outils.\n- La recherche de la solution miracle peut nuire au processus d'adaptation.\n- L'engagement comportemental malgré l'anxiété est un signe de progrès.\n</arguments_cles>\n<concepts_introduits>\n- Respiration diaphragmatique : Technique apaisante pour les crises aiguës.\n- Ancrage sensoriel : Méthode pour revenir au moment présent.\n- Rumination : Cycle de pensées négatives répétitives.\n- Réassurance déguisée : Stratégie qui maintient l'anxiété.\n- Réengagement comportemental : Action malgré la présence d'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Thomas\n- Échelle d'anxiété de 0 à 10\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.</ton_angle>\n</fiche>"
+  "ton_angle": "Objectif et pratique, il propose des stratégies concrètes pour optimiser le sommeil.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Un sommeil de qualité est essentiel pour réguler l'anxiété liée à la santé en réduisant la réactivité nerveuse.</these_centrale>\n<arguments_cles>\n- La privation de sommeil rend le système nerveux plus réactif aux sensations corporelles.\n- Les stimulants, les écrans et la rumination mentale perturbent le sommeil réparateur.\n- L'élimination des stimulants et des écrans avant le coucher améliore l'endormissement.\n- Une routine de gestion des soucis aide à calmer l'esprit anxieux avant le sommeil.\n</arguments_cles>\n<concepts_introduits>\n- Anxiété : Mal-être diffus, vague inquiétude sans cause précise identifiée.\n- Stimulants : Substances qui augmentent temporairement l'activité mentale ou physique.\n- Mélatonine : Hormone régulant le cycle veille-sommeil, produite par le cerveau.\n- Horloge biologique : Rythme interne régulant les fonctions physiologiques sur 24 heures.\n- Routine de gestion des soucis : Technique pour reléguer les pensées anxieuses.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le sommeil est le pilier fondamental pour contenir la montée de l'anxiété.\n- La lumière bleue inhibe la production de mélatonine.\n- Instaurez une routine de gestion des soucis pour la nuit.\n</a_ne_pas_repeter>\n<ton_angle>Objectif et pratique, il propose des stratégies concrètes pour optimiser le sommeil.</ton_angle>\n</fiche>"
 }
