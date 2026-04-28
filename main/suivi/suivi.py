@@ -14,6 +14,8 @@ from fiche_cadrage.fiche_cadrage import fc, insert_fc
 from fil_rouge.fil_rouge import gen_filrouge_with_validation
 from fil_rouge.merge_filrouge import merge_filrouge_wrapper
 from introduction.introduction import gen_intro
+from prepostface.preface.preface import gen_preface
+from prepostface.postface.postface import gen_postface
 from section.section import gen_section, merge_all_chapters, load_structure
 from web_search.webinput import webinput_wrapper
 from web_search.web import web_search_wrapper
@@ -213,11 +215,17 @@ def suivi(fonction, resume_from=None, auto_confirm=False, mode=None, **_):
     elif fonction == "gen_intro":
         gen_intro()
 
-    elif fonction =="gen_all_sections":
+    elif fonction == "gen_preface":
+        gen_preface()
+
+    elif fonction == "gen_all_sections":
         return suivisection(start_from=resume_from, auto_confirm=auto_confirm)
 
     elif fonction == "gen_conclu":
         gen_conclu()
+
+    elif fonction == "gen_postface":
+        gen_postface()
 
     elif fonction == "gen_filrouge":
         gen_filrouge_with_validation()

@@ -149,14 +149,12 @@ def parse_fiche_cadrage(text: str) -> dict:
 
     return {
         "sujet": extract_tag(fiche, "sujet"),
-        "sommaire": chapitres,
         "hors_perimetre": exclusions,
         "contraintes_specifiques": contraintes,
         "cible_principale": extract_tag(fiche, "cible_principale"),
         "niveau": extract_tag(fiche, "niveau"),
         "objectif_lecteur": extract_tag(fiche, "objectif_lecteur"),
         "nbre_chapitres": nbre_chapitres,
-        "_raw": text,
     }
 
 
@@ -273,6 +271,29 @@ def parse_introduction(text: str) -> dict:
         "intro": intro,
         "_raw": text,
     }
+
+
+def _parse_simple_preface_postface(text: str, tag_name: str, field_name: str) -> dict:
+    """Parse un bloc simple de type preface/postface."""
+    content = extract_tag(text, tag_name) or text
+    return {
+        field_name: content,
+        "_raw": text,
+    }
+
+
+def parse_preface(text: str) -> dict:
+    """
+    Parse la réponse de la préface.
+    """
+    return _parse_simple_preface_postface(text, "preface", "preface")
+
+
+def parse_postface(text: str) -> dict:
+    """
+    Parse la réponse de la postface.
+    """
+    return _parse_simple_preface_postface(text, "postface", "postface")
 
 
 def parse_section(text: str, chapitre: int, section: int) -> dict:

@@ -3,25 +3,21 @@
   "section": 1,
   "chapitre_numero": "4",
   "section_numero": "1",
-  "these_centrale": "Documenter les réussites, même minimes, est essentiel pour contrer la sous-estimation de soi et renforcer la confiance.",
+  "these_centrale": "L'aloe vera, au-delà de son usage traditionnel, offre des propriétés physiologiques remarquables pour les brûlures.",
   "arguments_cles": [
-    "Sous-estimer ses succès érode la confiance et alimente l'impuissance.",
-    "Un registre des réussites prouve la résilience et la capacité d'adaptation.",
-    "Le catalogue de succès sert de preuve tangible contre le doute.",
-    "Capitaliser les réussites rééquilibre le focus sur les moments de force."
+    "Ses polysaccharides ont des effets anti-inflammatoires prouvés.",
+    "Il stimule la production de collagène pour la régénération cutanée.",
+    "Son hydratation prévient la sécheresse et les cicatrices.",
+    "Il agit comme une barrière protectrice pour la zone lésée."
   ],
   "concepts_introduits": [
-    "Sous-estimation : tendance à minimiser ses propres capacités.",
-    "Pensées intrusives : pensées indésirables et récurrentes.",
-    "Estime de soi : évaluation subjective de sa propre valeur.",
-    "Résilience : capacité à surmonter les épreuves."
+    "Polysaccharides : Molécules complexes aux propriétés physiologiques variées.",
+    "Acémananes : Type de polysaccharide présent dans l'aloe vera.",
+    "Collagène : Protéine structurelle essentielle à la peau.",
+    "Fibroblastes : Cellules favorisant la production de tissu conjonctif."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Attribuer les succès à la chance.",
-    "Ignorer les petites victoires.",
-    "Nier les difficultés rencontrées."
-  ],
-  "ton_angle": "Pragmatique et encourageant, axé sur des stratégies concrètes de renforcement.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Documenter les réussites, même minimes, est essentiel pour contrer la sous-estimation de soi et renforcer la confiance.</these_centrale>\n<arguments_cles>\n- Sous-estimer ses succès érode la confiance et alimente l'impuissance.\n- Un registre des réussites prouve la résilience et la capacité d'adaptation.\n- Le catalogue de succès sert de preuve tangible contre le doute.\n- Capitaliser les réussites rééquilibre le focus sur les moments de force.\n</arguments_cles>\n<concepts_introduits>\n- Sous-estimation : tendance à minimiser ses propres capacités.\n- Pensées intrusives : pensées indésirables et récurrentes.\n- Estime de soi : évaluation subjective de sa propre valeur.\n- Résilience : capacité à surmonter les épreuves.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Attribuer les succès à la chance.\n- Ignorer les petites victoires.\n- Nier les difficultés rencontrées.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et encourageant, axé sur des stratégies concrètes de renforcement.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Informatif et préventif, soulignant l'efficacité scientifique et les précautions d'usage.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'aloe vera, au-delà de son usage traditionnel, offre des propriétés physiologiques remarquables pour les brûlures.</these_centrale>\n<arguments_cles>\n- Ses polysaccharides ont des effets anti-inflammatoires prouvés.\n- Il stimule la production de collagène pour la régénération cutanée.\n- Son hydratation prévient la sécheresse et les cicatrices.\n- Il agit comme une barrière protectrice pour la zone lésée.\n</arguments_cles>\n<concepts_introduits>\n- Polysaccharides : Molécules complexes aux propriétés physiologiques variées.\n- Acémananes : Type de polysaccharide présent dans l'aloe vera.\n- Collagène : Protéine structurelle essentielle à la peau.\n- Fibroblastes : Cellules favorisant la production de tissu conjonctif.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Plus qu'un simple remède de grand-mère\n- Brûlures superficielles\n- Soulagement significatif\n</a_ne_not_repeter>\n<ton_angle> Informatif et préventif, soulignant l'efficacité scientifique et les précautions d'usage.</ton_angle>\n</fiche>"
 }

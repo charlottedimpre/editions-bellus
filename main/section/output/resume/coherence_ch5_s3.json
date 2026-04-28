@@ -3,20 +3,24 @@
   "section": 3,
   "chapitre_numero": "5",
   "section_numero": "3",
-  "these_centrale": "Les fluctuations et rechutes sont des phases normales d'apprentissage qu'il faut normaliser et analyser pour s'adapter.",
+  "these_centrale": "Les rituels de guérison des brûlures, bien que procurant un soulagement subjectif, retardent les soins médicaux essentiels et aggravent les dommages tissulaires.",
   "arguments_cles": [
-    "Normaliser les fluctuations comme partie intégrante de l'apprentissage.",
-    "Analyser objectivement les déclencheurs et les stratégies utilisées.",
-    "Ajuster le plan d'action en renforçant les techniques efficaces.",
-    "Demander de l'aide professionnelle si les difficultés s'intensifient."
+    "Les pratiques non éprouvées exposent à l'infection et aux séquelles permanentes.",
+    "L'efficacité perçue repose sur l'effet placebo et la distraction de la douleur.",
+    "Le retard des soins médicaux aggrave les dommages tissulaires et augmente les risques.",
+    "Les signes d'aggravation comme le pus ou la douleur persistante nécessitent un avis médical."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire, récurrente et indésirable.",
-    "Rechute : retour temporaire aux difficultés après une période d'amélioration.",
-    "Ancrage sensoriel : technique pour se reconnecter au présent via les sens."
+    "Effet placebo : Atténuation de la douleur par la conviction et l'attention.",
+    "Séquelles permanentes : Dommages irréversibles aux tissus cutanés.",
+    "Cicatrisation ralentie : Processus de réparation cutanée prolongé.",
+    "Infection bactérienne : Invasion microbienne nécessitant des antibiotiques."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et encourageant, soulignant la normalité des difficultés.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les fluctuations et rechutes sont des phases normales d'apprentissage qu'il faut normaliser et analyser pour s'adapter.</these_centrale>\n<arguments_cles>\n- Normaliser les fluctuations comme partie intégrante de l'apprentissage.\n- Analyser objectivement les déclencheurs et les stratégies utilisées.\n- Ajuster le plan d'action en renforçant les techniques efficaces.\n- Demander de l'aide professionnelle si les difficultés s'intensifient.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire, récurrente et indésirable.\n- Rechute : retour temporaire aux difficultés après une période d'amélioration.\n- Ancrage sensoriel : technique pour se reconnecter au présent via les sens.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La rechute est un échec total.\n- Le doute signifie que les outils ne fonctionnent pas.\n</a_ne_not_repeter>\n<ton_angle>Informatif et encourageant, soulignant la normalité des difficultés.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Soulagement subjectif masquant une aggravation potentielle.",
+    "Brûlures sur le visage ou les mains entraînant des séquelles."
+  ],
+  "ton_angle": "Ton préventif et informatif, défendant la primauté des soins médicaux validés.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les rituels de guérison des brûlures, bien que procurant un soulagement subjectif, retardent les soins médicaux essentiels et aggravent les dommages tissulaires.</these_centrale>\n<arguments_cles>\n- Les pratiques non éprouvées exposent à l'infection et aux séquelles permanentes.\n- L'efficacité perçue repose sur l'effet placebo et la distraction de la douleur.\n- Le retard des soins médicaux aggrave les dommages tissulaires et augmente les risques.\n- Les signes d'aggravation comme le pus ou la douleur persistante nécessitent un avis médical.\n</arguments_cles>\n<concepts_introduits>\n- Effet placebo : Atténuation de la douleur par la conviction et l'attention.\n- Séquelles permanentes : Dommages irréversibles aux tissus cutanés.\n- Cicatrisation ralentie : Processus de réparation cutanée prolongé.\n- Infection bactérienne : Invasion microbienne nécessitant des antibiotiques.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Soulagement subjectif masquant une aggravation potentielle.\n- Brûlures sur le visage ou les mains entraînant des séquelles.\n</a_ne_pas_repeter>\n<ton_angle>Ton préventif et informatif, défendant la primauté des soins médicaux validés.</ton_angle>\n</fiche>"
 }

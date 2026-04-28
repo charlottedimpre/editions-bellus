@@ -3,27 +3,28 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "Réduire les demandes de réassurance et poser des limites aide à gérer l'anxiété, en tolérant l'incertitude.",
+  "these_centrale": "La lavande aspic offre des bienfaits analgésiques et cicatrisants pour les brûlures légères, à condition d'un usage sûr et adapté.",
   "arguments_cles": [
-    "Les demandes de réassurance apportent un soulagement temporaire qui renforce l'anxiété.",
-    "Poser des limites claires informe sur l'impact involontaire de l'aide.",
-    "L'absence de réassurance confronte à l'incertitude et réduit la charge émotionnelle.",
-    "Développer une autonomie émotionnelle permet de tolérer les pensées intrusives."
+    "Ses composés actifs apaisent la douleur et favorisent la guérison des tissus cutanés.",
+    "Une dilution appropriée dans une huile végétale optimise son efficacité et sa sécurité.",
+    "Son usage est restreint pour les enfants, femmes enceintes ou allaitantes.",
+    "La réalisation d'un test cutané préalable est essentielle pour éviter les réactions."
   ],
   "concepts_introduits": [
-    "Demandes de réassurance : sollicitation de preuves rassurantes auprès d'autrui.",
-    "Pensées intrusives : pensées indésirables et potentiellement anxiogènes.",
-    "Tolérer l'incertitude : accepter le manque de certitude sans anxiété excessive.",
-    "Autonomie émotionnelle : capacité à gérer ses émotions sans aide extérieure constante."
+    "Lavande aspic : Huile essentielle aux effets analgésiques, anti-inflammatoires et cicatrisants.",
+    "Brûlure du premier degré : Lésion cutanée superficielle avec rougeur et douleur.",
+    "Brûlure du second degré superficiel : Lésion touchant épiderme et partie du derme.",
+    "Linalol : Composé actif contribuant à l'apaisement et à la régénération tissulaire.",
+    "Camphre : Composé actif potentiellement toxique chez les jeunes enfants."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Soulagement temporaire",
-    "Cercle vicieux de l'anxiété",
-    "Illusion de sécurité",
-    "Pensées comme menaces réelles",
-    "Bruit mental"
+    "Brûlure du premier degré",
+    "Brûlure du second degré superficiel",
+    "Enfants de moins de six ans",
+    "Femmes enceintes ou allaitantes",
+    "Test cutané"
   ],
-  "ton_angle": "Instructif et pragmatique, visant l'autonomisation du lecteur.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Réduire les demandes de réassurance et poser des limites aide à gérer l'anxiété, en tolérant l'incertitude.</these_centrale>\n<arguments_cles>\n- Les demandes de réassurance apportent un soulagement temporaire qui renforce l'anxiété.\n- Poser des limites claires informe sur l'impact involontaire de l'aide.\n- L'absence de réassurance confronte à l'incertitude et réduit la charge émotionnelle.\n- Développer une autonomie émotionnelle permet de tolérer les pensées intrusives.\n</arguments_cles>\n<concepts_introduits>\n- Demandes de réassurance : sollicitation de preuves rassurantes auprès d'autrui.\n- Pensées intrusives : pensées indésirables et potentiellement anxiogènes.\n- Tolérer l'incertitude : accepter le manque de certitude sans anxiété excessive.\n- Autonomie émotionnelle : capacité à gérer ses émotions sans aide extérieure constante.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Soulagement temporaire\n- Cercle vicieux de l'anxiété\n- Illusion de sécurité\n- Pensées comme menaces réelles\n- Bruit mental\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, visant l'autonomisation du lecteur.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et préventif, guidant sur l'utilisation sécuritaire de la lavande aspic.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La lavande aspic offre des bienfaits analgésiques et cicatrisants pour les brûlures légères, à condition d'un usage sûr et adapté.</these_centrale>\n<arguments_cles>\n- Ses composés actifs apaisent la douleur et favorisent la guérison des tissus cutanés.\n- Une dilution appropriée dans une huile végétale optimise son efficacité et sa sécurité.\n- Son usage est restreint pour les enfants, femmes enceintes ou allaitantes.\n- La réalisation d'un test cutané préalable est essentielle pour éviter les réactions.\n</arguments_cles>\n<concepts_introduits>\n- Lavande aspic : Huile essentielle aux effets analgésiques, anti-inflammatoires et cicatrisants.\n- Brûlure du premier degré : Lésion cutanée superficielle avec rougeur et douleur.\n- Brûlure du second degré superficiel : Lésion touchant épiderme et partie du derme.\n- Linalol : Composé actif contribuant à l'apaisement et à la régénération tissulaire.\n- Camphre : Composé actif potentiellement toxique chez les jeunes enfants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Brûlure du premier degré\n- Brûlure du second degré superficiel\n- Enfants de moins de six ans\n- Femmes enceintes ou allaitantes\n- Test cutané\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, guidant sur l'utilisation sécuritaire de la lavande aspic.</ton_angle>\n</fiche>"
 }

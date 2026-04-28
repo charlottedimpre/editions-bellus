@@ -3,25 +3,19 @@
   "section": 1,
   "chapitre_numero": "2",
   "section_numero": "1",
-  "these_centrale": "Lutter contre les pensées indésirables renforce l'anxiété en amplifiant leur importance et leur saillance.",
+  "these_centrale": "Agir rapidement dans les premières secondes d'une brûlure est essentiel pour limiter les dommages tissulaires.",
   "arguments_cles": [
-    "Chercher à faire disparaître une pensée lui accorde paradoxalement plus d'importance.",
-    "Le cerveau active des réponses de lutte ou fuite face à la menace perçue.",
-    "La lutte interne détourne l'attention de la réalité, maintenant le système nerveux en alerte.",
-    "Observer sans jugement permet de dissocier la pensée de la réaction émotionnelle."
+    "Interrompre immédiatement la source de chaleur limite la propagation de l'énergie.",
+    "Le retrait rapide du corps de la source de chaleur est prioritaire.",
+    "Ne pas retirer les vêtements collés à la peau pour éviter d'aggraver les lésions.",
+    "Éviter de secouer ou tapoter la zone brûlée pour ne pas causer de dommages."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire, souvent effrayante ou dérangeante.",
-    "Cycle vicieux : processus auto-entretenu qui amplifie un problème initial.",
-    "Observation sans engagement : reconnaître une pensée sans y adhérer ni la juger.",
-    "Recentrage sensoriel : focaliser l'attention sur les perceptions du moment présent."
+    "Énergie thermique : Transfert de chaleur pouvant endommager les tissus.",
+    "Brûlures par flammes : Lésions causées par l'exposition directe au feu."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "La métaphore de l'éléphant rose.",
-    "La description du corps en état d'alerte.",
-    "L'analogie des nuages dans le ciel."
-  ],
-  "ton_angle": "Explicatif et didactique, l'angle est d'exposer le paradoxe de la lutte contre les pensées.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Lutter contre les pensées indésirables renforce l'anxiété en amplifiant leur importance et leur saillance.</these_centrale>\n<arguments_cles>\n- Chercher à faire disparaître une pensée lui accorde paradoxalement plus d'importance.\n- Le cerveau active des réponses de lutte ou fuite face à la menace perçue.\n- La lutte interne détourne l'attention de la réalité, maintenant le système nerveux en alerte.\n- Observer sans jugement permet de dissocier la pensée de la réaction émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire, souvent effrayante ou dérangeante.\n- Cycle vicieux : processus auto-entretenu qui amplifie un problème initial.\n- Observation sans engagement : reconnaître une pensée sans y adhérer ni la juger.\n- Recentrage sensoriel : focaliser l'attention sur les perceptions du moment présent.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La métaphore de l'éléphant rose.\n- La description du corps en état d'alerte.\n- L'analogie des nuages dans le ciel.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et didactique, l'angle est d'exposer le paradoxe de la lutte contre les pensées.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Didactique et préventif, soulignant l'importance de la réactivité.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Agir rapidement dans les premières secondes d'une brûlure est essentiel pour limiter les dommages tissulaires.</these_centrale>\n<arguments_cles>\n- Interrompre immédiatement la source de chaleur limite la propagation de l'énergie.\n- Le retrait rapide du corps de la source de chaleur est prioritaire.\n- Ne pas retirer les vêtements collés à la peau pour éviter d'aggraver les lésions.\n- Éviter de secouer ou tapoter la zone brûlée pour ne pas causer de dommages.\n</arguments_cles>\n<concepts_introduits>\n- Énergie thermique : Transfert de chaleur pouvant endommager les tissus.\n- Brûlures par flammes : Lésions causées par l'exposition directe au feu.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les 15 premières secondes sont cruciales.\n- Éloigner la partie du corps de la zone humide.\n</a_ne_not_repeter>\n<ton_angle>Didactique et préventif, soulignant l'importance de la réactivité.</ton_angle>\n</fiche>"
 }

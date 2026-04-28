@@ -16,11 +16,14 @@ from affichage import (
     _load_chapter_files,
     _load_conclusion_text,
     _load_json_file,
+    _load_postface_text,
+    _load_preface_text,
 )
 
 OUTPUT_DOCX_PATH = BASE_DIR / "output" / "livre.docx"
 AUTHOR_PLACEHOLDER = "[AUTEUR]"
 PUBLISHER_NAME = "Editions Bellus"
+SIGNATURE_TEXT = "— Éditions Bellus"
 
 # Unites Word: 1 point = 2 half-points.
 PT = 2
@@ -77,11 +80,18 @@ def _word_page_break_xml() -> str:
 
 def _build_doc_blocks(
     book_title: str,
+    preface_text: str,
     intro: str,
     chapters_data: list[dict[str, Any]],
     conclusion_text: str,
+    postface_text: str,
 ) -> list[dict[str, Any]]:
-    toc_entries = _build_toc_entries(chapters_data, has_conclusion=bool(conclusion_text))
+    toc_entries = _build_toc_entries(
+        chapters_data,
+        has_preface=bool(preface_text),
+        has_conclusion=bool(conclusion_text),
+        has_postface=bool(postface_text),
+    )
 
     blocks: list[dict[str, Any]] = []
 
@@ -93,6 +103,13 @@ def _build_doc_blocks(
     blocks.append({"type": "paragraph", "text": "Sommaire", "align": "center", "size_pt": 24, "bold": True, "space_after": 260})
     for _, title in toc_entries:
         blocks.append({"type": "paragraph", "text": title, "align": "left", "size_pt": 12, "space_after": 90})
+
+    if preface_text:
+        blocks.append({"type": "page_break"})
+        blocks.append({"type": "paragraph", "text": "Préface", "align": "center", "size_pt": 24, "bold": True, "space_after": 260})
+        for paragraph in _split_text_paragraphs(preface_text):
+            blocks.append({"type": "paragraph", "text": paragraph, "align": "justify", "size_pt": 12, "space_after": 120})
+        blocks.append({"type": "paragraph", "text": SIGNATURE_TEXT, "align": "right", "size_pt": 12, "space_before": 80, "space_after": 120})
 
     blocks.append({"type": "page_break"})
     blocks.append({"type": "paragraph", "text": PDF_TITLE, "align": "center", "size_pt": 24, "bold": True, "space_after": 260})
@@ -124,6 +141,13 @@ def _build_doc_blocks(
         blocks.append({"type": "paragraph", "text": "Conclusion", "align": "center", "size_pt": 24, "bold": True, "space_after": 260})
         for paragraph in _split_text_paragraphs(conclusion_text):
             blocks.append({"type": "paragraph", "text": paragraph, "align": "justify", "size_pt": 12, "space_after": 120})
+
+    if postface_text:
+        blocks.append({"type": "page_break"})
+        blocks.append({"type": "paragraph", "text": "Postface", "align": "center", "size_pt": 24, "bold": True, "space_after": 260})
+        for paragraph in _split_text_paragraphs(postface_text):
+            blocks.append({"type": "paragraph", "text": paragraph, "align": "justify", "size_pt": 12, "space_after": 120})
+        blocks.append({"type": "paragraph", "text": SIGNATURE_TEXT, "align": "right", "size_pt": 12, "space_before": 80, "space_after": 120})
 
     return blocks
 
@@ -231,14 +255,14 @@ def affichage_doc() -> None:
             chapters_data.append(chapter_payload)
 
     conclusion_text = _load_conclusion_text()
+    postface_text = _load_postface_text()
+    preface_text = _load_preface_text()
 
-    blocks = _build_doc_blocks(book_title, intro, chapters_data, conclusion_text)
+    blocks = _build_doc_blocks(book_title, preface_text, intro, chapters_data, conclusion_text, postface_text)
     document_xml = _build_document_xml(blocks)
     _write_docx(OUTPUT_DOCX_PATH, document_xml, title=book_title)
 
 
 if __name__ == "__main__":
     affichage_doc()
-
-
 

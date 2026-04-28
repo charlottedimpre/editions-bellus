@@ -3,21 +3,24 @@
   "section": 2,
   "chapitre_numero": "4",
   "section_numero": "2",
-  "these_centrale": "Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.",
+  "these_centrale": "Le miel d'usage médical est un traitement naturel efficace pour les brûlures légères grâce à ses propriétés antimicrobiennes et cicatrisantes.",
   "arguments_cles": [
-    "La quête de certitude renforce les pensées intrusives et l'anxiété.",
-    "Observer sans jugement et sans analyse les pensées réduit leur impact.",
-    "L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.",
-    "Les pensées sont des événements mentaux transitoires, pas des reflets de soi."
+    "Ses propriétés antibactériennes et cicatrisantes aident à la guérison des brûlures.",
+    "Le pH acide et le pouvoir osmotique du miel inhibent les bactéries.",
+    "Il crée un milieu humide favorisant la régénération tissulaire.",
+    "Son action anti-inflammatoire réduit rougeur et gonflement."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : pensées involontaires et souvent effrayantes.",
-    "Incertitude : absence de connaissance certaine sur un événement futur.",
-    "Exposition : confrontation volontaire à une situation anxiogène.",
-    "Acceptation : reconnaître et tolérer une expérience sans la combattre."
+    "Peroxyde d'hydrogène : Agent antimicrobien naturel produit par le miel dilué.",
+    "Pouvoir osmotique : Capacité du miel à attirer l'eau des bactéries.",
+    "Brûlure du premier degré : Lésion superficielle affectant l'épiderme.",
+    "Brûlure du second degré superficielle : Atteinte de l'épiderme et du derme superficiel."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Accepter l'incertitude face aux pensées intrusives réduit leur pouvoir anxiogène par l'exposition sans lutte.</these_centrale>\n<arguments_cles>\n- La quête de certitude renforce les pensées intrusives et l'anxiété.\n- Observer sans jugement et sans analyse les pensées réduit leur impact.\n- L'exposition volontaire à l'inconfort des pensées diminue leur pouvoir.\n- Les pensées sont des événements mentaux transitoires, pas des reflets de soi.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées involontaires et souvent effrayantes.\n- Incertitude : absence de connaissance certaine sur un événement futur.\n- Exposition : confrontation volontaire à une situation anxiogène.\n- Acceptation : reconnaître et tolérer une expérience sans la combattre.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Chercher la certitude absolue est une impasse.\n- Les comportements d'évitement et de réassurance prolongent l'anxiété.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et incitatif, l'angle est celui de l'autonomisation par l'acceptation.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Le miel n'est pas un aliment pour cet usage thérapeutique.",
+    "Le miel ne piège pas la chaleur."
+  ],
+  "ton_angle": "Informatif et prescriptif, soulignant les bénéfices validés du miel médical.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le miel d'usage médical est un traitement naturel efficace pour les brûlures légères grâce à ses propriétés antimicrobiennes et cicatrisantes.</these_centrale>\n<arguments_cles>\n- Ses propriétés antibactériennes et cicatrisantes aident à la guérison des brûlures.\n- Le pH acide et le pouvoir osmotique du miel inhibent les bactéries.\n- Il crée un milieu humide favorisant la régénération tissulaire.\n- Son action anti-inflammatoire réduit rougeur et gonflement.\n</arguments_cles>\n<concepts_introduits>\n- Peroxyde d'hydrogène : Agent antimicrobien naturel produit par le miel dilué.\n- Pouvoir osmotique : Capacité du miel à attirer l'eau des bactéries.\n- Brûlure du premier degré : Lésion superficielle affectant l'épiderme.\n- Brûlure du second degré superficielle : Atteinte de l'épiderme et du derme superficiel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le miel n'est pas un aliment pour cet usage thérapeutique.\n- Le miel ne piège pas la chaleur.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prescriptif, soulignant les bénéfices validés du miel médical.</ton_angle>\n</fiche>"
 }

@@ -3,21 +3,18 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.",
+  "these_centrale": "L'évaluation précise de la taille d'une brûlure est déterminante pour le pronostic et la prise en charge médicale nécessaire.",
   "arguments_cles": [
-    "Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.",
-    "L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.",
-    "La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.",
-    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle."
+    "La mesure de surface de la brûlure indique le pronostic et le besoin d'intervention.",
+    "La règle des 9% facilite l'estimation rapide de la surface brûlée par zones.",
+    "Des seuils spécifiques de surface brûlée déclenchent la nécessité d'une consultation médicale.",
+    "L'âge de la victime modifie les seuils d'alerte pour une consultation médicale."
   ],
   "concepts_introduits": [
-    "Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.",
-    "Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.",
-    "Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.",
-    "Observation sans engagement : attitude d'observation des pensées sans jugement ni action."
+    "Règle des 9% : méthode d'estimation de la surface corporelle brûlée."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [],
-  "ton_angle": "Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La suppression active des pensées effrayantes renforce leur impact, créant un cercle vicieux d'anxiété.</these_centrale>\n<arguments_cles>\n- Supprimer une pensée lui accorde une importance accrue, signalant un danger réel au cerveau.\n- L'attention se focalise sur les pensées à éviter, rendant leur réapparition inévitable.\n- La lutte interne épuise les ressources mentales, augmentant le sentiment d'impuissance.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n</arguments_cles>\n<concepts_introduits>\n- Agitation mentale : envie irrépressible de supprimer ou ignorer une pensée.\n- Effet de suppression de pensée : stratégie inefficace augmentant la fréquence des pensées évitées.\n- Pensées intrusives : pensées indésirables qui s'imposent à l'esprit.\n- Observation sans engagement : attitude d'observation des pensées sans jugement ni action.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Lutter contre une pensée est une stratégie contre-productive.\n- Les pensées sont des événements mentaux transitoires.\n</a_ne_not_repeter>\n<ton_angle>Ton explicatif et pragmatique démontrant l'inefficacité de la suppression des pensées.</ton_angle>\n</fiche>"
+  "ton_angle": "Informel et didactique, soulignant l'importance pratique de l'évaluation.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'évaluation précise de la taille d'une brûlure est déterminante pour le pronostic et la prise en charge médicale nécessaire.</these_centrale>\n<arguments_cles>\n- La mesure de surface de la brûlure indique le pronostic et le besoin d'intervention.\n- La règle des 9% facilite l'estimation rapide de la surface brûlée par zones.\n- Des seuils spécifiques de surface brûlée déclenchent la nécessité d'une consultation médicale.\n- L'âge de la victime modifie les seuils d'alerte pour une consultation médicale.\n</arguments_cles>\n<concepts_introduits>\n- Règle des 9% : méthode d'estimation de la surface corporelle brûlée.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Ne pas négliger la dimension de la brûlure.\n- L'importance de l'évaluation proportionnelle sur le corps.\n</a_ne_not_repeter>\n<ton_angle>Informel et didactique, soulignant l'importance pratique de l'évaluation.</ton_angle>\n</fiche>"
 }

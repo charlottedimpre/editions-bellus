@@ -1,237 +1,378 @@
 [
   {
     "numero": "1",
-    "titre": "Reconnaître une pensée intrusive sans la confondre avec un danger",
+    "titre": "Reconnaître une brûlure et évaluer sa gravité",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi votre cerveau vous envoie-t-il des pensées effrayantes sans raison ?",
-        "objectif": "Vous identifierez les mécanismes cérébraux qui génèrent les pensées intrusives et comprendrez pourquoi elles ne reflètent pas vos intentions réelles.",
-        "concept_cle": "Biais de fusion pensée-action : confusion entre penser et agir.",
-        "exemple": "Thomas croit que sa pensée \"blesser son neveu\" signifie qu'il en a l'intention, alors qu'elle est un symptôme d'anxiété.",
-        "limite": "N'explique pas les causes biologiques (neurotransmetteurs) — abordé en partie dans le chapitre 2.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Pourquoi votre brûlure n’est peut-être pas ce que vous croyez",
+        "objectif": "Vous saurez distinguer une brûlure thermique d’une irritation ou d’une allergie, et identifier les trois degrés de brûlure par leurs signes visuels.",
+        "concept_cle": "Degré de brûlure = profondeur de destruction cutanée",
+        "exemple": "Léa confond la rougeur de la main d’Emma avec une simple irritation, alors qu’il s’agit d’un 2e degré superficiel.",
+        "limite": "Ne traite pas les brûlures chimiques ou électriques (abordées en annexe) ni les critères de surface étendue (section 3).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "2",
-        "titre_section": "Comment distinguer une obsession d’une intention réelle en 3 questions ?",
-        "objectif": "Vous appliquerez une grille d'analyse simple pour évaluer si une pensée est intrusive ou dangereuse, sans vous fier à votre ressenti.",
-        "concept_cle": "Grille d'évaluation : répétition, incohérence, résistance.",
-        "exemple": "Thomas utilise la grille pour réaliser que sa peur des couteaux est une obsession, pas un désir.",
-        "limite": "Ne traite pas les cas où la pensée intrusive est liée à un traumatisme — redirigé vers un professionnel (chapitre 5).",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Toucher ou ne pas toucher ? Les pièges des brûlures profondes",
+        "objectif": "Vous reconnaîtrez une brûlure profonde (2e degré profond ou 3e degré) grâce à des tests tactiles simples et éviterez les erreurs de diagnostic.",
+        "concept_cle": "Perte de sensibilité = atteinte des terminaisons nerveuses",
+        "exemple": "Léa teste la sensibilité de la brûlure d’Emma avec un coton-tige pour confirmer qu’il s’agit d’un 2e degré superficiel.",
+        "limite": "N’explique pas comment estimer la surface brûlée (section 3) ni les gestes d’urgence (chapitre 2).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "3",
-        "titre_section": "Pourquoi plus vous luttez contre une pensée, plus elle revient ?",
-        "objectif": "Vous comprendrez l'effet rebond des pensées intrusives et pourquoi les supprimer les renforce, avec des alternatives concrètes.",
-        "concept_cle": "Effet paradoxal : la suppression amplifie l'obsession.",
-        "exemple": "Thomas essaie d'ignorer ses pensées violentes, ce qui les rend plus fréquentes et angoissantes.",
-        "limite": "Ne propose pas de méthodes de suppression active — exclues du périmètre (voir fiche de cadrage).",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "La règle des 9% : quand la taille de la brûlure devient une urgence",
+        "objectif": "Vous estimerez la surface brûlée en utilisant la règle des 9% et identifierez les seuils nécessitant une consultation médicale immédiate.",
+        "concept_cle": "Surface brûlée > 5% chez l’enfant = urgence médicale",
+        "exemple": "Léa évalue la brûlure d’Emma à 2% de sa surface corporelle, confirmant qu’elle peut être gérée à domicile.",
+        "limite": "Ne détaille pas les zones corporelles à risque (section 4) ni les brûlures chez les nourrissons (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "4",
-        "titre_section": "Que faire quand une pensée intrusive vous glace le sang ?",
-        "objectif": "Vous saurez désamorcer l'urgence émotionnelle d'une pensée intrusive en 60 secondes, sans la combattre ni la fuir.",
-        "concept_cle": "Ancrage émotionnel : ramener l'attention au présent.",
-        "exemple": "Thomas utilise la technique des 5 sens pour calmer sa panique face à une pensée violente.",
-        "limite": "Ne détaille pas les outils avancés d'ancrage (ex. : méditation) — abordés dans le chapitre 3.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Visage, mains, articulations : pourquoi certaines brûlures sont plus dangereuses",
+        "objectif": "Vous identifierez les zones corporelles à haut risque et comprendrez pourquoi elles nécessitent une vigilance accrue, même pour des brûlures superficielles.",
+        "concept_cle": "Brûlure sur zone fonctionnelle = risque de séquelles",
+        "exemple": "Léa réalise que si Emma s’était brûlée au visage, elle aurait dû consulter immédiatement, même pour une brûlure superficielle.",
+        "limite": "N’aborde pas les gestes d’urgence spécifiques à ces zones (chapitre 2) ni les complications possibles (chapitre 6).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       }
     ],
-    "total_mots_chapitre": 2000
+    "total_mots_chapitre": 1876
   },
   {
     "numero": "2",
-    "titre": "Briser le cercle vicieux de l’anxiété et de l’évitement",
+    "titre": "Les gestes immédiats qui sauvent la peau",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi éviter les couteaux ou les escaliers aggrave votre anxiété ?",
-        "objectif": "Vous identifierez comment l'évitement renforce la peur et crée un cercle vicieux, avec des preuves concrètes.",
-        "concept_cle": "Conditionnement négatif : l'évitement nourrit l'anxiété.",
-        "exemple": "Thomas évite les couteaux, ce qui confirme à son cerveau que ces objets sont dangereux.",
-        "limite": "Ne propose pas de protocoles d'exposition avancés — réservés aux professionnels (chapitre 5).",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Les 15 premières secondes : comment stopper la brûlure avant qu’elle ne s’aggrave",
+        "objectif": "Vous saurez éloigner la source de chaleur en toute sécurité et éviter les réflexes dangereux (ex : secouer la main brûlée).",
+        "concept_cle": "Arrêt immédiat de la source = limitation de la profondeur",
+        "exemple": "Léa retire la main d’Emma de la tasse de thé renversée sans paniquer, évitant une exposition prolongée.",
+        "limite": "Ne traite pas le refroidissement (section 2) ni les brûlures par produits chimiques (annexe).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "2",
-        "titre_section": "Comment repérer vos déclencheurs invisibles avant qu’ils ne vous piègent ?",
-        "objectif": "Vous apprendrez à tenir un journal des situations redoutées pour anticiper et désamorcer vos réactions automatiques.",
-        "concept_cle": "Journal des déclencheurs : cartographier ses schémas d'évitement.",
-        "exemple": "Thomas note que ses pensées intrusives surviennent surtout le soir, quand il est fatigué.",
-        "limite": "Ne traite pas les déclencheurs liés à des traumatismes passés — redirigé vers un professionnel.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Eau froide ou glace ? Le protocole de refroidissement qui change tout",
+        "objectif": "Vous appliquerez le refroidissement sous eau courante à la bonne température et durée, et éviterez les erreurs courantes (glace, eau trop froide).",
+        "concept_cle": "Refroidissement à 15-25°C pendant 10-15 minutes",
+        "exemple": "Léa place la main d’Emma sous l’eau tiède du robinet pendant 10 minutes, réduisant la douleur et la profondeur de la brûlure.",
+        "limite": "N’explique pas comment gérer la douleur pendant le refroidissement (section 3) ni les brûlures étendues (chapitre 6).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "3",
-        "titre_section": "Pourquoi la rumination est-elle votre pire ennemie (et comment l’arrêter) ?",
-        "objectif": "Vous comprendrez pourquoi analyser sans fin vos pensées les amplifie, et découvrirez des techniques pour sortir de la boucle.",
-        "concept_cle": "Rumination : le piège de l'analyse excessive.",
-        "exemple": "Thomas passe des heures à chercher \"pourquoi\" il a cette pensée, ce qui l'épuise sans résultat.",
-        "limite": "Ne propose pas de thérapies cognitives avancées — abordées partiellement dans le chapitre 3.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Douleur insupportable ? Comment soulager sans aggraver la brûlure",
+        "objectif": "Vous utiliserez des méthodes non médicamenteuses pour gérer la douleur pendant le refroidissement, sans compromettre la plaie.",
+        "concept_cle": "Distraction + position surélevée = réduction de la douleur",
+        "exemple": "Léa parle à Emma et surélève sa main pour atténuer la douleur pendant le refroidissement.",
+        "limite": "Ne traite pas les antalgiques (chapitre 6) ni les brûlures chez les nourrissons (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "4",
-        "titre_section": "Comment affronter une situation redoutée sans paniquer ?",
-        "objectif": "Vous appliquerez les principes de l'exposition progressive pour réduire l'anxiété, étape par étape, sans vous surcharger.",
-        "concept_cle": "Exposition hiérarchisée : affronter par paliers.",
-        "exemple": "Thomas commence par regarder une photo de couteau avant de toucher un couteau inoffensif.",
-        "limite": "Ne détaille pas les protocoles thérapeutiques complexes — réservés aux professionnels.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Protéger la plaie : pansements, films alimentaires et erreurs à éviter",
+        "objectif": "Vous choisirez le bon type de protection pour la brûlure (film alimentaire, pansement non adhésif) et éviterez les produits contre-indiqués (corps gras, coton).",
+        "concept_cle": "Protection stérile et non adhésive = prévention des infections",
+        "exemple": "Léa recouvre la brûlure d’Emma d’un film alimentaire avant de consulter, évitant la contamination.",
+        "limite": "N’aborde pas les soins post-refroidissement (chapitre 4) ni les brûlures infectées (chapitre 6).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       }
     ],
-    "total_mots_chapitre": 2000
+    "total_mots_chapitre": 1876
   },
   {
     "numero": "3",
-    "titre": "Désamorcer l’anxiété avec des techniques validées au quotidien",
+    "titre": "Ce qu’il ne faut jamais faire sur une brûlure",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment respirer pour calmer une crise d’angoisse en 2 minutes ?",
-        "objectif": "Vous maîtriserez la respiration diaphragmatique pour réduire l'anxiété physique et mentale en situation de crise.",
-        "concept_cle": "Respiration lente : activer le système parasympathique.",
-        "exemple": "Thomas utilise cette technique quand une pensée intrusive le submerge au travail.",
-        "limite": "Ne traite pas les variantes avancées (ex. : cohérence cardiaque) — À définir avec l'auteur.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Pourquoi la glace est votre pire ennemie après une brûlure",
+        "objectif": "Vous comprendrez pourquoi la glace provoque des gelures et aggrave les lésions, et identifierez les alternatives sûres.",
+        "concept_cle": "Glace = vasoconstriction + destruction cellulaire supplémentaire",
+        "exemple": "Léa évite d’appliquer de la glace sur la brûlure d’Emma après avoir lu cette section.",
+        "limite": "Ne traite pas les autres erreurs courantes (section 2) ni les brûlures chez les enfants (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "2",
-        "titre_section": "Pourquoi vos cinq sens peuvent-ils sauver votre journée ?",
-        "objectif": "Vous utiliserez l'ancrage sensoriel pour ramener votre attention au présent et couper court à la spirale anxieuse.",
-        "concept_cle": "Ancrage 5-4-3-2-1 : recentrage par les sens.",
-        "exemple": "Thomas compte 5 choses qu'il voit, 4 qu'il touche, etc., pour sortir de sa rumination.",
-        "limite": "Ne propose pas de méditation de pleine conscience longue — exclue du périmètre.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Beurre, dentifrice, huile : les remèdes de grand-mère qui étouffent votre peau",
+        "objectif": "Vous identifierez les produits gras ou irritants qui piègent la chaleur et favorisent les infections, et saurez les remplacer.",
+        "concept_cle": "Corps gras = rétention de chaleur + risque infectieux",
+        "exemple": "Léa retire le beurre qu’elle avait appliqué sur la brûlure d’Emma et le remplace par un refroidissement à l’eau.",
+        "limite": "N’explique pas les mécanismes physiologiques en détail (section 3) ni les brûlures chimiques (annexe).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "3",
-        "titre_section": "Comment transformer une pensée intrusive en simple \"bruit de fond\" ?",
-        "objectif": "Vous appliquerez la restructuration cognitive simplifiée pour relativiser le pouvoir de vos pensées sans les nier.",
-        "concept_cle": "Défusion cognitive : observer sans s'identifier.",
-        "exemple": "Thomas apprend à dire \"J'ai une pensée violente\" au lieu de \"Je veux blesser quelqu'un\".",
-        "limite": "Ne détaille pas les théories psychologiques sous-jacentes (ex. : TCC) — À définir avec l'auteur.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Pourquoi percer une cloque peut transformer une brûlure en urgence médicale",
+        "objectif": "Vous comprendrez le rôle protecteur des cloques et éviterez de les percer, même si elles semblent gênantes.",
+        "concept_cle": "Cloque = barrière stérile contre les infections",
+        "exemple": "Léa résiste à l’envie de percer la cloque qui se forme sur la main d’Emma, évitant une infection.",
+        "limite": "Ne traite pas les cloques infectées (chapitre 6) ni les brûlures profondes (chapitre 1).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "4",
-        "titre_section": "Pourquoi ces techniques ne marchent pas toujours (et que faire alors) ?",
-        "objectif": "Vous identifierez les pièges courants (ex. : utilisation comme rituel) et apprendrez à adapter les outils à votre situation.",
-        "concept_cle": "Variabilité individuelle : un outil ≠ une solution universelle.",
-        "exemple": "Thomas réalise que la respiration ne suffit pas les jours de grande fatigue, et combine avec l'ancrage.",
-        "limite": "Ne propose pas de solutions non étayées scientifiquement — exclues du périmètre.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Alcool, vinaigre, urine : les désinfectants qui brûlent deux fois plus",
+        "objectif": "Vous reconnaîtrez les produits agressifs qui endommagent davantage la peau et saurez les éviter.",
+        "concept_cle": "Produits irritants = destruction des tissus sains",
+        "exemple": "Léa renonce à utiliser du vinaigre sur la brûlure d’Emma après avoir lu cette section.",
+        "limite": "N’aborde pas les solutions complémentaires validées (chapitre 4) ni les brûlures chez les peaux sensibles (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       }
     ],
-    "total_mots_chapitre": 2000
+    "total_mots_chapitre": 1876
   },
   {
     "numero": "4",
-    "titre": "Reconstruire la confiance en soi face aux pensées intrusives",
+    "titre": "Solutions complémentaires validées pour apaiser",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Pourquoi vous sous-estimez vos réussites (et comment les compter) ?",
-        "objectif": "Vous créerez une liste de vos petites victoires pour contrer le sentiment d'impuissance et renforcer votre estime de soi.",
-        "concept_cle": "Capitalisation des réussites : rééquilibrer le focus.",
-        "exemple": "Thomas note qu'il a réussi à tenir un couteau sans paniquer, même brièvement.",
-        "limite": "Ne traite pas les échecs comme des \"preuves\" de danger — abordé dans la section 2.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Aloe vera : pourquoi cette plante est plus qu’un simple remède de grand-mère",
+        "objectif": "Vous comprendrez les mécanismes anti-inflammatoires de l’aloe vera et saurez l’appliquer correctement sur une brûlure superficielle.",
+        "concept_cle": "Aloe vera = polysaccharides anti-inflammatoires + cicatrisation",
+        "exemple": "Léa applique du gel d’aloe vera pur sur la brûlure d’Emma après le refroidissement, réduisant la rougeur.",
+        "limite": "Ne traite pas les contre-indications (allergies, section 4) ni les brûlures profondes (chapitre 1).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "2",
-        "titre_section": "Comment tolérer l’incertitude sans chercher à tout contrôler ?",
-        "objectif": "Vous pratiquerez l'exposition aux pensées intrusives sans chercher à les éliminer, pour réduire leur pouvoir anxiogène.",
-        "concept_cle": "Acceptation radicale : accueillir sans combattre.",
-        "exemple": "Thomas s'expose à l'idée \"Et si je perdais le contrôle ?\" sans chercher de réassurance.",
-        "limite": "Ne propose pas de thérapies d'acceptation avancées — réservées aux professionnels.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Miel médical : l’antibactérien naturel qui accélère la cicatrisation",
+        "objectif": "Vous identifierez les propriétés antibactériennes du miel médical et saurez l’utiliser en complément des soins de base.",
+        "concept_cle": "Miel médical = peroxyde d’hydrogène + pH acide",
+        "exemple": "Léa envisage d’utiliser du miel médical pour une brûlure plus étendue, mais vérifie d’abord qu’il s’agit d’un produit stérilisé.",
+        "limite": "N’aborde pas les autres solutions validées (section 3) ni les brûlures infectées (chapitre 6).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "3",
-        "titre_section": "Pourquoi vos proches aggravent-ils (sans le vouloir) votre anxiété ?",
-        "objectif": "Vous identifierez les demandes de réassurance qui maintiennent votre anxiété et apprendrez à poser des limites saines.",
-        "concept_cle": "Réassurance compulsive : un piège relationnel.",
-        "exemple": "Thomas demande sans cesse à sa compagne \"Tu crois que je suis dangereux ?\", ce qui renforce sa peur.",
-        "limite": "Ne traite pas les dynamiques familiales complexes — redirigé vers un professionnel.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Lavande aspic : l’huile essentielle qui soulage, mais avec des précautions",
+        "objectif": "Vous comprendrez les effets analgésiques et cicatrisants de la lavande aspic, et saurez l’utiliser en toute sécurité (dilution, contre-indications).",
+        "concept_cle": "Lavande aspic = linalol + propriétés antalgiques",
+        "exemple": "Léa dilue une goutte de lavande aspic dans de l’huile végétale avant de l’appliquer sur la brûlure d’Emma, évitant une irritation supplémentaire.",
+        "limite": "Ne traite pas les autres huiles essentielles (annexe) ni les brûlures chez les enfants de moins de 6 ans (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "4",
-        "titre_section": "Comment redevenir acteur de votre vie malgré les pensées intrusives ?",
-        "objectif": "Vous réintégrerez des activités abandonnées (ex. : cuisiner, sortir) pour reprendre confiance en vos capacités.",
-        "concept_cle": "Réengagement comportemental : agir malgré la peur.",
-        "exemple": "Thomas recommence à cuisiner, même si cela déclenche des pensées intrusives.",
-        "limite": "Ne propose pas de thérapies de groupe — exclues du périmètre.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Biafine et pansements hydrocolloïdes : quand la science rejoint la pratique",
+        "objectif": "Vous saurez choisir entre les produits pharmaceutiques (Biafine, pansements hydrocolloïdes) et comprendre leurs mécanismes d’action.",
+        "concept_cle": "Pansement hydrocolloïde = milieu humide + protection mécanique",
+        "exemple": "Le médecin prescrit un pansement hydrocolloïde pour la brûlure d’Emma, accélérant la cicatrisation.",
+        "limite": "N’aborde pas les solutions non validées (chapitre 5) ni les brûlures graves (chapitre 6).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       }
     ],
-    "total_mots_chapitre": 2000
+    "total_mots_chapitre": 1876
   },
   {
     "numero": "5",
-    "titre": "Construire un plan d’action personnalisé et durable",
+    "titre": "Coupeurs de feu et approches traditionnelles",
     "sections": [
       {
         "numero": "1",
-        "titre_section": "Comment choisir les outils qui vous correspondent vraiment ?",
-        "objectif": "Vous évaluerez l'efficacité des techniques testées et sélectionnerez celles qui fonctionnent le mieux pour vous, avec des critères concrets.",
-        "concept_cle": "Plan sur mesure : adapter, pas copier.",
-        "exemple": "Thomas réalise que l'ancrage sensoriel marche mieux que la respiration pour lui.",
-        "limite": "Ne propose pas de protocoles thérapeutiques détaillés — réservés aux professionnels.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Coupeurs de feu : magie, placebo ou réalité médicale ?",
+        "objectif": "Vous comprendrez les origines historiques des coupeurs de feu et les mécanismes psychologiques qui expliquent leur efficacité perçue.",
+        "concept_cle": "Coupeurs de feu = rituel apaisant + effet placebo",
+        "exemple": "Léa hésite à contacter un coupeur de feu pour Emma, mais renonce après avoir lu cette section.",
+        "limite": "Ne traite pas les preuves scientifiques (section 2) ni les risques de retard de soins (section 3).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "2",
-        "titre_section": "Pourquoi les rechutes font partie du processus (et comment rebondir) ?",
-        "objectif": "Vous anticiperez les périodes de doute et appliquerez un protocole en 3 étapes pour éviter la spirale négative.",
-        "concept_cle": "Protocole de rebond : normaliser, ajuster, avancer.",
-        "exemple": "Thomas utilise ce protocole quand il évite à nouveau les couteaux après une mauvaise journée.",
-        "limite": "Ne promet pas une guérison définitive — exclue du périmètre.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Pourquoi la science reste sceptique face aux coupeurs de feu",
+        "objectif": "Vous identifierez les limites des études sur les coupeurs de feu et comprendrez pourquoi leur efficacité n’est pas validée scientifiquement.",
+        "concept_cle": "Absence de preuve = pas d’effet sur la cicatrisation",
+        "exemple": "Léa lit un témoignage d’un patient soulagé par un coupeur de feu, mais comprend que cela ne prouve pas son efficacité sur la guérison.",
+        "limite": "N’aborde pas les aspects légaux (section 4) ni les alternatives validées (chapitre 4).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "3",
-        "titre_section": "Quand et comment consulter un professionnel sans culpabiliser ?",
-        "objectif": "Vous identifierez les signes d'alerte qui nécessitent un accompagnement spécialisé et saurez comment en parler à un thérapeute.",
-        "concept_cle": "Seuils d'alerte : quand les outils ne suffisent plus.",
-        "exemple": "Thomas consulte quand ses pensées l'empêchent de travailler ou de dormir.",
-        "limite": "Ne détaille pas les types de thérapies (ex. : durée, tarifs) — À définir avec l'auteur.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Retard de soins : le danger invisible des coupeurs de feu",
+        "objectif": "Vous reconnaîtrez les risques liés au recours exclusif aux coupeurs de feu et saurez quand consulter un professionnel malgré tout.",
+        "concept_cle": "Retard de soins = aggravation des lésions",
+        "exemple": "Léa réalise qu’elle aurait pu aggraver la brûlure d’Emma en attendant un coupeur de feu au lieu de consulter.",
+        "limite": "Ne traite pas les signes d’alerte (chapitre 6) ni les brûlures graves (chapitre 1).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       },
       {
         "numero": "4",
-        "titre_section": "Comment créer un calendrier réaliste pour ancrer vos progrès ?",
-        "objectif": "Vous élaborerez un plan hebdomadaire avec des objectifs progressifs et des critères d'ajustement pour éviter la surcharge.",
-        "concept_cle": "Calendrier d'action : petits pas, grands effets.",
-        "exemple": "Thomas planifie une exposition par semaine, avec des paliers adaptés à son niveau d'anxiété.",
-        "limite": "Ne propose pas de solutions rigides — insiste sur la flexibilité.",
-        "mots_cible": "400-600",
-        "nombre_mots_section": 500
+        "titre_section": "Comment distinguer un coupeur de feu sérieux d’une arnaque",
+        "objectif": "Vous identifierez les critères pour évaluer la légitimité d’un coupeur de feu (encadrement professionnel, transparence) et éviterez les pratiques frauduleuses.",
+        "concept_cle": "Coupeur sérieux = collaboration avec les soignants",
+        "exemple": "Léa découvre qu’un coupeur de feu de sa région travaille en partenariat avec des infirmières, ce qui la rassure.",
+        "limite": "N’aborde pas les aspects spirituels (hors périmètre) ni les témoignages de patients (section 1).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
       }
     ],
-    "total_mots_chapitre": 2000
+    "total_mots_chapitre": 1876
+  },
+  {
+    "numero": "6",
+    "titre": "Quand et pourquoi consulter un professionnel",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Les 10 signes qui doivent vous envoyer aux urgences sans attendre",
+        "objectif": "Vous identifierez les signes d’alerte nécessitant une consultation médicale immédiate (douleur insupportable, cloques étendues, etc.).",
+        "concept_cle": "Signe d’alerte = risque de complication ou de séquelle",
+        "exemple": "Léa consulte un médecin pour Emma après avoir remarqué une cloque de plus de 3 cm, craignant une infection.",
+        "limite": "Ne traite pas les gestes d’urgence (chapitre 2) ni les brûlures chez les enfants (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
+      },
+      {
+        "numero": "2",
+        "titre_section": "Comment décrire votre brûlure au médecin pour gagner du temps",
+        "objectif": "Vous saurez utiliser les termes médicaux précis (degré, surface, localisation) et fournir des photos utiles pour faciliter le diagnostic.",
+        "concept_cle": "Description claire = diagnostic rapide et précis",
+        "exemple": "Léa explique au médecin qu’Emma a une brûlure de 2e degré superficiel sur 2% de la main, avec une cloque intacte.",
+        "limite": "N’aborde pas les examens médicaux (section 3) ni les brûlures graves (chapitre 1).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
+      },
+      {
+        "numero": "3",
+        "titre_section": "Quels examens le médecin peut-il prescrire pour évaluer votre brûlure ?",
+        "objectif": "Vous comprendrez les examens possibles (prélèvements, évaluation de la profondeur) et leur utilité pour adapter le traitement.",
+        "concept_cle": "Examen médical = évaluation de la gravité et des risques",
+        "exemple": "Le médecin de Léa prescrit un prélèvement pour vérifier l’absence d’infection dans la brûlure d’Emma.",
+        "limite": "Ne traite pas les traitements prescrits (section 4) ni les brûlures chimiques (annexe).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
+      },
+      {
+        "numero": "4",
+        "titre_section": "Antibiotiques, pansements spécifiques : ce que le médecin peut vous prescrire",
+        "objectif": "Vous connaîtrez les traitements courants (antibiotiques, pansements hydrocolloïdes) et leur rôle dans la cicatrisation.",
+        "concept_cle": "Traitement médical = prévention des infections + cicatrisation",
+        "exemple": "Le médecin prescrit un pansement hydrocolloïde et une crème antibiotique pour la brûlure d’Emma.",
+        "limite": "N’aborde pas les solutions complémentaires (chapitre 4) ni les brûlures chez les personnes fragiles (chapitre 7).",
+        "mots_cible": "375-563",
+        "nombre_mots_section": 469
+      }
+    ],
+    "total_mots_chapitre": 1876
+  },
+  {
+    "numero": "7",
+    "titre": "Brûlures chez les enfants et personnes fragiles",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Pourquoi la peau des enfants brûle plus vite et plus profondément",
+        "objectif": "Vous comprendrez les spécificités de la peau des enfants (épaisseur, vascularisation) et leur vulnérabilité accrue aux brûlures.",
+        "concept_cle": "Peau fine + surface corporelle réduite = risque élevé",
+        "exemple": "Léa réalise que la brûlure d’Emma, superficielle chez un adulte, aurait pu être plus grave en raison de sa peau fine.",
+        "limite": "Ne traite pas les gestes d’urgence adaptés (section 2) ni les brûlures chez les personnes âgées (section 3).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "2",
+        "titre_section": "Refroidir une brûlure chez un nourrisson : durée, température et précautions",
+        "objectif": "Vous adapterez le protocole de refroidissement pour un nourrisson (durée réduite, température contrôlée) et éviterez les risques d’hypothermie.",
+        "concept_cle": "Refroidissement chez le nourrisson = 5-10 minutes max à 20°C",
+        "exemple": "Léa refroidit la brûlure d’Emma pendant 10 minutes, mais aurait réduit à 5 minutes pour un nourrisson.",
+        "limite": "Ne traite pas les brûlures chez les enfants plus grands (section 4) ni les signes d’alerte (chapitre 6).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "3",
+        "titre_section": "Personnes âgées : pourquoi leurs brûlures cicatrisent moins bien",
+        "objectif": "Vous comprendrez les facteurs aggravants chez les personnes âgées (cicatrisation ralentie, comorbidités) et adapterez les soins.",
+        "concept_cle": "Peau âgée = vascularisation réduite + risque infectieux",
+        "exemple": "Léa apprend que sa mère, diabétique, aurait besoin d’une surveillance accrue pour une brûlure similaire à celle d’Emma.",
+        "limite": "Ne traite pas les gestes d’urgence (chapitre 2) ni les brûlures chez les enfants (section 1).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "4",
+        "titre_section": "Prévenir les brûlures chez les enfants : sécuriser la cuisine et la salle de bain",
+        "objectif": "Vous identifierez les sources de brûlures domestiques pour les enfants et mettrez en place des mesures préventives (caches-prises, robinets thermostatiques).",
+        "concept_cle": "Prévention = suppression des risques à la source",
+        "exemple": "Léa installe un robinet thermostatique dans sa salle de bain après l’accident d’Emma.",
+        "limite": "Ne traite pas les brûlures chez les adultes (chapitre 8) ni les gestes d’urgence (chapitre 2).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      }
+    ],
+    "total_mots_chapitre": 1872
+  },
+  {
+    "numero": "8",
+    "titre": "Prévenir les brûlures au quotidien",
+    "sections": [
+      {
+        "numero": "1",
+        "titre_section": "Eau chaude : comment éviter les brûlures sans renoncer à votre confort",
+        "objectif": "Vous réglerez la température de votre chauffe-eau et installerez des robinets thermostatiques pour éliminer le risque de brûlures par eau chaude.",
+        "concept_cle": "Température < 50°C = élimination du risque de brûlure",
+        "exemple": "Léa règle son chauffe-eau à 48°C et installe un robinet thermostatique dans sa douche.",
+        "limite": "Ne traite pas les autres sources de brûlures (section 2) ni les brûlures chez les enfants (chapitre 7).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "2",
+        "titre_section": "Cuisine : les 5 gestes qui protègent vos enfants des brûlures",
+        "objectif": "Vous sécuriserez votre cuisine en adoptant des réflexes simples (poignées de casseroles tournées vers l’intérieur, plaques à induction).",
+        "concept_cle": "Sécurité cuisine = organisation + vigilance",
+        "exemple": "Léa tourne systématiquement les poignées de ses casseroles vers l’intérieur après l’accident d’Emma.",
+        "limite": "Ne traite pas les brûlures par produits chimiques (annexe) ni les brûlures par fer à repasser (section 3).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "3",
+        "titre_section": "Fer à repasser, barbecue, fêtes : les situations à risque et comment les anticiper",
+        "objectif": "Vous identifierez les situations à haut risque (fer à repasser, barbecue) et mettrez en place des protocoles de sécurité adaptés.",
+        "concept_cle": "Situation à risque = vigilance accrue + préparation",
+        "exemple": "Léa range systématiquement son fer à repasser hors de portée des enfants après avoir frôlé un accident.",
+        "limite": "Ne traite pas les brûlures par soleil (section 4) ni les brûlures professionnelles (hors périmètre).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      },
+      {
+        "numero": "4",
+        "titre_section": "Brûlures solaires : pourquoi elles sont plus dangereuses qu’on ne le pense",
+        "objectif": "Vous comprendrez les risques des brûlures solaires (coup de soleil, vieillissement cutané) et saurez les prévenir (crème solaire, vêtements protecteurs).",
+        "concept_cle": "Brûlure solaire = destruction des cellules cutanées par UV",
+        "exemple": "Léa applique de la crème solaire indice 50+ sur Emma avant une sortie à la plage, évitant un coup de soleil.",
+        "limite": "Ne traite pas les autres sources de brûlures (section 1) ni les gestes d’urgence (chapitre 2).",
+        "mots_cible": "374-562",
+        "nombre_mots_section": 468
+      }
+    ],
+    "total_mots_chapitre": 1872
   }
 ]

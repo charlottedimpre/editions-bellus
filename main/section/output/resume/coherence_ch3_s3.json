@@ -3,26 +3,21 @@
   "section": 3,
   "chapitre_numero": "3",
   "section_numero": "3",
-  "these_centrale": "Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.",
+  "these_centrale": "Les cloques sont des barrières protectrices essentielles qui ne doivent pas être percées pour éviter infections et retards de cicatrisation.",
   "arguments_cles": [
-    "Déconnecter mentalement des pensées en modifiant la perception.",
-    "Observer les pensées avec détachement comme un scientifique.",
-    "Distinguer l'identité de la pensée par l'ajout de qualificatifs.",
-    "Rompre le cycle de rumination en traitant les pensées comme des observations.",
-    "Rendre les pensées inoffensives, pas les effacer totalement."
+    "La cloque protège la peau vulnérable sous-jacente des agents pathogènes externes.",
+    "Percer une cloque augmente le risque d'infection et de complications graves.",
+    "Le retrait prématuré d'une cloque ralentit la guérison et favorise les cicatrices.",
+    "La cloque maintient un environnement humide propice à la régénération cutanée."
   ],
   "concepts_introduits": [
-    "Déconnexion mentale : Altérer la relation avec les pensées intrusives.",
-    "Rumination : Cycle infernal d'analyse excessive des pensées.",
-    "Défusion cognitive : Observer sans s'accrocher aux pensées."
+    "Cloque : poche remplie de liquide protégeant une peau lésée.",
+    "Infection : prolifération de micro-organismes pathogènes dans une plaie.",
+    "Cicatrisation : processus de réparation tissulaire après une blessure.",
+    "Derme : couche de peau sous l'épiderme."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Ne pas lutter directement contre la pensée.",
-    "Ne pas s'identifier à la pensée intrusive.",
-    "Ne pas considérer la pensée comme une vérité absolue.",
-    "Ne pas vouloir contrôler ou éliminer la pensée."
-  ],
-  "ton_angle": "Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Modifier la relation avec les pensées intrusives les rend moins menaçantes et plus tolérables.</these_centrale>\n<arguments_cles>\n- Déconnecter mentalement des pensées en modifiant la perception.\n- Observer les pensées avec détachement comme un scientifique.\n- Distinguer l'identité de la pensée par l'ajout de qualificatifs.\n- Rompre le cycle de rumination en traitant les pensées comme des observations.\n- Rendre les pensées inoffensives, pas les effacer totalement.\n</arguments_cles>\n<concepts_introduits>\n- Déconnexion mentale : Altérer la relation avec les pensées intrusives.\n- Rumination : Cycle infernal d'analyse excessive des pensées.\n- Défusion cognitive : Observer sans s'accrocher aux pensées.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas lutter directement contre la pensée.\n- Ne pas s'identifier à la pensée intrusive.\n- Ne pas considérer la pensée comme une vérité absolue.\n- Ne pas vouloir contrôler ou éliminer la pensée.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, expliquant une stratégie comportementale pour gérer l'anxiété.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Informatif et préventif, soulignant les risques des gestes inappropriés.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les cloques sont des barrières protectrices essentielles qui ne doivent pas être percées pour éviter infections et retards de cicatrisation.</these_centrale>\n<arguments_cles>\n- La cloque protège la peau vulnérable sous-jacente des agents pathogènes externes.\n- Percer une cloque augmente le risque d'infection et de complications graves.\n- Le retrait prématuré d'une cloque ralentit la guérison et favorise les cicatrices.\n- La cloque maintient un environnement humide propice à la régénération cutanée.\n</arguments_cles>\n<concepts_introduits>\n- Cloque : poche remplie de liquide protégeant une peau lésée.\n- Infection : prolifération de micro-organismes pathogènes dans une plaie.\n- Cicatrisation : processus de réparation tissulaire après une blessure.\n- Derme : couche de peau sous l'épiderme.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La cloque, juste un désagrément esthétique.\n- La curiosité ou le désir de soulager une tension.\n- Le pus.\n- La cellulite infectieuse.\n- La septicémie.\n- Une brûlure du deuxième degré superficiel.\n- La ponctionner dans un cadre stérile.\n</a_ne_not_repeter>\n<ton_angle>Informatif et préventif, soulignant les risques des gestes inappropriés.</ton_angle>\n</fiche>"
 }

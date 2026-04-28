@@ -3,25 +3,21 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.",
+  "these_centrale": "La classification précise des brûlures est essentielle pour une prise en charge médicale adaptée et des premiers secours efficaces.",
   "arguments_cles": [
-    "Les pensées involontaires sont courantes et ne signifient pas un danger imminent.",
-    "La peur naît de l'interprétation erronée des pensées, pas de leur existence.",
-    "Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.",
-    "Distinguer la pensée de l'action est essentiel pour réduire l'anxiété."
+    "La brûlure du premier degré cause rougeur et douleur sans cloques.",
+    "Le second degré superficiel forme des cloques et est très douloureux.",
+    "Le second degré profond altère la sensibilité et laisse des cicatrices.",
+    "Le troisième degré détruit tous les nerfs et toutes les couches cutanées."
   ],
   "concepts_introduits": [
-    "Pensée intrusive : pensée involontaire et souvent effrayante.",
-    "Rumination : tendance à ressasser des pensées négatives.",
-    "Hyper-vigilance : vigilance excessive face aux menaces potentielles."
+    "Brûlure : Destruction de cellules cutanées par chaleur excessive.",
+    "Épiderme : Couche superficielle de la peau.",
+    "Derme : Couche de peau sous l'épiderme.",
+    "Phlyctènes : Apparition de cloques."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Le cerveau est une machine complexe.",
-    "Il génère des scénarios effrayants.",
-    "Confusion entre penser et agir.",
-    "Vous n'êtes pas vos pensées."
-  ],
-  "ton_angle": "Explicatif et rassurant, démystifiant la peur des pensées involontaires.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les pensées effrayantes, bien que réelles pour le cerveau, ne reflètent pas les désirs ni les intentions profondes de l'individu.</these_centrale>\n<arguments_cles>\n- Les pensées involontaires sont courantes et ne signifient pas un danger imminent.\n- La peur naît de l'interprétation erronée des pensées, pas de leur existence.\n- Le cerveau explore des scénarios extrêmes, même contraires aux valeurs.\n- Distinguer la pensée de l'action est essentiel pour réduire l'anxiété.\n</arguments_cles>\n<concepts_introduits>\n- Pensée intrusive : pensée involontaire et souvent effrayante.\n- Rumination : tendance à ressasser des pensées négatives.\n- Hyper-vigilance : vigilance excessive face aux menaces potentielles.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau est une machine complexe.\n- Il génère des scénarios effrayants.\n- Confusion entre penser et agir.\n- Vous n'êtes pas vos pensées.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et rassurant, démystifiant la peur des pensées involontaires.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Explicatif et préventif, pour identifier rapidement la gravité des brûlures.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La classification précise des brûlures est essentielle pour une prise en charge médicale adaptée et des premiers secours efficaces.</these_centrale>\n<arguments_cles>\n- La brûlure du premier degré cause rougeur et douleur sans cloques.\n- Le second degré superficiel forme des cloques et est très douloureux.\n- Le second degré profond altère la sensibilité et laisse des cicatrices.\n- Le troisième degré détruit tous les nerfs et toutes les couches cutanées.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Destruction de cellules cutanées par chaleur excessive.\n- Épiderme : Couche superficielle de la peau.\n- Derme : Couche de peau sous l'épiderme.\n- Phlyctènes : Apparition de cloques.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Une rougeur n'est pas toujours une simple irritation.\n- La douleur indique la gravité de la brûlure.\n</a_ne_pa s_repeter>\n<ton_angle>Explicatif et préventif, pour identifier rapidement la gravité des brûlures.</ton_angle>\n</fiche>"
 }

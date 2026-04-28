@@ -3,24 +3,24 @@
   "section": 1,
   "chapitre_numero": "3",
   "section_numero": "1",
-  "these_centrale": "Comprendre que les pensées alarmantes sont une suractivation du système d'alerte cérébral aide à les désamorcer.",
+  "these_centrale": "L'application de glace sur les brûlures aggrave les lésions et favorise les infections, contrairement à l'eau tiède.",
   "arguments_cles": [
-    "Les pensées intrusives ne reflètent pas vos intentions ou désirs réels.",
-    "Le ralentissement de la respiration active le système nerveux parasympathique calmant.",
-    "L'efficacité des exercices de respiration peut varier selon les individus et les situations.",
-    "La gestion de l'état interne est plus importante que la chasse de la pensée."
+    "La glace cause un choc thermique et une vasoconstriction excessive.",
+    "Le froid intense gèle et détruit les cellules cutanées.",
+    "L'humidité créée par la glace favorise les infections bactériennes.",
+    "L'eau tiède dissipe la chaleur sans causer de dommages tissulaires."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : Pensées involontaires et alarmantes, signes d'anxiété.",
-    "Respiration diaphragmatique : Respiration profonde par le ventre pour calmer.",
-    "Système nerveux parasympathique : Frein naturel du système de réponse au stress."
+    "Choc thermique : Réaction violente du corps à un changement de température.",
+    "Vasoconstriction : Rétrécissement des vaisseaux sanguins.",
+    "Dommages tissulaires : Lésions causées aux tissus du corps.",
+    "Gelure : Lésion causée par le froid extrême."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le cerveau anticipe les dangers",
-    "Exercice simple pour reprendre le contrôle",
-    "Méthode souvent appelée respiration diaphragmatique"
+    "L'application immédiate de glace sur une brûlure est instinctive.",
+    "La glace est une erreur préjudiciable."
   ],
-  "ton_angle": "Explicatif et encourageant, centré sur la gestion émotionnelle.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Comprendre que les pensées alarmantes sont une suractivation du système d'alerte cérébral aide à les désamorcer.</these_centrale>\n<arguments_cles>\n- Les pensées intrusives ne reflètent pas vos intentions ou désirs réels.\n- Le ralentissement de la respiration active le système nerveux parasympathique calmant.\n- L'efficacité des exercices de respiration peut varier selon les individus et les situations.\n- La gestion de l'état interne est plus importante que la chasse de la pensée.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : Pensées involontaires et alarmantes, signes d'anxiété.\n- Respiration diaphragmatique : Respiration profonde par le ventre pour calmer.\n- Système nerveux parasympathique : Frein naturel du système de réponse au stress.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le cerveau anticipe les dangers\n- Exercice simple pour reprendre le contrôle\n- Méthode souvent appelée respiration diaphragmatique\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, centré sur la gestion émotionnelle.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton instructif, angle préventif démontrant les dangers d'un geste courant.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'application de glace sur les brûlures aggrave les lésions et favorise les infections, contrairement à l'eau tiède.</these_centrale>\n<arguments_cles>\n- La glace cause un choc thermique et une vasoconstriction excessive.\n- Le froid intense gèle et détruit les cellules cutanées.\n- L'humidité créée par la glace favorise les infections bactériennes.\n- L'eau tiède dissipe la chaleur sans causer de dommages tissulaires.\n</arguments_cles>\n<concepts_introduits>\n- Choc thermique : Réaction violente du corps à un changement de température.\n- Vasoconstriction : Rétrécissement des vaisseaux sanguins.\n- Dommages tissulaires : Lésions causées aux tissus du corps.\n- Gelure : Lésion causée par le froid extrême.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'application immédiate de glace sur une brûlure est instinctive.\n- La glace est une erreur préjudiciable.\n</a_ne_pas_repeter>\n<ton_angle>Ton instructif, angle préventif démontrant les dangers d'un geste courant.</ton_angle>\n</fiche>"
 }

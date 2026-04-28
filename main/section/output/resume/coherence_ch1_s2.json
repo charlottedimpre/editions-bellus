@@ -3,25 +3,23 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.",
+  "these_centrale": "L'absence de douleur suite à une brûlure n'indique pas une absence de gravité, mais une atteinte nerveuse profonde.",
   "arguments_cles": [
-    "Répétition involontaire et constante indique une obsession.",
-    "Incohérence avec les valeurs profondes confirme une pensée intrusive.",
-    "Résistance active et lutte interne signalent une obsession.",
-    "L'objectif est de catégoriser la pensée pour mieux la gérer."
+    "L'absence de douleur signale une atteinte nerveuse, pas une guérison.",
+    "Un test tactile peut révéler une atteinte nerveuse significative.",
+    "Les cloques indiquent souvent une brûlure du deuxième degré superficiel.",
+    "L'absence de cloques ne garantit pas une brûlure peu grave.",
+    "L'âge et les conditions individuelles influencent la perception de la douleur."
   ],
   "concepts_introduits": [
-    "Obsession : Pensée involontaire, répétitive et non sollicitée.",
-    "Intention : Pensée délibérée, alignée avec valeurs et désirs.",
-    "Pensée intrusive : Pensée allant à l'encontre des valeurs.",
-    "Phobie d'impulsion : Peur de réaliser une pensée effrayante."
+    "Derme : Couche de peau sous l'épiderme, contenant les terminaisons nerveuses.",
+    "Phlyctènes : Cloques remplies de liquide, signe de brûlure du deuxième degré."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "\"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"",
-    "\"indépendamment de l'intensité de votre anxiété\"",
-    "\"ce qui est le premier pas pour désamorcer son pouvoir.\""
+    "Ne pas se fier uniquement à la douleur pour évaluer une brûlure.",
+    "L'absence de sensation n'est pas synonyme de guérison."
   ],
-  "ton_angle": "Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Analyser une pensée effrayante par trois questions permet de distinguer obsession et intention réelle.</these_centrale>\n<arguments_cles>\n- Répétition involontaire et constante indique une obsession.\n- Incohérence avec les valeurs profondes confirme une pensée intrusive.\n- Résistance active et lutte interne signalent une obsession.\n- L'objectif est de catégoriser la pensée pour mieux la gérer.\n</arguments_cles>\n<concepts_introduits>\n- Obsession : Pensée involontaire, répétitive et non sollicitée.\n- Intention : Pensée délibérée, alignée avec valeurs et désirs.\n- Pensée intrusive : Pensée allant à l'encontre des valeurs.\n- Phobie d'impulsion : Peur de réaliser une pensée effrayante.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"Vous pouvez évaluer la nature d'une pensée effrayante en vous posant trois questions clés\"\n- \"indépendamment de l'intensité de votre anxiété\"\n- \"ce qui est le premier pas pour désamorcer son pouvoir.\"\n</a_ne_pas_repeter>\n<ton_angle>Analytique et pédagogique, démontrant une méthode d'auto-évaluation objective.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et préventif, soulignant les dangers d'une auto-évaluation erronée.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'absence de douleur suite à une brûlure n'indique pas une absence de gravité, mais une atteinte nerveuse profonde.</these_centrale>\n<arguments_cles>\n- L'absence de douleur signale une atteinte nerveuse, pas une guérison.\n- Un test tactile peut révéler une atteinte nerveuse significative.\n- Les cloques indiquent souvent une brûlure du deuxième degré superficiel.\n- L'absence de cloques ne garantit pas une brûlure peu grave.\n- L'âge et les conditions individuelles influencent la perception de la douleur.\n</arguments_cles>\n<concepts_introduits>\n- Derme : Couche de peau sous l'épiderme, contenant les terminaisons nerveuses.\n- Phlyctènes : Cloques remplies de liquide, signe de brûlure du deuxième degré.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas se fier uniquement à la douleur pour évaluer une brûlure.\n- L'absence de sensation n'est pas synonyme de guérison.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant les dangers d'une auto-évaluation erronée.</ton_angle>\n</fiche>"
 }

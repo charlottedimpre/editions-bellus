@@ -3,23 +3,24 @@
   "section": 2,
   "chapitre_numero": "5",
   "section_numero": "2",
-  "these_centrale": "Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.",
+  "these_centrale": "Les pratiques des coupeurs de feu manquent de preuves scientifiques solides, leur effet étant principalement psychologique.",
   "arguments_cles": [
-    "Normaliser les moments de doute comme une étape d'adaptation normale.",
-    "Analyser objectivement les déclencheurs et les stratégies appliquées.",
-    "Ajuster le plan d'action pour renforcer les stratégies efficaces.",
-    "Transformer la détresse en levier de progrès et de confiance."
+    "Les témoignages d'apaisement sont souvent dus à des facteurs psychologiques.",
+    "L'auto-réparation corporelle et l'attente influencent la perception de la douleur.",
+    "Les études existantes manquent de rigueur et présentent des biais méthodologiques.",
+    "La science requiert des mécanismes objectifs et mesurables, non démontrés par ces rituels."
   ],
   "concepts_introduits": [
-    "Rechute : retour temporaire des symptômes ou difficultés.",
-    "Résilience : capacité à surmonter les difficultés.",
-    "Pensées intrusives : pensées non désirées et récurrentes."
+    "Coupeurs de feu : Pratiques traditionnelles pour soulager les brûlures.",
+    "Facteurs psychologiques : Influence de l'esprit sur la perception physique.",
+    "Capacité intrinsèque de réparation : Mécanismes naturels du corps pour guérir.",
+    "Effet placebo : Amélioration des symptômes due à la croyance en un traitement."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ne pas interpréter une rechute comme un échec total.",
-    "Ne pas se décourager face aux fluctuations."
+    "Le soulagement ressenti ne garantit pas une guérison plus rapide.",
+    "L'absence de validation scientifique des pratiques traditionnelles."
   ],
-  "ton_angle": "Instructif et pragmatique, l'angle est celui du développement personnel.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les rechutes sont une étape normale du processus, transformable en opportunité d'apprentissage et de résilience.</these_centrale>\n<arguments_cles>\n- Normaliser les moments de doute comme une étape d'adaptation normale.\n- Analyser objectivement les déclencheurs et les stratégies appliquées.\n- Ajuster le plan d'action pour renforcer les stratégies efficaces.\n- Transformer la détresse en levier de progrès et de confiance.\n</arguments_cles>\n<concepts_introduits>\n- Rechute : retour temporaire des symptômes ou difficultés.\n- Résilience : capacité à surmonter les difficultés.\n- Pensées intrusives : pensées non désirées et récurrentes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas interpréter une rechute comme un échec total.\n- Ne pas se décourager face aux fluctuations.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et pragmatique, l'angle est celui du développement personnel.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton critique et informatif, adoptant un angle d'analyse scientifique.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les pratiques des coupeurs de feu manquent de preuves scientifiques solides, leur effet étant principalement psychologique.</these_centrale>\n<arguments_cles>\n- Les témoignages d'apaisement sont souvent dus à des facteurs psychologiques.\n- L'auto-réparation corporelle et l'attente influencent la perception de la douleur.\n- Les études existantes manquent de rigueur et présentent des biais méthodologiques.\n- La science requiert des mécanismes objectifs et mesurables, non démontrés par ces rituels.\n</arguments_cles>\n<concepts_introduits>\n- Coupeurs de feu : Pratiques traditionnelles pour soulager les brûlures.\n- Facteurs psychologiques : Influence de l'esprit sur la perception physique.\n- Capacité intrinsèque de réparation : Mécanismes naturels du corps pour guérir.\n- Effet placebo : Amélioration des symptômes due à la croyance en un traitement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le soulagement ressenti ne garantit pas une guérison plus rapide.\n- L'absence de validation scientifique des pratiques traditionnelles.\n</a_ne_pas_repeter>\n<ton_angle>Ton critique et informatif, adoptant un angle d'analyse scientifique.</ton_angle>\n</fiche>"
 }

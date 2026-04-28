@@ -3,22 +3,22 @@
   "section": 2,
   "chapitre_numero": "3",
   "section_numero": "2",
-  "these_centrale": "Utiliser les sens permet un ancrage immédiat pour contrer l'anxiété et la rumination mentale.",
+  "these_centrale": "Les remèdes traditionnels appliqués sur les brûlures aggravent souvent la lésion, prolongent la guérison et augmentent le risque d'infection.",
   "arguments_cles": [
-    "L'exercice 5-4-3-2-1 ramène au moment présent par perceptions concrètes.",
-    "Il redirige l'attention des scénarios anxieux vers des éléments tangibles.",
-    "Cet ancrage court-circuite le mécanisme de la rumination et de l'analyse mentale.",
-    "Il offre une échappatoire momentanée aux pensées intrusives et à la panique."
+    "Les corps gras isolent la chaleur, prolongeant la destruction des tissus.",
+    "Les cloque protègent, les percer augmente le risque d'infection.",
+    "Le dentifrice et le sel sont irritants et abrasifs.",
+    "Les substances agressives créent des micro-déchirures et favorisent les infections."
   ],
   "concepts_introduits": [
-    "Rumination : Cycle de pensées négatives qui s'auto-entretient.",
-    "Ancrage : Technique pour se reconnecter au moment présent et au réel."
+    "Rétention de chaleur : emprisonnement de la chaleur dans les tissus.",
+    "Milieu propice : environnement favorable au développement de bactéries.",
+    "Barrière naturelle stérile : protection propre contre les agressions externes.",
+    "Septicémie : infection généralisée du corps par les bactéries.",
+    "Agents abrasifs : substances qui provoquent une usure mécanique."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "La répétition des étapes sensorielles peut être nécessaire.",
-    "L'efficacité varie selon la personne et le contexte."
-  ],
-  "ton_angle": "Pragmatique et rassurant, expliquant une méthode concrète de gestion de l'anxiété.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Utiliser les sens permet un ancrage immédiat pour contrer l'anxiété et la rumination mentale.</these_centrale>\n<arguments_cles>\n- L'exercice 5-4-3-2-1 ramène au moment présent par perceptions concrètes.\n- Il redirige l'attention des scénarios anxieux vers des éléments tangibles.\n- Cet ancrage court-circuite le mécanisme de la rumination et de l'analyse mentale.\n- Il offre une échappatoire momentanée aux pensées intrusives et à la panique.\n</arguments_cles>\n<concepts_introduits>\n- Rumination : Cycle de pensées négatives qui s'auto-entretient.\n- Ancrage : Technique pour se reconnecter au moment présent et au réel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La répétition des étapes sensorielles peut être nécessaire.\n- L'efficacité varie selon la personne et le contexte.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et rassurant, expliquant une méthode concrète de gestion de l'anxiété.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pragmatique et avertisseur, déconstruisant les mythes des remèdes populaires.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les remèdes traditionnels appliqués sur les brûlures aggravent souvent la lésion, prolongent la guérison et augmentent le risque d'infection.</these_centrale>\n<arguments_cles>\n- Les corps gras isolent la chaleur, prolongeant la destruction des tissus.\n- Les cloque protègent, les percer augmente le risque d'infection.\n- Le dentifrice et le sel sont irritants et abrasifs.\n- Les substances agressives créent des micro-déchirures et favorisent les infections.\n</arguments_cles>\n<concepts_introduits>\n- Rétention de chaleur : emprisonnement de la chaleur dans les tissus.\n- Milieu propice : environnement favorable au développement de bactéries.\n- Barrière naturelle stérile : protection propre contre les agressions externes.\n- Septicémie : infection généralisée du corps par les bactéries.\n- Agents abrasifs : substances qui provoquent une usure mécanique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le beurre, huile, pommade, dentifrice, sel, sucre, marc de café.\n- L'idée d'une barrière naturelle stérile dans la cloque.\n- Les substances agressives sont à proscrire.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et avertisseur, déconstruisant les mythes des remèdes populaires.</ton_angle>\n</fiche>"
 }

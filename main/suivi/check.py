@@ -147,6 +147,7 @@ def _build_resume_plan(progress_data: dict, expected_pairs: list[tuple[int, int]
 
     prereq_map = [
         ("plan_detaille", "plan_detail"),
+        ("preface", "gen_preface"),
         ("structure_chapitre", "structure_chapitre"),
         ("introduction", "gen_intro"),
     ]
@@ -189,6 +190,14 @@ def _build_resume_plan(progress_data: dict, expected_pairs: list[tuple[int, int]
             "resume_from": None,
         }
 
+    if not steps.get("postface", False):
+        return {
+            "possible": True,
+            "next_step": "postface",
+            "next_function": "gen_postface",
+            "resume_from": None,
+        }
+
     if not steps.get("fil_rouge", False):
         return {
             "possible": True,
@@ -228,9 +237,11 @@ def check_book_progress() -> dict:
     fiche_path = MAIN_DIR / "fiche_cadrage" / "output" / "fiche_cadrage.json"
     ws_final_path = MAIN_DIR / "web_search" / "output" / "ws_final.json"
     plan_path = MAIN_DIR / "plan_detaille" / "output" / "plan_detaille.json"
+    preface_path = MAIN_DIR / "prepostface" / "preface" / "output" / "preface.json"
     structure_path = MAIN_DIR / "structure_chapitre" / "output" / "structure_chapitre.json"
     intro_path = MAIN_DIR / "introduction" / "output" / "introduction.json"
     conclusion_path = MAIN_DIR / "conclusion" / "output" / "conclusion.json"
+    postface_path = MAIN_DIR / "prepostface" / "postface" / "output" / "postface.json"
     fil_rouge_path = MAIN_DIR / "fil_rouge" / "output" / "fil_rouge.json"
 
     section_output_dir = MAIN_DIR / "section" / "output"
@@ -260,11 +271,13 @@ def check_book_progress() -> dict:
         "fiche_cadrage": _json_exists(fiche_path),
         "web_search": _json_exists(ws_final_path),
         "plan_detaille": _json_exists(plan_path),
+        "preface": _json_exists(preface_path),
         "structure_chapitre": _json_exists(structure_path),
         "introduction": _json_exists(intro_path),
         "sections_brutes": expected_sections_count > 0 and not missing_sections,
         "resumes_coherence": expected_sections_count > 0 and not missing_resumes,
         "conclusion": _json_exists(conclusion_path),
+        "postface": _json_exists(postface_path),
         "fil_rouge": _json_exists(fil_rouge_path),
         "sections_fil_rouge": expected_sections_count > 0 and not missing_sections_fr,
         "chapitres_fusionnes": expected_chapters_count > 0 and not missing_chapitres,
@@ -274,11 +287,13 @@ def check_book_progress() -> dict:
         "fiche_cadrage",
         "web_search",
         "plan_detaille",
+        "preface",
         "structure_chapitre",
         "introduction",
         "sections_brutes",
         "resumes_coherence",
         "conclusion",
+        "postface",
         "fil_rouge",
         "sections_fil_rouge",
         "chapitres_fusionnes",

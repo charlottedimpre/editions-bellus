@@ -3,25 +3,19 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.",
+  "these_centrale": "Les coupeurs de feu apportent un soulagement par des mécanismes psychologiques et rituels, mais ne remplacent pas les soins médicaux.",
   "arguments_cles": [
-    "Chaque individu réagit différemment aux méthodes proposées.",
-    "Il faut évaluer objectivement l'impact et la facilité d'application des outils.",
-    "La recherche de la solution miracle peut nuire au processus d'adaptation.",
-    "L'engagement comportemental malgré l'anxiété est un signe de progrès."
+    "L'efficacité perçue repose sur l'effet placebo et la confiance du patient.",
+    "Les rituels apportent un cadre structurant et détournent l'attention de la douleur.",
+    "Il faut distinguer le soulagement psychologique de l'action thérapeutique sur la lésion.",
+    "Une vigilance s'impose face aux praticiens malveillants ou non professionnels."
   ],
   "concepts_introduits": [
-    "Respiration diaphragmatique : Technique apaisante pour les crises aiguës.",
-    "Ancrage sensoriel : Méthode pour revenir au moment présent.",
-    "Rumination : Cycle de pensées négatives répétitives.",
-    "Réassurance déguisée : Stratégie qui maintient l'anxiété.",
-    "Réengagement comportemental : Action malgré la présence d'anxiété."
+    "Effet placebo : attente de soulagement induisant une réponse physiologique.",
+    "Rituel : gestes codifiés et concentration pour un cadre structurant et apaisant."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Thomas",
-    "Échelle d'anxiété de 0 à 10"
-  ],
-  "ton_angle": "Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'efficacité des outils d'adaptation dépend de leur personnalisation et de l'évaluation objective de leur impact.</these_centrale>\n<arguments_cles>\n- Chaque individu réagit différemment aux méthodes proposées.\n- Il faut évaluer objectivement l'impact et la facilité d'application des outils.\n- La recherche de la solution miracle peut nuire au processus d'adaptation.\n- L'engagement comportemental malgré l'anxiété est un signe de progrès.\n</arguments_cles>\n<concepts_introduits>\n- Respiration diaphragmatique : Technique apaisante pour les crises aiguës.\n- Ancrage sensoriel : Méthode pour revenir au moment présent.\n- Rumination : Cycle de pensées négatives répétitives.\n- Réassurance déguisée : Stratégie qui maintient l'anxiété.\n- Réengagement comportemental : Action malgré la présence d'anxiété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Thomas\n- Échelle d'anxiété de 0 à 10\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et encourageant, axé sur l'expérimentation et l'adaptation.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Analyse pragmatique distinguant l'apport psychologique des pratiques traditionnelles et les soins médicaux.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les coupeurs de feu apportent un soulagement par des mécanismes psychologiques et rituels, mais ne remplacent pas les soins médicaux.</these_centrale>\n<arguments_cles>\n- L'efficacité perçue repose sur l'effet placebo et la confiance du patient.\n- Les rituels apportent un cadre structurant et détournent l'attention de la douleur.\n- Il faut distinguer le soulagement psychologique de l'action thérapeutique sur la lésion.\n- Une vigilance s'impose face aux praticiens malveillants ou non professionnels.\n</arguments_cles>\n<concepts_introduits>\n- Effet placebo : attente de soulagement induisant une réponse physiologique.\n- Rituel : gestes codifiés et concentration pour un cadre structurant et apaisant.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Mêler rituels ancestraux et compréhension psychologique.\n- Le soulagement apporté par la composante psychologique et rituelle.\n</a_ne_not_repeter>\n<ton_angle>Analyse pragmatique distinguant l'apport psychologique des pratiques traditionnelles et les soins médicaux.</ton_angle>\n</fiche>"
 }

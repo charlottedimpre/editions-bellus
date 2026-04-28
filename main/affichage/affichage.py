@@ -4,15 +4,18 @@ from pathlib import Path
 from typing import Any
 
 BASE_DIR = Path(__file__).resolve().parent
+PREFACE_PATH = BASE_DIR.parent / "prepostface" / "preface" / "output" / "preface.json"
 INTRO_PATH = BASE_DIR.parent / "introduction" / "output" / "introduction.json"
 CHAPTERS_DIR = BASE_DIR.parent / "section" / "output" / "chapitre"
 CONCLUSION_PATH = BASE_DIR.parent / "conclusion" / "output" / "conclusion.json"
+POSTFACE_PATH = BASE_DIR.parent / "prepostface" / "postface" / "output" / "postface.json"
 FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadrage.json"
 PDF_TITLE = "Introduction"
 OUTPUT_PDF_PATH = BASE_DIR / "output" / "livre.pdf"
 AUTHOR_PLACEHOLDER = "Lise Genest"
 PUBLISHER_NAME = "Editions Bellus"
 BOOK_FORMAT_6X9_MM = (152.4, 228.6)
+SIGNATURE_TEXT = "— Éditions Bellus"
 
 
 class BookPDF(FPDF):
@@ -172,6 +175,22 @@ def _load_conclusion_text() -> str:
     return _extract_text(payload)
 
 
+def _load_postface_text() -> str:
+    payload = _load_json_file(POSTFACE_PATH, default="")
+
+    if isinstance(payload, dict):
+        return _extract_text(payload.get("postface") or payload.get("intro") or payload.get("_raw"))
+    return _extract_text(payload)
+
+
+def _load_preface_text() -> str:
+    payload = _load_json_file(PREFACE_PATH, default="")
+
+    if isinstance(payload, dict):
+        return _extract_text(payload.get("preface") or payload.get("intro") or payload.get("_raw"))
+    return _extract_text(payload)
+
+
 def _extract_tag_content(raw_text: str, tag_name: str) -> str:
     start_tag = f"<{tag_name}>"
     end_tag = f"</{tag_name}>"
@@ -234,6 +253,11 @@ def _ensure_next_part_starts_on_even_page(pdf: BookPDF) -> None:
         _insert_blank_page(pdf)
 
 
+def _ensure_next_page_is_even(pdf: BookPDF) -> None:
+    if pdf.page_no() % 2 == 0:
+        _insert_blank_page(pdf)
+
+
 def _extract_section_text(raw_content: Any, max_depth: int = 6) -> str:
     if max_depth <= 0:
         return _extract_text(raw_content)
@@ -254,7 +278,7 @@ def _extract_section_text(raw_content: Any, max_depth: int = 6) -> str:
         return ""
 
     if isinstance(raw_content, (list, tuple)):
-        parts = [_extract_section_text(item, max_depth=max_depth - 1) for item in raw_content]
+        parts = [_extract_section_text(item, max_depth - 1) for item in raw_content]
         non_empty_parts = [part for part in parts if part]
         return "\n\n".join(non_empty_parts)
 
@@ -336,15 +360,62 @@ def _wrap_text_to_width(pdf: FPDF, text: str, max_width: float) -> list[str]:
     return lines or [""]
 
 
-def _build_toc_entries(chapters: list[dict[str, Any]], has_conclusion: bool) -> list[tuple[str, str]]:
-    entries: list[tuple[str, str]] = [("intro", "Introduction")]
+def _build_toc_entries(
+    chapters: list[dict[str, Any]],
+    has_preface: bool,
+    has_conclusion: bool,
+    has_postface: bool,
+) -> list[tuple[str, str]]:
+    entries: list[tuple[str, str]] = []
+    if has_preface:
+        entries.append(("preface", "Préface"))
+    entries.append(("intro", "Introduction"))
     for index, chapter_data in enumerate(chapters, start=1):
         chapter_number = _extract_text(chapter_data.get("chapitre") or index)
         chapter_title = _extract_text(chapter_data.get("titre")) or f"Chapitre {chapter_number}"
         entries.append((f"chapter::{chapter_number}", f"Chapitre {chapter_number} - {chapter_title}"))
     if has_conclusion:
         entries.append(("conclusion", "Conclusion"))
+    if has_postface:
+        entries.append(("postface", "Postface"))
     return entries
+
+
+def _render_preface(pdf: BookPDF, preface_text: str) -> int | None:
+    if not preface_text:
+        return None
+
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title("Préface")
+    pdf.add_page()
+    start_page_no = pdf._display_page_no()
+    pdf.start_page_numbering()
+    pdf.set_font("Body", size=22)
+    pdf.ln(20)
+    pdf.multi_cell(
+        0,
+        10,
+        "Préface",
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="C",
+    )
+    pdf.ln(2)
+    pdf.multi_cell(
+        0,
+        10,
+        "------",
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="C",
+    )
+    pdf.ln(20)
+
+    pdf.set_font("Body", size=12)
+    pdf.multi_cell(0, 7, preface_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.ln(6)
+    pdf.cell(0, 7, SIGNATURE_TEXT, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="R")
+    return start_page_no
 
 
 def _render_chapter(pdf: BookPDF, chapter_data: dict[str, Any], default_number: int) -> int:
@@ -430,6 +501,43 @@ def _render_conclusion(pdf: BookPDF, conclusion_text: str) -> int | None:
 
     pdf.set_font("Body", size=12)
     pdf.multi_cell(0, 7, conclusion_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    return start_page_no
+
+
+def _render_postface(pdf: BookPDF, postface_text: str) -> int | None:
+    if not postface_text:
+        return None
+
+    _ensure_next_part_starts_on_even_page(pdf)
+    pdf.set_current_chapter_number(None)
+    pdf.set_header_title("Postface")
+    pdf.add_page()
+    start_page_no = pdf._display_page_no()
+    pdf.set_font("Body", size=22)
+    pdf.ln(20)
+    pdf.multi_cell(
+        0,
+        10,
+        "Postface",
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="C",
+    )
+    pdf.ln(2)
+    pdf.multi_cell(
+        0,
+        10,
+        "------",
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="C",
+    )
+    pdf.ln(20)
+
+    pdf.set_font("Body", size=12)
+    pdf.multi_cell(0, 7, postface_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.ln(6)
+    pdf.cell(0, 7, SIGNATURE_TEXT, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="R")
     return start_page_no
 
 
@@ -613,17 +721,27 @@ def _render_front_matter(
 
 def _render_main_content(
     pdf: BookPDF,
+    preface_text: str,
     intro: str,
     chapters_data: list[dict[str, Any]],
     conclusion_text: str,
+    postface_text: str,
 ) -> dict[str, int]:
     page_numbers: dict[str, int] = {}
 
     pdf.set_running_elements(True)
+    preface_page = _render_preface(pdf, preface_text)
+    if preface_page is not None:
+        page_numbers["preface"] = preface_page
+        # Page blanche entre la preface et l'intro, puis intro sur page paire.
+        _insert_blank_page(pdf)
+        _ensure_next_page_is_even(pdf)
+
     pdf.set_current_chapter_number(None)
     pdf.set_header_title(PDF_TITLE)
     pdf.add_page()
-    pdf.start_page_numbering()
+    if preface_page is None:
+        pdf.start_page_numbering()
     page_numbers["intro"] = pdf._display_page_no()
 
     pdf.set_font("Body", size=30)
@@ -643,11 +761,16 @@ def _render_main_content(
     if conclusion_page is not None:
         page_numbers["conclusion"] = conclusion_page
 
+    postface_page = _render_postface(pdf, postface_text)
+    if postface_page is not None:
+        page_numbers["postface"] = postface_page
+
     return page_numbers
 
 
 
 def affichage():
+    preface_text = _load_preface_text()
     introduction = _load_json_file(INTRO_PATH, default={})
     intro = introduction.get("intro", "")
     book_title = _load_book_title()
@@ -659,22 +782,30 @@ def affichage():
         if isinstance(chapter_payload, dict):
             chapters_data.append(chapter_payload)
     conclusion_text = _load_conclusion_text()
-    toc_entries = _build_toc_entries(chapters_data, has_conclusion=bool(conclusion_text))
+    postface_text = _load_postface_text()
+    toc_entries = _build_toc_entries(
+        chapters_data,
+        has_preface=bool(preface_text),
+        has_conclusion=bool(conclusion_text),
+        has_postface=bool(postface_text),
+    )
 
     pagination_probe_pdf = _build_pdf_instance()
     pagination_probe_pdf.set_book_title(book_title)
     _render_front_matter(pagination_probe_pdf, book_title, toc_entries, page_numbers={})
     page_numbers = _render_main_content(
         pagination_probe_pdf,
+        preface_text,
         intro,
         chapters_data,
         conclusion_text,
+        postface_text,
     )
 
     pdf = _build_pdf_instance()
     pdf.set_book_title(book_title)
     _render_front_matter(pdf, book_title, toc_entries, page_numbers)
-    _render_main_content(pdf, intro, chapters_data, conclusion_text)
+    _render_main_content(pdf, preface_text, intro, chapters_data, conclusion_text, postface_text)
 
     OUTPUT_PDF_PATH.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(OUTPUT_PDF_PATH))

@@ -3,20 +3,25 @@
   "section": 3,
   "chapitre_numero": "2",
   "section_numero": "3",
-  "these_centrale": "L'analyse excessive des pensées intrusives renforce l'anxiété ; une observation détachée permet de s'en libérer.",
+  "these_centrale": "Le refroidissement immédiat et prolongé est primordial pour limiter les lésions des brûlures, la douleur étant gérée par distraction.",
   "arguments_cles": [
-    "Traiter les pensées comme des problèmes à résoudre crée une boucle d'anxiété.",
-    "Chercher le \"pourquoi\" leur donne une importance injustifiée et les nourrit.",
-    "Observer les pensées sans jugement permet de les laisser passer naturellement.",
-    "L'identification à la pensée amplifie sa charge émotionnelle négative.",
-    "Le recentrage sensoriel ramène au présent, brisant la rumination."
+    "Dissiper la chaleur prime sur la gestion immédiate de la douleur.",
+    "Distraire la victime est une stratégie efficace pour supporter la douleur.",
+    "Surélever un membre brûlé peut réduire pulsation douloureuse et gonflement.",
+    "Les antalgiques oraux sont inefficaces durant la phase initiale de refroidissement."
   ],
   "concepts_introduits": [
-    "Rumination : réflexion excessive source d'anxiété accrue.",
-    "Observation détachée : observer les pensées sans jugement ni adhésion."
+    "Refroidissement : Processus d'abaissement de la température corporelle.",
+    "Dissipation de la chaleur : Élimination de l'énergie thermique d'une zone.",
+    "Lésions tissulaires : Dommages causés aux cellules et structures corporelles.",
+    "Inflammation : Réaction du corps à une agression ou blessure."
   ],
-  "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Explicatif et prescriptif, démontrant le piège et offrant une solution.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'analyse excessive des pensées intrusives renforce l'anxiété ; une observation détachée permet de s'en libérer.</these_centrale>\n<arguments_cles>\n- Traiter les pensées comme des problèmes à résoudre crée une boucle d'anxiété.\n- Chercher le \"pourquoi\" leur donne une importance injustifiée et les nourrit.\n- Observer les pensées sans jugement permet de les laisser passer naturellement.\n- L'identification à la pensée amplifie sa charge émotionnelle négative.\n- Le recentrage sensoriel ramène au présent, brisant la rumination.\n</arguments_cles>\n<concepts_introduits>\n- Rumination : réflexion excessive source d'anxiété accrue.\n- Observation détachée : observer les pensées sans jugement ni adhésion.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Analyse intensive des pensées intrusives\n- Accorder une importance démesurée aux pensées\n- Boucle sans fin\n- Problème à résoudre / énigme à déchiffrer\n- Nuages qui traversent le ciel\n</a_ne_not_repeter>\n<ton_angle>Explicatif et prescriptif, démontrant le piège et offrant une solution.</ton_angle>\n</fiche>"
+  "liens_chapitres": "- Non défini",
+  "a_ne_pas_repeter": [
+    "Ne pas interrompre le refroidissement trop rapidement.",
+    "Ne pas recourir aux médicaments antalgiques pendant le refroidissement.",
+    "Ne pas appliquer de pression ou masser la brûlure."
+  ],
+  "ton_angle": "Pragmatique et pédagogique, soulignant l'urgence du refroidissement et les techniques de gestion.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Le refroidissement immédiat et prolongé est primordial pour limiter les lésions des brûlures, la douleur étant gérée par distraction.</these_centrale>\n<arguments_cles>\n- Dissiper la chaleur prime sur la gestion immédiate de la douleur.\n- Distraire la victime est une stratégie efficace pour supporter la douleur.\n- Surélever un membre brûlé peut réduire pulsation douloureuse et gonflement.\n- Les antalgiques oraux sont inefficaces durant la phase initiale de refroidissement.\n</arguments_cles>\n<concepts_introduits>\n- Refroidissement : Processus d'abaissement de la température corporelle.\n- Dissipation de la chaleur : Élimination de l'énergie thermique d'une zone.\n- Lésions tissulaires : Dommages causés aux cellules et structures corporelles.\n- Inflammation : Réaction du corps à une agression ou blessure.\n</concepts_introduits>\n<liens_chapitres>\n- Non défini\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas interrompre le refroidissement trop rapidement.\n- Ne pas recourir aux médicaments antalgiques pendant le refroidissement.\n- Ne pas appliquer de pression ou masser la brûlure.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et pédagogique, soulignant l'urgence du refroidissement et les techniques de gestion.</ton_angle>\n</fiche>"
 }

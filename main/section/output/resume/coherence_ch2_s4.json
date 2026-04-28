@@ -3,23 +3,19 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.",
+  "these_centrale": "La protection post-brûlure est essentielle pour prévenir les infections et optimiser la guérison des lésions cutanées.",
   "arguments_cles": [
-    "Affronter graduellement les situations réduit la charge émotionnelle.",
-    "La peur diminue quand la catastrophe redoutée ne survient pas.",
-    "Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.",
-    "L'habituation et le réapprentissage modifient les réponses émotionnelles."
+    "Prévenir les infections et favoriser la guérison par une barrière stérile.",
+    "Utiliser un film alimentaire pour les brûlures superficielles sans cloques rompues.",
+    "Employer des pansements hydrocolloïdes pour les cloques non rompues afin de favoriser la cicatrisation.",
+    "Éviter le coton et les adhésifs irritants qui nuisent à la guérison."
   ],
   "concepts_introduits": [
-    "Exposition progressive : confronter graduellement des situations anxiogènes.",
-    "Hiérarchie des situations anxiogènes : classement des peurs par intensité.",
-    "Habitation : diminution de la réaction à un stimulus répété."
+    "Brûlure superficielle : Lésion cutanée légère sans cloques ou avec cloques intactes.",
+    "Pansement hydrocolloïde : Pansement créant un milieu humide pour la cicatrisation."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Supprimer les peurs",
-    "Surcharger soi-même"
-  ],
-  "ton_angle": "Explicatif et encourageant, axé sur la gestion autonome des angoisses.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'exposition progressive permet de rendre les peurs gérables en confrontant graduellement aux situations anxiogènes.</these_centrale>\n<arguments_cles>\n- Affronter graduellement les situations réduit la charge émotionnelle.\n- La peur diminue quand la catastrophe redoutée ne survient pas.\n- Respecter son rythme est essentiel pour ne pas augmenter l'anxiété.\n- L'habituation et le réapprentissage modifient les réponses émotionnelles.\n</arguments_cles>\n<concepts_introduits>\n- Exposition progressive : confronter graduellement des situations anxiogènes.\n- Hiérarchie des situations anxiogènes : classement des peurs par intensité.\n- Habitation : diminution de la réaction à un stimulus répété.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Supprimer les peurs\n- Surcharger soi-même\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et encourageant, axé sur la gestion autonome des angoisses.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pragmatique et informatif, soulignant les bonnes pratiques pour les soins post-brûlure.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La protection post-brûlure est essentielle pour prévenir les infections et optimiser la guérison des lésions cutanées.</these_centrale>\n<arguments_cles>\n- Prévenir les infections et favoriser la guérison par une barrière stérile.\n- Utiliser un film alimentaire pour les brûlures superficielles sans cloques rompues.\n- Employer des pansements hydrocolloïdes pour les cloques non rompues afin de favoriser la cicatrisation.\n- Éviter le coton et les adhésifs irritants qui nuisent à la guérison.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure superficielle : Lésion cutanée légère sans cloques ou avec cloques intactes.\n- Pansement hydrocolloïde : Pansement créant un milieu humide pour la cicatrisation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La douleur lors du retrait du pansement.\n- Le risque d'infection.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et informatif, soulignant les bonnes pratiques pour les soins post-brûlure.</ton_angle>\n</fiche>"
 }

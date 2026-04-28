@@ -3,22 +3,22 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.",
+  "these_centrale": "Les zones fonctionnelles, même légèrement brûlées, nécessitent une attention médicale immédiate pour éviter des handicaps permanents.",
   "arguments_cles": [
-    "Refouler une pensée augmente son importance perçue et l'anxiété associée.",
-    "La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.",
-    "L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.",
-    "Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse."
+    "Les mains et les pieds, essentiels à la mobilité, peuvent souffrir de limitations fonctionnelles graves.",
+    "Le visage, centre d'expression, risque des cicatrices affectant l'estime et les fonctions protectrices.",
+    "Les articulations sont vulnérables aux brides cicatricielles limitant l'amplitude des mouvements.",
+    "Les organes génitaux et périnée exigent une vigilance particulière due à leur sensibilité accrue."
   ],
   "concepts_introduits": [
-    "Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.",
-    "Observation sans engagement : acceptation des pensées sans jugement ni réaction."
+    "Zones fonctionnelles : parties du corps cruciales pour la mobilité ou l'expression.",
+    "Brides cicatricielles : tissu fibreux limitant les mouvements articulaires après une brûlure."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "L'esprit humain n'est pas conçu pour la suppression active des pensées.",
-    "La suppression active renforce involontairement le pouvoir de ce que l'on redoute."
+    "La séquelle invalidante",
+    "Indépendamment de l'étendue apparente"
   ],
-  "ton_angle": "Pédagogique et incitatif, expliquant la contre-productivité de la suppression.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La tentative de suppression des pensées intrusives renforce leur pouvoir, créant un cycle d'anxiété.</these_centrale>\n<arguments_cles>\n- Refouler une pensée augmente son importance perçue et l'anxiété associée.\n- La lutte interne détourne l'attention, alimentant le cycle de l'angoisse.\n- L'observation sans engagement permet de dissocier la pensée de la réaction émotionnelle.\n- Le recentrage sensoriel sur le présent court-circuite la spirale anxieuse.\n</arguments_cles>\n<concepts_introduits>\n- Pensées intrusives : pensées indésirables, souvent anxiogènes, qui surgissent involontairement.\n- Observation sans engagement : acceptation des pensées sans jugement ni réaction.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'esprit humain n'est pas conçu pour la suppression active des pensées.\n- La suppression active renforce involontairement le pouvoir de ce que l'on redoute.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et incitatif, expliquant la contre-productivité de la suppression.</ton_angle>\n</fiche>"
+  "ton_angle": "informatif et préventif, soulignant les risques fonctionnels des brûlures localisées.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les zones fonctionnelles, même légèrement brûlées, nécessitent une attention médicale immédiate pour éviter des handicaps permanents.</these_centrale>\n<arguments_cles>\n- Les mains et les pieds, essentiels à la mobilité, peuvent souffrir de limitations fonctionnelles graves.\n- Le visage, centre d'expression, risque des cicatrices affectant l'estime et les fonctions protectrices.\n- Les articulations sont vulnérables aux brides cicatricielles limitant l'amplitude des mouvements.\n- Les organes génitaux et périnée exigent une vigilance particulière due à leur sensibilité accrue.\n</arguments_cles>\n<concepts_introduits>\n- Zones fonctionnelles : parties du corps cruciales pour la mobilité ou l'expression.\n- Brides cicatricielles : tissu fibreux limitant les mouvements articulaires après une brûlure.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La séquelle invalidante\n- Indépendamment de l'étendue apparente\n</a_ne_pas_repeter>\n<ton_angle>informatif et préventif, soulignant les risques fonctionnels des brûlures localisées.</ton_angle>\n</fiche>"
 }
