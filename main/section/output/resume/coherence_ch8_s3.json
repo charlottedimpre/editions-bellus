@@ -1,0 +1,24 @@
+{
+  "chapitre": 8,
+  "section": 3,
+  "chapitre_numero": "8",
+  "section_numero": "3",
+  "these_centrale": "La chaleur domestique et festive présente des dangers de brûlures significatifs, nécessitant une vigilance constante et des mesures de sécurité.",
+  "arguments_cles": [
+    "Le fer à repasser chaud et les barbecues exigent une manipulation prudente.",
+    "Les flammes (bougies, fêtes) requièrent un placement hors de portée des enfants.",
+    "Les liquides chauds et les écrans surchauffés présentent des risques de brûlures.",
+    "Débrancher les appareils et sécuriser les câbles évite les chutes dangereuses."
+  ],
+  "concepts_introduits": [
+    "Brûlure : Lésion cutanée causée par la chaleur intense.",
+    "Sécurité domestique : Ensemble des mesures pour prévenir les accidents à la maison."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Les écrans de téléphone surchauffent peu.",
+    "Les câbles traînants sont dangereux pour les enfants."
+  ],
+  "ton_angle": "Informatif et préventif, il souligne les risques et les précautions à prendre.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La chaleur domestique et festive présente des dangers de brûlures significatifs, nécessitant une vigilance constante et des mesures de sécurité.</these_centrale>\n<arguments_cles>\n- Le fer à repasser chaud et les barbecues exigent une manipulation prudente.\n- Les flammes (bougies, fêtes) requièrent un placement hors de portée des enfants.\n- Les liquides chauds et les écrans surchauffés présentent des risques de brûlures.\n- Débrancher les appareils et sécuriser les câbles évite les chutes dangereuses.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Lésion cutanée causée par la chaleur intense.\n- Sécurité domestique : Ensemble des mesures pour prévenir les accidents à la maison.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les écrans de téléphone surchauffent peu.\n- Les câbles traînants sont dangereux pour les enfants.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, il souligne les risques et les précautions à prendre.</ton_angle>\n</fiche>"
+}

@@ -1,0 +1,26 @@
+{
+  "chapitre": 8,
+  "section": 2,
+  "chapitre_numero": "8",
+  "section_numero": "2",
+  "these_centrale": "Une organisation rigoureuse et des gestes simples réduisent significativement les risques de brûlures domestiques chez les enfants en cuisine.",
+  "arguments_cles": [
+    "Tourner les poignées vers l'intérieur pour éviter les renversements accidentels.",
+    "Utiliser les plaques arrière pour garder les préparations hors de portée.",
+    "Laisser refroidir les plaques et le four après usage.",
+    "Tenir les enfants éloignés de la zone de cuisson active.",
+    "Laisser refroidir les aliments et boissons avant de servir aux enfants."
+  ],
+  "concepts_introduits": [
+    "Brûlures domestiques : lésions causées par la chaleur dans un environnement familial.",
+    "Plaques à induction : système de cuisson chauffant le récipient directement."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "\"source majeure de brûlures domestiques\"",
+    "\"curiosité les pousse à explorer cet espace\"",
+    "\"gestes simples et une organisation rigoureuse sont indispensables\""
+  ],
+  "ton_angle": "Informatif et préventif, axé sur la sécurité des jeunes enfants.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Une organisation rigoureuse et des gestes simples réduisent significativement les risques de brûlures domestiques chez les enfants en cuisine.</these_centrale>\n<arguments_cles>\n- Tourner les poignées vers l'intérieur pour éviter les renversements accidentels.\n- Utiliser les plaques arrière pour garder les préparations hors de portée.\n- Laisser refroidir les plaques et le four après usage.\n- Tenir les enfants éloignés de la zone de cuisson active.\n- Laisser refroidir les aliments et boissons avant de servir aux enfants.\n</arguments_cles>\n<concepts_introduits>\n- Brûlures domestiques : lésions causées par la chaleur dans un environnement familial.\n- Plaques à induction : système de cuisson chauffant le récipient directement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"source majeure de brûlures domestiques\"\n- \"curiosité les pousse à explorer cet espace\"\n- \"gestes simples et une organisation rigoureuse sont indispensables\"\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, axé sur la sécurité des jeunes enfants.</ton_angle>\n</fiche>"
+}

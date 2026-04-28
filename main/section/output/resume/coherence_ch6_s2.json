@@ -1,0 +1,23 @@
+{
+  "chapitre": 6,
+  "section": 2,
+  "chapitre_numero": "6",
+  "section_numero": "2",
+  "these_centrale": "Une description précise des brûlures est essentielle pour un diagnostic rapide et une prise en charge médicale adaptée.",
+  "arguments_cles": [
+    "Décrire profondeur, surface et localisation pour évaluer la gravité.",
+    "Préciser douleur, cloques et aspect de la peau aide le diagnostic.",
+    "Les circonstances et traitements appliqués fournissent des informations clés.",
+    "Les photographies sont utiles pour une évaluation visuelle de la lésion."
+  ],
+  "concepts_introduits": [
+    "Brûlure : Lésion cutanée causée par chaleur, produits chimiques, électricité, etc."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Clarté dans la communication avec le professionnel de santé.",
+    "Importance de l'optimisation du temps médical."
+  ],
+  "ton_angle": "Informatif et pragmatique, l'angle est celui du patient préparent sa consultation.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Une description précise des brûlures est essentielle pour un diagnostic rapide et une prise en charge médicale adaptée.</these_centrale>\n<arguments_cles>\n- Décrire profondeur, surface et localisation pour évaluer la gravité.\n- Préciser douleur, cloques et aspect de la peau aide le diagnostic.\n- Les circonstances et traitements appliqués fournissent des informations clés.\n- Les photographies sont utiles pour une évaluation visuelle de la lésion.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Lésion cutanée causée par chaleur, produits chimiques, électricité, etc.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Clarté dans la communication avec le professionnel de santé.\n- Importance de l'optimisation du temps médical.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, l'angle est celui du patient préparent sa consultation.</ton_angle>\n</fiche>"
+}

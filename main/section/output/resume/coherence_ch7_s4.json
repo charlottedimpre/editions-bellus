@@ -1,0 +1,26 @@
+{
+  "chapitre": 7,
+  "section": 4,
+  "chapitre_numero": "7",
+  "section_numero": "4",
+  "these_centrale": "La prévention ciblée des brûlures domestiques chez les enfants exige une vigilance constante dans les zones à risque et une réponse rapide aux urgences.",
+  "arguments_cles": [
+    "La cuisine et la salle de bain sont les zones les plus à risque pour les brûlures infantiles.",
+    "Des gestes préventifs simples, comme le contrôle de la température de l'eau, sont essentiels.",
+    "L'éducation et la sensibilisation des enfants aux dangers de la chaleur sont primordiales.",
+    "Les brûlures, même mineures, nécessitent une surveillance et une consultation médicale si nécessaire."
+  ],
+  "concepts_introduits": [
+    "Plaques à induction : Surface chauffant uniquement le récipient, sécurité accrue.",
+    "Robinets thermostatiques : Maintien d'une température d'eau constante et limitée.",
+    "Déshydratation : Perte excessive d'eau corporelle, risque accru chez les jeunes enfants."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Attention aux poignées de casseroles.",
+    "Utiliser son coude pour tester l'eau du bain.",
+    "La taille de la paume de l'enfant."
+  ],
+  "ton_angle": "Pragmatique et informatif, axé sur la sécurité domestique des enfants.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La prévention ciblée des brûlures domestiques chez les enfants exige une vigilance constante dans les zones à risque et une réponse rapide aux urgences.</these_centrale>\n<arguments_cles>\n- La cuisine et la salle de bain sont les zones les plus à risque pour les brûlures infantiles.\n- Des gestes préventifs simples, comme le contrôle de la température de l'eau, sont essentiels.\n- L'éducation et la sensibilisation des enfants aux dangers de la chaleur sont primordiales.\n- Les brûlures, même mineures, nécessitent une surveillance et une consultation médicale si nécessaire.\n</arguments_cles>\n<concepts_introduits>\n- Plaques à induction : Surface chauffant uniquement le récipient, sécurité accrue.\n- Robinets thermostatiques : Maintien d'une température d'eau constante et limitée.\n- Déshydratation : Perte excessive d'eau corporelle, risque accru chez les jeunes enfants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Attention aux poignées de casseroles.\n- Utiliser son coude pour tester l'eau du bain.\n- La taille de la paume de l'enfant.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et informatif, axé sur la sécurité domestique des enfants.</ton_angle>\n</fiche>"
+}

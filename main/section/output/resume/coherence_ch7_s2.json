@@ -1,0 +1,29 @@
+{
+  "chapitre": 7,
+  "section": 2,
+  "chapitre_numero": "7",
+  "section_numero": "2",
+  "these_centrale": "Le refroidissement des brûlures chez le nourrisson exige une approche prudente pour éviter l'hypothermie tout en limitant les lésions thermiques.",
+  "arguments_cles": [
+    "Refroidir la brûlure pour limiter sa progression thermique.",
+    "Risque d'hypothermie plus élevé chez les nourrissons.",
+    "Utiliser de l'eau tiède (20-25°C) pendant 5-10 minutes maximum.",
+    "Surveiller les signes de frilosité ou pâleur anormale.",
+    "Protéger le reste du corps pour limiter la perte de chaleur."
+  ],
+  "concepts_introduits": [
+    "Hypothermie : chute critique de la température corporelle.",
+    "Rapport surface corporelle/volume : influence la régulation thermique.",
+    "Système de régulation thermique : processus de maintien de la température.",
+    "Lésion thermique : dommage causé par la chaleur.",
+    "Vascularisation superficielle : réseau de vaisseaux sanguins proches de la peau."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "L'eau doit être tiède.",
+    "Surveiller le nourrisson.",
+    "La peau du nourrisson est plus fine."
+  ],
+  "ton_angle": "Informatif et préventif, soulignant la spécificité des nourrissons.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le refroidissement des brûlures chez le nourrisson exige une approche prudente pour éviter l'hypothermie tout en limitant les lésions thermiques.</these_centrale>\n<arguments_cles>\n- Refroidir la brûlure pour limiter sa progression thermique.\n- Risque d'hypothermie plus élevé chez les nourrissons.\n- Utiliser de l'eau tiède (20-25°C) pendant 5-10 minutes maximum.\n- Surveiller les signes de frilosité ou pâleur anormale.\n- Protéger le reste du corps pour limiter la perte de chaleur.\n</arguments_cles>\n<concepts_introduits>\n- Hypothermie : chute critique de la température corporelle.\n- Rapport surface corporelle/volume : influence la régulation thermique.\n- Système de régulation thermique : processus de maintien de la température.\n- Lésion thermique : dommage causé par la chaleur.\n- Vascularisation superficielle : réseau de vaisseaux sanguins proches de la peau.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'eau doit être tiède.\n- Surveiller le nourrisson.\n- La peau du nourrisson est plus fine.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant la spécificité des nourrissons.</ton_angle>\n</fiche>"
+}

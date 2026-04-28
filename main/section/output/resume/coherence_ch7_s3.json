@@ -1,0 +1,27 @@
+{
+  "chapitre": 7,
+  "section": 3,
+  "chapitre_numero": "7",
+  "section_numero": "3",
+  "these_centrale": "La peau des personnes âgées, affaiblie par le vieillissement et les comorbidités, exige une vigilance accrue face aux brûlures.",
+  "arguments_cles": [
+    "La fragilité cutanée due au vieillissement accentue les risques de brûlures graves.",
+    "Les comorbidités compliquent la cicatrisation, prolongeant et incertainant la guérison.",
+    "La diminution de la sensibilité thermique retarde la réaction face au danger.",
+    "Les premiers secours nécessitent une adaptation pour éviter l'hypothermie.",
+    "Une consultation médicale rapide est impérative en cas de brûlure."
+  ],
+  "concepts_introduits": [
+    "Derme : Couche profonde de la peau affectant la résistance thermique.",
+    "Comorbidités : Maladies associées compliquant la guérison des blessures.",
+    "Hypothermie : Diminution dangereuse de la température corporelle."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "La peau vieillit et devient plus fragile.",
+    "Le vieillissement diminue la sensibilité à la chaleur.",
+    "Le derme s'amincit avec l'âge."
+  ],
+  "ton_angle": "informatif et préventif, soulignant la vulnérabilité spécifique des aînés.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La peau des personnes âgées, affaiblie par le vieillissement et les comorbidités, exige une vigilance accrue face aux brûlures.</these_centrale>\n<arguments_cles>\n- La fragilité cutanée due au vieillissement accentue les risques de brûlures graves.\n- Les comorbidités compliquent la cicatrisation, prolongeant et incertainant la guérison.\n- La diminution de la sensibilité thermique retarde la réaction face au danger.\n- Les premiers secours nécessitent une adaptation pour éviter l'hypothermie.\n- Une consultation médicale rapide est impérative en cas de brûlure.\n</arguments_cles>\n<concepts_introduits>\n- Derme : Couche profonde de la peau affectant la résistance thermique.\n- Comorbidités : Maladies associées compliquant la guérison des blessures.\n- Hypothermie : Diminution dangereuse de la température corporelle.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La peau vieillit et devient plus fragile.\n- Le vieillissement diminue la sensibilité à la chaleur.\n- Le derme s'amincit avec l'âge.\n</a_ne_pas_repeter>\n<ton_angle>informatif et préventif, soulignant la vulnérabilité spécifique des aînés.</ton_angle>\n</fiche>"
+}

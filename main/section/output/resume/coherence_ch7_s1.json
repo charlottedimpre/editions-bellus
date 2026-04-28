@@ -1,0 +1,26 @@
+{
+  "chapitre": 7,
+  "section": 1,
+  "chapitre_numero": "7",
+  "section_numero": "1",
+  "these_centrale": "La peau infantile, plus fine et perméable, exige une vigilance et des soins spécifiques face aux brûlures.",
+  "arguments_cles": [
+    "La peau enfantine, plus fine et vascularisée, subit plus vite les agressions thermiques.",
+    "Un ratio surface corporelle/volume élevé amplifie l'impact d'une brûlure chez l'enfant.",
+    "La peau enfantine est plus perméable aux irritants et aux infections bactériennes.",
+    "Les structures de réparation cutanée immatures peuvent affecter la qualité de la guérison."
+  ],
+  "concepts_introduits": [
+    "Vascularisation superficielle : présence accrue de vaisseaux sanguins près de la surface.",
+    "Ratio surface corporelle/volume : comparaison de la surface de peau par rapport à la masse.",
+    "Perméabilité cutanée : facilité avec laquelle la peau laisse passer des substances.",
+    "Cellules souches épidermiques : cellules capables de se régénérer et de réparer la peau."
+  ],
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [
+    "Les brûlures sur la peau d'un enfant sont plus graves que sur celle d'un adulte.",
+    "La peau des enfants est fragile."
+  ],
+  "ton_angle": "Didactique et préventif, soulignant la vulnérabilité infantile face aux risques thermiques.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La peau infantile, plus fine et perméable, exige une vigilance et des soins spécifiques face aux brûlures.</these_centrale>\n<arguments_cles>\n- La peau enfantine, plus fine et vascularisée, subit plus vite les agressions thermiques.\n- Un ratio surface corporelle/volume élevé amplifie l'impact d'une brûlure chez l'enfant.\n- La peau enfantine est plus perméable aux irritants et aux infections bactériennes.\n- Les structures de réparation cutanée immatures peuvent affecter la qualité de la guérison.\n</arguments_cles>\n<concepts_introduits>\n- Vascularisation superficielle : présence accrue de vaisseaux sanguins près de la surface.\n- Ratio surface corporelle/volume : comparaison de la surface de peau par rapport à la masse.\n- Perméabilité cutanée : facilité avec laquelle la peau laisse passer des substances.\n- Cellules souches épidermiques : cellules capables de se régénérer et de réparer la peau.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les brûlures sur la peau d'un enfant sont plus graves que sur celle d'un adulte.\n- La peau des enfants est fragile.\n</a_ne_pas_repeter>\n<ton_angle>Didactique et préventif, soulignant la vulnérabilité infantile face aux risques thermiques.</ton_angle>\n</fiche>"
+}
