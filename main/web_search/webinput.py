@@ -1,10 +1,8 @@
 from pathlib import Path
 import json
 import os
-import time
 
-from ollama import chat
-from ollama import ChatResponse
+from llm_fallback import chat_with_major_error_fallback
 from parser import read_json_file as _read_json, read_text_file as _read_text
 
 MODEL_COURT = os.getenv("ED_BELLUS_OLLAMA_MODEL_COURT")
@@ -18,53 +16,13 @@ FICHE_CADRAGE_PATH = BASE_DIR.parent / "fiche_cadrage" / "output" / "fiche_cadra
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def _is_retryable_ollama_error(exc: Exception) -> bool:
-    status_code = getattr(exc, "status_code", None)
-    if status_code in {429, 500, 502, 503, 504}:
-        return True
-
-    err_text = str(exc).lower()
-    return any(token in err_text for token in [
-        "status code: 500",
-        "status code: 503",
-        "internal server error",
-        "timeout",
-        "temporarily unavailable",
-    ])
-
-
 def _chat_with_retry(message_content: str, context_label: str) -> str:
-    last_error: Exception | None = None
-
-    for attempt in range(1, LLM_MAX_RETRIES + 1):
-        try:
-            response: ChatResponse = chat(model=MODEL_COURT, messages=[
-                {
-                    "role": "user",
-                    "content": message_content,
-                }
-            ])
-
-            if response.message is None or not response.message.content:
-                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-
-            return response.message.content
-        except Exception as exc:
-            last_error = exc
-            if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
-                break
-
-            delay = LLM_BASE_DELAY_SECONDS * (2 ** (attempt - 1))
-            print(
-                f"[WARN] LLM indisponible pour {context_label} "
-                f"(tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}. "
-                f"Nouvelle tentative dans {delay}s."
-            )
-            time.sleep(delay)
-
-    raise RuntimeError(
-        f"Echec appel LLM pour {context_label} avec le modele {MODEL_COURT} "
-        f"apres {LLM_MAX_RETRIES} tentatives: {last_error}"
+    return chat_with_major_error_fallback(
+        ollama_model=MODEL_COURT,
+        message_content=message_content,
+        context_label=context_label,
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_BASE_DELAY_SECONDS,
     )
 
 

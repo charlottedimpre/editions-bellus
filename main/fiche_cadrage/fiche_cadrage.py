@@ -1,9 +1,8 @@
 from pathlib import Path
 import os
-import time
 from typing import Any
 
-from ollama import chat
+from llm_fallback import chat_with_major_error_fallback
 from parser import parse_fiche_cadrage, read_json_file, read_text_file, to_json_file
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -34,40 +33,14 @@ def _normalize_sujet(sujet: Any) -> str:
     return cleaned
 
 
-def _is_retryable_ollama_error(exc: Exception) -> bool:
-    status_code = getattr(exc, "status_code", None)
-    if status_code in {429, 500, 502, 503, 504}:
-        return True
-
-    err_text = str(exc).lower()
-    return any(token in err_text for token in ["status code: 500", "status code: 503", "internal server error", "timeout"])
-
-
 def _chat_with_retry(model: str, message_content: str, context_label: str) -> str:
-    last_error: Exception | None = None
-
-    for attempt in range(1, LLM_MAX_RETRIES + 1):
-        try:
-            response = chat(model=model, messages=[
-                {
-                    "role": "user",
-                    "content": message_content,
-                },
-            ])
-            if response.message is None or not response.message.content:
-                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-            return response.message.content
-        except Exception as exc:
-            last_error = exc
-            if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
-                break
-            print(
-                f"[WARN] Ollama indisponible pour {context_label} "
-                f"(tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}"
-            )
-            time.sleep(LLM_RETRY_DELAY_SECONDS)
-
-    raise RuntimeError(f"Echec appel LLM ({context_label}) apres {LLM_MAX_RETRIES} tentatives: {last_error}")
+    return chat_with_major_error_fallback(
+        ollama_model=model,
+        message_content=message_content,
+        context_label=context_label,
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
+    )
 
 
 def fiche_cadrage(sujet: str, niveau: str):

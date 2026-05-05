@@ -129,7 +129,7 @@ def suivisection(start_from=None, auto_confirm=False):
         start_idx_for_chapter = sec_start_idx if chap_idx == start_chap_idx else 0
         for sec in chap["sections"][start_idx_for_chapter:]:
             sec_num = int(sec["numero"])
-            max_attempts = 10
+            max_attempts = 25
             section_success = False
             for attempt in range(1, max_attempts + 1):
                 try:
@@ -146,7 +146,7 @@ def suivisection(start_from=None, auto_confirm=False):
 
         if failed_section is not None:
             raise RuntimeError(
-                f"Echec definitif: section_ch{ch_num}_s{failed_section} non generee apres 10 tentatives. "
+                f"Echec definitif: section_ch{ch_num}_s{failed_section} non generee apres {max_attempts} tentatives. "
                 "Arret de l'etape sections_brutes pour eviter une validation incorrecte."
             )
 

@@ -1,9 +1,8 @@
 import json
 import os
-import time
 from pathlib import Path
 
-from ollama import ChatResponse, chat
+from llm_fallback import chat_with_major_error_fallback
 
 from parser import parse_structure_chapitres, read_json_file as _read_json, read_text_file as _read_text
 
@@ -118,59 +117,26 @@ def _get_candidate_models() -> list[str]:
     return models or [MODEL]
 
 
-def _is_retryable_ollama_error(exc: Exception) -> bool:
-    status_code = getattr(exc, "status_code", None)
-    if status_code in {429, 500, 502, 503, 504}:
-        return True
-
-    err_text = str(exc).lower()
-    return any(token in err_text for token in [
-        "status code: 500",
-        "status code: 503",
-        "internal server error",
-        "timeout",
-        "temporarily unavailable",
-    ])
-
-
 def _chat_with_retry(message_content: str, context_label: str) -> str:
     last_error: Exception | None = None
     models = _get_candidate_models()
 
     for model in models:
-        for attempt in range(1, LLM_MAX_RETRIES + 1):
-            try:
-                response: ChatResponse = chat(model=model, messages=[
-                    {
-                        "role": "user",
-                        "content": message_content,
-                    },
-                ])
-
-                if response.message is None or not response.message.content:
-                    raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-
-                return response.message.content
-            except Exception as exc:
-                last_error = exc
-                if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
-                    break
-
-                delay = LLM_BASE_DELAY_SECONDS * (2 ** (attempt - 1))
-                print(
-                    f"[WARN] LLM indisponible pour {context_label} "
-                    f"(modele {model}, tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}. "
-                    f"Nouvelle tentative dans {delay}s."
-                )
-                time.sleep(delay)
-
-        if len(models) > 1:
-            print(f"[WARN] Echec avec le modele {model}. Tentative du modele suivant...")
+        try:
+            return chat_with_major_error_fallback(
+                ollama_model=model,
+                message_content=message_content,
+                context_label=context_label,
+                ollama_max_retries=LLM_MAX_RETRIES,
+                ollama_retry_delay_seconds=LLM_BASE_DELAY_SECONDS,
+            )
+        except Exception as exc:
+            last_error = exc
+            if len(models) > 1:
+                print(f"[WARN] Echec avec le modele {model}. Tentative du modele suivant...")
 
     raise RuntimeError(
-        f"Echec appel LLM pour {context_label} "
-        f"apres {LLM_MAX_RETRIES} tentatives par modele "
-        f"(modeles testes: {', '.join(models)}): {last_error}"
+        f"Echec appel LLM pour {context_label} avec les modeles {', '.join(models)}: {last_error}"
     )
 
 
