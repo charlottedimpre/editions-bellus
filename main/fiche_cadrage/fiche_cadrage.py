@@ -19,6 +19,32 @@ LEVEL_FILES = {
     "3": "fc_avance",
 }
 
+NIVEAU_TEXTS = {
+    "fc_debutant": (
+        "Débutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire "
+        "technique acquis, nécessite des définitions explicites des concepts dès leur première "
+        "apparition, privilégie une progression lente et cumulative, impose des transitions "
+        "pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, "
+        "demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe "
+        "les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites "
+        "et des conditions d'application, et vise une autonomie de compréhension de base sans "
+        "prérequis de lecture complémentaire)"
+    ),
+    "fc_intermediaire": (
+        "Intermédiaire (suppose des bases acquises et un vocabulaire courant du sujet, autorise des "
+        "références techniques sans redéfinition exhaustive, vise une progression structurée avec "
+        "des sauts raisonnables, met l'accent sur la consolidation et l'application, explicite les "
+        "nuances et cas limites, tolère des synthèses plus denses, et propose des approfondissements "
+        "optionnels sans exiger de prérequis avancés)"
+    ),
+    "fc_avance": (
+        "Avancé (suppose une maîtrise solide des fondamentaux et du vocabulaire spécialisé, accepte "
+        "des raisonnements compacts, privilégie la profondeur, les arbitrages et les controverses, "
+        "met en avant les limites méthodologiques, les hypothèses et les exceptions, et vise un "
+        "lecteur capable de relier le contenu à des cadres théoriques ou pratiques avancés)"
+    ),
+}
+
 
 def _read_text(path: Path, label: str) -> str:
     return read_text_file(path, label, require_non_empty=False)
@@ -31,6 +57,15 @@ def _normalize_sujet(sujet: Any) -> str:
     if not cleaned:
         raise ValueError("Le sujet ne peut pas etre vide.")
     return cleaned
+
+
+def _apply_prompt_variables(prompt: str, niveau: str) -> str:
+    if "{{NIVEAU}}" not in prompt:
+        return prompt
+    niveau_text = NIVEAU_TEXTS.get(niveau)
+    if not niveau_text:
+        raise ValueError(f"Niveau inconnu pour {{NIVEAU}}: {niveau!r}")
+    return prompt.replace("{{NIVEAU}}", niveau_text)
 
 
 def _chat_with_retry(model: str, message_content: str, context_label: str) -> str:
@@ -48,9 +83,10 @@ def fiche_cadrage(sujet: str, niveau: str):
     if not isinstance(niveau, str) or not niveau.strip():
         raise ValueError("Le niveau de prompt doit etre une chaine non vide.")
 
-    input_path = INPUT_DIR / f"{niveau}.txt"
+    input_path = INPUT_DIR / "fc_prompt.txt"
 
     prompt = _read_text(input_path, f"prompt {niveau}")
+    prompt = _apply_prompt_variables(prompt, niveau)
 
     response_content = _chat_with_retry(
         model=MODEL_COURT,

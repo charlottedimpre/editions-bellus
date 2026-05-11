@@ -33,11 +33,11 @@ Adultes 25–45 ans, déjà attirés par le développement personnel, en transit
 </cible_principale>
 
 <niveau>
-Avancé (suppose une connaissance approfondie du sujet et, idéalement, une pratique significative de ses enjeux, autorise un haut niveau d'abstraction conceptuelle et de densité argumentative, intègre des controverses, des modèles concurrents et des zones d'incertitude sans simplification pédagogique excessive, exige une explicitation fine des hypothèses, des compromis et des limites de transférabilité, privilégie des raisonnements comparatifs et des arbitrages contextuels plutôt que des prescriptions générales, peut mobiliser un lexique technique soutenu s'il reste défini avec précision, et vise une capacité d'analyse critique autonome permettant au lecteur de construire ses propres critères d'évaluation et de décision)
+{{NIVEAU}}
 </niveau>
 
 <objectif_lecteur>
-[Ce que le lecteur doit pouvoir faire ou comprendre après lecture, en 1 phrase commençant par "À la fin du livre, le lecteur..."]
+[Ce que le lecteur doit pouvoir faire ou comprendre après lecture, en 1 phrase précise et concrète, formulée du point de vue du livre en parlant directement au lecteur avec "vous", sans promesse irréaliste ni vague généralité"]
 </objectif_lecteur>
 
 </fiche_cadrage>
