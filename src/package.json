@@ -1,0 +1,19 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^3.4.0"
+  },
+  "scripts": {
+  "build:css": "tailwindcss -i ./Stage/static/css/input.css -o ./Stage/static/css/output.css --watch"
+}
+}
+

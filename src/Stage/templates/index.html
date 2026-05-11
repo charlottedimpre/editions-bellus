@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Edition Bellus</title>
+</head>
+<body>
+<div id="message">En attente...</div>
+<div style="width:300px;height:20px;border:1px solid black;">
+    <div id="bar" style="height:100%;width:0%;background:green;"></div>
+</div>
+
+<script>
+function checkProgress() {
+    fetch("/progress/")
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("message").innerText = data.message;
+        document.getElementById("bar").style.width = data.progress + "%";
+
+        if (!data.is_done) {
+            setTimeout(checkProgress, 1000);
+        }
+    });
+}
+
+// lancer au chargement
+checkProgress();
+</script>
+<button onclick="test()">Test</button>
+
+<script>
+function test() {
+    fetch("/test/"); // ta vue Django
+}
+</script>
+</body>
+</html>

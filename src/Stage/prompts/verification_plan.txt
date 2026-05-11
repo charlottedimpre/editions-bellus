@@ -1,0 +1,39 @@
+Tu es un expert en structuration de contenu.
+
+Analyse la cohérence globale de ce plan JSON que je fournis, respectant le schéma exact suivant :
+- chapitres : chaque chapitre a ordre, titre, role, justification_indépendance_chapitre et sections
+- sections : chaque section a chapitre_id, ordre, titre, contenu
+
+Vérifie :
+- Y a-t-il des parties redondantes ou inutiles ?
+- La progression logique est-elle respectée ?
+- Manque-t-il quelque chose d'essentiel ?
+
+Si le plan est cohérent, réponds uniquement par : true
+
+Si tu détectes un problème, réponds uniquement par un JSON brut valide, compatible avec le schéma PLAN_VERIF_SCHEMA :
+
+{
+  "probleme": "Description courte du problème en 20 mots maximum",
+  "reparation": [
+    {
+      "action": "ajouter | supprimer | déplacer | fusionner",
+      "table": "sections | chapitres",
+      "id": identifiant de la ligne concernée ou null si ajout,
+      "champs_a_modifier": {
+        "chapitre_id": null,   # pour sections
+        "ordre": 1,
+        "titre": "...",
+        "contenu": "...",      # pour sections
+        "role": "...",         # pour chapitres
+        "justification_indépendance_chapitre": "..." # pour chapitres
+      },
+      "detail": "explication courte de la modification"
+    }
+  ]
+}
+
+RÈGLES STRICTES :
+- Utiliser exactement ces noms de champs, sans faute ni variation.
+- Ne générer aucun autre champ.
+- JSON brut uniquement, zéro texte avant/après, parseable directement.

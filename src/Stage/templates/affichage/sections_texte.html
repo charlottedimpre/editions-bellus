@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sections texte</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-muted min-h-screen p-4">
+
+{% include "components/dropdown-menu.html" %}
+
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+  <!-- STEPPER -->
+  {% include "components/progress-bar.html" %}
+
+  <!-- MAIN CARD -->
+  <div class="bg-background border border-border rounded-xl p-4">
+
+    <!-- Titre + Marquer comme complétée -->
+    <div class="flex justify-between items-start mb-1">
+      <div>
+        <h2 class="text-xl font-bold text-foreground">Sections texte par chapitre</h2>
+        <p class="text-sm text-muted-foreground mt-0.5 mb-4">Contenu détaillé de chaque section</p>
+      </div>
+      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
+        ✓ Marquer comme complétée
+      </button>
+    </div>
+
+    <!-- Nav Précédent / contexte / Suivant -->
+    <div class="flex justify-between items-center mb-6">
+      <a href="?step={{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        ‹ Précédent
+      </a>
+      <span class="text-xs text-muted-foreground">← Introduction &nbsp;|&nbsp; Conclusion →</span>
+      <a href="?step={{ next_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        Suivant ›
+      </a>
+    </div>
+
+    <hr class="border-t border-border mb-6">
+
+    <!-- Chapitres -->
+    <div class="flex flex-col gap-2.5">
+
+      {% for chapitre, sections in chapitres.items %}
+      <div class="border border-border rounded-lg p-4">
+
+        <!-- En-tête chapitre -->
+        <div class="text-sm font-semibold text-foreground mb-3">
+          {% with sections.0 as first_section %}
+            Chapitre {{ chapitre }} — {{ first_section.titre_chapitre }}
+          {% endwith %}
+        </div>
+
+        <!-- Sections -->
+        <div class="flex flex-col gap-2.5">
+
+          {% for section in sections %}
+          <div class="border border-border rounded-lg p-4">
+
+            <!-- En-tête section -->
+            <div class="text-sm font-medium text-foreground mb-3">
+              Section {{ section.section }} — {{ section.titre_section }}
+            </div>
+
+            <form method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="chapitre" value="{{ section.chapitre }}">
+              <input type="hidden" name="section" value="{{ section.section }}">
+
+              <!-- Contenu -->
+              <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap mb-3">{{ section.contenu|default:"Non renseigné" }}</div>
+              <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 bg-background text-foreground resize-none mb-3" name="contenu" rows="8">{{ section.contenu }}</textarea>
+
+              <!-- Boutons -->
+              <div class="flex gap-2">
+                <button type="button" onclick="toggleEdit(this)"
+                  class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 flex items-center gap-1.5 font-medium">
+                  ✏️ Modifier
+                </button>
+                <button type="submit"
+                  class="saveBtn text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 hidden items-center gap-1.5 font-medium">
+                  💾 Enregistrer
+                </button>
+                <button type="button" onclick="cancelEdit(this)"
+                  class="cancelBtn text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted hidden items-center gap-1.5">
+                  ❌ Annuler
+                </button>
+              </div>
+
+            </form>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+      {% empty %}
+      <p class="text-sm text-muted-foreground italic">Aucun chapitre disponible</p>
+      {% endfor %}
+
+    </div>
+
+    <!-- Lancer le processus -->
+    <button type="button" onclick="lancer_generation()" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+      ▶ Lancer le processus
+    </button>
+
+  </div>
+
+</div>
+
+{% include 'components/status.html' %}
+
+<script>
+function lancer_generation(){
+    fetch("/gen_sections/")
+}
+
+function toggleEdit(btn) {
+  const card = btn.closest(".border.border-border.rounded-lg.p-4");
+  const view = card.querySelector(".view-mode");
+  const edit = card.querySelector(".edit-mode");
+  const saveBtn = card.querySelector(".saveBtn");
+  const cancelBtn = card.querySelector(".cancelBtn");
+
+  edit.dataset.initial = edit.value;
+
+  view.classList.add("hidden");
+  edit.classList.remove("hidden");
+  btn.classList.add("hidden");
+  saveBtn.classList.remove("hidden");
+  saveBtn.classList.add("flex");
+  cancelBtn.classList.remove("hidden");
+  cancelBtn.classList.add("flex");
+}
+
+function cancelEdit(btn) {
+  const card = btn.closest(".border.border-border.rounded-lg.p-4");
+  const view = card.querySelector(".view-mode");
+  const edit = card.querySelector(".edit-mode");
+  const saveBtn = card.querySelector(".saveBtn");
+  const editBtn = card.querySelector("button[onclick='toggleEdit(this)']");
+
+  edit.value = edit.dataset.initial;
+
+  view.classList.remove("hidden");
+  edit.classList.add("hidden");
+  btn.classList.add("hidden");
+  saveBtn.classList.add("hidden");
+  editBtn.classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>

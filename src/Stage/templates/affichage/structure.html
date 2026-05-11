@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Structure Chapitres & Sections</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-muted min-h-screen p-4">
+
+{% include "components/dropdown-menu.html" %}
+
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+  <!-- STEPPER -->
+  {% include "components/progress-bar.html" %}
+
+  <!-- MAIN CARD -->
+  <div class="bg-background border border-border rounded-xl p-4">
+
+    <!-- Titre + Marquer comme complétée -->
+    <div class="flex justify-between items-start mb-1">
+      <div>
+        <h2 class="text-xl font-bold text-foreground">Structure des chapitres</h2>
+        <p class="text-sm text-muted-foreground mt-0.5 mb-4">Organisation des chapitres et sections</p>
+      </div>
+      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
+        ✓ Marquer comme complétée
+      </button>
+    </div>
+
+    <!-- Nav Précédent / contexte / Suivant -->
+    <div class="flex justify-between items-center mb-6">
+      <a href="?step={{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        ‹ Précédent
+      </a>
+      <span class="text-xs text-muted-foreground">← Plan &nbsp;|&nbsp; Introduction →</span>
+      <a href="?step={{ next_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        Suivant ›
+      </a>
+    </div>
+
+    <form method="POST">
+    {% csrf_token %}
+
+    <!-- Séparateur + Bouton Modifier -->
+    <div class="py-4">
+      <hr class="border-t border-border mb-4">
+      <div class="flex gap-2">
+        <button type="button" onclick="toggleEdit()"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 flex items-center gap-1.5 font-medium">
+          ✏️ Modifier
+        </button>
+        <button type="submit" id="saveBtn"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 hidden items-center gap-1.5 font-medium">
+          💾 Enregistrer
+        </button>
+        <button type="button" onclick="cancelEdit()" id="cancelBtn"
+          class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted hidden items-center gap-1.5">
+          ❌ Annuler
+        </button>
+      </div>
+    </div>
+
+    <!-- Chapitres -->
+    <div class="flex flex-col gap-2.5">
+
+      {% for chapitre in chapitres %}
+      <div class="border border-border rounded-lg p-4">
+
+        <!-- En-tête chapitre -->
+        <div class="text-sm font-semibold text-foreground mb-3">
+          Chapitre {{ chapitre.numero }} — {{ chapitre.titre }}
+        </div>
+
+        <!-- Sections -->
+        <div class="flex flex-col gap-2.5">
+
+          {% for section in chapitre.sections.all %}
+          <div class="border border-border rounded-lg p-4">
+
+            <div class="text-sm font-medium text-foreground mb-3">
+              Section {{ section.numero }} — {{ section.titre_section }}
+            </div>
+
+            <div class="flex flex-col gap-3">
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Objectif</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ section.objectif|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="objectif_{{ section.id }}" rows="3">{{ section.objectif }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Concept clé</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ section.concept_cle|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="concept_{{ section.id }}" rows="3">{{ section.concept_cle }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Exemple</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ section.exemple|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="exemple_{{ section.id }}" rows="3">{{ section.exemple }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Limite</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ section.limite|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="limite_{{ section.id }}" rows="3">{{ section.limite }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Mots cible</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ section.mots_cible|default:"Non renseigné" }}</div>
+                <input class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground" type="text" name="mots_{{ section.id }}" value="{{ section.mots_cible }}">
+              </div>
+
+            </div>
+          </div>
+          {% empty %}
+          <p class="text-sm text-muted-foreground italic">Aucune section</p>
+          {% endfor %}
+
+        </div>
+      </div>
+      {% empty %}
+      <p class="text-sm text-muted-foreground italic">Aucun chapitre disponible</p>
+      {% endfor %}
+
+    </div>
+
+    <!-- Lancer le processus -->
+    <button type="button" onclick="lancer_structure()" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+      ▶ Lancer le processus
+    </button>
+
+    </form>
+  </div>
+
+</div>
+
+{% include 'components/status.html' %}
+
+<script>
+    function lancer_structure(){
+    fetch("/structure/")
+}
+let initialValues = {};
+
+function toggleEdit() {
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.add("hidden"));
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { initialValues[i] = e.value; e.classList.remove("hidden"); });
+  document.getElementById("saveBtn").classList.remove("hidden");
+  document.getElementById("saveBtn").classList.add("flex");
+  document.getElementById("cancelBtn").classList.remove("hidden");
+  document.getElementById("cancelBtn").classList.add("flex");
+}
+
+function cancelEdit() {
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { if (initialValues[i] !== undefined) e.value = initialValues[i]; e.classList.add("hidden"); });
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.remove("hidden"));
+  document.getElementById("saveBtn").classList.add("hidden");
+  document.getElementById("cancelBtn").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>

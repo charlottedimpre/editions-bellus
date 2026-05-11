@@ -1,0 +1,547 @@
+import json
+import re
+from pathlib import Path
+from typing import Any, Optional, Union
+
+
+def read_text_file(path: Path, label: str, require_non_empty: bool = True) -> str:
+    """Lit un fichier texte UTF-8 avec validations standardisees."""
+    if not path.exists():
+        raise FileNotFoundError(f"Fichier introuvable pour {label}: {path}")
+    content = path.read_text(encoding="utf-8")
+    if require_non_empty and not content.strip():
+        raise ValueError(f"Contenu vide pour {label}: {path}")
+    return content
+
+
+def read_json_file(path: Path, label: str, require_non_empty: bool = True) -> Any:
+    """Charge un JSON depuis disque avec erreurs homogenes."""
+    try:
+        return json.loads(read_text_file(path, label, require_non_empty=require_non_empty))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"JSON invalide pour {label}: {path}") from exc
+
+
+def write_json_file(path: Path, payload: Any, label: str, indent: int = 2) -> None:
+    """Ecrit un payload JSON UTF-8 en creant les dossiers parents."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        path.write_text(json.dumps(payload, ensure_ascii=False, indent=indent), encoding="utf-8")
+    except TypeError as exc:
+        raise ValueError(f"Donnees non serialisables pour {label}: {path}") from exc
+
+
+def to_int_or_raise(value: Any, field_name: str) -> int:
+    """Convertit en int avec message d'erreur explicite."""
+    try:
+        return int(value)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"Valeur invalide pour {field_name}: {value!r}") from exc
+
+
+def normalize_resume_from(value: Any) -> Optional[dict[str, int]]:
+    """Normalise un point de reprise {'chapitre': x, 'section': y} ou retourne None."""
+    if not isinstance(value, dict):
+        return None
+    try:
+        ch_num = to_int_or_raise(value.get("chapitre"), "resume_from.chapitre")
+        sec_num = to_int_or_raise(value.get("section"), "resume_from.section")
+    except ValueError:
+        return None
+    return {"chapitre": ch_num, "section": sec_num}
+
+
+def _collapse_newlines(s: Optional[str]) -> Optional[str]:
+    """
+    Remplace les sauts de ligne par des espaces et supprime les espaces multiples.
+    """
+    if s is None:
+        return None
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _clean_title_text(s: Optional[str]) -> Optional[str]:
+    """Retire les marqueurs markdown de titre (ex: **Titre**) et normalise les espaces."""
+    if s is None:
+        return None
+    cleaned = s.replace("*", "")
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def extract_tag(text: str, tag_name: str) -> Optional[str]:
+    """
+    Extrait le contenu entre <tag_name> et </tag_name>.
+    Retourne None si la balise n'est pas trouvée.
+
+    >>> extract_tag("<sujet>Mon sujet</sujet>", "sujet")
+    'Mon sujet'
+    """
+    pattern = rf"<{re.escape(tag_name)}>(.*?)</{re.escape(tag_name)}>"
+    match = re.search(pattern, text, re.DOTALL)
+    return match.group(1).strip() if match else None
+
+
+def extract_all_tags(text: str, tag_name: str) -> list[str]:
+    """
+    Extrait tous les contenus entre <tag_name> et </tag_name>.
+    Utile pour les balises répétées (ex: plusieurs <section>).
+
+    >>> extract_all_tags("<a>1</a><a>2</a>", "a")
+    ['1', '2']
+    """
+    pattern = rf"<{re.escape(tag_name)}>(.*?)</{re.escape(tag_name)}>"
+    return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]
+
+
+def extract_tag_with_attrs(text: str, tag_name: str) -> list[dict]:
+    """
+    Extrait les balises avec attributs, ex:
+    <chapitre_structure numero="1" titre="Mon titre">contenu</chapitre_structure>
+
+    Retourne une liste de dicts: [{"attrs": {"numero": "1", ...}, "content": "..."}]
+    """
+    # Capture la balise ouvrante avec attributs + contenu + balise fermante
+    pattern = rf"<{re.escape(tag_name)}\s+(.*?)>(.*?)</{re.escape(tag_name)}>"
+    results = []
+    for match in re.finditer(pattern, text, re.DOTALL):
+        attrs_str = match.group(1)
+        content = match.group(2).strip()
+        # Parser les attributs key="value"
+        attrs = dict(re.findall(r'(\w+)="([^"]*)"', attrs_str))
+        results.append({"attrs": attrs, "content": content})
+    return results
+
+
+
+# ---------------------------------------------------------------------------
+# Parsers de haut niveau pour chaque étape
+# ---------------------------------------------------------------------------
+
+def parse_fiche_cadrage(text: str) -> dict:
+    """
+    Parse la réponse de l'étape 1 (fiche de cadrage).
+    """
+    fiche = extract_tag(text, "fiche_cadrage") or text
+
+    # Extraire les chapitres du sommaire
+    sommaire_raw = extract_tag(fiche, "sommaire") or ""
+    chapitres = re.findall(r"-\s*Chapitre\s+\d+\s*:\s*(.+)", sommaire_raw)
+
+    # Nombre de chapitres explicite (nouveau contrat).
+    # Compatibilite legacy: on derive depuis <sommaire> uniquement si present.
+    nbre_chapitres_raw = extract_tag(fiche, "nb_chapitre")
+    if nbre_chapitres_raw is not None and nbre_chapitres_raw.strip():
+        nbre_chapitres = to_int_or_raise(nbre_chapitres_raw.strip(), "nb_chapitre")
+        if nbre_chapitres <= 0:
+            raise ValueError(f"Valeur invalide pour nbre_chapitres: {nbre_chapitres!r}")
+    elif chapitres:
+        nbre_chapitres = len(chapitres)
+    else:
+        raise ValueError("La fiche de cadrage doit contenir la balise <nb_chapitre>.")
+
+    # Extraire les exclusions du hors périmètre
+    hp_raw = extract_tag(fiche, "hors_perimetre") or ""
+    exclusions = [line.strip("- ").strip() for line in hp_raw.splitlines() if line.strip().startswith("-")]
+
+    # Extraire les contraintes
+    cs_raw = extract_tag(fiche, "contraintes_specifiques") or ""
+    contraintes = [line.strip("- ").strip() for line in cs_raw.splitlines() if line.strip().startswith("-")]
+
+    return {
+        "sujet": extract_tag(fiche, "sujet"),
+        "sommaire": chapitres,
+        "hors_perimetre": exclusions,
+        "contraintes_specifiques": contraintes,
+        "cible_principale": extract_tag(fiche, "cible_principale"),
+        "niveau": extract_tag(fiche, "niveau"),
+        "objectif_lecteur": extract_tag(fiche, "objectif_lecteur"),
+        "nbre_chapitres": nbre_chapitres,
+        "_raw": text,
+    }
+
+
+def parse_plan_detaille(text: str) -> dict:
+    """
+    Parse la réponse de l'étape 2 (plan détaillé).
+    """
+    plan = extract_tag(text, "plan_detaille") or text
+
+    # Introduction
+    intro = {
+        "contexte": extract_tag(plan, "contexte"),
+        "importance": extract_tag(plan, "importance"),
+        "adresse_a": extract_tag(plan, "adresse_a"),
+        "organisation": extract_tag(plan, "organisation"),
+        "promesse": extract_tag(plan, "promesse"),
+    }
+
+    # Chapitres
+    chapitres_raw = extract_tag(plan, "chapitres") or ""
+    # Découper par "- Chapitre N :"
+    chapitre_blocks = re.split(r"(?=- Chapitre\s+\d+\s*:)", chapitres_raw)
+    chapitres = []
+    for block in chapitre_blocks:
+        block = block.strip()
+        if not block:
+            continue
+        titre_match = re.match(r"-\s*Chapitre\s+(\d+)\s*:\s*(.+?)(?:\n|$)", block)
+        if titre_match:
+            chapitres.append({
+                "numero": int(titre_match.group(1)),
+                "titre": _clean_title_text(titre_match.group(2)),
+                "traite": extract_tag(block, "traite"),
+                "ne_traite_pas": extract_tag(block, "ne_traite_pas"),
+                "pourquoi_distinct": extract_tag(block, "pourquoi_distinct"),
+            })
+
+    # Conclusion
+    conclusion = {
+        "synthese": extract_tag(plan, "synthese"),
+        "logique_ensemble": extract_tag(plan, "logique_ensemble"),
+        "prochaines_etapes": extract_tag(plan, "prochaines_etapes"),
+    }
+
+    # Exemple fil rouge
+    fil_rouge = {
+        "personnage": extract_tag(plan, "personnage"),
+        "situation_depart": extract_tag(plan, "situation_depart"),
+        "evolution": extract_tag(plan, "evolution"),
+    }
+
+    return {
+        "introduction": intro,
+        "chapitres": chapitres,
+        "conclusion": conclusion,
+        "exemple_fil_rouge": fil_rouge,
+        "_raw": text,
+    }
+
+
+def parse_structure_chapitres(text: str) -> list[dict]:
+    """
+    Parse la réponse de l'étape 3 (fiches de structure des chapitres).
+    """
+    blocs = extract_tag_with_attrs(text, "chapitre_structure")
+    chapitres = []
+
+    for bloc in blocs:
+        # Sections
+        section_blocs = extract_tag_with_attrs(bloc["content"], "section")
+        sections = []
+
+        for sb in section_blocs:
+            sections.append({
+                "numero": sb["attrs"].get("numero"),
+                "titre_section": extract_tag(sb["content"], "titre_section"),
+                "objectif": extract_tag(sb["content"], "objectif"),
+                "concept_cle": extract_tag(sb["content"], "concept_cle"),
+                "exemple": extract_tag(sb["content"], "exemple"),
+                "limite": extract_tag(sb["content"], "limite"),
+                "mots_cible": extract_tag(sb["content"], "mots_cible"),
+            })
+
+        # Fallback : si les sections n'ont pas d'attributs, essayer sans attributs
+        if not sections:
+            section_contents = extract_all_tags(bloc["content"], "section")
+            for i, sc in enumerate(section_contents, 1):
+                sections.append({
+                    "numero": str(i),
+                    "titre_section": extract_tag(sc, "titre_section"),
+                    "objectif": extract_tag(sc, "objectif"),
+                    "concept_cle": extract_tag(sc, "concept_cle"),
+                    "exemple": extract_tag(sc, "exemple"),
+                    "limite": extract_tag(sc, "limite"),
+                    "mots_cible": extract_tag(sc, "mots_cible"),
+                })
+
+        chapitres.append({
+            "numero": bloc["attrs"].get("numero"),
+            "titre": _clean_title_text(bloc["attrs"].get("titre")),
+            "sections": sections,
+            "total_mots_chapitre": extract_tag(bloc["content"], "total_mots_chapitre"),
+        })
+
+    return chapitres
+
+
+def parse_introduction(text: str) -> dict:
+    """
+    Parse la réponse de l'étape 4 (rédaction de l'introduction).
+    """
+    intro = extract_tag(text, "introduction") or text
+    return {
+        "intro": intro,
+        "_raw": text,
+    }
+
+
+def parse_section(text: str, chapitre: int, section: int) -> dict:
+    """
+    Parse la réponse de la rédaction d'une section.
+    Retourne un dict avec le numéro de chapitre, de section et le contenu.
+    """
+    contenu = extract_tag(text, "section") or text
+    return {
+        "chapitre": chapitre,
+        "section": section,
+        "contenu": contenu.strip(),
+    }
+
+
+def parse_resume(text: str, chapitre: int, section: int) -> dict:
+    """
+    Parse la fiche de coherence d'une section.
+    """
+    normalized_text = text.strip()
+    # Compatibilite: certains resumes historiques sont stockes comme une chaine JSON
+    # contenant le XML, ex: "<fiche>...".
+    try:
+        decoded = json.loads(normalized_text)
+        if isinstance(decoded, str):
+            normalized_text = decoded
+    except (json.JSONDecodeError, TypeError):
+        pass
+
+    fiche = extract_tag(normalized_text, "fiche") or normalized_text
+
+    def _as_list(value: Optional[str]) -> list[str]:
+        if not value:
+            return []
+        items = []
+        for line in value.splitlines():
+            cleaned = line.strip()
+            if not cleaned:
+                continue
+            cleaned = re.sub(r"^[-*]\s*", "", cleaned).strip()
+            if cleaned:
+                items.append(cleaned)
+        return items
+
+    return {
+        "chapitre": chapitre,
+        "section": section,
+        "chapitre_numero": extract_tag(fiche, "chapitre_numero"),
+        "section_numero": extract_tag(fiche, "section_numero"),
+        "these_centrale": _collapse_newlines(extract_tag(fiche, "these_centrale")),
+        "arguments_cles": _as_list(extract_tag(fiche, "arguments_cles")),
+        "concepts_introduits": _as_list(extract_tag(fiche, "concepts_introduits")),
+        "liens_chapitres": _collapse_newlines(extract_tag(fiche, "liens_chapitres")),
+        "a_ne_pas_repeter": _as_list(extract_tag(fiche, "a_ne_pas_repeter")),
+        "ton_angle": _collapse_newlines(extract_tag(fiche, "ton_angle")),
+        "_raw": normalized_text,
+    }
+
+
+def parse_conclusion(text: str) -> dict:
+    """
+    Parse la réponse de la rédaction de la conclusion.
+    """
+    conclusion = extract_tag(text, "conclusion") or text
+    return {
+        "conclusion": conclusion.strip(),
+        "_raw": text,
+    }
+
+
+def parse_filrouge(text: str) -> dict:
+    """
+    Parse la réponse de l'etape fil rouge.
+    Decoupe le texte a chaque marqueur [INSERTION CHAPITRE N SECTION N].
+    """
+    fil_rouge = extract_tag(text, "fil_rouge") or text
+
+    def _ensure_trailing_period(value: Optional[str]) -> Optional[str]:
+        """Ajoute un point final si le texte n'a pas deja une ponctuation de fin."""
+        if value is None:
+            return None
+        cleaned = value.strip()
+        if not cleaned:
+            return cleaned
+        if cleaned[-1] not in ".!?…":
+            return f"{cleaned}."
+        return cleaned
+
+    def _normalize_insertions(items: list) -> list[dict]:
+        normalized = []
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            try:
+                chapitre = int(item.get("chapitre"))
+                section = int(item.get("section"))
+            except (TypeError, ValueError):
+                continue
+            contenu = item.get("contenu")
+            if contenu is None:
+                contenu = item.get("passage")
+            normalized.append({
+                "chapitre": chapitre,
+                "section": section,
+                "contenu": _ensure_trailing_period(_collapse_newlines((contenu or "").strip())),
+            })
+        return normalized
+
+    def _parse_json_candidate(candidate: str):
+        try:
+            return json.loads(candidate)
+        except (json.JSONDecodeError, TypeError):
+            return None
+
+    raw_candidate = (fil_rouge or "").strip()
+    decoded = _parse_json_candidate(raw_candidate)
+    if isinstance(decoded, str):
+        raw_candidate = decoded.strip()
+        decoded = _parse_json_candidate(raw_candidate)
+
+    if raw_candidate.startswith("```"):
+        lines = raw_candidate.splitlines()
+        if lines:
+            lines = lines[1:]
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        fenced_payload = "\n".join(lines).strip()
+        fenced_decoded = _parse_json_candidate(fenced_payload)
+        if fenced_decoded is not None:
+            decoded = fenced_decoded
+            raw_candidate = fenced_payload
+
+    if isinstance(decoded, dict):
+        insertions = _normalize_insertions(decoded.get("insertions", []))
+        if insertions:
+            return {
+                "fil_rouge": _collapse_newlines(raw_candidate),
+                "insertions": insertions,
+                "_raw": text,
+            }
+
+    if isinstance(decoded, list):
+        insertions = _normalize_insertions(decoded)
+        if insertions:
+            return {
+                "fil_rouge": _collapse_newlines(raw_candidate),
+                "insertions": insertions,
+                "_raw": text,
+            }
+
+    marker_pattern = re.compile(
+        r"\[\s*INSERTION\s+CHAPITRE\s+(\d+)\s+SECTION\s+(\d+)\s*]",
+        re.IGNORECASE,
+    )
+    matches = list(marker_pattern.finditer(fil_rouge))
+
+    if not matches:
+        return {
+            "fil_rouge": _collapse_newlines(fil_rouge.strip()),
+            "insertions": [],
+            "_raw": text,
+        }
+
+    insertions = []
+
+    for i, match in enumerate(matches):
+        start = match.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(fil_rouge)
+        contenu = fil_rouge[start:end].strip()
+
+        insertions.append({
+            "chapitre": int(match.group(1)),
+            "section": int(match.group(2)),
+            "contenu": _ensure_trailing_period(_collapse_newlines(contenu)),
+        })
+
+    return {
+        "fil_rouge": _collapse_newlines(fil_rouge.strip()),
+        "insertions": insertions,
+        "_raw": text,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Export JSON
+# ---------------------------------------------------------------------------
+
+def to_json(data: Union[dict, list], indent: int = 2) -> str:
+    """
+    Sérialise un résultat parsé (dict ou list) en chaîne JSON.
+
+    >>> to_json({"sujet": "Test"})
+    '{\\n  "sujet": "Test"\\n}'
+    """
+    return json.dumps(data, ensure_ascii=False, indent=indent)
+
+
+def to_json_file(data: Union[dict, list], path: Union[str, Path], indent: int = 2) -> Path:
+    """
+    Écrit un résultat parsé dans un fichier JSON.
+    Crée les dossiers parents si nécessaire.
+    Retourne le Path du fichier créé.
+
+    >>> import tempfile, os
+    >>> p = to_json_file({"sujet": "Test"}, os.path.join(tempfile.gettempdir(), "test.json"))
+    >>> p.exists()
+    True
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=indent), encoding="utf-8")
+    return path
+
+
+def clean_plan_detaille_titles_in_file(path: Union[str, Path]) -> int:
+    """
+    Nettoie les asterisques markdown dans les titres de chapitres
+    d'un plan_detaille.json deja ecrit sur disque.
+
+    Retourne le nombre de titres modifies.
+    """
+    filepath = Path(path)
+    payload = read_json_file(filepath, "plan detaille", require_non_empty=True)
+
+    if not isinstance(payload, dict):
+        raise ValueError(f"Le fichier {filepath} doit contenir un objet JSON.")
+
+    chapitres = payload.get("chapitres")
+    if not isinstance(chapitres, list):
+        raise ValueError("Le plan detaille doit contenir une liste 'chapitres'.")
+
+    updates = 0
+    for chapitre in chapitres:
+        if not isinstance(chapitre, dict):
+            continue
+        titre = chapitre.get("titre")
+        cleaned_title = _clean_title_text(titre)
+        if cleaned_title != titre:
+            chapitre["titre"] = cleaned_title
+            updates += 1
+
+    filepath.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return updates
+
+
+# ---------------------------------------------------------------------------
+# Extraction de blocs XML bruts
+# ---------------------------------------------------------------------------
+
+def extract_xml_block(text: str, tag_name: str) -> Optional[str]:
+    """
+    Extrait un bloc XML complet (balise ouvrante + contenu + balise fermante)
+    sans le parser. Retourne None si la balise n'est pas trouvée.
+
+    >>> extract_xml_block("<root><sujet>Mon sujet</sujet></root>", "sujet")
+    '<sujet>Mon sujet</sujet>'
+    """
+    pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
+    match = re.search(pattern, text, re.DOTALL)
+    return match.group(1).strip() if match else None
+
+
+def extract_all_xml_blocks(text: str, tag_name: str) -> list[str]:
+    """
+    Extrait tous les blocs XML complets pour une balise donnée,
+    avec balises incluses.
+
+    >>> extract_all_xml_blocks("<a>1</a><a>2</a>", "a")
+    ['<a>1</a>', '<a>2</a>']
+    """
+    pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
+    return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]

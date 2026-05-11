@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables globales</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+{% include "components/dropdown-menu.html" %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="table-container">
+
+        <h1>Variables globales</h1>
+
+        <!-- 🔘 boutons -->
+        <button type="button" onclick="toggleEdit()" class="btn-primary">
+            ✏️ Modifier
+        </button>
+
+        <button type="submit" id="saveBtn" class="btn-primary" style="display:none;">
+            💾 Enregistrer
+        </button>
+
+        <button type="button" onclick="cancelEdit()" id="cancelBtn" class="btn-secondary" style="display:none;">
+            ❌ Annuler
+        </button>
+
+        <div class="accordion">
+
+            <!-- NB CHAPITRES -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-header">
+                    Nombre de chapitres
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="view-mode">
+                        {{ nb_chapitre|default:"Non défini" }}
+                    </div>
+
+                    <input class="edit-mode"
+                           type="number"
+                           name="nb_chapitre"
+                           value="{{ nb_chapitre }}"
+                           style="display:none; width:100%;">
+                </div>
+            </div>
+
+            <!-- NB MOTS -->
+            <div class="accordion-item">
+                <button type="button" class="accordion-header">
+                    Nombre de mots cible
+                </button>
+
+                <div class="accordion-content">
+
+                    <div class="view-mode">
+                        {{ nb_mots_cible|default:"Non défini" }}
+                    </div>
+
+                    <input class="edit-mode"
+                           type="number"
+                           name="nb_mots_cible"
+                           value="{{ nb_mots_cible }}"
+                           style="display:none; width:100%;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</form>
+
+{% include "components/status.html" %}
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        content.classList.toggle("open");
+    });
+});
+
+let initialValues = {};
+
+function toggleEdit() {
+    const views = document.querySelectorAll(".view-mode");
+    const edits = document.querySelectorAll(".edit-mode");
+
+    const saveBtn = document.getElementById("saveBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    edits.forEach((el, index) => {
+        initialValues[index] = el.value;
+    });
+
+    views.forEach(v => v.style.display = "none");
+    edits.forEach(e => e.style.display = "block");
+
+    saveBtn.style.display = "inline-block";
+    cancelBtn.style.display = "inline-block";
+}
+
+function cancelEdit() {
+    const views = document.querySelectorAll(".view-mode");
+    const edits = document.querySelectorAll(".edit-mode");
+
+    const saveBtn = document.getElementById("saveBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    edits.forEach((el, index) => {
+        if (initialValues[index] !== undefined) {
+            el.value = initialValues[index];
+        }
+    });
+
+    views.forEach(v => v.style.display = "block");
+    edits.forEach(e => e.style.display = "none");
+
+    saveBtn.style.display = "none";
+    cancelBtn.style.display = "none";
+}
+</script>
+
+</body>
+</html>

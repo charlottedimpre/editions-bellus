@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan détaillé</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-muted min-h-screen p-4">
+
+{% include "components/dropdown-menu.html" %}
+
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+  <!-- STEPPER -->
+  {% include "components/progress-bar.html" %}
+
+  <!-- MAIN CARD -->
+  <div class="bg-background border border-border rounded-xl p-4">
+
+    <!-- Titre + Marquer comme complétée -->
+    <div class="flex justify-between items-start mb-1">
+      <div>
+        <h2 class="text-xl font-bold text-foreground">Plan détaillé</h2>
+        <p class="text-sm text-muted-foreground mt-0.5 mb-4">Structure détaillée du document</p>
+      </div>
+      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
+        ✓ Marquer comme complétée
+      </button>
+    </div>
+
+    <!-- Nav Précédent / contexte / Suivant -->
+    <div class="flex justify-between items-center mb-6">
+      <a href="?step={{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        ‹ Précédent
+      </a>
+      <span class="text-xs text-muted-foreground">← Recherches Web &nbsp;|&nbsp; Structure →</span>
+      <a href="?step={{ next_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        Suivant ›
+      </a>
+    </div>
+
+    <form method="POST">
+    {% csrf_token %}
+
+    <!-- Séparateur + Bouton Modifier -->
+    <div class="py-4">
+      <hr class="border-t border-border mb-4">
+      <div class="flex gap-2">
+        <button type="button" onclick="toggleEdit()"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 flex items-center gap-1.5 font-medium">
+          ✏️ Modifier
+        </button>
+        <button type="submit" id="saveBtn"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 hidden items-center gap-1.5 font-medium">
+          💾 Enregistrer
+        </button>
+        <button type="button" onclick="cancelEdit()" id="cancelBtn"
+          class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted hidden items-center gap-1.5">
+          ❌ Annuler
+        </button>
+      </div>
+    </div>
+
+    <!-- Champs -->
+    <div class="flex flex-col gap-2.5">
+
+      <!-- INTRODUCTION -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-3">Introduction</div>
+        <div class="flex flex-col gap-3">
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Contexte</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ introduction.contexte|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="contexte" rows="3">{{ introduction.contexte }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Importance</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ introduction.importance|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="importance" rows="3">{{ introduction.importance }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Adressé à</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ introduction.adresse_a|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="adresse_a" rows="3">{{ introduction.adresse_a }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Organisation</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ introduction.organisation|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="organisation" rows="3">{{ introduction.organisation }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Promesse</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ introduction.promesse|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="promesse" rows="3">{{ introduction.promesse }}</textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHAPITRES -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-3">Chapitres</div>
+        <div class="flex flex-col gap-3">
+
+          {% for chap in chapitres %}
+          <div class="border border-border rounded-lg p-4">
+            <div class="text-sm font-medium text-foreground mb-3">
+              Chapitre {{ chap.numero }} — {{ chap.titre }}
+            </div>
+
+            <div class="flex flex-col gap-3">
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Traite</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ chap.traite|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="traite_{{ chap.id }}" rows="3">{{ chap.traite }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Ne traite pas</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ chap.ne_traite_pas|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="ne_traite_pas_{{ chap.id }}" rows="3">{{ chap.ne_traite_pas }}</textarea>
+              </div>
+
+              <div>
+                <div class="text-xs text-muted-foreground mb-1">Pourquoi distinct</div>
+                <div class="view-mode text-sm text-muted-foreground italic">{{ chap.pourquoi_distinct|default:"Non renseigné" }}</div>
+                <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="pourquoi_{{ chap.id }}" rows="3">{{ chap.pourquoi_distinct }}</textarea>
+              </div>
+
+            </div>
+          </div>
+          {% empty %}
+          <p class="text-sm text-muted-foreground italic">Aucun chapitre</p>
+          {% endfor %}
+
+        </div>
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-3">Conclusion</div>
+        <div class="flex flex-col gap-3">
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Synthèse</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ conclusion.synthese|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="synthese" rows="3">{{ conclusion.synthese }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Logique d'ensemble</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ conclusion.logique_ensemble|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="logique_ensemble" rows="3">{{ conclusion.logique_ensemble }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Prochaines étapes</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ conclusion.prochaines_etapes|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="prochaines_etapes" rows="3">{{ conclusion.prochaines_etapes }}</textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FIL ROUGE -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-3">Fil rouge</div>
+        <div class="flex flex-col gap-3">
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Personnage</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ fil_rouge.personnage|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="personnage" rows="3">{{ fil_rouge.personnage }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Situation de départ</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ fil_rouge.situation_depart|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="situation_depart" rows="3">{{ fil_rouge.situation_depart }}</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-muted-foreground mb-1">Évolution</div>
+            <div class="view-mode text-sm text-muted-foreground italic">{{ fil_rouge.evolution|default:"Non renseigné" }}</div>
+            <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="evolution" rows="3">{{ fil_rouge.evolution }}</textarea>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Lancer le processus -->
+    <button type="button" onclick="lancer_plan_details()" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+      ▶ Lancer le processus
+    </button>
+
+    </form>
+  </div>
+
+</div>
+
+{% include 'components/status.html' %}
+
+<script>
+    function lancer_plan_details(){
+    fetch("/plan_details/")
+}
+
+let initialValues = {};
+
+function toggleEdit() {
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.add("hidden"));
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { initialValues[i] = e.value; e.classList.remove("hidden"); });
+  document.getElementById("saveBtn").classList.remove("hidden");
+  document.getElementById("saveBtn").classList.add("flex");
+  document.getElementById("cancelBtn").classList.remove("hidden");
+  document.getElementById("cancelBtn").classList.add("flex");
+}
+
+function cancelEdit() {
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { if (initialValues[i] !== undefined) e.value = initialValues[i]; e.classList.add("hidden"); });
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.remove("hidden"));
+  document.getElementById("saveBtn").classList.add("hidden");
+  document.getElementById("cancelBtn").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>

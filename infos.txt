@@ -1,0 +1,7 @@
+source .env/Scripts/activate
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+urls.py -> routes
+settings.py -> les paramètres de notre application

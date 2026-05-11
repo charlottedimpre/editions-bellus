@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include "components/dropdown-menu.html" %}
+    <div class="container">
+        <h1>Menu Proccessus</h1>
+        <a href="/fiche-cadrage/" class="btn btn-secondary">Fiche cadrage</a>
+        <button onclick="recherches_web()" class="btn btn-secondary">Recherches Web</button>
+        <button onclick="plan_details()" class="btn btn-secondary">Plan details</button>
+        <button onclick="structure()" class="btn btn-secondary">Structure</button>
+        <button onclick="introduction()" class="btn btn-secondary">Introduction</button>
+        <button onclick="generation()" class="btn btn-secondary">Génération sections</button>
+        <button onclick="conclusion()" class="btn btn-secondary">Conclusion</button>
+        <button onclick="export_pdf()" class="btn btn-secondary">Export PDF</button>
+    </div>
+<script>
+
+
+
+
+
+
+
+function export_pdf(){
+    fetch("export/")
+}
+
+</script>
+{% include "components/status.html" %}
+</body>
+</html>

@@ -1,0 +1,72 @@
+<div class="bg-background border border-border rounded-lg p-4 pb-3">
+
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-4">
+    <div class="flex items-center gap-2.5">
+      <span class="text-sm font-medium text-foreground">Progression du projet</span>
+      <span class="text-[11px] text-green-700 flex items-center gap-1">
+        ✔ Sauvegardé automatiquement
+      </span>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-xs text-muted-foreground">Étape {{ current_step }} / {{ etapes|length }}</span>
+      <div class="w-16 h-1 bg-muted rounded-full overflow-hidden">
+        <div class="h-full bg-foreground rounded-full transition-all" style="width: {{ progress_pct }}%;"></div>
+      </div>
+      <span class="text-[11px] text-muted-foreground">{{ progress_pct }}%</span>
+    </div>
+  </div>
+
+  <!-- Stepper -->
+  <div class="flex items-center w-full overflow-x-auto scrollbar-none">
+    {% for step in etapes %}
+
+      {% if not forloop.first %}
+        <div class="flex-1 h-px bg-border min-w-1 mb-[18px]"></div>
+      {% endif %}
+
+      <a href="{{ step.link }}">
+      <div class="flex flex-col items-center flex-1 min-w-[50px] cursor-pointer">
+
+        <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center text-xs font-medium border
+          {% if step.num == current_step %}
+            bg-primary text-primary-foreground border-primary
+          {% elif step.num < current_step %}
+            bg-muted text-muted-foreground border-border
+          {% else %}
+            bg-background text-muted-foreground border-border
+          {% endif %}
+        ">{{ step.num }}</div>
+        <span class="text-[10px] text-center mt-1.5 leading-tight max-w-[56px]
+          {% if step.num == current_step %}
+            text-foreground font-medium
+          {% else %}
+            text-muted-foreground
+          {% endif %}
+        ">{{ step.label }}</span>
+
+      </div>
+      </a>
+
+    {% endfor %}
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex justify-center items-center gap-1.5 pt-2.5 pb-0.5">
+    <a href="{{ prev_step }}" class="w-[22px] h-[22px] rounded-full border border-border bg-background flex items-center justify-center text-foreground hover:bg-muted text-sm no-underline">‹</a>
+    <span class="text-muted-foreground">/</span>
+    <a href="{{ next_step }}" class="w-[22px] h-[22px] rounded-full border border-border bg-background flex items-center justify-center text-foreground hover:bg-muted text-sm no-underline">›</a>
+    <span class="text-[11px] text-muted-foreground ml-1">pour naviguer entre les étapes</span>
+  </div>
+
+</div>
+<script>
+document.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowLeft") {
+    window.location.href = "{{ prev_step }}";
+  }
+  if (e.key === "ArrowRight") {
+    window.location.href = "{{ next_step }}";
+  }
+});
+</script>

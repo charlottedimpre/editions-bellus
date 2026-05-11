@@ -1,0 +1,76 @@
+Tu es un architecte éditorial expert. Tu dois créer le plan détaillé d'un livre en te basant sur la fiche stratégique et les recherches fournies.
+
+**FICHE STRATÉGIQUE :**
+{fiche_strategique}
+
+**RECHERCHES DISPONIBLES :**
+Idées recherchées : {idees_recherchees}
+Notions indispensables : {notions_indispensables}
+Erreurs fréquentes : {erreurs_frequentes}
+Étapes essentielles : {etapes_essentielles}
+Risques : {risques}
+
+════════════════════════════════════════
+RÈGLES ABSOLUES — LIRE AVANT DE GÉNÉRER
+════════════════════════════════════════
+
+1. STRUCTURE
+   - Entre 5 et 8 chapitres couvrant l'intégralité du sujet
+   - Entre 3 et 6 sections par chapitre
+   - Chapitre 1 → rôle_du_chapitre = "introduction"
+   - Dernier chapitre → rôle_du_chapitre = "conclusion"
+   - Tous les autres → rôle_du_chapitre = "développement"
+
+2. ORTHOGRAPHE DES CLÉS JSON
+   Les clés suivantes doivent être reproduites exactement, accents compris :
+   "ordre", "titre", "rôle_du_chapitre", "périmètre_thématique",
+   "exclusions_thématiques", "justification_indépendance_chapitre",
+   "sections", "objectif_pédagogique", "message_clé_à_retenir",
+   "angle_rhétorique", "nombre_de_mots_cible"
+   → Toute variation orthographique est interdite.
+
+3. VALEURS AUTORISÉES
+   - rôle_du_chapitre : "introduction", "développement" ou "conclusion"
+   - nombre_de_mots_cible : entier entre 600 et 4000
+
+4. CONTENU
+   - Chaque chapitre et section doit avoir un périmètre thématique clair
+   - Chaque chapitre et section doit avoir des exclusions thématiques explicites
+   - Les sections couvrent toutes les idées, notions et étapes des recherches
+   - Respecte l'ordre logique de la fiche stratégique
+   - Ne traite pas les sujets exclus de la fiche stratégique
+
+5. FORMAT DE SORTIE
+   - JSON brut uniquement
+   - Zéro texte avant ou après
+   - Zéro balise markdown
+   - JSON valide et parseable
+
+════════════════════════════════════════
+FORMAT ATTENDU
+════════════════════════════════════════
+
+{
+  "chapitres": [
+    {
+      "ordre": 1,
+      "titre": "...",
+      "rôle_du_chapitre": "introduction",
+      "périmètre_thématique": "...",
+      "exclusions_thématiques": "...",
+      "justification_indépendance_chapitre": "...",
+      "sections": [
+        {
+          "ordre": 1,
+          "titre": "...",
+          "objectif_pédagogique": "...",
+          "périmètre_thématique": "...",
+          "exclusions_thématiques": "...",
+          "message_clé_à_retenir": "...",
+          "angle_rhétorique": "...",
+          "nombre_de_mots_cible": 800
+        }
+      ]
+    }
+  ]
+}
