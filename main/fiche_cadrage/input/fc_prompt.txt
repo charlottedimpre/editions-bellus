@@ -22,7 +22,10 @@ Respecte EXACTEMENT ce format :
 </hors_perimetre>
 
 <contraintes_specifiques>
-- Le ton doit rester incarnée, pédagogique mais tranchante, responsabilisante
+- Voix d'ami qui a vécu la même chose et qui conseille avec bienveillance, sans posture d'expert
+- Ton clair, simple et direct (niveau grand public), jamais soutenu ni académique
+- Vocabulaire courant et phrases de longueur moyenne
+- Le ton doit rester incarné, pédagogique mais tranchant, responsabilisant
 - Mention des risques
 - Mention des limites
 - Mention des erreurs fréquentes
