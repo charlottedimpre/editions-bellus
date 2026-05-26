@@ -3,25 +3,19 @@
   "section": 3,
   "chapitre_numero": "2",
   "section_numero": "3",
-  "these_centrale": "Le refroidissement immédiat et prolongé est primordial pour limiter les lésions des brûlures, la douleur étant gérée par distraction.",
+  "these_centrale": "La charge mentale dans une relation TDAH épuise le partenaire par la compensation constante des fonctions exécutives défaillantes.",
   "arguments_cles": [
-    "Dissiper la chaleur prime sur la gestion immédiate de la douleur.",
-    "Distraire la victime est une stratégie efficace pour supporter la douleur.",
-    "Surélever un membre brûlé peut réduire pulsation douloureuse et gonflement.",
-    "Les antalgiques oraux sont inefficaces durant la phase initiale de refroidissement."
+    "La majorité des tâches reposent sur un seul partenaire.",
+    "Les promesses oubliées et les engagements non tenus épuisent.",
+    "Les fonctions exécutives altérées expliquent le passage à l'acte difficile.",
+    "La compensation constante crée un déséquilibre dommageable pour le bien-être."
   ],
   "concepts_introduits": [
-    "Refroidissement : Processus d'abaissement de la température corporelle.",
-    "Dissipation de la chaleur : Élimination de l'énergie thermique d'une zone.",
-    "Lésions tissulaires : Dommages causés aux cellules et structures corporelles.",
-    "Inflammation : Réaction du corps à une agression ou blessure."
+    "Charge mentale : fardeau invisible des tâches relationnelles et familiales.",
+    "Fonctions exécutives : processus cognitifs de planification, organisation, mémoire de travail."
   ],
-  "liens_chapitres": "- Non défini",
-  "a_ne_pas_repeter": [
-    "Ne pas interrompre le refroidissement trop rapidement.",
-    "Ne pas recourir aux médicaments antalgiques pendant le refroidissement.",
-    "Ne pas appliquer de pression ou masser la brûlure."
-  ],
-  "ton_angle": "Pragmatique et pédagogique, soulignant l'urgence du refroidissement et les techniques de gestion.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Le refroidissement immédiat et prolongé est primordial pour limiter les lésions des brûlures, la douleur étant gérée par distraction.</these_centrale>\n<arguments_cles>\n- Dissiper la chaleur prime sur la gestion immédiate de la douleur.\n- Distraire la victime est une stratégie efficace pour supporter la douleur.\n- Surélever un membre brûlé peut réduire pulsation douloureuse et gonflement.\n- Les antalgiques oraux sont inefficaces durant la phase initiale de refroidissement.\n</arguments_cles>\n<concepts_introduits>\n- Refroidissement : Processus d'abaissement de la température corporelle.\n- Dissipation de la chaleur : Élimination de l'énergie thermique d'une zone.\n- Lésions tissulaires : Dommages causés aux cellules et structures corporelles.\n- Inflammation : Réaction du corps à une agression ou blessure.\n</concepts_introduits>\n<liens_chapitres>\n- Non défini\n</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas interrompre le refroidissement trop rapidement.\n- Ne pas recourir aux médicaments antalgiques pendant le refroidissement.\n- Ne pas appliquer de pression ou masser la brûlure.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et pédagogique, soulignant l'urgence du refroidissement et les techniques de gestion.</ton_angle>\n</fiche>"
+  "liens_chapitres": "Aucun",
+  "a_ne_pas_repeter": [],
+  "ton_angle": "L'analyse identifie les sources d'épuisement et le rôle passif du partenaire face au TDAH.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La charge mentale dans une relation TDAH épuise le partenaire par la compensation constante des fonctions exécutives défaillantes.</these_centrale>\n<arguments_cles>\n- La majorité des tâches reposent sur un seul partenaire.\n- Les promesses oubliées et les engagements non tenus épuisent.\n- Les fonctions exécutives altérées expliquent le passage à l'acte difficile.\n- La compensation constante crée un déséquilibre dommageable pour le bien-être.\n</arguments_cles>\n<concepts_introduits>\n- Charge mentale : fardeau invisible des tâches relationnelles et familiales.\n- Fonctions exécutives : processus cognitifs de planification, organisation, mémoire de travail.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le poids de la relation à vous seule\n- Poids invisible mais bien réel\n- Sans qu'il y ait à le rappeler dix fois\n- Brouillard où la fiabilité est rare\n- Véritable parcours du combattant\n- Aller au bout se heurtent à des obstacles internes\n- Vous ne vous accordez plus de répit\n</a_ne_not_repeat>\n<ton_angle>L'analyse identifie les sources d'épuisement et le rôle passif du partenaire face au TDAH.</ton_angle>\n</fiche>"
 }

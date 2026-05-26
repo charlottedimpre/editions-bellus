@@ -3,23 +3,27 @@
   "section": 4,
   "chapitre_numero": "4",
   "section_numero": "4",
-  "these_centrale": "Les traitements pharmaceutiques modernes favorisent la guérison des brûlures bénignes en créant un environnement optimal pour la réparation tissulaire.",
+  "these_centrale": "Un environnement ordonné et sans distractions favorise le bien-être et la concentration des personnes atteintes de TDAH.",
   "arguments_cles": [
-    "La Biafine hydrate et maintient la souplesse de la peau lésée.",
-    "Les pansements hydrocolloïdes créent un milieu humide favorisant la régénération.",
-    "Ces produits s'appuient sur la physiologie pour une guérison optimisée.",
-    "Le choix adapté des traitements assure une protection et guérison efficaces."
+    "Réduire les distractions visuelles et sonores minimise la surcharge cognitive.",
+    "Désigner des zones pour les objets courants libère de l'énergie précieuse.",
+    "Un espace organisé agit comme un havre de paix pour une attention fluctuante.",
+    "Les routines de rangement créent prévisibilité et réduisent la charge mentale.",
+    "Un environnement favorable influence positivement le comportement et le bien-être."
   ],
   "concepts_introduits": [
-    "Biafine : Émulsion favorisant l'hydratation cutanée et la réparation.",
-    "Pansements hydrocolloïdes : Pansements créant un milieu humide contrôlé.",
-    "Régénération tissulaire : Processus de reconstitution des tissus endommagés."
+    "Surcharge cognitive : trop d'informations submergeant les capacités de traitement.",
+    "Attention fluctuante : difficulté à maintenir la concentration sur une tâche.",
+    "Charge mentale : effort cognitif pour gérer les tâches et décisions quotidiennes."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Remèdes traditionnels",
-    "Croyances populaires"
+    "L'impact n'est pas anodin.",
+    "Le reflet de l'ordre intérieur/extérieur.",
+    "Un musée aseptisé.",
+    "Une lutte permanente.",
+    "L'idée que chaque geste compte."
   ],
-  "ton_angle": "Informatif et pragmatique, axé sur les bénéfices scientifiques des traitements.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les traitements pharmaceutiques modernes favorisent la guérison des brûlures bénignes en créant un environnement optimal pour la réparation tissulaire.</these_centrale>\n<arguments_cles>\n- La Biafine hydrate et maintient la souplesse de la peau lésée.\n- Les pansements hydrocolloïdes créent un milieu humide favorisant la régénération.\n- Ces produits s'appuient sur la physiologie pour une guérison optimisée.\n- Le choix adapté des traitements assure une protection et guérison efficaces.\n</arguments_cles>\n<concepts_introduits>\n- Biafine : Émulsion favorisant l'hydratation cutanée et la réparation.\n- Pansements hydrocolloïdes : Pansements créant un milieu humide contrôlé.\n- Régénération tissulaire : Processus de reconstitution des tissus endommagés.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Remèdes traditionnels\n- Croyances populaires\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, axé sur les bénéfices scientifiques des traitements.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et bienveillant, mettant en avant les bénéfices concrets de l'organisation.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Un environnement ordonné et sans distractions favorise le bien-être et la concentration des personnes atteintes de TDAH.</these_centrale>\n<arguments_cles>\n- Réduire les distractions visuelles et sonores minimise la surcharge cognitive.\n- Désigner des zones pour les objets courants libère de l'énergie précieuse.\n- Un espace organisé agit comme un havre de paix pour une attention fluctuante.\n- Les routines de rangement créent prévisibilité et réduisent la charge mentale.\n- Un environnement favorable influence positivement le comportement et le bien-être.\n</arguments_cles>\n<concepts_introduits>\n- Surcharge cognitive : trop d'informations submergeant les capacités de traitement.\n- Attention fluctuante : difficulté à maintenir la concentration sur une tâche.\n- Charge mentale : effort cognitif pour gérer les tâches et décisions quotidiennes.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'impact n'est pas anodin.\n- Le reflet de l'ordre intérieur/extérieur.\n- Un musée aseptisé.\n- Une lutte permanente.\n- L'idée que chaque geste compte.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et bienveillant, mettant en avant les bénéfices concrets de l'organisation.</ton_angle>\n</fiche>"
 }

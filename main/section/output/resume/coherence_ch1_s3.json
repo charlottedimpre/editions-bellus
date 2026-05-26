@@ -3,18 +3,21 @@
   "section": 3,
   "chapitre_numero": "1",
   "section_numero": "3",
-  "these_centrale": "L'évaluation précise de la taille d'une brûlure est déterminante pour le pronostic et la prise en charge médicale nécessaire.",
+  "these_centrale": "Le TDAH chez l'adulte se manifeste par une triade complexe d'inattention, d'hyperactivité et d'impulsivité dont l'expression est unique à chacun.",
   "arguments_cles": [
-    "La mesure de surface de la brûlure indique le pronostic et le besoin d'intervention.",
-    "La règle des 9% facilite l'estimation rapide de la surface brûlée par zones.",
-    "Des seuils spécifiques de surface brûlée déclenchent la nécessité d'une consultation médicale.",
-    "L'âge de la victime modifie les seuils d'alerte pour une consultation médicale."
+    "L'inattention est une difficulté à soutenir l'attention, pas un manque de volonté.",
+    "L'hyperactivité peut être interne, une agitation difficile à contenir.",
+    "L'impulsivité se traduit par des actions hâtives sans considération des conséquences.",
+    "Ces symptômes s'entremêlent et varient grandement d'une personne à l'autre."
   ],
   "concepts_introduits": [
-    "Règle des 9% : méthode d'estimation de la surface corporelle brûlée."
+    "TDAH : Trouble neurologique affectant l'attention, l'hyperactivité et l'impulsivité.",
+    "Inattention : Difficulté à maintenir la concentration et à organiser.",
+    "Hyperactivité : Sensation interne ou externe d'agitation constante.",
+    "Impulsivité : Actions sans réflexion préalable sur les conséquences."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [],
-  "ton_angle": "Informel et didactique, soulignant l'importance pratique de l'évaluation.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'évaluation précise de la taille d'une brûlure est déterminante pour le pronostic et la prise en charge médicale nécessaire.</these_centrale>\n<arguments_cles>\n- La mesure de surface de la brûlure indique le pronostic et le besoin d'intervention.\n- La règle des 9% facilite l'estimation rapide de la surface brûlée par zones.\n- Des seuils spécifiques de surface brûlée déclenchent la nécessité d'une consultation médicale.\n- L'âge de la victime modifie les seuils d'alerte pour une consultation médicale.\n</arguments_cles>\n<concepts_introduits>\n- Règle des 9% : méthode d'estimation de la surface corporelle brûlée.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Ne pas négliger la dimension de la brûlure.\n- L'importance de l'évaluation proportionnelle sur le corps.\n</a_ne_not_repeter>\n<ton_angle>Informel et didactique, soulignant l'importance pratique de l'évaluation.</ton_angle>\n</fiche>"
+  "ton_angle": "Le ton est informatif et empathique, expliquant les symptômes du TDAH adulte.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Le TDAH chez l'adulte se manifeste par une triade complexe d'inattention, d'hyperactivité et d'impulsivité dont l'expression est unique à chacun.</these_centrale>\n<arguments_cles>\n- L'inattention est une difficulté à soutenir l'attention, pas un manque de volonté.\n- L'hyperactivité peut être interne, une agitation difficile à contenir.\n- L'impulsivité se traduit par des actions hâtives sans considération des conséquences.\n- Ces symptômes s'entremêlent et varient grandement d'une personne à l'autre.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble neurologique affectant l'attention, l'hyperactivité et l'impulsivité.\n- Inattention : Difficulté à maintenir la concentration et à organiser.\n- Hyperactivité : Sensation interne ou externe d'agitation constante.\n- Impulsivité : Actions sans réflexion préalable sur les conséquences.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'attention est une ressource limitée.\n- Une action réfléchie demande du temps.\n- Le TDAH est unique à chaque personne.\n</a_ne_ne_pas_repeter>\n<ton_angle>Le ton est informatif et empathique, expliquant les symptômes du TDAH adulte.</ton_angle>\n</fiche>"
 }

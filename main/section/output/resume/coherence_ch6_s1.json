@@ -3,27 +3,21 @@
   "section": 1,
   "chapitre_numero": "6",
   "section_numero": "1",
-  "these_centrale": "Identifier les signes d'alerte d'une brûlure est essentiel pour une prise en charge médicale rapide et éviter les complications.",
+  "these_centrale": "Reconnaître et agir sur les signes d'épuisement est essentiel pour maintenir son bien-être et l'équilibre relationnel.",
   "arguments_cles": [
-    "Douleur intense et persistante, inhabituelle, indiquant une atteinte profonde des nerfs.",
-    "Apparition de cloques nombreuses, grandes, ou sur zones sensibles.",
-    "Atteinte de zones critiques : visage, yeux, gorge, mains, pieds, articulations, organes génitaux.",
-    "Aspect de la peau : blanche, cireuse, brune, noire, sèche, insensible.",
-    "Brûlure étendu, surtout chez populations fragiles, est une urgence."
+    "Identifier les signes d'épuisement physique et émotionnel est la première étape.",
+    "Laisser s'accumuler les tâches invisibles vide les réserves d'énergie.",
+    "Le droit au répit est une nécessité vitale pour recharger ses batteries.",
+    "Demander de l'aide est une stratégie intelligente pour préserver son énergie."
   ],
   "concepts_introduits": [
-    "Brûlure superficielle : Lésion cutanée de premier degré.",
-    "Signes d'alerte : Indicateurs de gravité nécessitant une attention médicale.",
-    "Cloque : Petite poche de liquide sous la peau.",
-    "Infections sévères : Contaminations bactériennes graves de la plaie.",
-    "Brûlure profonde : Lésion atteignant plusieurs couches de la peau."
+    "Épuisement : Déclin d'énergie physique et émotionnelle, fatigue persistante.",
+    "Signaux d'alerte : Irritabilité, manque de ressources, perte d'intérêt.",
+    "Droit au répit : Pauses décompressantes pour retrouver l'équilibre.",
+    "Aide : Stratégie intelligente, allège la charge mentale et physique."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Il est crucial de reconnaître ces indicateurs.",
-    "Ignorer ces signaux peut aggraver les conséquences.",
-    "Signe d'une brûlure sérieuse."
-  ],
-  "ton_angle": "Ton informatif et préventif, axé sur la reconnaissance des dangers.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Identifier les signes d'alerte d'une brûlure est essentiel pour une prise en charge médicale rapide et éviter les complications.</these_centrale>\n<arguments_cles>\n- Douleur intense et persistante, inhabituelle, indiquant une atteinte profonde des nerfs.\n- Apparition de cloques nombreuses, grandes, ou sur zones sensibles.\n- Atteinte de zones critiques : visage, yeux, gorge, mains, pieds, articulations, organes génitaux.\n- Aspect de la peau : blanche, cireuse, brune, noire, sèche, insensible.\n- Brûlure étendu, surtout chez populations fragiles, est une urgence.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure superficielle : Lésion cutanée de premier degré.\n- Signes d'alerte : Indicateurs de gravité nécessitant une attention médicale.\n- Cloque : Petite poche de liquide sous la peau.\n- Infections sévères : Contaminations bactériennes graves de la plaie.\n- Brûlure profonde : Lésion atteignant plusieurs couches de la peau.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Il est crucial de reconnaître ces indicateurs.\n- Ignorer ces signaux peut aggraver les conséquences.\n- Signe d'une brûlure sérieuse.\n</a_ne_pas_repeter>\n<ton_angle>Ton informatif et préventif, axé sur la reconnaissance des dangers.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Ton préventif et encourageant, avec un angle axé sur l'auto-préservation.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Reconnaître et agir sur les signes d'épuisement est essentiel pour maintenir son bien-être et l'équilibre relationnel.</these_centrale>\n<arguments_cles>\n- Identifier les signes d'épuisement physique et émotionnel est la première étape.\n- Laisser s'accumuler les tâches invisibles vide les réserves d'énergie.\n- Le droit au répit est une nécessité vitale pour recharger ses batteries.\n- Demander de l'aide est une stratégie intelligente pour préserver son énergie.\n</arguments_cles>\n<concepts_introduits>\n- Épuisement : Déclin d'énergie physique et émotionnelle, fatigue persistante.\n- Signaux d'alerte : Irritabilité, manque de ressources, perte d'intérêt.\n- Droit au répit : Pauses décompressantes pour retrouver l'équilibre.\n- Aide : Stratégie intelligente, allège la charge mentale et physique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le poids invisible des tâches cumulées\n- Le réservoir d'énergie se vidait goutte à goutte\n- Vous avez le droit à ces parenthèses\n- Ne portez pas tout le poids du monde sur vos épaules\n</a_ne_not_repeter>\n<ton_angle>Ton préventif et encourageant, avec un angle axé sur l'auto-préservation.</ton_angle>\n</fiche>"
 }

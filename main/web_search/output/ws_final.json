@@ -1,1 +1,116 @@
-"```json\n{\n  \"sujet\": \"Soulager les brûlures du quotidien : méthodes immédiates, limites des approches traditionnelles et solutions complémentaires validées\",\n  \"notions_indispensables\": [\n    {\n      \"contenu\": \"Refroidir la brûlure sous eau courante froide (15-25°C) pendant au moins 15 minutes est le premier geste essentiel.\"\n    },\n    {\n      \"contenu\": \"Identifier la profondeur de la brûlure (1er, 2e superficiel, 2e profond, 3e degré) est crucial pour déterminer la gravité.\"\n    },\n    {\n      \"contenu\": \"Les brûlures du 2e degré profond et du 3e degré nécessitent une prise en charge médicale urgente.\"\n    },\n    {\n      \"contenu\": \"Les phlyctènes (ampoules) protègent la peau lésée et ne doivent pas être percées sans indication médicale.\"\n    },\n    {\n      \"contenu\": \"La peau, barrière protectrice, est atteinte à différents niveaux selon le degré de la brûlure.\"\n    },\n    {\n      \"contenu\": \"L'inflammation est une réaction naturelle du corps mais peut être excessive dans les brûlures.\"\n    },\n    {\n      \"contenu\": \"Les coupeurs de feu agissent sur la perception de la douleur par un effet placebo ou psychologique.\"\n    },\n    {\n      \"contenu\": \"Certaines plantes (lavande aspic, aloe vera, curcumine) et produits (Biafine, miel) ont des propriétés apaisantes ou cicatrisantes validées.\"\n    },\n    {\n      \"contenu\": \"Les médecines alternatives (homéopathie, acupuncture) peuvent être utilisées en complément, mais leurs effets sur la guérison physique sont débattus.\"\n    }\n  ],\n  \"erreurs_frequentes\": [\n    {\n      \"contenu\": \"Appliquer de la glace directement sur la brûlure aggrave les lésions et peut provoquer des gelures.\"\n    },\n    {\n      \"contenu\": \"Utiliser des corps gras (beurre, huile, mayonnaise) retient la chaleur, favorise l'infection et empêche le refroidissement.\"\n    },\n    {\n      \"contenu\": \"Percer les cloques expose la plaie à une infection et retarde la cicatrisation.\"\n    },\n    {\n      \"contenu\": \"Sous-estimer la gravité d'une brûlure, surtout chez les enfants et les personnes âgées, peut retarder une consultation nécessaire.\"\n    },\n    {\n      \"contenu\": \"Confondre un soulagement temporaire de la douleur avec une guérison complète de la brûlure.\"\n    },\n    {\n      \"contenu\": \"Se fier aveuglément aux remèdes traditionnels non validés, qui peuvent être inefficaces voire dangereux.\"\n    },\n    {\n      \"contenu\": \"Retirer des vêtements collés à la peau brûlée, ce qui peut arracher des lambeaux de peau.\"\n    }\n  ],\n  \"etapes_essentielles\": [\n    {\n      \"contenu\": \"Éloigner immédiatement la personne de la source de chaleur et sécuriser l'environnement.\"\n    },\n    {\n      \"contenu\": \"Refroidir la brûlure sous l'eau courante tiède (15-25°C) pendant au moins 15 minutes.\"\n    },\n    {\n      \"contenu\": \"Évaluer le degré et l'étendue de la brûlure pour déterminer la nécessité d'une consultation médicale.\"\n    },\n    {\n      \"contenu\": \"Couvrir la brûlure avec un pansement stérile et non adhésif pour la protéger.\"\n    },\n    {\n      \"contenu\": \"Appliquer une crème ou un gel adapté aux brûlures (ex: Biafine, gel d'aloe vera) après refroidissement.\"\n    },\n    {\n      \"contenu\": \"Surveiller l'apparition de signes d'infection (rougeur accrue, pus, fièvre) et consulter si nécessaire.\"\n    },\n    {\n      \"contenu\": \"Vérifier le statut vaccinal antitétanique, notamment pour les brûlures plus profondes.\"\n    },\n    {\n      \"contenu\": \"Consulter un professionnel de santé pour toute brûlure suspecte, étendue, profonde ou sur une zone sensible.\"\n    }\n  ],\n  \"risque\": [\n    {\n      \"contenu\": \"Aggravation des lésions cutanées par l'application de remèdes inadaptés comme la glace ou les corps gras.\"\n    },\n    {\n      \"contenu\": \"Surinfection de la plaie due à la rupture des barrières cutanées et à une hygiène insuffisante.\"\n    },\n    {\n      \"contenu\": \"Cicatrices permanentes, hypertrophiques ou chéloïdes en cas de brûlures profondes ou mal soignées.\"\n    },\n    {\n      \"contenu\": \"Douleur chronique ou persistante si le traitement n'est pas optimal ou si la brûlure est profonde.\"\n    },\n    {\n      \"contenu\": \"Complications graves (choc hypovolémique, déshydratation, hypothermie) pour les brûlures étendues.\"\n    },\n    {\n      \"contenu\": \"Atteinte des terminaisons nerveuses et perte de sensibilité pour les brûlures profondes.\"\n    },\n    {\n      \"contenu\": \"Retard dans la prise en charge médicale nécessaire pour les brûlures graves, mettant en danger le pronostic vital.\"\n    },\n    {\n      \"contenu\": \"Réactions allergiques ou irritations cutanées dues à l'application de produits non validés ou mal tolérés.\"\n    }\n  ]\n}\n```"
+{
+  "sujet": "Accompagner un proche adulte atteint de TDAH : Comprendre les dynamiques relationnelles et construire un soutien mutuel",
+  "notions_indispensables": [
+    {
+      "contenu": "Le TDAH est un trouble neurodéveloppemental qui persiste à l'âge adulte."
+    },
+    {
+      "contenu": "Les symptômes adultes incluent des difficultés d'attention, de planification, d'organisation et de régulation émotionnelle."
+    },
+    {
+      "contenu": "Les symptômes du TDAH chez l'adulte peuvent se présenter de manière mixte, inattentive ou hyperactive."
+    },
+    {
+      "contenu": "Les fonctions exécutives du cerveau, essentielles à la gestion du quotidien, sont altérées chez les personnes atteintes de TDAH."
+    },
+    {
+      "contenu": "La dysrégulation émotionnelle est une composante centrale et souvent négligée du TDAH chez l'adulte."
+    },
+    {
+      "contenu": "Comprendre le TDAH permet de mieux tolérer le comportement de la personne concernée et d'éviter les conflits inutiles."
+    },
+    {
+      "contenu": "La communication empathique et positive est une clé essentielle pour une relation saine."
+    },
+    {
+      "contenu": "La variabilité individuelle des expériences et réactions au TDAH doit être reconnue."
+    },
+    {
+      "contenu": "Une structure externe et des aides-mémoire sont fondamentales pour la gestion quotidienne du TDAH."
+    }
+  ],
+  "erreurs_frequentes": [
+    {
+      "contenu": "Croire que le TDAH disparaît à l'âge adulte."
+    },
+    {
+      "contenu": "Considérer les symptômes du TDAH comme de la paresse, un manque de volonté ou de mauvaises intentions."
+    },
+    {
+      "contenu": "Sous-estimer l'impact du TDAH sur la vie quotidienne, les relations et la santé mentale."
+    },
+    {
+      "contenu": "Confondre les difficultés relationnelles liées au TDAH avec un manque d'amour ou d'intérêt."
+    },
+    {
+      "contenu": "Interpréter les réactions émotionnelles intenses comme de l'exagération ou du drame personnel."
+    },
+    {
+      "contenu": "Attendre des solutions rapides ou universelles applicables à toutes les situations."
+    },
+    {
+      "contenu": "Faire porter l'entière responsabilité des difficultés relationnelles à la personne atteinte de TDAH."
+    },
+    {
+      "contenu": "Se fier uniquement aux solutions médicamenteuses sans envisager d'autres accompagnements."
+    }
+  ],
+  "etapes_essentielles": [
+    {
+      "contenu": "S'informer et se documenter sur le TDAH chez l'adulte via des sources fiables."
+    },
+    {
+      "contenu": "Identifier les manifestations spécifiques du TDAH dans la vie quotidienne et les dynamiques relationnelles."
+    },
+    {
+      "contenu": "Obtenir un diagnostic sûr auprès d'un professionnel qualifié si le TDAH est suspecté."
+    },
+    {
+      "contenu": "Adopter une communication ouverte, empathique et axée sur la résolution de problèmes."
+    },
+    {
+      "contenu": "Mettre en place des routines claires et un environnement structuré pour faciliter le quotidien."
+    },
+    {
+      "contenu": "Développer des stratégies pour mieux gérer la dysrégulation émotionnelle."
+    },
+    {
+      "contenu": "Encourager les efforts et reconnaître les succès, même minimes."
+    },
+    {
+      "contenu": "Chercher un soutien professionnel adapté (thérapie, coaching) pour la personne atteinte et l'entourage."
+    },
+    {
+      "contenu": "Prioriser le bien-être personnel et la santé mentale de l'aidant."
+    }
+  ],
+  "risque": [
+    {
+      "contenu": "Dégradation de la relation et incompréhension mutuelle due à la mauvaise interprétation des symptômes."
+    },
+    {
+      "contenu": "Isolement social et professionnel pour la personne atteinte si elle ne se sent pas comprise."
+    },
+    {
+      "contenu": "Épuisement émotionnel et physique pour l'aidant, risquant de négliger ses propres besoins."
+    },
+    {
+      "contenu": "Aggravation des symptômes du TDAH par le stress chronique et le manque de soutien."
+    },
+    {
+      "contenu": "Développement de comorbidités psychiatriques (anxiété, dépression, addictions)."
+    },
+    {
+      "contenu": "Instabilité professionnelle, financière et relationnelle."
+    },
+    {
+      "contenu": "Difficultés relationnelles accrues si des limites claires ne sont pas établies et respectées par les deux parties."
+    },
+    {
+      "contenu": "Risque accru d'accidents (route, domestiques) lié à l'impulsivité et à la distraction."
+    },
+    {
+      "contenu": "Diminution de l'estime de soi pour la personne TDAH suite à des critiques répétées ou à des échecs."
+    }
+  ]
+}

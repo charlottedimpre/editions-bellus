@@ -3,28 +3,26 @@
   "section": 3,
   "chapitre_numero": "4",
   "section_numero": "3",
-  "these_centrale": "La lavande aspic offre des bienfaits analgésiques et cicatrisants pour les brûlures légères, à condition d'un usage sûr et adapté.",
+  "these_centrale": "Décomposer les tâches complexes en étapes gérables réduit l'insurmontable et facilite le passage à l'action.",
   "arguments_cles": [
-    "Ses composés actifs apaisent la douleur et favorisent la guérison des tissus cutanés.",
-    "Une dilution appropriée dans une huile végétale optimise son efficacité et sa sécurité.",
-    "Son usage est restreint pour les enfants, femmes enceintes ou allaitantes.",
-    "La réalisation d'un test cutané préalable est essentielle pour éviter les réactions."
+    "Les petites étapes rendent les objectifs difficiles plus accessibles.",
+    "La planification et le séquençage sont essentiels pour l'action.",
+    "Chaque étape accomplie procure un sentiment de progrès et de motivation.",
+    "Choisir des étapes adaptées à l'énergie permet un processus durable.",
+    "Noter les étapes externalise la charge mentale et libère l'espace."
   ],
   "concepts_introduits": [
-    "Lavande aspic : Huile essentielle aux effets analgésiques, anti-inflammatoires et cicatrisants.",
-    "Brûlure du premier degré : Lésion cutanée superficielle avec rougeur et douleur.",
-    "Brûlure du second degré superficiel : Lésion touchant épiderme et partie du derme.",
-    "Linalol : Composé actif contribuant à l'apaisement et à la régénération tissulaire.",
-    "Camphre : Composé actif potentiellement toxique chez les jeunes enfants."
+    "Fonctions exécutives : capacités mentales de planification et organisation.",
+    "Planification : organisation des étapes pour atteindre un objectif.",
+    "Séquençage : mise en ordre des actions dans un processus.",
+    "Charge mentale : effort cognitif lié à la gestion des informations."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Brûlure du premier degré",
-    "Brûlure du second degré superficiel",
-    "Enfants de moins de six ans",
-    "Femmes enceintes ou allaitantes",
-    "Test cutané"
+    "Le principe appliqué ici.",
+    "Transformer l'inertie en action.",
+    "Brique par brique."
   ],
-  "ton_angle": "Informatif et préventif, guidant sur l'utilisation sécuritaire de la lavande aspic.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La lavande aspic offre des bienfaits analgésiques et cicatrisants pour les brûlures légères, à condition d'un usage sûr et adapté.</these_centrale>\n<arguments_cles>\n- Ses composés actifs apaisent la douleur et favorisent la guérison des tissus cutanés.\n- Une dilution appropriée dans une huile végétale optimise son efficacité et sa sécurité.\n- Son usage est restreint pour les enfants, femmes enceintes ou allaitantes.\n- La réalisation d'un test cutané préalable est essentielle pour éviter les réactions.\n</arguments_cles>\n<concepts_introduits>\n- Lavande aspic : Huile essentielle aux effets analgésiques, anti-inflammatoires et cicatrisants.\n- Brûlure du premier degré : Lésion cutanée superficielle avec rougeur et douleur.\n- Brûlure du second degré superficiel : Lésion touchant épiderme et partie du derme.\n- Linalol : Composé actif contribuant à l'apaisement et à la régénération tissulaire.\n- Camphre : Composé actif potentiellement toxique chez les jeunes enfants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Brûlure du premier degré\n- Brûlure du second degré superficiel\n- Enfants de moins de six ans\n- Femmes enceintes ou allaitantes\n- Test cutané\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, guidant sur l'utilisation sécuritaire de la lavande aspic.</ton_angle>\n</fiche>"
+  "ton_angle": "Pédagogique et encourageant, il propose une méthode pratique pour surmonter l'inertie.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Décomposer les tâches complexes en étapes gérables réduit l'insurmontable et facilite le passage à l'action.</these_centrale>\n<arguments_cles>\n- Les petites étapes rendent les objectifs difficiles plus accessibles.\n- La planification et le séquençage sont essentiels pour l'action.\n- Chaque étape accomplie procure un sentiment de progrès et de motivation.\n- Choisir des étapes adaptées à l'énergie permet un processus durable.\n- Noter les étapes externalise la charge mentale et libère l'espace.\n</arguments_cles>\n<concepts_introduits>\n- Fonctions exécutives : capacités mentales de planification et organisation.\n- Planification : organisation des étapes pour atteindre un objectif.\n- Séquençage : mise en ordre des actions dans un processus.\n- Charge mentale : effort cognitif lié à la gestion des informations.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le principe appliqué ici.\n- Transformer l'inertie en action.\n- Brique par brique.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et encourageant, il propose une méthode pratique pour surmonter l'inertie.</ton_angle>\n</fiche>"
 }

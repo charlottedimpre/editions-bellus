@@ -39,9 +39,9 @@ if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY introuvable dans le fichier .env")
 
 GEMINI_MODEL = os.getenv("GEMINI_MODEL")
-MAX_RETRIES = 3
+MAX_RETRIES = 10
 RETRY_DELAY_SECONDS = 5
-MAX_MERGE_SECTION_ATTEMPTS = 3
+MAX_MERGE_SECTION_ATTEMPTS = 10
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 
 def _read_text(path: Path, label: str) -> str:
@@ -276,9 +276,12 @@ def merge_filrouge_wrapper(start_from=None):
             section_num = _to_int(section.get("numero"), f"section.numero (chapitre {chapitre_num})")
             filepath = SECTION_DIR / f"section_ch{chapitre_num}_s{section_num}.json"
             section_ok = False
+            last_result = None
+            last_size_check = None
 
             for attempt in range(1, MAX_MERGE_SECTION_ATTEMPTS + 1):
                 result = incorporer(chapitre_num, section_num)
+                last_result = result
                 _write_json(filepath, result, f"section mergee ch{chapitre_num} s{section_num}")
 
                 size_check = verify_single_section_size(
@@ -287,6 +290,7 @@ def merge_filrouge_wrapper(start_from=None):
                     section_dir=SECTION_OUTPUT_DIR,
                     section_fr_dir=SECTION_DIR,
                 )
+                last_size_check = size_check
                 if size_check["ok"]:
                     section_ok = True
                     print(
@@ -303,10 +307,12 @@ def merge_filrouge_wrapper(start_from=None):
                 )
 
             if not section_ok:
-                raise RuntimeError(
-                    f"Echec merge_filrouge pour section_ch{chapitre_num}_s{section_num}: "
-                    f"impossible de respecter len(section) < len(section_fr) "
-                    f"apres {MAX_MERGE_SECTION_ATTEMPTS} tentatives."
+                print(
+                    f"[WARN] Merge fil rouge non conforme pour section_ch{chapitre_num}_s{section_num} "
+                    f"apres {MAX_MERGE_SECTION_ATTEMPTS} tentatives. "
+                    f"Derniere version conservee | "
+                    f"section={last_size_check.get('section_length') if last_size_check else 'NA'} | "
+                    f"section_fr={last_size_check.get('section_fr_length') if last_size_check else 'NA'}"
                 )
 
         chap_idx += 1

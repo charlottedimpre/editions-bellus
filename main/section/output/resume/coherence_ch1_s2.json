@@ -3,23 +3,19 @@
   "section": 2,
   "chapitre_numero": "1",
   "section_numero": "2",
-  "these_centrale": "L'absence de douleur suite à une brûlure n'indique pas une absence de gravité, mais une atteinte nerveuse profonde.",
+  "these_centrale": "Les difficultés rencontrées chez les adultes TDAH ne sont pas de la paresse mais des dysfonctionnements des fonctions exécutives cérébrales.",
   "arguments_cles": [
-    "L'absence de douleur signale une atteinte nerveuse, pas une guérison.",
-    "Un test tactile peut révéler une atteinte nerveuse significative.",
-    "Les cloques indiquent souvent une brûlure du deuxième degré superficiel.",
-    "L'absence de cloques ne garantit pas une brûlure peu grave.",
-    "L'âge et les conditions individuelles influencent la perception de la douleur."
+    "La planification, l'organisation et la gestion du temps sont perturbées par la cascade d'étapes mentales affectée.",
+    "L'initiation des tâches devient un combat mental, bloquant le démarrage même avec motivation.",
+    "La gestion du temps est affectée, rendant difficile l'évaluation des durées et la concentration.",
+    "L'organisation implique le rangement, la priorisation, et la recherche d'affaires, rendus difficiles."
   ],
   "concepts_introduits": [
-    "Derme : Couche de peau sous l'épiderme, contenant les terminaisons nerveuses.",
-    "Phlyctènes : Cloques remplies de liquide, signe de brûlure du deuxième degré."
+    "Fonctions exécutives : processus mentaux de planification, organisation, gestion, initiation et achèvement des tâches.",
+    "TDAH : Trouble Déficitaire de l'Attention avec ou sans Hyperactivité."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Ne pas se fier uniquement à la douleur pour évaluer une brûlure.",
-    "L'absence de sensation n'est pas synonyme de guérison."
-  ],
-  "ton_angle": "Informatif et préventif, soulignant les dangers d'une auto-évaluation erronée.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>L'absence de douleur suite à une brûlure n'indique pas une absence de gravité, mais une atteinte nerveuse profonde.</these_centrale>\n<arguments_cles>\n- L'absence de douleur signale une atteinte nerveuse, pas une guérison.\n- Un test tactile peut révéler une atteinte nerveuse significative.\n- Les cloques indiquent souvent une brûlure du deuxième degré superficiel.\n- L'absence de cloques ne garantit pas une brûlure peu grave.\n- L'âge et les conditions individuelles influencent la perception de la douleur.\n</arguments_cles>\n<concepts_introduits>\n- Derme : Couche de peau sous l'épiderme, contenant les terminaisons nerveuses.\n- Phlyctènes : Cloques remplies de liquide, signe de brûlure du deuxième degré.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas se fier uniquement à la douleur pour évaluer une brûlure.\n- L'absence de sensation n'est pas synonyme de guérison.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant les dangers d'une auto-évaluation erronée.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Explicatif et compréhensif, axé sur le fonctionnement neurologique et non sur le manque d'effort.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les difficultés rencontrées chez les adultes TDAH ne sont pas de la paresse mais des dysfonctionnements des fonctions exécutives cérébrales.</these_centrale>\n<arguments_cles>\n- La planification, l'organisation et la gestion du temps sont perturbées par la cascade d'étapes mentales affectée.\n- L'initiation des tâches devient un combat mental, bloquant le démarrage même avec motivation.\n- La gestion du temps est affectée, rendant difficile l'évaluation des durées et la concentration.\n- L'organisation implique le rangement, la priorisation, et la recherche d'affaires, rendus difficiles.\n</arguments_cles>\n<concepts_introduits>\n- Fonctions exécutives : processus mentaux de planification, organisation, gestion, initiation et achèvement des tâches.\n- TDAH : Trouble Déficitaire de l'Attention avec ou sans Hyperactivité.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ce que vous vivez n'est pas de la paresse.\n- On ne peut pas décider d'avoir des fonctions exécutives performantes.\n</a_ne_not_repeter>\n<ton_angle>Explicatif et compréhensif, axé sur le fonctionnement neurologique et non sur le manque d'effort.</ton_angle>\n</fiche>"
 }

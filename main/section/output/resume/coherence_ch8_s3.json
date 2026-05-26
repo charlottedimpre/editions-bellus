@@ -3,22 +3,19 @@
   "section": 3,
   "chapitre_numero": "8",
   "section_numero": "3",
-  "these_centrale": "La chaleur domestique et festive présente des dangers de brûlures significatifs, nécessitant une vigilance constante et des mesures de sécurité.",
+  "these_centrale": "La résilience à deux renforce la relation face aux adversités, notamment celles liées au TDAH.",
   "arguments_cles": [
-    "Le fer à repasser chaud et les barbecues exigent une manipulation prudente.",
-    "Les flammes (bougies, fêtes) requièrent un placement hors de portée des enfants.",
-    "Les liquides chauds et les écrans surchauffés présentent des risques de brûlures.",
-    "Débrancher les appareils et sécuriser les câbles évite les chutes dangereuses."
+    "Reconnaître et valider les émotions de l'autre est essentiel.",
+    "Construire un filet de sécurité pour amortir les chocs relationnels.",
+    "Les disputes sont gérées avec des pauses et une approche mesurée.",
+    "La force commune se tisse par les expériences et les échecs surmontés."
   ],
   "concepts_introduits": [
-    "Brûlure : Lésion cutanée causée par la chaleur intense.",
-    "Sécurité domestique : Ensemble des mesures pour prévenir les accidents à la maison."
+    "Résilience à deux : capacité du couple à surmonter les difficultés ensemble.",
+    "TDAH : trouble neurodéveloppemental affectant le comportement et la relation."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Les écrans de téléphone surchauffent peu.",
-    "Les câbles traînants sont dangereux pour les enfants."
-  ],
-  "ton_angle": "Informatif et préventif, il souligne les risques et les précautions à prendre.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La chaleur domestique et festive présente des dangers de brûlures significatifs, nécessitant une vigilance constante et des mesures de sécurité.</these_centrale>\n<arguments_cles>\n- Le fer à repasser chaud et les barbecues exigent une manipulation prudente.\n- Les flammes (bougies, fêtes) requièrent un placement hors de portée des enfants.\n- Les liquides chauds et les écrans surchauffés présentent des risques de brûlures.\n- Débrancher les appareils et sécuriser les câbles évite les chutes dangereuses.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Lésion cutanée causée par la chaleur intense.\n- Sécurité domestique : Ensemble des mesures pour prévenir les accidents à la maison.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les écrans de téléphone surchauffent peu.\n- Les câbles traînants sont dangereux pour les enfants.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, il souligne les risques et les précautions à prendre.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Ton empathique et pragmatique pour construire une relation solide.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La résilience à deux renforce la relation face aux adversités, notamment celles liées au TDAH.</these_centrale>\n<arguments_cles>\n- Reconnaître et valider les émotions de l'autre est essentiel.\n- Construire un filet de sécurité pour amortir les chocs relationnels.\n- Les disputes sont gérées avec des pauses et une approche mesurée.\n- La force commune se tisse par les expériences et les échecs surmontés.\n</arguments_cles>\n<concepts_introduits>\n- Résilience à deux : capacité du couple à surmonter les difficultés ensemble.\n- TDAH : trouble neurodéveloppemental affectant le comportement et la relation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Chercher un coupable lors d'un imprévu.\n- Laisser l'autre s'enliser dans ses émotions négatives.\n</a_ne_not_repeter>\n<ton_angle>Ton empathique et pragmatique pour construire une relation solide.</ton_angle>\n</fiche>"
 }

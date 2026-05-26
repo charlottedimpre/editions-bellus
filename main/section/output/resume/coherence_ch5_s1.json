@@ -3,19 +3,23 @@
   "section": 1,
   "chapitre_numero": "5",
   "section_numero": "1",
-  "these_centrale": "Les coupeurs de feu apportent un soulagement par des mécanismes psychologiques et rituels, mais ne remplacent pas les soins médicaux.",
+  "these_centrale": "Fixer des limites est une compétence essentielle de préservation de soi et de la relation, pas une arme.",
   "arguments_cles": [
-    "L'efficacité perçue repose sur l'effet placebo et la confiance du patient.",
-    "Les rituels apportent un cadre structurant et détournent l'attention de la douleur.",
-    "Il faut distinguer le soulagement psychologique de l'action thérapeutique sur la lésion.",
-    "Une vigilance s'impose face aux praticiens malveillants ou non professionnels."
+    "Les limites reconnaissent que l'énergie et le temps sont des ressources précieuses et limitées.",
+    "Dire non poliment mais fermement protège votre espace vital et votre repos.",
+    "Établir des limites est une affirmation de soi pour la durabilité de la relation.",
+    "Le non protège votre espace physique et émotionnel contre le surmenage."
   ],
   "concepts_introduits": [
-    "Effet placebo : attente de soulagement induisant une réponse physiologique.",
-    "Rituel : gestes codifiés et concentration pour un cadre structurant et apaisant."
+    "Limites : lignes claires de ce qui est acceptable et ce qui ne l'est pas.",
+    "Préservation de soi : action de protéger son propre bien-être physique et mental."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Analyse pragmatique distinguant l'apport psychologique des pratiques traditionnelles et les soins médicaux.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les coupeurs de feu apportent un soulagement par des mécanismes psychologiques et rituels, mais ne remplacent pas les soins médicaux.</these_centrale>\n<arguments_cles>\n- L'efficacité perçue repose sur l'effet placebo et la confiance du patient.\n- Les rituels apportent un cadre structurant et détournent l'attention de la douleur.\n- Il faut distinguer le soulagement psychologique de l'action thérapeutique sur la lésion.\n- Une vigilance s'impose face aux praticiens malveillants ou non professionnels.\n</arguments_cles>\n<concepts_introduits>\n- Effet placebo : attente de soulagement induisant une réponse physiologique.\n- Rituel : gestes codifiés et concentration pour un cadre structurant et apaisant.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Mêler rituels ancestraux et compréhension psychologique.\n- Le soulagement apporté par la composante psychologique et rituelle.\n</a_ne_not_repeter>\n<ton_angle>Analyse pragmatique distinguant l'apport psychologique des pratiques traditionnelles et les soins médicaux.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Vouloir que tout fonctionne parfaitement pour la personne TDAH.",
+    "La paix superficielle qui coûte cher.",
+    "Les difficultés d'une personne TDAH vous obligent à sacrifier votre bien-être."
+  ],
+  "ton_angle": "Ton d'accompagnement, angle pragmatique et bienveillant sur l'affirmation de soi.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Fixer des limites est une compétence essentielle de préservation de soi et de la relation, pas une arme.</these_centrale>\n<arguments_cles>\n- Les limites reconnaissent que l'énergie et le temps sont des ressources précieuses et limitées.\n- Dire non poliment mais fermement protège votre espace vital et votre repos.\n- Établir des limites est une affirmation de soi pour la durabilité de la relation.\n- Le non protège votre espace physique et émotionnel contre le surmenage.\n</arguments_cles>\n<concepts_introduits>\n- Limites : lignes claires de ce qui est acceptable et ce qui ne l'est pas.\n- Préservation de soi : action de protéger son propre bien-être physique et mental.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Vouloir que tout fonctionne parfaitement pour la personne TDAH.\n- La paix superficielle qui coûte cher.\n- Les difficultés d'une personne TDAH vous obligent à sacrifier votre bien-être.\n</a_ne_pas_repeter>\n<ton_angle>Ton d'accompagnement, angle pragmatique et bienveillant sur l'affirmation de soi.</ton_angle>\n</fiche>"
 }

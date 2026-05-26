@@ -3,21 +3,23 @@
   "section": 2,
   "chapitre_numero": "6",
   "section_numero": "2",
-  "these_centrale": "Une description précise des brûlures est essentielle pour un diagnostic rapide et une prise en charge médicale adaptée.",
+  "these_centrale": "S'accorder des pauses est essentiel pour le bien-être personnel et la pérennité des relations, non un luxe.",
   "arguments_cles": [
-    "Décrire profondeur, surface et localisation pour évaluer la gravité.",
-    "Préciser douleur, cloques et aspect de la peau aide le diagnostic.",
-    "Les circonstances et traitements appliqués fournissent des informations clés.",
-    "Les photographies sont utiles pour une évaluation visuelle de la lésion."
+    "Les pauses sont une nécessité vitale pour retrouver l'équilibre.",
+    "Elles permettent de recharger ses batteries et d'éviter le surmenage.",
+    "Planifier ces moments est crucial pour leur concrétisation.",
+    "C'est une façon active de se rééquilibrer et rester disponible.",
+    "Elles améliorent la résilience et la perspective sur les défis."
   ],
   "concepts_introduits": [
-    "Brûlure : Lésion cutanée causée par chaleur, produits chimiques, électricité, etc."
+    "Droit au répit : reconnaître le besoin de recharger ses batteries."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Clarté dans la communication avec le professionnel de santé.",
-    "Importance de l'optimisation du temps médical."
+    "Ne pas considérer les pauses comme un luxe.",
+    "Ne pas les laisser au hasard ou les reporter.",
+    "Éviter la culpabilité de ne pas prendre soin de soi."
   ],
-  "ton_angle": "Informatif et pragmatique, l'angle est celui du patient préparent sa consultation.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Une description précise des brûlures est essentielle pour un diagnostic rapide et une prise en charge médicale adaptée.</these_centrale>\n<arguments_cles>\n- Décrire profondeur, surface et localisation pour évaluer la gravité.\n- Préciser douleur, cloques et aspect de la peau aide le diagnostic.\n- Les circonstances et traitements appliqués fournissent des informations clés.\n- Les photographies sont utiles pour une évaluation visuelle de la lésion.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Lésion cutanée causée par chaleur, produits chimiques, électricité, etc.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Clarté dans la communication avec le professionnel de santé.\n- Importance de l'optimisation du temps médical.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et pragmatique, l'angle est celui du patient préparent sa consultation.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton pragmatique et bienveillant, axé sur l'autosoins indispensable.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>S'accorder des pauses est essentiel pour le bien-être personnel et la pérennité des relations, non un luxe.</these_centrale>\n<arguments_cles>\n- Les pauses sont une nécessité vitale pour retrouver l'équilibre.\n- Elles permettent de recharger ses batteries et d'éviter le surmenage.\n- Planifier ces moments est crucial pour leur concrétisation.\n- C'est une façon active de se rééquilibrer et rester disponible.\n- Elles améliorent la résilience et la perspective sur les défis.\n</arguments_cles>\n<concepts_introduits>\n- Droit au répit : reconnaître le besoin de recharger ses batteries.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas considérer les pauses comme un luxe.\n- Ne pas les laisser au hasard ou les reporter.\n- Éviter la culpabilité de ne pas prendre soin de soi.\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique et bienveillant, axé sur l'autosoins indispensable.</ton_angle>\n</fiche>"
 }

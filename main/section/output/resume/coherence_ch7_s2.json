@@ -3,27 +3,27 @@
   "section": 2,
   "chapitre_numero": "7",
   "section_numero": "2",
-  "these_centrale": "Le refroidissement des brûlures chez le nourrisson exige une approche prudente pour éviter l'hypothermie tout en limitant les lésions thermiques.",
+  "these_centrale": "Le soutien aux personnes atteintes de TDAH implique d'orienter vers des professionnels qualifiés et de faciliter leur accès aux soins.",
   "arguments_cles": [
-    "Refroidir la brûlure pour limiter sa progression thermique.",
-    "Risque d'hypothermie plus élevé chez les nourrissons.",
-    "Utiliser de l'eau tiède (20-25°C) pendant 5-10 minutes maximum.",
-    "Surveiller les signes de frilosité ou pâleur anormale.",
-    "Protéger le reste du corps pour limiter la perte de chaleur."
+    "Le médecin généraliste est le premier contact pour explorer un possible TDAH.",
+    "Spécialistes (psychiatre, psychologue, neuropsychologue) posent le diagnostic et proposent un plan.",
+    "Les coachs offrent des stratégies pratiques pour organiser le quotidien et gérer le temps.",
+    "Le soutien consiste à aider à trouver et à suivre les ressources professionnelles.",
+    "La persévérance est nécessaire pour trouver le bon professionnel et la bonne approche."
   ],
   "concepts_introduits": [
-    "Hypothermie : chute critique de la température corporelle.",
-    "Rapport surface corporelle/volume : influence la régulation thermique.",
-    "Système de régulation thermique : processus de maintien de la température.",
-    "Lésion thermique : dommage causé par la chaleur.",
-    "Vascularisation superficielle : réseau de vaisseaux sanguins proches de la peau."
+    "TDAH : Trouble du déficit de l'attention avec ou sans hyperactivité.",
+    "Psychiatre : Médecin spécialiste des maladies mentales, peut prescrire des médicaments.",
+    "Psychologue : Spécialiste du comportement, propose des thérapies.",
+    "Neuropsychologue : Évalue les fonctions cognitives pour le diagnostic.",
+    "Coach TDAH : Aide à développer des stratégies pratiques d'organisation."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "L'eau doit être tiède.",
-    "Surveiller le nourrisson.",
-    "La peau du nourrisson est plus fine."
+    "Vous n'êtes pas le thérapeute.",
+    "Le soutien est précieux mais ne remplace pas l'expertise.",
+    "La démarche peut être complexe et demander du temps."
   ],
-  "ton_angle": "Informatif et préventif, soulignant la spécificité des nourrissons.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le refroidissement des brûlures chez le nourrisson exige une approche prudente pour éviter l'hypothermie tout en limitant les lésions thermiques.</these_centrale>\n<arguments_cles>\n- Refroidir la brûlure pour limiter sa progression thermique.\n- Risque d'hypothermie plus élevé chez les nourrissons.\n- Utiliser de l'eau tiède (20-25°C) pendant 5-10 minutes maximum.\n- Surveiller les signes de frilosité ou pâleur anormale.\n- Protéger le reste du corps pour limiter la perte de chaleur.\n</arguments_cles>\n<concepts_introduits>\n- Hypothermie : chute critique de la température corporelle.\n- Rapport surface corporelle/volume : influence la régulation thermique.\n- Système de régulation thermique : processus de maintien de la température.\n- Lésion thermique : dommage causé par la chaleur.\n- Vascularisation superficielle : réseau de vaisseaux sanguins proches de la peau.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'eau doit être tiède.\n- Surveiller le nourrisson.\n- La peau du nourrisson est plus fine.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et préventif, soulignant la spécificité des nourrissons.</ton_angle>\n</fiche>"
+  "ton_angle": "Informatif et encourageant, l'angle est celui du soutien bienveillant.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le soutien aux personnes atteintes de TDAH implique d'orienter vers des professionnels qualifiés et de faciliter leur accès aux soins.</these_centrale>\n<arguments_cles>\n- Le médecin généraliste est le premier contact pour explorer un possible TDAH.\n- Spécialistes (psychiatre, psychologue, neuropsychologue) posent le diagnostic et proposent un plan.\n- Les coachs offrent des stratégies pratiques pour organiser le quotidien et gérer le temps.\n- Le soutien consiste à aider à trouver et à suivre les ressources professionnelles.\n- La persévérance est nécessaire pour trouver le bon professionnel et la bonne approche.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble du déficit de l'attention avec ou sans hyperactivité.\n- Psychiatre : Médecin spécialiste des maladies mentales, peut prescrire des médicaments.\n- Psychologue : Spécialiste du comportement, propose des thérapies.\n- Neuropsychologue : Évalue les fonctions cognitives pour le diagnostic.\n- Coach TDAH : Aide à développer des stratégies pratiques d'organisation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Vous n'êtes pas le thérapeute.\n- Le soutien est précieux mais ne remplace pas l'expertise.\n- La démarche peut être complexe et demander du temps.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et encourageant, l'angle est celui du soutien bienveillant.</ton_angle>\n</fiche>"
 }

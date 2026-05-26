@@ -3,21 +3,22 @@
   "section": 1,
   "chapitre_numero": "1",
   "section_numero": "1",
-  "these_centrale": "La classification précise des brûlures est essentielle pour une prise en charge médicale adaptée et des premiers secours efficaces.",
+  "these_centrale": "Le TDAH adulte est un trouble neurodéveloppemental complexe, allant au-delà de l'hyperactivité et de l'inattention, impactant la vie.",
   "arguments_cles": [
-    "La brûlure du premier degré cause rougeur et douleur sans cloques.",
-    "Le second degré superficiel forme des cloques et est très douloureux.",
-    "Le second degré profond altère la sensibilité et laisse des cicatrices.",
-    "Le troisième degré détruit tous les nerfs et toutes les couches cutanées."
+    "L'inattention se manifeste par des difficultés à suivre, organiser ou gérer les détails.",
+    "L'hyperactivité adulte inclut agitation intérieure et besoin constant de stimulation.",
+    "L'impulsivité se traduit par des décisions hâtives et des interruptions fréquentes.",
+    "Ces symptômes résultent d'un fonctionnement cérébral différent, non d'un manque de volonté."
   ],
   "concepts_introduits": [
-    "Brûlure : Destruction de cellules cutanées par chaleur excessive.",
-    "Épiderme : Couche superficielle de la peau.",
-    "Derme : Couche de peau sous l'épiderme.",
-    "Phlyctènes : Apparition de cloques."
+    "TDAH adulte : trouble neurodéveloppemental persistant affectant attention et impulsivité."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Explicatif et préventif, pour identifier rapidement la gravité des brûlures.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La classification précise des brûlures est essentielle pour une prise en charge médicale adaptée et des premiers secours efficaces.</these_centrale>\n<arguments_cles>\n- La brûlure du premier degré cause rougeur et douleur sans cloques.\n- Le second degré superficiel forme des cloques et est très douloureux.\n- Le second degré profond altère la sensibilité et laisse des cicatrices.\n- Le troisième degré détruit tous les nerfs et toutes les couches cutanées.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure : Destruction de cellules cutanées par chaleur excessive.\n- Épiderme : Couche superficielle de la peau.\n- Derme : Couche de peau sous l'épiderme.\n- Phlyctènes : Apparition de cloques.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Une rougeur n'est pas toujours une simple irritation.\n- La douleur indique la gravité de la brûlure.\n</a_ne_pa s_repeter>\n<ton_angle>Explicatif et préventif, pour identifier rapidement la gravité des brûlures.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Ce n'est pas un défaut de caractère ou un manque de volonté.",
+    "Les oublis répétés ne sont pas intentionnels.",
+    "Ces comportements ne sont pas le fruit d'une mauvaise intention."
+  ],
+  "ton_angle": "Explicatif et empathique, démontrant la réalité du trouble.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Le TDAH adulte est un trouble neurodéveloppemental complexe, allant au-delà de l'hyperactivité et de l'inattention, impactant la vie.</these_centrale>\n<arguments_cles>\n- L'inattention se manifeste par des difficultés à suivre, organiser ou gérer les détails.\n- L'hyperactivité adulte inclut agitation intérieure et besoin constant de stimulation.\n- L'impulsivité se traduit par des décisions hâtives et des interruptions fréquentes.\n- Ces symptômes résultent d'un fonctionnement cérébral différent, non d'un manque de volonté.\n</arguments_cles>\n<concepts_introduits>\n- TDAH adulte : trouble neurodéveloppemental persistant affectant attention et impulsivité.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ce n'est pas un défaut de caractère ou un manque de volonté.\n- Les oublis répétés ne sont pas intentionnels.\n- Ces comportements ne sont pas le fruit d'une mauvaise intention.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et empathique, démontrant la réalité du trouble.</ton_angle>\n</fiche>"
 }

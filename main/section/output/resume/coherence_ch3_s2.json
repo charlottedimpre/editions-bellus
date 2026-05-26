@@ -3,22 +3,22 @@
   "section": 2,
   "chapitre_numero": "3",
   "section_numero": "2",
-  "these_centrale": "Les remèdes traditionnels appliqués sur les brûlures aggravent souvent la lésion, prolongent la guérison et augmentent le risque d'infection.",
+  "these_centrale": "La reformulation active clarifie la compréhension mutuelle et renforce la connexion dans la communication.",
   "arguments_cles": [
-    "Les corps gras isolent la chaleur, prolongeant la destruction des tissus.",
-    "Les cloque protègent, les percer augmente le risque d'infection.",
-    "Le dentifrice et le sel sont irritants et abrasifs.",
-    "Les substances agressives créent des micro-déchirures et favorisent les infections."
+    "Vérifie la bonne réception du message et évite les malentendus.",
+    "Montre à l'interlocuteur qu'il est écouté et validé.",
+    "Désamorce les tensions en clarifiant les perceptions avant qu'elles n'empirent.",
+    "Crée du lien et de la clarté face aux difficultés communicationnelles."
   ],
   "concepts_introduits": [
-    "Rétention de chaleur : emprisonnement de la chaleur dans les tissus.",
-    "Milieu propice : environnement favorable au développement de bactéries.",
-    "Barrière naturelle stérile : protection propre contre les agressions externes.",
-    "Septicémie : infection généralisée du corps par les bactéries.",
-    "Agents abrasifs : substances qui provoquent une usure mécanique."
+    "Reformulation : Répéter avec ses mots ce que l'on a compris de l'autre.",
+    "TDAH : Trouble affectant attention, impulsivité et hyperactivité."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et avertisseur, déconstruisant les mythes des remèdes populaires.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les remèdes traditionnels appliqués sur les brûlures aggravent souvent la lésion, prolongent la guérison et augmentent le risque d'infection.</these_centrale>\n<arguments_cles>\n- Les corps gras isolent la chaleur, prolongeant la destruction des tissus.\n- Les cloque protègent, les percer augmente le risque d'infection.\n- Le dentifrice et le sel sont irritants et abrasifs.\n- Les substances agressives créent des micro-déchirures et favorisent les infections.\n</arguments_cles>\n<concepts_introduits>\n- Rétention de chaleur : emprisonnement de la chaleur dans les tissus.\n- Milieu propice : environnement favorable au développement de bactéries.\n- Barrière naturelle stérile : protection propre contre les agressions externes.\n- Septicémie : infection généralisée du corps par les bactéries.\n- Agents abrasifs : substances qui provoquent une usure mécanique.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le beurre, huile, pommade, dentifrice, sel, sucre, marc de café.\n- L'idée d'une barrière naturelle stérile dans la cloque.\n- Les substances agressives sont à proscrire.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et avertisseur, déconstruisant les mythes des remèdes populaires.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Ne pas répéter mécaniquement les mots de l'autre.",
+    "Ne pas utiliser la reformulation comme une manipulation."
+  ],
+  "ton_angle": "Pédagogique et pratique, l'angle est celui de l'amélioration des relations interpersonnelles.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>La reformulation active clarifie la compréhension mutuelle et renforce la connexion dans la communication.</these_centrale>\n<arguments_cles>\n- Vérifie la bonne réception du message et évite les malentendus.\n- Montre à l'interlocuteur qu'il est écouté et validé.\n- Désamorce les tensions en clarifiant les perceptions avant qu'elles n'empirent.\n- Crée du lien et de la clarté face aux difficultés communicationnelles.\n</arguments_cles>\n<concepts_introduits>\n- Reformulation : Répéter avec ses mots ce que l'on a compris de l'autre.\n- TDAH : Trouble affectant attention, impulsivité et hyperactivité.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ne pas répéter mécaniquement les mots de l'autre.\n- Ne pas utiliser la reformulation comme une manipulation.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pratique, l'angle est celui de l'amélioration des relations interpersonnelles.</ton_angle>\n</fiche>"
 }

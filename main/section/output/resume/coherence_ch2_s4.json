@@ -3,19 +3,23 @@
   "section": 4,
   "chapitre_numero": "2",
   "section_numero": "4",
-  "these_centrale": "La protection post-brûlure est essentielle pour prévenir les infections et optimiser la guérison des lésions cutanées.",
+  "these_centrale": "Les difficultés exécutives d'un partenaire engendrent une charge mentale et émotionnelle disproportionnée chez l'autre.",
   "arguments_cles": [
-    "Prévenir les infections et favoriser la guérison par une barrière stérile.",
-    "Utiliser un film alimentaire pour les brûlures superficielles sans cloques rompues.",
-    "Employer des pansements hydrocolloïdes pour les cloques non rompues afin de favoriser la cicatrisation.",
-    "Éviter le coton et les adhésifs irritants qui nuisent à la guérison."
+    "La lenteur des projets communs crée de la lassitude émotionnelle chez le partenaire.",
+    "La gestion des imprévus et le rattrapage des oublis pèsent psychiquement.",
+    "La répartition inégale de la charge mentale entraîne un épuisement émotionnel.",
+    "Comprendre les limitations peut susciter compassion et espoir malgré les tensions."
   ],
   "concepts_introduits": [
-    "Brûlure superficielle : Lésion cutanée légère sans cloques ou avec cloques intactes.",
-    "Pansement hydrocolloïde : Pansement créant un milieu humide pour la cicatrisation."
+    "Fonctions exécutives : Capacités cognitives gérant planification et exécution.",
+    "Charge mentale : Effort psychique lié à l'anticipation et gestion des tâches."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Pragmatique et informatif, soulignant les bonnes pratiques pour les soins post-brûlure.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La protection post-brûlure est essentielle pour prévenir les infections et optimiser la guérison des lésions cutanées.</these_centrale>\n<arguments_cles>\n- Prévenir les infections et favoriser la guérison par une barrière stérile.\n- Utiliser un film alimentaire pour les brûlures superficielles sans cloques rompues.\n- Employer des pansements hydrocolloïdes pour les cloques non rompues afin de favoriser la cicatrisation.\n- Éviter le coton et les adhésifs irritants qui nuisent à la guérison.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure superficielle : Lésion cutanée légère sans cloques ou avec cloques intactes.\n- Pansement hydrocolloïde : Pansement créant un milieu humide pour la cicatrisation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La douleur lors du retrait du pansement.\n- Le risque d'infection.\n</a_ne_not_repeter>\n<ton_angle>Pragmatique et informatif, soulignant les bonnes pratiques pour les soins post-brûlure.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Le temps et l'effort investis ne sont pas réciproques.",
+    "Le partenaire se sent comme l'unique pilier.",
+    "Le réservoir d'énergie émotionnelle s'amenuise."
+  ],
+  "ton_angle": "Analyser la charge mentale et émotionnelle dans les relations face aux difficultés cognitives.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les difficultés exécutives d'un partenaire engendrent une charge mentale et émotionnelle disproportionnée chez l'autre.</these_centrale>\n<arguments_cles>\n- La lenteur des projets communs crée de la lassitude émotionnelle chez le partenaire.\n- La gestion des imprévus et le rattrapage des oublis pèsent psychiquement.\n- La répartition inégale de la charge mentale entraîne un épuisement émotionnel.\n- Comprendre les limitations peut susciter compassion et espoir malgré les tensions.\n</arguments_cles>\n<concepts_introduits>\n- Fonctions exécutives : Capacités cognitives gérant planification et exécution.\n- Charge mentale : Effort psychique lié à l'anticipation et gestion des tâches.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le temps et l'effort investis ne sont pas réciproques.\n- Le partenaire se sent comme l'unique pilier.\n- Le réservoir d'énergie émotionnelle s'amenuise.\n</a_ne_pas_repeter>\n<ton_angle>Analyser la charge mentale et émotionnelle dans les relations face aux difficultés cognitives.</ton_angle>\n</fiche>"
 }

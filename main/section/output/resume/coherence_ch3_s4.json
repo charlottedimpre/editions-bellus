@@ -3,26 +3,23 @@
   "section": 4,
   "chapitre_numero": "3",
   "section_numero": "4",
-  "these_centrale": "L'application de produits comme l'alcool, le vinaigre, les corps gras ou le dentifrice sur les brûlures aggrave les lésions et retarde la guérison.",
+  "these_centrale": "La reformulation attentive est une stratégie clé pour désamorcer la réactivité émotionnelle accrue chez les personnes atteintes de TDAH.",
   "arguments_cles": [
-    "L'alcool et le vinaigre agressent la peau lésée, ralentissant la régénération cellulaire.",
-    "Les corps gras piègent la chaleur, augmentant la destruction tissulaire et favorisant les infections.",
-    "Le dentifrice contient des agents irritants et abrasifs, nuisant à la cicatrisation cutanée."
+    "Confirme l'écoute et aide à saisir le fond des propos exprimés.",
+    "Désamorce la tension en validant les émotions ressenties par l'autre.",
+    "Oblige l'interlocuteur à se recentrer, clarifiant ses propres ressentis.",
+    "Crée un espace de sécurité et favorise la connexion sincère."
   ],
   "concepts_introduits": [
-    "Aggraver les lésions : empirer l'état de la brûlure.",
-    "Cautérisante superficielle : assèchement limité et superficiel de la plaie.",
-    "pH : mesure de l'acidité ou de la basicité.",
-    "Rétention thermique : maintien de la chaleur dans la plaie.",
-    "Occlusives : substances qui empêchent l'air de passer."
+    "Réactivité émotionnelle accrue : émotion intense, incontrôlable.",
+    "Reformulation : répéter avec ses mots ce qui a été dit."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Ces substances ne contribuent en rien à la cicatrisation ; elles la compromettent activement.",
-    "Transformant une blessure potentiellement bénigne en une affection plus complexe à soigner.",
-    "Ouvrant la porte à des infections secondaires qui peuvent s’avérer sérieuses.",
-    "Rend la peau plus vulnérable aux infections et aux séquelles cicatricielles permanentes."
+    "Tempête intérieure",
+    "Bouée de sauvetage émotionnelle",
+    "Situation potentiellement explosive"
   ],
-  "ton_angle": "Pragmatique et préventif, dénonçant des pratiques populaires dangereuses pour la santé.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'application de produits comme l'alcool, le vinaigre, les corps gras ou le dentifrice sur les brûlures aggrave les lésions et retarde la guérison.</these_centrale>\n<arguments_cles>\n- L'alcool et le vinaigre agressent la peau lésée, ralentissant la régénération cellulaire.\n- Les corps gras piègent la chaleur, augmentant la destruction tissulaire et favorisant les infections.\n- Le dentifrice contient des agents irritants et abrasifs, nuisant à la cicatrisation cutanée.\n</arguments_cles>\n<concepts_introduits>\n- Aggraver les lésions : empirer l'état de la brûlure.\n- Cautérisante superficielle : assèchement limité et superficiel de la plaie.\n- pH : mesure de l'acidité ou de la basicité.\n- Rétention thermique : maintien de la chaleur dans la plaie.\n- Occlusives : substances qui empêchent l'air de passer.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ces substances ne contribuent en rien à la cicatrisation ; elles la compromettent activement.\n- Transformant une blessure potentiellement bénigne en une affection plus complexe à soigner.\n- Ouvrant la porte à des infections secondaires qui peuvent s’avérer sérieuses.\n- Rend la peau plus vulnérable aux infections et aux séquelles cicatricielles permanentes.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et préventif, dénonçant des pratiques populaires dangereuses pour la santé.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et empathique, offrant des outils concrets pour la gestion émotionnelle.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La reformulation attentive est une stratégie clé pour désamorcer la réactivité émotionnelle accrue chez les personnes atteintes de TDAH.</these_centrale>\n<arguments_cles>\n- Confirme l'écoute et aide à saisir le fond des propos exprimés.\n- Désamorce la tension en validant les émotions ressenties par l'autre.\n- Oblige l'interlocuteur à se recentrer, clarifiant ses propres ressentis.\n- Crée un espace de sécurité et favorise la connexion sincère.\n</arguments_cles>\n<concepts_introduits>\n- Réactivité émotionnelle accrue : émotion intense, incontrôlable.\n- Reformulation : répéter avec ses mots ce qui a été dit.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Tempête intérieure\n- Bouée de sauvetage émotionnelle\n- Situation potentiellement explosive\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et empathique, offrant des outils concrets pour la gestion émotionnelle.</ton_angle>\n</fiche>"
 }

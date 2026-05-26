@@ -44,7 +44,7 @@ MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
 MAX_BOOK_WORDS = 15000
 SECTION_WORD_RANGE = 300
-MAX_SECTION_REGEN_ATTEMPTS = 3
+MAX_SECTION_REGEN_ATTEMPTS = 20
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 
 SECTION_DIR.mkdir(parents=True, exist_ok=True)
@@ -354,15 +354,75 @@ def gen_section(chapitre, section, verification_section: bool = True):
     coherence = _load_previous_coherence_context(chapitre, section, structure_data)
 
     coherence_text = coherence if coherence else ""
-    filename = f"section_ch{chapitre}_s{section}.json"
-    filepath = SECTION_DIR / filename
+
+    # Phase 1: jet d'essai avec retours de verification.
+    try:
+        _run_section_generation_phase(
+            chapitre,
+            section,
+            prompt,
+            fiche,
+            plan,
+            structure,
+            coherence_text,
+            min_words,
+            max_words,
+            target_words,
+            verification_section,
+            phase_label="jet_essai",
+            max_attempts=MAX_SECTION_REGEN_ATTEMPTS,
+        )
+        return
+    except Exception as err:
+        print(
+            f"[WARN] Jet d'essai echoue pour section_ch{chapitre}_s{section}: {err}. "
+            "Nouvelle passe avec le prompt du jet d'essai."
+        )
+
+    # Phase 2: retry apres erreur, re-initialise les critiques.
+    _run_section_generation_phase(
+        chapitre,
+        section,
+        prompt,
+        fiche,
+        plan,
+        structure,
+        coherence_text,
+        min_words,
+        max_words,
+        target_words,
+        verification_section,
+        phase_label="retry_apres_erreur",
+        max_attempts=MAX_SECTION_REGEN_ATTEMPTS,
+    )
+
+
+def _run_section_generation_phase(
+    chapitre: int,
+    section: int,
+    prompt: str,
+    fiche: str,
+    plan: str,
+    structure: str,
+    coherence_text: str,
+    min_words: int,
+    max_words: int,
+    target_words: int,
+    verification_section: bool,
+    phase_label: str,
+    max_attempts: int,
+) -> None:
+    # Retours critiques reinitialises a chaque phase.
     critique_artefact_feedback = ""
     critique_fluidite_feedback = ""
     critique_coherence_interne_feedback = ""
     critique_linguistique_feedback = ""
     critique_redondance_inter_sections_feedback = ""
 
-    for regen_attempt in range(1, MAX_SECTION_REGEN_ATTEMPTS + 1):
+    filename = f"section_ch{chapitre}_s{section}.json"
+    filepath = SECTION_DIR / filename
+
+    for regen_attempt in range(1, max_attempts + 1):
         critique_block = ""
         if (
             critique_artefact_feedback
@@ -406,9 +466,13 @@ def gen_section(chapitre, section, verification_section: bool = True):
 
         parsed = parse_section(response_text, chapitre, section)
         if not isinstance(parsed, dict):
-            raise ValueError(f"Section parsee invalide pour ch{chapitre} s{section}: objet JSON attendu.")
+            raise ValueError(
+                f"Section parsee invalide pour ch{chapitre} s{section} (phase {phase_label}): objet JSON attendu."
+            )
         if not isinstance(parsed.get("contenu"), str) or not parsed.get("contenu", "").strip():
-            raise ValueError(f"Contenu de section vide apres parsing pour ch{chapitre} s{section}.")
+            raise ValueError(
+                f"Contenu de section vide apres parsing pour ch{chapitre} s{section} (phase {phase_label})."
+            )
 
         # Nettoyage du contenu avant insertion dans le JSON de base.
         section_title = _find_section_title(chapitre, section)
@@ -426,14 +490,13 @@ def gen_section(chapitre, section, verification_section: bool = True):
 
         word_count = _count_content_words_from_file(filepath)
         print(
-            f"Section {section} du chapitre {chapitre} sauvegardée -> {filename} ({word_count} mots)."
+            f"Section {section} du chapitre {chapitre} sauvegardee -> {filename} ({word_count} mots)."
         )
 
         if min_words <= word_count <= max_words:
             if verification_section:
                 verification_report = run_section_verification_report(chapitre, section)
                 verification_ok = verification_report.get("decision") == "OUI"
-                print(verification_report)
                 if not verification_ok:
                     critique_artefact_feedback = (
                         str(verification_report.get("critique_artefact") or "").strip()
@@ -450,54 +513,37 @@ def gen_section(chapitre, section, verification_section: bool = True):
                     critique_redondance_inter_sections_feedback = (
                         str(verification_report.get("critique_redondance_inter_sections") or "").strip()
                     )
-                    if regen_attempt == MAX_SECTION_REGEN_ATTEMPTS:
+                    if regen_attempt == max_attempts:
                         raise RuntimeError(
-                            f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON/indeterminee) apres {MAX_SECTION_REGEN_ATTEMPTS} tentatives."
-                        )
-                    if critique_artefact_feedback:
-                        print(
-                            f"Critique artefact injectee pour regeneration: {critique_artefact_feedback}"
-                        )
-                    if critique_fluidite_feedback:
-                        print(
-                            f"Critique fluidite injectee pour regeneration: {critique_fluidite_feedback}"
-                        )
-                    if critique_coherence_interne_feedback:
-                        print(
-                            f"Critique coherence interne injectee pour regeneration: {critique_coherence_interne_feedback}"
-                        )
-                    if critique_linguistique_feedback:
-                        print(
-                            f"Critique linguistique injectee pour regeneration: {critique_linguistique_feedback}"
-                        )
-                    if critique_redondance_inter_sections_feedback:
-                        print(
-                            "Critique redondance inter-sections injectee pour regeneration: "
-                            f"{critique_redondance_inter_sections_feedback}"
+                            f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON/indeterminee) apres {max_attempts} tentatives (phase {phase_label})."
                         )
                     print(
-                        f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON). Regeneration ({regen_attempt}/{MAX_SECTION_REGEN_ATTEMPTS})..."
+                        f"Section section_ch{chapitre}_s{section} invalidee par verification (reponse NON). "
+                        f"Regeneration {phase_label} ({regen_attempt}/{max_attempts})..."
                     )
                     continue
 
                 coherence_check(chapitre, section)
                 print(
-                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Verification section (OUI) puis coherence effectuees."
+                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). "
+                    "Verification section (OUI) puis coherence effectuees."
                 )
             else:
                 print(
-                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). verification_section desactivee: verification OUI/NON et coherence ignorees."
+                    f"Longueur valide ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). "
+                    "verification_section desactivee: verification OUI/NON et coherence ignorees."
                 )
             return
 
-        if regen_attempt == MAX_SECTION_REGEN_ATTEMPTS:
+        if regen_attempt == max_attempts:
             raise RuntimeError(
-                f"Section section_ch{chapitre}_s{section} hors plage ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}) apres {MAX_SECTION_REGEN_ATTEMPTS} tentatives."
+                f"Section section_ch{chapitre}_s{section} hors plage ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}) apres {max_attempts} tentatives (phase {phase_label})."
             )
 
         length_issue = "trop courte" if word_count < min_words else "trop longue"
         print(
-            f"Section section_ch{chapitre}_s{section} {length_issue} ({word_count} mots, attendu {min_words}-{max_words}, cible {target_words}). Regeneration ({regen_attempt}/{MAX_SECTION_REGEN_ATTEMPTS})..."
+            f"Section section_ch{chapitre}_s{section} {length_issue} ({word_count} mots, attendu {min_words}-{max_words}, "
+            f"cible {target_words}). Regeneration {phase_label} ({regen_attempt}/{max_attempts})..."
         )
 
 

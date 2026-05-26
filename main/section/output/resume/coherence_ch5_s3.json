@@ -3,24 +3,23 @@
   "section": 3,
   "chapitre_numero": "5",
   "section_numero": "3",
-  "these_centrale": "Les rituels de guérison des brûlures, bien que procurant un soulagement subjectif, retardent les soins médicaux essentiels et aggravent les dommages tissulaires.",
+  "these_centrale": "Une répartition équilibrée des responsabilités renforce les relations face au TDAH.",
   "arguments_cles": [
-    "Les pratiques non éprouvées exposent à l'infection et aux séquelles permanentes.",
-    "L'efficacité perçue repose sur l'effet placebo et la distraction de la douleur.",
-    "Le retard des soins médicaux aggrave les dommages tissulaires et augmente les risques.",
-    "Les signes d'aggravation comme le pus ou la douleur persistante nécessitent un avis médical."
+    "Redéfinir les rôles pour une dynamique relationnelle saine.",
+    "S'appuyer sur les forces individuelles et compenser les faiblesses.",
+    "Adapter les responsabilités selon les besoins évolutifs.",
+    "La communication et la flexibilité sont essentielles pour la synergie."
   ],
   "concepts_introduits": [
-    "Effet placebo : Atténuation de la douleur par la conviction et l'attention.",
-    "Séquelles permanentes : Dommages irréversibles aux tissus cutanés.",
-    "Cicatrisation ralentie : Processus de réparation cutanée prolongé.",
-    "Infection bactérienne : Invasion microbienne nécessitant des antibiotiques."
+    "TDAH : Trouble de l'attention avec ou sans hyperactivité.",
+    "Responsabilité partagée : Contribution de chacun au bien-être commun.",
+    "Synergie : Effets combinés supérieurs à la somme des parties."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Soulagement subjectif masquant une aggravation potentielle.",
-    "Brûlures sur le visage ou les mains entraînant des séquelles."
+    "Le fardeau repose entièrement sur une seule personne.",
+    "Payer une facture à temps."
   ],
-  "ton_angle": "Ton préventif et informatif, défendant la primauté des soins médicaux validés.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les rituels de guérison des brûlures, bien que procurant un soulagement subjectif, retardent les soins médicaux essentiels et aggravent les dommages tissulaires.</these_centrale>\n<arguments_cles>\n- Les pratiques non éprouvées exposent à l'infection et aux séquelles permanentes.\n- L'efficacité perçue repose sur l'effet placebo et la distraction de la douleur.\n- Le retard des soins médicaux aggrave les dommages tissulaires et augmente les risques.\n- Les signes d'aggravation comme le pus ou la douleur persistante nécessitent un avis médical.\n</arguments_cles>\n<concepts_introduits>\n- Effet placebo : Atténuation de la douleur par la conviction et l'attention.\n- Séquelles permanentes : Dommages irréversibles aux tissus cutanés.\n- Cicatrisation ralentie : Processus de réparation cutanée prolongé.\n- Infection bactérienne : Invasion microbienne nécessitant des antibiotiques.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Soulagement subjectif masquant une aggravation potentielle.\n- Brûlures sur le visage ou les mains entraînant des séquelles.\n</a_ne_pas_repeter>\n<ton_angle>Ton préventif et informatif, défendant la primauté des soins médicaux validés.</ton_angle>\n</fiche>"
+  "ton_angle": "Conseil pratique, orienté vers la résolution de problèmes relationnels.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Une répartition équilibrée des responsabilités renforce les relations face au TDAH.</these_centrale>\n<arguments_cles>\n- Redéfinir les rôles pour une dynamique relationnelle saine.\n- S'appuyer sur les forces individuelles et compenser les faiblesses.\n- Adapter les responsabilités selon les besoins évolutifs.\n- La communication et la flexibilité sont essentielles pour la synergie.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble de l'attention avec ou sans hyperactivité.\n- Responsabilité partagée : Contribution de chacun au bien-être commun.\n- Synergie : Effets combinés supérieurs à la somme des parties.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le fardeau repose entièrement sur une seule personne.\n- Payer une facture à temps.\n</a_ne_pas_repeter>\n<ton_angle>Conseil pratique, orienté vers la résolution de problèmes relationnels.</ton_angle>\n</fiche>"
 }

@@ -3,21 +3,26 @@
   "section": 1,
   "chapitre_numero": "4",
   "section_numero": "1",
-  "these_centrale": "L'aloe vera, au-delà de son usage traditionnel, offre des propriétés physiologiques remarquables pour les brûlures.",
+  "these_centrale": "La structure externe, par sa prévisibilité, offre un soutien essentiel pour pallier les difficultés des fonctions exécutives.",
   "arguments_cles": [
-    "Ses polysaccharides ont des effets anti-inflammatoires prouvés.",
-    "Il stimule la production de collagène pour la régénération cutanée.",
-    "Son hydratation prévient la sécheresse et les cicatrices.",
-    "Il agit comme une barrière protectrice pour la zone lésée."
+    "La structure externe n'est pas une contrainte mais un cadre facilitateur.",
+    "Les routines réduisent la charge mentale et libèrent de l'énergie mentale.",
+    "Les routines apportent une prévisibilité bienvenue et réduisent le sentiment de chaos.",
+    "La structure aide à anticiper et à prévenir les réactions impulsives.",
+    "La structure externe compense les difficultés internes liées au TDAH."
   ],
   "concepts_introduits": [
-    "Polysaccharides : Molécules complexes aux propriétés physiologiques variées.",
-    "Acémananes : Type de polysaccharide présent dans l'aloe vera.",
-    "Collagène : Protéine structurelle essentielle à la peau.",
-    "Fibroblastes : Cellules favorisant la production de tissu conjonctif."
+    "Fonctions exécutives : capacités cognitives de contrôle et de régulation.",
+    "Routine : automatisme facilitant la navigation quotidienne.",
+    "Charge mentale : poids cognitif des décisions et tâches."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et préventif, soulignant l'efficacité scientifique et les précautions d'usage.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'aloe vera, au-delà de son usage traditionnel, offre des propriétés physiologiques remarquables pour les brûlures.</these_centrale>\n<arguments_cles>\n- Ses polysaccharides ont des effets anti-inflammatoires prouvés.\n- Il stimule la production de collagène pour la régénération cutanée.\n- Son hydratation prévient la sécheresse et les cicatrices.\n- Il agit comme une barrière protectrice pour la zone lésée.\n</arguments_cles>\n<concepts_introduits>\n- Polysaccharides : Molécules complexes aux propriétés physiologiques variées.\n- Acémananes : Type de polysaccharide présent dans l'aloe vera.\n- Collagène : Protéine structurelle essentielle à la peau.\n- Fibroblastes : Cellules favorisant la production de tissu conjonctif.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Plus qu'un simple remède de grand-mère\n- Brûlures superficielles\n- Soulagement significatif\n</a_ne_not_repeter>\n<ton_angle> Informatif et préventif, soulignant l'efficacité scientifique et les précautions d'usage.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "La structure externe n'est pas une contrainte.",
+    "La structure donne de l'espace.",
+    "Les routines sont comme un chemin que l'on emprunte.",
+    "La routine est une aide, un outil de facilitation."
+  ],
+  "ton_angle": "Informatif et empathique, soulignant la valeur structurante de l'organisation.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La structure externe, par sa prévisibilité, offre un soutien essentiel pour pallier les difficultés des fonctions exécutives.</these_centrale>\n<arguments_cles>\n- La structure externe n'est pas une contrainte mais un cadre facilitateur.\n- Les routines réduisent la charge mentale et libèrent de l'énergie mentale.\n- Les routines apportent une prévisibilité bienvenue et réduisent le sentiment de chaos.\n- La structure aide à anticiper et à prévenir les réactions impulsives.\n- La structure externe compense les difficultés internes liées au TDAH.\n</arguments_cles>\n<concepts_introduits>\n- Fonctions exécutives : capacités cognitives de contrôle et de régulation.\n- Routine : automatisme facilitant la navigation quotidienne.\n- Charge mentale : poids cognitif des décisions et tâches.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La structure externe n'est pas une contrainte.\n- La structure donne de l'espace.\n- Les routines sont comme un chemin que l'on emprunte.\n- La routine est une aide, un outil de facilitation.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et empathique, soulignant la valeur structurante de l'organisation.</ton_angle>\n</fiche>"
 }

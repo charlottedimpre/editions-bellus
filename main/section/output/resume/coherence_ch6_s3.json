@@ -3,31 +3,21 @@
   "section": 3,
   "chapitre_numero": "6",
   "section_numero": "3",
-  "these_centrale": "L'évaluation précise des brûlures par les professionnels de santé repose sur l'examen clinique, les prélèvements et parfois l'imagerie.",
+  "these_centrale": "Le bien-être personnel est une démarche active essentielle pour pouvoir soutenir efficacement son proche.",
   "arguments_cles": [
-    "L'évaluation de la profondeur est clé, basée sur l'aspect et la présence de cloques.",
-    "Les prélèvements identifient les agents pathogènes pour un traitement antibiotique ciblé.",
-    "L'imagerie comme l'échographie visualise l'épaisseur dermique et les atteintes profondes.",
-    "L'évaluation de la douleur renseigne sur la sévérité et l'atteinte nerveuse."
+    "Nourrir son bien-être par des habitudes concrètes impacte positivement l'énergie et l'humeur.",
+    "L'exercice physique et les moments de plaisir sont vitaux pour l'équilibre émotionnel.",
+    "Demander de l'aide est une stratégie pour préserver son énergie et sa santé.",
+    "Le soutien apporté à l'autre est directement lié à son propre équilibre personnel."
   ],
   "concepts_introduits": [
-    "Brûlure du premier degré : rougeur, sans cloques.",
-    "Brûlure du deuxième degré superficiel : cloques, derme rosé.",
-    "Brûlure du deuxième degré profond : cloques pâles, sensibilité réduite.",
-    "Brûlure du troisième degré : toutes couches, peau décolorée, insensible.",
-    "Écouvillonnage : prélèvement pour analyse microbiologique.",
-    "Biopsie cutanée : échantillon de peau pour confirmation diagnostique.",
-    "Échographie : visualisation de l'épaisseur des tissus et des structures.",
-    "Thermographie : cartographie de la température tissulaire."
+    "Bien-être : État physique, mental et émotionnel positif, activement cultivé.",
+    "Habitudes : Comportements réguliers, simples, qui nourrissent le bien-être.",
+    "Endorphines : Hormones du bien-être libérées par l'exercice physique.",
+    "Charge mentale : Poids psychologique lié aux soucis et responsabilités."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "\"lorsque vous consultez un professionnel de santé\"",
-    "\"l'un des examens fondamentaux\"",
-    "\"dans certains cas\"",
-    "\"l'utilisation de techniques d'imagerie\"",
-    "\"l'évaluation de la douleur fait également partie intégrante\""
-  ],
-  "ton_angle": "Approche descriptive et informative de la démarche diagnostique médicale.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>L'évaluation précise des brûlures par les professionnels de santé repose sur l'examen clinique, les prélèvements et parfois l'imagerie.</these_centrale>\n<arguments_cles>\n- L'évaluation de la profondeur est clé, basée sur l'aspect et la présence de cloques.\n- Les prélèvements identifient les agents pathogènes pour un traitement antibiotique ciblé.\n- L'imagerie comme l'échographie visualise l'épaisseur dermique et les atteintes profondes.\n- L'évaluation de la douleur renseigne sur la sévérité et l'atteinte nerveuse.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure du premier degré : rougeur, sans cloques.\n- Brûlure du deuxième degré superficiel : cloques, derme rosé.\n- Brûlure du deuxième degré profond : cloques pâles, sensibilité réduite.\n- Brûlure du troisième degré : toutes couches, peau décolorée, insensible.\n- Écouvillonnage : prélèvement pour analyse microbiologique.\n- Biopsie cutanée : échantillon de peau pour confirmation diagnostique.\n- Échographie : visualisation de l'épaisseur des tissus et des structures.\n- Thermographie : cartographie de la température tissulaire.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- \"lorsque vous consultez un professionnel de santé\"\n- \"l'un des examens fondamentaux\"\n- \"dans certains cas\"\n- \"l'utilisation de techniques d'imagerie\"\n- \"l'évaluation de la douleur fait également partie intégrante\"\n</a_ne_pas_repeter>\n<ton_angle>Approche descriptive et informative de la démarche diagnostique médicale.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Pédagogique et pragmatique, affirmant la nécessité du soin de soi.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Le bien-être personnel est une démarche active essentielle pour pouvoir soutenir efficacement son proche.</these_centrale>\n<arguments_cles>\n- Nourrir son bien-être par des habitudes concrètes impacte positivement l'énergie et l'humeur.\n- L'exercice physique et les moments de plaisir sont vitaux pour l'équilibre émotionnel.\n- Demander de l'aide est une stratégie pour préserver son énergie et sa santé.\n- Le soutien apporté à l'autre est directement lié à son propre équilibre personnel.\n</arguments_cles>\n<concepts_introduits>\n- Bien-être : État physique, mental et émotionnel positif, activement cultivé.\n- Habitudes : Comportements réguliers, simples, qui nourrissent le bien-être.\n- Endorphines : Hormones du bien-être libérées par l'exercice physique.\n- Charge mentale : Poids psychologique lié aux soucis et responsabilités.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- Le bien-être est une attente passive.\n- Se reposer est suffisant pour le bien-être.\n- Demander de l'aide est une faiblesse.\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et pragmatique, affirmant la nécessité du soin de soi.</ton_angle>\n</fiche>"
 }

@@ -3,24 +3,24 @@
   "section": 1,
   "chapitre_numero": "7",
   "section_numero": "1",
-  "these_centrale": "La peau infantile, plus fine et perméable, exige une vigilance et des soins spécifiques face aux brûlures.",
+  "these_centrale": "Accompagner un proche avec TDAH implique de l'orienter vers un diagnostic et un soutien professionnel adapté.",
   "arguments_cles": [
-    "La peau enfantine, plus fine et vascularisée, subit plus vite les agressions thermiques.",
-    "Un ratio surface corporelle/volume élevé amplifie l'impact d'une brûlure chez l'enfant.",
-    "La peau enfantine est plus perméable aux irritants et aux infections bactériennes.",
-    "Les structures de réparation cutanée immatures peuvent affecter la qualité de la guérison."
+    "Orienter vers un médecin traitant si un TDAH est suspecté pour une première compréhension.",
+    "Encourager l'engagement dans des thérapies comportementales ou coaching spécialisé.",
+    "Soutenir la logistique des rendez-vous pour faciliter le suivi professionnel.",
+    "Valider les ressentis et encourager la persévérance dans la quête de soins."
   ],
   "concepts_introduits": [
-    "Vascularisation superficielle : présence accrue de vaisseaux sanguins près de la surface.",
-    "Ratio surface corporelle/volume : comparaison de la surface de peau par rapport à la masse.",
-    "Perméabilité cutanée : facilité avec laquelle la peau laisse passer des substances.",
-    "Cellules souches épidermiques : cellules capables de se régénérer et de réparer la peau."
+    "TDAH : Trouble neurodéveloppemental affectant attention et impulsivité.",
+    "Diagnostic officiel : Reconnaissance médicale des symptômes du TDAH.",
+    "Thérapies comportementales : Approches pour modifier les comportements problématiques.",
+    "Coaching spécialisé : Aide ciblée pour personnes avec TDAH."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Les brûlures sur la peau d'un enfant sont plus graves que sur celle d'un adulte.",
-    "La peau des enfants est fragile."
+    "Vous substituer à un médecin ou thérapeute.",
+    "Être responsable de sa guérison."
   ],
-  "ton_angle": "Didactique et préventif, soulignant la vulnérabilité infantile face aux risques thermiques.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>La peau infantile, plus fine et perméable, exige une vigilance et des soins spécifiques face aux brûlures.</these_centrale>\n<arguments_cles>\n- La peau enfantine, plus fine et vascularisée, subit plus vite les agressions thermiques.\n- Un ratio surface corporelle/volume élevé amplifie l'impact d'une brûlure chez l'enfant.\n- La peau enfantine est plus perméable aux irritants et aux infections bactériennes.\n- Les structures de réparation cutanée immatures peuvent affecter la qualité de la guérison.\n</arguments_cles>\n<concepts_introduits>\n- Vascularisation superficielle : présence accrue de vaisseaux sanguins près de la surface.\n- Ratio surface corporelle/volume : comparaison de la surface de peau par rapport à la masse.\n- Perméabilité cutanée : facilité avec laquelle la peau laisse passer des substances.\n- Cellules souches épidermiques : cellules capables de se régénérer et de réparer la peau.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les brûlures sur la peau d'un enfant sont plus graves que sur celle d'un adulte.\n- La peau des enfants est fragile.\n</a_ne_pas_repeter>\n<ton_angle>Didactique et préventif, soulignant la vulnérabilité infantile face aux risques thermiques.</ton_angle>\n</fiche>"
+  "ton_angle": "Bienveillant et pragmatique, l'angle est celui du soutien à l'autonomie du proche.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Accompagner un proche avec TDAH implique de l'orienter vers un diagnostic et un soutien professionnel adapté.</these_centrale>\n<arguments_cles>\n- Orienter vers un médecin traitant si un TDAH est suspecté pour une première compréhension.\n- Encourager l'engagement dans des thérapies comportementales ou coaching spécialisé.\n- Soutenir la logistique des rendez-vous pour faciliter le suivi professionnel.\n- Valider les ressentis et encourager la persévérance dans la quête de soins.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble neurodéveloppemental affectant attention et impulsivité.\n- Diagnostic officiel : Reconnaissance médicale des symptômes du TDAH.\n- Thérapies comportementales : Approches pour modifier les comportements problématiques.\n- Coaching spécialisé : Aide ciblée pour personnes avec TDAH.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Vous substituer à un médecin ou thérapeute.\n- Être responsable de sa guérison.\n</a_ne_pas_repeter>\n<ton_angle>Bienveillant et pragmatique, l'angle est celui du soutien à l'autonomie du proche.</ton_angle>\n</fiche>"
 }

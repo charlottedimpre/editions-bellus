@@ -3,24 +3,23 @@
   "section": 1,
   "chapitre_numero": "3",
   "section_numero": "1",
-  "these_centrale": "L'application de glace sur les brûlures aggrave les lésions et favorise les infections, contrairement à l'eau tiède.",
+  "these_centrale": "Une communication adaptée au TDAH favorise l'écoute mutuelle en exprimant besoins et ressentis sans jugement.",
   "arguments_cles": [
-    "La glace cause un choc thermique et une vasoconstriction excessive.",
-    "Le froid intense gèle et détruit les cellules cutanées.",
-    "L'humidité créée par la glace favorise les infections bactériennes.",
-    "L'eau tiède dissipe la chaleur sans causer de dommages tissulaires."
+    "Exprimer son ressenti avec « je » et nommer l'impact du comportement.",
+    "Nommer ses besoins pour proposer une solution concrète et constructive.",
+    "Comprendre les difficultés de fonctionnement cérébral lié au TDAH.",
+    "La communication non violente demande pratique, patience et régularité."
   ],
   "concepts_introduits": [
-    "Choc thermique : Réaction violente du corps à un changement de température.",
-    "Vasoconstriction : Rétrécissement des vaisseaux sanguins.",
-    "Dommages tissulaires : Lésions causées aux tissus du corps.",
-    "Gelure : Lésion causée par le froid extrême."
+    "TDAH : Trouble neurodéveloppemental affectant fonctions exécutives.",
+    "Communication non violente : Expression des besoins et ressentis sans accusé."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "L'application immédiate de glace sur une brûlure est instinctive.",
-    "La glace est une erreur préjudiciable."
+    "Formule « Je ressens X quand Y se produit, et j'ai besoin de Z ».",
+    "Accusation directe de type « Tu es toujours en retard ».",
+    "L'idée que la communication résout instantanément tous les problèmes."
   ],
-  "ton_angle": "Ton instructif, angle préventif démontrant les dangers d'un geste courant.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>L'application de glace sur les brûlures aggrave les lésions et favorise les infections, contrairement à l'eau tiède.</these_centrale>\n<arguments_cles>\n- La glace cause un choc thermique et une vasoconstriction excessive.\n- Le froid intense gèle et détruit les cellules cutanées.\n- L'humidité créée par la glace favorise les infections bactériennes.\n- L'eau tiède dissipe la chaleur sans causer de dommages tissulaires.\n</arguments_cles>\n<concepts_introduits>\n- Choc thermique : Réaction violente du corps à un changement de température.\n- Vasoconstriction : Rétrécissement des vaisseaux sanguins.\n- Dommages tissulaires : Lésions causées aux tissus du corps.\n- Gelure : Lésion causée par le froid extrême.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'application immédiate de glace sur une brûlure est instinctive.\n- La glace est une erreur préjudiciable.\n</a_ne_pas_repeter>\n<ton_angle>Ton instructif, angle préventif démontrant les dangers d'un geste courant.</ton_angle>\n</fiche>"
+  "ton_angle": "Pragmatique et empathique, axé sur la résolution de conflits.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Une communication adaptée au TDAH favorise l'écoute mutuelle en exprimant besoins et ressentis sans jugement.</these_centrale>\n<arguments_cles>\n- Exprimer son ressenti avec « je » et nommer l'impact du comportement.\n- Nommer ses besoins pour proposer une solution concrète et constructive.\n- Comprendre les difficultés de fonctionnement cérébral lié au TDAH.\n- La communication non violente demande pratique, patience et régularité.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble neurodéveloppemental affectant fonctions exécutives.\n- Communication non violente : Expression des besoins et ressentis sans accusé.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Formule « Je ressens X quand Y se produit, et j'ai besoin de Z ».\n- Accusation directe de type « Tu es toujours en retard ».\n- L'idée que la communication résout instantanément tous les problèmes.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et empathique, axé sur la résolution de conflits.</ton_angle>\n</fiche>"
 }

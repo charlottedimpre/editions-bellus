@@ -3,26 +3,24 @@
   "section": 1,
   "chapitre_numero": "8",
   "section_numero": "1",
-  "these_centrale": "Adopter des mesures préventives ciblées réduit significativement les risques de brûlures domestiques et solaires.",
+  "these_centrale": "Souligner les succès, même modestes, renforce la relation et la motivation face aux défis du TDAH.",
   "arguments_cles": [
-    "Régler le chauffe-eau à 48°C prévient les brûlures par eau chaude.",
-    "Les robinets thermostatiques limitent la température de l'eau.",
-    "Sécuriser la cuisine en tournant les poignées évite les accidents.",
-    "Ranger le fer à repasser et éloigner les enfants est crucial.",
-    "Protéger la peau des brûlures solaires avec crème et vêtements."
+    "Valoriser ce qui fonctionne nourrit la motivation et le sentiment d'accomplissement.",
+    "Nommer les réussites renforce la dynamique positive et l'espoir mutuel.",
+    "Reconnaître les efforts contribue à un socle solide pour affronter les obstacles.",
+    "Déplacer le regard vers les progrès crée un environnement d'épanouissement."
   ],
   "concepts_introduits": [
-    "Brûlures : Lésions de la peau causées par la chaleur.",
-    "Robinet thermostatique : Dispositif régulant la température de l'eau.",
-    "Plaques à induction : Plaque chauffant uniquement le récipient.",
-    "Brûlures solaires : Lésions dues à une exposition excessive aux UV."
+    "TDAH : Trouble neurologique affectant l'attention et l'impulsivité.",
+    "Dynamique positive : Interaction constructive favorisant le bien-être.",
+    "Cercle vertueux : Effet d'entraînement des actions positives."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La température de 48°C est fondamentale.",
-    "Les enfants ont une peau plus sensible.",
-    "Les brûlures solaires augmentent le risque de cancers."
+    "Ignorer les difficultés",
+    "Se focaliser sur les problèmes",
+    "Attitude purement critique"
   ],
-  "ton_angle": "Ton informatif et préventif, axé sur la sécurité domestique.",
-  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Adopter des mesures préventives ciblées réduit significativement les risques de brûlures domestiques et solaires.</these_centrale>\n<arguments_cles>\n- Régler le chauffe-eau à 48°C prévient les brûlures par eau chaude.\n- Les robinets thermostatiques limitent la température de l'eau.\n- Sécuriser la cuisine en tournant les poignées évite les accidents.\n- Ranger le fer à repasser et éloigner les enfants est crucial.\n- Protéger la peau des brûlures solaires avec crème et vêtements.\n</arguments_cles>\n<concepts_introduits>\n- Brûlures : Lésions de la peau causées par la chaleur.\n- Robinet thermostatique : Dispositif régulant la température de l'eau.\n- Plaques à induction : Plaque chauffant uniquement le récipient.\n- Brûlures solaires : Lésions dues à une exposition excessive aux UV.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La température de 48°C est fondamentale.\n- Les enfants ont une peau plus sensible.\n- Les brûlures solaires augmentent le risque de cancers.\n</a_ne_pas_repeter>\n<ton_angle>Ton informatif et préventif, axé sur la sécurité domestique.</ton_angle>\n</fiche>"
+  "ton_angle": "Positif et encourageant, soulignant la reconnaissance des efforts.",
+  "_raw": "<fiche>\n<chapitre_numero>8</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Souligner les succès, même modestes, renforce la relation et la motivation face aux défis du TDAH.</these_centrale>\n<arguments_cles>\n- Valoriser ce qui fonctionne nourrit la motivation et le sentiment d'accomplissement.\n- Nommer les réussites renforce la dynamique positive et l'espoir mutuel.\n- Reconnaître les efforts contribue à un socle solide pour affronter les obstacles.\n- Déplacer le regard vers les progrès crée un environnement d'épanouissement.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : Trouble neurologique affectant l'attention et l'impulsivité.\n- Dynamique positive : Interaction constructive favorisant le bien-être.\n- Cercle vertueux : Effet d'entraînement des actions positives.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Ignorer les difficultés\n- Se focaliser sur les problèmes\n- Attitude purement critique\n</a_ne_pas_repeter>\n<ton_angle>Positif et encourageant, soulignant la reconnaissance des efforts.</ton_angle>\n</fiche>"
 }

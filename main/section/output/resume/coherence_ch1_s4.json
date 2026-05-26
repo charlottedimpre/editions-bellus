@@ -3,22 +3,22 @@
   "section": 4,
   "chapitre_numero": "1",
   "section_numero": "4",
-  "these_centrale": "Les zones fonctionnelles, même légèrement brûlées, nécessitent une attention médicale immédiate pour éviter des handicaps permanents.",
+  "these_centrale": "La tempête émotionnelle du TDAH adulte est une composante intrinsèque nécessitant compréhension et stratégies de gestion.",
   "arguments_cles": [
-    "Les mains et les pieds, essentiels à la mobilité, peuvent souffrir de limitations fonctionnelles graves.",
-    "Le visage, centre d'expression, risque des cicatrices affectant l'estime et les fonctions protectrices.",
-    "Les articulations sont vulnérables aux brides cicatricielles limitant l'amplitude des mouvements.",
-    "Les organes génitaux et périnée exigent une vigilance particulière due à leur sensibilité accrue."
+    "La sensibilité accrue rend les émotions plus vives et difficiles à maîtriser.",
+    "La réaction émotionnelle disproportionnée découle d'une difficulté de régulation neuronale.",
+    "La labilité émotionnelle complexifie les interactions sociales et la gestion des situations.",
+    "L'intensité des émotions amplifiée demande un effort conscient pour le retour au calme."
   ],
   "concepts_introduits": [
-    "Zones fonctionnelles : parties du corps cruciales pour la mobilité ou l'expression.",
-    "Brides cicatricielles : tissu fibreux limitant les mouvements articulaires après une brûlure."
+    "TDAH adulte : Trouble neurologique affectant régulation émotionnelle et attention.",
+    "Labilité émotionnelle : Changements rapides et intenses d'humeur."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "La séquelle invalidante",
-    "Indépendamment de l'étendue apparente"
+    "Réaction émotionnelle disproportionnée",
+    "Montagnes russes émotionnelles"
   ],
-  "ton_angle": "informatif et préventif, soulignant les risques fonctionnels des brûlures localisées.",
-  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les zones fonctionnelles, même légèrement brûlées, nécessitent une attention médicale immédiate pour éviter des handicaps permanents.</these_centrale>\n<arguments_cles>\n- Les mains et les pieds, essentiels à la mobilité, peuvent souffrir de limitations fonctionnelles graves.\n- Le visage, centre d'expression, risque des cicatrices affectant l'estime et les fonctions protectrices.\n- Les articulations sont vulnérables aux brides cicatricielles limitant l'amplitude des mouvements.\n- Les organes génitaux et périnée exigent une vigilance particulière due à leur sensibilité accrue.\n</arguments_cles>\n<concepts_introduits>\n- Zones fonctionnelles : parties du corps cruciales pour la mobilité ou l'expression.\n- Brides cicatricielles : tissu fibreux limitant les mouvements articulaires après une brûlure.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- La séquelle invalidante\n- Indépendamment de l'étendue apparente\n</a_ne_pas_repeter>\n<ton_angle>informatif et préventif, soulignant les risques fonctionnels des brûlures localisées.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et compatissant, abordant l'angle neurologique des émotions.",
+  "_raw": "<fiche>\n<chapitre_numero>1</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La tempête émotionnelle du TDAH adulte est une composante intrinsèque nécessitant compréhension et stratégies de gestion.</these_centrale>\n<arguments_cles>\n- La sensibilité accrue rend les émotions plus vives et difficiles à maîtriser.\n- La réaction émotionnelle disproportionnée découle d'une difficulté de régulation neuronale.\n- La labilité émotionnelle complexifie les interactions sociales et la gestion des situations.\n- L'intensité des émotions amplifiée demande un effort conscient pour le retour au calme.\n</arguments_cles>\n<concepts_introduits>\n- TDAH adulte : Trouble neurologique affectant régulation émotionnelle et attention.\n- Labilité émotionnelle : Changements rapides et intenses d'humeur.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Réaction émotionnelle disproportionnée\n- Montagnes russes émotionnelles\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et compatissant, abordant l'angle neurologique des émotions.</ton_angle>\n</fiche>"
 }

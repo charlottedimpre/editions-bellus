@@ -3,22 +3,22 @@
   "section": 4,
   "chapitre_numero": "6",
   "section_numero": "4",
-  "these_centrale": "Les traitements des brûlures visent à favoriser la cicatrisation, prévenir les infections et minimiser les séquelles cutanées.",
+  "these_centrale": "Protéger son propre équilibre est essentiel pour pouvoir continuer à soutenir un proche sur le long terme.",
   "arguments_cles": [
-    "Les pansements hydrocolloïdes créent un environnement humide optimal pour la régénération tissulaire.",
-    "La Biafine hydrate et répare l'épiderme des brûlures superficielles et coups de soleil.",
-    "Les antibiotiques ciblent les infections bactériennes pour une guérison sans complications.",
-    "Les examens complémentaires affinent le diagnostic des brûlures profondes et guident la prise en charge."
+    "Chercher de l'aide est une stratégie intelligente pour préserver énergie et santé.",
+    "Parler à une personne de confiance aide à prendre du recul et se sentir moins seul.",
+    "Les groupes de soutien offrent un partage d'expériences et un soutien mutuel précieux.",
+    "Consulter un professionnel aide à gérer le stress et à identifier les sources de problèmes."
   ],
   "concepts_introduits": [
-    "Pansements hydrocolloïdes : créent un milieu humide favorisant la cicatrisation.",
-    "Biafine : émulsion hydratante et réparatrice pour les lésions épidermiques superficielles.",
-    "Antibiotiques topiques/oraux : traitements contre les infections bactériennes des plaies.",
-    "Écouvillonnage : prélèvement pour identifier les bactéries et choisir l'antibiotique.",
-    "Échographie : examen d'imagerie pour évaluer la profondeur des brûlures."
+    "Charge mentale : poids invisible qui s'accumule et mène à l'épuisement.",
+    "Groupes de soutien : espaces de partage entre personnes vivant des situations similaires."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et pragmatique, abordant les solutions thérapeutiques pour les brûlures.",
-  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Les traitements des brûlures visent à favoriser la cicatrisation, prévenir les infections et minimiser les séquelles cutanées.</these_centrale>\n<arguments_cles>\n- Les pansements hydrocolloïdes créent un environnement humide optimal pour la régénération tissulaire.\n- La Biafine hydrate et répare l'épiderme des brûlures superficielles et coups de soleil.\n- Les antibiotiques ciblent les infections bactériennes pour une guérison sans complications.\n- Les examens complémentaires affinent le diagnostic des brûlures profondes et guident la prise en charge.\n</arguments_cles>\n<concepts_introduits>\n- Pansements hydrocolloïdes : créent un milieu humide favorisant la cicatrisation.\n- Biafine : émulsion hydratante et réparatrice pour les lésions épidermiques superficielles.\n- Antibiotiques topiques/oraux : traitements contre les infections bactériennes des plaies.\n- Écouvillonnage : prélèvement pour identifier les bactéries et choisir l'antibiotique.\n- Échographie : examen d'imagerie pour évaluer la profondeur des brûlures.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- L'utilisation de ces produits doit toujours suivre les recommandations de votre professionnel de santé.\n- L'objectif est toujours de garantir la meilleure guérison possible avec le minimum de séquelles.\n</a_ne_not_repeat>\n<ton_angle>Informatif et pragmatique, abordant les solutions thérapeutiques pour les brûlures.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Penser que vous seul pouvez tout gérer est une illusion.",
+    "Le soutien n'est pas un signe de faiblesse."
+  ],
+  "ton_angle": "Ton encourageant et pragmatique, axé sur la préservation du bien-être de l'aidant.",
+  "_raw": "<fiche>\n<chapitre_numero>6</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Protéger son propre équilibre est essentiel pour pouvoir continuer à soutenir un proche sur le long terme.</these_centrale>\n<arguments_cles>\n- Chercher de l'aide est une stratégie intelligente pour préserver énergie et santé.\n- Parler à une personne de confiance aide à prendre du recul et se sentir moins seul.\n- Les groupes de soutien offrent un partage d'expériences et un soutien mutuel précieux.\n- Consulter un professionnel aide à gérer le stress et à identifier les sources de problèmes.\n</arguments_cles>\n<concepts_introduits>\n- Charge mentale : poids invisible qui s'accumule et mène à l'épuisement.\n- Groupes de soutien : espaces de partage entre personnes vivant des situations similaires.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Penser que vous seul pouvez tout gérer est une illusion.\n- Le soutien n'est pas un signe de faiblesse.\n</a_ne_pas_repeter>\n<ton_angle>Ton encourageant et pragmatique, axé sur la préservation du bien-être de l'aidant.</ton_angle>\n</fiche>"
 }

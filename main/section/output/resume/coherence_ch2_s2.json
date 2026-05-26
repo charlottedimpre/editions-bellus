@@ -3,22 +3,25 @@
   "section": 2,
   "chapitre_numero": "2",
   "section_numero": "2",
-  "these_centrale": "Le refroidissement immédiat à l'eau courante est essentiel pour limiter les dégâts d'une brûlure thermique.",
+  "these_centrale": "Le décalage entre intention et action chez les TDAH cause de la frustration et un déséquilibre relationnel significatif.",
   "arguments_cles": [
-    "L'eau entre 15 et 25°C dissipe la chaleur et stoppe l'inflammation.",
-    "Maintenir le refroidissement 10 à 15 minutes est crucial pour stopper l'extension des lésions.",
-    "Le principe physique de dissipation thermique réduit la profondeur de la brûlure.",
-    "Ce protocole concerne uniquement les brûlures thermiques, pas chimiques ou électriques."
+    "L'incohérence parole/acte chez le TDAH génère une frustration constante pour l'entourage.",
+    "Les difficultés des fonctions exécutives expliquent les problèmes d'organisation et de mémorisation.",
+    "Ces comportements sont souvent mal interprétés comme un manque de considération intentionnel.",
+    "La compensation constante crée une charge mentale et un déséquilibre dans la relation."
   ],
   "concepts_introduits": [
-    "Brûlure thermique : Lésion cutanée causée par une source de chaleur.",
-    "Choc thermique : Réaction du corps à un changement rapide de température."
+    "Fonctions exécutives : organisation, planification, mémoire, gestion du temps.",
+    "TDAH : trouble neurologique impactant les fonctions exécutives.",
+    "Charge mentale : poids de la planification et du suivi."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Éviter absolument l'eau glacée ou la glace directe.",
-    "Le traitement dépend intimement de la cause de la brûlure."
+    "Promesses oubliées",
+    "Sentiment d'être la seule personne fiable",
+    "Pas un manque d'amour ou de volonté",
+    "Difficulté à passer de l'intention à l'action"
   ],
-  "ton_angle": "Instructif et préventif, l'angle souligne l'urgence et l'efficacité de l'eau.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le refroidissement immédiat à l'eau courante est essentiel pour limiter les dégâts d'une brûlure thermique.</these_centrale>\n<arguments_cles>\n- L'eau entre 15 et 25°C dissipe la chaleur et stoppe l'inflammation.\n- Maintenir le refroidissement 10 à 15 minutes est crucial pour stopper l'extension des lésions.\n- Le principe physique de dissipation thermique réduit la profondeur de la brûlure.\n- Ce protocole concerne uniquement les brûlures thermiques, pas chimiques ou électriques.\n</arguments_cles>\n<concepts_introduits>\n- Brûlure thermique : Lésion cutanée causée par une source de chaleur.\n- Choc thermique : Réaction du corps à un changement rapide de température.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Éviter absolument l'eau glacée ou la glace directe.\n- Le traitement dépend intimement de la cause de la brûlure.\n</a_ne_pas_repeter>\n<ton_angle>Instructif et préventif, l'angle souligne l'urgence et l'efficacité de l'eau.</ton_angle>\n</fiche>"
+  "ton_angle": "Explicatif et empathique, l'angle se focalise sur la cause neurologique des comportements.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le décalage entre intention et action chez les TDAH cause de la frustration et un déséquilibre relationnel significatif.</these_centrale>\n<arguments_cles>\n- L'incohérence parole/acte chez le TDAH génère une frustration constante pour l'entourage.\n- Les difficultés des fonctions exécutives expliquent les problèmes d'organisation et de mémorisation.\n- Ces comportements sont souvent mal interprétés comme un manque de considération intentionnel.\n- La compensation constante crée une charge mentale et un déséquilibre dans la relation.\n</arguments_cles>\n<concepts_introduits>\n- Fonctions exécutives : organisation, planification, mémoire, gestion du temps.\n- TDAH : trouble neurologique impactant les fonctions exécutives.\n- Charge mentale : poids de la planification et du suivi.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Promesses oubliées\n- Sentiment d'être la seule personne fiable\n- Pas un manque d'amour ou de volonté\n- Difficulté à passer de l'intention à l'action\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et empathique, l'angle se focalise sur la cause neurologique des comportements.</ton_angle>\n</fiche>"
 }

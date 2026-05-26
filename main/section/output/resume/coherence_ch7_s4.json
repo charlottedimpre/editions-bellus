@@ -3,24 +3,20 @@
   "section": 4,
   "chapitre_numero": "7",
   "section_numero": "4",
-  "these_centrale": "La prévention ciblée des brûlures domestiques chez les enfants exige une vigilance constante dans les zones à risque et une réponse rapide aux urgences.",
+  "these_centrale": "Définir et respecter les limites du rôle de soutien est crucial pour l'autonomie et le bien-être de la personne TDAH.",
   "arguments_cles": [
-    "La cuisine et la salle de bain sont les zones les plus à risque pour les brûlures infantiles.",
-    "Des gestes préventifs simples, comme le contrôle de la température de l'eau, sont essentiels.",
-    "L'éducation et la sensibilisation des enfants aux dangers de la chaleur sont primordiales.",
-    "Les brûlures, même mineures, nécessitent une surveillance et une consultation médicale si nécessaire."
+    "Soutenir sans substituer aux professionnels de santé est primordial pour l'efficacité.",
+    "Agir comme béquille permanente entrave le développement de stratégies autonomes.",
+    "Clarifier son rôle incite la personne TDAH à trouver ses propres solutions.",
+    "Dépassement de rôle : risque d'épuisement et de retard de prise en charge adaptée."
   ],
   "concepts_introduits": [
-    "Plaques à induction : Surface chauffant uniquement le récipient, sécurité accrue.",
-    "Robinets thermostatiques : Maintien d'une température d'eau constante et limitée.",
-    "Déshydratation : Perte excessive d'eau corporelle, risque accru chez les jeunes enfants."
+    "Autonomie : capacité à agir par soi-même.",
+    "Dépendance excessive : besoin constant de l'aide d'autrui.",
+    "Professionnels de santé : experts pour diagnostic et traitement."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [
-    "Attention aux poignées de casseroles.",
-    "Utiliser son coude pour tester l'eau du bain.",
-    "La taille de la paume de l'enfant."
-  ],
-  "ton_angle": "Pragmatique et informatif, axé sur la sécurité domestique des enfants.",
-  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>La prévention ciblée des brûlures domestiques chez les enfants exige une vigilance constante dans les zones à risque et une réponse rapide aux urgences.</these_centrale>\n<arguments_cles>\n- La cuisine et la salle de bain sont les zones les plus à risque pour les brûlures infantiles.\n- Des gestes préventifs simples, comme le contrôle de la température de l'eau, sont essentiels.\n- L'éducation et la sensibilisation des enfants aux dangers de la chaleur sont primordiales.\n- Les brûlures, même mineures, nécessitent une surveillance et une consultation médicale si nécessaire.\n</arguments_cles>\n<concepts_introduits>\n- Plaques à induction : Surface chauffant uniquement le récipient, sécurité accrue.\n- Robinets thermostatiques : Maintien d'une température d'eau constante et limitée.\n- Déshydratation : Perte excessive d'eau corporelle, risque accru chez les jeunes enfants.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Attention aux poignées de casseroles.\n- Utiliser son coude pour tester l'eau du bain.\n- La taille de la paume de l'enfant.\n</a_ne_pas_repeter>\n<ton_angle>Pragmatique et informatif, axé sur la sécurité domestique des enfants.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [],
+  "ton_angle": "Tonalité pédagogique, prônant la clarté et la responsabilité dans le soutien.",
+  "_raw": "<fiche>\n<chapitre_numero>7</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Définir et respecter les limites du rôle de soutien est crucial pour l'autonomie et le bien-être de la personne TDAH.</these_centrale>\n<arguments_cles>\n- Soutenir sans substituer aux professionnels de santé est primordial pour l'efficacité.\n- Agir comme béquille permanente entrave le développement de stratégies autonomes.\n- Clarifier son rôle incite la personne TDAH à trouver ses propres solutions.\n- Dépassement de rôle : risque d'épuisement et de retard de prise en charge adaptée.\n</arguments_cles>\n<concepts_introduits>\n- Autonomie : capacité à agir par soi-même.\n- Dépendance excessive : besoin constant de l'aide d'autrui.\n- Professionnels de santé : experts pour diagnostic et traitement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Aide à tout prix\n- Agir comme une béquille permanente\n- Intention bienveillante causant du tort\n- Retarder une prise en charge adaptée\n</a_ne_not_repeter>\n<ton_angle>Tonalité pédagogique, prônant la clarté et la responsabilité dans le soutien.</ton_angle>\n</fiche>"
 }

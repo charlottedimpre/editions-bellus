@@ -3,19 +3,22 @@
   "section": 1,
   "chapitre_numero": "2",
   "section_numero": "1",
-  "these_centrale": "Agir rapidement dans les premières secondes d'une brûlure est essentiel pour limiter les dommages tissulaires.",
+  "these_centrale": "Les oublis quotidiens liés au TDAH, bien que sources de tensions, ne reflètent pas un manque d'amour mais des défis neurologiques.",
   "arguments_cles": [
-    "Interrompre immédiatement la source de chaleur limite la propagation de l'énergie.",
-    "Le retrait rapide du corps de la source de chaleur est prioritaire.",
-    "Ne pas retirer les vêtements collés à la peau pour éviter d'aggraver les lésions.",
-    "Éviter de secouer ou tapoter la zone brûlée pour ne pas causer de dommages."
+    "Les oublis répétés créent des frictions relationnelles en donnant une impression de désintérêt.",
+    "Le décalage intention-action chez le TDAH rend planification et organisation très difficiles.",
+    "Les comportements peuvent être mal interprétés comme négligence, alors qu'ils sont neurologiques.",
+    "Le sentiment de gérer seul la charge mentale épuise et crée un déséquilibre relationnel."
   ],
   "concepts_introduits": [
-    "Énergie thermique : Transfert de chaleur pouvant endommager les tissus.",
-    "Brûlures par flammes : Lésions causées par l'exposition directe au feu."
+    "TDAH : trouble neurologique affectant planification, organisation et attention.",
+    "Charge mentale : travail psychique lié à l'anticipation et l'organisation."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Didactique et préventif, soulignant l'importance de la réactivité.",
-  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Agir rapidement dans les premières secondes d'une brûlure est essentiel pour limiter les dommages tissulaires.</these_centrale>\n<arguments_cles>\n- Interrompre immédiatement la source de chaleur limite la propagation de l'énergie.\n- Le retrait rapide du corps de la source de chaleur est prioritaire.\n- Ne pas retirer les vêtements collés à la peau pour éviter d'aggraver les lésions.\n- Éviter de secouer ou tapoter la zone brûlée pour ne pas causer de dommages.\n</arguments_cles>\n<concepts_introduits>\n- Énergie thermique : Transfert de chaleur pouvant endommager les tissus.\n- Brûlures par flammes : Lésions causées par l'exposition directe au feu.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les 15 premières secondes sont cruciales.\n- Éloigner la partie du corps de la zone humide.\n</a_ne_not_repeter>\n<ton_angle>Didactique et préventif, soulignant l'importance de la réactivité.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Les oublis du quotidien peuvent sembler anodins.",
+    "Ces manifestations ne sont pas le reflet d'un cœur froid."
+  ],
+  "ton_angle": "Explicatif et empathique, adoptant un angle d'aide à la compréhension mutuelle.",
+  "_raw": "<fiche>\n<chapitre_numero>2</chapitre_numero>\n<section_numero>1</section_numero>\n<these_centrale>Les oublis quotidiens liés au TDAH, bien que sources de tensions, ne reflètent pas un manque d'amour mais des défis neurologiques.</these_centrale>\n<arguments_cles>\n- Les oublis répétés créent des frictions relationnelles en donnant une impression de désintérêt.\n- Le décalage intention-action chez le TDAH rend planification et organisation très difficiles.\n- Les comportements peuvent être mal interprétés comme négligence, alors qu'ils sont neurologiques.\n- Le sentiment de gérer seul la charge mentale épuise et crée un déséquilibre relationnel.\n</arguments_cles>\n<concepts_introduits>\n- TDAH : trouble neurologique affectant planification, organisation et attention.\n- Charge mentale : travail psychique lié à l'anticipation et l'organisation.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Les oublis du quotidien peuvent sembler anodins.\n- Ces manifestations ne sont pas le reflet d'un cœur froid.\n</a_ne_pas_repeter>\n<ton_angle>Explicatif et empathique, adoptant un angle d'aide à la compréhension mutuelle.</ton_angle>\n</fiche>"
 }

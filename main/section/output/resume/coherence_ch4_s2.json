@@ -3,24 +3,27 @@
   "section": 2,
   "chapitre_numero": "4",
   "section_numero": "2",
-  "these_centrale": "Le miel d'usage médical est un traitement naturel efficace pour les brûlures légères grâce à ses propriétés antimicrobiennes et cicatrisantes.",
+  "these_centrale": "Les outils d'organisation externe libèrent la charge mentale et soutiennent les personnes TDAH en offrant des repères.",
   "arguments_cles": [
-    "Ses propriétés antibactériennes et cicatrisantes aident à la guérison des brûlures.",
-    "Le pH acide et le pouvoir osmotique du miel inhibent les bactéries.",
-    "Il crée un milieu humide favorisant la régénération tissulaire.",
-    "Son action anti-inflammatoire réduit rougeur et gonflement."
+    "Les aides externes sont des extensions de mémoire, allégeant la charge mentale.",
+    "Elles créent une prévisibilité douce et réduisent les oublis et frustrations.",
+    "Les outils ne sont pas des contraintes mais un soutien pour un quotidien plus fluide.",
+    "La visualisation et la répétition des informations aident à l'intégration cognitive.",
+    "Ils externalisent la planification, libérant de l'énergie mentale pour d'autres tâches."
   ],
   "concepts_introduits": [
-    "Peroxyde d'hydrogène : Agent antimicrobien naturel produit par le miel dilué.",
-    "Pouvoir osmotique : Capacité du miel à attirer l'eau des bactéries.",
-    "Brûlure du premier degré : Lésion superficielle affectant l'épiderme.",
-    "Brûlure du second degré superficielle : Atteinte de l'épiderme et du derme superficiel."
+    "Charge mentale : Poids psychologique des tâches à gérer au quotidien.",
+    "TDAH : Trouble du Déficit de l'Attention avec ou sans Hyperactivité.",
+    "Outils d'organisation externe : Supports physiques ou numériques structurant le quotidien."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Le miel n'est pas un aliment pour cet usage thérapeutique.",
-    "Le miel ne piège pas la chaleur."
+    "Gadgets",
+    "Solution miracle",
+    "Se noyer sous les listes",
+    "Infanitliser",
+    "Filet de sécurité"
   ],
-  "ton_angle": "Informatif et prescriptif, soulignant les bénéfices validés du miel médical.",
-  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Le miel d'usage médical est un traitement naturel efficace pour les brûlures légères grâce à ses propriétés antimicrobiennes et cicatrisantes.</these_centrale>\n<arguments_cles>\n- Ses propriétés antibactériennes et cicatrisantes aident à la guérison des brûlures.\n- Le pH acide et le pouvoir osmotique du miel inhibent les bactéries.\n- Il crée un milieu humide favorisant la régénération tissulaire.\n- Son action anti-inflammatoire réduit rougeur et gonflement.\n</arguments_cles>\n<concepts_introduits>\n- Peroxyde d'hydrogène : Agent antimicrobien naturel produit par le miel dilué.\n- Pouvoir osmotique : Capacité du miel à attirer l'eau des bactéries.\n- Brûlure du premier degré : Lésion superficielle affectant l'épiderme.\n- Brûlure du second degré superficielle : Atteinte de l'épiderme et du derme superficiel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le miel n'est pas un aliment pour cet usage thérapeutique.\n- Le miel ne piège pas la chaleur.\n</a_ne_pas_repeter>\n<ton_angle>Informatif et prescriptif, soulignant les bénéfices validés du miel médical.</ton_angle>\n</fiche>"
+  "ton_angle": "Angle pragmatique et soutenant, expliquant les bénéfices des aides organisationnelles pour le TDAH.",
+  "_raw": "<fiche>\n<chapitre_numero>4</chapitre_numero>\n<section_numero>2</section_numero>\n<these_centrale>Les outils d'organisation externe libèrent la charge mentale et soutiennent les personnes TDAH en offrant des repères.</these_centrale>\n<arguments_cles>\n- Les aides externes sont des extensions de mémoire, allégeant la charge mentale.\n- Elles créent une prévisibilité douce et réduisent les oublis et frustrations.\n- Les outils ne sont pas des contraintes mais un soutien pour un quotidien plus fluide.\n- La visualisation et la répétition des informations aident à l'intégration cognitive.\n- Ils externalisent la planification, libérant de l'énergie mentale pour d'autres tâches.\n</arguments_cles>\n<concepts_introduits>\n- Charge mentale : Poids psychologique des tâches à gérer au quotidien.\n- TDAH : Trouble du Déficit de l'Attention avec ou sans Hyperactivité.\n- Outils d'organisation externe : Supports physiques ou numériques structurant le quotidien.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Gadgets\n- Solution miracle\n- Se noyer sous les listes\n- Infanitliser\n- Filet de sécurité\n</a_ne_pas_repeter>\n<ton_angle>Angle pragmatique et soutenant, expliquant les bénéfices des aides organisationnelles pour le TDAH.</ton_angle>\n</fiche>"
 }

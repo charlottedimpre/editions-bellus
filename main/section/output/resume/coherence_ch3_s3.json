@@ -3,21 +3,24 @@
   "section": 3,
   "chapitre_numero": "3",
   "section_numero": "3",
-  "these_centrale": "Les cloques sont des barrières protectrices essentielles qui ne doivent pas être percées pour éviter infections et retards de cicatrisation.",
+  "these_centrale": "La reformulation empathique clarifie les émotions et renforce la connexion interpersonnelle lors de tensions.",
   "arguments_cles": [
-    "La cloque protège la peau vulnérable sous-jacente des agents pathogènes externes.",
-    "Percer une cloque augmente le risque d'infection et de complications graves.",
-    "Le retrait prématuré d'une cloque ralentit la guérison et favorise les cicatrices.",
-    "La cloque maintient un environnement humide propice à la régénération cutanée."
+    "La reformulation confirme la compréhension mutuelle et apaise l'interlocuteur.",
+    "Elle aide à se recentrer sur ses ressentis authentiques.",
+    "Elle valide la perspective de l'autre, désamorçant la tension.",
+    "Elle affine la pensée et précise le ressenti de chacun.",
+    "La sincérité est essentielle pour une reformulation efficace."
   ],
   "concepts_introduits": [
-    "Cloque : poche remplie de liquide protégeant une peau lésée.",
-    "Infection : prolifération de micro-organismes pathogènes dans une plaie.",
-    "Cicatrisation : processus de réparation tissulaire après une blessure.",
-    "Derme : couche de peau sous l'épiderme."
+    "Reformulation : Répéter avec ses mots pour confirmer la compréhension.",
+    "Réactivité émotionnelle accrue : Intensité émotionnelle supérieure, difficile à réguler."
   ],
   "liens_chapitres": "Aucun",
-  "a_ne_pas_repeter": [],
-  "ton_angle": "Informatif et préventif, soulignant les risques des gestes inappropriés.",
-  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>Les cloques sont des barrières protectrices essentielles qui ne doivent pas être percées pour éviter infections et retards de cicatrisation.</these_centrale>\n<arguments_cles>\n- La cloque protège la peau vulnérable sous-jacente des agents pathogènes externes.\n- Percer une cloque augmente le risque d'infection et de complications graves.\n- Le retrait prématuré d'une cloque ralentit la guérison et favorise les cicatrices.\n- La cloque maintient un environnement humide propice à la régénération cutanée.\n</arguments_cles>\n<concepts_introduits>\n- Cloque : poche remplie de liquide protégeant une peau lésée.\n- Infection : prolifération de micro-organismes pathogènes dans une plaie.\n- Cicatrisation : processus de réparation tissulaire après une blessure.\n- Derme : couche de peau sous l'épiderme.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_not_repeter>\n- La cloque, juste un désagrément esthétique.\n- La curiosité ou le désir de soulager une tension.\n- Le pus.\n- La cellulite infectieuse.\n- La septicémie.\n- Une brûlure du deuxième degré superficiel.\n- La ponctionner dans un cadre stérile.\n</a_ne_not_repeter>\n<ton_angle>Informatif et préventif, soulignant les risques des gestes inappropriés.</ton_angle>\n</fiche>"
+  "a_ne_pas_repeter": [
+    "Une danse épuisante",
+    "Un potentiel clash",
+    "Un effort continu"
+  ],
+  "ton_angle": "Pédagogique et bienveillant, axé sur la résolution de conflits par l'écoute.",
+  "_raw": "<fiche>\n<chapitre_numero>3</chapitre_numero>\n<section_numero>3</section_numero>\n<these_centrale>La reformulation empathique clarifie les émotions et renforce la connexion interpersonnelle lors de tensions.</these_centrale>\n<arguments_cles>\n- La reformulation confirme la compréhension mutuelle et apaise l'interlocuteur.\n- Elle aide à se recentrer sur ses ressentis authentiques.\n- Elle valide la perspective de l'autre, désamorçant la tension.\n- Elle affine la pensée et précise le ressenti de chacun.\n- La sincérité est essentielle pour une reformulation efficace.\n</arguments_cles>\n<concepts_introduits>\n- Reformulation : Répéter avec ses mots pour confirmer la compréhension.\n- Réactivité émotionnelle accrue : Intensité émotionnelle supérieure, difficile à réguler.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Une danse épuisante\n- Un potentiel clash\n- Un effort continu\n</a_ne_pas_repeter>\n<ton_angle>Pédagogique et bienveillant, axé sur la résolution de conflits par l'écoute.</ton_angle>\n</fiche>"
 }

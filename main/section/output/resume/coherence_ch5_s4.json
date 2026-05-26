@@ -3,23 +3,24 @@
   "section": 4,
   "chapitre_numero": "5",
   "section_numero": "4",
-  "these_centrale": "Distinguer les pratiques sérieuses des charlatanismes s'appuie sur des critères concrets et la primauté des soins médicaux.",
+  "these_centrale": "L'absence de limites claires dans une relation déséquilibre les dynamiques, engendrant frustration et dépendance malsaine.",
   "arguments_cles": [
-    "Un professionnel sérieux complète les soins médicaux, n'y substitue jamais ses rituels.",
-    "L'honnêteté et la transparence sur les limites des méthodes sont des signes de fiabilité.",
-    "L'effet placebo peut procurer un soulagement subjectif, mais ne traite pas la lésion.",
-    "Le retard de soins appropriés par des pratiques non encadrées engendre des dangers."
+    "Le déséquilibre relationnel naît d'une répartition inégale des tâches et des soucis.",
+    "L'absence de limites engendre une dépendance malsaine, freinant l'autonomie des partenaires.",
+    "Des limites claires protègent l'énergie de chacun et favorisent le respect mutuel.",
+    "La frustration et le ressentiment apparaissent quand les besoins personnels sont négligés."
   ],
   "concepts_introduits": [
-    "Charlatanisme : Pratiques frauduleuses promettant des résultats inexistants.",
-    "Effet placebo : Amélioration subjective basée sur la conviction du patient.",
-    "Soins conventionnels : Traitements médicaux éprouvés et reconnus scientifiquement."
+    "Déséquilibre relationnel : Répartition inégale des responsabilités et des charges.",
+    "Dépendance malsaine : Incapacité à agir de manière autonome par manque de repères.",
+    "Limites claires : Définition des frontières pour préserver l'espace personnel et relationnel."
   ],
   "liens_chapitres": "Aucun",
   "a_ne_pas_repeter": [
-    "Promesses de miracles ou de guérison instantanée.",
-    "Interdiction de consulter un professionnel de santé."
+    "Le poids invisible des tâches cumulées.",
+    "Le risque d'exploitation et d'épuisement.",
+    "La complaisance développée par dépendance."
   ],
-  "ton_angle": "Informations préventives et pragmatiques pour un discernement éclairé.",
-  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>Distinguer les pratiques sérieuses des charlatanismes s'appuie sur des critères concrets et la primauté des soins médicaux.</these_centrale>\n<arguments_cles>\n- Un professionnel sérieux complète les soins médicaux, n'y substitue jamais ses rituels.\n- L'honnêteté et la transparence sur les limites des méthodes sont des signes de fiabilité.\n- L'effet placebo peut procurer un soulagement subjectif, mais ne traite pas la lésion.\n- Le retard de soins appropriés par des pratiques non encadrées engendre des dangers.\n</arguments_cles>\n<concepts_introduits>\n- Charlatanisme : Pratiques frauduleuses promettant des résultats inexistants.\n- Effet placebo : Amélioration subjective basée sur la conviction du patient.\n- Soins conventionnels : Traitements médicaux éprouvés et reconnus scientifiquement.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Promesses de miracles ou de guérison instantanée.\n- Interdiction de consulter un professionnel de santé.\n</a_ne_pas_repeter>\n<ton_angle>Informations préventives et pragmatiques pour un discernement éclairé.</ton_angle>\n</fiche>"
+  "ton_angle": "Ton pragmatique, axé sur les conséquences pratiques et les solutions concrètes pour la préservation des relations.",
+  "_raw": "<fiche>\n<chapitre_numero>5</chapitre_numero>\n<section_numero>4</section_numero>\n<these_centrale>L'absence de limites claires dans une relation déséquilibre les dynamiques, engendrant frustration et dépendance malsaine.</these_centrale>\n<arguments_cles>\n- Le déséquilibre relationnel naît d'une répartition inégale des tâches et des soucis.\n- L'absence de limites engendre une dépendance malsaine, freinant l'autonomie des partenaires.\n- Des limites claires protègent l'énergie de chacun et favorisent le respect mutuel.\n- La frustration et le ressentiment apparaissent quand les besoins personnels sont négligés.\n</arguments_cles>\n<concepts_introduits>\n- Déséquilibre relationnel : Répartition inégale des responsabilités et des charges.\n- Dépendance malsaine : Incapacité à agir de manière autonome par manque de repères.\n- Limites claires : Définition des frontières pour préserver l'espace personnel et relationnel.\n</concepts_introduits>\n<liens_chapitres>Aucun</liens_chapitres>\n<a_ne_pas_repeter>\n- Le poids invisible des tâches cumulées.\n- Le risque d'exploitation et d'épuisement.\n- La complaisance développée par dépendance.\n</a_ne_pas_repeter>\n<ton_angle>Ton pragmatique, axé sur les conséquences pratiques et les solutions concrètes pour la préservation des relations.</ton_angle>\n</fiche>"
 }
