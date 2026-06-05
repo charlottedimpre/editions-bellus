@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Web Search Data</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-muted min-h-screen p-4">
@@ -12,30 +13,24 @@
 
 <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
 
-  <!-- STEPPER -->
   {% include "components/progress-bar.html" %}
 
-  <!-- MAIN CARD -->
   <div class="bg-background border border-border rounded-xl p-4">
 
-    <!-- Titre + Marquer comme complétée -->
     <div class="flex justify-between items-start mb-1">
       <div>
         <h2 class="text-xl font-bold text-foreground">Données Web Search</h2>
         <p class="text-sm text-muted-foreground mt-0.5 mb-4">Résultats de la recherche web</p>
       </div>
-      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
-        ✓ Marquer comme complétée
-      </button>
+      {% include "components/done.html" %}
     </div>
 
-    <!-- Nav Précédent / contexte / Suivant -->
     <div class="flex justify-between items-center mb-6">
-      <a href="?step={{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+      <a href="{{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
         ‹ Précédent
       </a>
       <span class="text-xs text-muted-foreground">← Fiche Cadrage &nbsp;|&nbsp; Plan →</span>
-      <a href="?step={{ next_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+      <a href="{{ next_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
         Suivant ›
       </a>
     </div>
@@ -43,7 +38,6 @@
     <form method="POST">
     {% csrf_token %}
 
-    <!-- Séparateur + Bouton Modifier -->
     <div class="py-4">
       <hr class="border-t border-border mb-4">
       <div class="flex gap-2">
@@ -62,7 +56,6 @@
       </div>
     </div>
 
-    <!-- Champs en cartes individuelles -->
     <div class="flex flex-col gap-2.5">
 
       <!-- NOTIONS -->
@@ -70,9 +63,9 @@
         <div class="text-sm font-semibold text-foreground mb-3">Notions indispensables</div>
         {% for notion in notions %}
           <div class="mb-2 pb-2 border-b border-border last:border-0 last:mb-0 last:pb-0">
-            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ notion.contenu_de_la_notion|default:"Non renseigné" }}</div>
+            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ notion.contenu|default:"Non renseigné" }}</div>
             <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none"
-              name="notion_{{ notion.id }}" rows="4">{{ notion.contenu_de_la_notion }}</textarea>
+              name="notion_{{ forloop.counter }}" rows="4">{{ notion.contenu }}</textarea>
           </div>
         {% empty %}
           <p class="text-sm text-muted-foreground italic">Aucune notion disponible</p>
@@ -84,9 +77,9 @@
         <div class="text-sm font-semibold text-foreground mb-3">Erreurs fréquentes</div>
         {% for erreur in erreurs %}
           <div class="mb-2 pb-2 border-b border-border last:border-0 last:mb-0 last:pb-0">
-            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ erreur.contenu_de_l_erreur|default:"Non renseigné" }}</div>
+            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ erreur.contenu|default:"Non renseigné" }}</div>
             <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none"
-              name="erreur_{{ erreur.id }}" rows="4">{{ erreur.contenu_de_l_erreur }}</textarea>
+              name="erreur_{{ forloop.counter }}" rows="4">{{ erreur.contenu }}</textarea>
           </div>
         {% empty %}
           <p class="text-sm text-muted-foreground italic">Aucune erreur</p>
@@ -98,9 +91,9 @@
         <div class="text-sm font-semibold text-foreground mb-3">Étapes essentielles</div>
         {% for etape in etapes_es %}
           <div class="mb-2 pb-2 border-b border-border last:border-0 last:mb-0 last:pb-0">
-            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ etape.contenu_de_l_etapes|default:"Non renseigné" }}</div>
+            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ etape.contenu|default:"Non renseigné" }}</div>
             <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none"
-              name="etape_{{ etape.id }}" rows="4">{{ etape.contenu_de_l_etapes }}</textarea>
+              name="etape_{{ forloop.counter }}" rows="4">{{ etape.contenu }}</textarea>
           </div>
         {% empty %}
           <p class="text-sm text-muted-foreground italic">Aucune étape</p>
@@ -112,9 +105,9 @@
         <div class="text-sm font-semibold text-foreground mb-3">Risques</div>
         {% for risque in risques %}
           <div class="mb-2 pb-2 border-b border-border last:border-0 last:mb-0 last:pb-0">
-            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ risque.contenu_du_risque|default:"Non renseigné" }}</div>
+            <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ risque.contenu|default:"Non renseigné" }}</div>
             <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none"
-              name="risque_{{ risque.id }}" rows="4">{{ risque.contenu_du_risque }}</textarea>
+              name="risque_{{ forloop.counter }}" rows="4">{{ risque.contenu }}</textarea>
           </div>
         {% empty %}
           <p class="text-sm text-muted-foreground italic">Aucun risque</p>
@@ -123,7 +116,6 @@
 
     </div>
 
-    <!-- Lancer le processus -->
     <button type="button" onclick="lancer_recherches_web()" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
       ▶ Lancer le processus
     </button>
@@ -136,9 +128,10 @@
 {% include 'components/status.html' %}
 
 <script>
-    function lancer_recherches_web(){
-    fetch("/process/web_search/")
+function lancer_recherches_web() {
+    fetch("/process/{{ livre_id }}/web_search/")
 }
+
 let initialValues = {};
 
 function toggleEdit() {

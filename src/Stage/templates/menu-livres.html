@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bibliothèque</title>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-muted min-h-screen p-6">
+
+<div style="max-width: 800px; margin: 0 auto;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+    <div>
+      <h1 style="font-size:22px; font-weight:500; margin:0; color:#0a0a0f;">Bibliothèque</h1>
+      <p style="font-size:13px; color:#717182; margin:4px 0 0;">{{ livres|length }} livre{{ livres|length|pluralize }} enregistré{{ livres|length|pluralize }}</p>
+    </div>
+    <a href="/variables/"
+    style="display:flex; align-items:center; gap:6px; padding:8px 16px; border-radius:8px; border:0.5px solid rgba(0,0,0,0.1); background:white; color:#0a0a0f; font-size:13px; font-weight:500; text-decoration:none;">
+    ⚙ Variables
+  </a>
+      <a href="/export/"
+     style="display:flex; align-items:center; gap:6px; padding:8px 16px; border-radius:8px; border:0.5px solid rgba(0,0,0,0.1); background:white; color:#0a0a0f; font-size:13px; font-weight:500; text-decoration:none;">
+    📄 Exports
+  </a>
+    <button onclick="document.getElementById('modal-wrap').style.display='flex'"
+      style="display:flex; align-items:center; gap:6px; padding:8px 16px; border-radius:8px; background:#030213; color:#ffffff; font-size:13px; font-weight:500; border:none; cursor:pointer;">
+      + Ajouter un livre
+    </button>
+  </div>
+
+
+
+
+  {% if livres %}
+  <div style="background:white; border:0.5px solid rgba(0,0,0,0.1); border-radius:12px; overflow:hidden;">
+    <table style="width:100%; border-collapse:collapse; font-size:13px;">
+      <thead>
+        <tr style="border-bottom:0.5px solid rgba(0,0,0,0.1); background:#fafafa;">
+          <th style="text-align:left; padding:10px 16px; font-weight:500; color:#717182;">ID</th>
+          <th style="text-align:left; padding:10px 16px; font-weight:500; color:#717182;">Titre</th>
+          <th style="text-align:right; padding:10px 16px; font-weight:500; color:#717182;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for livre in livres %}
+        <tr style="border-bottom:0.5px solid rgba(0,0,0,0.1);">
+          <td style="padding:12px 16px; color:#717182;">{{ livre.livre_id }}</td>
+          <td style="padding:12px 16px; color:#0a0a0f; font-weight:500;">{{ livre.livre_titre }}</td>
+          <td style="padding:12px 16px; text-align:right;">
+            <a href="/{{ livre.livre_id }}/sujet/"
+              style="font-size:12px; color:#717182; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+              Ouvrir →
+            </a>
+
+            <form method="POST" style="display:inline;">
+      {% csrf_token %}
+      <input type="hidden" name="action" value="supprimer">
+      <input type="hidden" name="livre_id" value="{{ livre.livre_id }}">
+
+      <button type="submit"
+        onclick="return confirm('Supprimer ce livre ?')"
+        style="font-size:12px; padding:6px 10px; border:none; border-radius:6px; background:#dc2626; color:white; cursor:pointer;">
+        Supprimer
+      </button>
+        </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {% else %}
+  <div style="background:white; border:0.5px solid rgba(0,0,0,0.1); border-radius:12px; padding:48px; text-align:center;">
+    <p style="font-size:14px; color:#717182; margin:0;">Aucun livre enregistré pour le moment.</p>
+    <p style="font-size:13px; color:#717182; margin:8px 0 0;">Cliquez sur "Ajouter un livre" pour commencer.</p>
+  </div>
+  {% endif %}
+
+</div>
+
+<!-- Modal -->
+<div id="modal-wrap" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.35); align-items:center; justify-content:center; z-index:100;">
+  <div style="background:white; border:0.5px solid rgba(0,0,0,0.1); border-radius:12px; padding:24px; width:340px; box-shadow:0 8px 32px rgba(0,0,0,0.1);">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+      <p style="font-size:15px; font-weight:500; color:#0a0a0f; margin:0;">Ajouter un livre</p>
+      <button onclick="document.getElementById('modal-wrap').style.display='none'"
+        style="background:none; border:none; cursor:pointer; color:#717182; font-size:20px; padding:0; line-height:1;">✕</button>
+    </div>
+
+    <form method="POST">
+      {% csrf_token %}
+
+      <div style="margin-bottom:16px;">
+        <label style="display:block; font-size:12px; font-weight:500; color:#717182; margin-bottom:6px;">Titre du livre</label>
+        <input type="text" name="livre_titre" required placeholder="Ex: Don Quichotte"
+          style="width:100%; box-sizing:border-box; padding:8px 12px; border-radius:8px; border:0.5px solid rgba(0,0,0,0.2); font-size:13px; color:#0a0a0f; outline:none;">
+      </div>
+
+      <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:20px;">
+        <button type="button" onclick="document.getElementById('modal-wrap').style.display='none'"
+          style="padding:8px 16px; border-radius:8px; border:0.5px solid rgba(0,0,0,0.1); background:white; color:#0a0a0f; font-size:13px; cursor:pointer;">
+          Annuler
+        </button>
+        <button type="submit"
+          style="padding:8px 16px; border-radius:8px; border:none; background:#030213; color:#ffffff; font-size:13px; font-weight:500; cursor:pointer;">
+          Ajouter
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<script>
+document.getElementById('modal-wrap').addEventListener('click', function(e) {
+  if (e.target === this) this.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

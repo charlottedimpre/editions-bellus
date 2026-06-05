@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Fiche stratégique</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-muted min-h-screen p-4">
@@ -72,7 +73,7 @@
 
       {% else %}
         <div class="text-sm font-semibold text-foreground mb-3">Votre sujet</div>
-        <form method="post" class="flex gap-2">
+        <form  method="post" class="flex gap-2">
           {% csrf_token %}
           <input
             type="text"
@@ -103,7 +104,7 @@ function checkProgress() {
       document.getElementById("message").innerText = data.message;
       document.getElementById("bar").style.width = data.progress + "%";
       if (data.is_done) {
-        window.location.href = data.redirect_url;
+          window.location.href = data.redirect_url;
       } else {
         setTimeout(checkProgress, 1000);
       }

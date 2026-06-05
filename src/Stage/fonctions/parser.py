@@ -123,39 +123,39 @@ def parse_fiche_cadrage(text: str) -> dict:
     """
     fiche = extract_tag(text, "fiche_cadrage") or text
 
-    # Extraire les chapitres du sommaire
-    sommaire_raw = extract_tag(fiche, "sommaire") or ""
-    chapitres = re.findall(r"-\s*Chapitre\s+\d+\s*:\s*(.+)", sommaire_raw)
-
-    # Nombre de chapitres explicite (nouveau contrat).
-    # Compatibilite legacy: on derive depuis <sommaire> uniquement si present.
+    # Nombre de chapitres
     nbre_chapitres_raw = extract_tag(fiche, "nb_chapitre")
     if nbre_chapitres_raw is not None and nbre_chapitres_raw.strip():
         nbre_chapitres = to_int_or_raise(nbre_chapitres_raw.strip(), "nb_chapitre")
         if nbre_chapitres <= 0:
             raise ValueError(f"Valeur invalide pour nbre_chapitres: {nbre_chapitres!r}")
-    elif chapitres:
-        nbre_chapitres = len(chapitres)
     else:
         raise ValueError("La fiche de cadrage doit contenir la balise <nb_chapitre>.")
 
-    # Extraire les exclusions du hors périmètre
+    # Hors périmètre
     hp_raw = extract_tag(fiche, "hors_perimetre") or ""
-    exclusions = [line.strip("- ").strip() for line in hp_raw.splitlines() if line.strip().startswith("-")]
+    exclusions = "\n".join(
+        line.strip("- ").strip()
+        for line in hp_raw.splitlines()
+        if line.strip().startswith("-")
+    )
 
-    # Extraire les contraintes
+    # Contraintes spécifiques
     cs_raw = extract_tag(fiche, "contraintes_specifiques") or ""
-    contraintes = [line.strip("- ").strip() for line in cs_raw.splitlines() if line.strip().startswith("-")]
+    contraintes = "\n".join(
+        line.strip("- ").strip()
+        for line in cs_raw.splitlines()
+        if line.strip().startswith("-")
+    )
 
     return {
         "sujet": extract_tag(fiche, "sujet"),
-        "sommaire": chapitres,
-        "hors_perimetre": exclusions,
-        "contraintes_specifiques": contraintes,
+        "nbre_chapitres": nbre_chapitres,
+        "hors_perimetre": exclusions or None,
+        "contraintes_specifiques": contraintes or None,
         "cible_principale": extract_tag(fiche, "cible_principale"),
         "niveau": extract_tag(fiche, "niveau"),
         "objectif_lecteur": extract_tag(fiche, "objectif_lecteur"),
-        "nbre_chapitres": nbre_chapitres,
         "_raw": text,
     }
 
@@ -545,3 +545,25 @@ def extract_all_xml_blocks(text: str, tag_name: str) -> list[str]:
     """
     pattern = rf"(<{re.escape(tag_name)}(?:\s[^>]*)?>.*?</{re.escape(tag_name)}>)"
     return [m.strip() for m in re.findall(pattern, text, re.DOTALL)]
+
+def _parse_simple_preface_postface(text: str, tag_name: str, field_name: str) -> dict:
+    """Parse un bloc simple de type preface/postface."""
+    content = extract_tag(text, tag_name) or text
+    return {
+        field_name: content,
+        "_raw": text,
+    }
+
+
+def parse_preface(text: str) -> dict:
+    """
+    Parse la réponse de la préface.
+    """
+    return _parse_simple_preface_postface(text, "preface", "preface")
+
+
+def parse_postface(text: str) -> dict:
+    """
+    Parse la réponse de la postface.
+    """
+    return _parse_simple_preface_postface(text, "postface", "postface")

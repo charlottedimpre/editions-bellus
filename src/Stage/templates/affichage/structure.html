@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Structure Chapitres & Sections</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-muted min-h-screen p-4">
@@ -24,9 +25,7 @@
         <h2 class="text-xl font-bold text-foreground">Structure des chapitres</h2>
         <p class="text-sm text-muted-foreground mt-0.5 mb-4">Organisation des chapitres et sections</p>
       </div>
-      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
-        ✓ Marquer comme complétée
-      </button>
+      {% include "components/done.html" %}
     </div>
 
     <!-- Nav Précédent / contexte / Suivant -->
@@ -143,7 +142,7 @@
 
 <script>
     function lancer_structure(){
-    fetch("/structure/")
+    fetch("/process/{{ livre_id }}/structure/")
 }
 let initialValues = {};
 

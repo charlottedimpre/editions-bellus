@@ -1,8 +1,0 @@
-{
-  "request_info": {
-    "success": false,
-    "topup_credits_remaining": 0,
-    "credits_required": 1,
-    "message": "You have used all of your Top Up credits. Please purchase more Top Up credits or subscribe to a monthly plan to continue using the API."
-  }
-}

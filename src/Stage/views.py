@@ -1,53 +1,52 @@
-from django.http import JsonResponse
-from django.shortcuts import render
-from django.http import FileResponse, Http404
-
-from .services.recherches import *
-from .services.process import *
-
-from .tasks import *
 import docker
 
+import os
+
+from .fonctions.prepostface.postface import reset_postface
+from .fonctions.prepostface.preface import reset_preface
+from .settings import BASE_DIR
+from django.http import JsonResponse, HttpResponse
+from django.shortcuts import redirect
+from django.http import FileResponse, Http404
+
+from .models import *
+from .tasks import *
+
+import json
 from .fonctions.fiche_cadrage import reset_fiche_cadrage
-from .fonctions.sections.section import recup_section_texte_all
-from .fonctions.web_search.weboutput import recup_web_search, reset_web_search
-from .fonctions.plan_detaille import recup_plan_detail, reset_plan_detail
-from .fonctions.structure_chapitre import recup_chapitres_sections, reset_structure
+from .fonctions.sections.section import recup_section_texte_all, reset_all_test
+from .fonctions.web_search.web_search import recup_web_search, reset_web_search
+from .fonctions.plan_detaille import reset_plan_detail, recup_plan_detail
+from .fonctions.structure_chapitre import reset_structure
 from .fonctions.introduction import recup_intro, reset_intro
 from .fonctions.conclusion import recup_conclusion, reset_conclusion
 
+import mimetypes
+from django.http import JsonResponse, FileResponse, Http404
+from django.views.decorators.http import require_POST
 
+from .tasks import export_task
+from .fonctions.export.affichage_bdd import OUTPUT_DIR
 
-def test(request):
-    status, _ = ProcessStatus.objects.get_or_create(id=1)
+def livres(request):
+    if request.method == "POST":
+        if request.POST.get("action") == "supprimer":
+            supprimer_livre(request.POST.get("livre_id"))
+        else :
+            livre_titre = request.POST.get("livre_titre")
+            dernier = Livre.objects.order_by("livre_id").last()
+            prochain_id = (dernier.livre_id + 1) if dernier and dernier.livre_id else 1
+            Livre.objects.create(livre_id=prochain_id, livre_titre=livre_titre)
+            Etapes.objects.create(livre_id=prochain_id)
+        return redirect(request.path)
 
-    status.message = "Redémarrage Celery..."
-    status.save()
+    list_livres = Livre.objects.all()
+    return render(request, "menu-livres.html", {"livres": list_livres})
 
-    client = docker.from_env()
-    container = client.containers.get("busy_greider")
+def recup_livres():
+    list_livres = Livre.objects.all()
+    return list_livres
 
-    container.restart()
-
-    # 🔥 attendre que Celery soit VRAIMENT prêt
-    if wait_for_celery(container):
-        status.message = "Celery prêt ✅"
-    else:
-        status.message = "Erreur démarrage ❌"
-
-    status.save()
-def index(request):
-
-    return render(request, "index.html", context={"prenom" : "Antoine"})
-
-def menu(request):
-    return render(request, "menu.html")
-
-def process(request):
-    pass
-
-def process_view(request):
-    return render(request, "process.html")
 
 def progress_view(request):
     status = ProcessStatus.objects.first()
@@ -73,110 +72,116 @@ def progress_view(request):
 def menu_reset(request):
     return render(request, "menu-reset-bdd.html")
 
+def menu_redirect(request):
+    return redirect('/livres/')
 
-
-def menu_affichage(request):
-    return render(request, "menu-affichage.html")
 
 #Affichage New Pages
-def affichage_fiche_cadrage(request):
-    fiche_obj = FicheCadrage.objects.last()
+def affichage_fiche_cadrage(request, livre_id):
+    reset_done()
+    fiche_obj = FicheCadrage.objects.filter(livre_id=livre_id).first()
 
-    # 🔥 Gestion du POST (sauvegarde)
     if request.method == "POST":
+        fields = {
+            "sujet":                    request.POST.get("sujet"),
+            "hors_perimetre":           request.POST.get("hors_perimetre"),
+            "contraintes_specifiques":  request.POST.get("contraintes_specifiques"),
+            "cible":                    request.POST.get("cible"),
+            "niveau":                   request.POST.get("niveau"),
+            "objectif_lecteur":         request.POST.get("objectif_lecteur"),
+            "nb_chapitre":              request.POST.get("nb_chapitre") or None,
+        }
         if fiche_obj:
-            fiche_obj.sujet = request.POST.get("sujet")
-            fiche_obj.sommaire = request.POST.get("sommaire")
-            fiche_obj.hors_perimetre = request.POST.get("hors_perimetre")
-            fiche_obj.cible = request.POST.get("cible")
-            fiche_obj.niveau = request.POST.get("niveau")
-            fiche_obj.objectif_lecteur = request.POST.get("objectif_lecteur")
-            fiche_obj.nb_chapitre = request.POST.get("nb_chapitre")
+            for attr, val in fields.items():
+                setattr(fiche_obj, attr, val)
             fiche_obj.save()
         else:
-            FicheCadrage.objects.create(
-                sujet=request.POST.get("sujet"),
-                sommaire=request.POST.get("sommaire"),
-                hors_perimetre=request.POST.get("hors_perimetre"),
-                cible=request.POST.get("cible"),
-                niveau=request.POST.get("niveau"),
-                objectif_lecteur=request.POST.get("objectif_lecteur"),
-                nb_chapitre=request.POST.get("nb_chapitre"),
-            )
+            FicheCadrage.objects.create(livre_id=livre_id, **fields)
 
-    # 🔁 On garde TON système JSON
-    fiche = recup_fiche_cadrage()
+    fiche_obj = FicheCadrage.objects.filter(livre_id=livre_id).first()
 
-    try:
-        fiche = json.loads(fiche)
-        fiche_list = fiche.get("fiche_cadrage", [])
-        fiche = fiche_list[0] if fiche_list else None
-    except Exception:
-        fiche = None
-
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(
         request,
         "affichage/fiche-cadrage.html",
         {
-            "fiche": fiche,
-            "etapes": etapes,
-            "current_step" : 1,
-            "prev_step" : "/sujet/",
-            "next_step" : "/recherche/",
-         "progress_pct" : round(process_percent(etapes))}
+            "livre_id":     livre_id,
+            "fiche":        fiche_obj,
+            "etapes":       etapes,
+            "current_step": 1,
+            "prev_step":    "/sujet/",
+            "next_step":    "/recherche/",
+            "progress_pct": round(process_percent(etapes)),
+        }
     )
 
-def affichage_web_search(request):
-    from .models import NotionIndispensable, ErreurFrequente, EtapeEssentielle, Risque
-    import json
+def affichage_web_search(request, livre_id):
 
-    # 🔥 SAUVEGARDE
+    # Sauvegarde POST
     if request.method == "POST":
-        for key, value in request.POST.items():
+        data = recup_web_search(livre_id) or {}
 
+        notions = data.get("notions_indispensables") or []
+        erreurs = data.get("erreurs_frequentes") or []
+        etapes_es = data.get("etapes_essentielles") or []
+        risques = data.get("risque") or []
+
+        for key, value in request.POST.items():
             if key.startswith("notion_"):
-                idx = key.split("_")[1]
-                NotionIndispensable.objects.filter(id=idx).update(
-                    contenu_de_la_notion=value
-                )
+                idx = int(key.split("_")[1])
+                if 0 <= idx < len(notions):
+                    notions[idx]["contenu"] = value
 
             elif key.startswith("erreur_"):
-                idx = key.split("_")[1]
-                ErreurFrequente.objects.filter(id=idx).update(
-                    contenu_de_l_erreur=value
-                )
+                idx = int(key.split("_")[1])
+                if 0 <= idx < len(erreurs):
+                    erreurs[idx]["contenu"] = value
 
             elif key.startswith("etape_"):
-                idx = key.split("_")[1]
-                EtapeEssentielle.objects.filter(id=idx).update(
-                    contenu_de_l_etapes=value
-                )
+                idx = int(key.split("_")[1])
+                if 0 <= idx < len(etapes_es):
+                    etapes_es[idx]["contenu"] = value
 
             elif key.startswith("risque_"):
-                idx = key.split("_")[1]
-                Risque.objects.filter(id=idx).update(
-                    contenu_du_risque=value
-                )
+                idx = int(key.split("_")[1])
+                if 0 <= idx < len(risques):
+                    risques[idx]["contenu"] = value
 
-    # 🔁 Chargement des données
-    data = recup_web_search()
-    data = json.loads(data)
-    etapes = recup_etapes()
+        # Sauvegarder les modifications en BDD
+        from .models import WebSearchSummary
+        WebSearchSummary.objects.filter(livre_id=livre_id).update(
+            notions_indispensables=notions,
+            erreurs_frequentes=erreurs,
+            etapes_essentielles=etapes_es,
+            risque=risques,
+        )
+
+    # Chargement des données
+    data = recup_web_search(livre_id) or {}
+    print(data)
+    etapes = recup_etapes(livre_id)
+
     return render(request, "affichage/websearch.html", context={
-        "notions": json.loads(data["notion_indispensables"])["notions_indispensables"],
-        "erreurs": json.loads(data["erreurs_frequentes"])["erreurs_frequents"],
-        "etapes_es": json.loads(data["etapes_essentielles"])["etapes_essentielles"],
-        "risques": json.loads(data["risques"])["risque"], "etapes" : etapes,
-        "current_step": 2, "prev_step": "/fiche-cadrage/", "next_step": "/plan/",
-        "progress_pct": round(process_percent(etapes))
+        "livre_id": livre_id,
+        "notions": data.get("notions_indispensables") or [],
+        "erreurs": data.get("erreurs_frequentes") or [],
+        "etapes_es": data.get("etapes_essentielles") or [],
+        "risques": data.get("risque") or [],
+        "etapes": etapes,
+        "current_step": 2,
+        "prev_step": "/fiche-cadrage/",
+        "next_step": "/plan/",
+        "progress_pct": round(process_percent(etapes)),
     })
-def affichage_plan_detail(request):
-    intro = Introduction.objects.last()
-    conclusion = Conclusion.objects.last()
-    fil = FilRouge.objects.last()
-    chapitres = ChapitreDetails.objects.all().order_by("numero")
+def affichage_plan_detail(request, livre_id):
+    plan_details = json.loads(recup_plan_detail(livre_id))
 
+    print(plan_details)
+
+    intro = plan_details["introduction"]
+    conclusion = plan_details.get("conclusion")
+    fil = plan_details.get("exemple_fil_rouge")
+    chapitres = plan_details.get("chapitres")
     # 🔥 POST = sauvegarde
     if request.method == "POST":
 
@@ -206,8 +211,9 @@ def affichage_plan_detail(request):
             chap.pourquoi_distinct = request.POST.get(f"pourquoi_{chap.id}")
             chap.save()
 
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(request, "affichage/plan_details.html", {
+        "livre_id": livre_id,
         "introduction": intro,
         "conclusion": conclusion,
         "fil_rouge": fil,
@@ -215,8 +221,8 @@ def affichage_plan_detail(request):
         "current_step": 3, "prev_step": "/recherche/", "next_step": "/structure/",
         "progress_pct": round(process_percent(etapes))
     })
-def affichage_structure(request):
-    chapitres = ChapitreDetails.objects.all().prefetch_related("sections").order_by("numero")
+def affichage_structure(request, livre_id):
+    chapitres = ChapitreDetails.objects.filter(livre_id=livre_id).prefetch_related("sections").order_by("numero")
 
     # 🔥 POST = sauvegarde
     if request.method == "POST":
@@ -231,14 +237,15 @@ def affichage_structure(request):
 
                 section.save()
 
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(request, "affichage/structure.html", {
+        "livre_id": livre_id,
         "chapitres": chapitres, "etapes" : etapes,
         "current_step": 4, "prev_step": "/plan/", "next_step": "/introduction/",
         "progress_pct": round(process_percent(etapes))
     })
 
-def affichage_intro(request):
+def affichage_intro(request, livre_id):
     intro_obj = IntroductionTexte.objects.last()
 
     # 🔥 Gestion POST (sauvegarde)
@@ -255,29 +262,30 @@ def affichage_intro(request):
 
     # 🔁 récupération JSON (comme ton système actuel)
     try:
-        data = json.loads(recup_intro())
+        data = json.loads(recup_intro(livre_id))
         intro = data.get("intro")
     except Exception:
         intro = None
 
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(request, "affichage/introduction.html", {
+        "livre_id": livre_id,
         "intro": intro, "etapes" : etapes,
-        "current_step": 5, "prev_step": "/structure/", "next_step": "/contenu/",
+        "current_step": 5, "prev_step": "/structure/", "next_step": "/preface/",
         "progress_pct": round(process_percent(etapes))
     })
-def affichage_sections_texte(request):
-    sections = recup_section_texte_all()
+def affichage_sections_texte(request, livre_id):
+    sections = recup_section_texte_all(livre_id)
 
     # 🔹 mapping titres
     chapitres_db = {
         c.numero: c.titre
-        for c in ChapitreDetails.objects.all()
+        for c in ChapitreDetails.objects.filter(livre_id=livre_id).all()
     }
 
     sections_db = {
         (s.chapitre.numero, s.numero): s.titre_section
-        for s in SectionDetaillee.objects.select_related("chapitre").all()
+        for s in SectionDetaillee.objects.select_related("chapitre").filter(livre_id=livre_id).all()
     }
 
     # 🔥 UPDATE SECTION
@@ -310,14 +318,15 @@ def affichage_sections_texte(request):
     for s in sections:
         chapitres.setdefault(s["chapitre"], []).append(s)
 
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(request, "affichage/sections_texte.html", {
+        "livre_id": livre_id,
         "chapitres": chapitres, "etapes" : etapes,
-        "current_step": 6, "prev_step": "/introduction/", "next_step": "/conclusion/",
+        "current_step": 7, "prev_step": "/preface/", "next_step": "/conclusion/",
         "progress_pct": round(process_percent(etapes))
     })
 
-def affichage_conclusion(request):
+def affichage_conclusion(request, livre_id):
     conclusion_obj = ConclusionTexte.objects.last()
 
     # 🔥 Gestion POST (sauvegarde)
@@ -334,164 +343,195 @@ def affichage_conclusion(request):
 
     # 🔁 récupération JSON (comme ton système)
     try:
-        data = json.loads(recup_conclusion())
+        data = json.loads(recup_conclusion(livre_id))
         conclusion = data.get("conclusion")
     except Exception:
         conclusion = None
 
-    etapes = recup_etapes()
+    etapes = recup_etapes(livre_id)
     return render(request, "affichage/conclusion.html", {
+        "livre_id": livre_id,
         "conclusion": conclusion, "etapes" : etapes,
-        "current_step": 7, "prev_step": "/contenu/", "next_step": "/export/",
+        "current_step": 8, "prev_step": "/contenu/", "next_step": "/postface/",
         "progress_pct": round(process_percent(etapes))
     })
 
-def fiche_cadrage_task_view(request):
-    status, _ = ProcessStatus.objects.get_or_create(id=1)
+import re
+
+from django.shortcuts import render
+
+
+
+
+def affichage_preface(request, livre_id):
+    preface = Preface.objects.filter(livre_id=livre_id).first()
 
     if request.method == "POST":
-        action = request.POST.get("action")
+        contenu = request.POST.get("preface_contenu", "").strip()
+        if contenu:
+            nb_mots = len(re.findall(r"\b\w+\b", contenu, re.UNICODE))
+            Preface.objects.update_or_create(
+                livre_id=livre_id,
+                defaults={"contenu": contenu, "nb_mots": nb_mots},
+            )
+            preface = Preface.objects.filter(livre_id=livre_id).first()
 
-        if action == "valider":
-            status, _ = ProcessStatus.objects.get_or_create(id=1)
+    etapes = recup_etapes(livre_id)
+    return render(request, "affichage/preface.html", {
+        "livre_id": livre_id,
+        "preface": preface,
+        "etapes": etapes,
+        "current_step": 6,
+        "prev_step": "/introduction/",
+        "next_step": "/contenu/",
+        "progress_pct": round(process_percent(etapes)),
+    })
 
-            fiche_c = status.sujet_precis
-            ajout_bdd_fiche_cadrage(fiche_c, True)
 
-            # reset
-            status.sujet_precis = ""
-            status.save()
+def affichage_postface(request, livre_id):
+    postface = Postface.objects.filter(livre_id=livre_id).first()
 
-            return redirect('menu')
+    if request.method == "POST":
+        contenu = request.POST.get("postface_contenu", "").strip()
+        if contenu:
+            nb_mots = len(re.findall(r"\b\w+\b", contenu, re.UNICODE))
+            Postface.objects.update_or_create(
+                livre_id=livre_id,
+                defaults={"contenu": contenu, "nb_mots": nb_mots},
+            )
+            postface = Postface.objects.filter(livre_id=livre_id).first()
 
-        else:
-            sujet = request.POST["sujet"]
-            fiche_cadrage_task.delay(sujet)
-            etapes = recup_etapes()
-            return render(request, "fiche-cadrage.html", {"sujet": sujet,"etapes" : etapes,
-                                                                                "current_step": 0, "next_step": "/fiche-cadrage/",
-                                                                                "progress_pct": round(process_percent(etapes))})
+    etapes = recup_etapes(livre_id)
+    return render(request, "affichage/postface.html", {
+        "livre_id": livre_id,
+        "postface": postface,
+        "etapes": etapes,
+        "current_step": 9,
+        "prev_step": "/conclusion/",
+        "next_step": "/export/",
+        "progress_pct": round(process_percent(etapes)),
+    })
 
-    if status.sujet_precis:
-        sujet_precis = status.sujet_precis
 
-        status.is_done = False
-        status.save()
-
+def fiche_cadrage_task_view(request, livre_id):
+    if request.method == "POST":
+        sujet = request.POST.get("sujet", "").strip()
+        if sujet:
+            fiche_cadrage_task.delay(sujet, livre_id)
+        etapes = recup_etapes(livre_id)
         return render(request, "fiche-cadrage.html", {
-            "sujet_precis": sujet_precis
+            "livre_id":     livre_id,
+            "sujet":        sujet,
+            "etapes":       etapes,
+            "current_step": 0,
+            "next_step":    "/fiche-cadrage/",
+            "progress_pct": round(process_percent(etapes)),
         })
-    etapes = recup_etapes()
-    return render(request, "fiche-cadrage.html",
-                  {"etapes": etapes,
-                            "current_step": 0, "next_step": "/fiche-cadrage/",
-                            "progress_pct": round(process_percent(etapes))
-                            })
 
-def websearch_task_view(request):
-    websearch_task.delay()
+    etapes = recup_etapes(livre_id)
+    return render(request, "fiche-cadrage.html", {
+        "livre_id":     livre_id,
+        "etapes":       etapes,
+        "current_step": 0,
+        "next_step":    "/fiche-cadrage/",
+        "progress_pct": round(process_percent(etapes)),
+    })
+
+def websearch_task_view(request, livre_id):
+    reset_web_search(livre_id)
+    websearch_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
 
-def plan_detail_task_view(request):
-    plan_details_task.delay()
+def plan_detail_task_view(request, livre_id):
+    reset_plan_detail(livre_id)
+    plan_details_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
 
-def structure_task_view(request):
-    structure_task.delay()
+def structure_task_view(request, livre_id):
+    reset_structure(livre_id)
+    structure_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
 
-def introduction_task_view(request):
-    introduction_task.delay()
+def introduction_task_view(request, livre_id):
+    reset_intro(livre_id)
+    introduction_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
 
-def gen_section_task_view(request):
-    generation_section_task.delay()
+def gen_section_task_view(request, livre_id):
+    reset_all_test(livre_id)
+    generation_section_task.delay(livre_id)
+    return JsonResponse({"status": "ok"})
+
+def reprise_section_task_view(request, livre_id):
+    generation_section_task.delay(livre_id, reprise=True)  # pas de reset
     return JsonResponse({"status": "ok"})
 
 
-def conclusion_task_view(request):
-    conclusion_task.delay()
+def conclusion_task_view(request, livre_id):
+    reset_conclusion(livre_id)
+    conclusion_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
 
-def reset_fiche_cadrage_view(request):
-    if request.method == "POST":
-        reset_fiche_cadrage()
-        return JsonResponse({"status": "ok", "message": "Fiche cadrage réinitialisée"})
-
-def reset_web_search_view(request):
-    if request.method == "POST":
-        reset_web_search()
-        return JsonResponse({"status": "ok", "message": "Recherches web réinitialisés"})
-
-def reset_plan_detail_view(request):
-    if request.method == "POST":
-        reset_plan_detail()
-        return JsonResponse({"status": "ok", "message": "Plan détaillé réinitialisé"})
-
-def reset_structure_view(request):
-    if request.method == "POST":
-        reset_structure()
-        return JsonResponse({"status": "ok", "message": "Structure réinitialisée"})
-
-def reset_introduction_view(request):
-    if request.method == "POST":
-        reset_intro()
-        return JsonResponse({"status": "ok", "message": "Introduction réinitialisée"})
-
-def reset_section_texte_view(request):
-    if request.method == "POST":
-        reset_all_test()
-        return JsonResponse({"status": "ok", "message": "Reset Section texte"})
-
-def reset_conclusion_view(request):
-    if request.method == "POST":
-        reset_conclusion()
-        return JsonResponse({"status": "ok", "message": "Conclusion réinitialisée"})
-
-def reset_all_post_merge_view(request):
-    if request.method == "POST":
-        reset_fiche_cadrage()
-        reset_web_search()
-        reset_plan_detail_view()
-        reset_structure_view()
-        reset_introduction_view()
-        reset_section_texte_view()
-        reset_conclusion_view()
-        return JsonResponse({"status": "ok", "message": "Tout réinitialisé"})
-
-def export_pdf_task_view(request):
-    export_pdf_task.delay()
+def preface_task_view(request, livre_id):
+    reset_preface(livre_id)
+    preface_task.delay(livre_id)
     return JsonResponse({"status": "ok"})
+
+def postface_task_view(request, livre_id):
+    reset_postface(livre_id)
+    postface_task.delay(livre_id)
+    return JsonResponse({"status": "ok"})
+
+
 
 
 
 PDF_DIR = os.path.join(BASE_DIR, "Stage/fonctions/export/output")
 
-def liste_pdfs(request):
+
+@require_POST
+def lancer_export(request, livre_id):
     try:
-        fichiers = [
-            f for f in os.listdir(PDF_DIR)
-            if f.endswith(".pdf")
-        ]
-    except FileNotFoundError:
-        fichiers = []
+        data = json.loads(request.body)
+        format = data.get("format", "").lower()
+    except (json.JSONDecodeError, AttributeError):
+        return JsonResponse({"ok": False, "error": "Corps JSON invalide."}, status=400)
 
-    return render(request, "affichage/liste_pdfs.html", {
-        "fichiers": fichiers
+    if format not in ("pdf", "docx", "md"):
+        return JsonResponse({"ok": False, "error": f"Format '{format}' non supporté."}, status=400)
+
+    task = export_task.delay(livre_id, format)
+    return JsonResponse({"ok": True, "task_id": task.id})
+
+
+def telecharger_export(request, livre_id):
+    format = request.GET.get("format", "").lower()
+
+    extensions = {"pdf": ".pdf", "docx": ".docx", "md": ".md"}
+    if format not in extensions:
+        raise Http404("Format non supporté.")
+
+    file_path = OUTPUT_DIR / f"livre_{livre_id}{extensions[format]}"
+    if not file_path.exists():
+        raise Http404("Fichier non trouvé. Lancez d'abord l'export.")
+
+    content_type, _ = mimetypes.guess_type(str(file_path))
+    content_type = content_type or "application/octet-stream"
+
+    response = FileResponse(open(file_path, "rb"), content_type=content_type)
+    response["Content-Disposition"] = f'attachment; filename="livre{extensions[format]}"'
+    return response
+
+
+def affichage_export(request, livre_id):
+    etapes = recup_etapes(livre_id)
+    return render(request, "affichage/export.html", {
+        "livre_id": livre_id,
+        "etapes": etapes,
+        "current_step": 10,
+        "prev_step": "/postface/",
+        "progress_pct": round(process_percent(etapes)) if etapes else 0,
     })
-
-
-def telecharger_pdf(request, nom_fichier):
-    chemin = os.path.join(PDF_DIR, nom_fichier)
-
-    # 🔒 sécurité (évite ../)
-    if not os.path.abspath(chemin).startswith(os.path.abspath(PDF_DIR)):
-        raise Http404()
-
-    if not os.path.exists(chemin):
-        raise Http404()
-
-    return FileResponse(open(chemin, "rb"), as_attachment=True)
 
 def variables_affichage(request):
     variables = Variables.objects.last()
@@ -519,23 +559,108 @@ def variables_affichage(request):
         "nb_mots_cible": variables.nb_mots_cible if variables else None,
     })
 
-def done_fc():
-    fiche_c = Etapes.objects.first()
-    fiche_c.fiche_cadrage = True
-    fiche_c.save()
+def liste_pdfs(request):
+    try:
+        extensions_autorisees = (".pdf", ".md", ".docx")
 
-def recup_etapes():
-    etape = Etapes.objects.first()
+        fichiers = [
+            f for f in os.listdir(PDF_DIR)
+            if f.lower().endswith(extensions_autorisees)
+        ]
+
+        fichiers.sort(
+            key=lambda f: os.path.getmtime(os.path.join(PDF_DIR, f)),
+            reverse=True
+        )
+
+    except FileNotFoundError:
+        fichiers = []
+
+    return render(request, "liste_pdfs.html", {
+        "fichiers": fichiers
+    })
+
+def telecharger_pdf(request, nom_fichier):
+    chemin = os.path.join(PDF_DIR, nom_fichier)
+
+    # 🔒 sécurité (évite ../)
+    if not os.path.abspath(chemin).startswith(os.path.abspath(PDF_DIR)):
+        raise Http404()
+
+    if not os.path.exists(chemin):
+        raise Http404()
+
+    return FileResponse(open(chemin, "rb"), as_attachment=True)
+
+def done_fc(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.fiche_cadrage = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_recherches(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.recherche = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_plan(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.plan = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_structure(livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.structure = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_introduction(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.introduction = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_preface(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.preface = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_contenu(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.contenu = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_postface(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.postface = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+def done_conclusion(request,livre_id):
+    etapes = Etapes.objects.filter(livre_id=livre_id).first()
+    etapes.conclusion = True
+    etapes.save()
+    return HttpResponse(status=200)
+
+
+def recup_etapes(livre_id):
+    etape = Etapes.objects.filter(livre_id=livre_id).first()
     steps = [
-        {"num": 0, "label": "Sujet", "done": etape.sujet, "link": "/sujet/"},
-        {"num": 1, "label": "Fiche cadrage", "done": etape.fiche_cadrage, "link": "/fiche-cadrage/"},
-        {"num": 2, "label": "Recherche", "done": etape.recherche, "link": "/recherche/"},
-        {"num": 3, "label": "Plan", "done": etape.plan, "link": "/plan/"},
-        {"num": 4, "label": "Structure", "done": etape.structure, "link": "/structure/"},
-        {"num": 5, "label": "Introduction", "done": etape.introduction, "link": "/introduction/"},
-        {"num": 6, "label": "Contenu", "done": etape.contenu, "link": "/contenu/"},
-        {"num": 7, "label": "Conclusion", "done": etape.conclusion, "link": "/conclusion/"},
-        {"num": 8, "label": "Export", "link": "/export/"},
+        {"num": 0,  "label": "Sujet",        "done": etape.sujet,         "link": "/sujet/"},
+        {"num": 1,  "label": "Fiche cadrage","done": etape.fiche_cadrage, "link": "/fiche-cadrage/"},
+        {"num": 2,  "label": "Recherche",    "done": etape.recherche,     "link": "/recherche/"},
+        {"num": 3,  "label": "Plan",         "done": etape.plan,          "link": "/plan/"},
+        {"num": 4,  "label": "Structure",    "done": etape.structure,     "link": "/structure/"},
+        {"num": 5,  "label": "Introduction", "done": etape.introduction,  "link": "/introduction/"},
+        {"num": 6,  "label": "Preface",      "done": etape.preface,       "link": "/preface/"},  # ✅
+        {"num": 7,  "label": "Contenu",      "done": etape.contenu,       "link": "/contenu/"},
+        {"num": 8,  "label": "Conclusion",   "done": etape.conclusion,    "link": "/conclusion/"},
+        {"num": 9,  "label": "Postface",     "done": etape.postface,      "link": "/postface/"},  # ✅
+        {"num": 10, "label": "Export",                                     "link": "/export/"},
     ]
     return steps
 
@@ -545,3 +670,34 @@ def process_percent(etapes):
         if etape.get("done"):
             count += 1
     return round(count / 7 * 100)
+
+def init_bdd():
+    Etapes.objects.all().delete()
+    Etapes.objects.create()
+    Variables.objects.all().delete()
+    Variables.objects.create(nb_chapitre=8, nb_mots_cible=10000)
+
+def get_livre_titre(livre_id):
+    livre = Livre.objects.filter(livre_id=livre_id).first()
+    return livre.livre_titre if livre else None
+
+def supprimer_livre(livre_id):
+    livre = Livre.objects.filter(livre_id=livre_id).first()
+    if livre:
+        livre.delete()
+        reset_fiche_cadrage(livre_id)
+        reset_web_search(livre_id)
+        reset_plan_detail(livre_id)
+        reset_structure(livre_id)
+        reset_intro(livre_id)
+        reset_all_test(livre_id)
+        reset_conclusion(livre_id)
+        reset_etapes(livre_id)
+
+def reset_etapes(livre_id):
+    Etapes.objects.filter(livre_id=livre_id).delete()
+
+def reset_done():
+    status, _ = ProcessStatus.objects.get_or_create(id=1)
+    status.is_done = False
+    status.save()

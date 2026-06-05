@@ -1,38 +1,9 @@
 <div class="flex">
-    <!-- Sidebar -->
-    <div id="sidebar"
-         class="fixed top-0 left-0 h-full w-64 bg-sidebar border-r border-sidebar-border
-                transform -translate-x-full transition-transform duration-300 z-50">
 
-        <div class="p-4 border-b border-sidebar-border">
-            <h2 class="text-lg font-semibold text-sidebar-foreground">Menu</h2>
-        </div>
-
-        <nav class="flex flex-col p-4 gap-2">
-            <a href="/" class="px-3 py-2 rounded-lg hover:bg-sidebar-accent text-sidebar-foreground">
-                Dashboard
-            </a>
-            <a href="/affichage/" class="px-3 py-2 rounded-lg hover:bg-sidebar-accent text-sidebar-foreground">
-                Affichage
-            </a>
-            <a href="/menu-reset-bdd/" class="px-3 py-2 rounded-lg hover:bg-sidebar-accent text-sidebar-foreground">
-                Reset BDD
-            </a>
-            <a href="/process/" class="px-3 py-2 rounded-lg hover:bg-sidebar-accent text-sidebar-foreground">
-                Process
-            </a>
-        </nav>
-    </div>
 
     <!-- Bouton menu -->
-    <button onclick="toggleMenu()"
+    <a href="/"
             class="fixed top-4 left-4 z-50 bg-primary text-primary-foreground px-3 py-2 rounded-lg shadow">
         ☰
-    </button>
+    </a>
 </div>
-<script>
-function toggleMenu() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("-translate-x-full");
-}
-</script>

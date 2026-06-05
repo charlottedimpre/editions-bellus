@@ -12,7 +12,6 @@ Répète ce bloc pour chaque chapitre :
     <concept_cle>[Le concept central de cette section, défini en 15 mots max]</concept_cle>
     <exemple>[Référence à l'exemple fil rouge ou cas concret anonymisé]</exemple>
     <limite>[Ce que cette section n'aborde pas, pour éviter le chevauchement]</limite>
-    <mots_cible>[Nombre de mots estimé pour cette section, ex: 400-600]</mots_cible>
   </section>
 
   <section numero="2">
@@ -20,8 +19,6 @@ Répète ce bloc pour chaque chapitre :
   </section>
 
   [3 à 5 sections par chapitre]
-
-  <total_mots_chapitre>[Somme des mots cible des sections]</total_mots_chapitre>
 
 </chapitre_structure>
 
@@ -33,8 +30,4 @@ Règles strictes :
 - Les titres de sections évitent les formulations vagues ("Introduction à...", "Présentation de...", "Aperçu de...") — ils formulent une tension ou une promesse
 - Deux sections ne peuvent pas avoir le même objectif — si c'est le cas, les fusionner
 - La limite de chaque section doit pointer explicitement vers la section ou le chapitre qui traite ce qui est exclu
-- Les mots cible par section sont entre 300 et 800 mots
-- Le total par chapitre ne dépasse pas 4000 mots
-- L'emsemble des chapitres ne dépasse pas 15 000 mots
 - Aucune référence à la sexualité, l'intimité physique ou le désir
-

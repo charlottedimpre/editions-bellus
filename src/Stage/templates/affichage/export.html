@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Export du livre</title>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-muted min-h-screen p-4">
+
+{% include "components/dropdown-menu.html" %}
+
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+  {% include "components/progress-bar.html" %}
+
+  <div class="bg-background border border-border rounded-xl p-4">
+
+    <div class="flex justify-between items-start mb-1">
+      <div>
+        <h2 class="text-xl font-bold text-foreground">Export du livre</h2>
+        <p class="text-sm text-muted-foreground mt-0.5 mb-4">Choisissez le format d'export souhaité</p>
+      </div>
+      {% include "components/done.html" %}
+    </div>
+
+    <div class="flex justify-between items-center mb-6">
+      <a href="{{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
+        ‹ Précédent
+      </a>
+      <span class="text-xs text-muted-foreground">← Conclusion</span>
+      <span></span>
+    </div>
+
+    <hr class="border-t border-border mb-6">
+
+    <!-- Sélection du format -->
+    <div class="flex flex-col gap-3 mb-6">
+
+      <button onclick="lancer('pdf')"
+        class="w-full flex items-center gap-4 border border-border rounded-lg p-4 bg-background hover:bg-muted text-left cursor-pointer transition-colors">
+        <span class="text-2xl">📄</span>
+        <div>
+          <div class="text-sm font-semibold text-foreground">Export PDF</div>
+          <div class="text-xs text-muted-foreground mt-0.5">Format livre imprimable, mise en page professionnelle avec pagination</div>
+        </div>
+      </button>
+
+      <button onclick="lancer('docx')"
+        class="w-full flex items-center gap-4 border border-border rounded-lg p-4 bg-background hover:bg-muted text-left cursor-pointer transition-colors">
+        <span class="text-2xl">📝</span>
+        <div>
+          <div class="text-sm font-semibold text-foreground">Export Word (.docx)</div>
+          <div class="text-xs text-muted-foreground mt-0.5">Document Word éditable, compatible Microsoft Office et LibreOffice</div>
+        </div>
+      </button>
+
+      <button onclick="lancer('md')"
+        class="w-full flex items-center gap-4 border border-border rounded-lg p-4 bg-background hover:bg-muted text-left cursor-pointer transition-colors">
+        <span class="text-2xl">🗒️</span>
+        <div>
+          <div class="text-sm font-semibold text-foreground">Export Markdown</div>
+          <div class="text-xs text-muted-foreground mt-0.5">Format texte structuré, idéal pour les outils de publication numériques</div>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- Zone de résultat / téléchargement -->
+    <div id="resultZone" class="hidden border border-border rounded-lg p-4 bg-background">
+      <div class="text-sm font-semibold text-foreground mb-2">Export prêt</div>
+      <a id="downloadLink" href="#" download
+        class="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 no-underline font-medium">
+        ⬇️ <span id="downloadLabel">Télécharger</span>
+      </a>
+    </div>
+
+    <!-- Zone d'erreur -->
+    <div id="errorZone" class="hidden border border-red-300 rounded-lg p-4 bg-background">
+      <div class="text-sm font-semibold text-red-600 mb-1">Erreur lors de l'export</div>
+      <div id="errorMsg" class="text-xs text-muted-foreground"></div>
+    </div>
+
+  </div>
+</div>
+
+{% include 'components/status.html' %}
+
+<script>
+const livreId = "{{ livre_id }}";
+
+function lancer(format) {
+  document.getElementById("resultZone").classList.add("hidden");
+  document.getElementById("errorZone").classList.add("hidden");
+
+  fetch(`/${livreId}/export/lancer/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRFToken": getCookie("csrftoken"),
+    },
+    body: JSON.stringify({ format: format }),
+  })
+  .then(r => r.json())
+  .catch(e => showError(e.toString()));
+}
+
+function showDownload(format) {
+  const labels = { pdf: "livre.pdf", docx: "livre.docx", md: "livre.md" };
+  const link = document.getElementById("downloadLink");
+  link.href = `/${livreId}/export/telecharger/?format=${format}`;
+  link.download = labels[format] || "livre";
+  document.getElementById("downloadLabel").textContent = `Télécharger ${labels[format]}`;
+  document.getElementById("resultZone").classList.remove("hidden");
+}
+
+function showError(msg) {
+  document.getElementById("errorMsg").textContent = msg;
+  document.getElementById("errorZone").classList.remove("hidden");
+}
+
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== "") {
+    for (const cookie of document.cookie.split(";")) {
+      const c = cookie.trim();
+      if (c.startsWith(name + "=")) {
+        cookieValue = decodeURIComponent(c.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+</script>
+
+</body>
+</html>

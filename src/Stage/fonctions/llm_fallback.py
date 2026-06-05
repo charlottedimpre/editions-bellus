@@ -20,6 +20,7 @@ GEMINI_MODEL = os.getenv("GEMINI_MODEL")
 GEMINI_FALLBACK_MODELS = os.getenv("GEMINI_FALLBACK_MODELS", "")
 GEMINI_MAX_RETRIES = 3
 GEMINI_RETRY_DELAY_SECONDS = 5
+OLLAMA_FALLBACK_MODELS = os.getenv("ED_BELLUS_OLLAMA_FALLBACK_MODELS", "")
 
 
 def _get_gemini_candidate_models() -> list[str]:
@@ -37,6 +38,23 @@ def _get_gemini_candidate_models() -> list[str]:
         "gemini-2.5-flash",
         "gemini-1.5-flash",
     ])
+
+    unique_candidates: list[str] = []
+    for model in candidates:
+        if model not in unique_candidates:
+            unique_candidates.append(model)
+
+    return unique_candidates
+
+
+def _get_ollama_candidate_models(primary_model: str | None) -> list[str]:
+    candidates: list[str] = []
+
+    if primary_model and primary_model.strip():
+        candidates.append(primary_model.strip())
+
+    if OLLAMA_FALLBACK_MODELS.strip():
+        candidates.extend([m.strip() for m in OLLAMA_FALLBACK_MODELS.split(",") if m.strip()])
 
     unique_candidates: list[str] = []
     for model in candidates:
@@ -172,35 +190,40 @@ def chat_with_major_error_fallback(
     ollama_max_retries: int = 3,
     ollama_retry_delay_seconds: int = 2,
 ) -> str:
-    if not ollama_model:
-        print(f"[WARN] ED_BELLUS_OLLAMA_MODEL_LONG absent, fallback Gemini direct pour {context_label}.")
+    models = _get_ollama_candidate_models(ollama_model)
+    if not models:
+        print(f"[WARN] Aucun modele Ollama configure, fallback Gemini direct pour {context_label}.")
         return _chat_with_gemini(message_content=message_content, context_label=context_label)
 
     last_error: Exception | None = None
 
-    for attempt in range(1, ollama_max_retries + 1):
-        try:
-            response = chat(model=ollama_model, messages=[{"role": "user", "content": message_content}])
-            if response.message is None or not response.message.content:
-                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-            return response.message.content.strip()
-        except Exception as exc:
-            last_error = exc
+    for model in models:
+        for attempt in range(1, ollama_max_retries + 1):
+            try:
+                response = chat(model=model, messages=[{"role": "user", "content": message_content}])
+                if response.message is None or not response.message.content:
+                    raise RuntimeError(f"Reponse vide du modele ({context_label}).")
+                return response.message.content.strip()
+            except Exception as exc:
+                last_error = exc
 
-            if _is_major_ollama_error(exc):
-                print(f"[WARN] Erreur majeure Ollama detectee ({context_label}), bascule Gemini: {exc}")
-                return _chat_with_gemini(message_content=message_content, context_label=context_label, trigger_error=exc)
+                if _is_major_ollama_error(exc):
+                    print(f"[WARN] Erreur majeure Ollama detectee ({context_label}, modele {model}), bascule modele suivant: {exc}")
+                    break
 
-            if not _is_retryable_ollama_error(exc):
-                print(f"[WARN] Erreur Ollama non recuperable ({context_label}), tentative Gemini: {exc}")
-                return _chat_with_gemini(message_content=message_content, context_label=context_label, trigger_error=exc)
+                if not _is_retryable_ollama_error(exc):
+                    print(f"[WARN] Erreur Ollama non recuperable ({context_label}, modele {model}), tentative modele suivant: {exc}")
+                    break
 
-            if attempt < ollama_max_retries:
-                print(
-                    f"[WARN] Ollama indisponible pour {context_label} "
-                    f"(tentative {attempt}/{ollama_max_retries}) : {exc}"
-                )
-                time.sleep(ollama_retry_delay_seconds)
+                if attempt < ollama_max_retries:
+                    print(
+                        f"[WARN] Ollama indisponible pour {context_label} "
+                        f"(modele {model}, tentative {attempt}/{ollama_max_retries}) : {exc}"
+                    )
+                    time.sleep(ollama_retry_delay_seconds)
+
+        if len(models) > 1:
+            print(f"[WARN] Echec avec le modele {model}. Tentative du modele suivant...")
 
     print(f"[WARN] Ollama en echec apres {ollama_max_retries} tentatives ({context_label}), bascule Gemini.")
     return _chat_with_gemini(message_content=message_content, context_label=context_label, trigger_error=last_error)

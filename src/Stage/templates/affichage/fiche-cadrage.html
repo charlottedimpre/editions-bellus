@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Fiche de cadrage</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-muted min-h-screen p-4">
@@ -12,24 +13,18 @@
 
 <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
 
-  <!-- STEPPER -->
   {% include "components/progress-bar.html" %}
 
-  <!-- MAIN CARD -->
   <div class="bg-background border border-border rounded-xl p-4">
 
-    <!-- Titre + Marquer comme complétée -->
     <div class="flex justify-between items-start mb-1">
       <div>
         <h2 class="text-xl font-bold text-foreground">Fiche Cadrage</h2>
         <p class="text-sm text-muted-foreground mt-0.5 mb-4">Définir le cadre du projet</p>
       </div>
-      <button type="button" onclick="doneFC" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
-        ✓ Marquer comme complétée
-      </button>
+      {% include "components/done.html" %}
     </div>
 
-    <!-- Nav Précédent / contexte / Suivant -->
     <div class="flex justify-between items-center mb-6">
       <a href="{{ prev_step }}" class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted no-underline">
         ‹ Précédent
@@ -43,7 +38,6 @@
     <form method="POST">
     {% csrf_token %}
 
-    <!-- Séparateur + Bouton Modifier -->
     <div class="py-4">
       <hr class="border-t border-border mb-4">
       <div class="flex gap-2">
@@ -62,33 +56,75 @@
       </div>
     </div>
 
-    <!-- Champs en cartes individuelles -->
     <div class="flex flex-col gap-2.5">
 
+      <!-- Sujet -->
       <div class="border border-border rounded-lg p-4">
         <div class="text-sm font-semibold text-foreground mb-1">Sujet</div>
         <div class="view-mode text-sm text-muted-foreground italic">{{ fiche.sujet|default:"Non renseigné" }}</div>
         <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="sujet" rows="3">{{ fiche.sujet }}</textarea>
       </div>
 
+      <!-- Nombre de chapitres -->
       <div class="border border-border rounded-lg p-4">
-        <div class="text-sm font-semibold text-foreground mb-1">Sommaire</div>
-        <div class="view-mode text-sm text-muted-foreground italic whitespace-pre-wrap">{{ fiche.sommaire|default:"Non renseigné" }}</div>
-        <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="sommaire" rows="4">{{ fiche.sommaire }}</textarea>
+        <div class="text-sm font-semibold text-foreground mb-1">Nombre de chapitres</div>
+        <div class="view-mode text-sm text-muted-foreground italic">{{ fiche.nb_chapitre|default:"Non renseigné" }}</div>
+        <input class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground" type="number" min="1" name="nb_chapitre" value="{{ fiche.nb_chapitre }}">
       </div>
 
+      <!-- Hors périmètre -->
+<div class="border border-border rounded-lg p-4">
+  <div class="text-sm font-semibold text-foreground mb-1">Hors périmètre</div>
+  <div class="view-mode">
+    {% if fiche.hors_perimetre %}
+      <ul class="text-sm text-muted-foreground list-disc list-inside space-y-1">
+        {% for ligne in fiche.hors_perimetre.splitlines %}
+          {% if ligne.strip %}
+            <li>{{ ligne }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <span class="text-sm text-muted-foreground italic">Non renseigné</span>
+    {% endif %}
+  </div>
+  <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="hors_perimetre" rows="4">{{ fiche.hors_perimetre }}</textarea>
+</div>
+
+<!-- Contraintes spécifiques -->
+<div class="border border-border rounded-lg p-4">
+  <div class="text-sm font-semibold text-foreground mb-1">Contraintes spécifiques</div>
+  <div class="view-mode">
+    {% if fiche.contraintes_specifiques %}
+      <ul class="text-sm text-muted-foreground list-disc list-inside space-y-1">
+        {% for ligne in fiche.contraintes_specifiques.splitlines %}
+          {% if ligne.strip %}
+            <li>{{ ligne }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <span class="text-sm text-muted-foreground italic">Non renseigné</span>
+    {% endif %}
+  </div>
+  <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="contraintes_specifiques" rows="4">{{ fiche.contraintes_specifiques }}</textarea>
+</div>
+
+      <!-- Cible -->
       <div class="border border-border rounded-lg p-4">
-        <div class="text-sm font-semibold text-foreground mb-1">Cible</div>
+        <div class="text-sm font-semibold text-foreground mb-1">Cible principale</div>
         <div class="view-mode text-sm text-muted-foreground italic">{{ fiche.cible|default:"Non renseigné" }}</div>
         <textarea class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground resize-none" name="cible" rows="3">{{ fiche.cible }}</textarea>
       </div>
 
+      <!-- Niveau -->
       <div class="border border-border rounded-lg p-4">
         <div class="text-sm font-semibold text-foreground mb-1">Niveau</div>
         <div class="view-mode text-sm text-muted-foreground italic">{{ fiche.niveau|default:"Non renseigné" }}</div>
         <input class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground" type="text" name="niveau" value="{{ fiche.niveau }}">
       </div>
 
+      <!-- Objectif lecteur -->
       <div class="border border-border rounded-lg p-4">
         <div class="text-sm font-semibold text-foreground mb-1">Objectif lecteur</div>
         <div class="view-mode text-sm text-muted-foreground italic">{{ fiche.objectif_lecteur|default:"Non renseigné" }}</div>
@@ -97,11 +133,10 @@
 
     </div>
 
-    <!-- Lancer le processus -->
-    <a href="/fiche-cadrage/">
-    <button type="button" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+    <a href="/{{ livre_id }}/fiche-cadrage/">
+      <button type="button" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
         ▶ Lancer le processus
-    </button>
+      </button>
     </a>
 
     </form>
@@ -112,9 +147,8 @@
 {% include 'components/status.html' %}
 
 <script>
-
-function doneFC(){
-    fetch("/done/fiche-cadrage/")
+function doneFC() {
+  fetch("/done/{{ livre_id }}/fiche-cadrage/")
 }
 let initialValues = {};
 function toggleEdit() {

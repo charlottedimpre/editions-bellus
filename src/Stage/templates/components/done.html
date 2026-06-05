@@ -1,0 +1,12 @@
+<button type="button" onclick="done()" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
+        ✓ Marquer comme complétée
+</button>
+{% for step in etapes %}
+  {% if step.num == current_step %}
+    <script>
+    function done() {
+      fetch("/done/{{ livre_id }}{{ step.link }}")
+    }
+    </script>
+  {% endif %}
+{% endfor %}

@@ -1,7 +1,25 @@
-source .env/Scripts/activate
-
-pip freeze > requirements.txt
+Pour installer les librairies Python :
 pip install -r requirements.txt
 
-urls.py -> routes
-settings.py -> les paramètres de notre application
+Pour mettre à jour la bdd :
+python manage.py makemigrations
+python manage.py migrate
+
+Pour lancer le projet :
+allumer le docker
+Ouvrir deux terminaux
+Se placer dans le dossier src
+
+terminal affichage web : python manage.py runserver  
+terminal celery pour le process : python -m celery -A Stage worker --loglevel=info --pool=solo
+
+Si besoin, initialiser les variables :
+python manage.py shell
+
+coller :
+from Stage.models import Variables
+v = Variables.objects.create(
+    nb_chapitre=8,
+    nb_mots_cible=15000,
+)
+v.save()

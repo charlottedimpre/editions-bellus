@@ -1,29 +1,35 @@
 import json
+import os
 from pathlib import Path
 
-from ollama import ChatResponse, chat
-
-from .parser import parse_introduction
-import os
+from ..models import IntroductionTexte
 from ..settings import BASE_DIR
 from .fiche_cadrage import recup_fiche_cadrage
-from .plan_detaille import recup_plan_detail
-from ..models import IntroductionTexte
-
 from .llm_fallback import chat_with_major_error_fallback
+from .parser import parse_introduction, read_text_file
+from .plan_detaille import recup_plan_detail
+
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+INPUT_DIR = Path(BASE_DIR) / "Stage/input/"
 
 LLM_MAX_RETRIES = 3
 LLM_RETRY_DELAY_SECONDS = 2
 MODEL = os.getenv("ED_BELLUS_OLLAMA_MODEL_LONG")
 
-def gen_intro():
-    fiche_raw = recup_fiche_cadrage()
 
-    plan_raw = recup_plan_detail()
+# ---------------------------------------------------------------------------
+# Core logic
+# ---------------------------------------------------------------------------
 
-    prompt = os.path.join(BASE_DIR, 'Stage/input/i_prompt.txt')
-    file = open(prompt, 'r')
-    prompt = file.read()
+def gen_intro(livre_id: int):
+    fiche_raw = recup_fiche_cadrage(livre_id)
+    plan_raw = recup_plan_detail(livre_id)
+
+    prompt_path = INPUT_DIR / "i_prompt.txt"
+    prompt = read_text_file(prompt_path, "prompt introduction", require_non_empty=False)
 
     response_content = chat_with_major_error_fallback(
         ollama_model=MODEL,
@@ -32,25 +38,39 @@ def gen_intro():
         ollama_max_retries=LLM_MAX_RETRIES,
         ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
     )
+
     parsed = parse_introduction(response_content)
 
-    ajout_intro_bdd(parsed)
+    if not isinstance(parsed, dict):
+        raise ValueError("L'introduction parsee doit etre un objet JSON.")
+
+    if not parsed.get("intro"):
+        raise ValueError("Le contenu de l'introduction est vide apres parsing.")
+
+    ajout_intro_bdd(parsed, livre_id)
+    return recup_intro(livre_id)
 
 
-if __name__ == '__main__':
-    gen_intro()
+# ---------------------------------------------------------------------------
+# BDD helpers
+# ---------------------------------------------------------------------------
 
-def ajout_intro_bdd(data):
+def ajout_intro_bdd(data: dict, livre_id: int):
     IntroductionTexte.objects.create(
-        intro=data['intro'],
+        intro=data["intro"],
+        livre_id=livre_id,
     )
 
-def recup_intro():
-    intro = IntroductionTexte.objects.last()
 
-    return json.dumps({
-        "intro": intro.intro if intro else None
-    }, ensure_ascii=False, indent=2)
+def recup_intro(livre_id: int) -> str:
+    intro = IntroductionTexte.objects.filter(livre_id=livre_id).last()
 
-def reset_intro():
-    IntroductionTexte.objects.all().delete()
+    return json.dumps(
+        {"intro": intro.intro if intro else None},
+        ensure_ascii=False,
+        indent=2,
+    )
+
+
+def reset_intro(livre_id: int):
+    IntroductionTexte.objects.filter(livre_id=livre_id).delete()

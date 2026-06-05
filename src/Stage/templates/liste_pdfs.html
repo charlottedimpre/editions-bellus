@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Fichiers</title>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="bg-muted min-h-screen p-6">
+
+{% include "components/dropdown-menu.html" %}
+
+<div style="max-width: 800px; margin: 0 auto;">
+
+    <!-- Header -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+        <div>
+            <h1 style="font-size:22px; font-weight:500; margin:0; color:#0a0a0f;">
+                Mes Fichiers
+            </h1>
+
+            <p style="font-size:13px; color:#717182; margin:4px 0 0;">
+                {{ fichiers|length }} fichier{{ fichiers|length|pluralize }}
+                disponible{{ fichiers|length|pluralize }}
+            </p>
+        </div>
+    </div>
+
+    {% if fichiers %}
+
+    <!-- Tableau -->
+    <div style="
+        background:white;
+        border:0.5px solid rgba(0,0,0,0.1);
+        border-radius:12px;
+        overflow:hidden;
+    ">
+        <table style="width:100%; border-collapse:collapse; font-size:13px;">
+            <thead>
+                <tr style="
+                    border-bottom:0.5px solid rgba(0,0,0,0.1);
+                    background:#fafafa;
+                ">
+                    <th style="
+                        text-align:left;
+                        padding:10px 16px;
+                        font-weight:500;
+                        color:#717182;
+                    ">
+                        Nom du fichier
+                    </th>
+
+                    <th style="
+                        text-align:right;
+                        padding:10px 16px;
+                        font-weight:500;
+                        color:#717182;
+                    ">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for fichier in fichiers %}
+                <tr style="border-bottom:0.5px solid rgba(0,0,0,0.1);">
+
+                    <td style="
+                        padding:12px 16px;
+                        color:#0a0a0f;
+                        font-weight:500;
+                    ">
+                        📄 {{ fichier }}
+                    </td>
+
+                    <td style="
+                        padding:12px 16px;
+                        text-align:right;
+                    ">
+                        <a href="{% url 'telecharger_pdf' fichier %}"
+                           style="
+                               display:inline-flex;
+                               align-items:center;
+                               gap:6px;
+                               padding:8px 12px;
+                               border-radius:8px;
+                               background:#030213;
+                               color:white;
+                               font-size:12px;
+                               font-weight:500;
+                               text-decoration:none;
+                           ">
+                            Télécharger
+                        </a>
+                    </td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% else %}
+
+    <!-- État vide -->
+    <div style="
+        background:white;
+        border:0.5px solid rgba(0,0,0,0.1);
+        border-radius:12px;
+        padding:48px;
+        text-align:center;
+    ">
+        <p style="
+            font-size:14px;
+            color:#717182;
+            margin:0;
+        ">
+            Aucun fichier PDF disponible.
+        </p>
+
+        <p style="
+            font-size:13px;
+            color:#717182;
+            margin:8px 0 0;
+        ">
+            Les documents générés apparaîtront ici.
+        </p>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% include "components/status.html" %}
+
+</body>
+</html>

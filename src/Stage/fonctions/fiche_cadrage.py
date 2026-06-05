@@ -1,16 +1,19 @@
-from pathlib import Path
-from ..settings import BASE_DIR
-from ollama import chat
-from ollama import ChatResponse
-from .parser import parse_fiche_cadrage, to_json_file, read_text_file
 import json
 import os
-from ..models import FicheCadrage
+from pathlib import Path
 from typing import Any
-import time
-from .config import *
 
-INPUT_DIR = os.path.join(BASE_DIR, 'Stage/input/fiche_cadrage/')
+from ..models import FicheCadrage
+from ..settings import BASE_DIR
+from .config import *
+from .llm_fallback import chat_with_major_error_fallback
+from .parser import parse_fiche_cadrage, read_text_file
+
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+INPUT_DIR = Path(BASE_DIR) / "Stage/input/fiche_cadrage/"
 
 LLM_MAX_RETRIES = 3
 LLM_RETRY_DELAY_SECONDS = 2
@@ -22,9 +25,38 @@ LEVEL_FILES = {
     "3": "fc_avance",
 }
 
-def _read_text(path: Path, label: str) -> str:
-    return read_text_file(path, label, require_non_empty=False)
+NIVEAU_TEXTS = {
+    "fc_debutant": (
+        "Débutant (suppose aucune connaissance préalable sur le sujet, n'exige aucun vocabulaire "
+        "technique acquis, nécessite des définitions explicites des concepts dès leur première "
+        "apparition, privilégie une progression lente et cumulative, impose des transitions "
+        "pédagogiques entre chaque chapitre, exclut les raccourcis implicites de raisonnement, "
+        "demande des formulations concrètes et accessibles sans simplification trompeuse, anticipe "
+        "les confusions fréquentes d'un grand public novice, intègre un rappel régulier des limites "
+        "et des conditions d'application, et vise une autonomie de compréhension de base sans "
+        "prérequis de lecture complémentaire)"
+    ),
+    "fc_intermediaire": (
+        "Intermédiaire (suppose des bases acquises et un vocabulaire courant du sujet, autorise des "
+        "références techniques sans redéfinition exhaustive, vise une progression structurée avec "
+        "des sauts raisonnables, met l'accent sur la consolidation et l'application, explicite les "
+        "nuances et cas limites, tolère des synthèses plus denses, et propose des approfondissements "
+        "optionnels sans exiger de prérequis avancés)"
+    ),
+    "fc_avance": (
+        "Avancé (suppose une maîtrise solide des fondamentaux et du vocabulaire spécialisé, accepte "
+        "des raisonnements compacts, privilégie la profondeur, les arbitrages et les controverses, "
+        "met en avant les limites méthodologiques, les hypothèses et les exceptions, et vise un "
+        "lecteur capable de relier le contenu à des cadres théoriques ou pratiques avancés)"
+    ),
+}
 
+PROMPT_FILE = "fc_prompt.txt"
+
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
 
 def _normalize_sujet(sujet: Any) -> str:
     if not isinstance(sujet, str):
@@ -35,113 +67,96 @@ def _normalize_sujet(sujet: Any) -> str:
     return cleaned
 
 
-def _is_retryable_ollama_error(exc: Exception) -> bool:
-    status_code = getattr(exc, "status_code", None)
-    if status_code in {429, 500, 502, 503, 504}:
-        return True
-
-    err_text = str(exc).lower()
-    return any(token in err_text for token in ["status code: 500", "status code: 503", "internal server error", "timeout"])
-
-
-def _chat_with_retry(model: str, message_content: str, context_label: str) -> str:
-    last_error: Exception | None = None
-
-    for attempt in range(1, LLM_MAX_RETRIES + 1):
-        try:
-            response = chat(model=model, messages=[
-                {
-                    "role": "user",
-                    "content": message_content,
-                },
-            ])
-            if response.message is None or not response.message.content:
-                raise RuntimeError(f"Reponse vide du modele ({context_label}).")
-            return response.message.content
-        except Exception as exc:
-            last_error = exc
-            if not _is_retryable_ollama_error(exc) or attempt == LLM_MAX_RETRIES:
-                break
-            print(
-                f"[WARN] Ollama indisponible pour {context_label} "
-                f"(tentative {attempt}/{LLM_MAX_RETRIES}) : {exc}"
-            )
-            time.sleep(LLM_RETRY_DELAY_SECONDS)
-
-    raise RuntimeError(f"Echec appel LLM ({context_label}) apres {LLM_MAX_RETRIES} tentatives: {last_error}")
-
-def _build_output_payload(parsed_data, titre_saisi: str) -> dict:
-    if isinstance(parsed_data, dict):
-        payload = dict(parsed_data)
-    else:
-        payload = {"donnees_parsees": parsed_data}
-
-    payload["titre_saisi_utilisateur"] = titre_saisi
-
-    if not payload.get("sujet"):
-        payload["sujet"] = titre_saisi
-
-    return payload
-
-def fiche_cadrage(sujet: str, niveau: str):
-    prompt = os.path.join(INPUT_DIR, f"{niveau}.txt")
-    file = open(prompt, 'r', encoding="utf-8")
-    prompt = file.read()
+def _apply_prompt_variables(prompt: str, niveau: str) -> str:
+    """Remplace {{NIVEAU}} dans le prompt par le texte descriptif correspondant."""
+    if "{{NIVEAU}}" not in prompt:
+        return prompt
+    niveau_text = NIVEAU_TEXTS.get(niveau)
+    if not niveau_text:
+        raise ValueError(f"Niveau inconnu pour {{NIVEAU}}: {niveau!r}")
+    return prompt.replace("{{NIVEAU}}", niveau_text)
 
 
-    response: ChatResponse = chat(model='mistral-large-3:675b-cloud', messages=[
-        {
-            'role': 'user',
-            'content': f'{prompt}\n\nSUJET : {sujet}',
-        },
-    ])
-    parsed = parse_fiche_cadrage(response.message.content)
-    return parsed
+def _ensure_nb_chapitre(parsed: dict) -> dict:
+    """Garantit que la clé nb_chapitre est présente et valide dans le résultat parsé."""
+    fiche = parsed.get("fiche_cadrage", [{}])[0] if "fiche_cadrage" in parsed else parsed
 
-def fc(sujet, niveau):
-    niveau_file = LEVEL_FILES[niveau]
-    txt = fiche_cadrage(sujet, niveau_file)
-    ajout_bdd_fiche_cadrage(txt, True)
-    insert_fc()
-    return recup_fiche_cadrage()
+    nb = fiche.get("nbre_chapitres") or fiche.get("nb_chapitre")
 
-
-def insert_fc():
-    fiche_payload = json.loads(recup_fiche_cadrage())
-
-    if not isinstance(fiche_payload, dict):
-        raise ValueError("La fiche cadrage doit être un objet JSON.")
-
-    fiche_list = fiche_payload.get("fiche_cadrage", [])
-
-    if not fiche_list:
-        print("Aucune fiche en base")
-        return False
-
-    fiche_data = fiche_list[0]  # ✅ IMPORTANT
+    if nb is None:
+        raise ValueError(
+            "La réponse du LLM ne contient pas la balise <nb_chapitre> (ni nbre_chapitres). "
+            "Vérifiez le prompt fc_prompt.txt pour vous assurer que cette balise est bien demandée."
+        )
 
     try:
-        expected_chapters = int(recup_nb_chapitres())
+        nb = int(nb)
     except (TypeError, ValueError) as exc:
-        raise ValueError("nb_chapitres doit être un entier.") from exc
+        raise ValueError(
+            f"La valeur de nb_chapitre n'est pas un entier valide : {nb!r}"
+        ) from exc
 
-    fiche_key = "nb_chapitre" if "nb_chapitre" in fiche_data else "nb_chapitre"
-    current_chapters = fiche_data.get(fiche_key)
+    if nb <= 0:
+        raise ValueError(f"nb_chapitre doit être un entier positif, reçu : {nb}")
 
-    if current_chapters != expected_chapters:
-        fiche_data[fiche_key] = expected_chapters
+    # Normalise sous la clé nb_chapitre dans tous les cas
+    fiche["nb_chapitre"] = nb
+    fiche.pop("nbre_chapitres", None)
 
-        # 🔥 reset + insert propre
-        reset_fiche_cadrage()
-        ajout_bdd_fiche_cadrage(fiche_data, True)
+    if "fiche_cadrage" in parsed:
+        parsed["fiche_cadrage"][0] = fiche
+    else:
+        parsed = fiche
 
-        print(f"Mise a jour de {fiche_key}: {current_chapters} -> {expected_chapters}")
-        return True
+    return parsed
 
-    print(f"Aucune mise a jour: {fiche_key} est deja a {expected_chapters}.")
-    return False
 
-def ajout_bdd_fiche_cadrage(fiche_cadr, parse : bool = False):
+# ---------------------------------------------------------------------------
+# Core logic
+# ---------------------------------------------------------------------------
+
+def fiche_cadrage(sujet: str, niveau: str) -> dict:
+    sujet = _normalize_sujet(sujet)
+
+    if not isinstance(niveau, str) or not niveau.strip():
+        raise ValueError("Le niveau de prompt doit etre une chaine non vide.")
+
+    prompt_path = INPUT_DIR / PROMPT_FILE
+    prompt = read_text_file(prompt_path, f"prompt {PROMPT_FILE}", require_non_empty=False)
+    prompt = _apply_prompt_variables(prompt, niveau)
+
+    response_content = chat_with_major_error_fallback(
+        ollama_model=MODEL_COURT,
+        message_content=f"{prompt}\n\nSUJET : {sujet}",
+        context_label="fiche_cadrage",
+        ollama_max_retries=LLM_MAX_RETRIES,
+        ollama_retry_delay_seconds=LLM_RETRY_DELAY_SECONDS,
+    )
+
+    parsed = parse_fiche_cadrage(response_content)
+    if not isinstance(parsed, dict):
+        raise ValueError("La fiche de cadrage parsee doit etre un objet JSON.")
+
+    parsed = _ensure_nb_chapitre(parsed)
+
+    return parsed
+
+
+def fc(sujet: str, niveau: str, livre_id: int):
+    niveau_file = LEVEL_FILES[niveau]
+    txt = fiche_cadrage(sujet, niveau_file)
+    print(txt)
+    ajout_bdd_fiche_cadrage(txt, livre_id, parse=True)
+    insert_fc(livre_id)
+    print(recup_fiche_cadrage(livre_id))
+    return recup_fiche_cadrage(livre_id)
+
+
+# ---------------------------------------------------------------------------
+# BDD helpers
+# ---------------------------------------------------------------------------
+
+def ajout_bdd_fiche_cadrage(fiche_cadr, livre_id: int, parse: bool = False):
     if isinstance(fiche_cadr, str):
         fiche_cadr = json.loads(fiche_cadr)
 
@@ -150,35 +165,74 @@ def ajout_bdd_fiche_cadrage(fiche_cadr, parse : bool = False):
 
     if "fiche_cadrage" in fiche_cadr:
         fiche_cadr = fiche_cadr["fiche_cadrage"][0]
+
     FicheCadrage.objects.create(
-        sujet=fiche_cadr['sujet'],
-        sommaire=fiche_cadr['sommaire'],
-        hors_perimetre=fiche_cadr['hors_perimetre'],
-        cible=fiche_cadr.get('cible_principale') or fiche_cadr.get('cible'),
-        niveau=fiche_cadr['niveau'],
-        objectif_lecteur=fiche_cadr['objectif_lecteur'],
-        nb_chapitre=fiche_cadr.get('nbre_chapitres') or fiche_cadr.get('nb_chapitre'),
+        livre_id=livre_id,
+        sujet=fiche_cadr["sujet"],
+        nb_chapitre=fiche_cadr["nb_chapitre"],
+        hors_perimetre=fiche_cadr["hors_perimetre"],
+        contraintes_specifiques=fiche_cadr.get("contraintes_specifiques"),
+        cible=fiche_cadr.get("cible_principale") or fiche_cadr.get("cible"),
+        niveau=fiche_cadr["niveau"],
+        objectif_lecteur=fiche_cadr["objectif_lecteur"],
     )
 
-def recup_fiche_cadrage():
-    fiche = FicheCadrage.objects.last()
+
+def recup_fiche_cadrage(livre_id: int) -> str:
+    fiche = FicheCadrage.objects.filter(livre_id=livre_id).first()
 
     if not fiche:
-        return json.dumps({
-            "fiche_cadrage": []
-        }, ensure_ascii=False, indent=2)
+        return json.dumps({"fiche_cadrage": []}, ensure_ascii=False, indent=2)
 
-    return json.dumps({
-        "fiche_cadrage": [{
-            "sujet": fiche.sujet,
-            "sommaire": fiche.sommaire,
-            "hors_perimetre": fiche.hors_perimetre,
-            "cible": fiche.cible,
-            "niveau": fiche.niveau,
-            "objectif_lecteur": fiche.objectif_lecteur,
-            "nb_chapitre": fiche.nb_chapitre
-        }]
-    }, ensure_ascii=False, indent=2)
+    return json.dumps(
+        {
+            "fiche_cadrage": [
+                {
+                    "sujet": fiche.sujet,
+                    "nb_chapitre": fiche.nb_chapitre,
+                    "hors_perimetre": fiche.hors_perimetre,
+                    "contraintes_specifiques": fiche.contraintes_specifiques,
+                    "cible": fiche.cible,
+                    "niveau": fiche.niveau,
+                    "objectif_lecteur": fiche.objectif_lecteur,
+                }
+            ]
+        },
+        ensure_ascii=False,
+        indent=2,
+    )
 
-def reset_fiche_cadrage():
-    FicheCadrage.objects.all().delete()
+
+def reset_fiche_cadrage(livre_id):
+    FicheCadrage.objects.filter(livre_id=livre_id).delete()
+
+
+def insert_fc(livre_id: int) -> bool:
+    fiche_payload = json.loads(recup_fiche_cadrage(livre_id))
+
+    if not isinstance(fiche_payload, dict):
+        raise ValueError("La fiche cadrage doit etre un objet JSON.")
+
+    fiche_list = fiche_payload.get("fiche_cadrage", [])
+    if not fiche_list:
+        print("Aucune fiche en base.")
+        return False
+
+    fiche_data = fiche_list[0]
+
+    try:
+        expected_chapters = int(recup_nb_chapitres())
+    except (TypeError, ValueError) as exc:
+        raise ValueError("nb_chapitres doit etre un entier.") from exc
+
+    current_chapters = fiche_data.get("nb_chapitre")
+
+    if current_chapters != expected_chapters:
+        fiche_data["nb_chapitre"] = expected_chapters
+        reset_fiche_cadrage()
+        ajout_bdd_fiche_cadrage(fiche_data, livre_id, parse=True)
+        print(f"Mise a jour de nb_chapitre: {current_chapters} -> {expected_chapters}")
+        return True
+
+    print(f"Aucune mise a jour: nb_chapitre est deja a {expected_chapters}.")
+    return False

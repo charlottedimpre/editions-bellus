@@ -1,24 +1,23 @@
 from celery import shared_task
-from django.shortcuts import redirect
 
-from .fonctions.export.affichage import affichage
+
+
 from .models import ProcessStatus
-import json
+
 
 
 from celery.signals import worker_ready
 
-from .fonctions.fiche_cadrage import fiche_cadrage, ajout_bdd_fiche_cadrage, recup_fiche_cadrage, fc
-from .fonctions.web_search.webinput import webinput_wrapper
-from .fonctions.web_search.web import web_search_wrapper
-from .fonctions.web_search.webfetch import webfetch_wrapper
-from .fonctions.web_search.weboutput import weboutput_wrapper
+from .fonctions.fiche_cadrage import fc
+from .fonctions.web_search.web_search import webinput, websearch, webfetch, weboutput
 from .fonctions.plan_detaille import plan_detail
 from .fonctions.structure_chapitre import structure_chapitre
 from .fonctions.introduction import gen_intro
-from .fonctions.sections.section import suivisection, reset_all_test
+from .fonctions.sections.section import suivisection, reprise_generation
 from .fonctions.conclusion import gen_conclu
-from .fonctions.export.affichage import affichage
+from .fonctions.fil_rouge.fil_rouge import gen_filrouge_with_validation, merge_filrouge_wrapper
+from .fonctions.prepostface.preface import gen_preface
+from .fonctions.prepostface.postface import gen_postface
 
 @worker_ready.connect
 def celery_ready(sender, **kwargs):
@@ -28,12 +27,34 @@ def celery_ready(sender, **kwargs):
     status.message = f"Celery prêt ✅ ({now()})"
     status.progress = 0
     status.sujet_precis = ""
+    status.is_done = False
     status.save()
 
 
+from celery.signals import worker_shutdown
+
+@worker_shutdown.connect
+def celery_shutdown(sender, **kwargs):
+    from django.utils.timezone import now
+    from .models import ProcessStatus
+
+    status, _ = ProcessStatus.objects.get_or_create(id=1)
+    status.message = f"⚠️ Celery arrêté ({now()})"
+    status.save()
+
+from celery.signals import task_failure
+
+@task_failure.connect
+def on_task_failure(sender, task_id, exception, traceback, eargs, kwargs, **kw):
+    from .models import ProcessStatus
+
+    status, _ = ProcessStatus.objects.get_or_create(id=1)
+    status.message = f"❌ Erreur : {exception}"
+    status.save()
+
 
 @shared_task
-def fiche_cadrage_task(sujet):
+def fiche_cadrage_task(sujet, livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
 
     status.progress = 0
@@ -41,122 +62,194 @@ def fiche_cadrage_task(sujet):
     status.is_done = False
     status.save()
 
-    f_c = fc(sujet, "1")
+    f_c = fc(sujet, "1", livre_id)
     status.sujet_precis = f_c
 
     status.progress = 100
     status.message = "Ecriture de la fiche cadrage terminée..."
     status.is_done = True
-    status.redirect_url = "/fiche-cadrage/"
+    status.redirect_url = "/" + str(livre_id) + "/fiche-cadrage/"
     status.save()
 
 @shared_task
-def websearch_task():
+def websearch_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
-    status.message = "Recherches webs en cours..."
-    status.save()
 
-    status.message = "Web input en cours..."
+    status.message = "Generation des requetes..."
     status.progress = 0
     status.save()
-    webinput_wrapper()
+    queries_payload = webinput(livre_id)
 
-    status.message = "Web search en cours..."
+    status.message = "Recherche web (API SERP)..."
     status.progress = 25
     status.save()
-    web_search_wrapper()
+    search_results = websearch(queries_payload)
 
-    status.message = "Web fetch en cours..."
+    status.message = "Recuperation des contenus..."
     status.progress = 50
     status.save()
-    webfetch_wrapper()
+    content_data = webfetch(search_results)
 
-    status.message = "Web output en cours..."
+    status.message = "Synthese finale..."
     status.progress = 75
     status.save()
-    weboutput_wrapper()
+    weboutput(livre_id, content_data)
 
-    status.message = "Recherches web terminées..."
+    status.message = "Recherches web terminees."
     status.progress = 100
     status.save()
 
 @shared_task
-def plan_details_task():
+def plan_details_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
     status.message = "Création d'un plan détaillé en cours..."
     status.progress = 0
     status.save()
 
-    plan_detail()
+    plan_detail(livre_id)
 
     status.message = "Création d'un plan détaillé terminée"
     status.progress = 100
     status.save()
 
 @shared_task
-def structure_task():
+def structure_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
     status.message = "Création de la structure du livre en cours..."
     status.progress = 0
     status.save()
 
-    structure_chapitre()
+    structure_chapitre(livre_id)
 
     status.message = "Création de la structure du livre terminée"
     status.progress = 100
     status.save()
 @shared_task
-def introduction_task():
+def introduction_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
 
     status.message = "Génération de l'introduction en cours..."
     status.progress = 0
     status.save()
 
-    gen_intro()
+    gen_intro(livre_id)
 
     status.message = "Génération de l'introduction terminée"
     status.progress = 100
     status.save()
 
+
 @shared_task
-def generation_section_task():
+def preface_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
 
-    status.message = "Génération des sections en cours..."
+    status.message = "Génération de la préface en cours..."
     status.progress = 0
     status.save()
 
-    suivisection()
+    gen_preface(livre_id)
 
-    status.message = "Génération des sections terminée"
+    status.message = "Génération de la préface terminée"
     status.progress = 100
     status.save()
 
 @shared_task
-def conclusion_task():
+def generation_section_task(livre_id, reprise=False):
+    status, _ = ProcessStatus.objects.get_or_create(id=1)
+    try :
+        status.message = "Génération des sections en cours..."
+        status.progress = 0
+        status.save()
+
+        if reprise:
+            reprise_generation(livre_id)
+        else:
+            suivisection(livre_id)
+
+        status.message = "Génération des sections terminée"
+        status.progress = 50
+        status.save()
+
+        status.message = "Génération du fil rouge en cours..."
+        status.progress = 50
+        status.save()
+        gen_filrouge_with_validation(livre_id)
+
+        status.message = "Merge du fil rouge en cours..."
+        status.progress = 75
+        status.save()
+
+        merge_filrouge_wrapper(livre_id)
+
+        status.message = "Génération sections terminées"
+        status.progress = 100
+        status.save()
+
+    except Exception as e:
+        status.message = f"❌ Erreur : {e}"
+        status.progress = 0
+        status.save()
+        raise
+@shared_task
+def conclusion_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
 
     status.message = "Génération de la conclusion en cours..."
     status.progress = 0
     status.save()
 
-    gen_conclu()
+    gen_conclu(livre_id)
 
     status.message = "Génération de la conclusion terminée"
     status.progress = 100
     status.save()
 
+
 @shared_task
-def export_pdf_task():
+def postface_task(livre_id):
     status, _ = ProcessStatus.objects.get_or_create(id=1)
-    status.message = "Export en cours..."
+
+    status.message = "Génération de la postface en cours..."
     status.progress = 0
     status.save()
 
-    affichage()
+    gen_postface(livre_id)
 
-    status.message = "Export terminé..."
+    status.message = "Génération de la postface terminée"
     status.progress = 100
     status.save()
+
+
+@shared_task
+def export_task(livre_id, format: str):
+    status, _ = ProcessStatus.objects.get_or_create(id=1)
+    status.message = f"Export {format.upper()} en cours..."
+    status.progress = 0
+    status.is_done = False
+    status.save()
+
+    try:
+        if format == "pdf":
+            from .fonctions.export.affichage_pdf import affichage_pdf
+            affichage_pdf(livre_id)
+        elif format == "docx":
+            from .fonctions.export.affichage_doc import affichage_doc
+            affichage_doc(livre_id)
+        elif format == "md":
+            from .fonctions.export.affichage_md import affichage_md
+            affichage_md(livre_id)
+        else:
+            raise ValueError(f"Format inconnu : {format}")
+
+        status.message = f"Export {format.upper()} terminé."
+        status.progress = 100
+        status.is_done = True
+        status.save()
+
+    except Exception as e:
+        status.message = f"Erreur export {format.upper()} : {e}"
+        status.progress = 0
+        status.is_done = True
+        status.save()
+        raise
 

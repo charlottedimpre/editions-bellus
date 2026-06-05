@@ -4,127 +4,89 @@
     <meta charset="UTF-8">
     <title>Variables globales</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
+<body class="bg-muted min-h-screen p-4">
 
 {% include "components/dropdown-menu.html" %}
 
-<form method="POST">
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+  <div class="bg-background border border-border rounded-xl p-4">
+
+    <div class="flex justify-between items-start mb-1">
+      <div>
+        <h2 class="text-xl font-bold text-foreground">Variables globales</h2>
+        <p class="text-sm text-muted-foreground mt-0.5 mb-4">Paramètres généraux du projet</p>
+      </div>
+    </div>
+
+    <form method="POST">
     {% csrf_token %}
 
-    <div class="table-container">
-
-        <h1>Variables globales</h1>
-
-        <!-- 🔘 boutons -->
-        <button type="button" onclick="toggleEdit()" class="btn-primary">
-            ✏️ Modifier
+    <div class="py-4">
+      <hr class="border-t border-border mb-4">
+      <div class="flex gap-2">
+        <button type="button" onclick="toggleEdit()"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 flex items-center gap-1.5 font-medium">
+          ✏️ Modifier
         </button>
-
-        <button type="submit" id="saveBtn" class="btn-primary" style="display:none;">
-            💾 Enregistrer
+        <button type="submit" id="saveBtn"
+          class="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 hidden items-center gap-1.5 font-medium">
+          💾 Enregistrer
         </button>
-
-        <button type="button" onclick="cancelEdit()" id="cancelBtn" class="btn-secondary" style="display:none;">
-            ❌ Annuler
+        <button type="button" onclick="cancelEdit()" id="cancelBtn"
+          class="text-sm px-4 py-2 rounded-md border border-border bg-background text-foreground hover:bg-muted hidden items-center gap-1.5">
+          ❌ Annuler
         </button>
+      </div>
+    </div>
 
-        <div class="accordion">
+    <div class="flex flex-col gap-2.5">
 
-            <!-- NB CHAPITRES -->
-            <div class="accordion-item">
-                <button type="button" class="accordion-header">
-                    Nombre de chapitres
-                </button>
+      <!-- Nombre de chapitres -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-1">Nombre de chapitres</div>
+        <div class="view-mode text-sm text-muted-foreground italic">{{ nb_chapitre|default:"Non défini" }}</div>
+        <input class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground"
+               type="number" min="1" name="nb_chapitre" value="{{ nb_chapitre }}">
+      </div>
 
-                <div class="accordion-content">
-
-                    <div class="view-mode">
-                        {{ nb_chapitre|default:"Non défini" }}
-                    </div>
-
-                    <input class="edit-mode"
-                           type="number"
-                           name="nb_chapitre"
-                           value="{{ nb_chapitre }}"
-                           style="display:none; width:100%;">
-                </div>
-            </div>
-
-            <!-- NB MOTS -->
-            <div class="accordion-item">
-                <button type="button" class="accordion-header">
-                    Nombre de mots cible
-                </button>
-
-                <div class="accordion-content">
-
-                    <div class="view-mode">
-                        {{ nb_mots_cible|default:"Non défini" }}
-                    </div>
-
-                    <input class="edit-mode"
-                           type="number"
-                           name="nb_mots_cible"
-                           value="{{ nb_mots_cible }}"
-                           style="display:none; width:100%;">
-                </div>
-            </div>
-
-        </div>
+      <!-- Nombre de mots cible -->
+      <div class="border border-border rounded-lg p-4">
+        <div class="text-sm font-semibold text-foreground mb-1">Nombre de mots cible</div>
+        <div class="view-mode text-sm text-muted-foreground italic">{{ nb_mots_cible|default:"Non défini" }}</div>
+        <input class="edit-mode hidden w-full text-sm border border-border rounded-md p-2 mt-1 bg-background text-foreground"
+               type="number" min="1" name="nb_mots_cible" value="{{ nb_mots_cible }}">
+      </div>
 
     </div>
-</form>
 
-{% include "components/status.html" %}
+    </form>
+  </div>
+
+</div>
+
+{% include 'components/status.html' %}
 
 <script>
-document.querySelectorAll(".accordion-header").forEach(header => {
-    header.addEventListener("click", () => {
-        const content = header.nextElementSibling;
-        content.classList.toggle("open");
-    });
-});
-
 let initialValues = {};
 
 function toggleEdit() {
-    const views = document.querySelectorAll(".view-mode");
-    const edits = document.querySelectorAll(".edit-mode");
-
-    const saveBtn = document.getElementById("saveBtn");
-    const cancelBtn = document.getElementById("cancelBtn");
-
-    edits.forEach((el, index) => {
-        initialValues[index] = el.value;
-    });
-
-    views.forEach(v => v.style.display = "none");
-    edits.forEach(e => e.style.display = "block");
-
-    saveBtn.style.display = "inline-block";
-    cancelBtn.style.display = "inline-block";
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.add("hidden"));
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { initialValues[i] = e.value; e.classList.remove("hidden"); });
+  document.getElementById("saveBtn").classList.remove("hidden");
+  document.getElementById("saveBtn").classList.add("flex");
+  document.getElementById("cancelBtn").classList.remove("hidden");
+  document.getElementById("cancelBtn").classList.add("flex");
 }
 
 function cancelEdit() {
-    const views = document.querySelectorAll(".view-mode");
-    const edits = document.querySelectorAll(".edit-mode");
-
-    const saveBtn = document.getElementById("saveBtn");
-    const cancelBtn = document.getElementById("cancelBtn");
-
-    edits.forEach((el, index) => {
-        if (initialValues[index] !== undefined) {
-            el.value = initialValues[index];
-        }
-    });
-
-    views.forEach(v => v.style.display = "block");
-    edits.forEach(e => e.style.display = "none");
-
-    saveBtn.style.display = "none";
-    cancelBtn.style.display = "none";
+  document.querySelectorAll(".edit-mode").forEach((e, i) => { if (initialValues[i] !== undefined) e.value = initialValues[i]; e.classList.add("hidden"); });
+  document.querySelectorAll(".view-mode").forEach(v => v.classList.remove("hidden"));
+  document.getElementById("saveBtn").classList.add("hidden");
+  document.getElementById("cancelBtn").classList.add("hidden");
 }
 </script>
 

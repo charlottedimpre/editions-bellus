@@ -25,7 +25,7 @@
         <div class="flex-1 h-px bg-border min-w-1 mb-[18px]"></div>
       {% endif %}
 
-      <a href="{{ step.link }}">
+      <a href="/{{ livre_id }}{{ step.link }}">
       <div class="flex flex-col items-center flex-1 min-w-[50px] cursor-pointer">
 
         <div class="w-[30px] h-[30px] rounded-full flex items-center justify-center text-xs font-medium border
@@ -62,11 +62,11 @@
 </div>
 <script>
 document.addEventListener("keydown", function(e) {
-  if (e.key === "ArrowLeft") {
-    window.location.href = "{{ prev_step }}";
+  if (e.key === "ArrowLeft" && "{{ prev_step }}") {
+    window.location.href = "/{{ livre_id }}{{ prev_step }}";
   }
-  if (e.key === "ArrowRight") {
-    window.location.href = "{{ next_step }}";
+  if (e.key === "ArrowRight" && "{{ next_step }}") {
+    window.location.href = "/{{ livre_id }}{{ next_step }}";
   }
 });
 </script>

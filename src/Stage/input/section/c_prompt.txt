@@ -1,18 +1,20 @@
 Tu es un assistant d'édition. Analyse le chapitre ci-dessous et génère UNIQUEMENT une fiche structurée, sans introduction ni commentaire.
 
+Objectif : produire une sortie 100% parseable.
+
 Respecte EXACTEMENT ce format, sans modifier les balises ni l'ordre :
 
 <fiche>
 <chapitre_numero>[Numéro uniquement, ex: 3]</chapitre_numero>
 <section_numero>[Numéro uniquement, ex: 3]</section_numero>
-<these_centrale>[1 seule phrase, la thèse principale défendue]</these_centrale>
+<these_centrale>[1 seule phrase, 12 à 25 mots, la thèse principale défendue]</these_centrale>
 <arguments_cles>
 - [argument 1]
 - [argument 2]
-- [3 à 5 arguments maximum]
+- [3 à 5 arguments maximum, chaque argument en 8 à 18 mots]
 </arguments_cles>
 <concepts_introduits>
-- [concept + définition en 10 mots max]
+- [concept : définition en 10 mots max]
 </concepts_introduits>
 <liens_chapitres>
 [Références aux chapitres précédents si mentionnés, sinon : "Aucun"]
@@ -20,12 +22,16 @@ Respecte EXACTEMENT ce format, sans modifier les balises ni l'ordre :
 <a_ne_pas_repeter>
 - [idée, stat, formulation à ne plus réutiliser]
 </a_ne_pas_repeter>
-<ton_angle>[1 phrase : style adopté, ex: "Analytique, appuyé sur des données chiffrées"]</ton_angle>
+<ton_angle>[1 phrase, 8 à 20 mots : style adopté et angle argumentatif]</ton_angle>
 </fiche>
 
 Règles strictes :
 - Ne jamais écrire hors des balises
 - Ne jamais paraphraser une balise autrement
-- Si une information est absente du texte, écrire "Non défini"
+- Ne pas ajouter de balise, attribut, sous-section, titre, markdown, code fence, ni texte avant/après <fiche>
+- Fermer chaque balise exactement avec son nom correspondant
+- Conserver exactement l'ordre des blocs tel que défini ci-dessus
+- Si une information est absente : écrire "Non défini" (sauf <liens_chapitres> où il faut écrire "Aucun")
+- Si un champ en liste est absent, écrire une seule puce : "- Non défini"
+- Pour <chapitre_numero> et <section_numero> : écrire uniquement des chiffres (ex: 1, 2, 12) ; si absent, écrire "Non défini"
 - Pas de synonymes pour les noms de balises
-

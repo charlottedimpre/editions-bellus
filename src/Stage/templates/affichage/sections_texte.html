@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sections texte</title>
     {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'BELLUS_RVB_Fav_Noir.png' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-muted min-h-screen p-4">
@@ -24,9 +25,7 @@
         <h2 class="text-xl font-bold text-foreground">Sections texte par chapitre</h2>
         <p class="text-sm text-muted-foreground mt-0.5 mb-4">Contenu détaillé de chaque section</p>
       </div>
-      <button type="button" style="font-size: 11px; padding: 4px 8px; line-height: 1; height: 28px; border-radius: 6px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #15803d; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
-        ✓ Marquer comme complétée
-      </button>
+      {% include "components/done.html" %}
     </div>
 
     <!-- Nav Précédent / contexte / Suivant -->
@@ -104,9 +103,14 @@
     </div>
 
     <!-- Lancer le processus -->
-    <button type="button" onclick="lancer_generation()" style="margin-top: 20px; width: 100%; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
-      ▶ Lancer le processus
-    </button>
+    <div style="margin-top: 20px; display: flex; gap: 8px;">
+  <button type="button" onclick="lancer_generation()" style="flex: 1; height: 52px; border-radius: 8px; background: #030213; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+    ▶ Lancer le processus
+  </button>
+  <button type="button" onclick="lancer_reprise()" style="flex: 1; height: 52px; border-radius: 8px; background: #1a1a2e; color: #ffffff; font-size: 14px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none;">
+    ↩ Reprendre la génération
+  </button>
+</div>
 
   </div>
 
@@ -116,9 +120,11 @@
 
 <script>
 function lancer_generation(){
-    fetch("/gen_sections/")
+    fetch("/process/{{ livre_id }}/gen_sections/")
 }
-
+function lancer_reprise() {
+    fetch("/process/{{ livre_id }}/reprise/")
+}
 function toggleEdit(btn) {
   const card = btn.closest(".border.border-border.rounded-lg.p-4");
   const view = card.querySelector(".view-mode");
