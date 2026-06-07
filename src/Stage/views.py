@@ -174,17 +174,12 @@ def affichage_web_search(request, livre_id):
         "progress_pct": round(process_percent(etapes)),
     })
 def affichage_plan_detail(request, livre_id):
-    plan_details = json.loads(recup_plan_detail(livre_id))
+    intro = Introduction.objects.filter(livre_id=livre_id).last()
+    conclusion = Conclusion.objects.filter(livre_id=livre_id).last()
+    fil = FilRouge.objects.filter(livre_id=livre_id).last()
+    chapitres = ChapitreDetails.objects.filter(livre_id=livre_id).order_by("numero")
 
-    print(plan_details)
-
-    intro = plan_details["introduction"]
-    conclusion = plan_details.get("conclusion")
-    fil = plan_details.get("exemple_fil_rouge")
-    chapitres = plan_details.get("chapitres")
-    # 🔥 POST = sauvegarde
     if request.method == "POST":
-
         if intro:
             intro.contexte = request.POST.get("contexte")
             intro.importance = request.POST.get("importance")
@@ -217,9 +212,12 @@ def affichage_plan_detail(request, livre_id):
         "introduction": intro,
         "conclusion": conclusion,
         "fil_rouge": fil,
-        "chapitres": chapitres, "etapes" : etapes,
-        "current_step": 3, "prev_step": "/recherche/", "next_step": "/structure/",
-        "progress_pct": round(process_percent(etapes))
+        "chapitres": chapitres,
+        "etapes": etapes,
+        "current_step": 3,
+        "prev_step": "/recherche/",
+        "next_step": "/structure/",
+        "progress_pct": round(process_percent(etapes)),
     })
 def affichage_structure(request, livre_id):
     chapitres = ChapitreDetails.objects.filter(livre_id=livre_id).prefetch_related("sections").order_by("numero")
@@ -288,16 +286,27 @@ def affichage_sections_texte(request, livre_id):
         for s in SectionDetaillee.objects.select_related("chapitre").filter(livre_id=livre_id).all()
     }
 
+    # 🔹 mapping sections enrichies
+    enrichies_db = {
+        (e.chapitre, e.section): e
+        for e in SectionTexteEnrichi.objects.filter(livre_id=livre_id).all()
+    }
+
     # 🔥 UPDATE SECTION
     if request.method == "POST":
-        chapitre = request.POST.get("chapitre")
-        section = request.POST.get("section")
+        chapitre = int(request.POST.get("chapitre"))
+        section = int(request.POST.get("section"))
         contenu = request.POST.get("contenu")
+        source = request.POST.get("source")  # "enrichi" ou "original"
 
-        obj = SectionTexte.objects.filter(
-            chapitre=chapitre,
-            section=section
-        ).first()
+        if source == "enrichi":
+            obj = SectionTexteEnrichi.objects.filter(
+                chapitre=chapitre, section=section, livre_id=livre_id
+            ).first()
+        else:
+            obj = SectionTexte.objects.filter(
+                chapitre=chapitre, section=section, livre_id=livre_id
+            ).first()
 
         if obj:
             obj.contenu = contenu
@@ -305,13 +314,15 @@ def affichage_sections_texte(request, livre_id):
 
     # 🔹 enrichissement
     for s in sections:
-        s["titre_chapitre"] = chapitres_db.get(
-            s["chapitre"], f"Chapitre {s['chapitre']}"
-        )
-        s["titre_section"] = sections_db.get(
-            (s["chapitre"], s["section"]),
-            f"Section {s['section']}"
-        )
+        s["titre_chapitre"] = chapitres_db.get(s["chapitre"], f"Chapitre {s['chapitre']}")
+        s["titre_section"] = sections_db.get((s["chapitre"], s["section"]), f"Section {s['section']}")
+
+        enrichie = enrichies_db.get((s["chapitre"], s["section"]))
+        if enrichie:
+            s["contenu"] = enrichie.contenu
+            s["source"] = "enrichi"
+        else:
+            s["source"] = "original"
 
     # 🔹 regroupement
     chapitres = {}
@@ -321,8 +332,11 @@ def affichage_sections_texte(request, livre_id):
     etapes = recup_etapes(livre_id)
     return render(request, "affichage/sections_texte.html", {
         "livre_id": livre_id,
-        "chapitres": chapitres, "etapes" : etapes,
-        "current_step": 7, "prev_step": "/preface/", "next_step": "/conclusion/",
+        "chapitres": chapitres,
+        "etapes": etapes,
+        "current_step": 7,
+        "prev_step": "/preface/",
+        "next_step": "/conclusion/",
         "progress_pct": round(process_percent(etapes))
     })
 
@@ -510,6 +524,7 @@ def telecharger_export(request, livre_id):
     extensions = {"pdf": ".pdf", "docx": ".docx", "md": ".md"}
     if format not in extensions:
         raise Http404("Format non supporté.")
+
 
     file_path = OUTPUT_DIR / f"livre_{livre_id}{extensions[format]}"
     if not file_path.exists():

@@ -62,6 +62,9 @@
 </div>
 <script>
 document.addEventListener("keydown", function(e) {
+  const activeTag = document.activeElement.tagName;
+  if (activeTag === "TEXTAREA" || activeTag === "INPUT") return;
+
   if (e.key === "ArrowLeft" && "{{ prev_step }}") {
     window.location.href = "/{{ livre_id }}{{ prev_step }}";
   }

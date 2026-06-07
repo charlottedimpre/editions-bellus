@@ -113,8 +113,11 @@
     </form>
 
   </div>
+
 </div>
 
+
+{% include "components/status.html" %}
 <script>
 document.getElementById('modal-wrap').addEventListener('click', function(e) {
   if (e.target === this) this.style.display = 'none';
